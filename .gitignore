@@ -1,0 +1,4 @@
+.venv/
+outputs/
+*.jpeg
+map.osm

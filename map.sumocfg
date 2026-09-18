@@ -1,0 +1,25 @@
+<configuration>
+    <input>
+        <net-file value="map.net.xml"/>
+        <route-files value="traffic_bike.rou.xml,traffic_car.rou.xml,traffic_auto.rou.xml,traffic_truck.rou.xml,traffic_bus.rou.xml,ego.rou.xml"/>
+        <additional-files value="vtypes.add.xml,obstacles.add.xml"/>
+    </input>
+    <gui_only>
+        <gui-settings-file value="satellite.xml"/>
+    </gui_only>
+    <output>
+        <!-- Floating Car Data (Trajectory data) at 10Hz -->
+        <fcd-output value="outputs/fcd.xml"/>
+        <tripinfo-output value="outputs/tripinfo.xml"/>
+    </output>
+    <time>
+        <begin value="0"/>
+        <end value="200"/>
+        <step-length value="0.1"/>
+    </time>
+    <processing>
+        <!-- Stop cars from teleporting if stuck (we want traffic jams) -->
+        <time-to-teleport value="-1"/>
+        <collision.action value="warn"/>
+    </processing>
+</configuration>
