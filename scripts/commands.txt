@@ -1,0 +1,37 @@
+# PFPD-LL Commands
+
+### Why is there only one command now?
+In the beginning, we had to run many different scripts (`netconvert`, `polyconvert`, `randomTrips.py`, tile downloaders, etc.) because we were *building* the environment piece by piece from raw OpenStreetMap data. 
+
+Now, everything is perfectly built and compiled! We tied the map network, the high-res satellite imagery, the AI routes, the vehicles, and the obstacles all together inside one master configuration file called `map.sumocfg`. 
+
+When you run `sumo-gui -c map.sumocfg`, SUMO reads that single master file and automatically loads all the other files for you in the background!
+
+---
+
+## 1. Run the Visual Simulation
+To open the map with the high-res satellite graphics and watch the cars:
+```powershell
+sumo-gui -c map.sumocfg
+```
+
+## 2. Extract Data to Excel
+If you want to extract the AI trajectory data (FCD) to an Excel file, you must first run the simulation silently in the background (headless mode), and then run the python script:
+
+```powershell
+# Step A: Run silently to log the data
+sumo -c map.sumocfg
+
+# Step B: Convert the logged data to Excel
+python scripts\fcd_to_excel.py
+```
+
+---
+
+## Folder Structure
+- `maps/`: Contains the network (`map_16_9.net.xml`) and raw OSM files
+- `scripts/`: Python scripts for data extraction and tile downloading
+- `traffic/`: Vehicle route definitions (including the ego car)
+- `xml_configs/`: SUMO configuration settings (obstacles, vehicle types, satellite decals)
+- `satellite_highres/`: High-resolution map images
+- `outputs/`: Where your Excel data gets saved!

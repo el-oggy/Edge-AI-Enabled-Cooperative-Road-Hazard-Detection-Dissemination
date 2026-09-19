@@ -1,25 +1,32 @@
-<configuration>
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
     <input>
-        <net-file value="map.net.xml"/>
-        <route-files value="traffic_bike.rou.xml,traffic_car.rou.xml,traffic_auto.rou.xml,traffic_truck.rou.xml,traffic_bus.rou.xml,ego.rou.xml"/>
-        <additional-files value="vtypes.add.xml,obstacles.add.xml"/>
+        <!-- The core road network -->
+        <net-file value="maps/map_16_9.net.xml"/>
+        
+        <!-- Routes and Traffic -->
+        <route-files value="traffic/ego.rou.xml,traffic/trips.rou.xml"/>
+        
+        <!-- Additional configurations (vehicles, obstacles, polygons) -->
+        <additional-files value="xml_configs/vtypes.add.xml,xml_configs/obstacles.add.xml,xml_configs/polygons.add.xml,xml_configs/ptstops.xml"/>
     </input>
-    <gui_only>
-        <gui-settings-file value="satellite.xml"/>
-    </gui_only>
+
     <output>
-        <!-- Floating Car Data (Trajectory data) at 10Hz -->
+        <!-- Floating Car Data: highly detailed trajectory output -->
         <fcd-output value="outputs/fcd.xml"/>
+        <!-- Trip info: summary for each vehicle's trip -->
         <tripinfo-output value="outputs/tripinfo.xml"/>
     </output>
-    <time>
-        <begin value="0"/>
-        <end value="200"/>
-        <step-length value="0.1"/>
-    </time>
+
+    <gui_only>
+        <!-- Satellite background imagery (zoom 16, ~925 tiles) -->
+        <gui-settings-file value="xml_configs/satellite_decals.xml"/>
+    </gui_only>
+
     <processing>
-        <!-- Stop cars from teleporting if stuck (we want traffic jams) -->
-        <time-to-teleport value="-1"/>
-        <collision.action value="warn"/>
+        <!-- Ignore vehicles that have no route due to disconnected random edges -->
+        <ignore-route-errors value="true"/>
     </processing>
+
 </configuration>
