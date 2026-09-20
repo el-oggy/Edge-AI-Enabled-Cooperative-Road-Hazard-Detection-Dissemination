@@ -1,0 +1,39 @@
+<additional>
+    <!-- C. Slow obstacle: A crawling truck -->
+    <vType id="crawling_truck" vClass="truck" length="10.0" width="2.5" color="128,0,128" maxSpeed="2.0"/>
+
+    <!-- Pothole vType -->
+    <vType id="pothole_type" vClass="ignoring" length="2.0" width="1.5" color="139,69,19" maxSpeed="0.1"/>
+
+    <route id="obstacle_route" edges="1076543279#0" />
+
+    <!-- Pothole Obstacle -->
+    <!-- Sits at position 100. Vehicles must brake or change lanes to avoid it. -->
+    <vehicle id="pothole" type="pothole_type" route="obstacle_route" depart="0" departLane="0" departPos="100" departSpeed="0">
+        <stop lane="1076543279#0_0" endPos="102" until="3600"/>
+    </vehicle>
+
+    <!-- A. Broken-down vehicle blocking a lane -->
+    <vehicle id="broken_down_veh" type="car" route="obstacle_route" depart="0" departLane="0" departPos="200" departSpeed="0" color="255,105,180">
+        <stop lane="1076543279#0_0" endPos="210" until="3600"/>
+    </vehicle>
+
+    <!-- C. The crawling truck itself -->
+    <vehicle id="slow_truck" type="crawling_truck" route="obstacle_route" depart="20" departLane="1" departPos="50" color="128,0,128"/>
+
+    <!-- B. Lane closure using a rerouter -->
+    <rerouter id="lane_closure" edges="1076543279#0">
+        <interval begin="0" end="3600">
+            <closingLaneReroute id="1076543279#0_1" disallow="passenger"/>
+        </interval>
+    </rerouter>
+
+    <!-- D. Polygons for Visuals (Danger Zone and Construction Cones) -->
+    <!-- Broken Vehicle Danger Zone -->
+    <poly id="danger_zone" color="255,0,0" fill="1" layer="1" shape="205,3733 215,3733 215,3743 205,3743"/>
+    
+    <!-- Construction Cones (Fake positions just for visuals, clustered around the broken car) -->
+    <poly id="cone1" color="255,165,0" fill="1" layer="2" shape="206,3734 207,3734 207,3735 206,3735"/>
+    <poly id="cone2" color="255,165,0" fill="1" layer="2" shape="210,3734 211,3734 211,3735 210,3735"/>
+    <poly id="cone3" color="255,165,0" fill="1" layer="2" shape="214,3734 215,3734 215,3735 214,3735"/>
+</additional>
