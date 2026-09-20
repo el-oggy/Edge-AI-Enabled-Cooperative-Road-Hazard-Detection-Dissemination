@@ -56,3 +56,10 @@ try:
 except FileNotFoundError:
     print(f"Error: {fcd_file} not found. Please run the simulation first.")
     sys.exit(1)
+except ET.ParseError:
+    print(f"\n--- Simulation Data Summary ---")
+    print(f"Total Unique Vehicles Spawned: {len(unique_vehicles)}")
+    print(f"Total Trajectory Data Points: {count}")
+    print("-------------------------------\n")
+    print(f"Warning: The XML file was truncated, likely because the simulation was closed before finishing completely.")
+    print(f"Success! However, all data generated up to that point ({count} rows) was successfully saved to {csv_file}")
