@@ -19,7 +19,7 @@ def generate_traffic():
     # Probabilities for typical Indian mixed traffic
     weights = [0.3, 0.2, 0.35, 0.05, 0.1]
     
-    num_vehicles = 4000
+    num_vehicles = 10000
     start_time = 0
     end_time = 3600  # Spread across 1 hour
     

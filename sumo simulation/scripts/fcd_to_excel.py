@@ -1,53 +1,58 @@
 import xml.etree.ElementTree as ET
-import pandas as pd
-import os
-
-print("Parsing FCD XML file...")
+import csv
+import sys
 
 fcd_file = "outputs/fcd.xml"
-if not os.path.exists(fcd_file):
-    print(f"Error: {fcd_file} not found. Please run the simulation headlessly first.")
-    exit(1)
+csv_file = "outputs/fcd_data.csv"
+print(f"Parsing {fcd_file} using memory-efficient streaming parser...")
 
-tree = ET.parse(fcd_file)
-root = tree.getroot()
-
-# List to hold all vehicle records
-data = []
-unique_vehicles = set()
-
-# FCD structure is <timestep time="0.00"><vehicle id="ego" x="..." y="..." .../></timestep>
-for timestep in root.findall('timestep'):
-    time = timestep.get('time')
-    for vehicle in timestep.findall('vehicle'):
-        vid = vehicle.get('id')
-        unique_vehicles.add(vid)
+try:
+    with open(csv_file, mode='w', newline='') as f:
+        writer = csv.writer(f)
+        # Write CSV header
+        writer.writerow(['time', 'vehicle_id', 'x', 'y', 'angle', 'type', 'speed', 'pos', 'lane', 'slope'])
         
-        # Extract vehicle attributes
-        record = {
-            'time': float(time),
-            'id': vid,
-            'x': float(vehicle.get('x', 0)),
-            'y': float(vehicle.get('y', 0)),
-            'angle': float(vehicle.get('angle', 0)),
-            'type': vehicle.get('type', ''),
-            'speed': float(vehicle.get('speed', 0)),
-            'pos': float(vehicle.get('pos', 0)),
-            'lane': vehicle.get('lane', ''),
-            'slope': float(vehicle.get('slope', 0))
-        }
-        data.append(record)
-
-print(f"\n--- Simulation Data Summary ---")
-print(f"Total Unique Vehicles Spawned: {len(unique_vehicles)}")
-print(f"Total Trajectory Data Points: {len(data)}")
-print("-------------------------------\n")
-
-print("Converting data to Pandas DataFrame...")
-df = pd.DataFrame(data)
-
-excel_file = "outputs/fcd_data.xlsx"
-print(f"Saving to {excel_file} (this may take a moment)...")
-df.to_excel(excel_file, index=False, engine='openpyxl')
-
-print("Success! Data has been written to Excel.")
+        count = 0
+        unique_vehicles = set()
+        
+        context = ET.iterparse(fcd_file, events=('start', 'end'))
+        current_time = 0.0
+        
+        for event, elem in context:
+            if event == 'start' and elem.tag == 'timestep':
+                current_time = float(elem.get('time', 0))
+                
+            elif event == 'end' and elem.tag == 'vehicle':
+                vid = elem.get('id')
+                unique_vehicles.add(vid)
+                
+                writer.writerow([
+                    current_time,
+                    vid,
+                    elem.get('x', 0),
+                    elem.get('y', 0),
+                    elem.get('angle', 0),
+                    elem.get('type', ''),
+                    elem.get('speed', 0),
+                    elem.get('pos', 0),
+                    elem.get('lane', ''),
+                    elem.get('slope', 0)
+                ])
+                count += 1
+                
+                # Memory management: clear the processed element from the tree
+                elem.clear()
+            
+            elif event == 'end' and elem.tag == 'timestep':
+                # Clear the timestep element after processing all its vehicles
+                elem.clear()
+                
+        print(f"\n--- Simulation Data Summary ---")
+        print(f"Total Unique Vehicles Spawned: {len(unique_vehicles)}")
+        print(f"Total Trajectory Data Points: {count}")
+        print("-------------------------------\n")
+        print(f"Success! {count} rows have been streamed directly to {csv_file}")
+        
+except FileNotFoundError:
+    print(f"Error: {fcd_file} not found. Please run the simulation first.")
+    sys.exit(1)
