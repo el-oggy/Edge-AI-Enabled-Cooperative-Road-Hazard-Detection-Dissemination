@@ -1,0 +1,34 @@
+<additional>
+    <!-- Indian Mixed Traffic Vehicle Types -->
+    
+    <!-- Bike/Motorcycle: Smallest and most frequent. Blue color. -->
+    <vType id="bike" vClass="motorcycle" guiShape="motorcycle" length="2.0" width="0.8" color="0,0,255" accel="2.5" decel="4.5" maxSpeed="20.0" />
+    
+    <!-- Auto Rickshaw: Smaller than a car, slightly slower. Yellow color. -->
+    <vType id="auto" vClass="passenger" guiShape="passenger/hatchback" length="3.2" width="1.4" color="255,255,0" accel="1.5" decel="3.5" maxSpeed="15.0" />
+    
+    <!-- Standard Car: Average passenger vehicle. Red color. -->
+    <vType id="car" vClass="passenger" guiShape="passenger/sedan" length="4.5" width="1.8" color="255,0,0" accel="2.0" decel="4.5" maxSpeed="25.0" />
+    
+    <!-- Bus: Long vehicle, slower acceleration. Green color. -->
+    <vType id="bus" vClass="bus" guiShape="bus" length="11.0" width="2.5" color="0,255,0" accel="1.0" decel="3.0" maxSpeed="18.0" />
+    
+    <!-- Truck: Heavy vehicle, lowest acceleration. Orange color. -->
+    <vType id="truck" vClass="truck" guiShape="truck" length="8.0" width="2.5" color="255,165,0" accel="1.0" decel="3.0" maxSpeed="18.0" />
+
+    <!-- Our EGO Vehicle:
+         - White color for easy tracking
+         - sigma=0 means it behaves deterministically (no driver imperfection)
+         - higher deceleration for emergency braking if needed
+         - has.ssm.device="true" enables the Surrogate Safety Management (SSM) device to log Time-To-Collision (TTC)
+    -->
+    <vType id="ego_type" vClass="passenger" guiShape="passenger/sedan" length="4.5" width="1.8" color="255,255,255" accel="2.5" decel="5.5" maxSpeed="25.0" sigma="0">
+        <param key="has.ssm.device" value="true"/>
+    </vType>
+
+    <!-- Pothole/Construction dummy (dark polygon or cone) -->
+    <!-- We will use a standard passenger shape but colored dark grey for potholes or orange for cones -->
+    <vType id="pothole_dummy" vClass="ignoring" guiShape="passenger" color="30,30,30" width="3.0" length="3.0" minGap="0" accel="0.1" decel="0.1" maxSpeed="0.1"/>
+
+    <vType id="broken_down_car" vClass="ignoring" guiShape="passenger/sedan" color="100,0,0" width="1.8" length="4.5" minGap="0" accel="0.1" decel="0.1" maxSpeed="0.1"/>
+</additional>

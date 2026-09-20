@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <!-- The core road network -->
+        <net-file value="maps/map_16_9.net.xml"/>
+        
+        <!-- Routes and Traffic -->
+        <route-files value="traffic/ego.rou.xml,traffic/trips.rou.xml"/>
+        
+        <!-- Additional configurations (vehicles, obstacles, polygons) -->
+        <additional-files value="xml_configs/vtypes.add.xml,xml_configs/obstacles.add.xml,xml_configs/ptstops.xml"/>
+    </input>
+
+    <output>
+        <!-- Floating Car Data: highly detailed trajectory output -->
+        <fcd-output value="outputs/fcd.xml"/>
+        <!-- Trip info: summary for each vehicle's trip -->
+        <tripinfo-output value="outputs/tripinfo.xml"/>
+    </output>
+
+    <gui_only>
+        <!-- Satellite background imagery (zoom 16, ~925 tiles) -->
+        <gui-settings-file value="xml_configs/satellite_decals.xml"/>
+    </gui_only>
+
+    <processing>
+        <!-- Ignore vehicles that have no route due to disconnected random edges -->
+        <ignore-route-errors value="true"/>
+    </processing>
+
+</configuration>

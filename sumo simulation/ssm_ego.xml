@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-09-20T01:54:21.391470+05:30 by Eclipse SUMO GUI 1.27.1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="maps/map_16_9.net.xml"/>
+        <route-files value="traffic/ego.rou.xml,traffic/trips.rou.xml"/>
+        <additional-files value="xml_configs/vtypes.add.xml,xml_configs/obstacles.add.xml,xml_configs/ptstops.xml"/>
+    </input>
+
+    <output>
+        <fcd-output value="outputs/fcd.xml"/>
+        <tripinfo-output value="outputs/tripinfo.xml"/>
+    </output>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="55999"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="xml_configs/satellite_decals.xml"/>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<SSMLog>
+    <globalMeasures ego="ego">
+        <timeSpan values="0.00"/>
+        <BRSpan values="0.00"/>
+        <SGAPSpan values="NA"/>
+        <TGAPSpan values="NA"/>
+    </globalMeasures>
+</SSMLog>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-09-20T01:07:29.833887+05:30 by Eclipse SUMO duarouter 1.27.1
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="maps/map_16_9.net.xml"/>
+        <additional-files value="xml_configs/vtypes.add.xml"/>
+        <route-files value="traffic/ego_trip.xml"/>
+    </input>
+
+    <output>
+        <output-file value="traffic/ego.rou.xml"/>
+        <vtype-output value="dummy.xml"/>
+    </output>
+
+    <report>
+        <ignore-errors value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="ego" type="ego_type" depart="0.00" departLane="best" departSpeed="max" arrivalPos="1900.00">
+        <route edges="1055380165#7"/>
+        <param key="has.ssm.device" value="true"/>
+    </vehicle>
+</routes>
