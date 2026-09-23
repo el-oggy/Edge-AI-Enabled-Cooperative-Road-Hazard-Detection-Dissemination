@@ -1,0 +1,12 @@
+model: yolo11n.pt
+data: datasets/potholes_final/data.yaml
+imgsz: 640
+epochs: 50
+batch: 16
+device: 0
+workers: 2
+seed: 42
+patience: 15
+optimizer: auto
+cache: false
+plots: true

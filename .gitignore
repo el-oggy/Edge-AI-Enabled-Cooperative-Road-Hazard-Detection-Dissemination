@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+*.key
+kaggle.json
+
+# Large datasets
+datasets/
+data/raw/
+data/processed/
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+
+# Model binaries
+*.pt
+*.onnx
+*.tflite
+*.engine
+
+# Training artifacts
+runs/
+wandb/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db

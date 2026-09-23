@@ -1,0 +1,18 @@
+{
+  "dataset": "andrewmvd/pothole-detection",
+  "images": 665,
+  "annotations": 1739,
+  "classes": [
+    "pothole"
+  ],
+  "train_images": 532,
+  "validation_images": 66,
+  "test_images": 67,
+  "test_instances": 161,
+  "seed": 42,
+  "model": "YOLO11n",
+  "test_precision": 0.8959,
+  "test_recall": 0.6522,
+  "test_map50": 0.7926,
+  "test_map50_95": 0.5108
+}
