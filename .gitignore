@@ -1,8 +1,44 @@
-# Ignore massive simulation output data
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+*.key
+kaggle.json
+
+# Large simulation output data
 sumo simulation/10k_vehicles_output/
 sumo simulation/outputs/
 simulation_excel_data/
-__pycache__/
-*.pyc
+
+# Large datasets & archives
+datasets/
+data/raw/
+data/processed/
 *.zip
+*.tar
+*.tar.gz
+*.parquet
 data_traning/archive.zip
+
+# Model binaries
+*.onnx
+*.tflite
+*.engine
+
+# Allow our trained weights
+!data_traning/trained_model/best.pt
+
+# Training artifacts
+runs/
+wandb/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
