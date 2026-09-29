@@ -2,3 +2,7 @@
 sumo simulation/10k_vehicles_output/
 sumo simulation/outputs/
 simulation_excel_data/
+__pycache__/
+*.pyc
+*.zip
+data_traning/archive.zip
