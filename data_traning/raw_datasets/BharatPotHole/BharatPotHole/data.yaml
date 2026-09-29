@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['pothole']
+
+roboflow:
+  workspace: yolo-ewrwa
+  project: dashcam-mg6en
+  version: 14
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/yolo-ewrwa/dashcam-mg6en/dataset/14

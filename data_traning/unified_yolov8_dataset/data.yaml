@@ -1,0 +1,14 @@
+train: images/train
+val: images/val
+
+names:
+  0: pothole
+  1: crack_longitudinal
+  2: crack_transverse
+  3: crack_alligator
+  4: construction_zone
+  5: accident_vehicle
+  6: road_obstruction
+  7: traffic_cone
+  8: barricade
+  9: debris
