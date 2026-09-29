@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-09-18 19:17:45.200801 by Eclipse SUMO tileGet.py v1_27_1+0000-7717f2379d9
+<configuration>
+    <tiles value="10"/>
+    <decals-file value="satellite.xml"/>
+    <net value="map.net.xml"/>
+</configuration>
+-->
+
+<viewsettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/viewsettings_file.xsd">
+    <decal file="tile12050_7295.jpeg" centerX="1121.3615654191526" centerY="3843.6358196046203" width="2280.076772170665" height="2325.3275662912056" layer="0"/>
+    <decal file="tile12050_7296.jpeg" centerX="1091.9486573089962" centerY="1547.7676885535475" width="2280.3954292292474" height="2325.587481338065" layer="0"/>
+    <decal file="tile12050_7297.jpeg" centerX="1062.5624634750711" centerY="-748.3870472933631" width="2280.7138399597607" height="2325.8471159772016" layer="0"/>
+    <decal file="tile12051_7295.jpeg" centerX="3430.851108132396" centerY="3814.1798687884584" width="2280.3420089590363" height="2325.007060231641" layer="0"/>
+    <decal file="tile12051_7296.jpeg" centerX="3401.7301426143677" centerY="1518.3384252018295" width="2280.660382219765" height="2325.267222514376" layer="0"/>
+    <decal file="tile12051_7297.jpeg" centerX="3372.6356264126953" centerY="-777.7896044088993" width="2280.978508978151" height="2325.5271045868285" layer="0"/>
+</viewsettings>

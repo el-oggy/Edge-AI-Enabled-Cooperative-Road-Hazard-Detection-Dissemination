@@ -1,0 +1,7 @@
+<routes>
+    <!-- Define the ego trip starting at time 0 -->
+    <!-- We picked a long multi-lane edge (1055380165#7) for the ego vehicle. -->
+    <trip id="ego" type="ego_type" depart="0.0" departLane="best" departSpeed="max" from="1055380165#7" to="1055380165#7" arrivalPos="1900">
+        <param key="has.ssm.device" value="true"/>
+    </trip>
+</routes>
