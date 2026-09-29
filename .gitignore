@@ -27,12 +27,12 @@ data/processed/
 data_traning/archive.zip
 
 # Model binaries
-*.onnx
 *.tflite
 *.engine
 
-# Allow our trained weights
-!data_traning/trained_model/best.pt
+# Allow our trained weights and ONNX models
+!data_traning/trained_model*/*.pt
+!data_traning/trained_model*/*.onnx
 
 # Training artifacts
 runs/
