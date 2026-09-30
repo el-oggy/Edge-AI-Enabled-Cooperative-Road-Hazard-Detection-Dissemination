@@ -1,0 +1,13 @@
+metric,value
+dataset_version,potholes_rdd2022_merged_v2
+total_images,2195
+train_images,1833
+val_images,295
+test_images,67
+total_boxes,4926
+train_boxes,4115
+val_boxes,650
+test_boxes,161
+avg_boxes_per_image,2.24
+classes,pothole (0)
+frozen_test_set_origin,"andrewmvd 67 images, 161 boxes"

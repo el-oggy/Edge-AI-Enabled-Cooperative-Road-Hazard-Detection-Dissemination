@@ -1,0 +1,2 @@
+class_id,class_name,train_boxes,val_boxes,test_boxes,total_boxes
+0,pothole,4115,650,161,4926

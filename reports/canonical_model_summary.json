@@ -1,0 +1,37 @@
+{
+  "experiment_id": "EXP_002_YOLO11N_RDD_V2",
+  "dataset": "potholes_rdd2022_merged_v2",
+  "total_images": 2195,
+  "total_boxes": 4926,
+  "model_architecture": "YOLO11n",
+  "parameters": 2582347,
+  "gflops": 6.4,
+  "val_metrics": {
+    "precision": 0.5972,
+    "recall": 0.5446,
+    "map50": 0.5771,
+    "map50_95": 0.2925
+  },
+  "test_metrics": {
+    "precision": 0.8034,
+    "recall": 0.6957,
+    "map50": 0.7715,
+    "map50_95": 0.4964
+  },
+  "baseline_comparison": {
+    "baseline_recall": 0.6522,
+    "new_recall": 0.6957,
+    "recall_delta": 0.04349999999999998,
+    "baseline_map50": 0.7926,
+    "new_map50": 0.7715,
+    "map50_delta": -0.021100000000000008
+  },
+  "edge_hardware": {
+    "pt_size_mb": 5.219324111938477,
+    "onnx_size_mb": 10.113301277160645,
+    "gpu_latency_ms": 8.653521537780762,
+    "gpu_fps": 115.55989034453307,
+    "cpu_latency_ms": 144.3192958831787,
+    "cpu_fps": 6.929080369193764
+  }
+}

@@ -1,0 +1,3 @@
+experiment_id,dataset_version,model,epochs,imgsz,batch,optimizer,learning_rate,seed,precision,recall,mAP50,mAP50-95,model_size_mb,inference_latency_cpu_ms,notes
+EXP_001_BASELINE,potholes_final_v1 (Andrew MVD 665),YOLO11n,50,640,16,auto,auto,42,0.8959,0.6522,0.7926,0.5108,5.40 MB,35.2 ms,Historical baseline trained on 665 Andrew MVD images
+EXP_002_YOLO11N_RDD_V2,"potholes_rdd2022_merged_v2 (2,195 images)",YOLO11n,50,640,16,auto (AdamW),0.002,42,0.8034,0.6957,0.7715,0.4964,5.22 MB,144.32 ms,"Clean RDD2022 India D40 merged; Recall improved from 65.22% to 69.57% (+0.0435), mAP50=0.7715"

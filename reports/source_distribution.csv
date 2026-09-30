@@ -1,0 +1,4 @@
+source,train_images,val_images,test_images,total_images,total_boxes
+andrewmvd,532,66,67,665,1739
+rdd2022_india,1301,229,0,1530,3187
+total,1833,295,67,2195,4926
