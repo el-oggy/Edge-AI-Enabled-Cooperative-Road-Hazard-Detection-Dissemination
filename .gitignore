@@ -31,10 +31,10 @@ data_traning/archive.zip
 *.engine
 
 # Allow our trained weights and ONNX models
-!models/*.pt
-!models/*.onnx
-!data_traning/trained_model*/*.pt
-!data_traning/trained_model*/*.onnx
+!models/**/*.pt
+!models/**/*.onnx
+!model_training/**/*.pt
+!model_training/**/*.onnx
 
 # Training artifacts
 runs/

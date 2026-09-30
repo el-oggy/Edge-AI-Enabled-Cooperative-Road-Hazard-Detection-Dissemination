@@ -1,4 +1,0 @@
-<routes>
-    <!-- We use the "crawling_truck" vType defined in obstacles.add.xml -->
-    <trip id="slow_truck" type="crawling_truck" depart="20" departLane="1" departPos="10" from="1076543279#0" to="1055380164#2"/>
-</routes>

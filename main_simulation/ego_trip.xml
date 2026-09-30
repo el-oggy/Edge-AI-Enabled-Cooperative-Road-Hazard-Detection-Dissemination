@@ -1,6 +1,0 @@
-<routes>
-    <!-- Define the ego trip starting at time 0 -->
-    <!-- We picked a long edge (1076543279#0) for the ego vehicle to start on.
-         The ego vehicle uses the "ego_type" we defined in vtypes.add.xml. -->
-    <trip id="ego" type="ego_type" depart="0" departLane="best" departSpeed="max" from="1076543279#0" to="1055380164#2"/>
-</routes>
