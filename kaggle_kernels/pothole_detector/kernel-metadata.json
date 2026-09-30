@@ -9,6 +9,7 @@
   "enable_tpu": "false",
   "enable_internet": "true",
   "dataset_sources": [
+    "muskanverma24/pothole-detection-dataset-yolov11-optimized",
     "andrewmvd/pothole-detection",
     "jee1oner/dashcam-pov-potholes-and-barricades-for-yolo26n"
   ]
