@@ -1,0 +1,11 @@
+{
+  "id": "adarshswarupmaharana/test-kaggle-env",
+  "title": "Test Kaggle Env",
+  "code_file": "test_env.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true"
+}

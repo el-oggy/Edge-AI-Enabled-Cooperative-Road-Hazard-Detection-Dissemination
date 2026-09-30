@@ -1,0 +1,15 @@
+{
+  "id": "adarshswarupmaharana/pothole-hazard-detector-boost",
+  "title": "Pothole Hazard Detector Boost",
+  "code_file": "train_pothole_boost.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "andrewmvd/pothole-detection",
+    "jee1oner/dashcam-pov-potholes-and-barricades-for-yolo26n"
+  ]
+}

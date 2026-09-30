@@ -1,0 +1,17 @@
+{
+  "model": "YOLO11n",
+  "hazard": "construction_hazard",
+  "train_images": 963,
+  "val_images": 120,
+  "test_images": 122,
+  "epochs": 35,
+  "precision": 0.8983540032471639,
+  "recall": 0.7733396363352143,
+  "map50": 0.8919673024577239,
+  "map50_95": 0.6071140612178928,
+  "pt_size_mb": 5.217432022094727,
+  "onnx_size_mb": 10.11328411102295,
+  "int8_size_mb": 2.874134063720703,
+  "compression_ratio": 3.5187238614509244,
+  "total_time_minutes": 15.306471979618072
+}
