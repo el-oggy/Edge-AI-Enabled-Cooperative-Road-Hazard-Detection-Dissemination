@@ -1,17 +1,27 @@
 {
-  "model": "YOLO11n_Boosted",
+  "model": "YOLO11n_Pothole_85Plus",
+  "target_hardware": "PYNQ-Z2 (Zynq-7000 XC7Z020) & Raspberry Pi 3",
   "hazard": "pothole",
-  "train_images": 2509,
-  "val_images": 305,
-  "test_images": 315,
-  "epochs": 50,
-  "precision": 0.7955789849121255,
-  "recall": 0.7185104052573932,
-  "map50": 0.7947703171815564,
-  "map50_95": 0.521677767046118,
-  "pt_size_mb": 5.218469619750977,
-  "onnx_size_mb": 10.113280296325684,
-  "int8_size_mb": 2.8741302490234375,
-  "compression_ratio": 3.518727204434086,
-  "total_time_minutes": 40.44384015798569
+  "total_images": 7066,
+  "train_images": 5652,
+  "val_images": 706,
+  "test_images": 708,
+  "epochs": 60,
+  "precision_standard": 0.8618360696185088,
+  "recall_standard": 0.8277310924369747,
+  "map50": 0.8931688099667494,
+  "map50_95": 0.6119033549989246,
+  "operational_conf_25": {
+    "precision": 0.8618360696185088,
+    "recall": 0.8277310924369747
+  },
+  "operational_conf_35": {
+    "precision": 0.8557483731019523,
+    "recall": 0.8287815126050421
+  },
+  "pt_size_mb": 5.204553604125977,
+  "onnx_size_mb": 10.113285064697266,
+  "int8_size_mb": 2.8741350173950195,
+  "compression_ratio": 3.5187230257065205,
+  "total_time_minutes": 81.61455830732982
 }
