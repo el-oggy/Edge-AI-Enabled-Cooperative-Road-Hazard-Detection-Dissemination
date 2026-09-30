@@ -40,6 +40,7 @@ data_traning/archive.zip
 runs/
 wandb/
 .cache/
+kaggle_kernels/**/output/
 
 # OS
 .DS_Store

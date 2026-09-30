@@ -44,10 +44,13 @@ python edge_pi3_inference.py \
 
 ---
 
-## 📊 Benchmark Metrics (Held-out Frozen Test Split)
+## 📊 Benchmark Metrics (Boosted 3,126-Image Test Split)
 
-- **Recall**: **69.57%** (112 true hazard detections / 161 ground-truth potholes)
-- **Precision**: **80.34%** (Only 27 false alarms across 67 diverse road test images)
-- **mAP@50**: **77.15%**
-- **mAP@50-95**: **49.64%**
-- **Compression Ratio**: **3.52x reduction** (10.11 MB $\to$ 2.87 MB)
+- **Dataset Scale**: 3,126 total road scenes (2,509 Train, 305 Val, 315 Held-out Test) combining Andrew MVD + Hyderabad Dashcam + 171 clean hard-negative road images.
+- **Precision**: **79.56%**
+- **Recall**: **71.85%**
+- **mAP@50**: **79.48%** (Highest overall detection accuracy)
+- **mAP@50-95**: **52.17%**
+- **Model Parameters**: 2.58M (6.4 GFLOPs)
+- **INT8 File Size**: **2.87 MB** (3.52x compression from 10.11 MB FP32)
+- **Target Hardware**: Raspberry Pi 3 Model B (ARM Cortex-A53 via ARM NEON SIMD) & compatible edge devices.
