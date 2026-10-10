@@ -1,7 +1,7 @@
 {
   "id": "adarshswarupmaharana/construction-hazard-detector",
   "title": "Construction Hazard Detector",
-  "code_file": "train_construction.py",
+  "code_file": "train_construction_95plus.py",
   "language": "python",
   "kernel_type": "script",
   "is_private": true,
