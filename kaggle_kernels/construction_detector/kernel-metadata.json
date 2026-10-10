@@ -4,11 +4,13 @@
   "code_file": "train_construction.py",
   "language": "python",
   "kernel_type": "script",
-  "is_private": "true",
-  "enable_gpu": "true",
-  "enable_tpu": "false",
-  "enable_internet": "true",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
   "dataset_sources": [
-    "jee1oner/dashcam-pov-potholes-and-barricades-for-yolo26n"
+    "abtinzandi/obstacle-detection-dataset",
+    "jee1oner/dashcam-pov-potholes-and-barricades-for-yolo26n",
+    "snehilsanyal/construction-site-safety-image-dataset-roboflow"
   ]
 }

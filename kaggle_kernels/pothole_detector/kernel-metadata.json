@@ -4,13 +4,15 @@
   "code_file": "train_pothole_boost.py",
   "language": "python",
   "kernel_type": "script",
-  "is_private": "true",
-  "enable_gpu": "true",
-  "enable_tpu": "false",
-  "enable_internet": "true",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
   "dataset_sources": [
     "muskanverma24/pothole-detection-dataset-yolov11-optimized",
     "andrewmvd/pothole-detection",
-    "jee1oner/dashcam-pov-potholes-and-barricades-for-yolo26n"
+    "jee1oner/dashcam-pov-potholes-and-barricades-for-yolo26n",
+    "sabidrahman/pothole-cracks-and-openmanhole",
+    "vidishbijalwan/rdd2022-india-pothole-d40"
   ]
 }
