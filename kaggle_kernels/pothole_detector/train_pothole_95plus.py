@@ -205,9 +205,9 @@ train_args = {
     "weight_decay": 0.0005,
     "warmup_epochs": 3,
     "box": 8.5,               # Higher weight for precise bounding box boundaries
-    "cls": 0.8,
+    "cls": 1.25,              # Heavily penalizes false positive class predictions
     "dfl": 1.8,               # Distribution Focal Loss for jagged contours
-    "close_mosaic": 10,       # Turn off mosaic last 10 epochs for realistic edge alignment
+    "close_mosaic": 12,       # Turn off mosaic last 12 epochs for clean road context
     "patience": 15,
     "exist_ok": True,
     "verbose": True

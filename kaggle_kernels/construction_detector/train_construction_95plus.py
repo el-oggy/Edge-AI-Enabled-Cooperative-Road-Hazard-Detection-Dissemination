@@ -168,9 +168,9 @@ train_args = {
     "weight_decay": 0.0005,
     "warmup_epochs": 3,
     "box": 8.5,
-    "cls": 1.0,
+    "cls": 1.30,              # Boost classification penalty to crush false alarms on workzones
     "dfl": 1.8,
-    "close_mosaic": 10,
+    "close_mosaic": 12,       # Turn off mosaic for final 12 epochs to preserve real traffic boundaries
     "project": project_dir,
     "name": exp_name,
     "exist_ok": True,
