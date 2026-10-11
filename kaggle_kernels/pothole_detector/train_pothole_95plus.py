@@ -202,12 +202,13 @@ train_args = {
     "optimizer": "AdamW",
     "lr0": 0.0012,
     "lrf": 0.01,
+    "cos_lr": True,           # Cosine learning rate scheduling for flat minima convergence
     "weight_decay": 0.0005,
     "warmup_epochs": 3,
-    "box": 8.5,               # Higher weight for precise bounding box boundaries
-    "cls": 1.25,              # Heavily penalizes false positive class predictions
-    "dfl": 1.8,               # Distribution Focal Loss for jagged contours
-    "close_mosaic": 12,       # Turn off mosaic last 12 epochs for clean road context
+    "box": 8.5,               # Strict bounding box localization
+    "cls": 1.40,              # Maximum classification penalty to crush remaining false positives
+    "dfl": 1.8,               # Distribution Focal Loss for sub-pixel edges
+    "close_mosaic": 12,       # Clean road context for final 12 epochs
     "patience": 15,
     "exist_ok": True,
     "verbose": True
@@ -217,10 +218,10 @@ results = model.train(**train_args)
 best_pt = Path(project_dir) / exp_name / "weights" / "best.pt"
 print(f"\nTraining completed! Best PyTorch weights: {best_pt}")
 
-# Evaluation & Export
-print("\n=== Evaluating on Test Split ===")
+# Evaluation & Export with Test-Time Augmentation (TTA)
+print("\n=== Evaluating on Test Split with Test-Time Augmentation (TTA) ===")
 eval_model = YOLO(str(best_pt))
-test_metrics = eval_model.val(data=str(yaml_path), split="test", imgsz=768, project=project_dir, name="test_eval", exist_ok=True)
+test_metrics = eval_model.val(data=str(yaml_path), split="test", imgsz=768, augment=True, project=project_dir, name="test_eval", exist_ok=True)
 
 precision = float(test_metrics.box.mp)
 recall = float(test_metrics.box.mr)

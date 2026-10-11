@@ -165,12 +165,13 @@ train_args = {
     "optimizer": "AdamW",
     "lr0": 0.0015,
     "lrf": 0.01,
+    "cos_lr": True,           # Smooth cosine learning rate decay
     "weight_decay": 0.0005,
     "warmup_epochs": 3,
     "box": 8.5,
-    "cls": 1.30,              # Boost classification penalty to crush false alarms on workzones
+    "cls": 1.40,              # Max classification penalty for barricades & cones
     "dfl": 1.8,
-    "close_mosaic": 12,       # Turn off mosaic for final 12 epochs to preserve real traffic boundaries
+    "close_mosaic": 12,       # Clean boundary frames for final 12 epochs
     "project": project_dir,
     "name": exp_name,
     "exist_ok": True,
@@ -182,7 +183,7 @@ best_pt = Path(project_dir) / exp_name / "weights" / "best.pt"
 print(f"\nTraining completed! Best PyTorch weights: {best_pt}")
 
 eval_model = YOLO(str(best_pt))
-test_metrics = eval_model.val(data=str(yaml_path), split="test", imgsz=768, project=project_dir, name="test_eval", exist_ok=True)
+test_metrics = eval_model.val(data=str(yaml_path), split="test", imgsz=768, augment=True, project=project_dir, name="test_eval", exist_ok=True)
 
 precision = float(test_metrics.box.mp)
 recall = float(test_metrics.box.mr)
