@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <!-- Main Corridor Nodes -->
+    <node id="N_entry" x="0.0" y="0.0" type="priority"/>
+    <node id="TL_01" x="300.0" y="0.0" type="traffic_light"/>
+    <node id="TL_02" x="800.0" y="0.0" type="traffic_light"/>
+    <node id="N_exit" x="1000.0" y="0.0" type="priority"/>
+
+    <!-- Cross Street 1 Nodes (at 300m) -->
+    <node id="N_cross1_north" x="300.0" y="100.0" type="priority"/>
+    <node id="N_cross1_south" x="300.0" y="-100.0" type="priority"/>
+
+    <!-- Cross Street 2 Nodes (at 800m) -->
+    <node id="N_cross2_north" x="800.0" y="100.0" type="priority"/>
+    <node id="N_cross2_south" x="800.0" y="-100.0" type="priority"/>
+</nodes>

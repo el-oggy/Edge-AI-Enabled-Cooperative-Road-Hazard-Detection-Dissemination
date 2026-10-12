@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <!-- ================================================================ -->
+    <!--  VEHICLE TYPES                                                   -->
+    <!-- ================================================================ -->
+
+    <!-- Standard connected car (blue) — can detect + receive V2X -->
+    <vType id="car_connected" accel="2.6" decel="4.5" sigma="0.3" length="4.8"
+           minGap="2.5" maxSpeed="13.89" color="60,140,255"
+           lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.5"/>
+
+    <!-- Ambient / background traffic (light gray) -->
+    <vType id="car_ambient" accel="2.2" decel="4.0" sigma="0.5" length="4.5"
+           minGap="2.5" maxSpeed="13.89" color="200,200,200"
+           lcStrategic="0.8" lcCooperative="0.5"/>
+
+    <!-- Bus (large, slow, dark blue) -->
+    <vType id="bus" accel="1.2" decel="3.5" sigma="0.3" length="12.0"
+           minGap="3.0" maxSpeed="11.11" color="30,60,130"
+           guiShape="bus"/>
+
+    <!-- Truck (medium speed, dark) -->
+    <vType id="truck" accel="1.5" decel="3.8" sigma="0.4" length="8.0"
+           minGap="3.5" maxSpeed="12.50" color="80,80,100"
+           guiShape="truck"/>
+
+    <!-- ================================================================ -->
+    <!--  ROUTES                                                          -->
+    <!-- ================================================================ -->
+
+    <route id="corridor_we"  edges="edge_1 edge_2 edge_3"/>
+    <route id="corridor_ew"  edges="edge_3_rev edge_2_rev edge_1_rev"/>
+    <route id="cross1_ns"    edges="cross1_in_n cross1_out_s"/>
+    <route id="cross1_sn"    edges="cross1_in_s cross1_out_n"/>
+    <route id="cross2_ns"    edges="cross2_in_n cross2_out_s"/>
+    <route id="cross2_sn"    edges="cross2_in_s cross2_out_n"/>
+
+    <!-- ================================================================ -->
+    <!--  CONTINUOUS TRAFFIC FLOWS (sorted chronologically)               -->
+    <!-- ================================================================ -->
+
+    <!-- Main corridor W→E: Connected vehicles (our subjects) every 8s -->
+    <flow id="main_connected" type="car_connected" route="corridor_we"
+          begin="0.0" end="3600.0" period="8.0"
+          departLane="0" departSpeed="11.11"/>
+
+    <!-- Oncoming traffic E→W: Ambient cars every 10s -->
+    <flow id="oncoming" type="car_ambient" route="corridor_ew"
+          begin="2.0" end="3600.0" period="10.0"
+          departLane="random" departSpeed="11.11"/>
+
+    <!-- Cross street 1 traffic: North→South every 18s -->
+    <flow id="cross1_flow_ns" type="car_ambient" route="cross1_ns"
+          begin="5.0" end="3600.0" period="18.0"
+          departSpeed="9.72"/>
+
+    <!-- Cross street 1 traffic: South→North every 22s -->
+    <flow id="cross1_flow_sn" type="car_ambient" route="cross1_sn"
+          begin="8.0" end="3600.0" period="22.0"
+          departSpeed="9.72"/>
+
+    <!-- Cross street 2 traffic: North→South every 20s -->
+    <flow id="cross2_flow_ns" type="car_ambient" route="cross2_ns"
+          begin="10.0" end="3600.0" period="20.0"
+          departSpeed="9.72"/>
+
+    <!-- Cross street 2 traffic: South→North every 25s -->
+    <flow id="cross2_flow_sn" type="car_ambient" route="cross2_sn"
+          begin="12.0" end="3600.0" period="25.0"
+          departSpeed="9.72"/>
+
+    <!-- Occasional bus on the main corridor -->
+    <flow id="bus_flow" type="bus" route="corridor_we"
+          begin="15.0" end="3600.0" period="60.0"
+          departLane="0" departSpeed="9.72"/>
+
+    <!-- Occasional truck on the main corridor -->
+    <flow id="truck_flow" type="truck" route="corridor_we"
+          begin="20.0" end="3600.0" period="45.0"
+          departLane="0" departSpeed="10.0"/>
+
+</routes>

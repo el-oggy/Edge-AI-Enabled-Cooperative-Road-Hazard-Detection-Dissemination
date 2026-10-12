@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <!-- Main Corridor (West to East) -->
+    <edge id="edge_1" from="N_entry" to="TL_01" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="edge_2" from="TL_01" to="TL_02" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="edge_3" from="TL_02" to="N_exit" numLanes="2" speed="13.89" priority="3"/>
+
+    <!-- Main Corridor Reverse (East to West) -->
+    <edge id="edge_3_rev" from="N_exit" to="TL_02" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="edge_2_rev" from="TL_02" to="TL_01" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="edge_1_rev" from="TL_01" to="N_entry" numLanes="2" speed="13.89" priority="3"/>
+
+    <!-- Cross Street 1 -->
+    <edge id="cross1_in_n" from="N_cross1_north" to="TL_01" numLanes="1" speed="11.11" priority="2"/>
+    <edge id="cross1_out_s" from="TL_01" to="N_cross1_south" numLanes="1" speed="11.11" priority="2"/>
+    <edge id="cross1_in_s" from="N_cross1_south" to="TL_01" numLanes="1" speed="11.11" priority="2"/>
+    <edge id="cross1_out_n" from="TL_01" to="N_cross1_north" numLanes="1" speed="11.11" priority="2"/>
+
+    <!-- Cross Street 2 -->
+    <edge id="cross2_in_n" from="N_cross2_north" to="TL_02" numLanes="1" speed="11.11" priority="2"/>
+    <edge id="cross2_out_s" from="TL_02" to="N_cross2_south" numLanes="1" speed="11.11" priority="2"/>
+    <edge id="cross2_in_s" from="N_cross2_south" to="TL_02" numLanes="1" speed="11.11" priority="2"/>
+    <edge id="cross2_out_n" from="TL_02" to="N_cross2_north" numLanes="1" speed="11.11" priority="2"/>
+</edges>

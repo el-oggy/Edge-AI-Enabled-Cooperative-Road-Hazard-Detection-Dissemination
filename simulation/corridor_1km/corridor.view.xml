@@ -1,0 +1,10 @@
+<viewsettings>
+    <!-- Use SUMO's realistic road coloring scheme -->
+    <scheme name="real world"/>
+
+    <!-- Camera: center on middle of the 1km corridor, zoom for good overview -->
+    <viewport zoom="350.0" x="500.0" y="100.0" angle="0.0"/>
+
+    <!-- Slow enough to watch vehicles react (50ms per step = ~20 FPS visual) -->
+    <delay value="40"/>
+</viewsettings>

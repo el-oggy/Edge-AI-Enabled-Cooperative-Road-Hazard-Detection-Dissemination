@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <!-- ================================================================ -->
+    <!--  VISUAL ROADSIDE ENVIRONMENT  (green strips, sidewalks, etc.)    -->
+    <!-- ================================================================ -->
+
+    <!-- Grass strip on the south side of the corridor -->
+    <poly id="grass_south" type="landuse.grass" color="80,160,60,200" fill="true" layer="1"
+          shape="0.00,85.00 1000.00,85.00 1000.00,90.00 0.00,90.00"/>
+    <!-- Grass strip on the north side of the corridor -->
+    <poly id="grass_north" type="landuse.grass" color="80,160,60,200" fill="true" layer="1"
+          shape="0.00,110.00 1000.00,110.00 1000.00,115.00 0.00,115.00"/>
+
+    <!-- Sidewalk south -->
+    <poly id="sidewalk_south" type="sidewalk" color="190,190,180,220" fill="true" layer="2"
+          shape="0.00,82.00 1000.00,82.00 1000.00,85.00 0.00,85.00"/>
+    <!-- Sidewalk north -->
+    <poly id="sidewalk_north" type="sidewalk" color="190,190,180,220" fill="true" layer="2"
+          shape="0.00,115.00 1000.00,115.00 1000.00,118.00 0.00,118.00"/>
+
+    <!-- ================================================================ -->
+    <!--  BUILDINGS ALONG THE CORRIDOR  (gives a real-street look)       -->
+    <!-- ================================================================ -->
+
+    <!-- South side buildings -->
+    <poly id="bldg_s1" type="building" color="160,140,120,200" fill="true" layer="3"
+          shape="20.00,65.00 80.00,65.00 80.00,80.00 20.00,80.00"/>
+    <poly id="bldg_s2" type="building" color="140,130,115,200" fill="true" layer="3"
+          shape="120.00,65.00 220.00,65.00 220.00,80.00 120.00,80.00"/>
+    <poly id="bldg_s3" type="building" color="155,140,120,200" fill="true" layer="3"
+          shape="360.00,65.00 460.00,65.00 460.00,80.00 360.00,80.00"/>
+    <poly id="bldg_s4" type="building" color="145,135,125,200" fill="true" layer="3"
+          shape="520.00,65.00 620.00,65.00 620.00,80.00 520.00,80.00"/>
+    <poly id="bldg_s5" type="building" color="160,145,130,200" fill="true" layer="3"
+          shape="700.00,65.00 750.00,65.00 750.00,80.00 700.00,80.00"/>
+    <poly id="bldg_s6" type="building" color="150,138,122,200" fill="true" layer="3"
+          shape="850.00,65.00 980.00,65.00 980.00,80.00 850.00,80.00"/>
+
+    <!-- North side buildings -->
+    <poly id="bldg_n1" type="building" color="150,135,115,200" fill="true" layer="3"
+          shape="30.00,120.00 100.00,120.00 100.00,138.00 30.00,138.00"/>
+    <poly id="bldg_n2" type="building" color="165,150,130,200" fill="true" layer="3"
+          shape="160.00,120.00 260.00,120.00 260.00,140.00 160.00,140.00"/>
+    <poly id="bldg_n3" type="building" color="145,130,110,200" fill="true" layer="3"
+          shape="380.00,120.00 480.00,120.00 480.00,135.00 380.00,135.00"/>
+    <poly id="bldg_n4" type="building" color="155,142,125,200" fill="true" layer="3"
+          shape="560.00,120.00 650.00,120.00 650.00,140.00 560.00,140.00"/>
+    <poly id="bldg_n5" type="building" color="148,135,118,200" fill="true" layer="3"
+          shape="720.00,120.00 780.00,120.00 780.00,138.00 720.00,138.00"/>
+    <poly id="bldg_n6" type="building" color="160,148,130,200" fill="true" layer="3"
+          shape="860.00,120.00 960.00,120.00 960.00,140.00 860.00,140.00"/>
+
+    <!-- ================================================================ -->
+    <!--  RSU (ROADSIDE UNIT) STATION MARKER                              -->
+    <!-- ================================================================ -->
+
+    <!-- RSU station marker - Blue diamond at x=500m on the south sidewalk -->
+    <poi id="RSU_ZONE_01" type="RSU" color="0,180,255,255" layer="25"
+         x="500.0" y="83.0" width="5.0" height="5.0"/>
+
+    <!-- RSU label text (positioned slightly above) -->
+    <poi id="RSU_label" type="text" color="0,150,220,255" layer="26"
+         x="500.0" y="79.0" width="3.0" height="3.0"/>
+
+    <!-- ================================================================ -->
+    <!--  HAZARD 1: POTHOLE — on edge_2 Lane 0 (x≈650m, just past TL_01) -->
+    <!-- ================================================================ -->
+
+    <!-- Pothole damage zone - dark irregular patch on road surface -->
+    <poly id="pothole_zone" type="road_damage" color="60,40,30,200" fill="true" layer="10"
+          shape="647.00,96.00 653.00,96.00 654.00,98.00 651.00,99.00 647.00,98.50"/>
+    <!-- Red warning triangle POI above the pothole -->
+    <poi id="HAZARD_POTHOLE" type="pothole" color="255,50,50,255" layer="20"
+         x="650.0" y="95.0" width="4.0" height="4.0"/>
+
+    <!-- ================================================================ -->
+    <!--  HAZARD 2: CONSTRUCTION ZONE — on edge_2 Lane 0 (x≈550m)       -->
+    <!-- ================================================================ -->
+
+    <!-- Orange construction zone strip overlay on lane 0 -->
+    <poly id="construction_zone" type="construction" color="255,140,0,160" fill="true" layer="10"
+          shape="545.00,95.50 575.00,95.50 575.00,99.00 545.00,99.00"/>
+    <!-- Construction barrier markings - diagonal stripes simulated -->
+    <poly id="construction_barrier_1" type="barrier" color="255,200,0,200" fill="true" layer="11"
+          shape="544.00,94.50 546.00,94.50 546.00,99.50 544.00,99.50"/>
+    <poly id="construction_barrier_2" type="barrier" color="255,200,0,200" fill="true" layer="11"
+          shape="575.00,94.50 577.00,94.50 577.00,99.50 575.00,99.50"/>
+    <!-- Orange diamond POI for construction hazard -->
+    <poi id="HAZARD_CONSTRUCTION" type="construction" color="255,165,0,255" layer="20"
+         x="560.0" y="93.0" width="4.0" height="4.0"/>
+
+    <!-- ================================================================ -->
+    <!--  HAZARD 3: ACCIDENT/OBSTACLE — on edge_2 Lane 0 (x≈730m)       -->
+    <!-- ================================================================ -->
+
+    <!-- Debris/obstacle patches on road surface -->
+    <poly id="accident_debris_1" type="debris" color="90,60,40,200" fill="true" layer="10"
+          shape="728.00,96.50 734.00,96.00 735.00,98.00 730.00,99.00 727.50,98.00"/>
+    <poly id="accident_debris_2" type="debris" color="80,50,35,180" fill="true" layer="10"
+          shape="732.00,97.00 736.00,97.50 735.50,99.00 731.50,98.50"/>
+    <!-- Red circle POI for accident/obstacle -->
+    <poi id="HAZARD_ACCIDENT" type="accident" color="200,0,0,255" layer="20"
+         x="731.0" y="94.0" width="4.5" height="4.5"/>
+
+    <!-- ================================================================ -->
+    <!--  DISTANCE MARKERS (every 200m along the road)                   -->
+    <!-- ================================================================ -->
+
+    <poi id="marker_0m"    type="distance" color="100,100,100,150" layer="5" x="0.0"    y="88.0" width="1.5" height="1.5"/>
+    <poi id="marker_200m"  type="distance" color="100,100,100,150" layer="5" x="200.0"  y="88.0" width="1.5" height="1.5"/>
+    <poi id="marker_400m"  type="distance" color="100,100,100,150" layer="5" x="400.0"  y="88.0" width="1.5" height="1.5"/>
+    <poi id="marker_600m"  type="distance" color="100,100,100,150" layer="5" x="600.0"  y="88.0" width="1.5" height="1.5"/>
+    <poi id="marker_800m"  type="distance" color="100,100,100,150" layer="5" x="800.0"  y="88.0" width="1.5" height="1.5"/>
+    <poi id="marker_1000m" type="distance" color="100,100,100,150" layer="5" x="1000.0" y="88.0" width="1.5" height="1.5"/>
+
+</additional>
