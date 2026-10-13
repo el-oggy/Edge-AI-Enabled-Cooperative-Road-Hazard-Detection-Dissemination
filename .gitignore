@@ -6,17 +6,34 @@ __pycache__/
 venv/
 env/
 
-# Secrets
+# Secrets & Credentials
 .env
 *.key
 kaggle.json
 
-# Large simulation output data
+# Internal Documentation & Agent Memory (Do not commit markdown files to GitHub; keep only root README.md)
+*.md
+**/*.md
+!/README.md
+
+# Simulation Outputs & Temporary Trajectory Files
+outputs/
+**/outputs/
 sumo simulation/10k_vehicles_output/
 sumo simulation/outputs/
+simulation/outputs/
+simulation/corridor_1km/outputs/
 simulation_excel_data/
+*.xlsx
 
-# Large datasets & archives
+# Simulation Media & Intermediate Large Assets
+*.jpeg
+simulation/map.osm
+simulation/sumo simulation/
+satellite_highres/
+**/satellite_highres/
+
+# Large Datasets & Archives
 datasets/
 data/raw/
 data/processed/
@@ -26,7 +43,7 @@ data/processed/
 *.parquet
 data_traning/archive.zip
 
-# Model binaries
+# Model Binaries
 *.tflite
 *.engine
 
@@ -35,14 +52,16 @@ data_traning/archive.zip
 !models/**/*.onnx
 !model_training/**/*.pt
 !model_training/**/*.onnx
-!quantization/**
+!quantization/*.onnx
+!quantization/**/*.onnx
 
-# Training artifacts
+# Training Artifacts
 runs/
 wandb/
 .cache/
 kaggle_kernels/**/output/
+tmp_*/
 
-# OS
+# OS Artifacts
 .DS_Store
 Thumbs.db

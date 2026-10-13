@@ -1,7 +1,0 @@
-.venv/
-.agents/
-outputs/
-*.jpeg
-map.osm
-satellite_highres/
-
