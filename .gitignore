@@ -16,6 +16,8 @@ kaggle.json
 **/*.md
 !/README.md
 !docs/**/*.md
+!.agents/skills/**/*.md
+
 
 # Simulation Outputs & Temporary Trajectory Files
 outputs/

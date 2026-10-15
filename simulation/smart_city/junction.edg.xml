@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <!-- Approach edges to junction J0 -->
+    <edge id="N2J0" from="N" to="J0" priority="2" numLanes="2" speed="11.11"/>
+    <edge id="J02N" from="J0" to="N" priority="2" numLanes="2" speed="11.11"/>
+
+    <edge id="S2J0" from="S" to="J0" priority="2" numLanes="2" speed="11.11"/>
+    <edge id="J02S" from="J0" to="S" priority="2" numLanes="2" speed="11.11"/>
+
+    <edge id="E2J0" from="E" to="J0" priority="2" numLanes="2" speed="11.11"/>
+    <edge id="J02E" from="J0" to="E" priority="2" numLanes="2" speed="11.11"/>
+
+    <edge id="W2J0" from="W" to="J0" priority="2" numLanes="2" speed="11.11"/>
+    <edge id="J02W" from="J0" to="W" priority="2" numLanes="2" speed="11.11"/>
+
+    <!-- Circulation connectors between endpoints to enable infinite continuous flow -->
+    <edge id="N_turn" from="N" to="N" priority="1" numLanes="1" speed="8.33" shape="0.0,250.0 20.0,270.0 -20.0,270.0 0.0,250.0"/>
+    <edge id="S_turn" from="S" to="S" priority="1" numLanes="1" speed="8.33" shape="0.0,-250.0 20.0,-270.0 -20.0,-270.0 0.0,-250.0"/>
+    <edge id="E_turn" from="E" to="E" priority="1" numLanes="1" speed="8.33" shape="250.0,0.0 270.0,20.0 270.0,-20.0 250.0,0.0"/>
+    <edge id="W_turn" from="W" to="W" priority="1" numLanes="1" speed="8.33" shape="-250.0,0.0 -270.0,20.0 -270.0,-20.0 -250.0,0.0"/>
+</edges>
