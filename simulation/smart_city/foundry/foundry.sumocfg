@@ -3,8 +3,10 @@
     <input>
         <net-file value="foundry.net.xml"/>
         <route-files value="foundry.rou.xml"/>
+        <additional-files value="foundry_buildings.add.xml"/>
         <gui-settings-file value="foundry_view.xml"/>
     </input>
+
     <time>
         <begin value="0"/>
         <end value="3600"/>
