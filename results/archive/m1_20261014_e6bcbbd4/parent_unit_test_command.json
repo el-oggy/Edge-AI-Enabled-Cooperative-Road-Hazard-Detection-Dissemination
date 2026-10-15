@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+  "exit_code": 1
+}

@@ -1,0 +1,27 @@
+usage: edge_rpi_hazard_inference.py [-h] [--model MODEL] [--image IMAGE]
+                                    [--conf CONF] [--iou IOU]
+                                    [--rsu-id RSU_ID] [--json-out JSON_OUT]
+                                    [--output-dir OUTPUT_DIR]
+                                    [--simulate-stream] [--benchmark]
+                                    [--iterations ITERATIONS]
+                                    [--warmup WARMUP]
+                                    [--intra-op-threads INTRA_OP_THREADS]
+
+Edge road-hazard ONNX image inference
+
+options:
+  -h, --help            show this help message and exit
+  --model MODEL
+  --image IMAGE         Run genuine single-image ONNX inference
+  --conf CONF
+  --iou IOU
+  --rsu-id RSU_ID
+  --json-out JSON_OUT   Save a JSON record to a new path
+  --output-dir OUTPUT_DIR
+                        Save unique raw output, annotation, and JSON evidence
+  --simulate-stream     Run an explicitly synthetic tracker demonstration
+  --benchmark           Benchmark ONNX inference on an image or synthetic zero
+                        tensor
+  --iterations ITERATIONS
+  --warmup WARMUP
+  --intra-op-threads INTRA_OP_THREADS

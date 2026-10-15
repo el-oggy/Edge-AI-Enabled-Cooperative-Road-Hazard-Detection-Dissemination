@@ -1,0 +1,2 @@
+[ WARN:0@0.687] global loadsave.cpp:278 cv::findDecoder imread_('data\M1_ABSENT_INPUT.png'): can't open/read file: check file path/integrity
+{"error_type": "FileNotFoundError", "error": "Image not found or unreadable: data\\M1_ABSENT_INPUT.png", "inference_result": null, "mock_fallback": false}

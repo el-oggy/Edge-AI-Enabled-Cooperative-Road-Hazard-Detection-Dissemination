@@ -1,0 +1,276 @@
+{
+  "verified_utc": "2026-10-14T22:12:42.409907+00:00",
+  "scope": "research/planning only",
+  "markdown_files": 18,
+  "local_links_checked": 44,
+  "protected_source_files": [
+    {
+      "path": "simulation\\corridor_1km\\build_corridor.py",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\corridor.add.xml",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\corridor.edg.xml",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\corridor.net.xml",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\corridor.nod.xml",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\corridor.rou.xml",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\corridor.sumocfg",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\corridor.view.xml",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\run_cooperative_v2x_sim.py",
+      "unchanged": true
+    },
+    {
+      "path": "simulation\\corridor_1km\\run_gui.bat",
+      "unchanged": true
+    },
+    {
+      "path": "src\\edge_rpi_hazard_inference.py",
+      "unchanged": true
+    },
+    {
+      "path": "src\\pfpd_perception\\model_registry.py",
+      "unchanged": true
+    },
+    {
+      "path": "src\\pfpd_perception\\temporal.py",
+      "unchanged": true
+    },
+    {
+      "path": ".agents\\rules\\memory.md",
+      "unchanged": true
+    },
+    {
+      "path": "tests\\test_m1_inference.py",
+      "unchanged": true
+    }
+  ],
+  "models_unchanged": true,
+  "geometry_proposal": {
+    "r_m": 186.2228192753457,
+    "centerline_m": 4999.999999999999,
+    "motor_lane_km": 13.82992751806759,
+    "rsu": {
+      "200": {
+        "count": 21,
+        "max_gap_m": 195.0120803220686
+      },
+      "500": {
+        "count": 13,
+        "max_gap_m": 292.5181204831029
+      }
+    }
+  },
+  "svg_station_counts": {
+    "rsu-always": 9,
+    "rsu-dense": 12,
+    "rsu-sparse": 4
+  },
+  "browser_observations": [
+    "Garden-Ring21RSU state visible",
+    "sparse13RSU selector changed visible count",
+    "Canal-and-Campus selection visible",
+    "Foundry-and-Market selection visible"
+  ],
+  "verification_limits": [
+    "Dedicated Playwright Chrome unavailable; no browser installed",
+    "IAB full-page screenshot unavailable; static SVGs rasterized and visually inspected",
+    "IAB file:// protocol blocked; only authorized HTTP preview used earlier, temporary server/tab stopped"
+  ],
+  "files": [
+    {
+      "path": "01_TECHNOLOGY_RESEARCH.md",
+      "bytes": 9417,
+      "sha256": "c073dc9bf416d486bcfbba3f862295ad1dc0f269c8206be8079bc36f1c1a3ced"
+    },
+    {
+      "path": "02_VISUAL_CONCEPTS.md",
+      "bytes": 11205,
+      "sha256": "eed83e135dfaf582bbaae6194014e5547090b5da62ba560de78d4f464cfe244d"
+    },
+    {
+      "path": "03_RECOMMENDED_ARCHITECTURE.md",
+      "bytes": 15383,
+      "sha256": "091c13027ade57d6653c1c83626c472bdd78a0c0659a156f88ca53e589c9757f"
+    },
+    {
+      "path": "04_HARDWARE_DEPLOYMENT.md",
+      "bytes": 9268,
+      "sha256": "b20942176d9ad4b9130658f03f9a68eb9e367654fcaef4cab19f782c9a65faec"
+    },
+    {
+      "path": "05_IMPLEMENTATION_ROADMAP.md",
+      "bytes": 9272,
+      "sha256": "dba1f527351b024cdd4eff73861a3e004a54aed45f1a910d4b27d39af979689a"
+    },
+    {
+      "path": "06_PROMPT_COLLECTION.md",
+      "bytes": 2426,
+      "sha256": "90c3a61f5dd3b3f32c71d6df18df534829df42faf10cc498015068bd966f716d"
+    },
+    {
+      "path": "07_DECISION_BRIEF.md",
+      "bytes": 6230,
+      "sha256": "82d5808d75ec6ae13bd32a14249461200ed0448d1c24d898da2b8b01514cae76"
+    },
+    {
+      "path": "GIT_STATUS_AT_DELIVERY.txt",
+      "bytes": 600,
+      "sha256": "11090a997fa7785ceb9567949c66e720dbfd8eea7f669d8056778e893456088d"
+    },
+    {
+      "path": "HOST_PROJECT_AUDIT.json",
+      "bytes": 7828,
+      "sha256": "b24afa5a51b38b5887ced5cb13b4d525a97b391038214e2f811687c900b1a440"
+    },
+    {
+      "path": "prompts\\COORDINATOR.md",
+      "bytes": 4627,
+      "sha256": "f72e77d32d8d3e21cfbe26c0e99b197574c6f43e151234f8a1bd048ef7c1b397"
+    },
+    {
+      "path": "prompts\\HAZARD_SCENARIOS.md",
+      "bytes": 3238,
+      "sha256": "50711047b8efa660048f51ccdb53f97c4267120162e56340b1fab03de8f34421"
+    },
+    {
+      "path": "prompts\\INTEGRATION_EVALUATION.md",
+      "bytes": 4732,
+      "sha256": "7908d8101b1a2ce5ed89fdb8b5c606af15365270ddf7870cdb9d61c366770edc"
+    },
+    {
+      "path": "prompts\\NETWORK_TRAFFIC.md",
+      "bytes": 3652,
+      "sha256": "f95865adb70c8bc82f95170a96d7eb55c15b0f505f77ed7e4a577939fcd68053"
+    },
+    {
+      "path": "prompts\\PERCEPTION.md",
+      "bytes": 4081,
+      "sha256": "14eeac21b2cdf805af33000bd9e2ce78ff8c0e56e019b9e7615ffc5590264061"
+    },
+    {
+      "path": "prompts\\RENDERER_SENSORS.md",
+      "bytes": 3637,
+      "sha256": "631c54d9e1bcccb4878b1ef50825a999bd839c8005e06e3db3fdc78b39cf444e"
+    },
+    {
+      "path": "prompts\\RSU_NETWORK.md",
+      "bytes": 3389,
+      "sha256": "ab8cfc046526f988e6dc6f35b2f4b9d549a6f5ed7857d21a13cb95d71ef46c4d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2923,
+      "sha256": "47757eeb5f12557e49fb369212dc09b06b9cbe348cfba354d3126575f1bb7d00"
+    },
+    {
+      "path": "SPECIALIST_AI_INTEGRATION.md",
+      "bytes": 34358,
+      "sha256": "282b8b73299cc3e5979a96e0b68e3f82d683c7dd65938b7c542a6438e8695964"
+    },
+    {
+      "path": "SPECIALIST_NETWORK_RSU.md",
+      "bytes": 35276,
+      "sha256": "f96cdef45829a92fbd43b8579003020322fff091affb9a69077aa48efbde0e5b"
+    },
+    {
+      "path": "SPECIALIST_RENDERING.md",
+      "bytes": 32245,
+      "sha256": "c19618d1e9d47326caf67e08919c8adf03ceb44434db3a8b86214381b86035ac"
+    },
+    {
+      "path": "VISUAL_CONCEPTS.html",
+      "bytes": 41053,
+      "sha256": "7b66d40f6615c57b46bc664c0ff48598eef84ca8642d4bc6a92c5be369878b43"
+    },
+    {
+      "path": "visuals\\canal.png",
+      "bytes": 179004,
+      "sha256": "e781b4f3e51724a149589d0e69e5ea1c1273940ceb6a8890536eb493d9f2a6c9"
+    },
+    {
+      "path": "visuals\\canal.svg",
+      "bytes": 11098,
+      "sha256": "b5a8607f1350cf9fe75d2303da4cd3f380a5bf607782233dd54a2314a6d0ad27"
+    },
+    {
+      "path": "visuals\\civic.png",
+      "bytes": 160984,
+      "sha256": "7872b3ac80374b606651d426c90fe49b95d739c809027a0d78b9f36fffef9359"
+    },
+    {
+      "path": "visuals\\civic.svg",
+      "bytes": 15157,
+      "sha256": "feaf9732c937e32f580ff844948f94bae87f20b25d11259cf244298d10a9ba16"
+    },
+    {
+      "path": "visuals\\civic_sparse.png",
+      "bytes": 158304,
+      "sha256": "28ed1c574f102d0473ec9c42ceb7988f1a09754596aa804a3a993898cf1c6ec6"
+    },
+    {
+      "path": "visuals\\civic_sparse.svg",
+      "bytes": 15183,
+      "sha256": "ac551fe239d082186a800b7ce9d5143d8385e7b155d017ee3cc12d42b64f33f2"
+    },
+    {
+      "path": "visuals\\concept_comparison.png",
+      "bytes": 494938,
+      "sha256": "c66e210c456b0d91310984a2f8065c5858c645de0ae55f489302a8297d996514"
+    },
+    {
+      "path": "visuals\\foundry.png",
+      "bytes": 156604,
+      "sha256": "c0c1f198fd3aae7cdba3e2291dfff0b8491ba7b91c047d97ca34aa727d8bb366"
+    },
+    {
+      "path": "visuals\\foundry.svg",
+      "bytes": 10557,
+      "sha256": "85c30487f78c6ebda30532d7142072b4f11a01e4d7c38a6dba1b8e6637649155"
+    }
+  ],
+  "errors": [],
+  "no_simulation_or_forward_run": true,
+  "archive_reference_snapshots": [
+    {
+      "name": "M1_IMPLEMENTATION_REPORT.md",
+      "sha256": "d97e42e56f298c11eaef1cd9b2aae49bc835ca664f14b93096050f473da26f28"
+    },
+    {
+      "name": "SUMO_SIMULATION_RESEARCH.md",
+      "sha256": "aa87b47bb6bf496749aec07b32458edde30aebc26c0a8a115397b0b3e59c186b"
+    },
+    {
+      "name": "PFPD_SIMULATION_IMPLEMENTATION_PLAN.md",
+      "sha256": "315036bcc04e8d781219d9b55132cb66f83e5aa2496f3a9fac58a3aa1b83255b"
+    },
+    {
+      "name": "SUBAGENT_SYSTEM_PROMPT.md",
+      "sha256": "fe77e6abfcd0323e3eb2b32c0eed7297439d920617ce2a42c1d46093191f43c1"
+    },
+    {
+      "name": "memory.md",
+      "sha256": "2b4a4788e3e92ef6e4f929b87f67ca54c5f55e70072b533d4e04fdaa6551dfbd"
+    }
+  ]
+}

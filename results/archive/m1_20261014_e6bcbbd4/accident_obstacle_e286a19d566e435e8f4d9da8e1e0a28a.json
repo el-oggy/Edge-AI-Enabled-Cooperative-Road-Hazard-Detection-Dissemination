@@ -1,0 +1,195 @@
+{
+  "schema_version": "pfpd.image_inference.v1",
+  "mode": "real_onnx",
+  "run_id": "e286a19d566e435e8f4d9da8e1e0a28a",
+  "created_utc": "2026-10-14T17:01:18.847958+00:00",
+  "validation_status": "SINGLE_FRAME_UNCONFIRMED",
+  "source_id": "RSU_ZONE_04",
+  "model": {
+    "source_model_id": "accident_obstacle",
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\quantization\\accident_obstacle_yolo11s_int8.onnx",
+    "sha256": "dc2985e915d44ff419d205bcae0df9fc1cfdf89960e794730b3afcb2134b96bf",
+    "raw_class_id": 0,
+    "semantic_class": "road_accident_obstacle",
+    "input_name": "images",
+    "input_shape": [
+      1,
+      3,
+      768,
+      768
+    ],
+    "input_type": "float32",
+    "output_name": "output0",
+    "metadata": {
+      "stride": "32",
+      "onnx.infer": "onnxruntime.quant",
+      "date": "2026-10-11T08:28:52.867962+00:00",
+      "description": "Ultralytics YOLO11s model trained on /kaggle/working/accident_obstacle_95plus_dataset/data.yaml",
+      "author": "Ultralytics",
+      "version": "8.4.175",
+      "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+      "docs": "https://docs.ultralytics.com",
+      "task": "detect",
+      "head": "Detect",
+      "batch": "1",
+      "imgsz": "[768, 768]",
+      "names": "{0: 'road_accident_obstacle'}",
+      "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+      "channels": "3",
+      "end2end": "False"
+    }
+  },
+  "input": {
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\data\\test_user_accident.png",
+    "sha256": "a4c9104db20cc102c26776b8f3150811f59b6271e97ce694ec720180024a8779",
+    "height": 348,
+    "width": 612,
+    "tensor_sha256": "3306a39cf44bdc6b0a78b925d13bf6a81ee683147fb7841f9b79f3d2c77e3dee",
+    "color_order": "RGB",
+    "normalization": "uint8 / 255",
+    "pad_value": 114,
+    "scale": 1.2549019607843137,
+    "left_pad": 0,
+    "top_pad": 165,
+    "right_pad": 0,
+    "bottom_pad": 166
+  },
+  "thresholds": {
+    "confidence": 0.35,
+    "nms_iou": 0.45,
+    "calibrated": false
+  },
+  "raw_prediction": {
+    "shape": [
+      1,
+      5,
+      12096
+    ],
+    "dtype": "float32",
+    "sha256": "37b87bea3cd8cc739552abcf91dac6c44d9c7b7bc709992284e1b76219d7b735",
+    "finite_values": 60480,
+    "value_count": 60480,
+    "max_class_score": 0.8863688707351685,
+    "proposals_at_threshold": 10
+  },
+  "detections": [
+    {
+      "class_id": 0,
+      "raw_class_id": 0,
+      "class_name": "road_accident_obstacle",
+      "source_model_id": "accident_obstacle",
+      "confidence": 0.8863688707351685,
+      "box": [
+        0,
+        0,
+        610,
+        346
+      ],
+      "bbox_xyxy_float": [
+        0.0,
+        0.0,
+        610.0054779052734,
+        345.5163230895996
+      ],
+      "proposal_index": 11844,
+      "status": "SINGLE_FRAME_UNCONFIRMED",
+      "persistence_hits": null
+    }
+  ],
+  "detection_count": 1,
+  "timings_ms": {
+    "asset_validation": 20.837999996729195,
+    "session_load": 407.0282999891788,
+    "decode_preprocess": 53.68000001180917,
+    "inference": 2455.9489999955986,
+    "postprocess": 0.5722000205423683,
+    "service": 2510.20120002795,
+    "total_through_postprocess": 2938.067500013858
+  },
+  "runtime": {
+    "python": "3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+    "logical_cpus": 12,
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "onnxruntime": "1.31.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "execution_mode": "ORT_SEQUENTIAL",
+    "graph_optimization": "ORT_ENABLE_ALL",
+    "hardware_scope": "actual_execution_host",
+    "physical_cpus": 6,
+    "total_ram_bytes": 7928741888,
+    "process_rss_bytes": 200654848
+  },
+  "beacon": {
+    "format": "DENM-inspired application JSON",
+    "standards_compliant": false,
+    "cdd_version": "1.3.1",
+    "transmitted": false,
+    "header": {
+      "protocolVersion": 2,
+      "messageID": 1,
+      "stationID": "RSU_ZONE_04"
+    },
+    "denm": {
+      "management": {
+        "actionID": "RSU_ZONE_04_e97c8ee8fdf24878a3d92653c7ccbc6d",
+        "detectionTime": 1791997278930,
+        "referenceTime": 1791997278930,
+        "validityDurationSec": 300,
+        "transmissionIntervalMs": 100
+      },
+      "situation": {
+        "hazardCount": 1,
+        "hazards": [
+          {
+            "hazardType": "ROAD_ACCIDENT_OBSTACLE",
+            "trackID": null,
+            "rawClassID": 0,
+            "sourceModelID": "accident_obstacle",
+            "causeCode": null,
+            "subCauseCode": null,
+            "severity": "UNASSESSED",
+            "confidence": 0.8863688707351685,
+            "persistenceFrames": null,
+            "validationStatus": "SINGLE_FRAME_UNCONFIRMED",
+            "boundingBox": [
+              0,
+              0,
+              610,
+              346
+            ],
+            "advisoryAction": "UNASSESSED",
+            "advisorySpeedKmh": null
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Single image; no temporal confirmation",
+    "Scores are not accuracy or severity",
+    "No location mapping or transport",
+    "Performance is one cold forward on this host"
+  ],
+  "artifacts": {
+    "raw_prediction": {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\m1_20261014_e6bcbbd4\\accident_obstacle_e286a19d566e435e8f4d9da8e1e0a28a.npy",
+      "sha256": "7658ca5f7a5bcff4f65fc978a539c252fb789afdc8bb810534aea4f9259eee48"
+    },
+    "annotation": {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\m1_20261014_e6bcbbd4\\accident_obstacle_e286a19d566e435e8f4d9da8e1e0a28a.jpg",
+      "sha256": "b7ea98b7ea98178e01044d684b9b58f84a4b5b5416abb1cc1a32cd82ffee6bc1"
+    },
+    "record": {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\m1_20261014_e6bcbbd4\\accident_obstacle_e286a19d566e435e8f4d9da8e1e0a28a.json"
+    }
+  }
+}

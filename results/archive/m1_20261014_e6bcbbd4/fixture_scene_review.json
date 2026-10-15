@@ -1,0 +1,24 @@
+{
+  "review_scope": "Qualitative visual scene review only; no detection outputs reviewed yet.",
+  "image_capture_provenance": "Not authenticated; local user-provided image assets.",
+  "bbox_annotations_available": false,
+  "formal_accuracy_validated": false,
+  "temporal_clip_available": false,
+  "assets": [
+    {
+      "path": "data/test_user_pothole.png",
+      "sha256": "d14162eea5808234efef53a96bf31f208eb26d2eff73ad61f48321bdc0bae3ce",
+      "observed_scene": "Visible water-filled road hole surrounded by damaged asphalt."
+    },
+    {
+      "path": "data/test_user_construction.png",
+      "sha256": "248037384d5c0781b9518ebc240f3da3d8a4cb5a7d0c839e838a38ac85f0e04c",
+      "observed_scene": "Visible sign, cone/bollard and workzone-like roadway equipment."
+    },
+    {
+      "path": "data/test_user_accident.png",
+      "sha256": "a4c9104db20cc102c26776b8f3150811f59b6271e97ce694ec720180024a8779",
+      "observed_scene": "Visible damaged cars and emergency responder at a collision scene."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "header": {
+    "protocolVersion": 2,
+    "messageID": 1,
+    "stationID": "RSU_ZONE_04"
+  },
+  "denm": {
+    "management": {
+      "actionID": "RSU_ZONE_04_1791976336133",
+      "detectionTime": 1791976336133,
+      "referenceTime": 1791976336133,
+      "validityDurationSec": 300,
+      "transmissionIntervalMs": 100
+    },
+    "situation": {
+      "hazardCount": 2,
+      "hazards": [
+        {
+          "hazardType": "CONSTRUCTION_HAZARD",
+          "trackID": 1,
+          "causeCode": 96,
+          "severity": "HIGH",
+          "confidence": 0.721,
+          "persistenceFrames": 3,
+          "boundingBox": [
+            392,
+            100,
+            493,
+            231
+          ],
+          "advisoryAction": "MERGE_ADJACENT_LANE",
+          "advisorySpeedKmh": 20
+        },
+        {
+          "hazardType": "CONSTRUCTION_HAZARD",
+          "trackID": 1,
+          "causeCode": 96,
+          "severity": "HIGH",
+          "confidence": 0.463,
+          "persistenceFrames": 3,
+          "boundingBox": [
+            70,
+            254,
+            269,
+            309
+          ],
+          "advisoryAction": "MERGE_ADJACENT_LANE",
+          "advisorySpeedKmh": 20
+        }
+      ]
+    }
+  }
+}

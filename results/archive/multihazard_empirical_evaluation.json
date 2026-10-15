@@ -1,0 +1,230 @@
+{
+  "timestamp": "2026-10-14 16:43:18",
+  "hardware_target": "Raspberry Pi 5 (Quad Cortex-A76 @ 2.4 GHz, 8GB RAM)",
+  "runtime": "ONNX Runtime CPUExecutionProvider (4 intra-op threads)",
+  "memory_profile": {
+    "baseline_ram_mb": 53.8,
+    "total_loaded_ram_mb": 107.7,
+    "overhead_ram_mb": 53.9
+  },
+  "models": [
+    {
+      "domain": "pothole",
+      "model_name": "Pothole Detector (YOLO11s INT8)",
+      "model_size_mb": 9.48,
+      "test_image": "test_user_pothole.png",
+      "resolution": "500x332",
+      "latency": {
+        "preprocess_ms": 20.1,
+        "inference_ms": 1588.8,
+        "postprocess_ms": 7.2,
+        "total_ms": 1616.0,
+        "fps": 0.62
+      },
+      "detections_count": 1,
+      "detections": [
+        {
+          "hazard_type": "POTHOLE",
+          "cause_code": 97,
+          "confidence": 0.8898110389709473,
+          "box": [
+            127,
+            142,
+            311,
+            216
+          ]
+        }
+      ],
+      "denm_beacon": {
+        "header": {
+          "protocolVersion": 2,
+          "messageID": 1,
+          "stationID": "RSU_ZONE_04"
+        },
+        "denm": {
+          "management": {
+            "actionID": "RSU_ZONE_04_1791976378160",
+            "detectionTime": 1791976378160,
+            "referenceTime": 1791976378160,
+            "validityDurationSec": 300,
+            "transmissionIntervalMs": 100
+          },
+          "situation": {
+            "hazardCount": 1,
+            "hazards": [
+              {
+                "hazardType": "POTHOLE",
+                "trackID": 1,
+                "causeCode": 97,
+                "severity": "MEDIUM",
+                "confidence": 0.89,
+                "boundingBox": [
+                  127,
+                  142,
+                  311,
+                  216
+                ],
+                "advisoryAction": "REDUCE_SPEED",
+                "advisorySpeedKmh": 25
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "domain": "construction",
+      "model_name": "Construction Zone Detector (YOLO11s INT8)",
+      "model_size_mb": 9.48,
+      "test_image": "test_user_construction.png",
+      "resolution": "625x350",
+      "latency": {
+        "preprocess_ms": 17.6,
+        "inference_ms": 2210.7,
+        "postprocess_ms": 9.1,
+        "total_ms": 2237.4,
+        "fps": 0.45
+      },
+      "detections_count": 2,
+      "detections": [
+        {
+          "hazard_type": "CONSTRUCTION_HAZARD",
+          "cause_code": 96,
+          "confidence": 0.7214339375495911,
+          "box": [
+            392,
+            100,
+            493,
+            231
+          ]
+        },
+        {
+          "hazard_type": "CONSTRUCTION_HAZARD",
+          "cause_code": 96,
+          "confidence": 0.46306827664375305,
+          "box": [
+            70,
+            254,
+            269,
+            309
+          ]
+        }
+      ],
+      "denm_beacon": {
+        "header": {
+          "protocolVersion": 2,
+          "messageID": 1,
+          "stationID": "RSU_ZONE_04"
+        },
+        "denm": {
+          "management": {
+            "actionID": "RSU_ZONE_04_1791976386626",
+            "detectionTime": 1791976386626,
+            "referenceTime": 1791976386626,
+            "validityDurationSec": 300,
+            "transmissionIntervalMs": 100
+          },
+          "situation": {
+            "hazardCount": 2,
+            "hazards": [
+              {
+                "hazardType": "CONSTRUCTION_HAZARD",
+                "trackID": 1,
+                "causeCode": 96,
+                "severity": "HIGH",
+                "confidence": 0.721,
+                "boundingBox": [
+                  392,
+                  100,
+                  493,
+                  231
+                ],
+                "advisoryAction": "MERGE_LANE",
+                "advisorySpeedKmh": 20
+              },
+              {
+                "hazardType": "CONSTRUCTION_HAZARD",
+                "trackID": 2,
+                "causeCode": 96,
+                "severity": "HIGH",
+                "confidence": 0.463,
+                "boundingBox": [
+                  70,
+                  254,
+                  269,
+                  309
+                ],
+                "advisoryAction": "MERGE_LANE",
+                "advisorySpeedKmh": 20
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "domain": "accident",
+      "model_name": "Accident & Obstacle Detector (YOLO11s INT8)",
+      "model_size_mb": 9.48,
+      "test_image": "test_user_accident.png",
+      "resolution": "612x348",
+      "latency": {
+        "preprocess_ms": 17.7,
+        "inference_ms": 2988.2,
+        "postprocess_ms": 11.4,
+        "total_ms": 3017.2,
+        "fps": 0.33
+      },
+      "detections_count": 1,
+      "detections": [
+        {
+          "hazard_type": "ROAD_ACCIDENT_OBSTACLE",
+          "cause_code": 95,
+          "confidence": 0.8863688707351685,
+          "box": [
+            0,
+            0,
+            610,
+            345
+          ]
+        }
+      ],
+      "denm_beacon": {
+        "header": {
+          "protocolVersion": 2,
+          "messageID": 1,
+          "stationID": "RSU_ZONE_04"
+        },
+        "denm": {
+          "management": {
+            "actionID": "RSU_ZONE_04_1791976398405",
+            "detectionTime": 1791976398405,
+            "referenceTime": 1791976398405,
+            "validityDurationSec": 300,
+            "transmissionIntervalMs": 100
+          },
+          "situation": {
+            "hazardCount": 1,
+            "hazards": [
+              {
+                "hazardType": "ROAD_ACCIDENT_OBSTACLE",
+                "trackID": 1,
+                "causeCode": 95,
+                "severity": "CRITICAL",
+                "confidence": 0.886,
+                "boundingBox": [
+                  0,
+                  0,
+                  610,
+                  345
+                ],
+                "advisoryAction": "MANDATORY_LANE_CHANGE",
+                "advisorySpeedKmh": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

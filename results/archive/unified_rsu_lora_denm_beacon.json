@@ -1,0 +1,88 @@
+{
+  "header": {
+    "protocolVersion": 2,
+    "messageID": 1,
+    "stationID": "RSU_GATEWAY_NODE_01",
+    "timestampMs": 1791977031439,
+    "loraModulation": {
+      "frequencyMhz": 868.1,
+      "spreadingFactor": "SF7",
+      "bandwidthKhz": 125,
+      "txPowerDbm": 14
+    }
+  },
+  "denm": {
+    "management": {
+      "actionID": "RSU_GATEWAY_1791977031439",
+      "detectionTime": 1791977031439,
+      "referenceTime": 1791977031439,
+      "validityDurationSec": 300,
+      "transmissionIntervalMs": 100
+    },
+    "situation": {
+      "totalHazardsDetected": 4,
+      "hazardList": [
+        {
+          "trackID": 1,
+          "hazardType": "POTHOLE",
+          "causeCode": 97,
+          "severity": "MEDIUM",
+          "confidence": 0.89,
+          "boundingBox": [
+            127,
+            142,
+            311,
+            216
+          ],
+          "advisoryAction": "REDUCE_SPEED",
+          "advisorySpeedKmh": 25
+        },
+        {
+          "trackID": 2,
+          "hazardType": "CONSTRUCTION_HAZARD",
+          "causeCode": 96,
+          "severity": "HIGH",
+          "confidence": 0.721,
+          "boundingBox": [
+            392,
+            100,
+            493,
+            231
+          ],
+          "advisoryAction": "MERGE_LANE",
+          "advisorySpeedKmh": 20
+        },
+        {
+          "trackID": 3,
+          "hazardType": "CONSTRUCTION_HAZARD",
+          "causeCode": 96,
+          "severity": "HIGH",
+          "confidence": 0.463,
+          "boundingBox": [
+            70,
+            254,
+            269,
+            309
+          ],
+          "advisoryAction": "MERGE_LANE",
+          "advisorySpeedKmh": 20
+        },
+        {
+          "trackID": 4,
+          "hazardType": "ROAD_ACCIDENT_OBSTACLE",
+          "causeCode": 95,
+          "severity": "CRITICAL",
+          "confidence": 0.886,
+          "boundingBox": [
+            0,
+            0,
+            610,
+            345
+          ],
+          "advisoryAction": "MANDATORY_LANE_CHANGE",
+          "advisorySpeedKmh": 0
+        }
+      ]
+    }
+  }
+}

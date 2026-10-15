@@ -11,10 +11,11 @@ env/
 *.key
 kaggle.json
 
-# Internal Documentation & Agent Memory (Do not commit markdown files to GitHub; keep only root README.md)
+# Internal Documentation & Agent Memory (Do not commit agent memory markdown files to GitHub; keep docs and root README.md)
 *.md
 **/*.md
 !/README.md
+!docs/**/*.md
 
 # Simulation Outputs & Temporary Trajectory Files
 outputs/

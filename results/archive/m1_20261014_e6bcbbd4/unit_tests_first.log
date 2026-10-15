@@ -1,0 +1,144 @@
+test_actual_reviewed_artifact_hashes_and_relative_path (test_m1_inference.IdentityAndFailureTests.test_actual_reviewed_artifact_hashes_and_relative_path) ... ok
+test_inference_exception_propagates_nonzero (test_m1_inference.IdentityAndFailureTests.test_inference_exception_propagates_nonzero) ... ok
+test_metadata_shape_and_unsafe_literal_rejected (test_m1_inference.IdentityAndFailureTests.test_metadata_shape_and_unsafe_literal_rejected) ... ok
+test_missing_image_nonzero (test_m1_inference.IdentityAndFailureTests.test_missing_image_nonzero) ... ok
+test_missing_opencv_fails_clearly (test_m1_inference.IdentityAndFailureTests.test_missing_opencv_fails_clearly) ... ok
+test_missing_runtime_nonzero_no_mock_fallback (test_m1_inference.IdentityAndFailureTests.test_missing_runtime_nonzero_no_mock_fallback) ... ok
+test_mock_is_explicit_and_real_combination_rejected (test_m1_inference.IdentityAndFailureTests.test_mock_is_explicit_and_real_combination_rejected) ... ok
+test_single_image_beacon_does_not_invent_confirmation_or_subtype (test_m1_inference.IdentityAndFailureTests.test_single_image_beacon_does_not_invent_confirmation_or_subtype) ... ok
+test_unreviewed_or_missing_model_never_guessed (test_m1_inference.IdentityAndFailureTests.test_unreviewed_or_missing_model_never_guessed) ... ERROR
+test_bad_outputs_and_missing_semantics_fail (test_m1_inference.ImageAndDecodeTests.test_bad_outputs_and_missing_semantics_fail) ... ok
+test_clip_to_image_and_reject_degenerate_boxes (test_m1_inference.ImageAndDecodeTests.test_clip_to_image_and_reject_degenerate_boxes) ... ok
+test_float_nms_preserves_distinct_subpixel_boxes (test_m1_inference.ImageAndDecodeTests.test_float_nms_preserves_distinct_subpixel_boxes) ... ok
+test_inclusive_threshold_and_no_objectness_multiplication (test_m1_inference.ImageAndDecodeTests.test_inclusive_threshold_and_no_objectness_multiplication) ... ok
+test_invalid_thresholds_and_scale_fail (test_m1_inference.ImageAndDecodeTests.test_invalid_thresholds_and_scale_fail) ... ok
+test_missing_corrupt_empty_and_wrong_dtype_images (test_m1_inference.ImageAndDecodeTests.test_missing_corrupt_empty_and_wrong_dtype_images) ... ERROR
+test_nms_keeps_strongest_and_disjoint_boxes (test_m1_inference.ImageAndDecodeTests.test_nms_keeps_strongest_and_disjoint_boxes) ... ok
+test_odd_integer_borders_inverse_non_square (test_m1_inference.ImageAndDecodeTests.test_odd_integer_borders_inverse_non_square) ... FAIL
+test_rgb_normalization_contiguous_and_padding (test_m1_inference.ImageAndDecodeTests.test_rgb_normalization_contiguous_and_padding) ... ok
+test_singleton_transposed_and_empty_output (test_m1_inference.ImageAndDecodeTests.test_singleton_transposed_and_empty_output) ... ok
+test_source_semantics_raw_class_zero_for_each_model (test_m1_inference.ImageAndDecodeTests.test_source_semantics_raw_class_zero_for_each_model) ... ok
+test_consecutive_frames_confirm_with_conservative_score (test_m1_inference.TemporalTests.test_consecutive_frames_confirm_with_conservative_score) ... ok
+test_elapsed_expiry_uses_new_track_identity (test_m1_inference.TemporalTests.test_elapsed_expiry_uses_new_track_identity) ... ok
+test_frame_expiry_and_semantic_mismatch (test_m1_inference.TemporalTests.test_frame_expiry_and_semantic_mismatch) ... ok
+test_gap_resets_streak_without_forcing_contiguous_input_ids (test_m1_inference.TemporalTests.test_gap_resets_streak_without_forcing_contiguous_input_ids) ... ok
+test_invalid_detection_does_not_mutate_state (test_m1_inference.TemporalTests.test_invalid_detection_does_not_mutate_state) ... ok
+test_miss_resets_and_no_stale_confirmation (test_m1_inference.TemporalTests.test_miss_resets_and_no_stale_confirmation) ... ok
+test_one_to_one_matching_cannot_count_two_same_frame_hits (test_m1_inference.TemporalTests.test_one_to_one_matching_cannot_count_two_same_frame_hits) ... ok
+test_repeat_frame_id_out_of_order_or_repeat_timestamp_rejected (test_m1_inference.TemporalTests.test_repeat_frame_id_out_of_order_or_repeat_timestamp_rejected) ... ok
+test_sources_and_models_cannot_share_hits (test_m1_inference.TemporalTests.test_sources_and_models_cannot_share_hits) ... ok
+test_tracker_invalid_configuration_and_identity (test_m1_inference.TemporalTests.test_tracker_invalid_configuration_and_identity) ... ok
+
+======================================================================
+ERROR: test_unreviewed_or_missing_model_never_guessed (test_m1_inference.IdentityAndFailureTests.test_unreviewed_or_missing_model_never_guessed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\adars\OneDrive\Desktop\PFPD-ll\tests\test_m1_inference.py", line 147, in test_unreviewed_or_missing_model_never_guessed
+    missing.write_bytes(b"untrusted artifact named pothole")
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\pathlib.py", line 1067, in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\adars\\AppData\\Local\\Packages\\sandbox.{3bb1915c-cd3b-4d8d-91fe-f9cd47473dad}\\AC\\Temp\\tmpa2qi_u7j\\missing_pothole.onnx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\shutil.py", line 636, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\adars\\AppData\\Local\\Packages\\sandbox.{3bb1915c-cd3b-4d8d-91fe-f9cd47473dad}\\AC\\Temp\\tmpa2qi_u7j'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\adars\OneDrive\Desktop\PFPD-ll\tests\test_m1_inference.py", line 143, in test_unreviewed_or_missing_model_never_guessed
+    with tempfile.TemporaryDirectory() as directory:
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 943, in __exit__
+    self.cleanup()
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 947, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 929, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\shutil.py", line 787, in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\shutil.py", line 638, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 890, in onerror
+    _resetperms(path)
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 287, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 278, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\adars\\AppData\\Local\\Packages\\sandbox.{3bb1915c-cd3b-4d8d-91fe-f9cd47473dad}\\AC\\Temp\\tmpa2qi_u7j'
+
+======================================================================
+ERROR: test_missing_corrupt_empty_and_wrong_dtype_images (test_m1_inference.ImageAndDecodeTests.test_missing_corrupt_empty_and_wrong_dtype_images)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\adars\OneDrive\Desktop\PFPD-ll\tests\test_m1_inference.py", line 64, in test_missing_corrupt_empty_and_wrong_dtype_images
+    corrupt.write_text("not a PNG", encoding="utf-8")
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\pathlib.py", line 1078, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\adars\\AppData\\Local\\Packages\\sandbox.{3bb1915c-cd3b-4d8d-91fe-f9cd47473dad}\\AC\\Temp\\tmpd32q3w1b\\invalid.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\shutil.py", line 636, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\adars\\AppData\\Local\\Packages\\sandbox.{3bb1915c-cd3b-4d8d-91fe-f9cd47473dad}\\AC\\Temp\\tmpd32q3w1b'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\adars\OneDrive\Desktop\PFPD-ll\tests\test_m1_inference.py", line 59, in test_missing_corrupt_empty_and_wrong_dtype_images
+    with tempfile.TemporaryDirectory() as directory:
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 943, in __exit__
+    self.cleanup()
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 947, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 929, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\shutil.py", line 787, in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\shutil.py", line 638, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 890, in onerror
+    _resetperms(path)
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 287, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\tempfile.py", line 278, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\adars\\AppData\\Local\\Packages\\sandbox.{3bb1915c-cd3b-4d8d-91fe-f9cd47473dad}\\AC\\Temp\\tmpd32q3w1b'
+
+======================================================================
+FAIL: test_odd_integer_borders_inverse_non_square (test_m1_inference.ImageAndDecodeTests.test_odd_integer_borders_inverse_non_square)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\adars\OneDrive\Desktop\PFPD-ll\tests\test_m1_inference.py", line 56, in test_odd_integer_borders_inverse_non_square
+    self.assertEqual(detections[0]["box"], [1, 0, 6, 2])
+AssertionError: Lists differ: [1, 1, 6, 3] != [1, 0, 6, 2]
+
+First differing element 1:
+1
+0
+
+- [1, 1, 6, 3]
+?     ^     ^
+
++ [1, 0, 6, 2]
+?     ^     ^
+
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.770s
+
+FAILED (failures=1, errors=2)

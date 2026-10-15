@@ -1,0 +1,114 @@
+{
+  "base_commit": "34dad0a3d8683ebb9db548eb105604d8e29cb355",
+  "recorded_at_ist": "2026-10-14T22:20:18.701995+05:30",
+  "files": {
+    "quantization/accident_obstacle_yolo11s_int8.onnx": {
+      "sha256": "dc2985e915d44ff419d205bcae0df9fc1cfdf89960e794730b3afcb2134b96bf",
+      "bytes": 9940846
+    },
+    "quantization/construction_yolo11s_int8.onnx": {
+      "sha256": "4144423ff28f6fab297828be7965a8104600359fbd2ed58b0da45e16fa7788f8",
+      "bytes": 9940838
+    },
+    "quantization/pothole_yolo11s_int8.onnx": {
+      "sha256": "289c7d60b8d920ef1da65681629c8fc854ccaf7b01474afc5997ba89b1ca077d",
+      "bytes": 9940821
+    },
+    "simulation/corridor_1km/build_corridor.py": {
+      "sha256": "3edf0f8957b3feccdf14d7472ebe75925ebfb83c698727ef2c6d71d933331028",
+      "bytes": 8104
+    },
+    "simulation/corridor_1km/corridor.add.xml": {
+      "sha256": "ed7dbabab38ab6b9b93bee897f1ab858ff642d71c61bfe15b8159e3f3ad97018",
+      "bytes": 7753
+    },
+    "simulation/corridor_1km/corridor.edg.xml": {
+      "sha256": "50710f676707e77a700d66503211367f3a71dd6b9378e8a0110204bcaaf3fb0b",
+      "bytes": 1721
+    },
+    "simulation/corridor_1km/corridor.net.xml": {
+      "sha256": "cabd5179e36ebfd212086004626971d9bbd68ff246c6bfdf7fc110eff59ec0c4",
+      "bytes": 36992
+    },
+    "simulation/corridor_1km/corridor.nod.xml": {
+      "sha256": "f639470b1d1988acea2c488bb35b3c440a5c6fd482f8ded89307aa85f45707ed",
+      "bytes": 833
+    },
+    "simulation/corridor_1km/corridor.rou.xml": {
+      "sha256": "5714b08aea1fc2b702411010e7c1e104005515b68b2a99dc31008e3a130c9049",
+      "bytes": 4003
+    },
+    "simulation/corridor_1km/corridor.sumocfg": {
+      "sha256": "f861876fadbedc746cad2ab871f022f549585587347bdbd8b870e5de5f57c21b",
+      "bytes": 786
+    },
+    "simulation/corridor_1km/corridor.view.xml": {
+      "sha256": "fa27d3c8e6714f06bb48b506b492c3890e2da3143b6f035009c0f44256d929cf",
+      "bytes": 379
+    },
+    "simulation/corridor_1km/run_cooperative_v2x_sim.py": {
+      "sha256": "4aebc5b3dae2003059e0ebe08c667b740462ba515425f9671632efed381cc116",
+      "bytes": 12183
+    },
+    "simulation/corridor_1km/run_gui.bat": {
+      "sha256": "78c1d8834b1538d939a216bbd4a9e707df0d363b3133e9a6852bb9dcd15b57e6",
+      "bytes": 402
+    },
+    "src/benchmark_rpi_multimodal.py": {
+      "sha256": "4753dc24c0f393ae277ec24df056c75af3702b8f7c11a5ba1d4d67fa9bb022ef",
+      "bytes": 12705
+    },
+    "src/collect_150_benchmark_dataset.py": {
+      "sha256": "f6955931c681b7dea97ae4beca21ba20f320dc3b00a3ba7ad80af0f2d06343c7",
+      "bytes": 8603
+    },
+    "src/curate_150_unique_dataset.py": {
+      "sha256": "aead7973f84cb5bb9dbd2786673951d7705d9bc4328f1d758f15b96cf863f041",
+      "bytes": 8142
+    },
+    "src/edge_continuous_camera_perception.py": {
+      "sha256": "af2062ee562efb2f47071ddd8ddd13633ab31458d3c28e37e6002ce8f15978a6",
+      "bytes": 14997
+    },
+    "src/edge_round_robin_scheduler.py": {
+      "sha256": "c26cdd5536ad90ba5f50780500126d9f62b5f2fca6fd82edd1f4a6135e661582",
+      "bytes": 11168
+    },
+    "src/edge_rpi_hazard_inference.py": {
+      "sha256": "02303f86dc8ef03ed499ccab097ceb9dcfd60d39e9dd7dda44178e8c12dccc69",
+      "bytes": 17512
+    },
+    "src/evaluate_user_multihazard_rpi.py": {
+      "sha256": "c2ae558047268cf99133e9f4b361355d09f921117fe029523d939bb559db7900",
+      "bytes": 12312
+    },
+    "src/fetch_remaining_unique.py": {
+      "sha256": "204e6061a332844d4c604b18a8d5cc9471bf867dfe19210b9e00babebc896954",
+      "bytes": 6433
+    },
+    "src/rpi_simultaneous_multihazard_pipeline.py": {
+      "sha256": "37dd8c99c6c29def051c0abaac81631fab5aab4af3a0a9605260d206e20d8a8d",
+      "bytes": 8406
+    },
+    "src/run_150_benchmark_suite.py": {
+      "sha256": "ebc92237e02d150cb5612aaf8c3deccc82de83f233c85f5c03b8b9706128e2f2",
+      "bytes": 10089
+    },
+    "data/test_user_accident.png": {
+      "sha256": "a4c9104db20cc102c26776b8f3150811f59b6271e97ce694ec720180024a8779",
+      "bytes": 474409
+    },
+    "data/test_user_construction.png": {
+      "sha256": "248037384d5c0781b9518ebc240f3da3d8a4cb5a7d0c839e838a38ac85f0e04c",
+      "bytes": 407741
+    },
+    "data/test_user_pothole.png": {
+      "sha256": "d14162eea5808234efef53a96bf31f208eb26d2eff73ad61f48321bdc0bae3ce",
+      "bytes": 431432
+    },
+    ".agents/rules/memory.md": {
+      "sha256": "f2097f7f90d7a88c92a6c3a76fcbd0b8022b421eaef61875b98306d769788da0",
+      "bytes": 54186
+    }
+  }
+}

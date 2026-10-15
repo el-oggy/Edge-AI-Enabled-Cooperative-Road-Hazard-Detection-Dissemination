@@ -1,0 +1,37 @@
+{
+  "header": {
+    "protocolVersion": 2,
+    "messageID": 1,
+    "stationID": "RSU_ZONE_04"
+  },
+  "denm": {
+    "management": {
+      "actionID": "RSU_ZONE_04_1791976295577",
+      "detectionTime": 1791976295577,
+      "referenceTime": 1791976295577,
+      "validityDurationSec": 300,
+      "transmissionIntervalMs": 100
+    },
+    "situation": {
+      "hazardCount": 1,
+      "hazards": [
+        {
+          "hazardType": "POTHOLE",
+          "trackID": 1,
+          "causeCode": 97,
+          "severity": "MEDIUM",
+          "confidence": 0.89,
+          "persistenceFrames": 3,
+          "boundingBox": [
+            127,
+            142,
+            311,
+            216
+          ],
+          "advisoryAction": "REDUCE_SPEED",
+          "advisorySpeedKmh": 25
+        }
+      ]
+    }
+  }
+}

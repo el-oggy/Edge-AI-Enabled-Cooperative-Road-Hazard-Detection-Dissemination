@@ -1,0 +1,71 @@
+{
+  "mode": "real_onnx",
+  "input_kind": "synthetic_zero_tensor_benchmark",
+  "model": {
+    "path": "quantization/pothole_yolo11s_int8.onnx",
+    "sha256": "289c7d60b8d920ef1da65681629c8fc854ccaf7b01474afc5997ba89b1ca077d",
+    "id": 0,
+    "name": "pothole",
+    "cause_code": 9,
+    "color": [
+      0,
+      140,
+      255
+    ],
+    "source_model_id": "pothole",
+    "model_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\quantization\\pothole_yolo11s_int8.onnx",
+    "raw_class_id": 0
+  },
+  "metadata": {
+    "stride": "32",
+    "onnx.infer": "onnxruntime.quant",
+    "date": "2026-10-10T20:10:15.218451+00:00",
+    "description": "Ultralytics YOLO11s model trained on /kaggle/working/pothole_95plus_dataset/data.yaml",
+    "author": "Ultralytics",
+    "version": "8.4.175",
+    "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+    "docs": "https://docs.ultralytics.com",
+    "task": "detect",
+    "head": "Detect",
+    "batch": "1",
+    "imgsz": "[768, 768]",
+    "names": "{0: 'pothole'}",
+    "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+    "channels": "3",
+    "end2end": "False"
+  },
+  "runtime": {
+    "python": "3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+    "logical_cpus": 12,
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "onnxruntime": "1.31.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "execution_mode": "ORT_SEQUENTIAL",
+    "graph_optimization": "ORT_ENABLE_ALL",
+    "hardware_scope": "actual_execution_host",
+    "physical_cpus": 6,
+    "total_ram_bytes": 7928741888,
+    "process_rss_bytes": 82972672
+  },
+  "benchmark": {
+    "scope": "single_model_inference_only",
+    "iterations": 1,
+    "warmup": 0,
+    "durations_ms": [
+      2319.882300012978
+    ],
+    "mean_ms": 2319.882300012978,
+    "p50_ms": 2319.882300012978,
+    "p95_ms": 2319.882300012978,
+    "inference_passes_per_s": 0.43105635143403864
+  }
+}

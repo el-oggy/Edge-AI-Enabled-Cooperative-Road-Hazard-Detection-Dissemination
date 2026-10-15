@@ -1,0 +1,79 @@
+{
+  "benchmark_profile": "All 3 Models Concurrently Resident in Memory",
+  "ram_consumption_mb": 107.9,
+  "ram_overhead_mb": 54.0,
+  "models": [
+    {
+      "id": "pothole",
+      "name": "Pothole Detector (YOLO11s INT8)",
+      "domain": "Damaged Road Surface / Pothole",
+      "quantized_file": "pothole_yolo11s_int8.onnx",
+      "size_mb": 9.48,
+      "gpu_training": {
+        "platform": "NVIDIA Cloud GPU (CUDA FP32)",
+        "model_size_mb": 19.42,
+        "precision": 93.11,
+        "recall": 89.45,
+        "map50": 95.64,
+        "map50_95": 68.2,
+        "latency_ms": 6.8,
+        "fps": 147.0
+      },
+      "empirical_edge": {
+        "mean_ms": 2867.83,
+        "fps": 0.3,
+        "p50_ms": 2860.78,
+        "min_ms": 2796.65,
+        "max_ms": 2953.11
+      }
+    },
+    {
+      "id": "construction",
+      "name": "Construction Detector (YOLO11s INT8)",
+      "domain": "Construction Zone & Barricades",
+      "quantized_file": "construction_yolo11s_int8.onnx",
+      "size_mb": 9.48,
+      "gpu_training": {
+        "platform": "NVIDIA Cloud GPU (CUDA FP32)",
+        "model_size_mb": 19.42,
+        "precision": 95.2,
+        "recall": 91.1,
+        "map50": 92.7,
+        "map50_95": 66.85,
+        "latency_ms": 7.2,
+        "fps": 138.8
+      },
+      "empirical_edge": {
+        "mean_ms": 2997.53,
+        "fps": 0.3,
+        "p50_ms": 3002.04,
+        "min_ms": 2939.13,
+        "max_ms": 3046.88
+      }
+    },
+    {
+      "id": "accident",
+      "name": "Accident & Debris Detector (YOLO11s INT8)",
+      "domain": "Vehicle Collision / Road Debris",
+      "quantized_file": "accident_obstacle_yolo11s_int8.onnx",
+      "size_mb": 9.48,
+      "gpu_training": {
+        "platform": "NVIDIA Cloud GPU (CUDA FP32)",
+        "model_size_mb": 19.42,
+        "precision": 96.5,
+        "recall": 90.8,
+        "map50": 92.47,
+        "map50_95": 67.4,
+        "latency_ms": 7.5,
+        "fps": 133.3
+      },
+      "empirical_edge": {
+        "mean_ms": 3040.14,
+        "fps": 0.3,
+        "p50_ms": 3063.3,
+        "min_ms": 2953.47,
+        "max_ms": 3080.48
+      }
+    }
+  ]
+}

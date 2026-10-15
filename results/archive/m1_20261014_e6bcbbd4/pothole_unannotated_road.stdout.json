@@ -1,0 +1,237 @@
+{
+  "schema_version": "pfpd.image_inference.v1",
+  "mode": "real_onnx",
+  "run_id": "8bd6969f7c144423823fac614ea22a37",
+  "created_utc": "2026-10-14T17:01:06.181388+00:00",
+  "validation_status": "SINGLE_FRAME_UNCONFIRMED",
+  "source_id": "RSU_ZONE_04",
+  "model": {
+    "source_model_id": "pothole",
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\quantization\\pothole_yolo11s_int8.onnx",
+    "sha256": "289c7d60b8d920ef1da65681629c8fc854ccaf7b01474afc5997ba89b1ca077d",
+    "raw_class_id": 0,
+    "semantic_class": "pothole",
+    "input_name": "images",
+    "input_shape": [
+      1,
+      3,
+      768,
+      768
+    ],
+    "input_type": "float32",
+    "output_name": "output0",
+    "metadata": {
+      "stride": "32",
+      "onnx.infer": "onnxruntime.quant",
+      "date": "2026-10-10T20:10:15.218451+00:00",
+      "description": "Ultralytics YOLO11s model trained on /kaggle/working/pothole_95plus_dataset/data.yaml",
+      "author": "Ultralytics",
+      "version": "8.4.175",
+      "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+      "docs": "https://docs.ultralytics.com",
+      "task": "detect",
+      "head": "Detect",
+      "batch": "1",
+      "imgsz": "[768, 768]",
+      "names": "{0: 'pothole'}",
+      "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+      "channels": "3",
+      "end2end": "False"
+    }
+  },
+  "input": {
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\data\\sample_pothole_verified.jpg",
+    "sha256": "82295120062988eb4e8389eba8a1b0d84d95996462cb92586ff872efc9fa2e2a",
+    "height": 640,
+    "width": 640,
+    "tensor_sha256": "98f4ceb6fcec9eff0f62ee969ffb6bdcd193f2375e05cf1eb6cdc7e11c04a584",
+    "color_order": "RGB",
+    "normalization": "uint8 / 255",
+    "pad_value": 114,
+    "scale": 1.2,
+    "left_pad": 0,
+    "top_pad": 0,
+    "right_pad": 0,
+    "bottom_pad": 0
+  },
+  "thresholds": {
+    "confidence": 0.35,
+    "nms_iou": 0.45,
+    "calibrated": false
+  },
+  "raw_prediction": {
+    "shape": [
+      1,
+      5,
+      12096
+    ],
+    "dtype": "float32",
+    "sha256": "9dff27625546c7f4b74b5f5ba158f922473312418a4a62879bac56cee94af584",
+    "finite_values": 60480,
+    "value_count": 60480,
+    "max_class_score": 0.6026540994644165,
+    "proposals_at_threshold": 13
+  },
+  "detections": [
+    {
+      "class_id": 0,
+      "raw_class_id": 0,
+      "class_name": "pothole",
+      "source_model_id": "pothole",
+      "confidence": 0.6026540994644165,
+      "box": [
+        244,
+        105,
+        283,
+        136
+      ],
+      "bbox_xyxy_float": [
+        243.63274892171225,
+        104.97370084126791,
+        282.58520762125653,
+        135.8471965789795
+      ],
+      "proposal_index": 1575,
+      "status": "SINGLE_FRAME_UNCONFIRMED",
+      "persistence_hits": null
+    },
+    {
+      "class_id": 0,
+      "raw_class_id": 0,
+      "class_name": "pothole",
+      "source_model_id": "pothole",
+      "confidence": 0.5226004719734192,
+      "box": [
+        133,
+        116,
+        171,
+        152
+      ],
+      "bbox_xyxy_float": [
+        132.70797729492188,
+        115.64737955729167,
+        170.98330179850262,
+        152.32892354329428
+      ],
+      "proposal_index": 2038,
+      "status": "SINGLE_FRAME_UNCONFIRMED",
+      "persistence_hits": null
+    }
+  ],
+  "detection_count": 2,
+  "timings_ms": {
+    "asset_validation": 31.863100011833012,
+    "session_load": 378.3069000055548,
+    "decode_preprocess": 50.42179999873042,
+    "inference": 3477.591000002576,
+    "postprocess": 1.9181999959982932,
+    "service": 3529.9309999973048,
+    "total_through_postprocess": 3940.1010000146925
+  },
+  "runtime": {
+    "python": "3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+    "logical_cpus": 12,
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "onnxruntime": "1.31.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "execution_mode": "ORT_SEQUENTIAL",
+    "graph_optimization": "ORT_ENABLE_ALL",
+    "hardware_scope": "actual_execution_host",
+    "physical_cpus": 6,
+    "total_ram_bytes": 7928741888,
+    "process_rss_bytes": 201011200
+  },
+  "beacon": {
+    "format": "DENM-inspired application JSON",
+    "standards_compliant": false,
+    "cdd_version": "1.3.1",
+    "transmitted": false,
+    "header": {
+      "protocolVersion": 2,
+      "messageID": 1,
+      "stationID": "RSU_ZONE_04"
+    },
+    "denm": {
+      "management": {
+        "actionID": "RSU_ZONE_04_2caa73168088411d82c085d6ff771ef3",
+        "detectionTime": 1791997266335,
+        "referenceTime": 1791997266335,
+        "validityDurationSec": 300,
+        "transmissionIntervalMs": 100
+      },
+      "situation": {
+        "hazardCount": 2,
+        "hazards": [
+          {
+            "hazardType": "POTHOLE",
+            "trackID": null,
+            "rawClassID": 0,
+            "sourceModelID": "pothole",
+            "causeCode": 9,
+            "subCauseCode": 0,
+            "severity": "UNASSESSED",
+            "confidence": 0.6026540994644165,
+            "persistenceFrames": null,
+            "validationStatus": "SINGLE_FRAME_UNCONFIRMED",
+            "boundingBox": [
+              244,
+              105,
+              283,
+              136
+            ],
+            "advisoryAction": "UNASSESSED",
+            "advisorySpeedKmh": null
+          },
+          {
+            "hazardType": "POTHOLE",
+            "trackID": null,
+            "rawClassID": 0,
+            "sourceModelID": "pothole",
+            "causeCode": 9,
+            "subCauseCode": 0,
+            "severity": "UNASSESSED",
+            "confidence": 0.5226004719734192,
+            "persistenceFrames": null,
+            "validationStatus": "SINGLE_FRAME_UNCONFIRMED",
+            "boundingBox": [
+              133,
+              116,
+              171,
+              152
+            ],
+            "advisoryAction": "UNASSESSED",
+            "advisorySpeedKmh": null
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Single image; no temporal confirmation",
+    "Scores are not accuracy or severity",
+    "No location mapping or transport",
+    "Performance is one cold forward on this host"
+  ],
+  "artifacts": {
+    "raw_prediction": {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\m1_20261014_e6bcbbd4\\pothole_8bd6969f7c144423823fac614ea22a37.npy",
+      "sha256": "66be4a215a4b263018c3d343aff5afb1fcffcfa130e6b31f14f68d40c47a6f8c"
+    },
+    "annotation": {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\m1_20261014_e6bcbbd4\\pothole_8bd6969f7c144423823fac614ea22a37.jpg",
+      "sha256": "25d0b43222d7cf1449eca2dc523da31d1baa9b59d2eb49e6900af78aef979038"
+    },
+    "record": {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\m1_20261014_e6bcbbd4\\pothole_8bd6969f7c144423823fac614ea22a37.json"
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "research_only": true,
+  "python": "3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "cpu_logical": 12,
+  "cpu_physical": 6,
+  "memory": {
+    "total": 7928741888,
+    "available": 1398702080,
+    "percent": 82.4,
+    "used": 6530039808,
+    "free": 1398702080
+  },
+  "disk": {
+    "total": 510507945984,
+    "used": 351219400704,
+    "free": 159288545280,
+    "percent": 68.8
+  },
+  "cpu_environment": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+  "tools_on_path": {
+    "node": "C:\\Program Files\\nodejs\\node.EXE",
+    "blender": null,
+    "godot": null,
+    "Unity": null,
+    "UnrealEditor": null,
+    "sumo": "C:\\Program Files (x86)\\Eclipse\\Sumo\\bin\\sumo.EXE"
+  },
+  "onnxruntime": "1.31.0",
+  "available_providers": [
+    "AzureExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "models": [
+    {
+      "path": "quantization\\accident_obstacle_yolo11s_int8.onnx",
+      "bytes": 9940846,
+      "sha256": "dc2985e915d44ff419d205bcae0df9fc1cfdf89960e794730b3afcb2134b96bf",
+      "inputs": [
+        {
+          "name": "images",
+          "shape": [
+            1,
+            3,
+            768,
+            768
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output0",
+          "shape": [
+            1,
+            5,
+            12096
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "metadata": {
+        "stride": "32",
+        "onnx.infer": "onnxruntime.quant",
+        "date": "2026-10-11T08:28:52.867962+00:00",
+        "description": "Ultralytics YOLO11s model trained on /kaggle/working/accident_obstacle_95plus_dataset/data.yaml",
+        "author": "Ultralytics",
+        "version": "8.4.175",
+        "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+        "docs": "https://docs.ultralytics.com",
+        "task": "detect",
+        "head": "Detect",
+        "batch": "1",
+        "imgsz": "[768, 768]",
+        "names": "{0: 'road_accident_obstacle'}",
+        "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+        "channels": "3",
+        "end2end": "False"
+      },
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "forward_executed": false
+    },
+    {
+      "path": "quantization\\construction_yolo11s_int8.onnx",
+      "bytes": 9940838,
+      "sha256": "4144423ff28f6fab297828be7965a8104600359fbd2ed58b0da45e16fa7788f8",
+      "inputs": [
+        {
+          "name": "images",
+          "shape": [
+            1,
+            3,
+            768,
+            768
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output0",
+          "shape": [
+            1,
+            5,
+            12096
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "metadata": {
+        "stride": "32",
+        "onnx.infer": "onnxruntime.quant",
+        "date": "2026-10-11T10:10:39.814097+00:00",
+        "description": "Ultralytics YOLO11s model trained on /kaggle/working/construction_95plus_dataset/data.yaml",
+        "author": "Ultralytics",
+        "version": "8.4.175",
+        "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+        "docs": "https://docs.ultralytics.com",
+        "task": "detect",
+        "head": "Detect",
+        "batch": "1",
+        "imgsz": "[768, 768]",
+        "names": "{0: 'construction_hazard'}",
+        "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+        "channels": "3",
+        "end2end": "False"
+      },
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "forward_executed": false
+    },
+    {
+      "path": "quantization\\pothole_yolo11s_int8.onnx",
+      "bytes": 9940821,
+      "sha256": "289c7d60b8d920ef1da65681629c8fc854ccaf7b01474afc5997ba89b1ca077d",
+      "inputs": [
+        {
+          "name": "images",
+          "shape": [
+            1,
+            3,
+            768,
+            768
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output0",
+          "shape": [
+            1,
+            5,
+            12096
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "metadata": {
+        "stride": "32",
+        "onnx.infer": "onnxruntime.quant",
+        "date": "2026-10-10T20:10:15.218451+00:00",
+        "description": "Ultralytics YOLO11s model trained on /kaggle/working/pothole_95plus_dataset/data.yaml",
+        "author": "Ultralytics",
+        "version": "8.4.175",
+        "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+        "docs": "https://docs.ultralytics.com",
+        "task": "detect",
+        "head": "Detect",
+        "batch": "1",
+        "imgsz": "[768, 768]",
+        "names": "{0: 'pothole'}",
+        "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+        "channels": "3",
+        "end2end": "False"
+      },
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "forward_executed": false
+    }
+  ],
+  "source_hashes": {
+    "simulation\\corridor_1km\\build_corridor.py": "3edf0f8957b3feccdf14d7472ebe75925ebfb83c698727ef2c6d71d933331028",
+    "simulation\\corridor_1km\\corridor.add.xml": "ed7dbabab38ab6b9b93bee897f1ab858ff642d71c61bfe15b8159e3f3ad97018",
+    "simulation\\corridor_1km\\corridor.edg.xml": "50710f676707e77a700d66503211367f3a71dd6b9378e8a0110204bcaaf3fb0b",
+    "simulation\\corridor_1km\\corridor.net.xml": "cabd5179e36ebfd212086004626971d9bbd68ff246c6bfdf7fc110eff59ec0c4",
+    "simulation\\corridor_1km\\corridor.nod.xml": "f639470b1d1988acea2c488bb35b3c440a5c6fd482f8ded89307aa85f45707ed",
+    "simulation\\corridor_1km\\corridor.rou.xml": "5714b08aea1fc2b702411010e7c1e104005515b68b2a99dc31008e3a130c9049",
+    "simulation\\corridor_1km\\corridor.sumocfg": "f861876fadbedc746cad2ab871f022f549585587347bdbd8b870e5de5f57c21b",
+    "simulation\\corridor_1km\\corridor.view.xml": "fa27d3c8e6714f06bb48b506b492c3890e2da3143b6f035009c0f44256d929cf",
+    "simulation\\corridor_1km\\run_cooperative_v2x_sim.py": "4aebc5b3dae2003059e0ebe08c667b740462ba515425f9671632efed381cc116",
+    "simulation\\corridor_1km\\run_gui.bat": "78c1d8834b1538d939a216bbd4a9e707df0d363b3133e9a6852bb9dcd15b57e6",
+    "src\\edge_rpi_hazard_inference.py": "0ebb6b150e2ffe206c40fe838e99e0c6e53753ed7422203880baa623ddf71c73",
+    "src\\pfpd_perception\\model_registry.py": "f5df2c82977fce73cbf3ed99a3497334e42eae2fcbdbf5446d9142521a44c0bb",
+    "src\\pfpd_perception\\temporal.py": "89065a55049c7bdb3258236c553b0d75ff96bae4dc5ac6f91e25946ce93bdba4",
+    ".agents\\rules\\memory.md": "2b4a4788e3e92ef6e4f929b87f67ca54c5f55e70072b533d4e04fdaa6551dfbd",
+    "tests\\test_m1_inference.py": "af8ddc5ac6888b53c89c9489f110e97cb538d0c5e7e2dca107c38bc4bad02a80"
+  },
+  "cpu_registry": "AMD Ryzen 5 5500U with Radeon Graphics         ",
+  "gpus_registry": [
+    {
+      "DriverDesc": "AMD Radeon(TM) Graphics",
+      "DriverVersion": "31.0.21923.11000",
+      "HardwareInformation.MemorySize": 536870912
+    }
+  ],
+  "continuation_snapshot_utc": "2026-10-14T22:12:41.252510+00:00",
+  "continuation_memory": {
+    "total": 7928741888,
+    "available": 732381184,
+    "percent": 90.8,
+    "used": 7196360704,
+    "free": 732381184
+  }
+}

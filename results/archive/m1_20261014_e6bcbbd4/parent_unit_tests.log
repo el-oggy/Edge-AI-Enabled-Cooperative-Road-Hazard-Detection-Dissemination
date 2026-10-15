@@ -1,0 +1,21 @@
+test_m1_inference (unittest.loader._FailedTest.test_m1_inference) ... ERROR
+
+======================================================================
+ERROR: test_m1_inference (unittest.loader._FailedTest.test_m1_inference)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_m1_inference
+Traceback (most recent call last):
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adars\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\adars\OneDrive\Desktop\PFPD-ll\tests\test_m1_inference.py", line 18, in <module>
+    import edge_rpi_hazard_inference as edge
+ModuleNotFoundError: No module named 'edge_rpi_hazard_inference'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

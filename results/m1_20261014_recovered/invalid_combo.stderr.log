@@ -1,0 +1,9 @@
+usage: edge_rpi_hazard_inference.py [-h] [--model MODEL] [--image IMAGE]
+                                    [--conf CONF] [--iou IOU]
+                                    [--rsu-id RSU_ID] [--json-out JSON_OUT]
+                                    [--output-dir OUTPUT_DIR]
+                                    [--simulate-stream] [--benchmark]
+                                    [--iterations ITERATIONS]
+                                    [--warmup WARMUP]
+                                    [--intra-op-threads INTRA_OP_THREADS]
+edge_rpi_hazard_inference.py: error: benchmark output artifacts are not supported

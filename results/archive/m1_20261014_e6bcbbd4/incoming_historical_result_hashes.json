@@ -1,0 +1,62 @@
+{
+  "results/denm_accident_obstacle_yolo11s_int8.json": {
+    "bytes": 855,
+    "sha256": "9fb252e5e1a02467a9cd489c8c9fe833dde45ea7ffdc6673b24b26447b63a1db"
+  },
+  "results/denm_construction_yolo11s_int8.json": {
+    "bytes": 1271,
+    "sha256": "b3e95a4f5046bfea1f72fe1a616651efdb9234c4fa88768bf9680ba6e098a73a"
+  },
+  "results/denm_pothole_yolo11s_int8.json": {
+    "bytes": 833,
+    "sha256": "a3c948aacb19bdfb682fa14149eabc503f22b83b213fdc1912d41b140e11c082"
+  },
+  "results/denm_user_accident.json": {
+    "bytes": 820,
+    "sha256": "e3e29a34fdc9beed36631cc5a98c74e7a586c9c57cec8ea6c06b53bb0a19d889"
+  },
+  "results/denm_user_construction.json": {
+    "bytes": 1183,
+    "sha256": "32fdf571aaea7b4bee2189f92e98a7827defe1cad73d9c611ccfe379f523c556"
+  },
+  "results/denm_user_pothole.json": {
+    "bytes": 798,
+    "sha256": "151e0d61f31ec2ee235892153751bc5d2563e4408edfc33b65ea8e83b09718f0"
+  },
+  "results/detection_accident_obstacle_yolo11s_int8.jpg": {
+    "bytes": 93628,
+    "sha256": "b535d8bbb90d896289167acd2cae100412d95264fb2b3656841da27e963ae6b7"
+  },
+  "results/detection_construction_yolo11s_int8.jpg": {
+    "bytes": 73484,
+    "sha256": "a4c66611d0ad94511a8a6a25963af2e7af3b91f7fa2cc2bd9d634efb3e97047c"
+  },
+  "results/detection_pothole_yolo11s_int8.jpg": {
+    "bytes": 128103,
+    "sha256": "5fd78f197177601ae86811cd001b62f1f91681e86cc6a74f827b03b432fbe0e0"
+  },
+  "results/empirical_model_comparison.json": {
+    "bytes": 2182,
+    "sha256": "ebd21172c59abfd25cc2ab79ea12efbf9bb01a73467a9695451bb214195b9dc5"
+  },
+  "results/eval_user_accident.jpg": {
+    "bytes": 91903,
+    "sha256": "bc76b9a8c1928f41a03c625a9572202ada6fd07e01083c20384dc27d2cba45ba"
+  },
+  "results/eval_user_construction.jpg": {
+    "bytes": 75989,
+    "sha256": "cadedfc9f2bcdfa72e2f3a01dd3aa1c3c3e0b3c648a0378f4f6facae693b82da"
+  },
+  "results/eval_user_pothole.jpg": {
+    "bytes": 128362,
+    "sha256": "cdff316fd6530e36db2536c75e9b1ee1666e2128f332a66a2d9e1f68e08d4a64"
+  },
+  "results/multihazard_empirical_evaluation.json": {
+    "bytes": 6284,
+    "sha256": "113ab8c94decdb89a4e3e40b2a5f34d6b63306d09fd2b641b044fbd275de6b7a"
+  },
+  "results/unified_rsu_lora_denm_beacon.json": {
+    "bytes": 2144,
+    "sha256": "dd522740e46aa3702501cc58a414153dfbeec11ba42f0271807206288b6d9efb"
+  }
+}

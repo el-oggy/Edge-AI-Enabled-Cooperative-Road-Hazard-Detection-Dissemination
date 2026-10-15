@@ -1,0 +1,37 @@
+{
+  "header": {
+    "protocolVersion": 2,
+    "messageID": 1,
+    "stationID": "RSU_ZONE_04"
+  },
+  "denm": {
+    "management": {
+      "actionID": "RSU_ZONE_04_1791976354788",
+      "detectionTime": 1791976354788,
+      "referenceTime": 1791976354788,
+      "validityDurationSec": 300,
+      "transmissionIntervalMs": 100
+    },
+    "situation": {
+      "hazardCount": 1,
+      "hazards": [
+        {
+          "hazardType": "ROAD_ACCIDENT_OBSTACLE",
+          "trackID": 1,
+          "causeCode": 95,
+          "severity": "CRITICAL",
+          "confidence": 0.886,
+          "persistenceFrames": 3,
+          "boundingBox": [
+            0,
+            0,
+            610,
+            345
+          ],
+          "advisoryAction": "MANDATORY_LANE_CHANGE",
+          "advisorySpeedKmh": 0
+        }
+      ]
+    }
+  }
+}
