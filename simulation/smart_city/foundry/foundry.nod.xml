@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <!-- 3 Four-Way Signalized Junctions -->
+    <node id="D1" x="-240.69" y="-143.27" type="traffic_light" tl="TL_D1"/>
+    <node id="D2" x="0.00" y="0.00" type="traffic_light" tl="TL_D2"/>
+    <node id="D3" x="194.84" y="149.00" type="traffic_light" tl="TL_D3"/>
+
+    <!-- 4 T-Junctions (Priority Control) -->
+    <node id="F1" x="-401.15" y="114.61" type="priority"/>
+    <node id="F2" x="-240.69" y="366.76" type="priority"/>
+    <node id="M2" x="229.23" y="-309.46" type="priority"/>
+    <node id="M3" x="366.76" y="-11.46" type="priority"/>
+</nodes>

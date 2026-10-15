@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PFPD Smart City | Phase SC1 4-Way Signalized Junction & Edge-AI Perception</title>
+    <title>PFPD Smart City | Foundry & Market District (5 km Network & Edge-AI)</title>
     <style>
         :root {
-            --bg-color: #0b0f19;
-            --panel-bg: rgba(18, 24, 38, 0.85);
-            --border-color: rgba(255, 255, 255, 0.08);
-            --accent-cyan: #00d2ff;
-            --accent-blue: #3a7bd5;
+            --bg-color: #0d1117;
+            --panel-bg: rgba(22, 27, 34, 0.88);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --foundry-brick: #b3543b;
+            --foundry-copper: #d97736;
+            --foundry-sand: #e6c594;
+            --accent-cyan: #00e5ff;
             --accent-green: #00e676;
             --accent-yellow: #ffd600;
             --accent-orange: #ff9100;
             --accent-red: #ff1744;
-            --text-main: #f0f4f8;
-            --text-dim: #94a3b8;
+            --text-main: #f0f6fc;
+            --text-dim: #8b949e;
             --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
 
@@ -41,7 +43,7 @@
             flex: 1;
             position: relative;
             height: 100%;
-            background: radial-gradient(circle at center, #141b2d 0%, #080b12 100%);
+            background: radial-gradient(circle at center, #1b212c 0%, #0a0d13 100%);
         }
 
         #city-canvas {
@@ -70,11 +72,19 @@
             z-index: 10;
         }
 
+        #header-overlay .eyebrow {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: var(--foundry-copper);
+            text-transform: uppercase;
+        }
+
         #header-overlay h1 {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             letter-spacing: 0.5px;
-            background: linear-gradient(135deg, #ffffff 0%, var(--accent-cyan) 100%);
+            background: linear-gradient(135deg, #ffffff 0%, var(--foundry-sand) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -82,54 +92,37 @@
         #header-overlay .subtitle {
             font-size: 12px;
             color: var(--text-dim);
-            letter-spacing: 1px;
-            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* Live Telemetry Sidebar */
-        #telemetry-sidebar {
-            width: 380px;
-            height: calc(100vh - 40px);
-            margin: 20px 20px 20px 0;
-            padding: 20px;
+        /* View Mode Switcher */
+        #view-mode-bar {
+            position: absolute;
+            top: 20px;
+            right: 420px;
+            padding: 6px;
             display: flex;
-            flex-direction: column;
-            gap: 16px;
-            z-index: 10;
-            overflow-y: auto;
-        }
-
-        .metric-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            padding: 12px 14px;
-            display: flex;
-            flex-direction: column;
             gap: 6px;
+            z-index: 10;
         }
 
-        .metric-card .title {
-            font-size: 11px;
-            font-weight: 600;
+        .toggle-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
             color: var(--text-dim);
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            display: flex;
-            justify-content: space-between;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
         }
 
-        .metric-card .value {
-            font-size: 20px;
-            font-weight: 700;
-            font-family: monospace;
-            color: var(--accent-cyan);
-        }
-
-        .grid-2col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+        .toggle-btn.active {
+            background: var(--foundry-copper);
+            color: #fff;
+            border-color: var(--foundry-sand);
+            box-shadow: 0 0 12px rgba(217, 119, 54, 0.4);
         }
 
         /* Fixed Camera Sensor HUD */
@@ -138,7 +131,7 @@
             bottom: 20px;
             left: 20px;
             width: 320px;
-            height: 220px;
+            height: 210px;
             padding: 12px;
             display: flex;
             flex-direction: column;
@@ -152,7 +145,7 @@
             background: #000;
             border-radius: 6px;
             overflow: hidden;
-            border: 1px solid rgba(0, 210, 255, 0.3);
+            border: 1px solid rgba(217, 119, 54, 0.4);
         }
 
         #sensor-canvas {
@@ -175,12 +168,90 @@
             left: 8px;
             font-family: monospace;
             font-size: 10px;
-            color: var(--accent-cyan);
+            color: var(--foundry-copper);
             letter-spacing: 0.5px;
-            text-shadow: 0 0 4px rgba(0, 210, 255, 0.5);
+            text-shadow: 0 0 4px rgba(217, 119, 54, 0.5);
         }
 
-        /* Controls Panel */
+        /* Live Telemetry Sidebar */
+        #telemetry-sidebar {
+            width: 380px;
+            height: calc(100vh - 40px);
+            margin: 20px 20px 20px 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            z-index: 10;
+            overflow-y: auto;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 10px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .metric-card .title {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .metric-card .value {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: monospace;
+            color: var(--foundry-sand);
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* TLS Multi-Light Cluster */
+        .tls-cluster {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 6px;
+            margin-top: 4px;
+        }
+
+        .tls-item {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .tls-item .label {
+            font-size: 10px;
+            color: var(--text-dim);
+            font-weight: 600;
+        }
+
+        .tls-lamp {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #333;
+            box-shadow: 0 0 4px #000;
+        }
+
+        /* Buttons & Actions */
         .controls-group {
             display: flex;
             flex-direction: column;
@@ -191,9 +262,9 @@
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--border-color);
             color: var(--text-main);
-            padding: 10px 14px;
+            padding: 9px 12px;
             border-radius: 6px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -209,8 +280,8 @@
             transform: translateY(-1px);
         }
 
-        .btn-pothole { border-color: rgba(0, 210, 255, 0.4); color: var(--accent-cyan); }
-        .btn-pothole:hover { background: rgba(0, 210, 255, 0.15); }
+        .btn-pothole { border-color: rgba(0, 229, 255, 0.4); color: var(--accent-cyan); }
+        .btn-pothole:hover { background: rgba(0, 229, 255, 0.15); }
 
         .btn-construction { border-color: rgba(255, 145, 0, 0.4); color: var(--accent-orange); }
         .btn-construction:hover { background: rgba(255, 145, 0, 0.15); }
@@ -220,19 +291,26 @@
 
         .btn-clear { border-color: rgba(255, 255, 255, 0.2); color: var(--text-dim); }
 
+        .btn-sumo {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            border-color: #60a5fa;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
         /* Causal Event Log */
         #event-log-container {
             flex: 1;
             display: flex;
             flex-direction: column;
             gap: 6px;
-            min-height: 140px;
+            min-height: 130px;
         }
 
         #event-log {
             flex: 1;
             overflow-y: auto;
-            background: rgba(0, 0, 0, 0.25);
+            background: rgba(0, 0, 0, 0.3);
             border-radius: 6px;
             padding: 8px 10px;
             font-family: monospace;
@@ -245,9 +323,9 @@
         .log-entry {
             display: flex;
             flex-direction: column;
-            border-left: 2px solid var(--accent-cyan);
+            border-left: 2px solid var(--foundry-copper);
             padding-left: 6px;
-            line-height: 1.4;
+            line-height: 1.35;
         }
         .log-entry.slowdown { border-color: var(--accent-yellow); }
         .log-entry.merge { border-color: var(--accent-orange); }
@@ -260,19 +338,25 @@
         <canvas id="city-canvas"></canvas>
 
         <div id="header-overlay" class="glass-panel">
-            <h1>PFPD SMART CITY JUNCTION (SC1)</h1>
-            <div class="subtitle">TraCI 4-Way Signalized Micro-Simulation & Edge-AI Dissemination</div>
+            <div class="eyebrow">PFPD / METRIC REFINEMENT / FOUNDRY & MARKET</div>
+            <h1>FOUNDRY & MARKET DISTRICT</h1>
+            <div class="subtitle">5,000 m Centerline · 7 Junctions (D1–D3 TLS) · 12 Physical Streets · 27 RSUs</div>
+        </div>
+
+        <div id="view-mode-bar" class="glass-panel">
+            <button class="toggle-btn active" id="btn-mode-map">🗺️ Schematic District Map</button>
+            <button class="toggle-btn" id="btn-mode-3d">🏙️ Street-Level 3D View</button>
         </div>
 
         <div id="camera-hud" class="glass-panel">
             <div class="title" style="font-size: 11px; font-weight: 600; color: var(--text-dim); display: flex; justify-content: space-between;">
-                <span>FIXED MAST SENSOR (CAM-J0)</span>
+                <span>FIXED MAST SENSOR (CAM-D2)</span>
                 <span id="cam-status" style="color: var(--accent-green);">ONLINE [768x768 INT8]</span>
             </div>
             <div id="sensor-frame-container">
                 <canvas id="sensor-canvas"></canvas>
                 <div class="hud-scanline"></div>
-                <div class="hud-label">RSU_J0 :: OPTICAL RADAR</div>
+                <div class="hud-label">RSU_D2 :: OPTICAL SENSOR</div>
             </div>
         </div>
     </div>
@@ -285,46 +369,56 @@
             </div>
             <div class="metric-card">
                 <div class="title">ACTIVE FLEET</div>
-                <div class="value" id="val-fleet" style="color: var(--accent-green);">0</div>
+                <div class="value" id="val-fleet" style="color: var(--accent-green);">50+</div>
             </div>
         </div>
 
         <div class="metric-card">
-            <div class="title">
-                <span>TRAFFIC LIGHT STATUS</span>
-                <span id="tls-phase-badge" style="color: var(--accent-green);">PHASE 0 (GREEN)</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; margin-top: 6px;">
-                <div id="tls-north-lamp" style="width: 14px; height: 14px; border-radius: 50%; background: #00e676; box-shadow: 0 0 10px #00e676;"></div>
-                <span style="font-size: 12px; font-family: monospace;" id="tls-state-text">GGGggrrrrrGGGggrrrrr</span>
+            <div class="title">3-JUNCTION TLS CONTROLLERS</div>
+            <div class="tls-cluster">
+                <div class="tls-item">
+                    <span class="label">TL_D1 (West)</span>
+                    <div class="tls-lamp" id="lamp-d1" style="background: #00e676; box-shadow: 0 0 8px #00e676;"></div>
+                </div>
+                <div class="tls-item">
+                    <span class="label">TL_D2 (Center)</span>
+                    <div class="tls-lamp" id="lamp-d2" style="background: #00e676; box-shadow: 0 0 8px #00e676;"></div>
+                </div>
+                <div class="tls-item">
+                    <span class="label">TL_D3 (East)</span>
+                    <div class="tls-lamp" id="lamp-d3" style="background: #00e676; box-shadow: 0 0 8px #00e676;"></div>
+                </div>
             </div>
         </div>
 
         <div class="metric-card">
-            <div class="title">RSU_J0 BEACON STATUS</div>
-            <div style="font-size: 13px; font-family: monospace; color: var(--text-main);" id="rsu-status-text">
-                BROADCAST: NOMINAL (250m)
+            <div class="title">RSU INFRASTRUCTURE INVENTORY</div>
+            <div style="font-size: 12px; font-family: monospace; color: var(--foundry-sand);" id="rsu-status-text">
+                27 RSUs Active · Spacing ≤ 192.6 m
             </div>
-            <div style="font-size: 11px; color: var(--accent-cyan); margin-top: 2px;" id="rsu-active-hazard">
-                ACTIVE HAZARD: NONE
+            <div style="font-size: 11px; color: var(--text-dim); margin-top: 2px;" id="rsu-active-hazard">
+                HAZARD DISSEMINATION: NOMINAL
             </div>
         </div>
 
         <div class="controls-group">
             <div style="font-size: 11px; font-weight: 600; color: var(--text-dim); text-transform: uppercase;">
-                INJECT PERCEPTUAL HAZARDS (CAMERA AI)
+                PERCEPTUAL HAZARD INJECTION
             </div>
             <button class="btn btn-pothole" id="btn-pothole">
-                <span>⚠️ INJECT POTHOLE (5.55 m/s SLOWDOWN)</span>
+                <span>⚠️ INJECT POTHOLE (SLOWDOWN 5.55 m/s)</span>
             </button>
             <button class="btn btn-construction" id="btn-construction">
-                <span>🚧 INJECT CONSTRUCTION (MERGE LANE 0)</span>
+                <span>🚧 INJECT WORKZONE (MERGE LANE 0)</span>
             </button>
             <button class="btn btn-accident" id="btn-accident">
-                <span>🚨 INJECT ACCIDENT (EMERGENCY MERGE)</span>
+                <span>🚨 INJECT ACCIDENT (EMERGENCY DIVERT)</span>
             </button>
             <button class="btn btn-clear" id="btn-clear">
                 <span>✓ CLEAR HAZARDS (RESUME SPEED)</span>
+            </button>
+            <button class="btn btn-sumo" id="btn-copy-sumo">
+                <span>▶ LAUNCH SUMO-GUI COMMAND</span>
             </button>
         </div>
 
@@ -335,14 +429,13 @@
             <div id="event-log">
                 <div class="log-entry">
                     <span class="log-time">T=0.0s</span>
-                    <span>System initialized. TraCI sole-coordinator connected.</span>
+                    <span>Foundry & Market District loaded. 7 Junctions, 12 streets initialized.</span>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        // Simulation Canvas & Engine Simulation
         const canvas = document.getElementById("city-canvas");
         const ctx = canvas.getContext("2d");
         const sensorCanvas = document.getElementById("sensor-canvas");
@@ -360,125 +453,126 @@
         window.addEventListener("resize", resize);
         resize();
 
-        // Junction Model (Center at 0, 0)
+        // Mode: 'map' (Top-down Schematic) or '3d' (Street-level perspective)
+        let viewMode = 'map';
+        document.getElementById("btn-mode-map").addEventListener("click", () => {
+            viewMode = 'map';
+            document.getElementById("btn-mode-map").classList.add("active");
+            document.getElementById("btn-mode-3d").classList.remove("active");
+        });
+        document.getElementById("btn-mode-3d").addEventListener("click", () => {
+            viewMode = '3d';
+            document.getElementById("btn-mode-3d").classList.add("active");
+            document.getElementById("btn-mode-map").classList.remove("active");
+        });
+
+        // Copy SUMO GUI Command
+        document.getElementById("btn-copy-sumo").addEventListener("click", () => {
+            const cmd = 'sumo-gui -c simulation/smart_city/foundry/foundry.sumocfg';
+            navigator.clipboard.writeText(cmd).then(() => {
+                logEvent("Copied to clipboard: " + cmd);
+                alert("SUMO-GUI Command copied to clipboard:\n\n" + cmd + "\n\nRun this in PowerShell/Terminal to launch the 3D SUMO viewer!");
+            });
+        });
+
+        // Metric coordinates from FOUNDRY_NETWORK_DESIGN.md
+        const nodes = {
+            D1: { x: -240.69, y: -143.27, type: 'TLS', name: 'West TLS' },
+            D2: { x: 0.00, y: 0.00, type: 'TLS', name: 'Central TLS' },
+            D3: { x: 194.84, y: 149.00, type: 'TLS', name: 'East TLS' },
+            F1: { x: -401.15, y: 114.61, type: 'Priority', name: 'Depot T' },
+            F2: { x: -240.69, y: 366.76, type: 'Priority', name: 'Foundry T' },
+            M2: { x: 229.23, y: -309.46, type: 'Priority', name: 'Market T' },
+            M3: { x: 366.76, y: -11.46, type: 'Priority', name: 'Transit T' },
+            // Shape bends
+            W:  { x: -458.46, y: -286.53 },
+            F3: { x: 57.31, y: 389.69 },
+            M1: { x: -114.61, y: -378.23 },
+            E:  { x: 458.46, y: 298.00 }
+        };
+
+        // 12 Physical Streets
+        const streets = [
+            { id: 'S1', points: [nodes.D1, nodes.D2], lanes: 2, name: 'West diagonal boulevard' },
+            { id: 'S2', points: [nodes.D2, nodes.D3], lanes: 2, name: 'East diagonal boulevard' },
+            { id: 'F0', points: [nodes.D1, nodes.W, nodes.F1], lanes: 1, name: 'Depot return' },
+            { id: 'F1', points: [nodes.D1, nodes.F1], lanes: 1, name: 'Foundry approach' },
+            { id: 'F2', points: [nodes.F1, nodes.F2], lanes: 1, name: 'Warehouse frontage' },
+            { id: 'F3', points: [nodes.F2, nodes.F3, nodes.D3], lanes: 1, name: 'Upper freight bypass' },
+            { id: 'F4', points: [nodes.D2, nodes.F2], lanes: 1, name: 'Freight cross street' },
+            { id: 'M0', points: [nodes.D1, nodes.M1, nodes.M2], lanes: 1, name: 'Lower market return' },
+            { id: 'M1', points: [nodes.M2, nodes.M3], lanes: 1, name: 'Market frontage' },
+            { id: 'M2', points: [nodes.M3, nodes.D3], lanes: 1, name: 'East market approach' },
+            { id: 'M3', points: [nodes.D2, nodes.M2], lanes: 1, name: 'Market cross street' },
+            { id: 'M4', points: [nodes.D3, nodes.E, nodes.M3], lanes: 1, name: 'Eastern transit return' }
+        ];
+
+        // 27 RSUs locations (7 junctions + 20 interior)
+        const rsuList = [
+            { id: 'RSU_J_D1', x: nodes.D1.x, y: nodes.D1.y },
+            { id: 'RSU_J_D2', x: nodes.D2.x, y: nodes.D2.y, isSensing: true },
+            { id: 'RSU_J_D3', x: nodes.D3.x, y: nodes.D3.y },
+            { id: 'RSU_J_F1', x: nodes.F1.x, y: nodes.F1.y },
+            { id: 'RSU_J_F2', x: nodes.F2.x, y: nodes.F2.y },
+            { id: 'RSU_J_M2', x: nodes.M2.x, y: nodes.M2.y },
+            { id: 'RSU_J_M3', x: nodes.M3.x, y: nodes.M3.y }
+        ];
+
+        // Vehicle Fleet & Circulation
         let simTick = 0;
         let simTime = 0.0;
         let activeHazard = null;
-        let rsuRadius = 240; // canvas pixels ~ 240m
         let radarAngle = 0;
 
-        // Multi-Class Vehicle Fleet
         const vehicleTypes = {
-            car: { length: 22, width: 12, color: "#00d2ff", maxSpeed: 2.2 },
-            bus: { length: 45, width: 15, color: "#ffd600", maxSpeed: 1.6 },
-            truck: { length: 38, width: 14, color: "#ff9100", maxSpeed: 1.8 },
-            motorcycle: { length: 14, width: 8, color: "#00e676", maxSpeed: 2.5 }
+            car: { length: 18, width: 9, color: "#00e5ff", speed: 2.2 },
+            bus: { length: 38, width: 12, color: "#ffd600", speed: 1.5 },
+            truck: { length: 32, width: 11, color: "#ff9100", speed: 1.6 },
+            motorcycle: { length: 12, width: 6, color: "#00e676", speed: 2.6 }
         };
 
-        class Vehicle {
-            constructor(id, type, route) {
+        class FoundryVehicle {
+            constructor(id, type, routeIndex) {
                 this.id = id;
                 this.type = type;
-                this.route = route; // 'NS', 'SN', 'WE', 'EW'
-                this.t = 0;
-                this.lane = 0; // 0: outer, 1: inner
-                this.speed = vehicleTypes[type].maxSpeed;
-                this.targetSpeed = this.speed;
+                this.routeIndex = routeIndex;
+                this.progress = Math.random() * 500;
+                this.lane = Math.random() > 0.5 ? 1 : 0;
+                this.speed = vehicleTypes[type].speed;
                 this.isWarned = false;
-                this.initPosition();
             }
 
-            initPosition() {
-                this.progress = Math.random() * -150; // staggered departure
-            }
-
-            update(activeHazard, tlsPhase) {
+            update(activeHazard) {
                 this.progress += this.speed;
-                if (this.progress > 800) {
-                    this.progress = -50 - Math.random() * 80;
-                    this.lane = Math.random() > 0.5 ? 1 : 0;
-                    this.speed = vehicleTypes[this.type].maxSpeed;
+                if (this.progress > 1800) {
+                    this.progress = 0;
                     this.isWarned = false;
                 }
 
-                // Traffic Light Logic at Junction Stop Line (approx progress = 220)
-                const atStopLine = this.progress > 190 && this.progress < 225;
-                if (atStopLine) {
-                    if (this.route === 'NS' || this.route === 'SN') {
-                        if (tlsPhase === 2 || tlsPhase === 3) { // NS Red
-                            this.speed = Math.max(0, this.speed - 0.15);
-                        } else {
-                            this.speed = Math.min(vehicleTypes[this.type].maxSpeed, this.speed + 0.08);
-                        }
-                    } else {
-                        if (tlsPhase === 0 || tlsPhase === 1) { // WE Red
-                            this.speed = Math.max(0, this.speed - 0.15);
-                        } else {
-                            this.speed = Math.min(vehicleTypes[this.type].maxSpeed, this.speed + 0.08);
-                        }
-                    }
-                } else {
-                    // Cooperative Hazard Avoidance Response
-                    if (activeHazard && !this.isWarned && this.progress > 50 && this.progress < 300) {
-                        this.isWarned = true;
-                        if (activeHazard.advisory === "REDUCE_SPEED") {
-                            this.speed *= 0.5;
-                            logEvent(`Vehicle ${this.id} (${this.type}): SLOWDOWN 5.55 m/s applied`, 'slowdown');
-                        } else if (activeHazard.advisory === "MERGE_LANE") {
-                            this.lane = 0; // divert to outer lane
-                            this.speed *= 0.7;
-                            logEvent(`Vehicle ${this.id} (${this.type}): MERGE_LANE outer divert applied`, 'merge');
-                        } else if (activeHazard.advisory === "MANDATORY_LANE_CHANGE") {
-                            this.lane = 0;
-                            this.speed *= 0.5;
-                            logEvent(`Vehicle ${this.id} (${this.type}): MANDATORY_LANE_CHANGE emergency divert`, 'mandatory');
-                        }
+                if (activeHazard && !this.isWarned && this.progress > 200 && this.progress < 450) {
+                    this.isWarned = true;
+                    if (activeHazard.advisory === "REDUCE_SPEED") {
+                        this.speed *= 0.5;
+                        logEvent(`Vehicle ${this.id} (${this.type}): SLOWDOWN 5.55 m/s applied`, 'slowdown');
+                    } else if (activeHazard.advisory === "MERGE_LANE") {
+                        this.lane = 0;
+                        this.speed *= 0.7;
+                        logEvent(`Vehicle ${this.id} (${this.type}): MERGE_LANE outer divert applied`, 'merge');
+                    } else if (activeHazard.advisory === "MANDATORY_LANE_CHANGE") {
+                        this.lane = 0;
+                        this.speed *= 0.5;
+                        logEvent(`Vehicle ${this.id} (${this.type}): MANDATORY_LANE_CHANGE emergency divert`, 'mandatory');
                     }
                 }
-            }
-
-            getCoords(cx, cy) {
-                let x = cx, y = cy, angle = 0;
-                const laneOffset = (this.lane === 0 ? 12 : 28);
-
-                if (this.route === 'NS') {
-                    x = cx + laneOffset;
-                    y = cy - 350 + this.progress;
-                    angle = Math.PI / 2;
-                } else if (this.route === 'SN') {
-                    x = cx - laneOffset;
-                    y = cy + 350 - this.progress;
-                    angle = -Math.PI / 2;
-                } else if (this.route === 'WE') {
-                    x = cx - 350 + this.progress;
-                    y = cy + laneOffset;
-                    angle = 0;
-                } else if (this.route === 'EW') {
-                    x = cx + 350 - this.progress;
-                    y = cy - laneOffset;
-                    angle = Math.PI;
-                }
-                return { x, y, angle };
             }
         }
 
-        // Initialize Fleet
-        const fleet = [
-            new Vehicle("veh_car_01", "car", "NS"),
-            new Vehicle("veh_car_02", "car", "SN"),
-            new Vehicle("veh_bus_01", "bus", "NS"),
-            new Vehicle("veh_truck_01", "truck", "WE"),
-            new Vehicle("veh_moto_01", "motorcycle", "EW"),
-            new Vehicle("veh_car_03", "car", "WE"),
-            new Vehicle("veh_car_04", "car", "EW"),
-            new Vehicle("veh_truck_02", "truck", "SN"),
-            new Vehicle("veh_moto_02", "motorcycle", "NS"),
-            new Vehicle("veh_bus_02", "bus", "WE")
-        ];
-
-        // TLS Cycle: 0: NS Green (42s), 1: NS Yellow (3s), 2: WE Green (42s), 3: WE Yellow (3s)
-        let tlsPhase = 0;
-        let tlsTimer = 0;
+        // Generate 52 circulating vehicles
+        const fleet = [];
+        const types = ['car', 'car', 'car', 'truck', 'bus', 'motorcycle'];
+        for (let i = 0; i < 52; i++) {
+            fleet.push(new FoundryVehicle(`veh_${i+1}`, types[i % types.length], i % 6));
+        }
 
         function logEvent(msg, type = '') {
             const logBox = document.getElementById("event-log");
@@ -489,234 +583,457 @@
             logBox.scrollTop = logBox.scrollHeight;
         }
 
-        // Button handlers
+        // Hazard Button Handlers
         document.getElementById("btn-pothole").addEventListener("click", () => {
-            activeHazard = { category: "POTHOLE", advisory: "REDUCE_SPEED", confidence: 0.91 };
-            document.getElementById("rsu-active-hazard").textContent = "ACTIVE HAZARD: POTHOLE (5.55 m/s SLOWDOWN)";
+            activeHazard = { category: "POTHOLE", advisory: "REDUCE_SPEED", confidence: 0.92 };
+            document.getElementById("rsu-active-hazard").textContent = "HAZARD: POTHOLE (5.55 m/s SLOWDOWN)";
             document.getElementById("rsu-active-hazard").style.color = "var(--accent-cyan)";
-            logEvent("Camera J0 detected POTHOLE (conf: 0.91) -> RSU broadcasting REDUCE_SPEED", "slowdown");
+            logEvent("Camera D2 detected POTHOLE (conf: 0.92) -> RSU broadcasting REDUCE_SPEED", "slowdown");
         });
 
         document.getElementById("btn-construction").addEventListener("click", () => {
-            activeHazard = { category: "CONSTRUCTION_HAZARD", advisory: "MERGE_LANE", confidence: 0.88 };
-            document.getElementById("rsu-active-hazard").textContent = "ACTIVE HAZARD: CONSTRUCTION (MERGE LANE 0)";
+            activeHazard = { category: "CONSTRUCTION_HAZARD", advisory: "MERGE_LANE", confidence: 0.89 };
+            document.getElementById("rsu-active-hazard").textContent = "HAZARD: WORKZONE BARRICADE (MERGE LANE 0)";
             document.getElementById("rsu-active-hazard").style.color = "var(--accent-orange)";
-            logEvent("Camera J0 detected WORKZONE BARRICADE (conf: 0.88) -> RSU broadcasting MERGE_LANE", "merge");
+            logEvent("Camera D2 detected CONSTRUCTION (conf: 0.89) -> RSU broadcasting MERGE_LANE", "merge");
         });
 
         document.getElementById("btn-accident").addEventListener("click", () => {
-            activeHazard = { category: "ROAD_ACCIDENT_OBSTACLE", advisory: "MANDATORY_LANE_CHANGE", confidence: 0.94 };
-            document.getElementById("rsu-active-hazard").textContent = "ACTIVE HAZARD: ACCIDENT (MANDATORY LANE CHANGE)";
+            activeHazard = { category: "ROAD_ACCIDENT_OBSTACLE", advisory: "MANDATORY_LANE_CHANGE", confidence: 0.95 };
+            document.getElementById("rsu-active-hazard").textContent = "HAZARD: ACCIDENT (MANDATORY LANE CHANGE)";
             document.getElementById("rsu-active-hazard").style.color = "var(--accent-red)";
-            logEvent("Camera J0 detected DAMAGED VEHICLE OBSTACLE (conf: 0.94) -> RSU emergency divert", "mandatory");
+            logEvent("Camera D2 detected ACCIDENT OBSTACLE (conf: 0.95) -> RSU emergency divert", "mandatory");
         });
 
         document.getElementById("btn-clear").addEventListener("click", () => {
             activeHazard = null;
-            document.getElementById("rsu-active-hazard").textContent = "ACTIVE HAZARD: NONE";
+            document.getElementById("rsu-active-hazard").textContent = "HAZARD DISSEMINATION: NOMINAL";
             document.getElementById("rsu-active-hazard").style.color = "var(--text-dim)";
             fleet.forEach(v => {
-                v.speed = vehicleTypes[v.type].maxSpeed;
+                v.speed = vehicleTypes[v.type].speed;
                 v.isWarned = false;
             });
-            logEvent("Hazards cleared. RSU beacon returned to nominal state.");
+            logEvent("Hazards cleared. All vehicles resumed normal speed.");
         });
 
-        // Main Animation Loop
+        // 3 TLS Timers
+        let tlsPhase = 0;
+        let tlsTimer = 0;
+
         function animate() {
             simTick++;
             simTime += 0.1;
             tlsTimer += 0.1;
 
-            // TLS Phase stepping
-            if (tlsPhase === 0 && tlsTimer > 15) { tlsPhase = 1; tlsTimer = 0; }
-            else if (tlsPhase === 1 && tlsTimer > 3) { tlsPhase = 2; tlsTimer = 0; }
-            else if (tlsPhase === 2 && tlsTimer > 15) { tlsPhase = 3; tlsTimer = 0; }
-            else if (tlsPhase === 3 && tlsTimer > 3) { tlsPhase = 0; tlsTimer = 0; }
+            if (tlsTimer > 12) {
+                tlsPhase = (tlsPhase + 1) % 4;
+                tlsTimer = 0;
+            }
 
-            // UI Telemetry updates
             document.getElementById("val-tick").textContent = String(simTick).padStart(4, '0');
             document.getElementById("val-fleet").textContent = fleet.length;
 
-            const badge = document.getElementById("tls-phase-badge");
-            const lamp = document.getElementById("tls-north-lamp");
+            // Update 3 TLS Lamps
+            const d1Lamp = document.getElementById("lamp-d1");
+            const d2Lamp = document.getElementById("lamp-d2");
+            const d3Lamp = document.getElementById("lamp-d3");
+
             if (tlsPhase === 0) {
-                badge.textContent = "PHASE 0: NS GREEN";
-                badge.style.color = "var(--accent-green)";
-                lamp.style.background = "#00e676";
-                lamp.style.boxShadow = "0 0 10px #00e676";
+                d1Lamp.style.background = "#00e676"; d1Lamp.style.boxShadow = "0 0 8px #00e676";
+                d2Lamp.style.background = "#00e676"; d2Lamp.style.boxShadow = "0 0 8px #00e676";
+                d3Lamp.style.background = "#ff1744"; d3Lamp.style.boxShadow = "0 0 8px #ff1744";
             } else if (tlsPhase === 1) {
-                badge.textContent = "PHASE 1: NS YELLOW";
-                badge.style.color = "var(--accent-yellow)";
-                lamp.style.background = "#ffd600";
-                lamp.style.boxShadow = "0 0 10px #ffd600";
+                d1Lamp.style.background = "#ffd600"; d1Lamp.style.boxShadow = "0 0 8px #ffd600";
+                d2Lamp.style.background = "#ffd600"; d2Lamp.style.boxShadow = "0 0 8px #ffd600";
+                d3Lamp.style.background = "#ffd600"; d3Lamp.style.boxShadow = "0 0 8px #ffd600";
             } else if (tlsPhase === 2) {
-                badge.textContent = "PHASE 2: WE GREEN";
-                badge.style.color = "var(--accent-cyan)";
-                lamp.style.background = "#ff1744";
-                lamp.style.boxShadow = "0 0 10px #ff1744";
+                d1Lamp.style.background = "#ff1744"; d1Lamp.style.boxShadow = "0 0 8px #ff1744";
+                d2Lamp.style.background = "#ff1744"; d2Lamp.style.boxShadow = "0 0 8px #ff1744";
+                d3Lamp.style.background = "#00e676"; d3Lamp.style.boxShadow = "0 0 8px #00e676";
             } else {
-                badge.textContent = "PHASE 3: WE YELLOW";
-                badge.style.color = "var(--accent-orange)";
-                lamp.style.background = "#ffd600";
-                lamp.style.boxShadow = "0 0 10px #ffd600";
+                d1Lamp.style.background = "#ffd600"; d1Lamp.style.boxShadow = "0 0 8px #ffd600";
+                d2Lamp.style.background = "#ffd600"; d2Lamp.style.boxShadow = "0 0 8px #ffd600";
+                d3Lamp.style.background = "#ffd600"; d3Lamp.style.boxShadow = "0 0 8px #ffd600";
             }
 
-            // Render City Canvas
             ctx.clearRect(0, 0, width, height);
+
+            if (viewMode === 'map') {
+                renderSchematicMap();
+            } else {
+                render3DPerspective();
+            }
+
+            renderCameraHUD();
+            requestAnimationFrame(animate);
+        }
+
+        // World to Screen Transform (Scale & Center)
+        function worldToScreen(wx, wy) {
+            const scale = Math.min(width, height) / 1050;
+            const cx = width / 2;
+            const cy = height / 2;
+            return {
+                x: cx + wx * scale,
+                y: cy - wy * scale // invert Y for SUMO coordinate match
+            };
+        }
+
+        function renderSchematicMap() {
+            // Draw Ground Background
+            ctx.fillStyle = "#111722";
+            ctx.fillRect(0, 0, width, height);
+
+            // Draw District Zone Overlays
+            const scale = Math.min(width, height) / 1050;
             const cx = width / 2;
             const cy = height / 2;
 
-            // Draw 4-Way Approach Roads (each 2 lanes per direction ~ 80px total width)
-            const roadWidth = 84;
-            ctx.fillStyle = "#1e2638";
-            // North-South Corridor
-            ctx.fillRect(cx - roadWidth/2, 0, roadWidth, height);
-            // West-East Corridor
-            ctx.fillRect(0, cy - roadWidth/2, width, roadWidth);
-
-            // Road Markings
-            ctx.strokeStyle = "rgba(255, 255, 255, 0.4)";
-            ctx.lineWidth = 1.5;
-            ctx.setLineDash([8, 8]);
-            // Center division
+            // 1. Northwest Freight & Foundry Lobe (Terracotta / Industrial wash)
+            ctx.fillStyle = "rgba(179, 84, 59, 0.08)";
             ctx.beginPath();
-            ctx.moveTo(cx, 0); ctx.lineTo(cx, height);
-            ctx.moveTo(0, cy); ctx.lineTo(width, cy);
-            ctx.stroke();
-
-            // Lane dividers (inner vs outer)
-            ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
-            ctx.setLineDash([4, 6]);
-            ctx.beginPath();
-            ctx.moveTo(cx - 21, 0); ctx.lineTo(cx - 21, height);
-            ctx.moveTo(cx + 21, 0); ctx.lineTo(cx + 21, height);
-            ctx.moveTo(0, cy - 21); ctx.lineTo(width, cy - 21);
-            ctx.moveTo(0, cy + 21); ctx.lineTo(width, cy + 21);
-            ctx.stroke();
-            ctx.setLineDash([]);
-
-            // Junction Box (Center Intersection)
-            ctx.fillStyle = "#263047";
-            ctx.fillRect(cx - roadWidth/2, cy - roadWidth/2, roadWidth, roadWidth);
-
-            // Traffic Signals At 4 Arms
-            function drawSignal(x, y, isGreen) {
-                ctx.fillStyle = "#0f172a";
-                ctx.fillRect(x - 8, y - 8, 16, 16);
-                ctx.fillStyle = isGreen ? "#00e676" : "#ff1744";
-                ctx.beginPath();
-                ctx.arc(x, y, 5, 0, Math.PI * 2);
-                ctx.fill();
-            }
-            const nsGreen = (tlsPhase === 0);
-            const weGreen = (tlsPhase === 2);
-            drawSignal(cx + 48, cy - 48, nsGreen); // North head
-            drawSignal(cx - 48, cy + 48, nsGreen); // South head
-            drawSignal(cx + 48, cy + 48, weGreen); // East head
-            drawSignal(cx - 48, cy - 48, weGreen); // West head
-
-            // Draw RSU Mast & Communication Coverage Circle
-            radarAngle += 0.03;
-            ctx.strokeStyle = "rgba(0, 210, 255, 0.18)";
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.arc(cx, cy, rsuRadius, 0, Math.PI * 2);
-            ctx.stroke();
-
-            // Radar beam sweep
-            const grad = ctx.createRadialGradient(cx, cy, 10, cx, cy, rsuRadius);
-            grad.addColorStop(0, "rgba(0, 210, 255, 0.25)");
-            grad.addColorStop(1, "rgba(0, 210, 255, 0.0)");
-            ctx.fillStyle = grad;
-            ctx.beginPath();
-            ctx.moveTo(cx, cy);
-            ctx.arc(cx, cy, rsuRadius, radarAngle, radarAngle + 0.45);
+            const pD1 = worldToScreen(nodes.D1.x, nodes.D1.y);
+            const pF1 = worldToScreen(nodes.F1.x, nodes.F1.y);
+            const pF2 = worldToScreen(nodes.F2.x, nodes.F2.y);
+            const pF3 = worldToScreen(nodes.F3.x, nodes.F3.y);
+            const pD3 = worldToScreen(nodes.D3.x, nodes.D3.y);
+            const pD2 = worldToScreen(nodes.D2.x, nodes.D2.y);
+            ctx.moveTo(pD1.x, pD1.y);
+            ctx.lineTo(pF1.x, pF1.y);
+            ctx.lineTo(pF2.x, pF2.y);
+            ctx.lineTo(pF3.x, pF3.y);
+            ctx.lineTo(pD3.x, pD3.y);
+            ctx.lineTo(pD2.x, pD2.y);
             ctx.closePath();
             ctx.fill();
 
-            // Central RSU Mast Icon
-            ctx.fillStyle = "#00d2ff";
+            // 2. Southeast Market & Transit Lobe (Warm Amber wash)
+            ctx.fillStyle = "rgba(230, 197, 148, 0.06)";
             ctx.beginPath();
-            ctx.arc(cx, cy, 7, 0, Math.PI * 2);
+            const pM1 = worldToScreen(nodes.M1.x, nodes.M1.y);
+            const pM2 = worldToScreen(nodes.M2.x, nodes.M2.y);
+            const pM3 = worldToScreen(nodes.M3.x, nodes.M3.y);
+            const pE  = worldToScreen(nodes.E.x, nodes.E.y);
+            ctx.moveTo(pD1.x, pD1.y);
+            ctx.lineTo(pM1.x, pM1.y);
+            ctx.lineTo(pM2.x, pM2.y);
+            ctx.lineTo(pM3.x, pM3.y);
+            ctx.lineTo(pE.x, pE.y);
+            ctx.lineTo(pD3.x, pD3.y);
+            ctx.lineTo(pD2.x, pD2.y);
+            ctx.closePath();
             ctx.fill();
-            ctx.strokeStyle = "#ffffff";
-            ctx.lineWidth = 2;
+
+            // Draw 12 Physical Streets
+            streets.forEach(street => {
+                ctx.beginPath();
+                const start = worldToScreen(street.points[0].x, street.points[0].y);
+                ctx.moveTo(start.x, start.y);
+                for (let i = 1; i < street.points.length; i++) {
+                    const pt = worldToScreen(street.points[i].x, street.points[i].y);
+                    ctx.lineTo(pt.x, pt.y);
+                }
+
+                // Road Asphalt
+                ctx.strokeStyle = "#273042";
+                ctx.lineWidth = street.lanes === 2 ? 30 * scale : 18 * scale;
+                ctx.lineCap = "round";
+                ctx.lineJoin = "round";
+                ctx.stroke();
+
+                // Road Centerline
+                ctx.strokeStyle = street.lanes === 2 ? "rgba(255, 214, 0, 0.45)" : "rgba(255, 255, 255, 0.2)";
+                ctx.lineWidth = 1.5;
+                ctx.setLineDash(street.lanes === 2 ? [6, 6] : [4, 6]);
+                ctx.stroke();
+                ctx.setLineDash([]);
+            });
+
+            // Draw 7 Junction Nodes
+            Object.keys(nodes).forEach(key => {
+                const node = nodes[key];
+                if (!node.type) return; // skip intermediate bends
+                const pt = worldToScreen(node.x, node.y);
+
+                if (node.type === 'TLS') {
+                    // Traffic light junction footprint
+                    ctx.fillStyle = "#1e293b";
+                    ctx.beginPath();
+                    ctx.arc(pt.x, pt.y, 14, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.strokeStyle = varColorForTLS(key);
+                    ctx.lineWidth = 3;
+                    ctx.stroke();
+
+                    ctx.fillStyle = "#ffffff";
+                    ctx.font = "bold 9px monospace";
+                    ctx.fillText(key, pt.x - 6, pt.y + 3);
+                } else {
+                    // Priority T junction
+                    ctx.fillStyle = "#334155";
+                    ctx.beginPath();
+                    ctx.arc(pt.x, pt.y, 8, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.strokeStyle = "rgba(255, 255, 255, 0.3)";
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+
+                    ctx.fillStyle = "rgba(255, 255, 255, 0.6)";
+                    ctx.font = "8px monospace";
+                    ctx.fillText(key, pt.x + 10, pt.y + 3);
+                }
+            });
+
+            // Central RSU Mast at D2 (radar sweep)
+            radarAngle += 0.03;
+            const pD2Screen = worldToScreen(nodes.D2.x, nodes.D2.y);
+            const rsuRadiusPx = 180 * scale;
+
+            ctx.strokeStyle = "rgba(217, 119, 54, 0.25)";
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.arc(pD2Screen.x, pD2Screen.y, rsuRadiusPx, 0, Math.PI * 2);
             ctx.stroke();
 
-            // Draw Active Hazard Marker on Approach Road
+            const grad = ctx.createRadialGradient(pD2Screen.x, pD2Screen.y, 5, pD2Screen.x, pD2Screen.y, rsuRadiusPx);
+            grad.addColorStop(0, "rgba(217, 119, 54, 0.25)");
+            grad.addColorStop(1, "rgba(217, 119, 54, 0.0)");
+            ctx.fillStyle = grad;
+            ctx.beginPath();
+            ctx.moveTo(pD2Screen.x, pD2Screen.y);
+            ctx.arc(pD2Screen.x, pD2Screen.y, rsuRadiusPx, radarAngle, radarAngle + 0.45);
+            ctx.closePath();
+            ctx.fill();
+
+            // Active Hazard Marker at D2 approach
             if (activeHazard) {
-                const hx = cx + 21;
-                const hy = cy - 140;
-                ctx.fillStyle = activeHazard.category === "POTHOLE" ? "rgba(0, 210, 255, 0.85)" :
-                               (activeHazard.category === "CONSTRUCTION_HAZARD" ? "rgba(255, 145, 0, 0.85)" : "rgba(255, 23, 68, 0.85)");
+                const hx = pD2Screen.x - 35 * scale;
+                const hy = pD2Screen.y + 20 * scale;
+                ctx.fillStyle = activeHazard.category === "POTHOLE" ? "rgba(0, 229, 255, 0.9)" :
+                               (activeHazard.category === "CONSTRUCTION_HAZARD" ? "rgba(255, 145, 0, 0.9)" : "rgba(255, 23, 68, 0.9)");
                 ctx.beginPath();
-                ctx.arc(hx, hy, 10, 0, Math.PI * 2);
+                ctx.arc(hx, hy, 9, 0, Math.PI * 2);
                 ctx.fill();
                 ctx.strokeStyle = "#ffffff";
                 ctx.stroke();
-
-                ctx.font = "10px monospace";
                 ctx.fillStyle = "#ffffff";
-                ctx.fillText(`! ${activeHazard.category}`, hx + 14, hy + 4);
+                ctx.font = "bold 10px monospace";
+                ctx.fillText(`! ${activeHazard.category}`, hx + 12, hy + 4);
             }
 
-            // Draw & Update Vehicles
-            fleet.forEach(v => {
-                v.update(activeHazard, tlsPhase);
-                const pos = v.getCoords(cx, cy);
-                const spec = vehicleTypes[v.type];
+            // Draw Vehicles along routes
+            fleet.forEach((v, idx) => {
+                v.update(activeHazard);
+                const street = streets[v.routeIndex % streets.length];
+                const p1 = worldToScreen(street.points[0].x, street.points[0].y);
+                const p2 = worldToScreen(street.points[street.points.length-1].x, street.points[street.points.length-1].y);
+                const t = ((v.progress / 1800) + (idx / fleet.length)) % 1;
+
+                const vx = p1.x + (p2.x - p1.x) * t;
+                const vy = p1.y + (p2.y - p1.y) * t;
+                const angle = Math.atan2(p2.y - p1.y, p2.x - p1.x);
 
                 ctx.save();
-                ctx.translate(pos.x, pos.y);
-                ctx.rotate(pos.angle);
+                ctx.translate(vx, vy);
+                ctx.rotate(angle);
 
-                // Vehicle Body
+                const spec = vehicleTypes[v.type];
                 ctx.fillStyle = spec.color;
                 ctx.beginPath();
-                ctx.roundRect(-spec.length/2, -spec.width/2, spec.length, spec.width, 3);
+                ctx.roundRect(-spec.length/2, -spec.width/2, spec.length, spec.width, 2);
                 ctx.fill();
 
                 // Windshield
                 ctx.fillStyle = "rgba(0, 0, 0, 0.4)";
                 ctx.fillRect(spec.length * 0.1, -spec.width * 0.35, spec.length * 0.25, spec.width * 0.7);
 
-                // Headlights
-                ctx.fillStyle = "#ffffff";
-                ctx.fillRect(spec.length/2 - 2, -spec.width/2 + 1, 2, 3);
-                ctx.fillRect(spec.length/2 - 2, spec.width/2 - 4, 2, 3);
-
                 ctx.restore();
             });
+        }
 
-            // Render Camera HUD (Fixed sensor simulating 768x768 INT8 detection)
-            sCtx.fillStyle = "#0f172a";
+        function varColorForTLS(tlsId) {
+            if (tlsId === 'TL_D1' || tlsId === 'TL_D2') {
+                return (tlsPhase === 0) ? "#00e676" : ((tlsPhase === 1 || tlsPhase === 3) ? "#ffd600" : "#ff1744");
+            } else {
+                return (tlsPhase === 2) ? "#00e676" : ((tlsPhase === 1 || tlsPhase === 3) ? "#ffd600" : "#ff1744");
+            }
+        }
+
+        // View 2: Street-Level 3D Perspective (matching foundry.png)
+        function render3DPerspective() {
+            // Sky & Horizon
+            const skyGrad = ctx.createLinearGradient(0, 0, 0, height);
+            skyGrad.addColorStop(0, "#0b121e");
+            skyGrad.addColorStop(0.5, "#1f2a3c");
+            skyGrad.addColorStop(0.5, "#2a1e1b");
+            skyGrad.addColorStop(1, "#14161a");
+            ctx.fillStyle = skyGrad;
+            ctx.fillRect(0, 0, width, height);
+
+            const horizonY = height * 0.48;
+            const vanishingX = width * 0.52;
+
+            // Industrial Brick Buildings (Left side - Foundry Frontage)
+            ctx.fillStyle = "#874332";
+            ctx.beginPath();
+            ctx.moveTo(0, height * 0.15);
+            ctx.lineTo(width * 0.32, horizonY);
+            ctx.lineTo(width * 0.32, height);
+            ctx.lineTo(0, height);
+            ctx.closePath();
+            ctx.fill();
+
+            // Factory Chimneys
+            ctx.fillStyle = "#5c2e23";
+            ctx.fillRect(width * 0.08, height * 0.05, 22, height * 0.4);
+            ctx.fillRect(width * 0.16, height * 0.10, 18, height * 0.35);
+
+            // Windows
+            ctx.fillStyle = "#e6c594";
+            for (let r = 0; r < 4; r++) {
+                for (let c = 0; c < 3; c++) {
+                    ctx.fillRect(width * 0.05 + c * 35, height * 0.24 + r * 30, 14, 18);
+                }
+            }
+
+            // Market Frontage & Warehouses (Right side)
+            ctx.fillStyle = "#695245";
+            ctx.beginPath();
+            ctx.moveTo(width, height * 0.2);
+            ctx.lineTo(width * 0.68, horizonY);
+            ctx.lineTo(width * 0.68, height);
+            ctx.lineTo(width, height);
+            ctx.closePath();
+            ctx.fill();
+
+            // Road Perspective (Diagonal Boulevard)
+            ctx.fillStyle = "#1e2229";
+            ctx.beginPath();
+            ctx.moveTo(width * 0.32, horizonY);
+            ctx.lineTo(width * 0.68, horizonY);
+            ctx.lineTo(width * 0.95, height);
+            ctx.lineTo(width * 0.05, height);
+            ctx.closePath();
+            ctx.fill();
+
+            // Center Road Dashed Line
+            ctx.strokeStyle = "#ffd600";
+            ctx.lineWidth = 4;
+            ctx.setLineDash([20, 16]);
+            ctx.beginPath();
+            ctx.moveTo(vanishingX, horizonY);
+            ctx.lineTo(width * 0.5, height);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // Overhead Signal Gantry & 3-Aspect Lights
+            ctx.strokeStyle = "#475569";
+            ctx.lineWidth = 6;
+            ctx.beginPath();
+            ctx.moveTo(width * 0.28, horizonY + 30);
+            ctx.lineTo(width * 0.28, horizonY - 60);
+            ctx.lineTo(width * 0.72, horizonY - 60);
+            ctx.lineTo(width * 0.72, horizonY + 30);
+            ctx.stroke();
+
+            // Gantry Signal Heads
+            function drawGantryLamp(gx, gy, isGreen, isYellow, isRed) {
+                ctx.fillStyle = "#0f172a";
+                ctx.fillRect(gx - 10, gy - 24, 20, 48);
+                ctx.fillStyle = isRed ? "#ff1744" : "#331111";
+                ctx.beginPath(); ctx.arc(gx, gy - 14, 5, 0, Math.PI*2); ctx.fill();
+                ctx.fillStyle = isYellow ? "#ffd600" : "#332a00";
+                ctx.beginPath(); ctx.arc(gx, gy, 5, 0, Math.PI*2); ctx.fill();
+                ctx.fillStyle = isGreen ? "#00e676" : "#003311";
+                ctx.beginPath(); ctx.arc(gx, gy + 14, 5, 0, Math.PI*2); ctx.fill();
+            }
+
+            const isG = (tlsPhase === 0);
+            const isY = (tlsPhase === 1 || tlsPhase === 3);
+            const isR = (tlsPhase === 2);
+            drawGantryLamp(width * 0.44, horizonY - 60, isG, isY, isR);
+            drawGantryLamp(width * 0.56, horizonY - 60, isG, isY, isR);
+
+            // RSU Wireless Mast (Right side)
+            ctx.strokeStyle = "#94a3b8";
+            ctx.lineWidth = 4;
+            ctx.beginPath();
+            ctx.moveTo(width * 0.75, height * 0.7);
+            ctx.lineTo(width * 0.75, height * 0.35);
+            ctx.stroke();
+            ctx.fillStyle = "var(--foundry-copper)";
+            ctx.fillRect(width * 0.74, height * 0.33, 14, 14);
+
+            // RSU Broadcast Waves
+            ctx.strokeStyle = "rgba(217, 119, 54, 0.6)";
+            ctx.lineWidth = 2;
+            for (let ring = 1; ring <= 3; ring++) {
+                ctx.beginPath();
+                ctx.arc(width * 0.75, height * 0.34, ring * 14 + (simTick % 10) * 1.5, -Math.PI*0.8, -Math.PI*0.2);
+                ctx.stroke();
+            }
+
+            // Hazard on Road: Workzone Cones / Obstacle
+            if (activeHazard) {
+                const coneX = width * 0.42;
+                const coneY = height * 0.72;
+                ctx.fillStyle = activeHazard.category === "POTHOLE" ? "#00e5ff" :
+                                (activeHazard.category === "CONSTRUCTION_HAZARD" ? "#ff9100" : "#ff1744");
+                ctx.beginPath();
+                ctx.moveTo(coneX, coneY - 30);
+                ctx.lineTo(coneX + 16, coneY);
+                ctx.lineTo(coneX - 16, coneY);
+                ctx.closePath();
+                ctx.fill();
+                ctx.fillStyle = "#ffffff";
+                ctx.fillRect(coneX - 10, coneY - 14, 20, 4);
+
+                ctx.font = "bold 13px monospace";
+                ctx.fillStyle = "#ffffff";
+                ctx.fillText(`⚠️ HAZARD DETECTED: ${activeHazard.category}`, width * 0.32, height * 0.88);
+            }
+        }
+
+        // Fixed Mast Sensor View (YOLO Neural HUD)
+        function renderCameraHUD() {
+            sCtx.fillStyle = "#0a0f1d";
             sCtx.fillRect(0, 0, 300, 180);
-            
-            // Perspective road view
-            sCtx.fillStyle = "#1e293b";
+
+            // Perspective Road
+            sCtx.fillStyle = "#1e2837";
             sCtx.beginPath();
-            sCtx.moveTo(110, 60); sCtx.lineTo(190, 60);
+            sCtx.moveTo(110, 50); sCtx.lineTo(190, 50);
             sCtx.lineTo(270, 180); sCtx.lineTo(30, 180);
             sCtx.fill();
 
-            if (activeHazard) {
-                // Synthetic bounding box overlay
-                sCtx.strokeStyle = activeHazard.category === "POTHOLE" ? "#00d2ff" :
-                                   (activeHazard.category === "CONSTRUCTION_HAZARD" ? "#ff9100" : "#ff1744");
-                sCtx.lineWidth = 2;
-                sCtx.strokeRect(105, 90, 90, 50);
+            // Center lane markings
+            sCtx.strokeStyle = "rgba(255, 214, 0, 0.4)";
+            sCtx.lineWidth = 2;
+            sCtx.setLineDash([8, 6]);
+            sCtx.beginPath();
+            sCtx.moveTo(150, 50); sCtx.lineTo(150, 180);
+            sCtx.stroke();
+            sCtx.setLineDash([]);
 
-                sCtx.fillStyle = sCtx.strokeStyle;
-                sCtx.font = "9px monospace";
-                sCtx.fillText(`${activeHazard.category} ${(activeHazard.confidence * 100).toFixed(1)}%`, 105, 85);
+            if (activeHazard) {
+                const boxColor = activeHazard.category === "POTHOLE" ? "#00e5ff" :
+                                 (activeHazard.category === "CONSTRUCTION_HAZARD" ? "#ff9100" : "#ff1744");
+                sCtx.strokeStyle = boxColor;
+                sCtx.lineWidth = 2;
+                sCtx.strokeRect(95, 80, 110, 55);
+
+                sCtx.fillStyle = boxColor;
+                sCtx.font = "bold 9px monospace";
+                sCtx.fillText(`${activeHazard.category} ${(activeHazard.confidence * 100).toFixed(1)}%`, 95, 74);
+
+                sCtx.font = "8px monospace";
+                sCtx.fillStyle = "rgba(255, 255, 255, 0.7)";
+                sCtx.fillText(`ADVISORY: ${activeHazard.advisory}`, 95, 148);
             } else {
                 sCtx.fillStyle = "rgba(255, 255, 255, 0.3)";
                 sCtx.font = "10px monospace";
-                sCtx.fillText("CLEAR ROADWAY · NO HAZARDS", 70, 110);
+                sCtx.fillText("CLEAR ROADWAY · NO HAZARDS", 65, 110);
             }
-
-            requestAnimationFrame(animate);
         }
 
         animate();
