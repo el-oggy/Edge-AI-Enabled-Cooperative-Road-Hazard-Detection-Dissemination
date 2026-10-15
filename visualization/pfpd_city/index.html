@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFPD Smart City | Phase SC1 4-Way Signalized Junction & Edge-AI Perception</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --panel-bg: rgba(18, 24, 38, 0.85);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --accent-cyan: #00d2ff;
+            --accent-blue: #3a7bd5;
+            --accent-green: #00e676;
+            --accent-yellow: #ffd600;
+            --accent-orange: #ff9100;
+            --accent-red: #ff1744;
+            --text-main: #f0f4f8;
+            --text-dim: #94a3b8;
+            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-stack);
+            overflow: hidden;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #viewport-container {
+            flex: 1;
+            position: relative;
+            height: 100%;
+            background: radial-gradient(circle at center, #141b2d 0%, #080b12 100%);
+        }
+
+        #city-canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Glassmorphic UI Overlays */
+        .glass-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+        }
+
+        #header-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 16px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            z-index: 10;
+        }
+
+        #header-overlay h1 {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #header-overlay .subtitle {
+            font-size: 12px;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Live Telemetry Sidebar */
+        #telemetry-sidebar {
+            width: 380px;
+            height: calc(100vh - 40px);
+            margin: 20px 20px 20px 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            z-index: 10;
+            overflow-y: auto;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 12px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .metric-card .title {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .metric-card .value {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: monospace;
+            color: var(--accent-cyan);
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Fixed Camera Sensor HUD */
+        #camera-hud {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 320px;
+            height: 220px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        #sensor-frame-container {
+            flex: 1;
+            position: relative;
+            background: #000;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 210, 255, 0.3);
+        }
+
+        #sensor-canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .hud-scanline {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            background-size: 100% 3px, 6px 100%;
+            pointer-events: none;
+        }
+
+        .hud-label {
+            position: absolute;
+            top: 6px;
+            left: 8px;
+            font-family: monospace;
+            font-size: 10px;
+            color: var(--accent-cyan);
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 4px rgba(0, 210, 255, 0.5);
+        }
+
+        /* Controls Panel */
+        .controls-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .btn-pothole { border-color: rgba(0, 210, 255, 0.4); color: var(--accent-cyan); }
+        .btn-pothole:hover { background: rgba(0, 210, 255, 0.15); }
+
+        .btn-construction { border-color: rgba(255, 145, 0, 0.4); color: var(--accent-orange); }
+        .btn-construction:hover { background: rgba(255, 145, 0, 0.15); }
+
+        .btn-accident { border-color: rgba(255, 23, 68, 0.4); color: var(--accent-red); }
+        .btn-accident:hover { background: rgba(255, 23, 68, 0.15); }
+
+        .btn-clear { border-color: rgba(255, 255, 255, 0.2); color: var(--text-dim); }
+
+        /* Causal Event Log */
+        #event-log-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-height: 140px;
+        }
+
+        #event-log {
+            flex: 1;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+            padding: 8px 10px;
+            font-family: monospace;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .log-entry {
+            display: flex;
+            flex-direction: column;
+            border-left: 2px solid var(--accent-cyan);
+            padding-left: 6px;
+            line-height: 1.4;
+        }
+        .log-entry.slowdown { border-color: var(--accent-yellow); }
+        .log-entry.merge { border-color: var(--accent-orange); }
+        .log-entry.mandatory { border-color: var(--accent-red); }
+        .log-time { color: var(--text-dim); font-size: 9px; }
+    </style>
+</head>
+<body>
+    <div id="viewport-container">
+        <canvas id="city-canvas"></canvas>
+
+        <div id="header-overlay" class="glass-panel">
+            <h1>PFPD SMART CITY JUNCTION (SC1)</h1>
+            <div class="subtitle">TraCI 4-Way Signalized Micro-Simulation & Edge-AI Dissemination</div>
+        </div>
+
+        <div id="camera-hud" class="glass-panel">
+            <div class="title" style="font-size: 11px; font-weight: 600; color: var(--text-dim); display: flex; justify-content: space-between;">
+                <span>FIXED MAST SENSOR (CAM-J0)</span>
+                <span id="cam-status" style="color: var(--accent-green);">ONLINE [768x768 INT8]</span>
+            </div>
+            <div id="sensor-frame-container">
+                <canvas id="sensor-canvas"></canvas>
+                <div class="hud-scanline"></div>
+                <div class="hud-label">RSU_J0 :: OPTICAL RADAR</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="telemetry-sidebar" class="glass-panel">
+        <div class="grid-2col">
+            <div class="metric-card">
+                <div class="title">SIMULATION TICK</div>
+                <div class="value" id="val-tick">0000</div>
+            </div>
+            <div class="metric-card">
+                <div class="title">ACTIVE FLEET</div>
+                <div class="value" id="val-fleet" style="color: var(--accent-green);">0</div>
+            </div>
+        </div>
+
+        <div class="metric-card">
+            <div class="title">
+                <span>TRAFFIC LIGHT STATUS</span>
+                <span id="tls-phase-badge" style="color: var(--accent-green);">PHASE 0 (GREEN)</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-top: 6px;">
+                <div id="tls-north-lamp" style="width: 14px; height: 14px; border-radius: 50%; background: #00e676; box-shadow: 0 0 10px #00e676;"></div>
+                <span style="font-size: 12px; font-family: monospace;" id="tls-state-text">GGGggrrrrrGGGggrrrrr</span>
+            </div>
+        </div>
+
+        <div class="metric-card">
+            <div class="title">RSU_J0 BEACON STATUS</div>
+            <div style="font-size: 13px; font-family: monospace; color: var(--text-main);" id="rsu-status-text">
+                BROADCAST: NOMINAL (250m)
+            </div>
+            <div style="font-size: 11px; color: var(--accent-cyan); margin-top: 2px;" id="rsu-active-hazard">
+                ACTIVE HAZARD: NONE
+            </div>
+        </div>
+
+        <div class="controls-group">
+            <div style="font-size: 11px; font-weight: 600; color: var(--text-dim); text-transform: uppercase;">
+                INJECT PERCEPTUAL HAZARDS (CAMERA AI)
+            </div>
+            <button class="btn btn-pothole" id="btn-pothole">
+                <span>⚠️ INJECT POTHOLE (5.55 m/s SLOWDOWN)</span>
+            </button>
+            <button class="btn btn-construction" id="btn-construction">
+                <span>🚧 INJECT CONSTRUCTION (MERGE LANE 0)</span>
+            </button>
+            <button class="btn btn-accident" id="btn-accident">
+                <span>🚨 INJECT ACCIDENT (EMERGENCY MERGE)</span>
+            </button>
+            <button class="btn btn-clear" id="btn-clear">
+                <span>✓ CLEAR HAZARDS (RESUME SPEED)</span>
+            </button>
+        </div>
+
+        <div id="event-log-container">
+            <div style="font-size: 11px; font-weight: 600; color: var(--text-dim); text-transform: uppercase;">
+                COOPERATIVE CAUSAL RECEIPTS
+            </div>
+            <div id="event-log">
+                <div class="log-entry">
+                    <span class="log-time">T=0.0s</span>
+                    <span>System initialized. TraCI sole-coordinator connected.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simulation Canvas & Engine Simulation
+        const canvas = document.getElementById("city-canvas");
+        const ctx = canvas.getContext("2d");
+        const sensorCanvas = document.getElementById("sensor-canvas");
+        const sCtx = sensorCanvas.getContext("2d");
+
+        let width, height;
+        function resize() {
+            width = canvas.parentElement.clientWidth;
+            height = canvas.parentElement.clientHeight;
+            canvas.width = width;
+            canvas.height = height;
+            sensorCanvas.width = 300;
+            sensorCanvas.height = 180;
+        }
+        window.addEventListener("resize", resize);
+        resize();
+
+        // Junction Model (Center at 0, 0)
+        let simTick = 0;
+        let simTime = 0.0;
+        let activeHazard = null;
+        let rsuRadius = 240; // canvas pixels ~ 240m
+        let radarAngle = 0;
+
+        // Multi-Class Vehicle Fleet
+        const vehicleTypes = {
+            car: { length: 22, width: 12, color: "#00d2ff", maxSpeed: 2.2 },
+            bus: { length: 45, width: 15, color: "#ffd600", maxSpeed: 1.6 },
+            truck: { length: 38, width: 14, color: "#ff9100", maxSpeed: 1.8 },
+            motorcycle: { length: 14, width: 8, color: "#00e676", maxSpeed: 2.5 }
+        };
+
+        class Vehicle {
+            constructor(id, type, route) {
+                this.id = id;
+                this.type = type;
+                this.route = route; // 'NS', 'SN', 'WE', 'EW'
+                this.t = 0;
+                this.lane = 0; // 0: outer, 1: inner
+                this.speed = vehicleTypes[type].maxSpeed;
+                this.targetSpeed = this.speed;
+                this.isWarned = false;
+                this.initPosition();
+            }
+
+            initPosition() {
+                this.progress = Math.random() * -150; // staggered departure
+            }
+
+            update(activeHazard, tlsPhase) {
+                this.progress += this.speed;
+                if (this.progress > 800) {
+                    this.progress = -50 - Math.random() * 80;
+                    this.lane = Math.random() > 0.5 ? 1 : 0;
+                    this.speed = vehicleTypes[this.type].maxSpeed;
+                    this.isWarned = false;
+                }
+
+                // Traffic Light Logic at Junction Stop Line (approx progress = 220)
+                const atStopLine = this.progress > 190 && this.progress < 225;
+                if (atStopLine) {
+                    if (this.route === 'NS' || this.route === 'SN') {
+                        if (tlsPhase === 2 || tlsPhase === 3) { // NS Red
+                            this.speed = Math.max(0, this.speed - 0.15);
+                        } else {
+                            this.speed = Math.min(vehicleTypes[this.type].maxSpeed, this.speed + 0.08);
+                        }
+                    } else {
+                        if (tlsPhase === 0 || tlsPhase === 1) { // WE Red
+                            this.speed = Math.max(0, this.speed - 0.15);
+                        } else {
+                            this.speed = Math.min(vehicleTypes[this.type].maxSpeed, this.speed + 0.08);
+                        }
+                    }
+                } else {
+                    // Cooperative Hazard Avoidance Response
+                    if (activeHazard && !this.isWarned && this.progress > 50 && this.progress < 300) {
+                        this.isWarned = true;
+                        if (activeHazard.advisory === "REDUCE_SPEED") {
+                            this.speed *= 0.5;
+                            logEvent(`Vehicle ${this.id} (${this.type}): SLOWDOWN 5.55 m/s applied`, 'slowdown');
+                        } else if (activeHazard.advisory === "MERGE_LANE") {
+                            this.lane = 0; // divert to outer lane
+                            this.speed *= 0.7;
+                            logEvent(`Vehicle ${this.id} (${this.type}): MERGE_LANE outer divert applied`, 'merge');
+                        } else if (activeHazard.advisory === "MANDATORY_LANE_CHANGE") {
+                            this.lane = 0;
+                            this.speed *= 0.5;
+                            logEvent(`Vehicle ${this.id} (${this.type}): MANDATORY_LANE_CHANGE emergency divert`, 'mandatory');
+                        }
+                    }
+                }
+            }
+
+            getCoords(cx, cy) {
+                let x = cx, y = cy, angle = 0;
+                const laneOffset = (this.lane === 0 ? 12 : 28);
+
+                if (this.route === 'NS') {
+                    x = cx + laneOffset;
+                    y = cy - 350 + this.progress;
+                    angle = Math.PI / 2;
+                } else if (this.route === 'SN') {
+                    x = cx - laneOffset;
+                    y = cy + 350 - this.progress;
+                    angle = -Math.PI / 2;
+                } else if (this.route === 'WE') {
+                    x = cx - 350 + this.progress;
+                    y = cy + laneOffset;
+                    angle = 0;
+                } else if (this.route === 'EW') {
+                    x = cx + 350 - this.progress;
+                    y = cy - laneOffset;
+                    angle = Math.PI;
+                }
+                return { x, y, angle };
+            }
+        }
+
+        // Initialize Fleet
+        const fleet = [
+            new Vehicle("veh_car_01", "car", "NS"),
+            new Vehicle("veh_car_02", "car", "SN"),
+            new Vehicle("veh_bus_01", "bus", "NS"),
+            new Vehicle("veh_truck_01", "truck", "WE"),
+            new Vehicle("veh_moto_01", "motorcycle", "EW"),
+            new Vehicle("veh_car_03", "car", "WE"),
+            new Vehicle("veh_car_04", "car", "EW"),
+            new Vehicle("veh_truck_02", "truck", "SN"),
+            new Vehicle("veh_moto_02", "motorcycle", "NS"),
+            new Vehicle("veh_bus_02", "bus", "WE")
+        ];
+
+        // TLS Cycle: 0: NS Green (42s), 1: NS Yellow (3s), 2: WE Green (42s), 3: WE Yellow (3s)
+        let tlsPhase = 0;
+        let tlsTimer = 0;
+
+        function logEvent(msg, type = '') {
+            const logBox = document.getElementById("event-log");
+            const entry = document.createElement("div");
+            entry.className = `log-entry ${type}`;
+            entry.innerHTML = `<span class="log-time">T=${simTime.toFixed(1)}s</span><span>${msg}</span>`;
+            logBox.appendChild(entry);
+            logBox.scrollTop = logBox.scrollHeight;
+        }
+
+        // Button handlers
+        document.getElementById("btn-pothole").addEventListener("click", () => {
+            activeHazard = { category: "POTHOLE", advisory: "REDUCE_SPEED", confidence: 0.91 };
+            document.getElementById("rsu-active-hazard").textContent = "ACTIVE HAZARD: POTHOLE (5.55 m/s SLOWDOWN)";
+            document.getElementById("rsu-active-hazard").style.color = "var(--accent-cyan)";
+            logEvent("Camera J0 detected POTHOLE (conf: 0.91) -> RSU broadcasting REDUCE_SPEED", "slowdown");
+        });
+
+        document.getElementById("btn-construction").addEventListener("click", () => {
+            activeHazard = { category: "CONSTRUCTION_HAZARD", advisory: "MERGE_LANE", confidence: 0.88 };
+            document.getElementById("rsu-active-hazard").textContent = "ACTIVE HAZARD: CONSTRUCTION (MERGE LANE 0)";
+            document.getElementById("rsu-active-hazard").style.color = "var(--accent-orange)";
+            logEvent("Camera J0 detected WORKZONE BARRICADE (conf: 0.88) -> RSU broadcasting MERGE_LANE", "merge");
+        });
+
+        document.getElementById("btn-accident").addEventListener("click", () => {
+            activeHazard = { category: "ROAD_ACCIDENT_OBSTACLE", advisory: "MANDATORY_LANE_CHANGE", confidence: 0.94 };
+            document.getElementById("rsu-active-hazard").textContent = "ACTIVE HAZARD: ACCIDENT (MANDATORY LANE CHANGE)";
+            document.getElementById("rsu-active-hazard").style.color = "var(--accent-red)";
+            logEvent("Camera J0 detected DAMAGED VEHICLE OBSTACLE (conf: 0.94) -> RSU emergency divert", "mandatory");
+        });
+
+        document.getElementById("btn-clear").addEventListener("click", () => {
+            activeHazard = null;
+            document.getElementById("rsu-active-hazard").textContent = "ACTIVE HAZARD: NONE";
+            document.getElementById("rsu-active-hazard").style.color = "var(--text-dim)";
+            fleet.forEach(v => {
+                v.speed = vehicleTypes[v.type].maxSpeed;
+                v.isWarned = false;
+            });
+            logEvent("Hazards cleared. RSU beacon returned to nominal state.");
+        });
+
+        // Main Animation Loop
+        function animate() {
+            simTick++;
+            simTime += 0.1;
+            tlsTimer += 0.1;
+
+            // TLS Phase stepping
+            if (tlsPhase === 0 && tlsTimer > 15) { tlsPhase = 1; tlsTimer = 0; }
+            else if (tlsPhase === 1 && tlsTimer > 3) { tlsPhase = 2; tlsTimer = 0; }
+            else if (tlsPhase === 2 && tlsTimer > 15) { tlsPhase = 3; tlsTimer = 0; }
+            else if (tlsPhase === 3 && tlsTimer > 3) { tlsPhase = 0; tlsTimer = 0; }
+
+            // UI Telemetry updates
+            document.getElementById("val-tick").textContent = String(simTick).padStart(4, '0');
+            document.getElementById("val-fleet").textContent = fleet.length;
+
+            const badge = document.getElementById("tls-phase-badge");
+            const lamp = document.getElementById("tls-north-lamp");
+            if (tlsPhase === 0) {
+                badge.textContent = "PHASE 0: NS GREEN";
+                badge.style.color = "var(--accent-green)";
+                lamp.style.background = "#00e676";
+                lamp.style.boxShadow = "0 0 10px #00e676";
+            } else if (tlsPhase === 1) {
+                badge.textContent = "PHASE 1: NS YELLOW";
+                badge.style.color = "var(--accent-yellow)";
+                lamp.style.background = "#ffd600";
+                lamp.style.boxShadow = "0 0 10px #ffd600";
+            } else if (tlsPhase === 2) {
+                badge.textContent = "PHASE 2: WE GREEN";
+                badge.style.color = "var(--accent-cyan)";
+                lamp.style.background = "#ff1744";
+                lamp.style.boxShadow = "0 0 10px #ff1744";
+            } else {
+                badge.textContent = "PHASE 3: WE YELLOW";
+                badge.style.color = "var(--accent-orange)";
+                lamp.style.background = "#ffd600";
+                lamp.style.boxShadow = "0 0 10px #ffd600";
+            }
+
+            // Render City Canvas
+            ctx.clearRect(0, 0, width, height);
+            const cx = width / 2;
+            const cy = height / 2;
+
+            // Draw 4-Way Approach Roads (each 2 lanes per direction ~ 80px total width)
+            const roadWidth = 84;
+            ctx.fillStyle = "#1e2638";
+            // North-South Corridor
+            ctx.fillRect(cx - roadWidth/2, 0, roadWidth, height);
+            // West-East Corridor
+            ctx.fillRect(0, cy - roadWidth/2, width, roadWidth);
+
+            // Road Markings
+            ctx.strokeStyle = "rgba(255, 255, 255, 0.4)";
+            ctx.lineWidth = 1.5;
+            ctx.setLineDash([8, 8]);
+            // Center division
+            ctx.beginPath();
+            ctx.moveTo(cx, 0); ctx.lineTo(cx, height);
+            ctx.moveTo(0, cy); ctx.lineTo(width, cy);
+            ctx.stroke();
+
+            // Lane dividers (inner vs outer)
+            ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
+            ctx.setLineDash([4, 6]);
+            ctx.beginPath();
+            ctx.moveTo(cx - 21, 0); ctx.lineTo(cx - 21, height);
+            ctx.moveTo(cx + 21, 0); ctx.lineTo(cx + 21, height);
+            ctx.moveTo(0, cy - 21); ctx.lineTo(width, cy - 21);
+            ctx.moveTo(0, cy + 21); ctx.lineTo(width, cy + 21);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // Junction Box (Center Intersection)
+            ctx.fillStyle = "#263047";
+            ctx.fillRect(cx - roadWidth/2, cy - roadWidth/2, roadWidth, roadWidth);
+
+            // Traffic Signals At 4 Arms
+            function drawSignal(x, y, isGreen) {
+                ctx.fillStyle = "#0f172a";
+                ctx.fillRect(x - 8, y - 8, 16, 16);
+                ctx.fillStyle = isGreen ? "#00e676" : "#ff1744";
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            const nsGreen = (tlsPhase === 0);
+            const weGreen = (tlsPhase === 2);
+            drawSignal(cx + 48, cy - 48, nsGreen); // North head
+            drawSignal(cx - 48, cy + 48, nsGreen); // South head
+            drawSignal(cx + 48, cy + 48, weGreen); // East head
+            drawSignal(cx - 48, cy - 48, weGreen); // West head
+
+            // Draw RSU Mast & Communication Coverage Circle
+            radarAngle += 0.03;
+            ctx.strokeStyle = "rgba(0, 210, 255, 0.18)";
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.arc(cx, cy, rsuRadius, 0, Math.PI * 2);
+            ctx.stroke();
+
+            // Radar beam sweep
+            const grad = ctx.createRadialGradient(cx, cy, 10, cx, cy, rsuRadius);
+            grad.addColorStop(0, "rgba(0, 210, 255, 0.25)");
+            grad.addColorStop(1, "rgba(0, 210, 255, 0.0)");
+            ctx.fillStyle = grad;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy);
+            ctx.arc(cx, cy, rsuRadius, radarAngle, radarAngle + 0.45);
+            ctx.closePath();
+            ctx.fill();
+
+            // Central RSU Mast Icon
+            ctx.fillStyle = "#00d2ff";
+            ctx.beginPath();
+            ctx.arc(cx, cy, 7, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.strokeStyle = "#ffffff";
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Draw Active Hazard Marker on Approach Road
+            if (activeHazard) {
+                const hx = cx + 21;
+                const hy = cy - 140;
+                ctx.fillStyle = activeHazard.category === "POTHOLE" ? "rgba(0, 210, 255, 0.85)" :
+                               (activeHazard.category === "CONSTRUCTION_HAZARD" ? "rgba(255, 145, 0, 0.85)" : "rgba(255, 23, 68, 0.85)");
+                ctx.beginPath();
+                ctx.arc(hx, hy, 10, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = "#ffffff";
+                ctx.stroke();
+
+                ctx.font = "10px monospace";
+                ctx.fillStyle = "#ffffff";
+                ctx.fillText(`! ${activeHazard.category}`, hx + 14, hy + 4);
+            }
+
+            // Draw & Update Vehicles
+            fleet.forEach(v => {
+                v.update(activeHazard, tlsPhase);
+                const pos = v.getCoords(cx, cy);
+                const spec = vehicleTypes[v.type];
+
+                ctx.save();
+                ctx.translate(pos.x, pos.y);
+                ctx.rotate(pos.angle);
+
+                // Vehicle Body
+                ctx.fillStyle = spec.color;
+                ctx.beginPath();
+                ctx.roundRect(-spec.length/2, -spec.width/2, spec.length, spec.width, 3);
+                ctx.fill();
+
+                // Windshield
+                ctx.fillStyle = "rgba(0, 0, 0, 0.4)";
+                ctx.fillRect(spec.length * 0.1, -spec.width * 0.35, spec.length * 0.25, spec.width * 0.7);
+
+                // Headlights
+                ctx.fillStyle = "#ffffff";
+                ctx.fillRect(spec.length/2 - 2, -spec.width/2 + 1, 2, 3);
+                ctx.fillRect(spec.length/2 - 2, spec.width/2 - 4, 2, 3);
+
+                ctx.restore();
+            });
+
+            // Render Camera HUD (Fixed sensor simulating 768x768 INT8 detection)
+            sCtx.fillStyle = "#0f172a";
+            sCtx.fillRect(0, 0, 300, 180);
+            
+            // Perspective road view
+            sCtx.fillStyle = "#1e293b";
+            sCtx.beginPath();
+            sCtx.moveTo(110, 60); sCtx.lineTo(190, 60);
+            sCtx.lineTo(270, 180); sCtx.lineTo(30, 180);
+            sCtx.fill();
+
+            if (activeHazard) {
+                // Synthetic bounding box overlay
+                sCtx.strokeStyle = activeHazard.category === "POTHOLE" ? "#00d2ff" :
+                                   (activeHazard.category === "CONSTRUCTION_HAZARD" ? "#ff9100" : "#ff1744");
+                sCtx.lineWidth = 2;
+                sCtx.strokeRect(105, 90, 90, 50);
+
+                sCtx.fillStyle = sCtx.strokeStyle;
+                sCtx.font = "9px monospace";
+                sCtx.fillText(`${activeHazard.category} ${(activeHazard.confidence * 100).toFixed(1)}%`, 105, 85);
+            } else {
+                sCtx.fillStyle = "rgba(255, 255, 255, 0.3)";
+                sCtx.font = "10px monospace";
+                sCtx.fillText("CLEAR ROADWAY · NO HAZARDS", 70, 110);
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
