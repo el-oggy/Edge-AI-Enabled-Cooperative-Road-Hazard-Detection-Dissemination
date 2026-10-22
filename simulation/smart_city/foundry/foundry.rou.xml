@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Multi-Class Vehicle Types -->
+    <vType id="car" vClass="passenger" accel="2.6" decel="4.5" length="4.5" maxSpeed="11.11" color="0,210,255" sigma="0.5"/>
+    <vType id="bus" vClass="bus" accel="1.2" decel="3.5" length="12.0" maxSpeed="8.33" color="255,214,0" sigma="0.3"/>
+    <vType id="truck" vClass="truck" accel="1.5" decel="3.5" length="8.0" maxSpeed="8.33" color="255,100,50" sigma="0.4"/>
+    <vType id="motorcycle" vClass="motorcycle" accel="3.5" decel="5.0" length="2.2" maxSpeed="11.11" color="0,230,118" sigma="0.6"/>
+
+    <!-- Foundry & Market Recurring Closed Routes -->
+    <route id="r_freight" edges="D1_F1 F1_F2 F2_F3_D3 D3_D2 D2_D1 D1_F1 F1_F2 F2_F3_D3 D3_D2 D2_D1"/>
+    <route id="r_market" edges="D1_M0_M2 M2_M3 M3_D3 D3_D2 D2_D1 D1_M0_M2 M2_M3 M3_D3 D3_D2 D2_D1"/>
+    <route id="r_cross_district" edges="D1_F1 F1_F2 F2_D2 D2_M2 M2_M0_D1 D1_F1 F1_F2 F2_D2 D2_M2 M2_M0_D1"/>
+    <route id="r_crosstown" edges="D2_F2 F2_F3_D3 D3_M3 M3_M2 M2_D2 D2_F2 F2_F3_D3 D3_M3 M3_M2 M2_D2"/>
+    <route id="r_depot" edges="D1_F0_F1 F1_D1 D1_F0_F1 F1_D1 D1_F0_F1 F1_D1"/>
+    <route id="r_transit" edges="D3_M4_M3 M3_D3 D3_M4_M3 M3_D3 D3_M4_M3 M3_D3"/>
+    <route id="r_spine" edges="D1_D2 D2_D3 D3_D2 D2_D1 D1_D2 D2_D3 D3_D2 D2_D1"/>
+
+    <!-- Flows Sorted Strictly by Departure Time (50+ active actors) -->
+    <flow id="f_car_spine" type="car" route="r_spine" begin="0" end="3600" period="6" departLane="best" departSpeed="max"/>
+    <flow id="f_car_freight" type="car" route="r_freight" begin="1" end="3600" period="10" departLane="best" departSpeed="max"/>
+    <flow id="f_truck_freight" type="truck" route="r_freight" begin="2" end="3600" period="18" departLane="0" departSpeed="max"/>
+    <flow id="f_car_market" type="car" route="r_market" begin="3" end="3600" period="8" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_market" type="bus" route="r_market" begin="4" end="3600" period="30" departLane="0" departSpeed="max"/>
+    <flow id="f_moto_cross" type="motorcycle" route="r_cross_district" begin="5" end="3600" period="12" departLane="best" departSpeed="max"/>
+    <flow id="f_car_cross" type="car" route="r_cross_district" begin="6" end="3600" period="14" departLane="best" departSpeed="max"/>
+    <flow id="f_truck_crosstown" type="truck" route="r_crosstown" begin="7" end="3600" period="25" departLane="0" departSpeed="max"/>
+    <flow id="f_car_crosstown" type="car" route="r_crosstown" begin="8" end="3600" period="15" departLane="best" departSpeed="max"/>
+    <flow id="f_car_depot" type="car" route="r_depot" begin="9" end="3600" period="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_transit" type="bus" route="r_transit" begin="10" end="3600" period="35" departLane="0" departSpeed="max"/>
+    <flow id="f_moto_spine" type="motorcycle" route="r_spine" begin="12" end="3600" period="10" departLane="best" departSpeed="max"/>
+</routes>

@@ -1,0 +1,102 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- ========================================== -->
+    <!-- DISTRICT ZONING & GROUND POLYGONS          -->
+    <!-- ========================================== -->
+    <!-- Northwest Foundry & Freight Lobe Ground Area -->
+    <poly id="zone_foundry_freight" color="180,140,110,60" fill="1" layer="-2"
+          shape="-240.69,-143.27 -401.15,114.61 -458.46,-286.53 -401.15,114.61 -240.69,366.76 57.31,389.69 194.84,149.00 0.00,0.00"/>
+
+    <!-- Southeast Market & Transit Lobe Ground Area -->
+    <poly id="zone_market_transit" color="210,180,135,50" fill="1" layer="-2"
+          shape="-240.69,-143.27 -114.61,-378.23 229.23,-309.46 366.76,-11.46 458.46,298.00 194.84,149.00 0.00,0.00"/>
+
+    <!-- ========================================== -->
+    <!-- INDUSTRIAL BUILDINGS & FOUNDRY SHEDS       -->
+    <!-- ========================================== -->
+    <!-- Brick Foundry Complex 1 (North of D1/F1 approach) -->
+    <poly id="bldg_foundry_main" color="140,75,55" fill="1" layer="1"
+          shape="-340,60 -230,80 -210,10 -320,-10"/>
+    <poly id="bldg_foundry_shed_A" color="170,100,75" fill="1" layer="2"
+          shape="-335,55 -235,75 -240,60 -330,40"/>
+
+    <!-- Warehouse & Logistics Depot (Near F1/F2) -->
+    <poly id="bldg_warehouse_depot_1" color="120,80,65" fill="1" layer="1"
+          shape="-380,180 -270,200 -250,140 -360,120"/>
+    <poly id="bldg_warehouse_depot_2" color="105,70,55" fill="1" layer="1"
+          shape="-350,260 -240,280 -220,220 -330,200"/>
+
+    <!-- Heavy Foundry Fabrication Shed (Near F2) -->
+    <poly id="bldg_foundry_heavy" color="155,85,60" fill="1" layer="1"
+          shape="-220,380 -100,400 -80,330 -200,310"/>
+    <!-- Industrial Chimneys -->
+    <poly id="bldg_chimney_1" color="70,40,30" fill="1" layer="3"
+          shape="-205,370 -195,370 -195,360 -205,360"/>
+    <poly id="bldg_chimney_2" color="70,40,30" fill="1" layer="3"
+          shape="-185,375 -175,375 -175,365 -185,365"/>
+
+    <!-- Freight Upper Bypass Logistics Hub (Near F3) -->
+    <poly id="bldg_logistics_hub" color="135,90,70" fill="1" layer="1"
+          shape="20,410 130,420 140,360 30,350"/>
+
+    <!-- ========================================== -->
+    <!-- MARKET DISTRICT PAVILIONS & SHOPFRONTS     -->
+    <!-- ========================================== -->
+    <!-- Central Market Hall (South of D2 boulevard) -->
+    <poly id="bldg_market_hall" color="195,145,105" fill="1" layer="1"
+          shape="-20,-50 90,-40 80,-110 -30,-120"/>
+    <!-- Market Stalls & Open Courtyards -->
+    <poly id="bldg_market_stalls_1" color="220,175,125" fill="1" layer="2"
+          shape="-10,-60 40,-55 35,-95 -15,-100"/>
+    <poly id="bldg_market_stalls_2" color="220,175,125" fill="1" layer="2"
+          shape="45,-55 85,-50 80,-90 40,-95"/>
+
+    <!-- Lower Market Arcade (Near M1/M2) -->
+    <poly id="bldg_market_arcade_1" color="185,135,95" fill="1" layer="1"
+          shape="-80,-260 30,-250 20,-310 -90,-320"/>
+    <poly id="bldg_market_arcade_2" color="175,125,85" fill="1" layer="1"
+          shape="60,-220 170,-210 160,-270 50,-280"/>
+
+    <!-- East Transit & Delivery Complex (Near M3) -->
+    <poly id="bldg_transit_terminal" color="165,120,85" fill="1" layer="1"
+          shape="270,-20 370,-10 360,-70 260,-80"/>
+    <poly id="bldg_bus_shelter" color="200,160,110" fill="1" layer="2"
+          shape="280,-30 350,-25 345,-50 275,-55"/>
+
+    <!-- East Boulevard Commercial Block (Near D3) -->
+    <poly id="bldg_east_boulevard_block" color="145,95,70" fill="1" layer="1"
+          shape="120,80 220,90 210,30 110,20"/>
+
+    <!-- ========================================== -->
+    <!-- RSU INFRASTRUCTURE POI STATIONS (27 UNITS) -->
+    <!-- ========================================== -->
+    <!-- 7 Mandatory Junction Anchors -->
+    <poi id="RSU_J_D1" x="-240.69" y="-143.27" type="RSU_TLS_WEST" color="0,229,255" layer="10"/>
+    <poi id="RSU_J_D2" x="0.00" y="0.00" type="RSU_OPTICAL_MAST" color="255,145,0" layer="10"/>
+    <poi id="RSU_J_D3" x="194.84" y="149.00" type="RSU_TLS_EAST" color="0,229,255" layer="10"/>
+    <poi id="RSU_J_F1" x="-401.15" y="114.61" type="RSU_DEPOT" color="0,230,118" layer="10"/>
+    <poi id="RSU_J_F2" x="-240.69" y="366.76" type="RSU_FOUNDRY" color="0,230,118" layer="10"/>
+    <poi id="RSU_J_M2" x="229.23" y="-309.46" type="RSU_MARKET" color="0,230,118" layer="10"/>
+    <poi id="RSU_J_M3" x="366.76" y="-11.46" type="RSU_TRANSIT" color="0,230,118" layer="10"/>
+
+    <!-- Interior Relay RSUs along Diagonal Boulevard & Loops -->
+    <poi id="RSU_S1_D_1" x="-120.35" y="-71.64" type="RSU_RELAY" color="100,200,255" layer="9"/>
+    <poi id="RSU_S2_D_1" x="97.42" y="74.50" type="RSU_RELAY" color="100,200,255" layer="9"/>
+    <poi id="RSU_F4_D_1" x="-80.23" y="122.25" type="RSU_RELAY" color="100,200,255" layer="9"/>
+    <poi id="RSU_F4_D_2" x="-160.46" y="244.51" type="RSU_RELAY" color="100,200,255" layer="9"/>
+    <poi id="RSU_M3_D_1" x="114.61" y="-154.73" type="RSU_RELAY" color="100,200,255" layer="9"/>
+
+    <!-- ========================================== -->
+    <!-- ROAD HAZARDS & WORKZONES                   -->
+    <!-- ========================================== -->
+    <!-- Workzone Hazard on S1 Boulevard Approach (D1 -> D2) -->
+    <poly id="hazard_barrier_1" color="255,145,0" fill="1" layer="4"
+          shape="-60,-40 -50,-34 -52,-30 -62,-36"/>
+    <poly id="hazard_barrier_2" color="255,255,255" fill="1" layer="5"
+          shape="-58,-38 -54,-36 -55,-32 -59,-34"/>
+    <poi id="hazard_warning_cone_1" x="-65" y="-42" type="TRAFFIC_CONE" color="255,100,0" layer="6"/>
+    <poi id="hazard_warning_cone_2" x="-45" y="-30" type="TRAFFIC_CONE" color="255,100,0" layer="6"/>
+
+    <!-- Road Pothole Crater on F4 Cross Street -->
+    <poly id="hazard_pothole_crater" color="20,20,25" fill="1" layer="3"
+          shape="-118,180 -115,183 -112,181 -114,178"/>
+</additional>
