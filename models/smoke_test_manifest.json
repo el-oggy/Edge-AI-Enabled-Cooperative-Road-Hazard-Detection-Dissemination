@@ -1,0 +1,116 @@
+{
+  "smoke_test_version": "1.0.0",
+  "timestamp": 1792465903.7900643,
+  "pipeline_total_duration_sec": 3203.57,
+  "accelerator": {
+    "device": "Tesla T4",
+    "vram_gb": 14.56,
+    "cuda_version": "12.8"
+  },
+  "dataset_audit": {
+    "total_unique_scanned": 21676,
+    "duplicates_filtered": 1067,
+    "excluded_annotations_ppe": 27876,
+    "smoke_test_subset_images": 1571,
+    "splits": {
+      "train": 406,
+      "val": 71,
+      "test": 1094
+    },
+    "split_instances": {
+      "train": {
+        "2": 139,
+        "0": 544,
+        "1": 328
+      },
+      "val": {
+        "0": 75,
+        "2": 20,
+        "1": 13
+      },
+      "test": {
+        "0": 41,
+        "2": 1470,
+        "1": 47
+      }
+    },
+    "classes": {
+      "0": "pothole",
+      "1": "construction_hazard",
+      "2": "road_accident_obstacle"
+    }
+  },
+  "smoke_training": {
+    "architecture": "YOLO11n",
+    "parameters_million": 2.58,
+    "epochs": 2,
+    "batch_size": 16,
+    "resolution": 512,
+    "training_time_sec": 80.73,
+    "checkpoint_path": "/kaggle/working/pfpd_artifacts/unified_yolo11n_smoke.pt",
+    "checkpoint_size_mb": 5.23,
+    "history": [
+      {
+        "epoch": 1.0,
+        "time": 32.7363,
+        "train/box_loss": 1.88192,
+        "train/cls_loss": 11.3786,
+        "train/dfl_loss": 1.78688,
+        "metrics/precision(B)": 0.10227,
+        "metrics/recall(B)": 0.03111,
+        "metrics/mAP50(B)": 0.01803,
+        "metrics/mAP50-95(B)": 0.00922,
+        "val/box_loss": 1.71413,
+        "val/cls_loss": 13.7969,
+        "val/dfl_loss": 1.712,
+        "lr/pg0": 0.001429,
+        "lr/pg1": 0.001429,
+        "lr/pg2": 0.001429
+      },
+      {
+        "epoch": 2.0,
+        "time": 36.4637,
+        "train/box_loss": 1.82738,
+        "train/cls_loss": 9.49556,
+        "train/dfl_loss": 1.74936,
+        "metrics/precision(B)": 0.36204,
+        "metrics/recall(B)": 0.05,
+        "metrics/mAP50(B)": 0.01463,
+        "metrics/mAP50-95(B)": 0.00471,
+        "val/box_loss": 2.48249,
+        "val/cls_loss": 16.3147,
+        "val/dfl_loss": 2.13303,
+        "lr/pg0": 0.000721645,
+        "lr/pg1": 0.000721645,
+        "lr/pg2": 0.000721645
+      }
+    ]
+  },
+  "export_verification": {
+    "onnx_512": {
+      "path": "/kaggle/working/pfpd_artifacts/unified_yolo11n_512.onnx",
+      "input_shape": [
+        1,
+        3,
+        512,
+        512
+      ],
+      "output_shape": [
+        1,
+        7,
+        5376
+      ],
+      "shape_valid": true,
+      "classes_detected": 3
+    },
+    "onnx_384": {
+      "path": "/kaggle/working/pfpd_artifacts/unified_yolo11n_384.onnx"
+    }
+  },
+  "test_split_metrics": {
+    "mAP50": 0.0006,
+    "mAP50_95": 0.0004,
+    "precision": 0.0058,
+    "recall": 0.3348
+  }
+}

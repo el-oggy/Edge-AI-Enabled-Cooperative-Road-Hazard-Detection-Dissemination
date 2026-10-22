@@ -1,0 +1,1020 @@
+{
+  "milestone": "PFPD STAGE 8: FINAL MULTI-RSU VALIDATION & DEMONSTRATION READINESS",
+  "primary_configuration": "EXPANDED_8_RSU",
+  "baseline_configuration": "CORE_4_RSU",
+  "evaluation_gates_status": "ALL_10_GATES_PASSED",
+  "physical_pi5_telemetry": {
+    "host": "192.168.1.46",
+    "soc": "Broadcom BCM2712 (Quad-core ARM Cortex-A76 @ 2.4 GHz)",
+    "memory": "8GB LPDDR4X",
+    "os": "Debian GNU/Linux 12 (bookworm) aarch64 (Kernel 6.18.50+rpt-rpi-2712)",
+    "model_deployed": "unified_yolo11n_384_int8.mnn",
+    "model_sha256": "227cbef0a8a64d8a571253e7f9175498a587eb0750e3bb970bbbc7ce7e6c4333",
+    "resolution": [
+      384,
+      384
+    ],
+    "confidence_threshold": 0.25,
+    "cpu_inference_threads": 2,
+    "hardware_acceleration": "ARMv8.2-A dotprod (i8sdot:1, fp16:1, low precision enabled)",
+    "measured_inference_latency_ms": 31.5,
+    "measured_inference_fps": 31.74,
+    "measured_pipeline_latency_ms": 34.24,
+    "measured_pipeline_fps": 29.21,
+    "operating_temperature": "50.5C - 52.7C (Equilibrium)",
+    "throttling_status": "throttled=0x0 (Zero throttling)",
+    "dispatched_events_per_run": 87
+  },
+  "core_4_rsu_baseline": {
+    "scenario": "STAGE8_CORE_4_RSU",
+    "mode": "CORE_4_RSU",
+    "step_length_s": 0.1,
+    "total_steps": 500,
+    "sim_duration_s": 50.0,
+    "wall_duration_s": 46.25,
+    "mesh_stats": {
+      "udp_packets_ingested": 88,
+      "mode_a_physical_pi_alerts": 87,
+      "mode_b_simulated_alerts": 3,
+      "inter_rsu_forwards": 48,
+      "total_vehicle_warnings": 1,
+      "total_reroutes_executed": 11,
+      "latencies_in_flight_ms": [
+        1.2,
+        75.59,
+        75.46,
+        77.23,
+        77.2,
+        88.06,
+        89.03,
+        90.52,
+        94.54,
+        94.51,
+        95.48,
+        95.46,
+        60.92,
+        60.8,
+        60.77,
+        60.74,
+        60.69,
+        60.67,
+        60.65,
+        60.63,
+        60.6,
+        60.58,
+        60.56,
+        26.23,
+        26.11,
+        26.08,
+        26.05,
+        26.03,
+        26.01,
+        25.99,
+        25.96,
+        25.94,
+        25.92,
+        25.9,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        9.34,
+        72.34,
+        73.33,
+        73.31,
+        73.28,
+        73.26,
+        73.24,
+        73.22,
+        73.2,
+        73.17,
+        73.15,
+        38.58,
+        38.46,
+        38.43,
+        38.41,
+        38.39,
+        38.36,
+        38.34,
+        38.32,
+        38.3,
+        38.26,
+        38.24,
+        38.22,
+        4.76,
+        4.64,
+        4.61,
+        4.59,
+        4.57,
+        4.54,
+        4.52,
+        4.5,
+        4.48,
+        4.46,
+        4.44,
+        4.41,
+        0.8,
+        56.47,
+        21.54,
+        0.8,
+        0.8,
+        267.09,
+        266.96,
+        232.23,
+        1.2,
+        1.2
+      ],
+      "latencies_e2e_ms": [
+        105.2,
+        109.5,
+        109.5,
+        111.33,
+        111.33,
+        122.21,
+        123.21,
+        124.72,
+        128.76,
+        128.76,
+        129.75,
+        129.75,
+        94.9,
+        94.9,
+        94.9,
+        94.9,
+        94.9,
+        94.9,
+        94.9,
+        94.9,
+        94.9,
+        94.9,
+        94.9,
+        60.06,
+        60.06,
+        60.06,
+        60.06,
+        60.06,
+        60.06,
+        60.06,
+        60.06,
+        60.06,
+        60.06,
+        60.06,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        43.3,
+        106.43,
+        107.45,
+        107.45,
+        107.45,
+        107.45,
+        107.45,
+        107.45,
+        107.45,
+        107.45,
+        107.45,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        72.6,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        38.77,
+        34.0,
+        90.3,
+        55.45,
+        34.0,
+        34.0,
+        300.99,
+        300.99,
+        266.14,
+        105.2,
+        105.2
+      ]
+    },
+    "stage8_metrics": {
+      "road_network_coverage_pct": 67.8,
+      "traffic_weighted_coverage_pct": 88.37,
+      "unique_vehicles_total": 77,
+      "unique_vehicles_in_coverage": 70,
+      "warning_delivery_success_rate_pct": 18.75,
+      "relevant_vehicles_count": 64,
+      "relevant_vehicles_warned_count": 12,
+      "missed_relevant_vehicles_count": 52,
+      "unnecessary_warnings_count": 0,
+      "opposite_direction_rejections_count": 3682,
+      "invalid_packets_rejected_count": 0,
+      "inter_rsu_forwarding_count": 48,
+      "duplicate_packets_suppressed": 122,
+      "duplicate_suppression_success_rate_pct": 65.59,
+      "maximum_hop_count": 2,
+      "network_overhead_bytes": {
+        "backhaul_bytes": 40074,
+        "v2i_bytes": 6144,
+        "total_simulated_bytes": 46218
+      },
+      "active_vehicle_counts_timeseries": [
+        {
+          "sim_t": 0.9,
+          "active_vehicles": 2
+        },
+        {
+          "sim_t": 1.9,
+          "active_vehicles": 4
+        },
+        {
+          "sim_t": 2.9,
+          "active_vehicles": 6
+        },
+        {
+          "sim_t": 3.9,
+          "active_vehicles": 8
+        },
+        {
+          "sim_t": 4.9,
+          "active_vehicles": 10
+        },
+        {
+          "sim_t": 5.9,
+          "active_vehicles": 12
+        },
+        {
+          "sim_t": 6.9,
+          "active_vehicles": 14
+        },
+        {
+          "sim_t": 7.9,
+          "active_vehicles": 15
+        },
+        {
+          "sim_t": 8.9,
+          "active_vehicles": 16
+        },
+        {
+          "sim_t": 9.9,
+          "active_vehicles": 17
+        },
+        {
+          "sim_t": 10.9,
+          "active_vehicles": 21
+        },
+        {
+          "sim_t": 11.9,
+          "active_vehicles": 22
+        },
+        {
+          "sim_t": 12.9,
+          "active_vehicles": 23
+        },
+        {
+          "sim_t": 13.9,
+          "active_vehicles": 26
+        },
+        {
+          "sim_t": 14.9,
+          "active_vehicles": 27
+        },
+        {
+          "sim_t": 15.9,
+          "active_vehicles": 29
+        },
+        {
+          "sim_t": 16.9,
+          "active_vehicles": 29
+        },
+        {
+          "sim_t": 17.9,
+          "active_vehicles": 32
+        },
+        {
+          "sim_t": 18.9,
+          "active_vehicles": 36
+        },
+        {
+          "sim_t": 19.9,
+          "active_vehicles": 38
+        },
+        {
+          "sim_t": 20.9,
+          "active_vehicles": 38
+        },
+        {
+          "sim_t": 21.9,
+          "active_vehicles": 39
+        },
+        {
+          "sim_t": 22.9,
+          "active_vehicles": 42
+        },
+        {
+          "sim_t": 23.9,
+          "active_vehicles": 42
+        },
+        {
+          "sim_t": 24.9,
+          "active_vehicles": 42
+        },
+        {
+          "sim_t": 25.9,
+          "active_vehicles": 44
+        },
+        {
+          "sim_t": 26.9,
+          "active_vehicles": 46
+        },
+        {
+          "sim_t": 27.9,
+          "active_vehicles": 47
+        },
+        {
+          "sim_t": 28.9,
+          "active_vehicles": 48
+        },
+        {
+          "sim_t": 29.9,
+          "active_vehicles": 50
+        },
+        {
+          "sim_t": 30.9,
+          "active_vehicles": 51
+        },
+        {
+          "sim_t": 31.9,
+          "active_vehicles": 54
+        },
+        {
+          "sim_t": 32.9,
+          "active_vehicles": 54
+        },
+        {
+          "sim_t": 33.9,
+          "active_vehicles": 56
+        },
+        {
+          "sim_t": 34.9,
+          "active_vehicles": 58
+        },
+        {
+          "sim_t": 35.9,
+          "active_vehicles": 60
+        },
+        {
+          "sim_t": 36.9,
+          "active_vehicles": 61
+        },
+        {
+          "sim_t": 37.9,
+          "active_vehicles": 61
+        },
+        {
+          "sim_t": 38.9,
+          "active_vehicles": 61
+        },
+        {
+          "sim_t": 39.9,
+          "active_vehicles": 61
+        },
+        {
+          "sim_t": 40.9,
+          "active_vehicles": 63
+        },
+        {
+          "sim_t": 41.9,
+          "active_vehicles": 65
+        },
+        {
+          "sim_t": 42.9,
+          "active_vehicles": 70
+        },
+        {
+          "sim_t": 43.9,
+          "active_vehicles": 72
+        },
+        {
+          "sim_t": 44.9,
+          "active_vehicles": 72
+        },
+        {
+          "sim_t": 45.9,
+          "active_vehicles": 73
+        },
+        {
+          "sim_t": 46.9,
+          "active_vehicles": 73
+        },
+        {
+          "sim_t": 47.9,
+          "active_vehicles": 73
+        },
+        {
+          "sim_t": 48.9,
+          "active_vehicles": 73
+        },
+        {
+          "sim_t": 49.9,
+          "active_vehicles": 77
+        }
+      ]
+    },
+    "rsu_breakdown": {
+      "RSU_01_WEST": {
+        "alerts_received_direct": 1,
+        "alerts_received_forwarded": 15,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 1,
+        "expired_events_pruned": 0
+      },
+      "RSU_02_CENTRAL": {
+        "alerts_received_direct": 15,
+        "alerts_received_forwarded": 1,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 1,
+        "duplicate_detections_suppressed": 121,
+        "expired_events_pruned": 0
+      },
+      "RSU_03_EAST": {
+        "alerts_received_direct": 0,
+        "alerts_received_forwarded": 16,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 0,
+        "expired_events_pruned": 0
+      },
+      "RSU_04_NORTH": {
+        "alerts_received_direct": 0,
+        "alerts_received_forwarded": 16,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 0,
+        "expired_events_pruned": 0
+      }
+    },
+    "lifecycle_events_count": 1,
+    "sample_lifecycle_events": [
+      {
+        "sim_t": 31.0,
+        "step": 311,
+        "rsu_id": "RSU_02_CENTRAL",
+        "veh_id": "flow_02_beltway_cw.0",
+        "action_id": "HAZ_POTHOLE_01",
+        "hazard_name": "pothole",
+        "dist_to_haz": 179.2,
+        "speed_before_kmh": 46.9,
+        "action": "CAUTION_SLOWDOWN",
+        "adv_spd_kmh": 30
+      }
+    ]
+  },
+  "expanded_8_rsu_primary": {
+    "scenario": "STAGE8_EXPANDED_8_RSU",
+    "mode": "EXPANDED_8_RSU",
+    "step_length_s": 0.1,
+    "total_steps": 500,
+    "sim_duration_s": 50.0,
+    "wall_duration_s": 60.24,
+    "mesh_stats": {
+      "udp_packets_ingested": 0,
+      "mode_a_physical_pi_alerts": 87,
+      "mode_b_simulated_alerts": 3,
+      "inter_rsu_forwards": 62,
+      "total_vehicle_warnings": 1,
+      "total_reroutes_executed": 11,
+      "latencies_in_flight_ms": [
+        1.2,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        12.82,
+        12.7,
+        12.67,
+        12.64,
+        12.61,
+        12.59,
+        12.57,
+        12.55,
+        12.53,
+        12.5,
+        12.48,
+        9.46,
+        9.33,
+        9.3,
+        9.27,
+        9.25,
+        9.23,
+        9.2,
+        9.18,
+        9.16,
+        9.14,
+        9.11,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        256.64,
+        256.51,
+        256.48,
+        256.45,
+        256.43,
+        256.41,
+        256.39,
+        256.36,
+        256.34,
+        256.32,
+        256.3,
+        256.28,
+        221.77,
+        163.56,
+        128.61,
+        93.77,
+        93.65,
+        58.93,
+        58.81,
+        23.97,
+        1.2,
+        1.2
+      ],
+      "latencies_e2e_ms": [
+        105.2,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        46.95,
+        46.95,
+        46.95,
+        46.95,
+        46.95,
+        46.95,
+        46.95,
+        46.95,
+        46.95,
+        46.95,
+        46.95,
+        43.75,
+        43.75,
+        43.75,
+        43.75,
+        43.75,
+        43.75,
+        43.75,
+        43.75,
+        43.75,
+        43.75,
+        43.75,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        34.0,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        290.9,
+        256.05,
+        197.54,
+        162.69,
+        127.85,
+        127.85,
+        93.0,
+        93.0,
+        58.16,
+        105.2,
+        105.2
+      ]
+    },
+    "stage8_metrics": {
+      "road_network_coverage_pct": 91.1,
+      "traffic_weighted_coverage_pct": 97.94,
+      "unique_vehicles_total": 77,
+      "unique_vehicles_in_coverage": 76,
+      "warning_delivery_success_rate_pct": 18.75,
+      "relevant_vehicles_count": 64,
+      "relevant_vehicles_warned_count": 12,
+      "missed_relevant_vehicles_count": 52,
+      "unnecessary_warnings_count": 0,
+      "opposite_direction_rejections_count": 4582,
+      "invalid_packets_rejected_count": 0,
+      "inter_rsu_forwarding_count": 62,
+      "duplicate_packets_suppressed": 215,
+      "duplicate_suppression_success_rate_pct": 50.0,
+      "maximum_hop_count": 3,
+      "network_overhead_bytes": {
+        "backhaul_bytes": 53415,
+        "v2i_bytes": 6144,
+        "total_simulated_bytes": 59559
+      },
+      "active_vehicle_counts_timeseries": [
+        {
+          "sim_t": 0.9,
+          "active_vehicles": 2
+        },
+        {
+          "sim_t": 1.9,
+          "active_vehicles": 4
+        },
+        {
+          "sim_t": 2.9,
+          "active_vehicles": 6
+        },
+        {
+          "sim_t": 3.9,
+          "active_vehicles": 8
+        },
+        {
+          "sim_t": 4.9,
+          "active_vehicles": 10
+        },
+        {
+          "sim_t": 5.9,
+          "active_vehicles": 12
+        },
+        {
+          "sim_t": 6.9,
+          "active_vehicles": 14
+        },
+        {
+          "sim_t": 7.9,
+          "active_vehicles": 15
+        },
+        {
+          "sim_t": 8.9,
+          "active_vehicles": 16
+        },
+        {
+          "sim_t": 9.9,
+          "active_vehicles": 17
+        },
+        {
+          "sim_t": 10.9,
+          "active_vehicles": 21
+        },
+        {
+          "sim_t": 11.9,
+          "active_vehicles": 22
+        },
+        {
+          "sim_t": 12.9,
+          "active_vehicles": 23
+        },
+        {
+          "sim_t": 13.9,
+          "active_vehicles": 26
+        },
+        {
+          "sim_t": 14.9,
+          "active_vehicles": 27
+        },
+        {
+          "sim_t": 15.9,
+          "active_vehicles": 29
+        },
+        {
+          "sim_t": 16.9,
+          "active_vehicles": 29
+        },
+        {
+          "sim_t": 17.9,
+          "active_vehicles": 32
+        },
+        {
+          "sim_t": 18.9,
+          "active_vehicles": 36
+        },
+        {
+          "sim_t": 19.9,
+          "active_vehicles": 38
+        },
+        {
+          "sim_t": 20.9,
+          "active_vehicles": 38
+        },
+        {
+          "sim_t": 21.9,
+          "active_vehicles": 39
+        },
+        {
+          "sim_t": 22.9,
+          "active_vehicles": 42
+        },
+        {
+          "sim_t": 23.9,
+          "active_vehicles": 42
+        },
+        {
+          "sim_t": 24.9,
+          "active_vehicles": 42
+        },
+        {
+          "sim_t": 25.9,
+          "active_vehicles": 44
+        },
+        {
+          "sim_t": 26.9,
+          "active_vehicles": 46
+        },
+        {
+          "sim_t": 27.9,
+          "active_vehicles": 47
+        },
+        {
+          "sim_t": 28.9,
+          "active_vehicles": 48
+        },
+        {
+          "sim_t": 29.9,
+          "active_vehicles": 50
+        },
+        {
+          "sim_t": 30.9,
+          "active_vehicles": 51
+        },
+        {
+          "sim_t": 31.9,
+          "active_vehicles": 54
+        },
+        {
+          "sim_t": 32.9,
+          "active_vehicles": 54
+        },
+        {
+          "sim_t": 33.9,
+          "active_vehicles": 56
+        },
+        {
+          "sim_t": 34.9,
+          "active_vehicles": 58
+        },
+        {
+          "sim_t": 35.9,
+          "active_vehicles": 60
+        },
+        {
+          "sim_t": 36.9,
+          "active_vehicles": 61
+        },
+        {
+          "sim_t": 37.9,
+          "active_vehicles": 61
+        },
+        {
+          "sim_t": 38.9,
+          "active_vehicles": 61
+        },
+        {
+          "sim_t": 39.9,
+          "active_vehicles": 61
+        },
+        {
+          "sim_t": 40.9,
+          "active_vehicles": 63
+        },
+        {
+          "sim_t": 41.9,
+          "active_vehicles": 65
+        },
+        {
+          "sim_t": 42.9,
+          "active_vehicles": 70
+        },
+        {
+          "sim_t": 43.9,
+          "active_vehicles": 72
+        },
+        {
+          "sim_t": 44.9,
+          "active_vehicles": 72
+        },
+        {
+          "sim_t": 45.9,
+          "active_vehicles": 73
+        },
+        {
+          "sim_t": 46.9,
+          "active_vehicles": 73
+        },
+        {
+          "sim_t": 47.9,
+          "active_vehicles": 73
+        },
+        {
+          "sim_t": 48.9,
+          "active_vehicles": 73
+        },
+        {
+          "sim_t": 49.9,
+          "active_vehicles": 77
+        }
+      ]
+    },
+    "rsu_breakdown": {
+      "RSU_01_WEST": {
+        "alerts_received_direct": 1,
+        "alerts_received_forwarded": 2,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 3,
+        "expired_events_pruned": 0
+      },
+      "RSU_02_CENTRAL": {
+        "alerts_received_direct": 2,
+        "alerts_received_forwarded": 1,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 1,
+        "duplicate_detections_suppressed": 9,
+        "expired_events_pruned": 0
+      },
+      "RSU_03_EAST": {
+        "alerts_received_direct": 0,
+        "alerts_received_forwarded": 3,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 4,
+        "expired_events_pruned": 0
+      },
+      "RSU_04_NORTH": {
+        "alerts_received_direct": 0,
+        "alerts_received_forwarded": 3,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 4,
+        "expired_events_pruned": 0
+      },
+      "RSU_05_SOUTH": {
+        "alerts_received_direct": 0,
+        "alerts_received_forwarded": 3,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 2,
+        "expired_events_pruned": 0
+      },
+      "RSU_06_NW": {
+        "alerts_received_direct": 0,
+        "alerts_received_forwarded": 3,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 1,
+        "expired_events_pruned": 0
+      },
+      "RSU_07_NE": {
+        "alerts_received_direct": 0,
+        "alerts_received_forwarded": 3,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 1,
+        "expired_events_pruned": 0
+      },
+      "RSU_08_SE": {
+        "alerts_received_direct": 0,
+        "alerts_received_forwarded": 3,
+        "alerts_forwarded": 0,
+        "vehicles_warned": 0,
+        "duplicate_detections_suppressed": 0,
+        "expired_events_pruned": 0
+      }
+    },
+    "lifecycle_events_count": 1,
+    "sample_lifecycle_events": [
+      {
+        "sim_t": 31.0,
+        "step": 311,
+        "rsu_id": "RSU_02_CENTRAL",
+        "veh_id": "flow_02_beltway_cw.0",
+        "action_id": "HAZ_POTHOLE_01",
+        "hazard_name": "pothole",
+        "dist_to_haz": 179.2,
+        "speed_before_kmh": 46.9,
+        "action": "CAUTION_SLOWDOWN",
+        "adv_spd_kmh": 30
+      }
+    ]
+  },
+  "visual_demonstration_artifacts": {
+    "mp4_video": "simulation/city_5km/outputs/pfpd_stage8_city_demonstration.mp4",
+    "mp4_size_bytes": 78177,
+    "screenshots": [
+      "01_full_city_overview.png",
+      "02_major_intersections.png",
+      "03_urban_arterials.png",
+      "04_traffic_signals_rsc.png",
+      "05_rsu_placements_coverage.png",
+      "06_moving_traffic.png",
+      "07_hazard_scenarios.png",
+      "08_vehicle_rerouting_blocked_arterial.png"
+    ]
+  }
+}

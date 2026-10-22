@@ -1,0 +1,21 @@
+{
+  "id": "adarshswarupmaharana/unified-three-hazard-yolo11n-detector",
+  "title": "Unified Three Hazard YOLO11n Detector",
+  "code_file": "train_unified_yolo11n_production.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "muskanverma24/pothole-detection-dataset-yolov11-optimized",
+    "andrewmvd/pothole-detection",
+    "jee1oner/dashcam-pov-potholes-and-barricades-for-yolo26n",
+    "abtinzandi/obstacle-detection-dataset",
+    "snehilsanyal/construction-site-safety-image-dataset-roboflow",
+    "cubeai/traffic-accident-detection-for-yolov8",
+    "marslanarshad/car-accidents-and-deformation-datasetannotated",
+    "saksham07gupta/road-obstacledebris-detection"
+  ]
+}

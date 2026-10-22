@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='utf-8'?>
+<additional>
+    <poly id="district-ground" type="terrain" color="#C5B391" fill="1" layer="-30" shape="-20,-20 940,-20 940,790 -20,790" />
+    <poly id="shed-foundry-north-00-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="334.44,40.519999999999996 385.56,40.519999999999996 385.56,75.48 334.44,75.48" />
+    <poly id="shed-foundry-north-00-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="344.0,49.5 380.0,49.5 380.0,72.5 344.0,72.5" />
+    <poly id="shed-foundry-north-00-roof" type="building" color="#61605A" fill="1" layer="-12" name="foundry-north" shape="342.0,46.5 378.0,46.5 378.0,69.5 342.0,69.5" />
+    <poly id="shed-foundry-north-00-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="354.0,47.5 354.0,68.5" />
+    <poly id="shed-foundry-north-00-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="366.0,47.5 366.0,68.5" />
+    <poly id="shed-foundry-north-01-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="376.44,40.519999999999996 427.56,40.519999999999996 427.56,75.48 376.44,75.48" />
+    <poly id="shed-foundry-north-01-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="386.0,49.5 422.0,49.5 422.0,72.5 386.0,72.5" />
+    <poly id="shed-foundry-north-01-roof" type="building" color="#875843" fill="1" layer="-12" name="foundry-north" shape="384.0,46.5 420.0,46.5 420.0,69.5 384.0,69.5" />
+    <poly id="shed-foundry-north-01-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="396.0,47.5 396.0,68.5" />
+    <poly id="shed-foundry-north-01-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="408.0,47.5 408.0,68.5" />
+    <poly id="shed-foundry-north-02-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="334.44,78.52 385.56,78.52 385.56,113.48 334.44,113.48" />
+    <poly id="shed-foundry-north-02-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="344.0,87.5 380.0,87.5 380.0,110.5 344.0,110.5" />
+    <poly id="shed-foundry-north-02-roof" type="building" color="#875843" fill="1" layer="-12" name="foundry-north" shape="342.0,84.5 378.0,84.5 378.0,107.5 342.0,107.5" />
+    <poly id="shed-foundry-north-02-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="354.0,85.5 354.0,106.5" />
+    <poly id="shed-foundry-north-02-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="366.0,85.5 366.0,106.5" />
+    <poly id="shed-foundry-north-03-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="376.44,78.52 427.56,78.52 427.56,113.48 376.44,113.48" />
+    <poly id="shed-foundry-north-03-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="386.0,87.5 422.0,87.5 422.0,110.5 386.0,110.5" />
+    <poly id="shed-foundry-north-03-roof" type="building" color="#61605A" fill="1" layer="-12" name="foundry-north" shape="384.0,84.5 420.0,84.5 420.0,107.5 384.0,107.5" />
+    <poly id="shed-foundry-north-03-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="396.0,85.5 396.0,106.5" />
+    <poly id="shed-foundry-north-03-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="408.0,85.5 408.0,106.5" />
+    <poly id="shed-foundry-north-04-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="292.44,116.52 343.56,116.52 343.56,151.48 292.44,151.48" />
+    <poly id="shed-foundry-north-04-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="302.0,125.5 338.0,125.5 338.0,148.5 302.0,148.5" />
+    <poly id="shed-foundry-north-04-roof" type="building" color="#875843" fill="1" layer="-12" name="foundry-north" shape="300.0,122.5 336.0,122.5 336.0,145.5 300.0,145.5" />
+    <poly id="shed-foundry-north-04-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="312.0,123.5 312.0,144.5" />
+    <poly id="shed-foundry-north-04-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="324.0,123.5 324.0,144.5" />
+    <poly id="shed-foundry-east-05-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="465.44,68.52 516.56,68.52 516.56,103.48 465.44,103.48" />
+    <poly id="shed-foundry-east-05-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="475.0,77.5 511.0,77.5 511.0,100.5 475.0,100.5" />
+    <poly id="shed-foundry-east-05-roof" type="building" color="#875843" fill="1" layer="-12" name="foundry-east" shape="473.0,74.5 509.0,74.5 509.0,97.5 473.0,97.5" />
+    <poly id="shed-foundry-east-05-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="485.0,75.5 485.0,96.5" />
+    <poly id="shed-foundry-east-05-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="497.0,75.5 497.0,96.5" />
+    <poly id="shed-foundry-east-06-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="507.44,68.52 558.56,68.52 558.56,103.48 507.44,103.48" />
+    <poly id="shed-foundry-east-06-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="517.0,77.5 553.0,77.5 553.0,100.5 517.0,100.5" />
+    <poly id="shed-foundry-east-06-roof" type="building" color="#61605A" fill="1" layer="-12" name="foundry-east" shape="515.0,74.5 551.0,74.5 551.0,97.5 515.0,97.5" />
+    <poly id="shed-foundry-east-06-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="527.0,75.5 527.0,96.5" />
+    <poly id="shed-foundry-east-06-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="539.0,75.5 539.0,96.5" />
+    <poly id="shed-foundry-east-07-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="549.44,68.52 600.56,68.52 600.56,103.48 549.44,103.48" />
+    <poly id="shed-foundry-east-07-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="559.0,77.5 595.0,77.5 595.0,100.5 559.0,100.5" />
+    <poly id="shed-foundry-east-07-roof" type="building" color="#875843" fill="1" layer="-12" name="foundry-east" shape="557.0,74.5 593.0,74.5 593.0,97.5 557.0,97.5" />
+    <poly id="shed-foundry-east-07-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="569.0,75.5 569.0,96.5" />
+    <poly id="shed-foundry-east-07-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="581.0,75.5 581.0,96.5" />
+    <poly id="shed-foundry-east-08-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="465.44,106.52 516.56,106.52 516.56,141.48 465.44,141.48" />
+    <poly id="shed-foundry-east-08-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="475.0,115.5 511.0,115.5 511.0,138.5 475.0,138.5" />
+    <poly id="shed-foundry-east-08-roof" type="building" color="#875843" fill="1" layer="-12" name="foundry-east" shape="473.0,112.5 509.0,112.5 509.0,135.5 473.0,135.5" />
+    <poly id="shed-foundry-east-08-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="485.0,113.5 485.0,134.5" />
+    <poly id="shed-foundry-east-08-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="497.0,113.5 497.0,134.5" />
+    <poly id="shed-foundry-east-09-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="507.44,106.52 558.56,106.52 558.56,141.48 507.44,141.48" />
+    <poly id="shed-foundry-east-09-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="517.0,115.5 553.0,115.5 553.0,138.5 517.0,138.5" />
+    <poly id="shed-foundry-east-09-roof" type="building" color="#61605A" fill="1" layer="-12" name="foundry-east" shape="515.0,112.5 551.0,112.5 551.0,135.5 515.0,135.5" />
+    <poly id="shed-foundry-east-09-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="527.0,113.5 527.0,134.5" />
+    <poly id="shed-foundry-east-09-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="539.0,113.5 539.0,134.5" />
+    <poly id="shed-foundry-east-10-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="549.44,106.52 600.56,106.52 600.56,141.48 549.44,141.48" />
+    <poly id="shed-foundry-east-10-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="559.0,115.5 595.0,115.5 595.0,138.5 559.0,138.5" />
+    <poly id="shed-foundry-east-10-roof" type="building" color="#875843" fill="1" layer="-12" name="foundry-east" shape="557.0,112.5 593.0,112.5 593.0,135.5 557.0,135.5" />
+    <poly id="shed-foundry-east-10-seam-1" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="569.0,113.5 569.0,134.5" />
+    <poly id="shed-foundry-east-10-seam-2" type="roof-detail" color="#C5A27A" fill="0" lineWidth="0.5" layer="-11" shape="581.0,113.5 581.0,134.5" />
+    <poly id="shed-market-west-11-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="101.51,110.12 128.49,110.12 128.49,129.88 101.51,129.88" />
+    <poly id="shed-market-west-11-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="107.5,116.5 126.5,116.5 126.5,129.5 107.5,129.5" />
+    <poly id="shed-market-west-11-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west" shape="105.5,113.5 124.5,113.5 124.5,126.5 105.5,126.5" />
+    <poly id="shop-market-west-11-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="106.5,123.5 123.5,123.5 123.5,127.5 106.5,127.5" />
+    <poly id="shop-market-west-11-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="114,125.5 116,125.5" />
+    <poly id="shed-market-west-12-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="131.51,110.12 158.49,110.12 158.49,129.88 131.51,129.88" />
+    <poly id="shed-market-west-12-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="137.5,116.5 156.5,116.5 156.5,129.5 137.5,129.5" />
+    <poly id="shed-market-west-12-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west" shape="135.5,113.5 154.5,113.5 154.5,126.5 135.5,126.5" />
+    <poly id="shop-market-west-12-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="136.5,123.5 153.5,123.5 153.5,127.5 136.5,127.5" />
+    <poly id="shop-market-west-12-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="144,125.5 146,125.5" />
+    <poly id="shed-market-west-13-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="161.51,110.12 188.49,110.12 188.49,129.88 161.51,129.88" />
+    <poly id="shed-market-west-13-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="167.5,116.5 186.5,116.5 186.5,129.5 167.5,129.5" />
+    <poly id="shed-market-west-13-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west" shape="165.5,113.5 184.5,113.5 184.5,126.5 165.5,126.5" />
+    <poly id="shop-market-west-13-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="166.5,123.5 183.5,123.5 183.5,127.5 166.5,127.5" />
+    <poly id="shop-market-west-13-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="174,125.5 176,125.5" />
+    <poly id="shed-market-west-14-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="131.51,141.12 158.49,141.12 158.49,160.88 131.51,160.88" />
+    <poly id="shed-market-west-14-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="137.5,147.5 156.5,147.5 156.5,160.5 137.5,160.5" />
+    <poly id="shed-market-west-14-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west" shape="135.5,144.5 154.5,144.5 154.5,157.5 135.5,157.5" />
+    <poly id="shop-market-west-14-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="136.5,154.5 153.5,154.5 153.5,158.5 136.5,158.5" />
+    <poly id="shop-market-west-14-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="144,156.5 146,156.5" />
+    <poly id="shed-market-west-15-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="161.51,141.12 188.49,141.12 188.49,160.88 161.51,160.88" />
+    <poly id="shed-market-west-15-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="167.5,147.5 186.5,147.5 186.5,160.5 167.5,160.5" />
+    <poly id="shed-market-west-15-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west" shape="165.5,144.5 184.5,144.5 184.5,157.5 165.5,157.5" />
+    <poly id="shop-market-west-15-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="166.5,154.5 183.5,154.5 183.5,158.5 166.5,158.5" />
+    <poly id="shop-market-west-15-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="174,156.5 176,156.5" />
+    <poly id="shed-market-west-road-16-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="133.51,395.12 160.49,395.12 160.49,414.88 133.51,414.88" />
+    <poly id="shed-market-west-road-16-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="139.5,401.5 158.5,401.5 158.5,414.5 139.5,414.5" />
+    <poly id="shed-market-west-road-16-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west-road" shape="137.5,398.5 156.5,398.5 156.5,411.5 137.5,411.5" />
+    <poly id="shop-market-west-road-16-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="138.5,408.5 155.5,408.5 155.5,412.5 138.5,412.5" />
+    <poly id="shop-market-west-road-16-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="146,410.5 148,410.5" />
+    <poly id="shed-market-west-road-17-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="163.51,395.12 190.49,395.12 190.49,414.88 163.51,414.88" />
+    <poly id="shed-market-west-road-17-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="169.5,401.5 188.5,401.5 188.5,414.5 169.5,414.5" />
+    <poly id="shed-market-west-road-17-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west-road" shape="167.5,398.5 186.5,398.5 186.5,411.5 167.5,411.5" />
+    <poly id="shop-market-west-road-17-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="168.5,408.5 185.5,408.5 185.5,412.5 168.5,412.5" />
+    <poly id="shop-market-west-road-17-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="176,410.5 178,410.5" />
+    <poly id="shed-market-west-road-18-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="133.51,426.12 160.49,426.12 160.49,445.88 133.51,445.88" />
+    <poly id="shed-market-west-road-18-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="139.5,432.5 158.5,432.5 158.5,445.5 139.5,445.5" />
+    <poly id="shed-market-west-road-18-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west-road" shape="137.5,429.5 156.5,429.5 156.5,442.5 137.5,442.5" />
+    <poly id="shop-market-west-road-18-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="138.5,439.5 155.5,439.5 155.5,443.5 138.5,443.5" />
+    <poly id="shop-market-west-road-18-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="146,441.5 148,441.5" />
+    <poly id="shed-market-west-road-19-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="163.51,426.12 190.49,426.12 190.49,445.88 163.51,445.88" />
+    <poly id="shed-market-west-road-19-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="169.5,432.5 188.5,432.5 188.5,445.5 169.5,445.5" />
+    <poly id="shed-market-west-road-19-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west-road" shape="167.5,429.5 186.5,429.5 186.5,442.5 167.5,442.5" />
+    <poly id="shop-market-west-road-19-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="168.5,439.5 185.5,439.5 185.5,443.5 168.5,443.5" />
+    <poly id="shop-market-west-road-19-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="176,441.5 178,441.5" />
+    <poly id="shed-market-west-road-20-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="103.51,457.12 130.49,457.12 130.49,476.88 103.51,476.88" />
+    <poly id="shed-market-west-road-20-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="109.5,463.5 128.5,463.5 128.5,476.5 109.5,476.5" />
+    <poly id="shed-market-west-road-20-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-west-road" shape="107.5,460.5 126.5,460.5 126.5,473.5 107.5,473.5" />
+    <poly id="shop-market-west-road-20-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="108.5,470.5 125.5,470.5 125.5,474.5 108.5,474.5" />
+    <poly id="shop-market-west-road-20-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="116,472.5 118,472.5" />
+    <poly id="shed-market-southwest-21-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="113.51,545.12 140.49,545.12 140.49,564.88 113.51,564.88" />
+    <poly id="shed-market-southwest-21-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="119.5,551.5 138.5,551.5 138.5,564.5 119.5,564.5" />
+    <poly id="shed-market-southwest-21-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southwest" shape="117.5,548.5 136.5,548.5 136.5,561.5 117.5,561.5" />
+    <poly id="shop-market-southwest-21-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="118.5,558.5 135.5,558.5 135.5,562.5 118.5,562.5" />
+    <poly id="shop-market-southwest-21-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="126,560.5 128,560.5" />
+    <poly id="shed-market-southwest-22-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="143.51,545.12 170.49,545.12 170.49,564.88 143.51,564.88" />
+    <poly id="shed-market-southwest-22-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="149.5,551.5 168.5,551.5 168.5,564.5 149.5,564.5" />
+    <poly id="shed-market-southwest-22-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southwest" shape="147.5,548.5 166.5,548.5 166.5,561.5 147.5,561.5" />
+    <poly id="shop-market-southwest-22-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="148.5,558.5 165.5,558.5 165.5,562.5 148.5,562.5" />
+    <poly id="shop-market-southwest-22-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="156,560.5 158,560.5" />
+    <poly id="shed-market-southwest-23-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="173.51,545.12 200.49,545.12 200.49,564.88 173.51,564.88" />
+    <poly id="shed-market-southwest-23-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="179.5,551.5 198.5,551.5 198.5,564.5 179.5,564.5" />
+    <poly id="shed-market-southwest-23-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southwest" shape="177.5,548.5 196.5,548.5 196.5,561.5 177.5,561.5" />
+    <poly id="shop-market-southwest-23-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="178.5,558.5 195.5,558.5 195.5,562.5 178.5,562.5" />
+    <poly id="shop-market-southwest-23-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="186,560.5 188,560.5" />
+    <poly id="shed-market-southwest-24-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="203.51,545.12 230.49,545.12 230.49,564.88 203.51,564.88" />
+    <poly id="shed-market-southwest-24-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="209.5,551.5 228.5,551.5 228.5,564.5 209.5,564.5" />
+    <poly id="shed-market-southwest-24-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southwest" shape="207.5,548.5 226.5,548.5 226.5,561.5 207.5,561.5" />
+    <poly id="shop-market-southwest-24-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="208.5,558.5 225.5,558.5 225.5,562.5 208.5,562.5" />
+    <poly id="shop-market-southwest-24-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="216,560.5 218,560.5" />
+    <poly id="shed-market-southwest-25-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="233.51,545.12 260.49,545.12 260.49,564.88 233.51,564.88" />
+    <poly id="shed-market-southwest-25-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="239.5,551.5 258.5,551.5 258.5,564.5 239.5,564.5" />
+    <poly id="shed-market-southwest-25-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southwest" shape="237.5,548.5 256.5,548.5 256.5,561.5 237.5,561.5" />
+    <poly id="shop-market-southwest-25-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="238.5,558.5 255.5,558.5 255.5,562.5 238.5,562.5" />
+    <poly id="shop-market-southwest-25-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="246,560.5 248,560.5" />
+    <poly id="shed-market-south-26-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="278.51,540.12 305.49,540.12 305.49,559.88 278.51,559.88" />
+    <poly id="shed-market-south-26-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="284.5,546.5 303.5,546.5 303.5,559.5 284.5,559.5" />
+    <poly id="shed-market-south-26-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="282.5,543.5 301.5,543.5 301.5,556.5 282.5,556.5" />
+    <poly id="shop-market-south-26-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="283.5,553.5 300.5,553.5 300.5,557.5 283.5,557.5" />
+    <poly id="shop-market-south-26-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="291,555.5 293,555.5" />
+    <poly id="shed-market-south-27-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="368.51,540.12 395.49,540.12 395.49,559.88 368.51,559.88" />
+    <poly id="shed-market-south-27-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="374.5,546.5 393.5,546.5 393.5,559.5 374.5,559.5" />
+    <poly id="shed-market-south-27-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="372.5,543.5 391.5,543.5 391.5,556.5 372.5,556.5" />
+    <poly id="shop-market-south-27-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="373.5,553.5 390.5,553.5 390.5,557.5 373.5,557.5" />
+    <poly id="shop-market-south-27-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="381,555.5 383,555.5" />
+    <poly id="shed-market-south-28-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="398.51,540.12 425.49,540.12 425.49,559.88 398.51,559.88" />
+    <poly id="shed-market-south-28-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="404.5,546.5 423.5,546.5 423.5,559.5 404.5,559.5" />
+    <poly id="shed-market-south-28-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="402.5,543.5 421.5,543.5 421.5,556.5 402.5,556.5" />
+    <poly id="shop-market-south-28-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="403.5,553.5 420.5,553.5 420.5,557.5 403.5,557.5" />
+    <poly id="shop-market-south-28-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="411,555.5 413,555.5" />
+    <poly id="shed-market-south-29-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="278.51,571.12 305.49,571.12 305.49,590.88 278.51,590.88" />
+    <poly id="shed-market-south-29-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="284.5,577.5 303.5,577.5 303.5,590.5 284.5,590.5" />
+    <poly id="shed-market-south-29-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="282.5,574.5 301.5,574.5 301.5,587.5 282.5,587.5" />
+    <poly id="shop-market-south-29-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="283.5,584.5 300.5,584.5 300.5,588.5 283.5,588.5" />
+    <poly id="shop-market-south-29-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="291,586.5 293,586.5" />
+    <poly id="shed-market-south-30-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="368.51,571.12 395.49,571.12 395.49,590.88 368.51,590.88" />
+    <poly id="shed-market-south-30-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="374.5,577.5 393.5,577.5 393.5,590.5 374.5,590.5" />
+    <poly id="shed-market-south-30-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="372.5,574.5 391.5,574.5 391.5,587.5 372.5,587.5" />
+    <poly id="shop-market-south-30-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="373.5,584.5 390.5,584.5 390.5,588.5 373.5,588.5" />
+    <poly id="shop-market-south-30-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="381,586.5 383,586.5" />
+    <poly id="shed-market-south-31-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="398.51,571.12 425.49,571.12 425.49,590.88 398.51,590.88" />
+    <poly id="shed-market-south-31-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="404.5,577.5 423.5,577.5 423.5,590.5 404.5,590.5" />
+    <poly id="shed-market-south-31-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="402.5,574.5 421.5,574.5 421.5,587.5 402.5,587.5" />
+    <poly id="shop-market-south-31-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="403.5,584.5 420.5,584.5 420.5,588.5 403.5,588.5" />
+    <poly id="shop-market-south-31-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="411,586.5 413,586.5" />
+    <poly id="shed-market-south-32-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="338.51,602.12 365.49,602.12 365.49,621.88 338.51,621.88" />
+    <poly id="shed-market-south-32-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="344.5,608.5 363.5,608.5 363.5,621.5 344.5,621.5" />
+    <poly id="shed-market-south-32-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="342.5,605.5 361.5,605.5 361.5,618.5 342.5,618.5" />
+    <poly id="shop-market-south-32-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="343.5,615.5 360.5,615.5 360.5,619.5 343.5,619.5" />
+    <poly id="shop-market-south-32-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="351,617.5 353,617.5" />
+    <poly id="shed-market-south-33-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="368.51,602.12 395.49,602.12 395.49,621.88 368.51,621.88" />
+    <poly id="shed-market-south-33-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="374.5,608.5 393.5,608.5 393.5,621.5 374.5,621.5" />
+    <poly id="shed-market-south-33-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="372.5,605.5 391.5,605.5 391.5,618.5 372.5,618.5" />
+    <poly id="shop-market-south-33-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="373.5,615.5 390.5,615.5 390.5,619.5 373.5,619.5" />
+    <poly id="shop-market-south-33-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="381,617.5 383,617.5" />
+    <poly id="shed-market-south-34-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="398.51,602.12 425.49,602.12 425.49,621.88 398.51,621.88" />
+    <poly id="shed-market-south-34-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="404.5,608.5 423.5,608.5 423.5,621.5 404.5,621.5" />
+    <poly id="shed-market-south-34-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="402.5,605.5 421.5,605.5 421.5,618.5 402.5,618.5" />
+    <poly id="shop-market-south-34-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="403.5,615.5 420.5,615.5 420.5,619.5 403.5,619.5" />
+    <poly id="shop-market-south-34-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="411,617.5 413,617.5" />
+    <poly id="shed-market-south-35-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="308.51,633.12 335.49,633.12 335.49,652.88 308.51,652.88" />
+    <poly id="shed-market-south-35-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="314.5,639.5 333.5,639.5 333.5,652.5 314.5,652.5" />
+    <poly id="shed-market-south-35-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-south" shape="312.5,636.5 331.5,636.5 331.5,649.5 312.5,649.5" />
+    <poly id="shop-market-south-35-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="313.5,646.5 330.5,646.5 330.5,650.5 313.5,650.5" />
+    <poly id="shop-market-south-35-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="321,648.5 323,648.5" />
+    <poly id="shed-market-southeast-36-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="468.51,565.12 495.49,565.12 495.49,584.88 468.51,584.88" />
+    <poly id="shed-market-southeast-36-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="474.5,571.5 493.5,571.5 493.5,584.5 474.5,584.5" />
+    <poly id="shed-market-southeast-36-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="472.5,568.5 491.5,568.5 491.5,581.5 472.5,581.5" />
+    <poly id="shop-market-southeast-36-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="473.5,578.5 490.5,578.5 490.5,582.5 473.5,582.5" />
+    <poly id="shop-market-southeast-36-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="481,580.5 483,580.5" />
+    <poly id="shed-market-southeast-37-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="498.51,565.12 525.49,565.12 525.49,584.88 498.51,584.88" />
+    <poly id="shed-market-southeast-37-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="504.5,571.5 523.5,571.5 523.5,584.5 504.5,584.5" />
+    <poly id="shed-market-southeast-37-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="502.5,568.5 521.5,568.5 521.5,581.5 502.5,581.5" />
+    <poly id="shop-market-southeast-37-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="503.5,578.5 520.5,578.5 520.5,582.5 503.5,582.5" />
+    <poly id="shop-market-southeast-37-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="511,580.5 513,580.5" />
+    <poly id="shed-market-southeast-38-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="528.51,565.12 555.49,565.12 555.49,584.88 528.51,584.88" />
+    <poly id="shed-market-southeast-38-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="534.5,571.5 553.5,571.5 553.5,584.5 534.5,584.5" />
+    <poly id="shed-market-southeast-38-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="532.5,568.5 551.5,568.5 551.5,581.5 532.5,581.5" />
+    <poly id="shop-market-southeast-38-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="533.5,578.5 550.5,578.5 550.5,582.5 533.5,582.5" />
+    <poly id="shop-market-southeast-38-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="541,580.5 543,580.5" />
+    <poly id="shed-market-southeast-39-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="558.51,565.12 585.49,565.12 585.49,584.88 558.51,584.88" />
+    <poly id="shed-market-southeast-39-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="564.5,571.5 583.5,571.5 583.5,584.5 564.5,584.5" />
+    <poly id="shed-market-southeast-39-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="562.5,568.5 581.5,568.5 581.5,581.5 562.5,581.5" />
+    <poly id="shop-market-southeast-39-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="563.5,578.5 580.5,578.5 580.5,582.5 563.5,582.5" />
+    <poly id="shop-market-southeast-39-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="571,580.5 573,580.5" />
+    <poly id="shed-market-southeast-40-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="468.51,596.12 495.49,596.12 495.49,615.88 468.51,615.88" />
+    <poly id="shed-market-southeast-40-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="474.5,602.5 493.5,602.5 493.5,615.5 474.5,615.5" />
+    <poly id="shed-market-southeast-40-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="472.5,599.5 491.5,599.5 491.5,612.5 472.5,612.5" />
+    <poly id="shop-market-southeast-40-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="473.5,609.5 490.5,609.5 490.5,613.5 473.5,613.5" />
+    <poly id="shop-market-southeast-40-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="481,611.5 483,611.5" />
+    <poly id="shed-market-southeast-41-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="498.51,596.12 525.49,596.12 525.49,615.88 498.51,615.88" />
+    <poly id="shed-market-southeast-41-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="504.5,602.5 523.5,602.5 523.5,615.5 504.5,615.5" />
+    <poly id="shed-market-southeast-41-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="502.5,599.5 521.5,599.5 521.5,612.5 502.5,612.5" />
+    <poly id="shop-market-southeast-41-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="503.5,609.5 520.5,609.5 520.5,613.5 503.5,613.5" />
+    <poly id="shop-market-southeast-41-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="511,611.5 513,611.5" />
+    <poly id="shed-market-southeast-42-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="528.51,596.12 555.49,596.12 555.49,615.88 528.51,615.88" />
+    <poly id="shed-market-southeast-42-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="534.5,602.5 553.5,602.5 553.5,615.5 534.5,615.5" />
+    <poly id="shed-market-southeast-42-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="532.5,599.5 551.5,599.5 551.5,612.5 532.5,612.5" />
+    <poly id="shop-market-southeast-42-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="533.5,609.5 550.5,609.5 550.5,613.5 533.5,613.5" />
+    <poly id="shop-market-southeast-42-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="541,611.5 543,611.5" />
+    <poly id="shed-market-southeast-43-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="558.51,596.12 585.49,596.12 585.49,615.88 558.51,615.88" />
+    <poly id="shed-market-southeast-43-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="564.5,602.5 583.5,602.5 583.5,615.5 564.5,615.5" />
+    <poly id="shed-market-southeast-43-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="562.5,599.5 581.5,599.5 581.5,612.5 562.5,612.5" />
+    <poly id="shop-market-southeast-43-awning" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="563.5,609.5 580.5,609.5 580.5,613.5 563.5,613.5" />
+    <poly id="shop-market-southeast-43-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="571,611.5 573,611.5" />
+    <poly id="shed-market-southeast-44-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="468.51,627.12 495.49,627.12 495.49,646.88 468.51,646.88" />
+    <poly id="shed-market-southeast-44-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="474.5,633.5 493.5,633.5 493.5,646.5 474.5,646.5" />
+    <poly id="shed-market-southeast-44-roof" type="building" color="#C18D40" fill="1" layer="-12" name="market-southeast" shape="472.5,630.5 491.5,630.5 491.5,643.5 472.5,643.5" />
+    <poly id="shop-market-southeast-44-awning" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="473.5,640.5 490.5,640.5 490.5,644.5 473.5,644.5" />
+    <poly id="shop-market-southeast-44-door" type="shopfront" color="#D8CDB7" fill="0" lineWidth="0.5" layer="-10" shape="481,642.5 483,642.5" />
+    <poly id="shed-service-northeast-45-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="702.54,34.32 739.46,34.32 739.46,61.68 702.54,61.68" />
+    <poly id="shed-service-northeast-45-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="710.0,42.0 736.0,42.0 736.0,60.0 710.0,60.0" />
+    <poly id="shed-service-northeast-45-roof" type="building" color="#875843" fill="1" layer="-12" name="service-northeast" shape="708.0,39.0 734.0,39.0 734.0,57.0 708.0,57.0" />
+    <poly id="shed-service-northeast-45-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="716.6666666666666,40.0 716.6666666666666,56.0" />
+    <poly id="shed-service-northeast-45-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="725.3333333333334,40.0 725.3333333333334,56.0" />
+    <poly id="shed-service-northeast-46-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="738.54,34.32 775.46,34.32 775.46,61.68 738.54,61.68" />
+    <poly id="shed-service-northeast-46-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="746.0,42.0 772.0,42.0 772.0,60.0 746.0,60.0" />
+    <poly id="shed-service-northeast-46-roof" type="building" color="#8D6049" fill="1" layer="-12" name="service-northeast" shape="744.0,39.0 770.0,39.0 770.0,57.0 744.0,57.0" />
+    <poly id="shed-service-northeast-46-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="752.6666666666666,40.0 752.6666666666666,56.0" />
+    <poly id="shed-service-northeast-46-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="761.3333333333334,40.0 761.3333333333334,56.0" />
+    <poly id="shed-service-northeast-47-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="774.54,34.32 811.46,34.32 811.46,61.68 774.54,61.68" />
+    <poly id="shed-service-northeast-47-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="782.0,42.0 808.0,42.0 808.0,60.0 782.0,60.0" />
+    <poly id="shed-service-northeast-47-roof" type="building" color="#61605A" fill="1" layer="-12" name="service-northeast" shape="780.0,39.0 806.0,39.0 806.0,57.0 780.0,57.0" />
+    <poly id="shed-service-northeast-47-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="788.6666666666666,40.0 788.6666666666666,56.0" />
+    <poly id="shed-service-northeast-47-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="797.3333333333334,40.0 797.3333333333334,56.0" />
+    <poly id="shed-service-northeast-48-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="810.54,34.32 847.46,34.32 847.46,61.68 810.54,61.68" />
+    <poly id="shed-service-northeast-48-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="818.0,42.0 844.0,42.0 844.0,60.0 818.0,60.0" />
+    <poly id="shed-service-northeast-48-roof" type="building" color="#9A7658" fill="1" layer="-12" name="service-northeast" shape="816.0,39.0 842.0,39.0 842.0,57.0 816.0,57.0" />
+    <poly id="shed-service-northeast-48-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="824.6666666666666,40.0 824.6666666666666,56.0" />
+    <poly id="shed-service-northeast-48-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="833.3333333333334,40.0 833.3333333333334,56.0" />
+    <poly id="shed-service-northeast-49-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="738.54,68.32 775.46,68.32 775.46,95.68 738.54,95.68" />
+    <poly id="shed-service-northeast-49-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="746.0,76.0 772.0,76.0 772.0,94.0 746.0,94.0" />
+    <poly id="shed-service-northeast-49-roof" type="building" color="#B07A47" fill="1" layer="-12" name="service-northeast" shape="744.0,73.0 770.0,73.0 770.0,91.0 744.0,91.0" />
+    <poly id="shed-service-northeast-49-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="752.6666666666666,74.0 752.6666666666666,90.0" />
+    <poly id="shed-service-northeast-49-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="761.3333333333334,74.0 761.3333333333334,90.0" />
+    <poly id="shed-service-northeast-50-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="774.54,68.32 811.46,68.32 811.46,95.68 774.54,95.68" />
+    <poly id="shed-service-northeast-50-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="782.0,76.0 808.0,76.0 808.0,94.0 782.0,94.0" />
+    <poly id="shed-service-northeast-50-roof" type="building" color="#875843" fill="1" layer="-12" name="service-northeast" shape="780.0,73.0 806.0,73.0 806.0,91.0 780.0,91.0" />
+    <poly id="shed-service-northeast-50-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="788.6666666666666,74.0 788.6666666666666,90.0" />
+    <poly id="shed-service-northeast-50-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="797.3333333333334,74.0 797.3333333333334,90.0" />
+    <poly id="shed-service-northeast-51-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="810.54,68.32 847.46,68.32 847.46,95.68 810.54,95.68" />
+    <poly id="shed-service-northeast-51-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="818.0,76.0 844.0,76.0 844.0,94.0 818.0,94.0" />
+    <poly id="shed-service-northeast-51-roof" type="building" color="#8D6049" fill="1" layer="-12" name="service-northeast" shape="816.0,73.0 842.0,73.0 842.0,91.0 816.0,91.0" />
+    <poly id="shed-service-northeast-51-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="824.6666666666666,74.0 824.6666666666666,90.0" />
+    <poly id="shed-service-northeast-51-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="833.3333333333334,74.0 833.3333333333334,90.0" />
+    <poly id="shed-service-southeast-52-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="748.54,534.32 785.46,534.32 785.46,561.68 748.54,561.68" />
+    <poly id="shed-service-southeast-52-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="756.0,542.0 782.0,542.0 782.0,560.0 756.0,560.0" />
+    <poly id="shed-service-southeast-52-roof" type="building" color="#61605A" fill="1" layer="-12" name="service-southeast" shape="754.0,539.0 780.0,539.0 780.0,557.0 754.0,557.0" />
+    <poly id="shed-service-southeast-52-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="762.6666666666666,540.0 762.6666666666666,556.0" />
+    <poly id="shed-service-southeast-52-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="771.3333333333334,540.0 771.3333333333334,556.0" />
+    <poly id="shed-service-southeast-53-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="784.54,534.32 821.46,534.32 821.46,561.68 784.54,561.68" />
+    <poly id="shed-service-southeast-53-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="792.0,542.0 818.0,542.0 818.0,560.0 792.0,560.0" />
+    <poly id="shed-service-southeast-53-roof" type="building" color="#9A7658" fill="1" layer="-12" name="service-southeast" shape="790.0,539.0 816.0,539.0 816.0,557.0 790.0,557.0" />
+    <poly id="shed-service-southeast-53-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="798.6666666666666,540.0 798.6666666666666,556.0" />
+    <poly id="shed-service-southeast-53-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="807.3333333333334,540.0 807.3333333333334,556.0" />
+    <poly id="shed-service-southeast-54-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="820.54,534.32 857.46,534.32 857.46,561.68 820.54,561.68" />
+    <poly id="shed-service-southeast-54-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="828.0,542.0 854.0,542.0 854.0,560.0 828.0,560.0" />
+    <poly id="shed-service-southeast-54-roof" type="building" color="#B07A47" fill="1" layer="-12" name="service-southeast" shape="826.0,539.0 852.0,539.0 852.0,557.0 826.0,557.0" />
+    <poly id="shed-service-southeast-54-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="834.6666666666666,540.0 834.6666666666666,556.0" />
+    <poly id="shed-service-southeast-54-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="843.3333333333334,540.0 843.3333333333334,556.0" />
+    <poly id="shed-service-southeast-55-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="820.54,568.32 857.46,568.32 857.46,595.68 820.54,595.68" />
+    <poly id="shed-service-southeast-55-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="828.0,576.0 854.0,576.0 854.0,594.0 828.0,594.0" />
+    <poly id="shed-service-southeast-55-roof" type="building" color="#875843" fill="1" layer="-12" name="service-southeast" shape="826.0,573.0 852.0,573.0 852.0,591.0 826.0,591.0" />
+    <poly id="shed-service-southeast-55-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="834.6666666666666,574.0 834.6666666666666,590.0" />
+    <poly id="shed-service-southeast-55-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="843.3333333333334,574.0 843.3333333333334,590.0" />
+    <poly id="shed-service-southeast-56-apron" type="loading-apron" color="#B8A788" fill="1" layer="-17" shape="712.54,602.32 749.46,602.32 749.46,629.68 712.54,629.68" />
+    <poly id="shed-service-southeast-56-shadow" type="building-shadow" color="#6B5C49" fill="1" layer="-16" shape="720.0,610.0 746.0,610.0 746.0,628.0 720.0,628.0" />
+    <poly id="shed-service-southeast-56-roof" type="building" color="#8D6049" fill="1" layer="-12" name="service-southeast" shape="718.0,607.0 744.0,607.0 744.0,625.0 718.0,625.0" />
+    <poly id="shed-service-southeast-56-seam-1" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="726.6666666666666,608.0 726.6666666666666,624.0" />
+    <poly id="shed-service-southeast-56-seam-2" type="roof-detail" color="#D0B68B" fill="0" lineWidth="0.5" layer="-11" shape="735.3333333333334,608.0 735.3333333333334,624.0" />
+    <poly id="foundry-tank-00-shadow" type="tank-shadow" color="#6D5D49" fill="1" layer="-15" shape="444.00,143.00 443.70,145.67 442.81,148.21 441.38,150.48 439.48,152.38 437.21,153.81 434.67,154.70 432.00,155.00 429.33,154.70 426.79,153.81 424.52,152.38 422.62,150.48 421.19,148.21 420.30,145.67 420.00,143.00 420.30,140.33 421.19,137.79 422.62,135.52 424.52,133.62 426.79,132.19 429.33,131.30 432.00,131.00 434.67,131.30 437.21,132.19 439.48,133.62 441.38,135.52 442.81,137.79 443.70,140.33" />
+    <poly id="foundry-tank-00-rim" type="storage-tank" color="#CDBB99" fill="1" layer="-13" shape="442.00,140.00 441.70,142.67 440.81,145.21 439.38,147.48 437.48,149.38 435.21,150.81 432.67,151.70 430.00,152.00 427.33,151.70 424.79,150.81 422.52,149.38 420.62,147.48 419.19,145.21 418.30,142.67 418.00,140.00 418.30,137.33 419.19,134.79 420.62,132.52 422.52,130.62 424.79,129.19 427.33,128.30 430.00,128.00 432.67,128.30 435.21,129.19 437.48,130.62 439.38,132.52 440.81,134.79 441.70,137.33" />
+    <poly id="foundry-tank-00-top" type="storage-tank-roof" color="#74746B" fill="1" layer="-12" shape="440.00,140.00 439.75,142.23 439.01,144.34 437.82,146.23 436.23,147.82 434.34,149.01 432.23,149.75 430.00,150.00 427.77,149.75 425.66,149.01 423.77,147.82 422.18,146.23 420.99,144.34 420.25,142.23 420.00,140.00 420.25,137.77 420.99,135.66 422.18,133.77 423.77,132.18 425.66,130.99 427.77,130.25 430.00,130.00 432.23,130.25 434.34,130.99 436.23,132.18 437.82,133.77 439.01,135.66 439.75,137.77" />
+    <poly id="foundry-tank-00-seam" type="tank-seam" color="#C9B58D" fill="0" lineWidth="0.6" layer="-11" shape="421,140 439,140" />
+    <poly id="foundry-tank-01-shadow" type="tank-shadow" color="#6D5D49" fill="1" layer="-15" shape="302.00,38.00 301.75,40.23 301.01,42.34 299.82,44.23 298.23,45.82 296.34,47.01 294.23,47.75 292.00,48.00 289.77,47.75 287.66,47.01 285.77,45.82 284.18,44.23 282.99,42.34 282.25,40.23 282.00,38.00 282.25,35.77 282.99,33.66 284.18,31.77 285.77,30.18 287.66,28.99 289.77,28.25 292.00,28.00 294.23,28.25 296.34,28.99 298.23,30.18 299.82,31.77 301.01,33.66 301.75,35.77" />
+    <poly id="foundry-tank-01-rim" type="storage-tank" color="#CDBB99" fill="1" layer="-13" shape="300.00,35.00 299.75,37.23 299.01,39.34 297.82,41.23 296.23,42.82 294.34,44.01 292.23,44.75 290.00,45.00 287.77,44.75 285.66,44.01 283.77,42.82 282.18,41.23 280.99,39.34 280.25,37.23 280.00,35.00 280.25,32.77 280.99,30.66 282.18,28.77 283.77,27.18 285.66,25.99 287.77,25.25 290.00,25.00 292.23,25.25 294.34,25.99 296.23,27.18 297.82,28.77 299.01,30.66 299.75,32.77" />
+    <poly id="foundry-tank-01-top" type="storage-tank-roof" color="#74746B" fill="1" layer="-12" shape="298.00,35.00 297.80,36.78 297.21,38.47 296.25,39.99 294.99,41.25 293.47,42.21 291.78,42.80 290.00,43.00 288.22,42.80 286.53,42.21 285.01,41.25 283.75,39.99 282.79,38.47 282.20,36.78 282.00,35.00 282.20,33.22 282.79,31.53 283.75,30.01 285.01,28.75 286.53,27.79 288.22,27.20 290.00,27.00 291.78,27.20 293.47,27.79 294.99,28.75 296.25,30.01 297.21,31.53 297.80,33.22" />
+    <poly id="foundry-tank-01-seam" type="tank-seam" color="#C9B58D" fill="0" lineWidth="0.6" layer="-11" shape="283,35 297,35" />
+    <poly id="foundry-stack-00-pad" type="chimney-pad" color="#D0C09F" fill="1" layer="-15" shape="353,51 367,51 367,65 353,65" />
+    <poly id="foundry-stack-00" type="chimney-footprint" color="#815B43" fill="1" layer="-12" shape="355.5,53.5 364.5,53.5 364.5,62.5 355.5,62.5" />
+    <poly id="foundry-stack-00-mouth" type="chimney-mouth" color="#393A36" fill="1" layer="-11" shape="362.70,58.00 362.49,59.03 361.91,59.91 361.03,60.49 360.00,60.70 358.97,60.49 358.09,59.91 357.51,59.03 357.30,58.00 357.51,56.97 358.09,56.09 358.97,55.51 360.00,55.30 361.03,55.51 361.91,56.09 362.49,56.97" />
+    <poly id="foundry-stack-01-pad" type="chimney-pad" color="#D0C09F" fill="1" layer="-15" shape="395,51 409,51 409,65 395,65" />
+    <poly id="foundry-stack-01" type="chimney-footprint" color="#815B43" fill="1" layer="-12" shape="397.5,53.5 406.5,53.5 406.5,62.5 397.5,62.5" />
+    <poly id="foundry-stack-01-mouth" type="chimney-mouth" color="#393A36" fill="1" layer="-11" shape="404.70,58.00 404.49,59.03 403.91,59.91 403.03,60.49 402.00,60.70 400.97,60.49 400.09,59.91 399.51,59.03 399.30,58.00 399.51,56.97 400.09,56.09 400.97,55.51 402.00,55.30 403.03,55.51 403.91,56.09 404.49,56.97" />
+    <poly id="foundry-stack-02-pad" type="chimney-pad" color="#D0C09F" fill="1" layer="-15" shape="353,89 367,89 367,103 353,103" />
+    <poly id="foundry-stack-02" type="chimney-footprint" color="#815B43" fill="1" layer="-12" shape="355.5,91.5 364.5,91.5 364.5,100.5 355.5,100.5" />
+    <poly id="foundry-stack-02-mouth" type="chimney-mouth" color="#393A36" fill="1" layer="-11" shape="362.70,96.00 362.49,97.03 361.91,97.91 361.03,98.49 360.00,98.70 358.97,98.49 358.09,97.91 357.51,97.03 357.30,96.00 357.51,94.97 358.09,94.09 358.97,93.51 360.00,93.30 361.03,93.51 361.91,94.09 362.49,94.97" />
+    <poi id="district-sign-foundry" x="410" y="209" type="district-sign" color="#FFFFFF" layer="20" name="" width="200" height="34" imgFile="assets/sign_foundry.png" />
+    <poi id="district-sign-market" x="440" y="800" type="district-sign" color="#FFFFFF" layer="20" name="" width="200" height="38" imgFile="assets/sign_market.png" />
+    <poly id="tree-bed-01" type="planting" color="#8C846B" fill="1" layer="-17" shape="48,313 54,313 54,317 48,317" />
+    <poi id="olive-tree-01" x="51" y="315" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-06" type="planting" color="#8C846B" fill="1" layer="-17" shape="872,248 878,248 878,252 872,252" />
+    <poi id="olive-tree-06" x="875" y="250" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-07" type="planting" color="#8C846B" fill="1" layer="-17" shape="855,271 861,271 861,275 855,275" />
+    <poi id="olive-tree-07" x="858" y="273" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-08" type="planting" color="#8C846B" fill="1" layer="-17" shape="872,296 878,296 878,300 872,300" />
+    <poi id="olive-tree-08" x="875" y="298" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-09" type="planting" color="#8C846B" fill="1" layer="-17" shape="854,321 860,321 860,325 854,325" />
+    <poi id="olive-tree-09" x="857" y="323" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-10" type="planting" color="#8C846B" fill="1" layer="-17" shape="872,345 878,345 878,349 872,349" />
+    <poi id="olive-tree-10" x="875" y="347" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-11" type="planting" color="#8C846B" fill="1" layer="-17" shape="855,372 861,372 861,376 855,376" />
+    <poi id="olive-tree-11" x="858" y="374" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-12" type="planting" color="#8C846B" fill="1" layer="-17" shape="32,698 38,698 38,702 32,702" />
+    <poi id="olive-tree-12" x="35" y="700" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-13" type="planting" color="#8C846B" fill="1" layer="-17" shape="872,703 878,703 878,707 872,707" />
+    <poi id="olive-tree-13" x="875" y="705" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-14" type="planting" color="#8C846B" fill="1" layer="-17" shape="195,563 201,563 201,567 195,567" />
+    <poi id="olive-tree-14" x="198" y="565" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-15" type="planting" color="#8C846B" fill="1" layer="-17" shape="195,608 201,608 201,612 195,612" />
+    <poi id="olive-tree-15" x="198" y="610" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-16" type="planting" color="#8C846B" fill="1" layer="-17" shape="195,653 201,653 201,657 195,657" />
+    <poi id="olive-tree-16" x="198" y="655" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-18" type="planting" color="#8C846B" fill="1" layer="-17" shape="664,132 670,132 670,136 664,136" />
+    <poi id="olive-tree-18" x="667" y="134" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-19" type="planting" color="#8C846B" fill="1" layer="-17" shape="647,156 653,156 653,160 647,160" />
+    <poi id="olive-tree-19" x="650" y="158" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-20" type="planting" color="#8C846B" fill="1" layer="-17" shape="663,179 669,179 669,183 663,183" />
+    <poi id="olive-tree-20" x="666" y="181" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-24" type="planting" color="#8C846B" fill="1" layer="-17" shape="291,177 297,177 297,181 291,181" />
+    <poi id="olive-tree-24" x="294" y="179" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-26" type="planting" color="#8C846B" fill="1" layer="-17" shape="647,592 653,592 653,596 647,596" />
+    <poi id="olive-tree-26" x="650" y="594" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-27" type="planting" color="#8C846B" fill="1" layer="-17" shape="632,618 638,618 638,622 632,622" />
+    <poi id="olive-tree-27" x="635" y="620" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poly id="tree-bed-28" type="planting" color="#8C846B" fill="1" layer="-17" shape="647,644 653,644 653,648 647,648" />
+    <poi id="olive-tree-28" x="650" y="646" type="olive_tree" color="#FFFFFF" layer="-8" name="Olive tree" width="4.2" height="3.2" imgFile="assets/tree_symbol.png" />
+    <poi id="rsu-D1" x="206.782" y="211.396" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU D1 · visual mast" width="3.2" height="2.4" imgFile="assets/rsu_mast.png" />
+    <poi id="rsu-D2" x="460.726" y="352.329" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU D2 · visual mast" width="3.2" height="2.4" imgFile="assets/rsu_mast.png" />
+    <poi id="rsu-D3" x="660.029" y="502.116" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU D3 · visual mast" width="3.2" height="2.4" imgFile="assets/rsu_mast.png" />
+    <poi id="rsu-F1" x="40.598" y="472.923" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU F1 · visual mast" width="3.2" height="2.4" imgFile="assets/rsu_mast.png" />
+    <poi id="rsu-F2" x="217.770" y="718.990" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU F2 · visual mast" width="3.2" height="2.4" imgFile="assets/rsu_mast.png" />
+    <poi id="rsu-M2" x="663.258" y="77.663" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU M2 · visual mast" width="3.2" height="2.4" imgFile="assets/rsu_mast.png" />
+    <poi id="rsu-M3" x="818.491" y="391.884" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU M3 · visual mast" width="3.2" height="2.4" imgFile="assets/rsu_mast.png" />
+    <poly id="n1-inspection-court" type="visual-inspection-court" color="#897E68" fill="0" lineWidth="1.1" layer="8" shape="680,644 910,644 910,775 680,775" />
+    <poi id="n1-court-legend" x="771" y="699" type="visual-only-legend" color="#FFFFFF" layer="19" name="" width="174" height="60" imgFile="assets/n1_sample_legend.png" />
+    <poi id="sample-pothole" x="711" y="763" type="n1_visual_sample_pothole" color="#FFFFFF" layer="15" name="POTHOLE · 1.1×0.9 m" width="1.1" height="0.9" angle="0" imgFile="assets/sample_pothole.png" />
+    <poi id="sample-puddle" x="772" y="763" type="n1_visual_sample_puddle" color="#FFFFFF" layer="15" name="PUDDLE · 1.5×1.1 m" width="1.5" height="1.1" angle="0" imgFile="assets/sample_puddle.png" />
+    <poi id="sample-manhole" x="833" y="763" type="n1_visual_sample_manhole" color="#FFFFFF" layer="15" name="MANHOLE · 0.9×0.9 m" width="0.9" height="0.9" angle="0" imgFile="assets/sample_manhole.png" />
+    <poi id="sample-asphalt-patch" x="894" y="763" type="n1_visual_sample_asphalt_patch" color="#FFFFFF" layer="15" name="PATCH · 1.8×1.3 m" width="1.8" height="1.3" angle="0" imgFile="assets/sample_asphalt_patch.png" />
+    <poi id="sample-fallen-tree" x="711" y="744" type="n1_visual_sample_fallen_tree" color="#FFFFFF" layer="15" name="TREE · 5.0×1.8 m" width="5.0" height="1.8" angle="-20" imgFile="assets/sample_fallen_tree.png" />
+    <poi id="sample-debris" x="772" y="744" type="n1_visual_sample_debris" color="#FFFFFF" layer="15" name="DEBRIS · 2.4×1.4 m" width="2.4" height="1.4" angle="0" imgFile="assets/sample_debris.png" />
+    <poi id="sample-incident-car" x="833" y="744" type="n1_visual_sample_incident_car" color="#FFFFFF" layer="15" name="INCIDENT CAR · 4.3×1.8 m" width="4.3" height="1.8" angle="90" imgFile="assets/sample_incident_car.png" />
+    <poi id="sample-construction" x="894" y="744" type="n1_visual_sample_construction" color="#FFFFFF" layer="15" name="WORKS · 6.0×3.0 m" width="6.0" height="3.0" angle="0" imgFile="assets/sample_construction.png" />
+</additional>

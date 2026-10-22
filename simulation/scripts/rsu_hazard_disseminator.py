@@ -40,11 +40,52 @@ try:
 except ImportError:
     traci = None
 
-# ETSI Cause Codes for C-ITS Road Hazards
+# Authentic ETSI TS 102 894-2 (CDD v1.3.1) & ETSI EN 302 637-3 (DENM) Cause Codes
+# Note: Previous values (97, 96, 95) represented collisionRisk, dangerousCurve, and
+# emergencyVehicleApproaching in ETSI TS 102 894-2. The authentic C-ITS hazard mappings are:
 ETSI_CAUSE_CODES = {
-    "POTHOLE": {"causeCode": 97, "subCauseCode": 1, "description": "Damaged Road Surface / Pothole"},
-    "CONSTRUCTION_HAZARD": {"causeCode": 96, "subCauseCode": 1, "description": "Road Construction / Barricade"},
-    "ROAD_ACCIDENT_OBSTACLE": {"causeCode": 95, "subCauseCode": 2, "description": "Multi-Vehicle Collision / Road Debris"}
+    "POTHOLE": {
+        "causeCode": 9,
+        "subCauseCode": 4,
+        "cddName": "hazardousLocation-SurfaceCondition",
+        "subCauseName": "subsidence",
+        "description": "Damaged Road Surface / Pothole / Subsidence"
+    },
+    "CONSTRUCTION_HAZARD": {
+        "causeCode": 3,
+        "subCauseCode": 1,
+        "cddName": "roadworks",
+        "subCauseName": "majorRoadworks",
+        "description": "Road Construction / Barricade / Work Zone"
+    },
+    "ROAD_ACCIDENT_OBSTACLE": {
+        "causeCode": 2,
+        "subCauseCode": 1,
+        "cddName": "accident",
+        "subCauseName": "multiVehicleAccident",
+        "description": "Multi-Vehicle Collision / Road Accident",
+        "alternateObstacle": {
+            "causeCode": 10,
+            "subCauseCode": 4,
+            "cddName": "hazardousLocation-ObstacleOnTheRoad",
+            "subCauseName": "bigObjects",
+            "description": "Road Obstacle / Fallen Object / Debris"
+        }
+    },
+    "ROAD_ACCIDENT": {
+        "causeCode": 2,
+        "subCauseCode": 1,
+        "cddName": "accident",
+        "subCauseName": "multiVehicleAccident",
+        "description": "Traffic Collision / Vehicle Accident"
+    },
+    "ROAD_OBSTACLE": {
+        "causeCode": 10,
+        "subCauseCode": 4,
+        "cddName": "hazardousLocation-ObstacleOnTheRoad",
+        "subCauseName": "bigObjects",
+        "description": "Roadway Obstacle / Debris"
+    }
 }
 
 class EdgeHazardDetector:

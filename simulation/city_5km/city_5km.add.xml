@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <!-- ================================================================ -->
+    <!--  WATERWAY & RIVERFRONT PROMENADE (South Sector)                 -->
+    <!-- ================================================================ -->
+    <poly id="river_south" type="water" color="65,130,195,220" fill="true" layer="0" shape="-50.0,-50.0 1250.0,-50.0 1250.0,30.0 -50.0,30.0"/>
+    <poly id="riverbank_green" type="landuse.grass" color="70,150,80,220" fill="true" layer="1" shape="-50.0,30.0 1250.0,30.0 1250.0,60.0 -50.0,60.0"/>
+    <poly id="river_promenade" type="sidewalk" color="210,205,195,255" fill="true" layer="2" shape="-50.0,60.0 1250.0,60.0 1250.0,75.0 -50.0,75.0"/>
+
+    <!-- ================================================================ -->
+    <!--  CIVIC PARKS & GREEN BELTS                                       -->
+    <!-- ================================================================ -->
+    <!-- Central Civic Park (SW of Central Junction) -->
+    <poly id="park_central" type="leisure.park" color="80,165,85,220" fill="true" layer="1" shape="240.0,140.0 560.0,140.0 560.0,460.0 240.0,460.0"/>
+    <poly id="park_pond" type="water" color="75,140,200,240" fill="true" layer="2" shape="350.0,250.0 450.0,250.0 480.0,350.0 380.0,380.0"/>
+
+    <!-- North Ecological Reserve (North of Ring Road) -->
+    <poly id="park_north_reserve" type="landuse.forest" color="60,135,70,220" fill="true" layer="1" shape="240.0,940.0 960.0,940.0 960.0,1050.0 240.0,1050.0"/>
+
+    <!-- Southeast Sports & Recreation Ground -->
+    <poly id="park_se_sports" type="leisure.pitch" color="90,175,95,220" fill="true" layer="1" shape="640.0,140.0 960.0,140.0 960.0,460.0 640.0,460.0"/>
+    <poly id="stadium_pitch" type="sport" color="60,170,80,255" fill="true" layer="2" shape="740.0,240.0 860.0,240.0 860.0,360.0 740.0,360.0"/>
+
+    <!-- ================================================================ -->
+    <!--  URBAN TREE CANOPIES & BOULEVARD GREENERY                        -->
+    <!-- ================================================================ -->
+    <poly id="tree_river_60" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="54.0,62.0 66.0,62.0 68.0,70.0 60.0,76.0 52.0,70.0"/>
+    <poly id="tree_river_105" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="99.0,62.0 111.0,62.0 113.0,70.0 105.0,76.0 97.0,70.0"/>
+    <poly id="tree_river_150" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="144.0,62.0 156.0,62.0 158.0,70.0 150.0,76.0 142.0,70.0"/>
+    <poly id="tree_river_195" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="189.0,62.0 201.0,62.0 203.0,70.0 195.0,76.0 187.0,70.0"/>
+    <poly id="tree_river_240" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="234.0,62.0 246.0,62.0 248.0,70.0 240.0,76.0 232.0,70.0"/>
+    <poly id="tree_river_285" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="279.0,62.0 291.0,62.0 293.0,70.0 285.0,76.0 277.0,70.0"/>
+    <poly id="tree_river_330" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="324.0,62.0 336.0,62.0 338.0,70.0 330.0,76.0 322.0,70.0"/>
+    <poly id="tree_river_375" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="369.0,62.0 381.0,62.0 383.0,70.0 375.0,76.0 367.0,70.0"/>
+    <poly id="tree_river_420" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="414.0,62.0 426.0,62.0 428.0,70.0 420.0,76.0 412.0,70.0"/>
+    <poly id="tree_river_465" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="459.0,62.0 471.0,62.0 473.0,70.0 465.0,76.0 457.0,70.0"/>
+    <poly id="tree_river_510" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="504.0,62.0 516.0,62.0 518.0,70.0 510.0,76.0 502.0,70.0"/>
+    <poly id="tree_river_555" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="549.0,62.0 561.0,62.0 563.0,70.0 555.0,76.0 547.0,70.0"/>
+    <poly id="tree_river_600" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="594.0,62.0 606.0,62.0 608.0,70.0 600.0,76.0 592.0,70.0"/>
+    <poly id="tree_river_645" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="639.0,62.0 651.0,62.0 653.0,70.0 645.0,76.0 637.0,70.0"/>
+    <poly id="tree_river_690" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="684.0,62.0 696.0,62.0 698.0,70.0 690.0,76.0 682.0,70.0"/>
+    <poly id="tree_river_735" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="729.0,62.0 741.0,62.0 743.0,70.0 735.0,76.0 727.0,70.0"/>
+    <poly id="tree_river_780" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="774.0,62.0 786.0,62.0 788.0,70.0 780.0,76.0 772.0,70.0"/>
+    <poly id="tree_river_825" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="819.0,62.0 831.0,62.0 833.0,70.0 825.0,76.0 817.0,70.0"/>
+    <poly id="tree_river_870" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="864.0,62.0 876.0,62.0 878.0,70.0 870.0,76.0 862.0,70.0"/>
+    <poly id="tree_river_915" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="909.0,62.0 921.0,62.0 923.0,70.0 915.0,76.0 907.0,70.0"/>
+    <poly id="tree_river_960" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="954.0,62.0 966.0,62.0 968.0,70.0 960.0,76.0 952.0,70.0"/>
+    <poly id="tree_river_1005" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="999.0,62.0 1011.0,62.0 1013.0,70.0 1005.0,76.0 997.0,70.0"/>
+    <poly id="tree_river_1050" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="1044.0,62.0 1056.0,62.0 1058.0,70.0 1050.0,76.0 1042.0,70.0"/>
+    <poly id="tree_river_1095" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="1089.0,62.0 1101.0,62.0 1103.0,70.0 1095.0,76.0 1087.0,70.0"/>
+    <poly id="tree_river_1140" type="natural.tree" color="45,135,55,230" fill="true" layer="3" shape="1134.0,62.0 1146.0,62.0 1148.0,70.0 1140.0,76.0 1132.0,70.0"/>
+    <poly id="tree_park_0" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="252.0,172.0 268.0,172.0 270.0,180.0 260.0,190.0 250.0,180.0"/>
+    <poly id="tree_park_1" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="292.0,192.0 308.0,192.0 310.0,200.0 300.0,210.0 290.0,200.0"/>
+    <poly id="tree_park_2" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="262.0,232.0 278.0,232.0 280.0,240.0 270.0,250.0 260.0,240.0"/>
+    <poly id="tree_park_3" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="272.0,302.0 288.0,302.0 290.0,310.0 280.0,320.0 270.0,310.0"/>
+    <poly id="tree_park_4" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="262.0,372.0 278.0,372.0 280.0,380.0 270.0,390.0 260.0,380.0"/>
+    <poly id="tree_park_5" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="302.0,412.0 318.0,412.0 320.0,420.0 310.0,430.0 300.0,420.0"/>
+    <poly id="tree_park_6" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="502.0,172.0 518.0,172.0 520.0,180.0 510.0,190.0 500.0,180.0"/>
+    <poly id="tree_park_7" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="522.0,232.0 538.0,232.0 540.0,240.0 530.0,250.0 520.0,240.0"/>
+    <poly id="tree_park_8" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="512.0,302.0 528.0,302.0 530.0,310.0 520.0,320.0 510.0,310.0"/>
+    <poly id="tree_park_9" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="492.0,372.0 508.0,372.0 510.0,380.0 500.0,390.0 490.0,380.0"/>
+    <poly id="tree_park_10" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="472.0,422.0 488.0,422.0 490.0,430.0 480.0,440.0 470.0,430.0"/>
+    <poly id="tree_park_11" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="352.0,422.0 368.0,422.0 370.0,430.0 360.0,440.0 350.0,430.0"/>
+    <poly id="tree_park_12" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="322.0,152.0 338.0,152.0 340.0,160.0 330.0,170.0 320.0,160.0"/>
+    <poly id="tree_park_13" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="402.0,162.0 418.0,162.0 420.0,170.0 410.0,180.0 400.0,170.0"/>
+    <poly id="tree_park_14" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="452.0,172.0 468.0,172.0 470.0,180.0 460.0,190.0 450.0,180.0"/>
+    <poly id="tree_park_15" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="482.0,202.0 498.0,202.0 500.0,210.0 490.0,220.0 480.0,210.0"/>
+    <poly id="tree_park_16" type="natural.tree" color="40,125,50,230" fill="true" layer="3" shape="352.0,202.0 368.0,202.0 370.0,210.0 360.0,220.0 350.0,210.0"/>
+
+    <!-- ================================================================ -->
+    <!--  ROADSIDE CONTROLLERS (RSC) & TRAFFIC INFRASTRUCTURE             -->
+    <!-- ================================================================ -->
+    <poi id="RSC_CENTRAL" type="rsc_cabinet" color="40,160,220,255" layer="10" x="615.0" y="515.0"/>
+    <poi id="RSC_WEST" type="rsc_cabinet" color="40,160,220,255" layer="10" x="215.0" y="515.0"/>
+    <poi id="RSC_EAST" type="rsc_cabinet" color="40,160,220,255" layer="10" x="1015.0" y="515.0"/>
+    <poi id="RSC_NORTH" type="rsc_cabinet" color="40,160,220,255" layer="10" x="615.0" y="915.0"/>
+    <poi id="RSC_SOUTH" type="rsc_cabinet" color="40,160,220,255" layer="10" x="615.0" y="115.0"/>
+    <poi id="RSC_NW" type="rsc_cabinet" color="40,160,220,255" layer="10" x="215.0" y="915.0"/>
+    <poi id="RSC_NE" type="rsc_cabinet" color="40,160,220,255" layer="10" x="1015.0" y="915.0"/>
+    <poi id="RSC_SW" type="rsc_cabinet" color="40,160,220,255" layer="10" x="215.0" y="115.0"/>
+    <poi id="RSC_SE" type="rsc_cabinet" color="40,160,220,255" layer="10" x="1015.0" y="115.0"/>
+
+    <!-- ================================================================ -->
+    <!--  DISTRICT 1: CENTRAL COMMERCIAL TOWER BLOCKS (NW of Central)     -->
+    <!-- ================================================================ -->
+    <poly id="b_commercial_1" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="250.0,550.0 305.0,550.0 305.0,605.0 250.0,605.0"/>
+    <poly id="b_commercial_2" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="250.0,625.0 305.0,625.0 305.0,680.0 250.0,680.0"/>
+    <poly id="b_commercial_3" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="250.0,700.0 305.0,700.0 305.0,755.0 250.0,755.0"/>
+    <poly id="b_commercial_4" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="250.0,775.0 305.0,775.0 305.0,830.0 250.0,830.0"/>
+    <poly id="b_commercial_5" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="325.0,550.0 380.0,550.0 380.0,605.0 325.0,605.0"/>
+    <poly id="b_commercial_6" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="325.0,625.0 380.0,625.0 380.0,680.0 325.0,680.0"/>
+    <poly id="b_commercial_7" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="325.0,700.0 380.0,700.0 380.0,755.0 325.0,755.0"/>
+    <poly id="b_commercial_8" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="325.0,775.0 380.0,775.0 380.0,830.0 325.0,830.0"/>
+    <poly id="b_commercial_9" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="400.0,550.0 455.0,550.0 455.0,605.0 400.0,605.0"/>
+    <poly id="b_commercial_10" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="400.0,625.0 455.0,625.0 455.0,680.0 400.0,680.0"/>
+    <poly id="b_commercial_11" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="400.0,700.0 455.0,700.0 455.0,755.0 400.0,755.0"/>
+    <poly id="b_commercial_12" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="400.0,775.0 455.0,775.0 455.0,830.0 400.0,830.0"/>
+    <poly id="b_commercial_13" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="475.0,550.0 530.0,550.0 530.0,605.0 475.0,605.0"/>
+    <poly id="b_commercial_14" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="475.0,625.0 530.0,625.0 530.0,680.0 475.0,680.0"/>
+    <poly id="b_commercial_15" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="475.0,700.0 530.0,700.0 530.0,755.0 475.0,755.0"/>
+    <poly id="b_commercial_16" type="building.commercial" color="185,195,210,255" fill="true" layer="3" shape="475.0,775.0 530.0,775.0 530.0,830.0 475.0,830.0"/>
+
+    <!-- ================================================================ -->
+    <!--  DISTRICT 2: NORTHEAST TECH & INNOVATION CAMPUS                  -->
+    <!-- ================================================================ -->
+    <poly id="b_tech_1" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="650.0,550.0 710.0,550.0 710.0,610.0 650.0,610.0"/>
+    <poly id="b_tech_2" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="650.0,630.0 710.0,630.0 710.0,690.0 650.0,690.0"/>
+    <poly id="b_tech_3" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="650.0,710.0 710.0,710.0 710.0,770.0 650.0,770.0"/>
+    <poly id="b_tech_4" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="650.0,790.0 710.0,790.0 710.0,850.0 650.0,850.0"/>
+    <poly id="b_tech_5" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="730.0,550.0 790.0,550.0 790.0,610.0 730.0,610.0"/>
+    <poly id="b_tech_6" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="730.0,630.0 790.0,630.0 790.0,690.0 730.0,690.0"/>
+    <poly id="b_tech_7" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="730.0,710.0 790.0,710.0 790.0,770.0 730.0,770.0"/>
+    <poly id="b_tech_8" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="730.0,790.0 790.0,790.0 790.0,850.0 730.0,850.0"/>
+    <poly id="b_tech_9" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="810.0,550.0 870.0,550.0 870.0,610.0 810.0,610.0"/>
+    <poly id="b_tech_10" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="810.0,630.0 870.0,630.0 870.0,690.0 810.0,690.0"/>
+    <poly id="b_tech_11" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="810.0,710.0 870.0,710.0 870.0,770.0 810.0,770.0"/>
+    <poly id="b_tech_12" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="810.0,790.0 870.0,790.0 870.0,850.0 810.0,850.0"/>
+    <poly id="b_tech_13" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="890.0,550.0 950.0,550.0 950.0,610.0 890.0,610.0"/>
+    <poly id="b_tech_14" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="890.0,630.0 950.0,630.0 950.0,690.0 890.0,690.0"/>
+    <poly id="b_tech_15" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="890.0,710.0 950.0,710.0 950.0,770.0 890.0,770.0"/>
+    <poly id="b_tech_16" type="building.office" color="215,210,200,255" fill="true" layer="3" shape="890.0,790.0 950.0,790.0 950.0,850.0 890.0,850.0"/>
+
+    <!-- ================================================================ -->
+    <!--  DISTRICT 3: RESIDENTIAL & CIVIC FLATS (Outer Perimeter)        -->
+    <!-- ================================================================ -->
+    <poly id="b_res_w_1" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,160.0 160.0,160.0 160.0,210.0 60.0,210.0"/>
+    <poly id="b_res_w_2" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,230.0 160.0,230.0 160.0,280.0 60.0,280.0"/>
+    <poly id="b_res_w_3" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,300.0 160.0,300.0 160.0,350.0 60.0,350.0"/>
+    <poly id="b_res_w_4" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,370.0 160.0,370.0 160.0,420.0 60.0,420.0"/>
+    <poly id="b_res_w_5" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,440.0 160.0,440.0 160.0,490.0 60.0,490.0"/>
+    <poly id="b_res_w_6" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,510.0 160.0,510.0 160.0,560.0 60.0,560.0"/>
+    <poly id="b_res_w_7" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,580.0 160.0,580.0 160.0,630.0 60.0,630.0"/>
+    <poly id="b_res_w_8" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,650.0 160.0,650.0 160.0,700.0 60.0,700.0"/>
+    <poly id="b_res_w_9" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,720.0 160.0,720.0 160.0,770.0 60.0,770.0"/>
+    <poly id="b_res_w_10" type="building.residential" color="225,200,180,255" fill="true" layer="3" shape="60.0,790.0 160.0,790.0 160.0,840.0 60.0,840.0"/>
+    <poly id="b_ind_e_1" type="building.industrial" color="170,175,180,255" fill="true" layer="3" shape="1040.0,160.0 1160.0,160.0 1160.0,230.0 1040.0,230.0"/>
+    <poly id="b_ind_e_2" type="building.industrial" color="170,175,180,255" fill="true" layer="3" shape="1040.0,250.0 1160.0,250.0 1160.0,320.0 1040.0,320.0"/>
+    <poly id="b_ind_e_3" type="building.industrial" color="170,175,180,255" fill="true" layer="3" shape="1040.0,340.0 1160.0,340.0 1160.0,410.0 1040.0,410.0"/>
+    <poly id="b_ind_e_4" type="building.industrial" color="170,175,180,255" fill="true" layer="3" shape="1040.0,430.0 1160.0,430.0 1160.0,500.0 1040.0,500.0"/>
+    <poly id="b_ind_e_5" type="building.industrial" color="170,175,180,255" fill="true" layer="3" shape="1040.0,520.0 1160.0,520.0 1160.0,590.0 1040.0,590.0"/>
+    <poly id="b_ind_e_6" type="building.industrial" color="170,175,180,255" fill="true" layer="3" shape="1040.0,610.0 1160.0,610.0 1160.0,680.0 1040.0,680.0"/>
+    <poly id="b_ind_e_7" type="building.industrial" color="170,175,180,255" fill="true" layer="3" shape="1040.0,700.0 1160.0,700.0 1160.0,770.0 1040.0,770.0"/>
+    <poly id="b_ind_e_8" type="building.industrial" color="170,175,180,255" fill="true" layer="3" shape="1040.0,790.0 1160.0,790.0 1160.0,860.0 1040.0,860.0"/>
+
+    <!-- ================================================================ -->
+    <!--  ROADSIDE UNITS (RSU) MASTS & RADIO COVERAGE ZONES               -->
+    <!-- ================================================================ -->
+    <poi id="RSU_01_WEST_mast" type="rsu_mast" color="255,50,50,255" layer="10" x="200.0" y="500.0"/>
+    <poly id="RSU_01_WEST_coverage" type="v2x_coverage" color="0,180,255,40" fill="true" layer="2" shape="450.0,500.0 431.0,595.7 376.8,676.8 295.7,731.0 200.0,750.0 104.3,731.0 23.2,676.8 -31.0,595.7 -50.0,500.0 -31.0,404.3 23.2,323.2 104.3,269.0 200.0,250.0 295.7,269.0 376.8,323.2 431.0,404.3"/>
+    <poi id="RSU_02_CENTRAL_mast" type="rsu_mast" color="255,50,50,255" layer="10" x="600.0" y="500.0"/>
+    <poly id="RSU_02_CENTRAL_coverage" type="v2x_coverage" color="0,220,100,40" fill="true" layer="2" shape="880.0,500.0 858.7,607.2 798.0,698.0 707.2,758.7 600.0,780.0 492.8,758.7 402.0,698.0 341.3,607.2 320.0,500.0 341.3,392.8 402.0,302.0 492.8,241.3 600.0,220.0 707.2,241.3 798.0,302.0 858.7,392.8"/>
+    <poi id="RSU_03_EAST_mast" type="rsu_mast" color="255,50,50,255" layer="10" x="1000.0" y="500.0"/>
+    <poly id="RSU_03_EAST_coverage" type="v2x_coverage" color="255,160,0,40" fill="true" layer="2" shape="1250.0,500.0 1231.0,595.7 1176.8,676.8 1095.7,731.0 1000.0,750.0 904.3,731.0 823.2,676.8 769.0,595.7 750.0,500.0 769.0,404.3 823.2,323.2 904.3,269.0 1000.0,250.0 1095.7,269.0 1176.8,323.2 1231.0,404.3"/>
+    <poi id="RSU_04_NORTH_mast" type="rsu_mast" color="255,50,50,255" layer="10" x="600.0" y="900.0"/>
+    <poly id="RSU_04_NORTH_coverage" type="v2x_coverage" color="220,50,220,40" fill="true" layer="2" shape="850.0,900.0 831.0,995.7 776.8,1076.8 695.7,1131.0 600.0,1150.0 504.3,1131.0 423.2,1076.8 369.0,995.7 350.0,900.0 369.0,804.3 423.2,723.2 504.3,669.0 600.0,650.0 695.7,669.0 776.8,723.2 831.0,804.3"/>
+    <poi id="RSU_05_SOUTH_mast" type="rsu_mast" color="255,50,50,255" layer="10" x="600.0" y="100.0"/>
+    <poly id="RSU_05_SOUTH_coverage" type="v2x_coverage" color="100,100,255,30" fill="true" layer="2" shape="850.0,100.0 831.0,195.7 776.8,276.8 695.7,331.0 600.0,350.0 504.3,331.0 423.2,276.8 369.0,195.7 350.0,100.0 369.0,4.3 423.2,-76.8 504.3,-131.0 600.0,-150.0 695.7,-131.0 776.8,-76.8 831.0,4.3"/>
+    <poi id="RSU_06_NW_mast" type="rsu_mast" color="255,50,50,255" layer="10" x="200.0" y="900.0"/>
+    <poly id="RSU_06_NW_coverage" type="v2x_coverage" color="100,220,200,30" fill="true" layer="2" shape="420.0,900.0 403.3,984.2 355.6,1055.6 284.2,1103.3 200.0,1120.0 115.8,1103.3 44.4,1055.6 -3.3,984.2 -20.0,900.0 -3.3,815.8 44.4,744.4 115.8,696.7 200.0,680.0 284.2,696.7 355.6,744.4 403.3,815.8"/>
+    <poi id="RSU_07_NE_mast" type="rsu_mast" color="255,50,50,255" layer="10" x="1000.0" y="900.0"/>
+    <poly id="RSU_07_NE_coverage" type="v2x_coverage" color="240,200,50,30" fill="true" layer="2" shape="1220.0,900.0 1203.3,984.2 1155.6,1055.6 1084.2,1103.3 1000.0,1120.0 915.8,1103.3 844.4,1055.6 796.7,984.2 780.0,900.0 796.7,815.8 844.4,744.4 915.8,696.7 1000.0,680.0 1084.2,696.7 1155.6,744.4 1203.3,815.8"/>
+    <poi id="RSU_08_SE_mast" type="rsu_mast" color="255,50,50,255" layer="10" x="1000.0" y="100.0"/>
+    <poly id="RSU_08_SE_coverage" type="v2x_coverage" color="200,120,240,30" fill="true" layer="2" shape="1220.0,100.0 1203.3,184.2 1155.6,255.6 1084.2,303.3 1000.0,320.0 915.8,303.3 844.4,255.6 796.7,184.2 780.0,100.0 796.7,15.8 844.4,-55.6 915.8,-103.3 1000.0,-120.0 1084.2,-103.3 1155.6,-55.6 1203.3,15.8"/>
+
+</additional>

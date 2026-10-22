@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <!-- ================================================================ -->
+    <!--  VEHICLE TYPES                                                   -->
+    <!-- ================================================================ -->
+
+    <!-- Connected Vehicle (Subject of V2X Alerts & RSU Communication) -->
+    <vType id="car_connected" accel="2.6" decel="4.5" sigma="0.2" length="4.8"
+           minGap="2.5" maxSpeed="13.89" color="60,140,255"
+           lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.8"/>
+
+    <!-- Ambient Urban Traffic (Background cars) -->
+    <vType id="car_ambient" accel="2.2" decel="4.0" sigma="0.5" length="4.5"
+           minGap="2.5" maxSpeed="13.89" color="200,200,200"
+           lcStrategic="0.8" lcCooperative="0.6"/>
+
+    <!-- City Transit Bus -->
+    <vType id="bus" accel="1.2" decel="3.5" sigma="0.3" length="12.0"
+           minGap="3.0" maxSpeed="11.11" color="30,60,130"
+           guiShape="bus"/>
+
+    <!-- Commercial Delivery Truck -->
+    <vType id="truck" accel="1.5" decel="3.8" sigma="0.4" length="8.5"
+           minGap="3.5" maxSpeed="11.11" color="90,90,110"
+           guiShape="truck"/>
+
+    <!-- ================================================================ -->
+    <!--  INTERCONNECTED ARTERIAL ROUTES & CIRCUITS                       -->
+    <!-- ================================================================ -->
+
+    <route id="route_parkway_we"  edges="parkway_gw_w parkway_w_c parkway_c_e parkway_e_ge"/>
+    <route id="route_parkway_ew"  edges="parkway_ge_e parkway_e_c parkway_c_w parkway_w_gw"/>
+    <route id="route_avenue_ns"   edges="avenue_gn_n avenue_n_c avenue_c_s avenue_s_gs"/>
+    <route id="route_avenue_sn"   edges="avenue_gs_s avenue_s_c avenue_c_n avenue_n_gn"/>
+    <route id="route_beltway_cw"  edges="parkway_w_c parkway_c_e eastway_e_ne ring_ne_n ring_n_nw westway_nw_w westway_w_sw bypass_sw_s bypass_s_se eastway_se_e"/>
+    <route id="route_beltway_ccw" edges="parkway_e_c parkway_c_w westway_w_nw ring_nw_n ring_n_ne eastway_ne_e eastway_e_se bypass_se_s bypass_s_sw westway_sw_w"/>
+    <route id="route_loop_nw"     edges="parkway_w_c avenue_c_n ring_n_nw westway_nw_w parkway_w_c"/>
+    <route id="route_loop_ne"     edges="parkway_c_e eastway_e_ne ring_ne_n avenue_n_c parkway_c_e"/>
+    <route id="route_loop_sw"     edges="parkway_c_w westway_w_sw bypass_sw_s avenue_s_c parkway_c_w"/>
+    <route id="route_loop_se"     edges="parkway_c_e eastway_e_se bypass_se_s avenue_s_c parkway_c_e"/>
+
+    <!-- ================================================================ -->
+    <!--  CONTINUOUS FLOWS (Strictly sorted chronologically by begin)     -->
+    <!-- ================================================================ -->
+
+    <flow id="flow_01_parkway_we"  type="car_connected" route="route_parkway_we"  begin="0.0" end="3600.0" period="7.0"  departLane="0" departSpeed="12.0"/>
+    <flow id="flow_02_beltway_cw"   type="car_connected" route="route_beltway_cw"  begin="0.5" end="3600.0" period="10.0" departLane="0" departSpeed="11.0"/>
+    <flow id="flow_03_parkway_ew"  type="car_connected" route="route_parkway_ew"  begin="1.0" end="3600.0" period="7.0"  departLane="0" departSpeed="12.0"/>
+    <flow id="flow_04_parkway_we_a" type="car_ambient"   route="route_parkway_we"  begin="1.5" end="3600.0" period="8.0"  departLane="1" departSpeed="11.0"/>
+    <flow id="flow_05_avenue_ns"   type="car_connected" route="route_avenue_ns"   begin="2.0" end="3600.0" period="8.0"  departLane="0" departSpeed="12.0"/>
+    <flow id="flow_06_parkway_ew_a" type="car_ambient"   route="route_parkway_ew"  begin="2.5" end="3600.0" period="8.0"  departLane="1" departSpeed="11.0"/>
+    <flow id="flow_07_avenue_sn"   type="car_connected" route="route_avenue_sn"   begin="3.0" end="3600.0" period="8.0"  departLane="0" departSpeed="12.0"/>
+    <flow id="flow_08_beltway_ccw"  type="car_connected" route="route_beltway_ccw" begin="3.5" end="3600.0" period="10.0" departLane="0" departSpeed="11.0"/>
+    <flow id="flow_09_avenue_ns_a"  type="car_ambient"   route="route_avenue_ns"   begin="4.0" end="3600.0" period="9.0"  departLane="1" departSpeed="11.0"/>
+    <flow id="flow_10_avenue_sn_a"  type="car_ambient"   route="route_avenue_sn"   begin="4.5" end="3600.0" period="9.0"  departLane="1" departSpeed="11.0"/>
+    <flow id="flow_11_loop_nw"      type="car_ambient"   route="route_loop_nw"     begin="5.0" end="3600.0" period="12.0" departLane="random" departSpeed="10.0"/>
+    <flow id="flow_12_loop_sw"      type="car_ambient"   route="route_loop_sw"     begin="5.5" end="3600.0" period="12.0" departLane="random" departSpeed="10.0"/>
+    <flow id="flow_13_loop_ne"      type="car_ambient"   route="route_loop_ne"     begin="6.0" end="3600.0" period="12.0" departLane="random" departSpeed="10.0"/>
+    <flow id="flow_14_loop_se"      type="car_ambient"   route="route_loop_se"     begin="6.5" end="3600.0" period="12.0" departLane="random" departSpeed="10.0"/>
+    <flow id="flow_15_bus_parkway"  type="bus"           route="route_parkway_we"  begin="10.0" end="3600.0" period="45.0" departLane="0" departSpeed="10.0"/>
+    <flow id="flow_16_bus_avenue"   type="bus"           route="route_avenue_ns"   begin="12.0" end="3600.0" period="45.0" departLane="0" departSpeed="10.0"/>
+    <flow id="flow_17_truck_parkway" type="truck"        route="route_parkway_we"  begin="15.0" end="3600.0" period="35.0" departLane="0" departSpeed="9.5"/>
+    <flow id="flow_18_truck_beltway" type="truck"        route="route_beltway_cw"  begin="18.0" end="3600.0" period="40.0" departLane="0" departSpeed="9.5"/>
+
+</routes>

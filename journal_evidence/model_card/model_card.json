@@ -1,0 +1,83 @@
+{
+  "model_name": "Unified YOLO11n Road Hazard Detector",
+  "status": "FROZEN_BASELINE (Option C Approved)",
+  "architecture": "YOLO11n",
+  "framework": "Ultralytics YOLO11 -> ONNX -> MNN INT8",
+  "parameters_million": 2.58,
+  "input_resolution": [
+    1,
+    3,
+    384,
+    384
+  ],
+  "quantization": "INT8 asymmetric post-training quantization with ARMv8.2-A dotprod acceleration",
+  "weights": {
+    "pytorch_checkpoint": {
+      "filename": "unified_yolo11n_best.pt",
+      "relative_path": "model_card/weights/unified_yolo11n_best.pt",
+      "file_size_bytes": 5479130,
+      "sha256": "E73ED9C2D2632E72FB3E025C50EFB4AE441DD8FB6FDD7A47A9CA249E7B03EC69"
+    },
+    "onnx_graph_384": {
+      "filename": "unified_yolo11n_384.onnx",
+      "relative_path": "model_card/weights/unified_yolo11n_384.onnx",
+      "file_size_bytes": 10557853,
+      "sha256": "B2FCB008618309D7B74F5CB7E50283D073F9933BF2638EFB5A8B905BD2A030F5"
+    },
+    "mnn_edge_runtime_int8": {
+      "filename": "unified_yolo11n_384_int8.mnn",
+      "relative_path": "model_card/weights/unified_yolo11n_384_int8.mnn",
+      "file_size_bytes": 2807924,
+      "sha256": "227cbef0a78d11f6d445167600a57cd0dec25a6e1d7562b9149c4e52b2ecc8ea"
+    }
+  },
+  "operating_parameters": {
+    "confidence_threshold": 0.25,
+    "nms_iou_threshold": 0.45,
+    "temporal_confirmation_hits": 3,
+    "cpu_inference_threads": 2,
+    "backend": "MNN CPU (ARM Cortex-A76 dotprod: i8sdot:1, fp16:1)"
+  },
+  "dataset_provenance": {
+    "training_images": 18687,
+    "validation_images": 1539,
+    "held_out_test_images": 1450,
+    "total_scanned_images": 21676,
+    "classes": {
+      "0": "pothole",
+      "1": "construction_hazard",
+      "2": "road_accident_obstacle"
+    }
+  },
+  "test_set_evaluation_metrics": {
+    "overall": {
+      "precision": 0.7858,
+      "recall": 0.6651,
+      "mAP50": 0.7406,
+      "mAP50_95": 0.4658
+    },
+    "per_class": {
+      "pothole": {
+        "class_id": 0,
+        "precision": 0.8102,
+        "recall": 0.7022,
+        "mAP50": 0.7897,
+        "mAP50_95": 0.5031
+      },
+      "construction_hazard": {
+        "class_id": 1,
+        "precision": 0.7428,
+        "recall": 0.6328,
+        "mAP50": 0.671,
+        "mAP50_95": 0.4509
+      },
+      "road_accident_obstacle": {
+        "class_id": 2,
+        "precision": 0.8045,
+        "recall": 0.6602,
+        "mAP50": 0.7611,
+        "mAP50_95": 0.4436
+      }
+    }
+  }
+}

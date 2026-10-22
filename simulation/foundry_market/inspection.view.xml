@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<viewsettings>
+  <scheme name="Inspection">
+    <background backgroundColor="197,179,145" showGrid="false" />
+    <edges laneEdgeMode="0" laneShowBorders="true" showLinkDecals="true" showLinkRules="true" widthExaggeration="1" minSize="0" disableHideByZoom="true">
+      <colorScheme name="uniform">
+        <entry color="70,71,71" threshold="0" name="road" />
+      </colorScheme>
+    </edges>
+    <vehicles vehicleMode="0" vehicleQuality="3" vehicle_minSize="2.5" vehicle_exaggeration="1.1" showBlinker="true" />
+    <junctions junctionMode="0" drawShape="true" showLane2Lane="false">
+      <colorScheme name="uniform">
+        <entry color="70,71,71" threshold="0" />
+      </colorScheme>
+    </junctions>
+    <pois poi_minSize="0" poi_exaggeration="1" poiType_show="false" poiName_show="false" poiName_size="14" poiName_color="69,62,52" poiName_constantSize="true" poiName_onlySelected="false" />
+    <polys polyName_show="false" polyType_show="false" />
+  </scheme>
+  <viewport zoom="500" x="794" y="728" />
+  <delay value="0" />
+</viewsettings>

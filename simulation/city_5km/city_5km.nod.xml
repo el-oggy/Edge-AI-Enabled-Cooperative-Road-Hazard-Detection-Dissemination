@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <!-- 4 External Arterial Gateways -->
+    <node id="GATE_WEST"  x="0.0"    y="500.0"  type="priority"/>
+    <node id="GATE_EAST"  x="1200.0" y="500.0"  type="priority"/>
+    <node id="GATE_NORTH" x="600.0"  y="1100.0" type="priority"/>
+    <node id="GATE_SOUTH" x="600.0"  y="-100.0" type="priority"/>
+
+    <!-- Central & Arterial Signalized Junctions -->
+    <node id="J_CENTRAL" x="600.0"  y="500.0"  type="traffic_light" tlType="actuated"/>
+    <node id="J_WEST"    x="200.0"  y="500.0"  type="traffic_light" tlType="actuated"/>
+    <node id="J_EAST"    x="1000.0" y="500.0"  type="traffic_light" tlType="actuated"/>
+    <node id="J_NORTH"   x="600.0"  y="900.0"  type="traffic_light" tlType="actuated"/>
+    <node id="J_SOUTH"   x="600.0"  y="100.0"  type="traffic_light" tlType="actuated"/>
+
+    <!-- Perimeter Corner Signalized Junctions -->
+    <node id="J_NW"      x="200.0"  y="900.0"  type="traffic_light" tlType="actuated"/>
+    <node id="J_NE"      x="1000.0" y="900.0"  type="traffic_light" tlType="actuated"/>
+    <node id="J_SW"      x="200.0"  y="100.0"  type="traffic_light" tlType="actuated"/>
+    <node id="J_SE"      x="1000.0" y="100.0"  type="traffic_light" tlType="actuated"/>
+</nodes>

@@ -1,0 +1,53 @@
+{
+  "video_filename": "pfpd_stage8_city_demonstration.mp4",
+  "relative_path": "demonstration_media/pfpd_stage8_city_demonstration.mp4",
+  "file_size_bytes": 372324,
+  "container_format": "QuickTime / MOV / MP4 (isom/iso2/avc1/mp41)",
+  "video_codec": "H.264 / AVC High Profile (level 31, avc1)",
+  "pixel_format": "yuv420p",
+  "resolution": [
+    1280,
+    720
+  ],
+  "aspect_ratio": "16:9 widescreen HD",
+  "frame_rate": 15.0,
+  "duration_seconds": 15.933,
+  "total_decoded_frames": 239,
+  "video_bitrate_kbps": 186.9,
+  "repeated_static_frames_pct": 0.0,
+  "choreography_phases": [
+    {
+      "time_range": "0.0s - 4.0s",
+      "phase": "Phase 1: Full 5.0 km City Grid Circulation (70+ Active Vehicles, 8 RSUs)"
+    },
+    {
+      "time_range": "4.0s - 8.0s",
+      "phase": "Phase 2: RSU_01_WEST Detects Critical Arterial Blockage (In-Flight Latency: 1.0 ms)"
+    },
+    {
+      "time_range": "8.0s - 13.0s",
+      "phase": "Phase 3: TraCI Dynamic Detour \u2014 Inbound Traffic Diverts North via Ring Bypass"
+    },
+    {
+      "time_range": "13.0s - 16.0s",
+      "phase": "Phase 4: Central Interchange Advisory \u2014 Pothole Slowdown (30 km/h) & Traffic Clearance"
+    }
+  ],
+  "element_provenance_distinction": {
+    "genuine_sumo_simulation": [
+      "Vehicle positions, velocities, accelerations, and turning kinematics",
+      "Authentic multi-phase traffic signal switching at all 9 intersections",
+      "Dynamic rerouting via TraCI (traci.vehicle.rerouteTraveltime)",
+      "Dynamic vehicle color changes indicating hazard advisory reception"
+    ],
+    "physical_hardware_telemetry_source": [
+      "29.2 FPS inference rate reflects verified physical Pi 5 benchmark (pi_edge_stage8_run.json / sustained_realtime_pi5_10min.json)",
+      "Displayed on cockpit HUD overlay as illustrative status indicator during headless video generation pass"
+    ],
+    "presentation_overlays": [
+      "Semi-transparent dark-navy cockpit HUD bars (top and bottom)",
+      "Text annotations and title banners",
+      "Static POI hazard icons and bounding polygons for visual clarity"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nodes>
+  <node id="SW" x="0" y="0" z="0" type="priority" />
+  <node id="S1" x="400" y="-40" z="0" type="traffic_light" />
+  <node id="J1" x="800" y="0" z="0" type="traffic_light" />
+  <node id="S3" x="1200" y="60" z="0" type="traffic_light" />
+  <node id="SE" x="1600" y="120" z="0" type="priority" />
+  <node id="E" x="1660" y="480" z="0" type="traffic_light" />
+  <node id="NE" x="1560" y="960" z="0" type="priority" />
+  <node id="N3" x="1180" y="1000" z="0" type="traffic_light" />
+  <node id="J2" x="800" y="960" z="0" type="traffic_light" />
+  <node id="N1" x="400" y="990" z="0" type="traffic_light" />
+  <node id="NW" x="0" y="900" z="0" type="priority" />
+  <node id="W" x="-70" y="450" z="0" type="traffic_light" />
+  <node id="C1" x="400" y="450" z="0" type="traffic_light" />
+  <node id="C2" x="800" y="450" z="0" type="priority" />
+  <node id="C3" x="1200" y="450" z="0" type="traffic_light" />
+  <node id="B_W" x="650" y="450" z="8" type="priority" />
+  <node id="B_E" x="950" y="450" z="8" type="priority" />
+  <node id="S_END" x="800" y="-170" z="0" type="priority" />
+  <node id="N_END" x="800" y="1140" z="0" type="priority" />
+</nodes>

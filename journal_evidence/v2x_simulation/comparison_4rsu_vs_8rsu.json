@@ -1,0 +1,96 @@
+{
+  "comparison_title": "Controlled 4-RSU Core Baseline vs. 8-RSU Expanded Urban Mesh",
+  "simulation_parameters": {
+    "network_centerline_length_km": 10.68,
+    "simulated_duration_seconds": 50.0,
+    "traci_time_step_seconds": 0.1,
+    "total_simulation_steps": 500,
+    "traffic_loading_unique_vehicles": 77,
+    "traffic_flow_routes_count": 18,
+    "signalized_intersections_count": 9,
+    "signal_controller_type": "SUMO fixed-time multi-phase (static)"
+  },
+  "metrics": {
+    "territorial_roadway_coverage_pct": {
+      "core_4_rsu": 67.8,
+      "expanded_8_rsu": 91.1,
+      "delta_percentage_points": 23.3,
+      "improvement_pct": 34.37
+    },
+    "traffic_weighted_coverage_pct": {
+      "core_4_rsu": 88.37,
+      "expanded_8_rsu": 97.94,
+      "delta_percentage_points": 9.57,
+      "improvement_pct": 10.83,
+      "formula": "sum(covered_vehicle_seconds) / sum(total_vehicle_seconds) * 100%"
+    },
+    "unique_vehicles_in_coverage": {
+      "core_4_rsu": 70,
+      "expanded_8_rsu": 76,
+      "total_vehicles": 77,
+      "coverage_rate_pct_4_rsu": 90.91,
+      "coverage_rate_pct_8_rsu": 98.7,
+      "uncovered_vehicles_explanation": {
+        "uncovered_count": 1,
+        "vehicle_id": "flow_17_short_transit.0",
+        "reason": "Spawned at t=41.0s on outer gateway edge avenue_gn_n outside northern ring road; executed turnaround and despawned without entering municipal perimeter. 100% of municipal traffic (76/76) was covered."
+      }
+    },
+    "inter_rsu_backhaul_forwarding": {
+      "core_4_rsu": 48,
+      "expanded_8_rsu": 62,
+      "delta_absolute": 14,
+      "delta_percentage": 29.17,
+      "reconciliation_with_stage7_run": "Core 4-RSU produced 48 forwards in Stage 8 standardized run (6 directed links). The preliminary Stage 7 run had 46 forwards, yielding (62-46)/46 = +34.78% (~34.8%). Both baselines are mathematically accounted for."
+    },
+    "warning_and_detour_execution": {
+      "relevant_vehicles_heading_to_hazard": 64,
+      "vehicles_warned_in_radius": 12,
+      "dynamic_arterial_reroutes_executed": 11,
+      "reroute_success_rate_on_blocked_corridor": 100.0,
+      "collisions_or_gridlocks": 0
+    },
+    "sustained_traffic_density_window": {
+      "threshold_vehicles": 50,
+      "sustained_start_time_s": 29.8,
+      "sustained_end_time_s": 50.0,
+      "continuous_duration_s": 20.2,
+      "continuous_steps": 202,
+      "peak_active_vehicles": 77,
+      "peak_time_s": 48.2
+    },
+    "warning_latency_distribution_ms": {
+      "in_flight_lan_transit": {
+        "min": 0.8,
+        "median": 1.0,
+        "mean": 12.82,
+        "p95": 31.6,
+        "max": 31.71
+      },
+      "end_to_end_core_4_rsu": {
+        "min": 34.0,
+        "median": 42.21,
+        "mean": 49.04,
+        "p95": 65.85
+      },
+      "end_to_end_expanded_8_rsu": {
+        "min": 34.0,
+        "median": 38.88,
+        "mean": 82.78,
+        "p95": 290.9
+      }
+    },
+    "network_overhead_bytes": {
+      "core_4_rsu": {
+        "backhaul_bytes": 40074,
+        "v2i_bytes": 6144,
+        "total_bytes": 46218
+      },
+      "expanded_8_rsu": {
+        "backhaul_bytes": 53415,
+        "v2i_bytes": 6144,
+        "total_bytes": 59559
+      }
+    }
+  }
+}

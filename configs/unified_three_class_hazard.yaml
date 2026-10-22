@@ -1,0 +1,43 @@
+# Unified Three-Class Road Hazard Detection Dataset Configuration
+# Step 2 Deliverable for Edge-AI Road Hazard Perception (PFPD)
+path: datasets/unified_three_hazard
+train: images/train
+val: images/val
+test: images/test
+
+# Consolidated 3-Class Taxonomy
+names:
+  0: pothole
+  1: construction_hazard
+  2: road_accident_obstacle
+
+# Class Metadata & Mapping (Authentic ETSI TS 102 894-2 v1.3.1 CDD)
+metadata:
+  0:
+    name: pothole
+    description: "Road surface potholes, deep asphalt voids, and water-filled pavement craters"
+    cause_code: 9
+    subcause_code: 4
+    cdd_name: "hazardousLocation-SurfaceCondition"
+    subcause_name: "subsidence"
+    severity: "MEDIUM"
+  1:
+    name: construction_hazard
+    description: "Work zones, road construction barriers, traffic cones, and asphalt machinery"
+    cause_code: 3
+    subcause_code: 1
+    cdd_name: "roadworks"
+    subcause_name: "majorRoadworks"
+    severity: "HIGH"
+  2:
+    name: road_accident_obstacle
+    description: "Vehicle collisions, vehicle deformation, overturned cars, fallen trees, and roadway boulders"
+    cause_code: 2
+    subcause_code: 1
+    cdd_name: "accident"
+    subcause_name: "multiVehicleAccident"
+    alternate_cause_code: 10
+    alternate_subcause_code: 4
+    alternate_cdd_name: "hazardousLocation-ObstacleOnTheRoad"
+    alternate_subcause_name: "bigObjects"
+    severity: "CRITICAL"

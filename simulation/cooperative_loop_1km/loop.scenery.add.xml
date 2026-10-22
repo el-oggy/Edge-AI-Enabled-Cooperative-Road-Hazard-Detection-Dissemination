@@ -1,0 +1,740 @@
+<?xml version='1.0' encoding='utf-8'?>
+<additional>
+  <poly id="district-ground" type="terrain" color="#C5B391" fill="1" layer="-30" shape="-180.00,-240.00 2440.00,-240.00 2440.00,1200.00 -180.00,1200.00" />
+  <poly id="block-0-0" type="district-yard" color="#BBA98A" fill="1" layer="-25" shape="20.00,75.00 340.00,75.00 340.00,365.00 20.00,365.00" />
+  <poly id="foundry-0-0-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="48.00,137.50 102.00,137.50 102.00,172.50 48.00,172.50" />
+  <poly id="foundry-0-0-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="56.00,138.00 102.00,138.00 102.00,164.00 56.00,164.00" />
+  <poly id="foundry-0-0-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="52.00,142.00 98.00,142.00 98.00,168.00 52.00,168.00" />
+  <poly id="foundry-0-0-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="59.67,144.00 59.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="75.00,144.00 75.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="90.33,144.00 90.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-0-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="90.00,155.00 89.92,155.67 89.70,156.30 89.35,156.87 88.87,157.35 88.30,157.70 87.67,157.92 87.00,158.00 86.33,157.92 85.70,157.70 85.13,157.35 84.65,156.87 84.30,156.30 84.08,155.67 84.00,155.00 84.08,154.33 84.30,153.70 84.65,153.13 85.13,152.65 85.70,152.30 86.33,152.08 87.00,152.00 87.67,152.08 88.30,152.30 88.87,152.65 89.35,153.13 89.70,153.70 89.92,154.33" />
+  <poly id="foundry-0-0-0-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="88.80,155.00 88.75,155.40 88.62,155.78 88.41,156.12 88.12,156.41 87.78,156.62 87.40,156.75 87.00,156.80 86.60,156.75 86.22,156.62 85.88,156.41 85.59,156.12 85.38,155.78 85.25,155.40 85.20,155.00 85.25,154.60 85.38,154.22 85.59,153.88 85.88,153.59 86.22,153.38 86.60,153.25 87.00,153.20 87.40,153.25 87.78,153.38 88.12,153.59 88.41,153.88 88.62,154.22 88.75,154.60" />
+  <poly id="foundry-0-0-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="48.00,207.50 102.00,207.50 102.00,242.50 48.00,242.50" />
+  <poly id="foundry-0-0-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="56.00,208.00 102.00,208.00 102.00,234.00 56.00,234.00" />
+  <poly id="foundry-0-0-1-roof" type="building" color="#61605A" fill="1" layer="-12" shape="52.00,212.00 98.00,212.00 98.00,238.00 52.00,238.00" />
+  <poly id="foundry-0-0-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="59.67,214.00 59.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="75.00,214.00 75.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="90.33,214.00 90.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-1-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="90.00,225.00 89.92,225.67 89.70,226.30 89.35,226.87 88.87,227.35 88.30,227.70 87.67,227.92 87.00,228.00 86.33,227.92 85.70,227.70 85.13,227.35 84.65,226.87 84.30,226.30 84.08,225.67 84.00,225.00 84.08,224.33 84.30,223.70 84.65,223.13 85.13,222.65 85.70,222.30 86.33,222.08 87.00,222.00 87.67,222.08 88.30,222.30 88.87,222.65 89.35,223.13 89.70,223.70 89.92,224.33" />
+  <poly id="foundry-0-0-1-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="88.80,225.00 88.75,225.40 88.62,225.78 88.41,226.12 88.12,226.41 87.78,226.62 87.40,226.75 87.00,226.80 86.60,226.75 86.22,226.62 85.88,226.41 85.59,226.12 85.38,225.78 85.25,225.40 85.20,225.00 85.25,224.60 85.38,224.22 85.59,223.88 85.88,223.59 86.22,223.38 86.60,223.25 87.00,223.20 87.40,223.25 87.78,223.38 88.12,223.59 88.41,223.88 88.62,224.22 88.75,224.60" />
+  <poly id="foundry-0-0-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="48.00,277.50 102.00,277.50 102.00,312.50 48.00,312.50" />
+  <poly id="foundry-0-0-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="56.00,278.00 102.00,278.00 102.00,304.00 56.00,304.00" />
+  <poly id="foundry-0-0-2-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="52.00,282.00 98.00,282.00 98.00,308.00 52.00,308.00" />
+  <poly id="foundry-0-0-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="59.67,284.00 59.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="75.00,284.00 75.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="90.33,284.00 90.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-0-2-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="90.00,295.00 89.92,295.67 89.70,296.30 89.35,296.87 88.87,297.35 88.30,297.70 87.67,297.92 87.00,298.00 86.33,297.92 85.70,297.70 85.13,297.35 84.65,296.87 84.30,296.30 84.08,295.67 84.00,295.00 84.08,294.33 84.30,293.70 84.65,293.13 85.13,292.65 85.70,292.30 86.33,292.08 87.00,292.00 87.67,292.08 88.30,292.30 88.87,292.65 89.35,293.13 89.70,293.70 89.92,294.33" />
+  <poly id="foundry-0-0-2-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="88.80,295.00 88.75,295.40 88.62,295.78 88.41,296.12 88.12,296.41 87.78,296.62 87.40,296.75 87.00,296.80 86.60,296.75 86.22,296.62 85.88,296.41 85.59,296.12 85.38,295.78 85.25,295.40 85.20,295.00 85.25,294.60 85.38,294.22 85.59,293.88 85.88,293.59 86.22,293.38 86.60,293.25 87.00,293.20 87.40,293.25 87.78,293.38 88.12,293.59 88.41,293.88 88.62,294.22 88.75,294.60" />
+  <poly id="foundry-0-1-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="118.00,137.50 172.00,137.50 172.00,172.50 118.00,172.50" />
+  <poly id="foundry-0-1-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="126.00,138.00 172.00,138.00 172.00,164.00 126.00,164.00" />
+  <poly id="foundry-0-1-0-roof" type="building" color="#61605A" fill="1" layer="-12" shape="122.00,142.00 168.00,142.00 168.00,168.00 122.00,168.00" />
+  <poly id="foundry-0-1-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="129.67,144.00 129.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-1-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="145.00,144.00 145.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-1-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="160.33,144.00 160.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-1-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="118.00,207.50 172.00,207.50 172.00,242.50 118.00,242.50" />
+  <poly id="foundry-0-1-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="126.00,208.00 172.00,208.00 172.00,234.00 126.00,234.00" />
+  <poly id="foundry-0-1-1-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="122.00,212.00 168.00,212.00 168.00,238.00 122.00,238.00" />
+  <poly id="foundry-0-1-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="129.67,214.00 129.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-1-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="145.00,214.00 145.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-1-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="160.33,214.00 160.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-1-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="118.00,277.50 172.00,277.50 172.00,312.50 118.00,312.50" />
+  <poly id="foundry-0-1-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="126.00,278.00 172.00,278.00 172.00,304.00 126.00,304.00" />
+  <poly id="foundry-0-1-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="122.00,282.00 168.00,282.00 168.00,308.00 122.00,308.00" />
+  <poly id="foundry-0-1-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="129.67,284.00 129.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-1-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="145.00,284.00 145.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-1-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="160.33,284.00 160.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="188.00,137.50 242.00,137.50 242.00,172.50 188.00,172.50" />
+  <poly id="foundry-0-2-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="196.00,138.00 242.00,138.00 242.00,164.00 196.00,164.00" />
+  <poly id="foundry-0-2-0-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="192.00,142.00 238.00,142.00 238.00,168.00 192.00,168.00" />
+  <poly id="foundry-0-2-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="199.67,144.00 199.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="215.00,144.00 215.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="230.33,144.00 230.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-0-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="230.00,155.00 229.92,155.67 229.70,156.30 229.35,156.87 228.87,157.35 228.30,157.70 227.67,157.92 227.00,158.00 226.33,157.92 225.70,157.70 225.13,157.35 224.65,156.87 224.30,156.30 224.08,155.67 224.00,155.00 224.08,154.33 224.30,153.70 224.65,153.13 225.13,152.65 225.70,152.30 226.33,152.08 227.00,152.00 227.67,152.08 228.30,152.30 228.87,152.65 229.35,153.13 229.70,153.70 229.92,154.33" />
+  <poly id="foundry-0-2-0-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="228.80,155.00 228.75,155.40 228.62,155.78 228.41,156.12 228.12,156.41 227.78,156.62 227.40,156.75 227.00,156.80 226.60,156.75 226.22,156.62 225.88,156.41 225.59,156.12 225.38,155.78 225.25,155.40 225.20,155.00 225.25,154.60 225.38,154.22 225.59,153.88 225.88,153.59 226.22,153.38 226.60,153.25 227.00,153.20 227.40,153.25 227.78,153.38 228.12,153.59 228.41,153.88 228.62,154.22 228.75,154.60" />
+  <poly id="foundry-0-2-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="188.00,207.50 242.00,207.50 242.00,242.50 188.00,242.50" />
+  <poly id="foundry-0-2-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="196.00,208.00 242.00,208.00 242.00,234.00 196.00,234.00" />
+  <poly id="foundry-0-2-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="192.00,212.00 238.00,212.00 238.00,238.00 192.00,238.00" />
+  <poly id="foundry-0-2-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="199.67,214.00 199.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="215.00,214.00 215.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="230.33,214.00 230.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-1-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="230.00,225.00 229.92,225.67 229.70,226.30 229.35,226.87 228.87,227.35 228.30,227.70 227.67,227.92 227.00,228.00 226.33,227.92 225.70,227.70 225.13,227.35 224.65,226.87 224.30,226.30 224.08,225.67 224.00,225.00 224.08,224.33 224.30,223.70 224.65,223.13 225.13,222.65 225.70,222.30 226.33,222.08 227.00,222.00 227.67,222.08 228.30,222.30 228.87,222.65 229.35,223.13 229.70,223.70 229.92,224.33" />
+  <poly id="foundry-0-2-1-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="228.80,225.00 228.75,225.40 228.62,225.78 228.41,226.12 228.12,226.41 227.78,226.62 227.40,226.75 227.00,226.80 226.60,226.75 226.22,226.62 225.88,226.41 225.59,226.12 225.38,225.78 225.25,225.40 225.20,225.00 225.25,224.60 225.38,224.22 225.59,223.88 225.88,223.59 226.22,223.38 226.60,223.25 227.00,223.20 227.40,223.25 227.78,223.38 228.12,223.59 228.41,223.88 228.62,224.22 228.75,224.60" />
+  <poly id="foundry-0-2-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="188.00,277.50 242.00,277.50 242.00,312.50 188.00,312.50" />
+  <poly id="foundry-0-2-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="196.00,278.00 242.00,278.00 242.00,304.00 196.00,304.00" />
+  <poly id="foundry-0-2-2-roof" type="building" color="#61605A" fill="1" layer="-12" shape="192.00,282.00 238.00,282.00 238.00,308.00 192.00,308.00" />
+  <poly id="foundry-0-2-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="199.67,284.00 199.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="215.00,284.00 215.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="230.33,284.00 230.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-2-2-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="230.00,295.00 229.92,295.67 229.70,296.30 229.35,296.87 228.87,297.35 228.30,297.70 227.67,297.92 227.00,298.00 226.33,297.92 225.70,297.70 225.13,297.35 224.65,296.87 224.30,296.30 224.08,295.67 224.00,295.00 224.08,294.33 224.30,293.70 224.65,293.13 225.13,292.65 225.70,292.30 226.33,292.08 227.00,292.00 227.67,292.08 228.30,292.30 228.87,292.65 229.35,293.13 229.70,293.70 229.92,294.33" />
+  <poly id="foundry-0-2-2-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="228.80,295.00 228.75,295.40 228.62,295.78 228.41,296.12 228.12,296.41 227.78,296.62 227.40,296.75 227.00,296.80 226.60,296.75 226.22,296.62 225.88,296.41 225.59,296.12 225.38,295.78 225.25,295.40 225.20,295.00 225.25,294.60 225.38,294.22 225.59,293.88 225.88,293.59 226.22,293.38 226.60,293.25 227.00,293.20 227.40,293.25 227.78,293.38 228.12,293.59 228.41,293.88 228.62,294.22 228.75,294.60" />
+  <poly id="foundry-0-3-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="258.00,137.50 312.00,137.50 312.00,172.50 258.00,172.50" />
+  <poly id="foundry-0-3-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="266.00,138.00 312.00,138.00 312.00,164.00 266.00,164.00" />
+  <poly id="foundry-0-3-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="262.00,142.00 308.00,142.00 308.00,168.00 262.00,168.00" />
+  <poly id="foundry-0-3-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="269.67,144.00 269.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-3-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="285.00,144.00 285.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-3-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="300.33,144.00 300.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-0-3-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="258.00,207.50 312.00,207.50 312.00,242.50 258.00,242.50" />
+  <poly id="foundry-0-3-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="266.00,208.00 312.00,208.00 312.00,234.00 266.00,234.00" />
+  <poly id="foundry-0-3-1-roof" type="building" color="#61605A" fill="1" layer="-12" shape="262.00,212.00 308.00,212.00 308.00,238.00 262.00,238.00" />
+  <poly id="foundry-0-3-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="269.67,214.00 269.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-3-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="285.00,214.00 285.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-3-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="300.33,214.00 300.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-0-3-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="258.00,277.50 312.00,277.50 312.00,312.50 258.00,312.50" />
+  <poly id="foundry-0-3-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="266.00,278.00 312.00,278.00 312.00,304.00 266.00,304.00" />
+  <poly id="foundry-0-3-2-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="262.00,282.00 308.00,282.00 308.00,308.00 262.00,308.00" />
+  <poly id="foundry-0-3-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="269.67,284.00 269.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-3-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="285.00,284.00 285.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-0-3-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="300.33,284.00 300.33,306.00" lineWidth="0.7" />
+  <poly id="block-0-1" type="district-yard" color="#BBA98A" fill="1" layer="-25" shape="20.00,565.00 340.00,565.00 340.00,855.00 20.00,855.00" />
+  <poly id="market-0-0-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="48.00,627.50 102.00,627.50 102.00,662.50 48.00,662.50" />
+  <poly id="market-0-0-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="56.00,628.00 102.00,628.00 102.00,654.00 56.00,654.00" />
+  <poly id="market-0-0-0-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="52.00,632.00 98.00,632.00 98.00,658.00 52.00,658.00" />
+  <poly id="market-0-0-0-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="52.50,655.00 66.83,655.00 66.83,659.00 52.50,659.00" />
+  <poly id="market-0-0-0-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="67.83,655.00 82.17,655.00 82.17,659.00 67.83,659.00" />
+  <poly id="market-0-0-0-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="83.17,655.00 97.50,655.00 97.50,659.00 83.17,659.00" />
+  <poly id="market-0-0-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="48.00,697.50 102.00,697.50 102.00,732.50 48.00,732.50" />
+  <poly id="market-0-0-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="56.00,698.00 102.00,698.00 102.00,724.00 56.00,724.00" />
+  <poly id="market-0-0-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="52.00,702.00 98.00,702.00 98.00,728.00 52.00,728.00" />
+  <poly id="market-0-0-1-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="52.50,725.00 66.83,725.00 66.83,729.00 52.50,729.00" />
+  <poly id="market-0-0-1-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="67.83,725.00 82.17,725.00 82.17,729.00 67.83,729.00" />
+  <poly id="market-0-0-1-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="83.17,725.00 97.50,725.00 97.50,729.00 83.17,729.00" />
+  <poly id="market-0-0-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="48.00,767.50 102.00,767.50 102.00,802.50 48.00,802.50" />
+  <poly id="market-0-0-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="56.00,768.00 102.00,768.00 102.00,794.00 56.00,794.00" />
+  <poly id="market-0-0-2-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="52.00,772.00 98.00,772.00 98.00,798.00 52.00,798.00" />
+  <poly id="market-0-0-2-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="52.50,795.00 66.83,795.00 66.83,799.00 52.50,799.00" />
+  <poly id="market-0-0-2-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="67.83,795.00 82.17,795.00 82.17,799.00 67.83,799.00" />
+  <poly id="market-0-0-2-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="83.17,795.00 97.50,795.00 97.50,799.00 83.17,799.00" />
+  <poly id="market-0-1-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="118.00,627.50 172.00,627.50 172.00,662.50 118.00,662.50" />
+  <poly id="market-0-1-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="126.00,628.00 172.00,628.00 172.00,654.00 126.00,654.00" />
+  <poly id="market-0-1-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="122.00,632.00 168.00,632.00 168.00,658.00 122.00,658.00" />
+  <poly id="market-0-1-0-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="122.50,655.00 136.83,655.00 136.83,659.00 122.50,659.00" />
+  <poly id="market-0-1-0-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="137.83,655.00 152.17,655.00 152.17,659.00 137.83,659.00" />
+  <poly id="market-0-1-0-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="153.17,655.00 167.50,655.00 167.50,659.00 153.17,659.00" />
+  <poly id="market-0-1-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="118.00,697.50 172.00,697.50 172.00,732.50 118.00,732.50" />
+  <poly id="market-0-1-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="126.00,698.00 172.00,698.00 172.00,724.00 126.00,724.00" />
+  <poly id="market-0-1-1-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="122.00,702.00 168.00,702.00 168.00,728.00 122.00,728.00" />
+  <poly id="market-0-1-1-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="122.50,725.00 136.83,725.00 136.83,729.00 122.50,729.00" />
+  <poly id="market-0-1-1-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="137.83,725.00 152.17,725.00 152.17,729.00 137.83,729.00" />
+  <poly id="market-0-1-1-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="153.17,725.00 167.50,725.00 167.50,729.00 153.17,729.00" />
+  <poly id="market-0-1-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="118.00,767.50 172.00,767.50 172.00,802.50 118.00,802.50" />
+  <poly id="market-0-1-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="126.00,768.00 172.00,768.00 172.00,794.00 126.00,794.00" />
+  <poly id="market-0-1-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="122.00,772.00 168.00,772.00 168.00,798.00 122.00,798.00" />
+  <poly id="market-0-1-2-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="122.50,795.00 136.83,795.00 136.83,799.00 122.50,799.00" />
+  <poly id="market-0-1-2-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="137.83,795.00 152.17,795.00 152.17,799.00 137.83,799.00" />
+  <poly id="market-0-1-2-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="153.17,795.00 167.50,795.00 167.50,799.00 153.17,799.00" />
+  <poly id="market-0-2-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="188.00,627.50 242.00,627.50 242.00,662.50 188.00,662.50" />
+  <poly id="market-0-2-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="196.00,628.00 242.00,628.00 242.00,654.00 196.00,654.00" />
+  <poly id="market-0-2-0-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="192.00,632.00 238.00,632.00 238.00,658.00 192.00,658.00" />
+  <poly id="market-0-2-0-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="192.50,655.00 206.83,655.00 206.83,659.00 192.50,659.00" />
+  <poly id="market-0-2-0-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="207.83,655.00 222.17,655.00 222.17,659.00 207.83,659.00" />
+  <poly id="market-0-2-0-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="223.17,655.00 237.50,655.00 237.50,659.00 223.17,659.00" />
+  <poly id="market-0-2-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="188.00,697.50 242.00,697.50 242.00,732.50 188.00,732.50" />
+  <poly id="market-0-2-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="196.00,698.00 242.00,698.00 242.00,724.00 196.00,724.00" />
+  <poly id="market-0-2-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="192.00,702.00 238.00,702.00 238.00,728.00 192.00,728.00" />
+  <poly id="market-0-2-1-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="192.50,725.00 206.83,725.00 206.83,729.00 192.50,729.00" />
+  <poly id="market-0-2-1-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="207.83,725.00 222.17,725.00 222.17,729.00 207.83,729.00" />
+  <poly id="market-0-2-1-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="223.17,725.00 237.50,725.00 237.50,729.00 223.17,729.00" />
+  <poly id="market-0-2-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="188.00,767.50 242.00,767.50 242.00,802.50 188.00,802.50" />
+  <poly id="market-0-2-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="196.00,768.00 242.00,768.00 242.00,794.00 196.00,794.00" />
+  <poly id="market-0-2-2-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="192.00,772.00 238.00,772.00 238.00,798.00 192.00,798.00" />
+  <poly id="market-0-2-2-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="192.50,795.00 206.83,795.00 206.83,799.00 192.50,799.00" />
+  <poly id="market-0-2-2-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="207.83,795.00 222.17,795.00 222.17,799.00 207.83,799.00" />
+  <poly id="market-0-2-2-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="223.17,795.00 237.50,795.00 237.50,799.00 223.17,799.00" />
+  <poly id="market-0-3-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="258.00,627.50 312.00,627.50 312.00,662.50 258.00,662.50" />
+  <poly id="market-0-3-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="266.00,628.00 312.00,628.00 312.00,654.00 266.00,654.00" />
+  <poly id="market-0-3-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="262.00,632.00 308.00,632.00 308.00,658.00 262.00,658.00" />
+  <poly id="market-0-3-0-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="262.50,655.00 276.83,655.00 276.83,659.00 262.50,659.00" />
+  <poly id="market-0-3-0-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="277.83,655.00 292.17,655.00 292.17,659.00 277.83,659.00" />
+  <poly id="market-0-3-0-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="293.17,655.00 307.50,655.00 307.50,659.00 293.17,659.00" />
+  <poly id="market-0-3-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="258.00,697.50 312.00,697.50 312.00,732.50 258.00,732.50" />
+  <poly id="market-0-3-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="266.00,698.00 312.00,698.00 312.00,724.00 266.00,724.00" />
+  <poly id="market-0-3-1-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="262.00,702.00 308.00,702.00 308.00,728.00 262.00,728.00" />
+  <poly id="market-0-3-1-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="262.50,725.00 276.83,725.00 276.83,729.00 262.50,729.00" />
+  <poly id="market-0-3-1-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="277.83,725.00 292.17,725.00 292.17,729.00 277.83,729.00" />
+  <poly id="market-0-3-1-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="293.17,725.00 307.50,725.00 307.50,729.00 293.17,729.00" />
+  <poly id="market-0-3-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="258.00,767.50 312.00,767.50 312.00,802.50 258.00,802.50" />
+  <poly id="market-0-3-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="266.00,768.00 312.00,768.00 312.00,794.00 266.00,794.00" />
+  <poly id="market-0-3-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="262.00,772.00 308.00,772.00 308.00,798.00 262.00,798.00" />
+  <poly id="market-0-3-2-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="262.50,795.00 276.83,795.00 276.83,799.00 262.50,799.00" />
+  <poly id="market-0-3-2-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="277.83,795.00 292.17,795.00 292.17,799.00 277.83,799.00" />
+  <poly id="market-0-3-2-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="293.17,795.00 307.50,795.00 307.50,799.00 293.17,799.00" />
+  <poly id="block-1-0" type="district-yard" color="#BBA98A" fill="1" layer="-25" shape="440.00,75.00 760.00,75.00 760.00,365.00 440.00,365.00" />
+  <poly id="foundry-1-0-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="468.00,137.50 522.00,137.50 522.00,172.50 468.00,172.50" />
+  <poly id="foundry-1-0-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="476.00,138.00 522.00,138.00 522.00,164.00 476.00,164.00" />
+  <poly id="foundry-1-0-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="472.00,142.00 518.00,142.00 518.00,168.00 472.00,168.00" />
+  <poly id="foundry-1-0-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="479.67,144.00 479.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="495.00,144.00 495.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="510.33,144.00 510.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-0-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="510.00,155.00 509.92,155.67 509.70,156.30 509.35,156.87 508.87,157.35 508.30,157.70 507.67,157.92 507.00,158.00 506.33,157.92 505.70,157.70 505.13,157.35 504.65,156.87 504.30,156.30 504.08,155.67 504.00,155.00 504.08,154.33 504.30,153.70 504.65,153.13 505.13,152.65 505.70,152.30 506.33,152.08 507.00,152.00 507.67,152.08 508.30,152.30 508.87,152.65 509.35,153.13 509.70,153.70 509.92,154.33" />
+  <poly id="foundry-1-0-0-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="508.80,155.00 508.75,155.40 508.62,155.78 508.41,156.12 508.12,156.41 507.78,156.62 507.40,156.75 507.00,156.80 506.60,156.75 506.22,156.62 505.88,156.41 505.59,156.12 505.38,155.78 505.25,155.40 505.20,155.00 505.25,154.60 505.38,154.22 505.59,153.88 505.88,153.59 506.22,153.38 506.60,153.25 507.00,153.20 507.40,153.25 507.78,153.38 508.12,153.59 508.41,153.88 508.62,154.22 508.75,154.60" />
+  <poly id="foundry-1-0-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="468.00,207.50 522.00,207.50 522.00,242.50 468.00,242.50" />
+  <poly id="foundry-1-0-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="476.00,208.00 522.00,208.00 522.00,234.00 476.00,234.00" />
+  <poly id="foundry-1-0-1-roof" type="building" color="#61605A" fill="1" layer="-12" shape="472.00,212.00 518.00,212.00 518.00,238.00 472.00,238.00" />
+  <poly id="foundry-1-0-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="479.67,214.00 479.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="495.00,214.00 495.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="510.33,214.00 510.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-1-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="510.00,225.00 509.92,225.67 509.70,226.30 509.35,226.87 508.87,227.35 508.30,227.70 507.67,227.92 507.00,228.00 506.33,227.92 505.70,227.70 505.13,227.35 504.65,226.87 504.30,226.30 504.08,225.67 504.00,225.00 504.08,224.33 504.30,223.70 504.65,223.13 505.13,222.65 505.70,222.30 506.33,222.08 507.00,222.00 507.67,222.08 508.30,222.30 508.87,222.65 509.35,223.13 509.70,223.70 509.92,224.33" />
+  <poly id="foundry-1-0-1-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="508.80,225.00 508.75,225.40 508.62,225.78 508.41,226.12 508.12,226.41 507.78,226.62 507.40,226.75 507.00,226.80 506.60,226.75 506.22,226.62 505.88,226.41 505.59,226.12 505.38,225.78 505.25,225.40 505.20,225.00 505.25,224.60 505.38,224.22 505.59,223.88 505.88,223.59 506.22,223.38 506.60,223.25 507.00,223.20 507.40,223.25 507.78,223.38 508.12,223.59 508.41,223.88 508.62,224.22 508.75,224.60" />
+  <poly id="foundry-1-0-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="468.00,277.50 522.00,277.50 522.00,312.50 468.00,312.50" />
+  <poly id="foundry-1-0-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="476.00,278.00 522.00,278.00 522.00,304.00 476.00,304.00" />
+  <poly id="foundry-1-0-2-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="472.00,282.00 518.00,282.00 518.00,308.00 472.00,308.00" />
+  <poly id="foundry-1-0-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="479.67,284.00 479.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="495.00,284.00 495.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="510.33,284.00 510.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-0-2-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="510.00,295.00 509.92,295.67 509.70,296.30 509.35,296.87 508.87,297.35 508.30,297.70 507.67,297.92 507.00,298.00 506.33,297.92 505.70,297.70 505.13,297.35 504.65,296.87 504.30,296.30 504.08,295.67 504.00,295.00 504.08,294.33 504.30,293.70 504.65,293.13 505.13,292.65 505.70,292.30 506.33,292.08 507.00,292.00 507.67,292.08 508.30,292.30 508.87,292.65 509.35,293.13 509.70,293.70 509.92,294.33" />
+  <poly id="foundry-1-0-2-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="508.80,295.00 508.75,295.40 508.62,295.78 508.41,296.12 508.12,296.41 507.78,296.62 507.40,296.75 507.00,296.80 506.60,296.75 506.22,296.62 505.88,296.41 505.59,296.12 505.38,295.78 505.25,295.40 505.20,295.00 505.25,294.60 505.38,294.22 505.59,293.88 505.88,293.59 506.22,293.38 506.60,293.25 507.00,293.20 507.40,293.25 507.78,293.38 508.12,293.59 508.41,293.88 508.62,294.22 508.75,294.60" />
+  <poly id="foundry-1-1-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="538.00,137.50 592.00,137.50 592.00,172.50 538.00,172.50" />
+  <poly id="foundry-1-1-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="546.00,138.00 592.00,138.00 592.00,164.00 546.00,164.00" />
+  <poly id="foundry-1-1-0-roof" type="building" color="#61605A" fill="1" layer="-12" shape="542.00,142.00 588.00,142.00 588.00,168.00 542.00,168.00" />
+  <poly id="foundry-1-1-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="549.67,144.00 549.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-1-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="565.00,144.00 565.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-1-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="580.33,144.00 580.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-1-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="538.00,207.50 592.00,207.50 592.00,242.50 538.00,242.50" />
+  <poly id="foundry-1-1-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="546.00,208.00 592.00,208.00 592.00,234.00 546.00,234.00" />
+  <poly id="foundry-1-1-1-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="542.00,212.00 588.00,212.00 588.00,238.00 542.00,238.00" />
+  <poly id="foundry-1-1-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="549.67,214.00 549.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-1-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="565.00,214.00 565.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-1-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="580.33,214.00 580.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-1-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="538.00,277.50 592.00,277.50 592.00,312.50 538.00,312.50" />
+  <poly id="foundry-1-1-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="546.00,278.00 592.00,278.00 592.00,304.00 546.00,304.00" />
+  <poly id="foundry-1-1-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="542.00,282.00 588.00,282.00 588.00,308.00 542.00,308.00" />
+  <poly id="foundry-1-1-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="549.67,284.00 549.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-1-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="565.00,284.00 565.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-1-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="580.33,284.00 580.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="608.00,137.50 662.00,137.50 662.00,172.50 608.00,172.50" />
+  <poly id="foundry-1-2-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="616.00,138.00 662.00,138.00 662.00,164.00 616.00,164.00" />
+  <poly id="foundry-1-2-0-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="612.00,142.00 658.00,142.00 658.00,168.00 612.00,168.00" />
+  <poly id="foundry-1-2-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="619.67,144.00 619.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="635.00,144.00 635.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="650.33,144.00 650.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-0-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="650.00,155.00 649.92,155.67 649.70,156.30 649.35,156.87 648.87,157.35 648.30,157.70 647.67,157.92 647.00,158.00 646.33,157.92 645.70,157.70 645.13,157.35 644.65,156.87 644.30,156.30 644.08,155.67 644.00,155.00 644.08,154.33 644.30,153.70 644.65,153.13 645.13,152.65 645.70,152.30 646.33,152.08 647.00,152.00 647.67,152.08 648.30,152.30 648.87,152.65 649.35,153.13 649.70,153.70 649.92,154.33" />
+  <poly id="foundry-1-2-0-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="648.80,155.00 648.75,155.40 648.62,155.78 648.41,156.12 648.12,156.41 647.78,156.62 647.40,156.75 647.00,156.80 646.60,156.75 646.22,156.62 645.88,156.41 645.59,156.12 645.38,155.78 645.25,155.40 645.20,155.00 645.25,154.60 645.38,154.22 645.59,153.88 645.88,153.59 646.22,153.38 646.60,153.25 647.00,153.20 647.40,153.25 647.78,153.38 648.12,153.59 648.41,153.88 648.62,154.22 648.75,154.60" />
+  <poly id="foundry-1-2-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="608.00,207.50 662.00,207.50 662.00,242.50 608.00,242.50" />
+  <poly id="foundry-1-2-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="616.00,208.00 662.00,208.00 662.00,234.00 616.00,234.00" />
+  <poly id="foundry-1-2-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="612.00,212.00 658.00,212.00 658.00,238.00 612.00,238.00" />
+  <poly id="foundry-1-2-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="619.67,214.00 619.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="635.00,214.00 635.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="650.33,214.00 650.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-1-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="650.00,225.00 649.92,225.67 649.70,226.30 649.35,226.87 648.87,227.35 648.30,227.70 647.67,227.92 647.00,228.00 646.33,227.92 645.70,227.70 645.13,227.35 644.65,226.87 644.30,226.30 644.08,225.67 644.00,225.00 644.08,224.33 644.30,223.70 644.65,223.13 645.13,222.65 645.70,222.30 646.33,222.08 647.00,222.00 647.67,222.08 648.30,222.30 648.87,222.65 649.35,223.13 649.70,223.70 649.92,224.33" />
+  <poly id="foundry-1-2-1-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="648.80,225.00 648.75,225.40 648.62,225.78 648.41,226.12 648.12,226.41 647.78,226.62 647.40,226.75 647.00,226.80 646.60,226.75 646.22,226.62 645.88,226.41 645.59,226.12 645.38,225.78 645.25,225.40 645.20,225.00 645.25,224.60 645.38,224.22 645.59,223.88 645.88,223.59 646.22,223.38 646.60,223.25 647.00,223.20 647.40,223.25 647.78,223.38 648.12,223.59 648.41,223.88 648.62,224.22 648.75,224.60" />
+  <poly id="foundry-1-2-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="608.00,277.50 662.00,277.50 662.00,312.50 608.00,312.50" />
+  <poly id="foundry-1-2-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="616.00,278.00 662.00,278.00 662.00,304.00 616.00,304.00" />
+  <poly id="foundry-1-2-2-roof" type="building" color="#61605A" fill="1" layer="-12" shape="612.00,282.00 658.00,282.00 658.00,308.00 612.00,308.00" />
+  <poly id="foundry-1-2-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="619.67,284.00 619.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="635.00,284.00 635.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="650.33,284.00 650.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-1-2-2-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="650.00,295.00 649.92,295.67 649.70,296.30 649.35,296.87 648.87,297.35 648.30,297.70 647.67,297.92 647.00,298.00 646.33,297.92 645.70,297.70 645.13,297.35 644.65,296.87 644.30,296.30 644.08,295.67 644.00,295.00 644.08,294.33 644.30,293.70 644.65,293.13 645.13,292.65 645.70,292.30 646.33,292.08 647.00,292.00 647.67,292.08 648.30,292.30 648.87,292.65 649.35,293.13 649.70,293.70 649.92,294.33" />
+  <poly id="foundry-1-2-2-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="648.80,295.00 648.75,295.40 648.62,295.78 648.41,296.12 648.12,296.41 647.78,296.62 647.40,296.75 647.00,296.80 646.60,296.75 646.22,296.62 645.88,296.41 645.59,296.12 645.38,295.78 645.25,295.40 645.20,295.00 645.25,294.60 645.38,294.22 645.59,293.88 645.88,293.59 646.22,293.38 646.60,293.25 647.00,293.20 647.40,293.25 647.78,293.38 648.12,293.59 648.41,293.88 648.62,294.22 648.75,294.60" />
+  <poly id="block-1-1" type="district-yard" color="#BBA98A" fill="1" layer="-25" shape="440.00,565.00 760.00,565.00 760.00,855.00 440.00,855.00" />
+  <poly id="market-1-0-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="468.00,627.50 522.00,627.50 522.00,662.50 468.00,662.50" />
+  <poly id="market-1-0-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="476.00,628.00 522.00,628.00 522.00,654.00 476.00,654.00" />
+  <poly id="market-1-0-0-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="472.00,632.00 518.00,632.00 518.00,658.00 472.00,658.00" />
+  <poly id="market-1-0-0-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="472.50,655.00 486.83,655.00 486.83,659.00 472.50,659.00" />
+  <poly id="market-1-0-0-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="487.83,655.00 502.17,655.00 502.17,659.00 487.83,659.00" />
+  <poly id="market-1-0-0-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="503.17,655.00 517.50,655.00 517.50,659.00 503.17,659.00" />
+  <poly id="market-1-0-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="468.00,697.50 522.00,697.50 522.00,732.50 468.00,732.50" />
+  <poly id="market-1-0-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="476.00,698.00 522.00,698.00 522.00,724.00 476.00,724.00" />
+  <poly id="market-1-0-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="472.00,702.00 518.00,702.00 518.00,728.00 472.00,728.00" />
+  <poly id="market-1-0-1-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="472.50,725.00 486.83,725.00 486.83,729.00 472.50,729.00" />
+  <poly id="market-1-0-1-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="487.83,725.00 502.17,725.00 502.17,729.00 487.83,729.00" />
+  <poly id="market-1-0-1-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="503.17,725.00 517.50,725.00 517.50,729.00 503.17,729.00" />
+  <poly id="market-1-0-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="468.00,767.50 522.00,767.50 522.00,802.50 468.00,802.50" />
+  <poly id="market-1-0-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="476.00,768.00 522.00,768.00 522.00,794.00 476.00,794.00" />
+  <poly id="market-1-0-2-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="472.00,772.00 518.00,772.00 518.00,798.00 472.00,798.00" />
+  <poly id="market-1-0-2-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="472.50,795.00 486.83,795.00 486.83,799.00 472.50,799.00" />
+  <poly id="market-1-0-2-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="487.83,795.00 502.17,795.00 502.17,799.00 487.83,799.00" />
+  <poly id="market-1-0-2-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="503.17,795.00 517.50,795.00 517.50,799.00 503.17,799.00" />
+  <poly id="market-1-1-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="538.00,627.50 592.00,627.50 592.00,662.50 538.00,662.50" />
+  <poly id="market-1-1-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="546.00,628.00 592.00,628.00 592.00,654.00 546.00,654.00" />
+  <poly id="market-1-1-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="542.00,632.00 588.00,632.00 588.00,658.00 542.00,658.00" />
+  <poly id="market-1-1-0-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="542.50,655.00 556.83,655.00 556.83,659.00 542.50,659.00" />
+  <poly id="market-1-1-0-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="557.83,655.00 572.17,655.00 572.17,659.00 557.83,659.00" />
+  <poly id="market-1-1-0-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="573.17,655.00 587.50,655.00 587.50,659.00 573.17,659.00" />
+  <poly id="market-1-1-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="538.00,697.50 592.00,697.50 592.00,732.50 538.00,732.50" />
+  <poly id="market-1-1-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="546.00,698.00 592.00,698.00 592.00,724.00 546.00,724.00" />
+  <poly id="market-1-1-1-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="542.00,702.00 588.00,702.00 588.00,728.00 542.00,728.00" />
+  <poly id="market-1-1-1-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="542.50,725.00 556.83,725.00 556.83,729.00 542.50,729.00" />
+  <poly id="market-1-1-1-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="557.83,725.00 572.17,725.00 572.17,729.00 557.83,729.00" />
+  <poly id="market-1-1-1-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="573.17,725.00 587.50,725.00 587.50,729.00 573.17,729.00" />
+  <poly id="market-1-1-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="538.00,767.50 592.00,767.50 592.00,802.50 538.00,802.50" />
+  <poly id="market-1-1-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="546.00,768.00 592.00,768.00 592.00,794.00 546.00,794.00" />
+  <poly id="market-1-1-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="542.00,772.00 588.00,772.00 588.00,798.00 542.00,798.00" />
+  <poly id="market-1-1-2-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="542.50,795.00 556.83,795.00 556.83,799.00 542.50,799.00" />
+  <poly id="market-1-1-2-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="557.83,795.00 572.17,795.00 572.17,799.00 557.83,799.00" />
+  <poly id="market-1-1-2-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="573.17,795.00 587.50,795.00 587.50,799.00 573.17,799.00" />
+  <poly id="market-1-2-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="608.00,627.50 662.00,627.50 662.00,662.50 608.00,662.50" />
+  <poly id="market-1-2-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="616.00,628.00 662.00,628.00 662.00,654.00 616.00,654.00" />
+  <poly id="market-1-2-0-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="612.00,632.00 658.00,632.00 658.00,658.00 612.00,658.00" />
+  <poly id="market-1-2-0-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="612.50,655.00 626.83,655.00 626.83,659.00 612.50,659.00" />
+  <poly id="market-1-2-0-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="627.83,655.00 642.17,655.00 642.17,659.00 627.83,659.00" />
+  <poly id="market-1-2-0-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="643.17,655.00 657.50,655.00 657.50,659.00 643.17,659.00" />
+  <poly id="market-1-2-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="608.00,697.50 662.00,697.50 662.00,732.50 608.00,732.50" />
+  <poly id="market-1-2-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="616.00,698.00 662.00,698.00 662.00,724.00 616.00,724.00" />
+  <poly id="market-1-2-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="612.00,702.00 658.00,702.00 658.00,728.00 612.00,728.00" />
+  <poly id="market-1-2-1-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="612.50,725.00 626.83,725.00 626.83,729.00 612.50,729.00" />
+  <poly id="market-1-2-1-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="627.83,725.00 642.17,725.00 642.17,729.00 627.83,729.00" />
+  <poly id="market-1-2-1-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="643.17,725.00 657.50,725.00 657.50,729.00 643.17,729.00" />
+  <poly id="market-1-2-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="608.00,767.50 662.00,767.50 662.00,802.50 608.00,802.50" />
+  <poly id="market-1-2-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="616.00,768.00 662.00,768.00 662.00,794.00 616.00,794.00" />
+  <poly id="market-1-2-2-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="612.00,772.00 658.00,772.00 658.00,798.00 612.00,798.00" />
+  <poly id="market-1-2-2-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="612.50,795.00 626.83,795.00 626.83,799.00 612.50,799.00" />
+  <poly id="market-1-2-2-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="627.83,795.00 642.17,795.00 642.17,799.00 627.83,799.00" />
+  <poly id="market-1-2-2-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="643.17,795.00 657.50,795.00 657.50,799.00 643.17,799.00" />
+  <poly id="block-2-0" type="district-yard" color="#BBA98A" fill="1" layer="-25" shape="840.00,75.00 1160.00,75.00 1160.00,365.00 840.00,365.00" />
+  <poly id="foundry-2-0-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="868.00,137.50 922.00,137.50 922.00,172.50 868.00,172.50" />
+  <poly id="foundry-2-0-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="876.00,138.00 922.00,138.00 922.00,164.00 876.00,164.00" />
+  <poly id="foundry-2-0-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="872.00,142.00 918.00,142.00 918.00,168.00 872.00,168.00" />
+  <poly id="foundry-2-0-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="879.67,144.00 879.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="895.00,144.00 895.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="910.33,144.00 910.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-0-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="910.00,155.00 909.92,155.67 909.70,156.30 909.35,156.87 908.87,157.35 908.30,157.70 907.67,157.92 907.00,158.00 906.33,157.92 905.70,157.70 905.13,157.35 904.65,156.87 904.30,156.30 904.08,155.67 904.00,155.00 904.08,154.33 904.30,153.70 904.65,153.13 905.13,152.65 905.70,152.30 906.33,152.08 907.00,152.00 907.67,152.08 908.30,152.30 908.87,152.65 909.35,153.13 909.70,153.70 909.92,154.33" />
+  <poly id="foundry-2-0-0-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="908.80,155.00 908.75,155.40 908.62,155.78 908.41,156.12 908.12,156.41 907.78,156.62 907.40,156.75 907.00,156.80 906.60,156.75 906.22,156.62 905.88,156.41 905.59,156.12 905.38,155.78 905.25,155.40 905.20,155.00 905.25,154.60 905.38,154.22 905.59,153.88 905.88,153.59 906.22,153.38 906.60,153.25 907.00,153.20 907.40,153.25 907.78,153.38 908.12,153.59 908.41,153.88 908.62,154.22 908.75,154.60" />
+  <poly id="foundry-2-0-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="868.00,207.50 922.00,207.50 922.00,242.50 868.00,242.50" />
+  <poly id="foundry-2-0-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="876.00,208.00 922.00,208.00 922.00,234.00 876.00,234.00" />
+  <poly id="foundry-2-0-1-roof" type="building" color="#61605A" fill="1" layer="-12" shape="872.00,212.00 918.00,212.00 918.00,238.00 872.00,238.00" />
+  <poly id="foundry-2-0-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="879.67,214.00 879.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="895.00,214.00 895.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="910.33,214.00 910.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-1-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="910.00,225.00 909.92,225.67 909.70,226.30 909.35,226.87 908.87,227.35 908.30,227.70 907.67,227.92 907.00,228.00 906.33,227.92 905.70,227.70 905.13,227.35 904.65,226.87 904.30,226.30 904.08,225.67 904.00,225.00 904.08,224.33 904.30,223.70 904.65,223.13 905.13,222.65 905.70,222.30 906.33,222.08 907.00,222.00 907.67,222.08 908.30,222.30 908.87,222.65 909.35,223.13 909.70,223.70 909.92,224.33" />
+  <poly id="foundry-2-0-1-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="908.80,225.00 908.75,225.40 908.62,225.78 908.41,226.12 908.12,226.41 907.78,226.62 907.40,226.75 907.00,226.80 906.60,226.75 906.22,226.62 905.88,226.41 905.59,226.12 905.38,225.78 905.25,225.40 905.20,225.00 905.25,224.60 905.38,224.22 905.59,223.88 905.88,223.59 906.22,223.38 906.60,223.25 907.00,223.20 907.40,223.25 907.78,223.38 908.12,223.59 908.41,223.88 908.62,224.22 908.75,224.60" />
+  <poly id="foundry-2-0-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="868.00,277.50 922.00,277.50 922.00,312.50 868.00,312.50" />
+  <poly id="foundry-2-0-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="876.00,278.00 922.00,278.00 922.00,304.00 876.00,304.00" />
+  <poly id="foundry-2-0-2-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="872.00,282.00 918.00,282.00 918.00,308.00 872.00,308.00" />
+  <poly id="foundry-2-0-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="879.67,284.00 879.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="895.00,284.00 895.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="910.33,284.00 910.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-0-2-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="910.00,295.00 909.92,295.67 909.70,296.30 909.35,296.87 908.87,297.35 908.30,297.70 907.67,297.92 907.00,298.00 906.33,297.92 905.70,297.70 905.13,297.35 904.65,296.87 904.30,296.30 904.08,295.67 904.00,295.00 904.08,294.33 904.30,293.70 904.65,293.13 905.13,292.65 905.70,292.30 906.33,292.08 907.00,292.00 907.67,292.08 908.30,292.30 908.87,292.65 909.35,293.13 909.70,293.70 909.92,294.33" />
+  <poly id="foundry-2-0-2-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="908.80,295.00 908.75,295.40 908.62,295.78 908.41,296.12 908.12,296.41 907.78,296.62 907.40,296.75 907.00,296.80 906.60,296.75 906.22,296.62 905.88,296.41 905.59,296.12 905.38,295.78 905.25,295.40 905.20,295.00 905.25,294.60 905.38,294.22 905.59,293.88 905.88,293.59 906.22,293.38 906.60,293.25 907.00,293.20 907.40,293.25 907.78,293.38 908.12,293.59 908.41,293.88 908.62,294.22 908.75,294.60" />
+  <poly id="foundry-2-1-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="938.00,137.50 992.00,137.50 992.00,172.50 938.00,172.50" />
+  <poly id="foundry-2-1-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="946.00,138.00 992.00,138.00 992.00,164.00 946.00,164.00" />
+  <poly id="foundry-2-1-0-roof" type="building" color="#61605A" fill="1" layer="-12" shape="942.00,142.00 988.00,142.00 988.00,168.00 942.00,168.00" />
+  <poly id="foundry-2-1-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="949.67,144.00 949.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-1-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="965.00,144.00 965.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-1-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="980.33,144.00 980.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-1-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="938.00,207.50 992.00,207.50 992.00,242.50 938.00,242.50" />
+  <poly id="foundry-2-1-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="946.00,208.00 992.00,208.00 992.00,234.00 946.00,234.00" />
+  <poly id="foundry-2-1-1-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="942.00,212.00 988.00,212.00 988.00,238.00 942.00,238.00" />
+  <poly id="foundry-2-1-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="949.67,214.00 949.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-1-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="965.00,214.00 965.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-1-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="980.33,214.00 980.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-1-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="938.00,277.50 992.00,277.50 992.00,312.50 938.00,312.50" />
+  <poly id="foundry-2-1-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="946.00,278.00 992.00,278.00 992.00,304.00 946.00,304.00" />
+  <poly id="foundry-2-1-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="942.00,282.00 988.00,282.00 988.00,308.00 942.00,308.00" />
+  <poly id="foundry-2-1-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="949.67,284.00 949.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-1-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="965.00,284.00 965.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-1-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="980.33,284.00 980.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1008.00,137.50 1062.00,137.50 1062.00,172.50 1008.00,172.50" />
+  <poly id="foundry-2-2-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1016.00,138.00 1062.00,138.00 1062.00,164.00 1016.00,164.00" />
+  <poly id="foundry-2-2-0-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="1012.00,142.00 1058.00,142.00 1058.00,168.00 1012.00,168.00" />
+  <poly id="foundry-2-2-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1019.67,144.00 1019.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1035.00,144.00 1035.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1050.33,144.00 1050.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-0-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1050.00,155.00 1049.92,155.67 1049.70,156.30 1049.35,156.87 1048.87,157.35 1048.30,157.70 1047.67,157.92 1047.00,158.00 1046.33,157.92 1045.70,157.70 1045.13,157.35 1044.65,156.87 1044.30,156.30 1044.08,155.67 1044.00,155.00 1044.08,154.33 1044.30,153.70 1044.65,153.13 1045.13,152.65 1045.70,152.30 1046.33,152.08 1047.00,152.00 1047.67,152.08 1048.30,152.30 1048.87,152.65 1049.35,153.13 1049.70,153.70 1049.92,154.33" />
+  <poly id="foundry-2-2-0-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1048.80,155.00 1048.75,155.40 1048.62,155.78 1048.41,156.12 1048.12,156.41 1047.78,156.62 1047.40,156.75 1047.00,156.80 1046.60,156.75 1046.22,156.62 1045.88,156.41 1045.59,156.12 1045.38,155.78 1045.25,155.40 1045.20,155.00 1045.25,154.60 1045.38,154.22 1045.59,153.88 1045.88,153.59 1046.22,153.38 1046.60,153.25 1047.00,153.20 1047.40,153.25 1047.78,153.38 1048.12,153.59 1048.41,153.88 1048.62,154.22 1048.75,154.60" />
+  <poly id="foundry-2-2-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1008.00,207.50 1062.00,207.50 1062.00,242.50 1008.00,242.50" />
+  <poly id="foundry-2-2-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1016.00,208.00 1062.00,208.00 1062.00,234.00 1016.00,234.00" />
+  <poly id="foundry-2-2-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="1012.00,212.00 1058.00,212.00 1058.00,238.00 1012.00,238.00" />
+  <poly id="foundry-2-2-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1019.67,214.00 1019.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1035.00,214.00 1035.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1050.33,214.00 1050.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-1-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1050.00,225.00 1049.92,225.67 1049.70,226.30 1049.35,226.87 1048.87,227.35 1048.30,227.70 1047.67,227.92 1047.00,228.00 1046.33,227.92 1045.70,227.70 1045.13,227.35 1044.65,226.87 1044.30,226.30 1044.08,225.67 1044.00,225.00 1044.08,224.33 1044.30,223.70 1044.65,223.13 1045.13,222.65 1045.70,222.30 1046.33,222.08 1047.00,222.00 1047.67,222.08 1048.30,222.30 1048.87,222.65 1049.35,223.13 1049.70,223.70 1049.92,224.33" />
+  <poly id="foundry-2-2-1-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1048.80,225.00 1048.75,225.40 1048.62,225.78 1048.41,226.12 1048.12,226.41 1047.78,226.62 1047.40,226.75 1047.00,226.80 1046.60,226.75 1046.22,226.62 1045.88,226.41 1045.59,226.12 1045.38,225.78 1045.25,225.40 1045.20,225.00 1045.25,224.60 1045.38,224.22 1045.59,223.88 1045.88,223.59 1046.22,223.38 1046.60,223.25 1047.00,223.20 1047.40,223.25 1047.78,223.38 1048.12,223.59 1048.41,223.88 1048.62,224.22 1048.75,224.60" />
+  <poly id="foundry-2-2-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1008.00,277.50 1062.00,277.50 1062.00,312.50 1008.00,312.50" />
+  <poly id="foundry-2-2-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1016.00,278.00 1062.00,278.00 1062.00,304.00 1016.00,304.00" />
+  <poly id="foundry-2-2-2-roof" type="building" color="#61605A" fill="1" layer="-12" shape="1012.00,282.00 1058.00,282.00 1058.00,308.00 1012.00,308.00" />
+  <poly id="foundry-2-2-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1019.67,284.00 1019.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1035.00,284.00 1035.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1050.33,284.00 1050.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-2-2-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1050.00,295.00 1049.92,295.67 1049.70,296.30 1049.35,296.87 1048.87,297.35 1048.30,297.70 1047.67,297.92 1047.00,298.00 1046.33,297.92 1045.70,297.70 1045.13,297.35 1044.65,296.87 1044.30,296.30 1044.08,295.67 1044.00,295.00 1044.08,294.33 1044.30,293.70 1044.65,293.13 1045.13,292.65 1045.70,292.30 1046.33,292.08 1047.00,292.00 1047.67,292.08 1048.30,292.30 1048.87,292.65 1049.35,293.13 1049.70,293.70 1049.92,294.33" />
+  <poly id="foundry-2-2-2-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1048.80,295.00 1048.75,295.40 1048.62,295.78 1048.41,296.12 1048.12,296.41 1047.78,296.62 1047.40,296.75 1047.00,296.80 1046.60,296.75 1046.22,296.62 1045.88,296.41 1045.59,296.12 1045.38,295.78 1045.25,295.40 1045.20,295.00 1045.25,294.60 1045.38,294.22 1045.59,293.88 1045.88,293.59 1046.22,293.38 1046.60,293.25 1047.00,293.20 1047.40,293.25 1047.78,293.38 1048.12,293.59 1048.41,293.88 1048.62,294.22 1048.75,294.60" />
+  <poly id="foundry-2-3-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1078.00,137.50 1132.00,137.50 1132.00,172.50 1078.00,172.50" />
+  <poly id="foundry-2-3-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1086.00,138.00 1132.00,138.00 1132.00,164.00 1086.00,164.00" />
+  <poly id="foundry-2-3-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="1082.00,142.00 1128.00,142.00 1128.00,168.00 1082.00,168.00" />
+  <poly id="foundry-2-3-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1089.67,144.00 1089.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-3-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1105.00,144.00 1105.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-3-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1120.33,144.00 1120.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-2-3-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1078.00,207.50 1132.00,207.50 1132.00,242.50 1078.00,242.50" />
+  <poly id="foundry-2-3-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1086.00,208.00 1132.00,208.00 1132.00,234.00 1086.00,234.00" />
+  <poly id="foundry-2-3-1-roof" type="building" color="#61605A" fill="1" layer="-12" shape="1082.00,212.00 1128.00,212.00 1128.00,238.00 1082.00,238.00" />
+  <poly id="foundry-2-3-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1089.67,214.00 1089.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-3-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1105.00,214.00 1105.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-3-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1120.33,214.00 1120.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-2-3-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1078.00,277.50 1132.00,277.50 1132.00,312.50 1078.00,312.50" />
+  <poly id="foundry-2-3-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1086.00,278.00 1132.00,278.00 1132.00,304.00 1086.00,304.00" />
+  <poly id="foundry-2-3-2-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="1082.00,282.00 1128.00,282.00 1128.00,308.00 1082.00,308.00" />
+  <poly id="foundry-2-3-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1089.67,284.00 1089.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-3-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1105.00,284.00 1105.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-2-3-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1120.33,284.00 1120.33,306.00" lineWidth="0.7" />
+  <poly id="block-2-1" type="district-yard" color="#BBA98A" fill="1" layer="-25" shape="840.00,565.00 1160.00,565.00 1160.00,855.00 840.00,855.00" />
+  <poly id="market-2-0-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="868.00,627.50 922.00,627.50 922.00,662.50 868.00,662.50" />
+  <poly id="market-2-0-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="876.00,628.00 922.00,628.00 922.00,654.00 876.00,654.00" />
+  <poly id="market-2-0-0-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="872.00,632.00 918.00,632.00 918.00,658.00 872.00,658.00" />
+  <poly id="market-2-0-0-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="872.50,655.00 886.83,655.00 886.83,659.00 872.50,659.00" />
+  <poly id="market-2-0-0-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="887.83,655.00 902.17,655.00 902.17,659.00 887.83,659.00" />
+  <poly id="market-2-0-0-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="903.17,655.00 917.50,655.00 917.50,659.00 903.17,659.00" />
+  <poly id="market-2-0-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="868.00,697.50 922.00,697.50 922.00,732.50 868.00,732.50" />
+  <poly id="market-2-0-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="876.00,698.00 922.00,698.00 922.00,724.00 876.00,724.00" />
+  <poly id="market-2-0-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="872.00,702.00 918.00,702.00 918.00,728.00 872.00,728.00" />
+  <poly id="market-2-0-1-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="872.50,725.00 886.83,725.00 886.83,729.00 872.50,729.00" />
+  <poly id="market-2-0-1-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="887.83,725.00 902.17,725.00 902.17,729.00 887.83,729.00" />
+  <poly id="market-2-0-1-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="903.17,725.00 917.50,725.00 917.50,729.00 903.17,729.00" />
+  <poly id="market-2-0-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="868.00,767.50 922.00,767.50 922.00,802.50 868.00,802.50" />
+  <poly id="market-2-0-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="876.00,768.00 922.00,768.00 922.00,794.00 876.00,794.00" />
+  <poly id="market-2-0-2-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="872.00,772.00 918.00,772.00 918.00,798.00 872.00,798.00" />
+  <poly id="market-2-0-2-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="872.50,795.00 886.83,795.00 886.83,799.00 872.50,799.00" />
+  <poly id="market-2-0-2-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="887.83,795.00 902.17,795.00 902.17,799.00 887.83,799.00" />
+  <poly id="market-2-0-2-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="903.17,795.00 917.50,795.00 917.50,799.00 903.17,799.00" />
+  <poly id="market-2-1-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="938.00,627.50 992.00,627.50 992.00,662.50 938.00,662.50" />
+  <poly id="market-2-1-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="946.00,628.00 992.00,628.00 992.00,654.00 946.00,654.00" />
+  <poly id="market-2-1-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="942.00,632.00 988.00,632.00 988.00,658.00 942.00,658.00" />
+  <poly id="market-2-1-0-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="942.50,655.00 956.83,655.00 956.83,659.00 942.50,659.00" />
+  <poly id="market-2-1-0-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="957.83,655.00 972.17,655.00 972.17,659.00 957.83,659.00" />
+  <poly id="market-2-1-0-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="973.17,655.00 987.50,655.00 987.50,659.00 973.17,659.00" />
+  <poly id="market-2-1-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="938.00,697.50 992.00,697.50 992.00,732.50 938.00,732.50" />
+  <poly id="market-2-1-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="946.00,698.00 992.00,698.00 992.00,724.00 946.00,724.00" />
+  <poly id="market-2-1-1-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="942.00,702.00 988.00,702.00 988.00,728.00 942.00,728.00" />
+  <poly id="market-2-1-1-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="942.50,725.00 956.83,725.00 956.83,729.00 942.50,729.00" />
+  <poly id="market-2-1-1-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="957.83,725.00 972.17,725.00 972.17,729.00 957.83,729.00" />
+  <poly id="market-2-1-1-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="973.17,725.00 987.50,725.00 987.50,729.00 973.17,729.00" />
+  <poly id="market-2-1-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="938.00,767.50 992.00,767.50 992.00,802.50 938.00,802.50" />
+  <poly id="market-2-1-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="946.00,768.00 992.00,768.00 992.00,794.00 946.00,794.00" />
+  <poly id="market-2-1-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="942.00,772.00 988.00,772.00 988.00,798.00 942.00,798.00" />
+  <poly id="market-2-1-2-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="942.50,795.00 956.83,795.00 956.83,799.00 942.50,799.00" />
+  <poly id="market-2-1-2-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="957.83,795.00 972.17,795.00 972.17,799.00 957.83,799.00" />
+  <poly id="market-2-1-2-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="973.17,795.00 987.50,795.00 987.50,799.00 973.17,799.00" />
+  <poly id="market-2-2-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1008.00,627.50 1062.00,627.50 1062.00,662.50 1008.00,662.50" />
+  <poly id="market-2-2-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1016.00,628.00 1062.00,628.00 1062.00,654.00 1016.00,654.00" />
+  <poly id="market-2-2-0-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1012.00,632.00 1058.00,632.00 1058.00,658.00 1012.00,658.00" />
+  <poly id="market-2-2-0-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1012.50,655.00 1026.83,655.00 1026.83,659.00 1012.50,659.00" />
+  <poly id="market-2-2-0-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1027.83,655.00 1042.17,655.00 1042.17,659.00 1027.83,659.00" />
+  <poly id="market-2-2-0-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1043.17,655.00 1057.50,655.00 1057.50,659.00 1043.17,659.00" />
+  <poly id="market-2-2-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1008.00,697.50 1062.00,697.50 1062.00,732.50 1008.00,732.50" />
+  <poly id="market-2-2-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1016.00,698.00 1062.00,698.00 1062.00,724.00 1016.00,724.00" />
+  <poly id="market-2-2-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="1012.00,702.00 1058.00,702.00 1058.00,728.00 1012.00,728.00" />
+  <poly id="market-2-2-1-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1012.50,725.00 1026.83,725.00 1026.83,729.00 1012.50,729.00" />
+  <poly id="market-2-2-1-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1027.83,725.00 1042.17,725.00 1042.17,729.00 1027.83,729.00" />
+  <poly id="market-2-2-1-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1043.17,725.00 1057.50,725.00 1057.50,729.00 1043.17,729.00" />
+  <poly id="market-2-2-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1008.00,767.50 1062.00,767.50 1062.00,802.50 1008.00,802.50" />
+  <poly id="market-2-2-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1016.00,768.00 1062.00,768.00 1062.00,794.00 1016.00,794.00" />
+  <poly id="market-2-2-2-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1012.00,772.00 1058.00,772.00 1058.00,798.00 1012.00,798.00" />
+  <poly id="market-2-2-2-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1012.50,795.00 1026.83,795.00 1026.83,799.00 1012.50,799.00" />
+  <poly id="market-2-2-2-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1027.83,795.00 1042.17,795.00 1042.17,799.00 1027.83,799.00" />
+  <poly id="market-2-2-2-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1043.17,795.00 1057.50,795.00 1057.50,799.00 1043.17,799.00" />
+  <poly id="market-2-3-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1078.00,627.50 1132.00,627.50 1132.00,662.50 1078.00,662.50" />
+  <poly id="market-2-3-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1086.00,628.00 1132.00,628.00 1132.00,654.00 1086.00,654.00" />
+  <poly id="market-2-3-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="1082.00,632.00 1128.00,632.00 1128.00,658.00 1082.00,658.00" />
+  <poly id="market-2-3-0-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1082.50,655.00 1096.83,655.00 1096.83,659.00 1082.50,659.00" />
+  <poly id="market-2-3-0-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1097.83,655.00 1112.17,655.00 1112.17,659.00 1097.83,659.00" />
+  <poly id="market-2-3-0-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1113.17,655.00 1127.50,655.00 1127.50,659.00 1113.17,659.00" />
+  <poly id="market-2-3-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1078.00,697.50 1132.00,697.50 1132.00,732.50 1078.00,732.50" />
+  <poly id="market-2-3-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1086.00,698.00 1132.00,698.00 1132.00,724.00 1086.00,724.00" />
+  <poly id="market-2-3-1-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1082.00,702.00 1128.00,702.00 1128.00,728.00 1082.00,728.00" />
+  <poly id="market-2-3-1-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1082.50,725.00 1096.83,725.00 1096.83,729.00 1082.50,729.00" />
+  <poly id="market-2-3-1-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1097.83,725.00 1112.17,725.00 1112.17,729.00 1097.83,729.00" />
+  <poly id="market-2-3-1-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1113.17,725.00 1127.50,725.00 1127.50,729.00 1113.17,729.00" />
+  <poly id="market-2-3-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1078.00,767.50 1132.00,767.50 1132.00,802.50 1078.00,802.50" />
+  <poly id="market-2-3-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1086.00,768.00 1132.00,768.00 1132.00,794.00 1086.00,794.00" />
+  <poly id="market-2-3-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="1082.00,772.00 1128.00,772.00 1128.00,798.00 1082.00,798.00" />
+  <poly id="market-2-3-2-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1082.50,795.00 1096.83,795.00 1096.83,799.00 1082.50,799.00" />
+  <poly id="market-2-3-2-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1097.83,795.00 1112.17,795.00 1112.17,799.00 1097.83,799.00" />
+  <poly id="market-2-3-2-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1113.17,795.00 1127.50,795.00 1127.50,799.00 1113.17,799.00" />
+  <poly id="block-3-0" type="district-yard" color="#BBA98A" fill="1" layer="-25" shape="1260.00,75.00 1580.00,75.00 1580.00,365.00 1260.00,365.00" />
+  <poly id="foundry-3-0-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1288.00,137.50 1342.00,137.50 1342.00,172.50 1288.00,172.50" />
+  <poly id="foundry-3-0-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1296.00,138.00 1342.00,138.00 1342.00,164.00 1296.00,164.00" />
+  <poly id="foundry-3-0-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="1292.00,142.00 1338.00,142.00 1338.00,168.00 1292.00,168.00" />
+  <poly id="foundry-3-0-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1299.67,144.00 1299.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1315.00,144.00 1315.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1330.33,144.00 1330.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-0-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1330.00,155.00 1329.92,155.67 1329.70,156.30 1329.35,156.87 1328.87,157.35 1328.30,157.70 1327.67,157.92 1327.00,158.00 1326.33,157.92 1325.70,157.70 1325.13,157.35 1324.65,156.87 1324.30,156.30 1324.08,155.67 1324.00,155.00 1324.08,154.33 1324.30,153.70 1324.65,153.13 1325.13,152.65 1325.70,152.30 1326.33,152.08 1327.00,152.00 1327.67,152.08 1328.30,152.30 1328.87,152.65 1329.35,153.13 1329.70,153.70 1329.92,154.33" />
+  <poly id="foundry-3-0-0-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1328.80,155.00 1328.75,155.40 1328.62,155.78 1328.41,156.12 1328.12,156.41 1327.78,156.62 1327.40,156.75 1327.00,156.80 1326.60,156.75 1326.22,156.62 1325.88,156.41 1325.59,156.12 1325.38,155.78 1325.25,155.40 1325.20,155.00 1325.25,154.60 1325.38,154.22 1325.59,153.88 1325.88,153.59 1326.22,153.38 1326.60,153.25 1327.00,153.20 1327.40,153.25 1327.78,153.38 1328.12,153.59 1328.41,153.88 1328.62,154.22 1328.75,154.60" />
+  <poly id="foundry-3-0-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1288.00,207.50 1342.00,207.50 1342.00,242.50 1288.00,242.50" />
+  <poly id="foundry-3-0-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1296.00,208.00 1342.00,208.00 1342.00,234.00 1296.00,234.00" />
+  <poly id="foundry-3-0-1-roof" type="building" color="#61605A" fill="1" layer="-12" shape="1292.00,212.00 1338.00,212.00 1338.00,238.00 1292.00,238.00" />
+  <poly id="foundry-3-0-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1299.67,214.00 1299.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1315.00,214.00 1315.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1330.33,214.00 1330.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-1-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1330.00,225.00 1329.92,225.67 1329.70,226.30 1329.35,226.87 1328.87,227.35 1328.30,227.70 1327.67,227.92 1327.00,228.00 1326.33,227.92 1325.70,227.70 1325.13,227.35 1324.65,226.87 1324.30,226.30 1324.08,225.67 1324.00,225.00 1324.08,224.33 1324.30,223.70 1324.65,223.13 1325.13,222.65 1325.70,222.30 1326.33,222.08 1327.00,222.00 1327.67,222.08 1328.30,222.30 1328.87,222.65 1329.35,223.13 1329.70,223.70 1329.92,224.33" />
+  <poly id="foundry-3-0-1-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1328.80,225.00 1328.75,225.40 1328.62,225.78 1328.41,226.12 1328.12,226.41 1327.78,226.62 1327.40,226.75 1327.00,226.80 1326.60,226.75 1326.22,226.62 1325.88,226.41 1325.59,226.12 1325.38,225.78 1325.25,225.40 1325.20,225.00 1325.25,224.60 1325.38,224.22 1325.59,223.88 1325.88,223.59 1326.22,223.38 1326.60,223.25 1327.00,223.20 1327.40,223.25 1327.78,223.38 1328.12,223.59 1328.41,223.88 1328.62,224.22 1328.75,224.60" />
+  <poly id="foundry-3-0-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1288.00,277.50 1342.00,277.50 1342.00,312.50 1288.00,312.50" />
+  <poly id="foundry-3-0-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1296.00,278.00 1342.00,278.00 1342.00,304.00 1296.00,304.00" />
+  <poly id="foundry-3-0-2-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="1292.00,282.00 1338.00,282.00 1338.00,308.00 1292.00,308.00" />
+  <poly id="foundry-3-0-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1299.67,284.00 1299.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1315.00,284.00 1315.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1330.33,284.00 1330.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-0-2-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1330.00,295.00 1329.92,295.67 1329.70,296.30 1329.35,296.87 1328.87,297.35 1328.30,297.70 1327.67,297.92 1327.00,298.00 1326.33,297.92 1325.70,297.70 1325.13,297.35 1324.65,296.87 1324.30,296.30 1324.08,295.67 1324.00,295.00 1324.08,294.33 1324.30,293.70 1324.65,293.13 1325.13,292.65 1325.70,292.30 1326.33,292.08 1327.00,292.00 1327.67,292.08 1328.30,292.30 1328.87,292.65 1329.35,293.13 1329.70,293.70 1329.92,294.33" />
+  <poly id="foundry-3-0-2-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1328.80,295.00 1328.75,295.40 1328.62,295.78 1328.41,296.12 1328.12,296.41 1327.78,296.62 1327.40,296.75 1327.00,296.80 1326.60,296.75 1326.22,296.62 1325.88,296.41 1325.59,296.12 1325.38,295.78 1325.25,295.40 1325.20,295.00 1325.25,294.60 1325.38,294.22 1325.59,293.88 1325.88,293.59 1326.22,293.38 1326.60,293.25 1327.00,293.20 1327.40,293.25 1327.78,293.38 1328.12,293.59 1328.41,293.88 1328.62,294.22 1328.75,294.60" />
+  <poly id="foundry-3-1-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1358.00,137.50 1412.00,137.50 1412.00,172.50 1358.00,172.50" />
+  <poly id="foundry-3-1-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1366.00,138.00 1412.00,138.00 1412.00,164.00 1366.00,164.00" />
+  <poly id="foundry-3-1-0-roof" type="building" color="#61605A" fill="1" layer="-12" shape="1362.00,142.00 1408.00,142.00 1408.00,168.00 1362.00,168.00" />
+  <poly id="foundry-3-1-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1369.67,144.00 1369.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-1-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1385.00,144.00 1385.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-1-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1400.33,144.00 1400.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-1-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1358.00,207.50 1412.00,207.50 1412.00,242.50 1358.00,242.50" />
+  <poly id="foundry-3-1-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1366.00,208.00 1412.00,208.00 1412.00,234.00 1366.00,234.00" />
+  <poly id="foundry-3-1-1-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="1362.00,212.00 1408.00,212.00 1408.00,238.00 1362.00,238.00" />
+  <poly id="foundry-3-1-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1369.67,214.00 1369.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-1-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1385.00,214.00 1385.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-1-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1400.33,214.00 1400.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-1-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1358.00,277.50 1412.00,277.50 1412.00,312.50 1358.00,312.50" />
+  <poly id="foundry-3-1-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1366.00,278.00 1412.00,278.00 1412.00,304.00 1366.00,304.00" />
+  <poly id="foundry-3-1-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="1362.00,282.00 1408.00,282.00 1408.00,308.00 1362.00,308.00" />
+  <poly id="foundry-3-1-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1369.67,284.00 1369.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-1-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1385.00,284.00 1385.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-1-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1400.33,284.00 1400.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1428.00,137.50 1482.00,137.50 1482.00,172.50 1428.00,172.50" />
+  <poly id="foundry-3-2-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1436.00,138.00 1482.00,138.00 1482.00,164.00 1436.00,164.00" />
+  <poly id="foundry-3-2-0-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="1432.00,142.00 1478.00,142.00 1478.00,168.00 1432.00,168.00" />
+  <poly id="foundry-3-2-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1439.67,144.00 1439.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1455.00,144.00 1455.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1470.33,144.00 1470.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-0-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1470.00,155.00 1469.92,155.67 1469.70,156.30 1469.35,156.87 1468.87,157.35 1468.30,157.70 1467.67,157.92 1467.00,158.00 1466.33,157.92 1465.70,157.70 1465.13,157.35 1464.65,156.87 1464.30,156.30 1464.08,155.67 1464.00,155.00 1464.08,154.33 1464.30,153.70 1464.65,153.13 1465.13,152.65 1465.70,152.30 1466.33,152.08 1467.00,152.00 1467.67,152.08 1468.30,152.30 1468.87,152.65 1469.35,153.13 1469.70,153.70 1469.92,154.33" />
+  <poly id="foundry-3-2-0-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1468.80,155.00 1468.75,155.40 1468.62,155.78 1468.41,156.12 1468.12,156.41 1467.78,156.62 1467.40,156.75 1467.00,156.80 1466.60,156.75 1466.22,156.62 1465.88,156.41 1465.59,156.12 1465.38,155.78 1465.25,155.40 1465.20,155.00 1465.25,154.60 1465.38,154.22 1465.59,153.88 1465.88,153.59 1466.22,153.38 1466.60,153.25 1467.00,153.20 1467.40,153.25 1467.78,153.38 1468.12,153.59 1468.41,153.88 1468.62,154.22 1468.75,154.60" />
+  <poly id="foundry-3-2-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1428.00,207.50 1482.00,207.50 1482.00,242.50 1428.00,242.50" />
+  <poly id="foundry-3-2-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1436.00,208.00 1482.00,208.00 1482.00,234.00 1436.00,234.00" />
+  <poly id="foundry-3-2-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="1432.00,212.00 1478.00,212.00 1478.00,238.00 1432.00,238.00" />
+  <poly id="foundry-3-2-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1439.67,214.00 1439.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1455.00,214.00 1455.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1470.33,214.00 1470.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-1-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1470.00,225.00 1469.92,225.67 1469.70,226.30 1469.35,226.87 1468.87,227.35 1468.30,227.70 1467.67,227.92 1467.00,228.00 1466.33,227.92 1465.70,227.70 1465.13,227.35 1464.65,226.87 1464.30,226.30 1464.08,225.67 1464.00,225.00 1464.08,224.33 1464.30,223.70 1464.65,223.13 1465.13,222.65 1465.70,222.30 1466.33,222.08 1467.00,222.00 1467.67,222.08 1468.30,222.30 1468.87,222.65 1469.35,223.13 1469.70,223.70 1469.92,224.33" />
+  <poly id="foundry-3-2-1-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1468.80,225.00 1468.75,225.40 1468.62,225.78 1468.41,226.12 1468.12,226.41 1467.78,226.62 1467.40,226.75 1467.00,226.80 1466.60,226.75 1466.22,226.62 1465.88,226.41 1465.59,226.12 1465.38,225.78 1465.25,225.40 1465.20,225.00 1465.25,224.60 1465.38,224.22 1465.59,223.88 1465.88,223.59 1466.22,223.38 1466.60,223.25 1467.00,223.20 1467.40,223.25 1467.78,223.38 1468.12,223.59 1468.41,223.88 1468.62,224.22 1468.75,224.60" />
+  <poly id="foundry-3-2-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1428.00,277.50 1482.00,277.50 1482.00,312.50 1428.00,312.50" />
+  <poly id="foundry-3-2-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1436.00,278.00 1482.00,278.00 1482.00,304.00 1436.00,304.00" />
+  <poly id="foundry-3-2-2-roof" type="building" color="#61605A" fill="1" layer="-12" shape="1432.00,282.00 1478.00,282.00 1478.00,308.00 1432.00,308.00" />
+  <poly id="foundry-3-2-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1439.67,284.00 1439.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1455.00,284.00 1455.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1470.33,284.00 1470.33,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-2-2-vent" type="roof-vent" color="#D0B994" fill="1" layer="-10" shape="1470.00,295.00 1469.92,295.67 1469.70,296.30 1469.35,296.87 1468.87,297.35 1468.30,297.70 1467.67,297.92 1467.00,298.00 1466.33,297.92 1465.70,297.70 1465.13,297.35 1464.65,296.87 1464.30,296.30 1464.08,295.67 1464.00,295.00 1464.08,294.33 1464.30,293.70 1464.65,293.13 1465.13,292.65 1465.70,292.30 1466.33,292.08 1467.00,292.00 1467.67,292.08 1468.30,292.30 1468.87,292.65 1469.35,293.13 1469.70,293.70 1469.92,294.33" />
+  <poly id="foundry-3-2-2-vent-mouth" type="roof-vent" color="#343532" fill="1" layer="-9" shape="1468.80,295.00 1468.75,295.40 1468.62,295.78 1468.41,296.12 1468.12,296.41 1467.78,296.62 1467.40,296.75 1467.00,296.80 1466.60,296.75 1466.22,296.62 1465.88,296.41 1465.59,296.12 1465.38,295.78 1465.25,295.40 1465.20,295.00 1465.25,294.60 1465.38,294.22 1465.59,293.88 1465.88,293.59 1466.22,293.38 1466.60,293.25 1467.00,293.20 1467.40,293.25 1467.78,293.38 1468.12,293.59 1468.41,293.88 1468.62,294.22 1468.75,294.60" />
+  <poly id="foundry-3-3-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1498.00,137.50 1552.00,137.50 1552.00,172.50 1498.00,172.50" />
+  <poly id="foundry-3-3-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1506.00,138.00 1552.00,138.00 1552.00,164.00 1506.00,164.00" />
+  <poly id="foundry-3-3-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="1502.00,142.00 1548.00,142.00 1548.00,168.00 1502.00,168.00" />
+  <poly id="foundry-3-3-0-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1509.67,144.00 1509.67,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-3-0-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1525.00,144.00 1525.00,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-3-0-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1540.33,144.00 1540.33,166.00" lineWidth="0.7" />
+  <poly id="foundry-3-3-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1498.00,207.50 1552.00,207.50 1552.00,242.50 1498.00,242.50" />
+  <poly id="foundry-3-3-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1506.00,208.00 1552.00,208.00 1552.00,234.00 1506.00,234.00" />
+  <poly id="foundry-3-3-1-roof" type="building" color="#61605A" fill="1" layer="-12" shape="1502.00,212.00 1548.00,212.00 1548.00,238.00 1502.00,238.00" />
+  <poly id="foundry-3-3-1-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1509.67,214.00 1509.67,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-3-1-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1525.00,214.00 1525.00,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-3-1-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1540.33,214.00 1540.33,236.00" lineWidth="0.7" />
+  <poly id="foundry-3-3-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1498.00,277.50 1552.00,277.50 1552.00,312.50 1498.00,312.50" />
+  <poly id="foundry-3-3-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1506.00,278.00 1552.00,278.00 1552.00,304.00 1506.00,304.00" />
+  <poly id="foundry-3-3-2-roof" type="building" color="#B78C46" fill="1" layer="-12" shape="1502.00,282.00 1548.00,282.00 1548.00,308.00 1502.00,308.00" />
+  <poly id="foundry-3-3-2-seam--15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1509.67,284.00 1509.67,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-3-2-seam-0" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1525.00,284.00 1525.00,306.00" lineWidth="0.7" />
+  <poly id="foundry-3-3-2-seam-15.333333333333334" type="roof-seam" color="#C5A27A" fill="0" layer="-11" shape="1540.33,284.00 1540.33,306.00" lineWidth="0.7" />
+  <poly id="block-3-1" type="district-yard" color="#BBA98A" fill="1" layer="-25" shape="1260.00,565.00 1580.00,565.00 1580.00,855.00 1260.00,855.00" />
+  <poly id="market-3-0-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1288.00,627.50 1342.00,627.50 1342.00,662.50 1288.00,662.50" />
+  <poly id="market-3-0-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1296.00,628.00 1342.00,628.00 1342.00,654.00 1296.00,654.00" />
+  <poly id="market-3-0-0-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1292.00,632.00 1338.00,632.00 1338.00,658.00 1292.00,658.00" />
+  <poly id="market-3-0-0-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1292.50,655.00 1306.83,655.00 1306.83,659.00 1292.50,659.00" />
+  <poly id="market-3-0-0-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1307.83,655.00 1322.17,655.00 1322.17,659.00 1307.83,659.00" />
+  <poly id="market-3-0-0-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1323.17,655.00 1337.50,655.00 1337.50,659.00 1323.17,659.00" />
+  <poly id="market-3-0-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1288.00,697.50 1342.00,697.50 1342.00,732.50 1288.00,732.50" />
+  <poly id="market-3-0-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1296.00,698.00 1342.00,698.00 1342.00,724.00 1296.00,724.00" />
+  <poly id="market-3-0-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="1292.00,702.00 1338.00,702.00 1338.00,728.00 1292.00,728.00" />
+  <poly id="market-3-0-1-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1292.50,725.00 1306.83,725.00 1306.83,729.00 1292.50,729.00" />
+  <poly id="market-3-0-1-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1307.83,725.00 1322.17,725.00 1322.17,729.00 1307.83,729.00" />
+  <poly id="market-3-0-1-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1323.17,725.00 1337.50,725.00 1337.50,729.00 1323.17,729.00" />
+  <poly id="market-3-0-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1288.00,767.50 1342.00,767.50 1342.00,802.50 1288.00,802.50" />
+  <poly id="market-3-0-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1296.00,768.00 1342.00,768.00 1342.00,794.00 1296.00,794.00" />
+  <poly id="market-3-0-2-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1292.00,772.00 1338.00,772.00 1338.00,798.00 1292.00,798.00" />
+  <poly id="market-3-0-2-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1292.50,795.00 1306.83,795.00 1306.83,799.00 1292.50,799.00" />
+  <poly id="market-3-0-2-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1307.83,795.00 1322.17,795.00 1322.17,799.00 1307.83,799.00" />
+  <poly id="market-3-0-2-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1323.17,795.00 1337.50,795.00 1337.50,799.00 1323.17,799.00" />
+  <poly id="market-3-1-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1358.00,627.50 1412.00,627.50 1412.00,662.50 1358.00,662.50" />
+  <poly id="market-3-1-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1366.00,628.00 1412.00,628.00 1412.00,654.00 1366.00,654.00" />
+  <poly id="market-3-1-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="1362.00,632.00 1408.00,632.00 1408.00,658.00 1362.00,658.00" />
+  <poly id="market-3-1-0-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1362.50,655.00 1376.83,655.00 1376.83,659.00 1362.50,659.00" />
+  <poly id="market-3-1-0-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1377.83,655.00 1392.17,655.00 1392.17,659.00 1377.83,659.00" />
+  <poly id="market-3-1-0-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1393.17,655.00 1407.50,655.00 1407.50,659.00 1393.17,659.00" />
+  <poly id="market-3-1-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1358.00,697.50 1412.00,697.50 1412.00,732.50 1358.00,732.50" />
+  <poly id="market-3-1-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1366.00,698.00 1412.00,698.00 1412.00,724.00 1366.00,724.00" />
+  <poly id="market-3-1-1-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1362.00,702.00 1408.00,702.00 1408.00,728.00 1362.00,728.00" />
+  <poly id="market-3-1-1-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1362.50,725.00 1376.83,725.00 1376.83,729.00 1362.50,729.00" />
+  <poly id="market-3-1-1-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1377.83,725.00 1392.17,725.00 1392.17,729.00 1377.83,729.00" />
+  <poly id="market-3-1-1-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1393.17,725.00 1407.50,725.00 1407.50,729.00 1393.17,729.00" />
+  <poly id="market-3-1-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1358.00,767.50 1412.00,767.50 1412.00,802.50 1358.00,802.50" />
+  <poly id="market-3-1-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1366.00,768.00 1412.00,768.00 1412.00,794.00 1366.00,794.00" />
+  <poly id="market-3-1-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="1362.00,772.00 1408.00,772.00 1408.00,798.00 1362.00,798.00" />
+  <poly id="market-3-1-2-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1362.50,795.00 1376.83,795.00 1376.83,799.00 1362.50,799.00" />
+  <poly id="market-3-1-2-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1377.83,795.00 1392.17,795.00 1392.17,799.00 1377.83,799.00" />
+  <poly id="market-3-1-2-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1393.17,795.00 1407.50,795.00 1407.50,799.00 1393.17,799.00" />
+  <poly id="market-3-2-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1428.00,627.50 1482.00,627.50 1482.00,662.50 1428.00,662.50" />
+  <poly id="market-3-2-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1436.00,628.00 1482.00,628.00 1482.00,654.00 1436.00,654.00" />
+  <poly id="market-3-2-0-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1432.00,632.00 1478.00,632.00 1478.00,658.00 1432.00,658.00" />
+  <poly id="market-3-2-0-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1432.50,655.00 1446.83,655.00 1446.83,659.00 1432.50,659.00" />
+  <poly id="market-3-2-0-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1447.83,655.00 1462.17,655.00 1462.17,659.00 1447.83,659.00" />
+  <poly id="market-3-2-0-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1463.17,655.00 1477.50,655.00 1477.50,659.00 1463.17,659.00" />
+  <poly id="market-3-2-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1428.00,697.50 1482.00,697.50 1482.00,732.50 1428.00,732.50" />
+  <poly id="market-3-2-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1436.00,698.00 1482.00,698.00 1482.00,724.00 1436.00,724.00" />
+  <poly id="market-3-2-1-roof" type="building" color="#875843" fill="1" layer="-12" shape="1432.00,702.00 1478.00,702.00 1478.00,728.00 1432.00,728.00" />
+  <poly id="market-3-2-1-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1432.50,725.00 1446.83,725.00 1446.83,729.00 1432.50,729.00" />
+  <poly id="market-3-2-1-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1447.83,725.00 1462.17,725.00 1462.17,729.00 1447.83,729.00" />
+  <poly id="market-3-2-1-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1463.17,725.00 1477.50,725.00 1477.50,729.00 1463.17,729.00" />
+  <poly id="market-3-2-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1428.00,767.50 1482.00,767.50 1482.00,802.50 1428.00,802.50" />
+  <poly id="market-3-2-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1436.00,768.00 1482.00,768.00 1482.00,794.00 1436.00,794.00" />
+  <poly id="market-3-2-2-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1432.00,772.00 1478.00,772.00 1478.00,798.00 1432.00,798.00" />
+  <poly id="market-3-2-2-awning--15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1432.50,795.00 1446.83,795.00 1446.83,799.00 1432.50,799.00" />
+  <poly id="market-3-2-2-awning-0" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1447.83,795.00 1462.17,795.00 1462.17,799.00 1447.83,799.00" />
+  <poly id="market-3-2-2-awning-15.333333333333334" type="market-awning" color="#B75D3D" fill="1" layer="-11" shape="1463.17,795.00 1477.50,795.00 1477.50,799.00 1463.17,799.00" />
+  <poly id="market-3-3-0-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1498.00,627.50 1552.00,627.50 1552.00,662.50 1498.00,662.50" />
+  <poly id="market-3-3-0-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1506.00,628.00 1552.00,628.00 1552.00,654.00 1506.00,654.00" />
+  <poly id="market-3-3-0-roof" type="building" color="#875843" fill="1" layer="-12" shape="1502.00,632.00 1548.00,632.00 1548.00,658.00 1502.00,658.00" />
+  <poly id="market-3-3-0-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1502.50,655.00 1516.83,655.00 1516.83,659.00 1502.50,659.00" />
+  <poly id="market-3-3-0-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1517.83,655.00 1532.17,655.00 1532.17,659.00 1517.83,659.00" />
+  <poly id="market-3-3-0-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1533.17,655.00 1547.50,655.00 1547.50,659.00 1533.17,659.00" />
+  <poly id="market-3-3-1-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1498.00,697.50 1552.00,697.50 1552.00,732.50 1498.00,732.50" />
+  <poly id="market-3-3-1-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1506.00,698.00 1552.00,698.00 1552.00,724.00 1506.00,724.00" />
+  <poly id="market-3-3-1-roof" type="building" color="#C18D40" fill="1" layer="-12" shape="1502.00,702.00 1548.00,702.00 1548.00,728.00 1502.00,728.00" />
+  <poly id="market-3-3-1-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1502.50,725.00 1516.83,725.00 1516.83,729.00 1502.50,729.00" />
+  <poly id="market-3-3-1-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1517.83,725.00 1532.17,725.00 1532.17,729.00 1517.83,729.00" />
+  <poly id="market-3-3-1-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1533.17,725.00 1547.50,725.00 1547.50,729.00 1533.17,729.00" />
+  <poly id="market-3-3-2-apron" type="loading-apron" color="#D1C1A2" fill="1" layer="-17" shape="1498.00,767.50 1552.00,767.50 1552.00,802.50 1498.00,802.50" />
+  <poly id="market-3-3-2-shadow" type="roof-shadow" color="#8E7C60" fill="1" layer="-16" shape="1506.00,768.00 1552.00,768.00 1552.00,794.00 1506.00,794.00" />
+  <poly id="market-3-3-2-roof" type="building" color="#875843" fill="1" layer="-12" shape="1502.00,772.00 1548.00,772.00 1548.00,798.00 1502.00,798.00" />
+  <poly id="market-3-3-2-awning--15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1502.50,795.00 1516.83,795.00 1516.83,799.00 1502.50,799.00" />
+  <poly id="market-3-3-2-awning-0" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1517.83,795.00 1532.17,795.00 1532.17,799.00 1517.83,799.00" />
+  <poly id="market-3-3-2-awning-15.333333333333334" type="market-awning" color="#E0AE58" fill="1" layer="-11" shape="1533.17,795.00 1547.50,795.00 1547.50,799.00 1533.17,799.00" />
+  <poly id="seasonal-wash-bed" type="wash" color="#B29D78" fill="1" layer="-21" shape="701.00,100.00 714.00,260.00 705.00,450.00 719.00,650.00 705.00,870.00 748.00,870.00 755.00,650.00 744.00,450.00 754.00,260.00 741.00,100.00" />
+  <poly id="seasonal-wash-water" type="seasonal-water" color="#6F8A83" fill="1" layer="-20" shape="720.00,120.00 731.00,260.00 723.00,450.00 735.00,650.00 723.00,850.00 738.00,850.00 744.00,650.00 735.00,450.00 743.00,260.00 732.00,120.00" />
+  <poly id="viaduct-shadow" type="bridge-shadow" color="#897C65" fill="1" layer="-1" shape="652.00,429.00 964.00,429.00 964.00,453.00 652.00,453.00" />
+  <poly id="viaduct-deck" type="bridge-deck" color="#505352" fill="1" layer="5" shape="650.00,443.50 950.00,443.50 950.00,456.50 650.00,456.50" />
+  <poly id="viaduct-rail-442.8" type="bridge-parapet" color="#E4D3AF" fill="0" layer="7" shape="649.00,442.80 951.00,442.80" lineWidth="1.1" />
+  <poly id="viaduct-post-650-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="649.00,441.30 651.00,441.30 651.00,444.30 649.00,444.30" />
+  <poly id="viaduct-post-670-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="669.00,441.30 671.00,441.30 671.00,444.30 669.00,444.30" />
+  <poly id="viaduct-post-690-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="689.00,441.30 691.00,441.30 691.00,444.30 689.00,444.30" />
+  <poly id="viaduct-post-710-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="709.00,441.30 711.00,441.30 711.00,444.30 709.00,444.30" />
+  <poly id="viaduct-post-730-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="729.00,441.30 731.00,441.30 731.00,444.30 729.00,444.30" />
+  <poly id="viaduct-post-750-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="749.00,441.30 751.00,441.30 751.00,444.30 749.00,444.30" />
+  <poly id="viaduct-post-770-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="769.00,441.30 771.00,441.30 771.00,444.30 769.00,444.30" />
+  <poly id="viaduct-post-790-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="789.00,441.30 791.00,441.30 791.00,444.30 789.00,444.30" />
+  <poly id="viaduct-post-810-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="809.00,441.30 811.00,441.30 811.00,444.30 809.00,444.30" />
+  <poly id="viaduct-post-830-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="829.00,441.30 831.00,441.30 831.00,444.30 829.00,444.30" />
+  <poly id="viaduct-post-850-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="849.00,441.30 851.00,441.30 851.00,444.30 849.00,444.30" />
+  <poly id="viaduct-post-870-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="869.00,441.30 871.00,441.30 871.00,444.30 869.00,444.30" />
+  <poly id="viaduct-post-890-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="889.00,441.30 891.00,441.30 891.00,444.30 889.00,444.30" />
+  <poly id="viaduct-post-910-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="909.00,441.30 911.00,441.30 911.00,444.30 909.00,444.30" />
+  <poly id="viaduct-post-930-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="929.00,441.30 931.00,441.30 931.00,444.30 929.00,444.30" />
+  <poly id="viaduct-post-950-442.8" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="949.00,441.30 951.00,441.30 951.00,444.30 949.00,444.30" />
+  <poly id="viaduct-rail-457.2" type="bridge-parapet" color="#E4D3AF" fill="0" layer="7" shape="649.00,457.20 951.00,457.20" lineWidth="1.1" />
+  <poly id="viaduct-post-650-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="649.00,455.70 651.00,455.70 651.00,458.70 649.00,458.70" />
+  <poly id="viaduct-post-670-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="669.00,455.70 671.00,455.70 671.00,458.70 669.00,458.70" />
+  <poly id="viaduct-post-690-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="689.00,455.70 691.00,455.70 691.00,458.70 689.00,458.70" />
+  <poly id="viaduct-post-710-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="709.00,455.70 711.00,455.70 711.00,458.70 709.00,458.70" />
+  <poly id="viaduct-post-730-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="729.00,455.70 731.00,455.70 731.00,458.70 729.00,458.70" />
+  <poly id="viaduct-post-750-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="749.00,455.70 751.00,455.70 751.00,458.70 749.00,458.70" />
+  <poly id="viaduct-post-770-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="769.00,455.70 771.00,455.70 771.00,458.70 769.00,458.70" />
+  <poly id="viaduct-post-790-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="789.00,455.70 791.00,455.70 791.00,458.70 789.00,458.70" />
+  <poly id="viaduct-post-810-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="809.00,455.70 811.00,455.70 811.00,458.70 809.00,458.70" />
+  <poly id="viaduct-post-830-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="829.00,455.70 831.00,455.70 831.00,458.70 829.00,458.70" />
+  <poly id="viaduct-post-850-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="849.00,455.70 851.00,455.70 851.00,458.70 849.00,458.70" />
+  <poly id="viaduct-post-870-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="869.00,455.70 871.00,455.70 871.00,458.70 869.00,458.70" />
+  <poly id="viaduct-post-890-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="889.00,455.70 891.00,455.70 891.00,458.70 889.00,458.70" />
+  <poly id="viaduct-post-910-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="909.00,455.70 911.00,455.70 911.00,458.70 909.00,458.70" />
+  <poly id="viaduct-post-930-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="929.00,455.70 931.00,455.70 931.00,458.70 929.00,458.70" />
+  <poly id="viaduct-post-950-457.2" type="bridge-post" color="#B58D58" fill="1" layer="8" shape="949.00,455.70 951.00,455.70 951.00,458.70 949.00,458.70" />
+  <poly id="viaduct-joint-650" type="bridge-joint" color="#9E967F" fill="0" layer="6" shape="650.00,443.50 650.00,456.50" lineWidth="0.6" />
+  <poly id="viaduct-joint-950" type="bridge-joint" color="#9E967F" fill="0" layer="6" shape="950.00,443.50 950.00,456.50" lineWidth="0.6" />
+  <poly id="viaduct-centerline" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="650.00,450.00 950.00,450.00" lineWidth="0.2" />
+  <poly id="viaduct-dash-654-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="654.00,446.80 661.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-654-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="654.00,453.20 661.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-672-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="672.00,446.80 679.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-672-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="672.00,453.20 679.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-690-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="690.00,446.80 697.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-690-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="690.00,453.20 697.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-708-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="708.00,446.80 715.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-708-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="708.00,453.20 715.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-726-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="726.00,446.80 733.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-726-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="726.00,453.20 733.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-744-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="744.00,446.80 751.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-744-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="744.00,453.20 751.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-762-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="762.00,446.80 769.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-762-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="762.00,453.20 769.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-780-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="780.00,446.80 787.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-780-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="780.00,453.20 787.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-798-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="798.00,446.80 805.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-798-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="798.00,453.20 805.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-816-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="816.00,446.80 823.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-816-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="816.00,453.20 823.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-834-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="834.00,446.80 841.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-834-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="834.00,453.20 841.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-852-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="852.00,446.80 859.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-852-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="852.00,453.20 859.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-870-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="870.00,446.80 877.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-870-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="870.00,453.20 877.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-888-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="888.00,446.80 895.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-888-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="888.00,453.20 895.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-906-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="906.00,446.80 913.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-906-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="906.00,453.20 913.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-924-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="924.00,446.80 931.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-924-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="924.00,453.20 931.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-dash-942-446.8" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="942.00,446.80 949.00,446.80" lineWidth="0.2" />
+  <poly id="viaduct-dash-942-453.2" type="bridge-marking" color="#E2DAC9" fill="0" layer="6" shape="942.00,453.20 949.00,453.20" lineWidth="0.2" />
+  <poly id="viaduct-pier-660-432" type="bridge-pier" color="#9F947D" fill="1" layer="-2" shape="655.50,427.00 664.50,427.00 664.50,437.00 655.50,437.00" />
+  <poly id="viaduct-pier-660-468" type="bridge-pier" color="#9F947D" fill="1" layer="-2" shape="655.50,463.00 664.50,463.00 664.50,473.00 655.50,473.00" />
+  <poly id="viaduct-pier-940-432" type="bridge-pier" color="#9F947D" fill="1" layer="-2" shape="935.50,427.00 944.50,427.00 944.50,437.00 935.50,437.00" />
+  <poly id="viaduct-pier-940-468" type="bridge-pier" color="#9F947D" fill="1" layer="-2" shape="935.50,463.00 944.50,463.00 944.50,473.00 935.50,473.00" />
+  <poi id="district-sign-foundry" x="230" y="-165" type="district-sign" color="#FFFFFF" layer="20" name="Foundry Works" width="330" height="55" imgFile="assets/sign_foundry.png" />
+  <poi id="district-sign-market" x="2050" y="1050" type="district-sign" color="#FFFFFF" layer="20" name="Foundry Market" width="620" height="95" imgFile="assets/sign_market.png" />
+  <poi id="viaduct-title" x="800" y="490" type="bridge-label" name="FOUNDRY VIADUCT +8m" color="#A77D42" layer="12" width="2" height="2" />
+  <poly id="hazard_marker_pothole" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="220.41,-26.16 220.23,-24.61 219.71,-23.13 218.88,-21.80 217.77,-20.69 216.45,-19.86 214.97,-19.34 213.41,-19.16 211.85,-19.34 210.37,-19.86 209.04,-20.69 207.94,-21.80 207.10,-23.13 206.58,-24.61 206.41,-26.16 206.58,-27.72 207.10,-29.20 207.94,-30.53 209.04,-31.64 210.37,-32.47 211.85,-32.99 213.41,-33.16 214.97,-32.99 216.45,-32.47 217.77,-31.64 218.88,-30.53 219.71,-29.20 220.23,-27.72" lineWidth="0.08" />
+  <poi id="hazard_pothole" x="213.408" y="-26.163" type="scenario_pothole" color="#FFFFFF" layer="15" name="01 POTHOLE" width="1.1" height="0.9" angle="95.71" imgFile="assets/sample_pothole.png" />
+  <poly id="hazard_marker_construction" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="1377.25,80.68 1377.07,82.24 1376.56,83.72 1375.72,85.05 1374.61,86.16 1373.29,86.99 1371.81,87.51 1370.25,87.68 1368.69,87.51 1367.21,86.99 1365.89,86.16 1364.78,85.05 1363.94,83.72 1363.43,82.24 1363.25,80.68 1363.43,79.13 1363.94,77.65 1364.78,76.32 1365.89,75.21 1367.21,74.38 1368.69,73.86 1370.25,73.68 1371.81,73.86 1373.29,74.38 1374.61,75.21 1375.72,76.32 1376.56,77.65 1377.07,79.13" lineWidth="0.08" />
+  <poi id="hazard_construction" x="1370.25" y="80.683" type="scenario_construction" color="#FFFFFF" layer="15" name="02 CONSTRUCTION" width="3.0" height="6.0" angle="81.47" imgFile="assets/sample_construction.png" />
+  <poly id="hazard_marker_accident_obstacle" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="1626.55,697.70 1626.37,699.25 1625.86,700.73 1625.02,702.06 1623.91,703.17 1622.59,704.00 1621.11,704.52 1619.55,704.70 1617.99,704.52 1616.51,704.00 1615.18,703.17 1614.08,702.06 1613.24,700.73 1612.72,699.25 1612.55,697.70 1612.72,696.14 1613.24,694.66 1614.08,693.33 1615.18,692.22 1616.51,691.39 1617.99,690.87 1619.55,690.70 1621.11,690.87 1622.59,691.39 1623.91,692.22 1625.02,693.33 1625.86,694.66 1626.37,696.14" lineWidth="0.08" />
+  <poi id="hazard_accident_obstacle" x="1619.549" y="697.696" type="scenario_accident_obstacle" color="#FFFFFF" layer="15" name="03 ACCIDENT_OBSTACLE" width="1.8" height="4.3" angle="348.23" imgFile="assets/sample_incident_car.png" />
+  <poly id="hazard_marker_pothole_02" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="557.16,983.55 556.99,985.11 556.47,986.59 555.63,987.91 554.53,989.02 553.20,989.86 551.72,990.37 550.16,990.55 548.60,990.37 547.12,989.86 545.80,989.02 544.69,987.91 543.86,986.59 543.34,985.11 543.16,983.55 543.34,981.99 543.86,980.51 544.69,979.19 545.80,978.08 547.12,977.24 548.60,976.73 550.16,976.55 551.72,976.73 553.20,977.24 554.53,978.08 555.63,979.19 556.47,980.51 556.99,981.99" lineWidth="0.08" />
+  <poi id="hazard_pothole_02" x="550.162" y="983.55" type="scenario_pothole" color="#FFFFFF" layer="15" name="04 POTHOLE" width="1.1" height="0.9" angle="274.29" imgFile="assets/sample_pothole.png" />
+  <poly id="hazard_marker_construction_02" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="-26.08,718.57 -26.25,720.13 -26.77,721.61 -27.61,722.93 -28.71,724.04 -30.04,724.88 -31.52,725.39 -33.08,725.57 -34.64,725.39 -36.12,724.88 -37.44,724.04 -38.55,722.93 -39.38,721.61 -39.90,720.13 -40.08,718.57 -39.90,717.01 -39.38,715.53 -38.55,714.20 -37.44,713.10 -36.12,712.26 -34.64,711.74 -33.08,711.57 -31.52,711.74 -30.04,712.26 -28.71,713.10 -27.61,714.20 -26.77,715.53 -26.25,717.01" lineWidth="0.08" />
+  <poi id="hazard_construction_02" x="-33.078" y="718.569" type="scenario_construction" color="#FFFFFF" layer="15" name="05 CONSTRUCTION" width="3.0" height="6.0" angle="188.84" imgFile="assets/sample_construction.png" />
+  <poly id="hazard_marker_accident_obstacle_02" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="-29.09,200.78 -29.26,202.34 -29.78,203.82 -30.62,205.15 -31.72,206.25 -33.05,207.09 -34.53,207.61 -36.09,207.78 -37.65,207.61 -39.13,207.09 -40.45,206.25 -41.56,205.15 -42.40,203.82 -42.91,202.34 -43.09,200.78 -42.91,199.22 -42.40,197.74 -41.56,196.42 -40.45,195.31 -39.13,194.48 -37.65,193.96 -36.09,193.78 -34.53,193.96 -33.05,194.48 -31.72,195.31 -30.62,196.42 -29.78,197.74 -29.26,199.22" lineWidth="0.08" />
+  <poi id="hazard_accident_obstacle_02" x="-36.089" y="200.782" type="scenario_accident_obstacle" color="#FFFFFF" layer="15" name="06 ACCIDENT_OBSTACLE" width="1.8" height="4.3" angle="171.16" imgFile="assets/sample_incident_car.png" />
+  <poly id="hazard_marker_pothole_03" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="411.80,171.07 411.62,172.63 411.11,174.11 410.27,175.43 409.16,176.54 407.84,177.38 406.36,177.89 404.80,178.07 403.24,177.89 401.76,177.38 400.44,176.54 399.33,175.43 398.49,174.11 397.98,172.63 397.80,171.07 397.98,169.51 398.49,168.03 399.33,166.71 400.44,165.60 401.76,164.76 403.24,164.25 404.80,164.07 406.36,164.25 407.84,164.76 409.16,165.60 410.27,166.71 411.11,168.03 411.62,169.51" lineWidth="0.08" />
+  <poi id="hazard_pothole_03" x="404.8" y="171.07" type="scenario_pothole" color="#FFFFFF" layer="15" name="07 POTHOLE" width="1.1" height="0.9" angle="0.0" imgFile="assets/sample_pothole.png" />
+  <poly id="hazard_marker_construction_03" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="1067.00,445.20 1066.82,446.76 1066.31,448.24 1065.47,449.56 1064.36,450.67 1063.04,451.51 1061.56,452.02 1060.00,452.20 1058.44,452.02 1056.96,451.51 1055.64,450.67 1054.53,449.56 1053.69,448.24 1053.18,446.76 1053.00,445.20 1053.18,443.64 1053.69,442.16 1054.53,440.84 1055.64,439.73 1056.96,438.89 1058.44,438.38 1060.00,438.20 1061.56,438.38 1063.04,438.89 1064.36,439.73 1065.47,440.84 1066.31,442.16 1066.82,443.64" lineWidth="0.08" />
+  <poi id="hazard_construction_03" x="1060.0" y="445.2" type="scenario_construction" color="#FFFFFF" layer="15" name="08 CONSTRUCTION" width="3.0" height="6.0" angle="90.0" imgFile="assets/sample_construction.png" />
+  <poly id="hazard_marker_accident_obstacle_03" type="hazard-locator" color="#B79555" fill="0" layer="3" shape="811.80,670.00 811.62,671.56 811.11,673.04 810.27,674.36 809.16,675.47 807.84,676.31 806.36,676.82 804.80,677.00 803.24,676.82 801.76,676.31 800.44,675.47 799.33,674.36 798.49,673.04 797.98,671.56 797.80,670.00 797.98,668.44 798.49,666.96 799.33,665.64 800.44,664.53 801.76,663.69 803.24,663.18 804.80,663.00 806.36,663.18 807.84,663.69 809.16,664.53 810.27,665.64 811.11,666.96 811.62,668.44" lineWidth="0.08" />
+  <poi id="hazard_accident_obstacle_03" x="804.8" y="670.0" type="scenario_accident_obstacle" color="#FFFFFF" layer="15" name="09 ACCIDENT_OBSTACLE" width="1.8" height="4.3" angle="0.0" imgFile="assets/sample_incident_car.png" />
+  <poi id="RSU_SOUTH_GATE" x="775" y="-22" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU_SOUTH_GATE" width="18" height="14" imgFile="assets/rsu_mast.png" />
+  <poly id="rsu-pad-RSU_SOUTH_GATE" type="rsu-plinth" color="#AA9876" fill="1" layer="-10" shape="788.00,-22.00 787.67,-19.11 786.71,-16.36 785.16,-13.89 783.11,-11.84 780.64,-10.29 777.89,-9.33 775.00,-9.00 772.11,-9.33 769.36,-10.29 766.89,-11.84 764.84,-13.89 763.29,-16.36 762.33,-19.11 762.00,-22.00 762.33,-24.89 763.29,-27.64 764.84,-30.11 766.89,-32.16 769.36,-33.71 772.11,-34.67 775.00,-35.00 777.89,-34.67 780.64,-33.71 783.11,-32.16 785.16,-30.11 786.71,-27.64 787.67,-24.89" />
+  <poi id="RSU_FOUNDRY_EAST" x="1220" y="39" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU_FOUNDRY_EAST" width="18" height="14" imgFile="assets/rsu_mast.png" />
+  <poly id="rsu-pad-RSU_FOUNDRY_EAST" type="rsu-plinth" color="#AA9876" fill="1" layer="-10" shape="1233.00,39.00 1232.67,41.89 1231.71,44.64 1230.16,47.11 1228.11,49.16 1225.64,50.71 1222.89,51.67 1220.00,52.00 1217.11,51.67 1214.36,50.71 1211.89,49.16 1209.84,47.11 1208.29,44.64 1207.33,41.89 1207.00,39.00 1207.33,36.11 1208.29,33.36 1209.84,30.89 1211.89,28.84 1214.36,27.29 1217.11,26.33 1220.00,26.00 1222.89,26.33 1225.64,27.29 1228.11,28.84 1230.16,30.89 1231.71,33.36 1232.67,36.11" />
+  <poi id="RSU_EAST_GATE" x="1683" y="480" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU_EAST_GATE" width="18" height="14" imgFile="assets/rsu_mast.png" />
+  <poly id="rsu-pad-RSU_EAST_GATE" type="rsu-plinth" color="#AA9876" fill="1" layer="-10" shape="1696.00,480.00 1695.67,482.89 1694.71,485.64 1693.16,488.11 1691.11,490.16 1688.64,491.71 1685.89,492.67 1683.00,493.00 1680.11,492.67 1677.36,491.71 1674.89,490.16 1672.84,488.11 1671.29,485.64 1670.33,482.89 1670.00,480.00 1670.33,477.11 1671.29,474.36 1672.84,471.89 1674.89,469.84 1677.36,468.29 1680.11,467.33 1683.00,467.00 1685.89,467.33 1688.64,468.29 1691.11,469.84 1693.16,471.89 1694.71,474.36 1695.67,477.11" />
+  <poi id="RSU_NORTH_GATE" x="820" y="983" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU_NORTH_GATE" width="18" height="14" imgFile="assets/rsu_mast.png" />
+  <poly id="rsu-pad-RSU_NORTH_GATE" type="rsu-plinth" color="#AA9876" fill="1" layer="-10" shape="833.00,983.00 832.67,985.89 831.71,988.64 830.16,991.11 828.11,993.16 825.64,994.71 822.89,995.67 820.00,996.00 817.11,995.67 814.36,994.71 811.89,993.16 809.84,991.11 808.29,988.64 807.33,985.89 807.00,983.00 807.33,980.11 808.29,977.36 809.84,974.89 811.89,972.84 814.36,971.29 817.11,970.33 820.00,970.00 822.89,970.33 825.64,971.29 828.11,972.84 830.16,974.89 831.71,977.36 832.67,980.11" />
+  <poi id="RSU_MARKET_WEST" x="380" y="1014" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU_MARKET_WEST" width="18" height="14" imgFile="assets/rsu_mast.png" />
+  <poly id="rsu-pad-RSU_MARKET_WEST" type="rsu-plinth" color="#AA9876" fill="1" layer="-10" shape="393.00,1014.00 392.67,1016.89 391.71,1019.64 390.16,1022.11 388.11,1024.16 385.64,1025.71 382.89,1026.67 380.00,1027.00 377.11,1026.67 374.36,1025.71 371.89,1024.16 369.84,1022.11 368.29,1019.64 367.33,1016.89 367.00,1014.00 367.33,1011.11 368.29,1008.36 369.84,1005.89 371.89,1003.84 374.36,1002.29 377.11,1001.33 380.00,1001.00 382.89,1001.33 385.64,1002.29 388.11,1003.84 390.16,1005.89 391.71,1008.36 392.67,1011.11" />
+  <poi id="RSU_WEST_GATE" x="-93" y="450" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU_WEST_GATE" width="18" height="14" imgFile="assets/rsu_mast.png" />
+  <poly id="rsu-pad-RSU_WEST_GATE" type="rsu-plinth" color="#AA9876" fill="1" layer="-10" shape="-80.00,450.00 -80.33,452.89 -81.29,455.64 -82.84,458.11 -84.89,460.16 -87.36,461.71 -90.11,462.67 -93.00,463.00 -95.89,462.67 -98.64,461.71 -101.11,460.16 -103.16,458.11 -104.71,455.64 -105.67,452.89 -106.00,450.00 -105.67,447.11 -104.71,444.36 -103.16,441.89 -101.11,439.84 -98.64,438.29 -95.89,437.33 -93.00,437.00 -90.11,437.33 -87.36,438.29 -84.89,439.84 -82.84,441.89 -81.29,444.36 -80.33,447.11" />
+  <poi id="RSU_BRIDGE_WEST" x="380" y="475" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU_BRIDGE_WEST" width="18" height="14" imgFile="assets/rsu_mast.png" />
+  <poly id="rsu-pad-RSU_BRIDGE_WEST" type="rsu-plinth" color="#AA9876" fill="1" layer="-10" shape="393.00,475.00 392.67,477.89 391.71,480.64 390.16,483.11 388.11,485.16 385.64,486.71 382.89,487.67 380.00,488.00 377.11,487.67 374.36,486.71 371.89,485.16 369.84,483.11 368.29,480.64 367.33,477.89 367.00,475.00 367.33,472.11 368.29,469.36 369.84,466.89 371.89,464.84 374.36,463.29 377.11,462.33 380.00,462.00 382.89,462.33 385.64,463.29 388.11,464.84 390.16,466.89 391.71,469.36 392.67,472.11" />
+  <poi id="RSU_BRIDGE_EAST" x="1220" y="475" type="roadside_unit_fixture" color="#FFFFFF" layer="14" name="RSU_BRIDGE_EAST" width="18" height="14" imgFile="assets/rsu_mast.png" />
+  <poly id="rsu-pad-RSU_BRIDGE_EAST" type="rsu-plinth" color="#AA9876" fill="1" layer="-10" shape="1233.00,475.00 1232.67,477.89 1231.71,480.64 1230.16,483.11 1228.11,485.16 1225.64,486.71 1222.89,487.67 1220.00,488.00 1217.11,487.67 1214.36,486.71 1211.89,485.16 1209.84,483.11 1208.29,480.64 1207.33,477.89 1207.00,475.00 1207.33,472.11 1208.29,469.36 1209.84,466.89 1211.89,464.84 1214.36,463.29 1217.11,462.33 1220.00,462.00 1222.89,462.33 1225.64,463.29 1228.11,464.84 1230.16,466.89 1231.71,469.36 1232.67,472.11" />
+  <poi id="olive-tree-00" x="80" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-01" x="80" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-02" x="160" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-03" x="160" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-04" x="240" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-05" x="240" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-06" x="320" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-07" x="320" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-10" x="480" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-11" x="480" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-12" x="560" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-13" x="560" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-24" x="1040" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-25" x="1040" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-26" x="1120" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-27" x="1120" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-30" x="1280" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-31" x="1280" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-32" x="1360" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-33" x="1360" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-34" x="1440" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-35" x="1440" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-36" x="1520" y="405" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+  <poi id="olive-tree-37" x="1520" y="495" type="olive_tree" color="#FFFFFF" layer="-8" name="" width="7" height="6" imgFile="assets/tree_symbol.png" />
+</additional>

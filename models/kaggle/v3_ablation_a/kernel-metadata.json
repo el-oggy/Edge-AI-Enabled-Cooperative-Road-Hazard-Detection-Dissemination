@@ -1,0 +1,15 @@
+{
+  "id": "adarshswarupmaharana/pfpd-v3-ablation-a-freeze-8-backbone",
+  "title": "PFPD v3 Ablation A - Freeze 8 Backbone",
+  "code_file": "train_unified_yolo11n_v3_ablation_a.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "adarshswarupmaharana/pfpd-finetuning-dataset-v3",
+    "adarshswarupmaharana/pfpd-unified-yolo11n-production-model"
+  ]
+}

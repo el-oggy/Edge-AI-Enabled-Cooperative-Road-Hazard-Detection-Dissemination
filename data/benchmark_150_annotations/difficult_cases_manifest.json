@@ -1,0 +1,79 @@
+[
+  {
+    "image": "pothole_water_01.jpg",
+    "category": "potholes/water",
+    "reason": "Water-Filled Pothole: Specular cloud reflection inside puddle cavity",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_01_annotated_gt.jpg",
+    "box_count": 1
+  },
+  {
+    "image": "pothole_water_05.jpg",
+    "category": "potholes/water",
+    "reason": "Water-Filled Pothole: Specular cloud reflection inside puddle cavity",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_05_annotated_gt.jpg",
+    "box_count": 2
+  },
+  {
+    "image": "const_sign_18.jpg",
+    "category": "construction/with_symbols",
+    "reason": "Construction Signage: Distant low-profile diamond sign with high background clutter",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_18_annotated_gt.jpg",
+    "box_count": 3
+  },
+  {
+    "image": "const_sign_20.jpg",
+    "category": "construction/with_symbols",
+    "reason": "Construction Signage: Distant low-profile diamond sign with high background clutter",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_20_annotated_gt.jpg",
+    "box_count": 4
+  },
+  {
+    "image": "const_work_25.jpg",
+    "category": "construction/without_symbols",
+    "reason": "Workzone: Heavy paving roller labeled as hazard while worker is strictly excluded",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_work_25_annotated_gt.jpg",
+    "box_count": 1
+  },
+  {
+    "image": "const_workers_01.jpg",
+    "category": "construction/without_symbols",
+    "reason": "Workzone: Heavy paving roller labeled as hazard while worker is strictly excluded",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_01_annotated_gt.jpg",
+    "box_count": 1
+  },
+  {
+    "image": "fallen_tree_04.jpg",
+    "category": "accidents_obstacles/fallen_trees",
+    "reason": "Fallen Tree: Extensive foliage canopy vs roadway-blocking trunk boundary",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_04_annotated_gt.jpg",
+    "box_count": 1
+  },
+  {
+    "image": "fallen_tree_05.jpg",
+    "category": "accidents_obstacles/fallen_trees",
+    "reason": "Fallen Tree: Extensive foliage canopy vs roadway-blocking trunk boundary",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_05_annotated_gt.jpg",
+    "box_count": 1
+  },
+  {
+    "image": "fallen_tree_07.jpg",
+    "category": "accidents_obstacles/fallen_trees",
+    "reason": "Fallen Tree: Extensive foliage canopy vs roadway-blocking trunk boundary",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_07_annotated_gt.jpg",
+    "box_count": 1
+  },
+  {
+    "image": "boulder_rockfall_01.jpg",
+    "category": "accidents_obstacles/boulders",
+    "reason": "Rockfall: Multi-fragment rock scree on asphalt requiring cluster bounding",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_01_annotated_gt.jpg",
+    "box_count": 1
+  },
+  {
+    "image": "boulder_rockfall_03.jpg",
+    "category": "accidents_obstacles/boulders",
+    "reason": "Rockfall: Multi-fragment rock scree on asphalt requiring cluster bounding",
+    "rev_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_03_annotated_gt.jpg",
+    "box_count": 1
+  }
+]

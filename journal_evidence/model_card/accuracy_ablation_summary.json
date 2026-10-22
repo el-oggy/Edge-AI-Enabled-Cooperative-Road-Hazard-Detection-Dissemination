@@ -1,0 +1,30 @@
+{
+  "scientific_context": "Post-Fine-Tuning Failure Analysis & Freezing Rationale",
+  "comparison": {
+    "baseline_frozen_option_c": {
+      "name": "Original 50-Epoch Unified YOLO11n Baseline (FROZEN)",
+      "pothole_recall": 0.7022,
+      "construction_recall": 0.6328,
+      "accident_obstacle_recall": 0.6602,
+      "overall_mAP50": 0.7406,
+      "decision": "ACCEPTED FOR PRODUCTION DEPLOYMENT"
+    },
+    "ablation_a_balanced_v3": {
+      "name": "Ablation A: 8-Epoch Balanced Fine-Tuning Run",
+      "pothole_recall": 0.741,
+      "construction_recall": 0.552,
+      "accident_obstacle_recall": 0.598,
+      "overall_mAP50": 0.708,
+      "decision": "REJECTED: Catastrophic forgetting in construction (-8.1%) and accident/obstacle (-6.2%)"
+    },
+    "ablation_b_fallen_tree_heavy": {
+      "name": "Ablation B: 8-Epoch Fallen-Tree Biased Run",
+      "pothole_recall": 0.762,
+      "construction_recall": 0.521,
+      "accident_obstacle_recall": 0.541,
+      "overall_mAP50": 0.684,
+      "decision": "REJECTED: Severe feature collapse; accident/obstacle recall collapsed by -11.9%"
+    }
+  },
+  "core_conclusion": "Freezing Option C retains optimal generalisation across all three hazards without regression."
+}

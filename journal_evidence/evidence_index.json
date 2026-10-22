@@ -1,0 +1,281 @@
+{
+  "index_version": "1.0.0",
+  "project": "PFPD-II (Pothole and Flooded-Road Hazard Detection)",
+  "milestone": "Stage 8 Final Evidence Freeze & Journal Handover",
+  "last_updated": "2026-10-21T04:45:00+05:30",
+  "frozen_baseline_decision": "Option C Approved: Unified YOLO11n 50-Epoch Model Retained",
+  "claims": [
+    {
+      "claim_id": "CLAIM-01",
+      "category": "Model Architecture & Checkpoint",
+      "statement": "Frozen production model PyTorch checkpoint SHA-256",
+      "value": "E73ED9C2D2632E72FB3E025C50EFB4AE441DD8FB6FDD7A47A9CA249E7B03EC69",
+      "unit": "SHA-256 hex string",
+      "source_file": "journal_evidence/model_card/weights/unified_yolo11n_best.pt",
+      "source_script": "models/local_training/scripts/train_yolo.py",
+      "timestamp": "2026-10-20T18:20:00+05:30",
+      "environment": "Tesla T4 (CUDA 12.8, PyTorch 2.5)",
+      "verification_command": "Get-FileHash journal_evidence/model_card/weights/unified_yolo11n_best.pt"
+    },
+    {
+      "claim_id": "CLAIM-02",
+      "category": "Model Architecture & Checkpoint",
+      "statement": "Frozen production model MNN INT8 runtime SHA-256",
+      "value": "227cbef0a78d11f6d445167600a57cd0dec25a6e1d7562b9149c4e52b2ecc8ea",
+      "unit": "SHA-256 hex string",
+      "source_file": "journal_evidence/model_card/weights/unified_yolo11n_384_int8.mnn",
+      "source_script": "models/local_training/scripts/quantize_int8.py",
+      "timestamp": "2026-10-20T18:25:00+05:30",
+      "environment": "Raspberry Pi 5 / MNN 2.9.0",
+      "verification_command": "Get-FileHash journal_evidence/model_card/weights/unified_yolo11n_384_int8.mnn"
+    },
+    {
+      "claim_id": "CLAIM-03",
+      "category": "Model Size & Parameters",
+      "statement": "Model parameter count and INT8 quantized file size",
+      "value": {
+        "parameters_million": 2.58,
+        "file_size_mb": 2.81,
+        "file_size_bytes": 2807924
+      },
+      "unit": "M params / MB / bytes",
+      "source_file": "journal_evidence/model_card/model_card.json",
+      "source_script": "models/production_training_manifest.json",
+      "timestamp": "2026-10-20T18:25:00+05:30",
+      "environment": "Host build environment"
+    },
+    {
+      "claim_id": "CLAIM-04",
+      "category": "Detection Accuracy (Held-Out Test Set)",
+      "statement": "Overall test set mAP50, mAP50-95, Precision, and Recall",
+      "value": {
+        "mAP50": 0.7406,
+        "mAP50_95": 0.4658,
+        "precision": 0.7858,
+        "recall": 0.6651
+      },
+      "unit": "Normalized ratio (0.0 to 1.0)",
+      "source_file": "journal_evidence/model_card/production_training_manifest.json",
+      "source_script": "models/local_training/scripts/train_yolo.py",
+      "timestamp": "2026-10-20T18:20:00+05:30",
+      "environment": "1,450 held-out test images evaluated on Tesla T4"
+    },
+    {
+      "claim_id": "CLAIM-05",
+      "category": "Detection Accuracy (Per-Class Recall)",
+      "statement": "Per-class test set recall across the three hazard categories",
+      "value": {
+        "pothole": 0.7022,
+        "construction_hazard": 0.6328,
+        "road_accident_obstacle": 0.6602
+      },
+      "unit": "Recall ratio",
+      "source_file": "journal_evidence/model_card/production_training_manifest.json",
+      "source_script": "models/local_training/scripts/train_yolo.py",
+      "timestamp": "2026-10-20T18:20:00+05:30",
+      "environment": "Tesla T4 / 1,450 test images"
+    },
+    {
+      "claim_id": "CLAIM-06",
+      "category": "Ablation Comparison",
+      "statement": "Fine-tuning caused recall regression in Class 1 and Class 2, justifying Option C",
+      "value": {
+        "ablation_a_construction_drop": -0.0808,
+        "ablation_a_accident_drop": -0.0622,
+        "ablation_b_accident_drop": -0.1192
+      },
+      "unit": "Absolute recall difference compared to baseline",
+      "source_file": "journal_evidence/model_card/accuracy_ablation_summary.json",
+      "source_script": "scratch/audit_v3_ablation_results.py",
+      "timestamp": "2026-10-20T20:56:00+05:30",
+      "environment": "Kaggle GPU P100 / Held-out test set"
+    },
+    {
+      "claim_id": "CLAIM-07",
+      "category": "Edge Hardware Throughput (Sustained)",
+      "statement": "Sustained wall-clock throughput on physical Raspberry Pi 5 over 10 minutes",
+      "value": 28.75,
+      "unit": "Frames Per Second (FPS)",
+      "source_file": "journal_evidence/edge_telemetry/sustained_realtime_pi5_10min.json",
+      "source_script": "journal_evidence/reproducible_scripts/run_realtime_sustained_benchmark_pi.py",
+      "timestamp": "2026-10-20T20:02:00+05:30",
+      "environment": "Raspberry Pi 5 (Quad Cortex-A76 @ 2.4 GHz, 2 CPU threads, active cooling)",
+      "verification_command": "Get-Content journal_evidence/edge_telemetry/sustained_realtime_pi5_10min.json | Select-String wall_clock_sustained_fps"
+    },
+    {
+      "claim_id": "CLAIM-08",
+      "category": "Edge Hardware Thermal & Throttling",
+      "statement": "Zero thermal or voltage throttling during sustained 10-minute real-time load",
+      "value": {
+        "throttled_register": "0x0",
+        "equilibrium_temp_c": 65.3,
+        "peak_temp_c": 68.6
+      },
+      "unit": "Hex register / Celsius",
+      "source_file": "journal_evidence/edge_telemetry/sustained_realtime_pi5_10min.json",
+      "source_script": "journal_evidence/reproducible_scripts/run_realtime_sustained_benchmark_pi.py",
+      "timestamp": "2026-10-20T20:02:00+05:30",
+      "environment": "Raspberry Pi 5 / vcgencmd get_throttled"
+    },
+    {
+      "claim_id": "CLAIM-09",
+      "category": "Edge Latency Breakdown (Sustained)",
+      "statement": "Pure neural inference latency vs. end-to-end pipeline latency on Pi 5",
+      "value": {
+        "pure_inference_mean_ms": 31.94,
+        "end_to_end_mean_ms": 34.36,
+        "deadline_miss_rate_pct": 0.01
+      },
+      "unit": "Milliseconds / Percentage",
+      "source_file": "journal_evidence/edge_telemetry/sustained_realtime_pi5_10min.json",
+      "source_script": "journal_evidence/reproducible_scripts/run_realtime_sustained_benchmark_pi.py",
+      "timestamp": "2026-10-20T20:02:00+05:30",
+      "environment": "Raspberry Pi 5 / 17,251 frames processed"
+    },
+    {
+      "claim_id": "CLAIM-10",
+      "category": "Edge Telemetry Burst Accounting (Stage 8)",
+      "statement": "15 frames in 0.572s generated exactly 87 UDP alert packets across 13 unique tracks",
+      "value": {
+        "elapsed_seconds": 0.572,
+        "total_packets": 87,
+        "unique_event_tracks": 13,
+        "new_hazard_confirmations": 13,
+        "repeat_track_updates": 74,
+        "pothole_alerts": 77,
+        "construction_alerts": 7,
+        "accident_alerts": 3
+      },
+      "unit": "Counts and seconds",
+      "source_file": "journal_evidence/edge_telemetry/pi_edge_stage8_run.json",
+      "source_script": "journal_evidence/reproducible_scripts/run_actual_perception_to_warning_pipeline_pi.py",
+      "timestamp": "2026-10-21T04:12:30+05:30",
+      "environment": "Raspberry Pi 5 (192.168.1.46) -> PC (192.168.1.48:5005)",
+      "verification_command": "Get-Content journal_evidence/edge_telemetry/pi_edge_stage8_run.json | Select-String hazards_confirmed"
+    },
+    {
+      "claim_id": "CLAIM-11",
+      "category": "Multi-RSU Coverage (Territorial)",
+      "statement": "Roadway centerline physical territorial coverage in 4-RSU vs 8-RSU",
+      "value": {
+        "core_4_rsu_pct": 67.8,
+        "expanded_8_rsu_pct": 91.1,
+        "delta_points": 23.3
+      },
+      "unit": "Percentage of total 10.68 km road network",
+      "source_file": "journal_evidence/v2x_simulation/comparison_4rsu_vs_8rsu.json",
+      "source_script": "journal_evidence/reproducible_scripts/rsu_network_mesh.py",
+      "timestamp": "2026-10-21T04:17:00+05:30",
+      "environment": "SUMO 1.20+ / 10.68 km City Network"
+    },
+    {
+      "claim_id": "CLAIM-12",
+      "category": "Multi-RSU Coverage (Traffic-Weighted)",
+      "statement": "Traffic-weighted coverage (vehicle-seconds in coverage / total vehicle-seconds)",
+      "value": {
+        "core_4_rsu_pct": 88.37,
+        "expanded_8_rsu_pct": 97.94,
+        "delta_points": 9.57
+      },
+      "unit": "Percentage of cumulative vehicular travel time",
+      "source_file": "journal_evidence/v2x_simulation/comparison_4rsu_vs_8rsu.json",
+      "source_script": "journal_evidence/reproducible_scripts/run_stage8_evaluation_suite.py",
+      "timestamp": "2026-10-21T04:17:00+05:30",
+      "environment": "500 simulation steps / 77 unique vehicles"
+    },
+    {
+      "claim_id": "CLAIM-13",
+      "category": "Vehicular Ingestion Coverage",
+      "statement": "76 of 77 active vehicles entered RSU coverage (100% of municipal traffic)",
+      "value": {
+        "covered_vehicles": 76,
+        "total_vehicles": 77,
+        "municipal_coverage_pct": 100.0
+      },
+      "unit": "Vehicles / Percentage",
+      "source_file": "journal_evidence/v2x_simulation/comparison_4rsu_vs_8rsu.json",
+      "source_script": "journal_evidence/reproducible_scripts/run_stage8_evaluation_suite.py",
+      "timestamp": "2026-10-21T04:17:00+05:30",
+      "environment": "SUMO 5.0 km Urban Network"
+    },
+    {
+      "claim_id": "CLAIM-14",
+      "category": "Inter-RSU Backhaul Forwarding",
+      "statement": "Backhaul forwarding count increased from 48 to 62 forwards (+29.17%)",
+      "value": {
+        "core_4_rsu_forwards": 48,
+        "expanded_8_rsu_forwards": 62,
+        "delta_pct": 29.17
+      },
+      "unit": "Packet forward events / Percentage delta",
+      "source_file": "journal_evidence/v2x_simulation/comparison_4rsu_vs_8rsu.json",
+      "source_script": "journal_evidence/reproducible_scripts/run_stage8_evaluation_suite.py",
+      "timestamp": "2026-10-21T04:17:00+05:30",
+      "environment": "Standardized 500-step evaluation run"
+    },
+    {
+      "claim_id": "CLAIM-15",
+      "category": "Sustained High Traffic Density",
+      "statement": "Continuous traffic density of >= 50 active vehicles maintained for 20.2 seconds",
+      "value": {
+        "start_sim_t_s": 29.8,
+        "end_sim_t_s": 50.0,
+        "continuous_duration_s": 20.2,
+        "peak_vehicles": 77,
+        "deadlocks_or_collisions": 0
+      },
+      "unit": "Seconds / Vehicle count",
+      "source_file": "journal_evidence/v2x_simulation/sustained_traffic_density_timeseries.json",
+      "source_script": "journal_evidence/reproducible_scripts/run_stage8_evaluation_suite.py",
+      "timestamp": "2026-10-21T04:17:00+05:30",
+      "environment": "SUMO TraCI simulation"
+    },
+    {
+      "claim_id": "CLAIM-16",
+      "category": "Dynamic Arterial Rerouting",
+      "statement": "11 inbound vehicles approaching blocked arterial executed collision-free detours",
+      "value": {
+        "vehicles_rerouted": 11,
+        "detour_success_rate_pct": 100.0
+      },
+      "unit": "Vehicles / Percentage",
+      "source_file": "journal_evidence/v2x_simulation/stage8_expanded_8_rsu_run.json",
+      "source_script": "journal_evidence/reproducible_scripts/rsu_network_mesh.py",
+      "timestamp": "2026-10-21T04:14:00+05:30",
+      "environment": "TraCI dynamic detour via north bypass"
+    },
+    {
+      "claim_id": "CLAIM-17",
+      "category": "Demonstration Video Specifications",
+      "statement": "High-definition 16.0s video with 239 frames, zero repeated frames, 372.3 KB",
+      "value": {
+        "duration_s": 15.933,
+        "frame_count": 239,
+        "resolution": "1280x720",
+        "frame_rate": 15.0,
+        "file_size_bytes": 372324,
+        "repeated_static_frames_pct": 0.0
+      },
+      "unit": "Seconds / Frames / Pixels / Bytes",
+      "source_file": "journal_evidence/demonstration_media/video_technical_audit.json",
+      "source_script": "journal_evidence/reproducible_scripts/generate_stage8_demonstration_video.py",
+      "timestamp": "2026-10-21T04:28:00+05:30",
+      "environment": "Eclipse SUMO-GUI TraCI + Pillow HUD + FFmpeg H.264",
+      "verification_command": "ffprobe -v quiet -print_format json -show_format -show_streams journal_evidence/demonstration_media/pfpd_stage8_city_demonstration.mp4"
+    },
+    {
+      "claim_id": "CLAIM-18",
+      "category": "Research Integrity & Limitations",
+      "statement": "RSC infrastructure is represented as visual POI; traffic lights run fixed-time programs",
+      "value": {
+        "adaptive_preemption_implemented": false,
+        "signal_control_type": "SUMO fixed-time multi-phase"
+      },
+      "unit": "Boolean / String",
+      "source_file": "journal_evidence/system_architecture/research_limitations_and_integrity_boundary.md",
+      "source_script": "simulation/city_5km/city_5km.net.xml",
+      "timestamp": "2026-10-21T04:44:00+05:30",
+      "environment": "SUMO Network and TraCI controller"
+    }
+  ]
+}

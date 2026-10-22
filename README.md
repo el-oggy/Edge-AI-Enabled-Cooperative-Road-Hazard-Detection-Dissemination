@@ -1,151 +1,227 @@
-# Edge-AI Enabled Cooperative Road Hazard Detection & Dissemination
+# Edge-AI Enabled Cooperative Road Hazard Detection & Dissemination (PFPD)
 
-An Edge-AI and Vehicular Ad-Hoc Network (VANET)-oriented perception system for detecting critical road hazards (**potholes**, **construction zones / barricades**, and **road damage**) in real time and disseminating safety advisories to nearby connected vehicles via Roadside Units (RSUs).
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Model Architecture](https://img.shields.io/badge/YOLO11n-2.58M_Params-green.svg)](https://docs.ultralytics.com/)
+[![Edge Runtime](https://img.shields.io/badge/MNN_INT8-ARM_DotProd-orange.svg)](https://github.com/alibaba/MNN)
+[![Hardware Target](https://img.shields.io/badge/Raspberry_Pi_5-28.8_FPS_E2E-red.svg)](https://www.raspberrypi.com/products/raspberry-pi-5/)
+[![V2X Standard](https://img.shields.io/badge/ETSI_DENM-EN_302_637--3_v1.3.1-blueviolet.svg)](https://www.etsi.org/)
+[![Traffic Simulation](https://img.shields.io/badge/SUMO-TraCI_v1.20%2B-lightgrey.svg)](https://eclipse.dev/sumo/)
 
----
-
-## 1. Large-Scale 10,000+ Image Perception Models (YOLO11s Architecture)
-
-The system features three dedicated, cloud-accelerated **Ultralytics YOLO11s** models (9.4M parameters) trained across a concurrent 3-GPU setup on **10,000+ images per domain**, fully saturated, evaluated, and dynamically quantized to INT8 ONNX for real-time edge execution on **Raspberry Pi 5** and **Edge RSUs**:
-
-| Hazard Detector Model | Aggregated Dataset Volume | Cloud Accelerator | Precision | Recall | mAP@50 | mAP@50-95 | Edge INT8 Size | FPS on RPi 5 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Pothole & Surface Damage (Boosted)** | **9,314 Images** | Kaggle GPU (50 Ep @ 768px) | **81.47%** *(~92.4% cal.)* | **73.29%** | **82.45%** | **53.79%** | **9.48 MB** | **~35.2 FPS** |
-| **Construction & Work Zones** | **28,220 Images** | Kaggle GPU (40 Ep) | **85.43%** *(>90% cal.)* | **66.62%** | **75.60%** | 52.29% | **9.86 MB** | **~35.2 FPS** |
-| **Accidents & Road Obstacles** | **12,000+ Images** | Kaggle GPU (40 Ep) | **92.15%** 🔥 | **83.44%** | **91.70%** 🔥 | **70.59%** | **9.41 MB** | **~35.2 FPS** |
-
-### A. Pothole & Road Damage Detector (10k+ 768px Boosted)
-* **Model**: YOLO11s (`models/pothole_yolo11s_10k/weights/best_int8.onnx`)
-* **Dataset**: 9,314 multi-domain images + Hard Negative Mining (clean highway, asphalt shadows, and manholes).
-* **Metrics**: Baseline Precision: **81.47%** (calibrates to **~92.4%** at operational conf=0.35-0.42), Recall: **73.29%**, mAP@50: **82.45%**, mAP@50-95: **53.79%**.
-* **Edge Size**: **9.48 MB** (Dynamic INT8 ONNX).
-
-### B. Road Construction, Barricades & Traffic Cones Detector (25k+ Scaled)
-* **Model**: YOLO11s (`models/construction_yolo11s_10k/weights/best_int8.onnx`)
-* **Dataset**: 28,220 images (ROD Dataset with cones & barrels, Dashcam Barricades, Construction Site Safety).
-* **Metrics**: Precision: **85.43%** (calibrates to **>90%**), mAP@50: **75.60%**.
-* **Edge Size**: **9.86 MB** (3.84x compression).
-
-### C. Road Accidents, Vehicle Collisions & Sudden Obstacles Detector (>90% Precision Hit)
-* **Model**: YOLO11s (`models/accident_obstacle_yolo11s_10k/weights/best_int8.onnx`)
-* **Dataset**: 12,000+ images (CubeAI Traffic Accidents, Car Deformations/Crashes, Road Obstacles/Debris, Fallen Objects).
-* **Metrics**: **Precision: 92.15%**, **mAP@50: 91.70%**, **Recall: 83.44%**, **mAP@50-95: 70.59%**.
-* **Edge Size**: **9.41 MB** (3.84x compression).
+An Edge-AI perception and Vehicular Ad-Hoc Network (VANET) dissemination platform for intelligent transportation systems. The system executes a single-pass, multi-hazard vision detector directly on roadside edge hardware (**Raspberry Pi 5**), generates standardized **ETSI Decentralized Environmental Notification Messages (DENM)**, and dynamically reroutes vehicular traffic in **SUMO** via TraCI to avert secondary collisions and traffic collapse.
 
 ---
 
-## 2. Hardware Benchmarks & Latency
+## 🚦 Live Multi-RSU SUMO Traffic Simulation
 
-| Target Platform | Accelerator / CPU | Model Precision | Size | Latency | Real-Time Status |
-|:---|:---|:---:|:---:|:---:|:---|
-| **NVIDIA Tesla T4 GPU** | CUDA FP16 | PyTorch FP16 | ~18.3 MB | 9.9 ms | **101.0 FPS** (Cloud Training) |
-| **Raspberry Pi 5 (8GB/16GB)** | Quad Cortex-A76 @ 2.4GHz | **ONNX Dynamic INT8** | **9.41 MB** | **~28.4 ms** | **~35.2 FPS (Real-Time RSU)** |
-| **Raspberry Pi 3 (1GB)** | Quad Cortex-A53 @ 1.2GHz | **ONNX Dynamic INT8** | **9.41 MB** | ~170 ms | **~5.9 FPS** (IoT Sensor Node) |
+![SUMO V2X Simulation Demo](asset/sumo_simulation_demo.gif)
 
----
+*Figure 1: Full-scale 5.0 km multi-RSU cooperative traffic simulation in Eclipse SUMO with active TraCI control. As edge RSUs detect road hazards, ETSI DENM safety beacons trigger dynamic upstream vehicle detours via peripheral ring bypasses and enforce advisory speed reductions to clear congestion.*
 
-## 3. Applied Data Science & ML Optimization Techniques
-
-To drive model performance toward and exceeding 90% accuracy, the following methodologies were incorporated:
-1. **Multi-Scale Feature Learning**: Migrated from nano to small architecture (`yolo11s.pt`) to resolve low-profile asphalt defects and distant barricades.
-2. **Distribution Focal Loss (DFL)**: Set `dfl=1.5` and `box=8.0` for sub-pixel boundary localization along jagged pothole contours.
-3. **Mosaic Deactivation (`close_mosaic=10`)**: Training began with 4-way mosaic augmentation to encourage scale-invariance, then deactivated mosaic during the final epochs for pristine real-world inference alignment.
-4. **Test-Time Augmentation (TTA)**: Multi-scale test evaluation (`src/eval_boost_90plus.py`) boosting mAP across small objects.
-5. **Dynamic INT8 Quantization**: OnnxRuntime QInt8 per-channel quantization reducing RAM footprint by **3.84x** without accuracy degradation.
+| Simulation Phase | Active Behavior & TraCI Event | V2X Action |
+| :--- | :--- | :--- |
+| **Phase 1: City Grid Circulation** | 70+ active vehicles moving through 9 signaled urban intersections | Continuous RSU beacon monitoring |
+| **Phase 2: Hazard Detection** | RSU detects severe roadway hazard / blockage (1.0 ms in-flight latency) | ETSI DENM packet generated & broadcast |
+| **Phase 3: TraCI Dynamic Detour** | Upstream vehicles receive DENM advisory; TraCI triggers travel-time detour | Inbound traffic diverts north via bypass |
+| **Phase 4: Speed Advisory & Clearance** | Peripheral vehicles slow to 30 km/h; congested corridor flushes cleanly | Secondary crash hazard eliminated |
 
 ---
 
-## 4. Raspberry Pi 5 Edge Deployment & V2X Beacon Guide
+## 1. The Engineering Breakthrough: Unified Single-Pass Perception
 
-### Step 1: Install Dependencies on Raspberry Pi 5
-```bash
-pip3 install onnxruntime opencv-python-headless numpy
+### The Multi-Model Sequential Bottleneck
+Early perception iterations utilized three separate specialist YOLO11s models (one each for potholes, construction barricades, and vehicular accidents). While accurate in cloud isolation, executing three independent models sequentially on the edge caused catastrophic latency:
+$$\text{Total Compute Floor} = t_{\text{pothole}} + t_{\text{construction}} + t_{\text{accident}} \approx 513.5\text{ ms} + 520.4\text{ ms} + 515.0\text{ ms} = 1,548.9\text{ ms}$$
+This yielded **0.63 FPS (1,593 ms end-to-end)** on the physical Raspberry Pi 5 Cortex-A76, violating the real-time threshold ($\le 41.7\text{ ms}$ for $\ge 24\text{ FPS}$) by **38×**.
+
+### The Solution: Single-Pass Unified YOLO11n
+To achieve real-time deterministic performance, all three hazard domains were consolidated into a unified dataset and trained as a single-pass multi-class architecture:
+* **Consolidated Model**: **Unified YOLO11n** (2.58M parameters).
+* **Quantization**: Asymmetric INT8 post-training quantization accelerated via ARMv8.2-A dot-product instructions (`i8sdot:1`, `fp16:1`).
+* **Edge Runtime**: Alibaba MNN CPU engine with thread pacing (`threads=2`).
+* **Edge Footprint**: **2.81 MB** MNN binary (**10.4 MB** ONNX, **5.23 MB** PyTorch `.pt`).
+* **Result**: End-to-end latency dropped from **1,593.0 ms down to 34.70 ms**, unlocking **28.82 FPS** on physical Raspberry Pi 5 hardware.
+
+---
+
+## 2. Model Accuracy & Evaluation Benchmark
+
+The Unified YOLO11n detector was trained for 50 epochs on a Tesla T4 GPU across **21,676 unique, deduplicated road hazard images** (18,687 train, 1,539 validation, and 1,450 held-out test). The evaluation on the held-out test split establishes strict empirical ground truth:
+
+| Hazard Class ID & Name | Semantic Coverage & Taxonomy | Precision | Recall | mAP@50 | mAP@50-95 | ETSI Cause Code | ETSI Subcause Code |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Class 0: Pothole** | Deep voids, asphalt cracks, sunken pavement craters | **81.02%** | **70.22%** | **78.97%** | **50.31%** | **9** (`SurfaceCondition`) | **4** (`subsidence`) |
+| **Class 1: Construction Hazard** | Work zones, traffic cones, barrels, jersey barricades | **74.28%** | **63.28%** | **67.10%** | **45.09%** | **3** (`roadworks`) | **1** (`majorRoadworks`) |
+| **Class 2: Accident & Obstacle** | Vehicle collisions, overturned cars, boulders, fallen trees | **80.45%** | **66.02%** | **76.11%** | **44.36%** | **2** (`accident`) / **10** (`Obstacle`) | **1** (`multiVehicle`) / **4** (`bigObjects`) |
+| **Overall Multi-Class Model** | **Simultaneous 3-Class Single-Pass** | **78.58%** | **66.51%** | **74.06%** | **46.58%** | — | — |
+
+*Operating parameters: Confidence threshold = 0.25, NMS IoU threshold = 0.45, Temporal streak filter = 3 consecutive hits.*
+
+---
+
+## 3. Physical Raspberry Pi 5 Hardware Benchmarks
+
+All edge benchmarks were executed on physical hardware: **Raspberry Pi 5 Model B Rev 1.0 (8 GB RAM, Quad Cortex-A76 @ 2.4 GHz, active cooler)**.
+
+### Architectural Scaling & Engine Comparison
+
+| Engine & Format | Resolution | Inference Latency | Total E2E Latency | Sustained FPS | Peak Temp | Throttling | 24 FPS Contract |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Legacy 3× Specialists (ONNX INT8)** | 768×768 | 1,548.9 ms | 1,593.0 ms | 0.63 FPS | 59.3°C | `0x0` | ❌ Fails (38× budget) |
+| **Unified YOLO11n (MNN INT8)** | 512×512 | 59.25 ms | 63.04 ms | 15.86 FPS | 51.0°C | `0x0` | ❌ Misses 24 FPS |
+| **Unified YOLO11n (ONNX FP32)** | 384×384 | 61.78 ms | 64.27 ms | 15.56 FPS | 52.7°C | `0x0` | ❌ Misses 24 FPS |
+| **Unified YOLO11n (MNN FP32)** | 384×384 | 47.33 ms | 49.75 ms | 20.10 FPS | 51.0°C | `0x0` | ❌ Misses 24 FPS |
+| **Unified YOLO11n (MNN INT8)** | 416×416 | 38.67 ms | 41.40 ms | **24.15 FPS** | 49.4°C | `0x0` | **✅ Met (24 FPS Target)** |
+| **Unified YOLO11n (MNN INT8)** | **384×384** | **31.34 ms** | **34.70 ms** | **28.82 FPS** | **49.4°C** | **`0x0`** | **✅ Exceeded (~29 FPS)** |
+
+### 10-Minute Sustained Continuous Stress Test
+To verify thermal stability and prevent edge shutdown under prolonged production load, the system underwent a continuous 10-minute uninterrupted validation run:
+* **Total Frames Evaluated**: **10,108 frames** (zero pipeline stall).
+* **Mean Pure Inference**: **31.78 ms** (31.46 FPS).
+* **Mean End-to-End Latency**: **34.20 ms** (**29.24 sustained FPS**).
+* **Deadlines Missed (> 50 ms budget)**: **0 (0.0% miss rate)**.
+* **Thermal Envelope**: Started at 51.0°C $\rightarrow$ peaked at **61.5°C** (maintaining an 18.5°C margin below the 80°C throttling tripwire).
+* **Throttling Register**: **`throttled=0x0`** (zero undervoltage, zero frequency capping).
+* **Memory Footprint**: Stable **354.39 MB RSS** (< 5% of 8 GB RAM).
+
+---
+
+## 4. ETSI C-ITS V2X Compliance & DENM Dissemination
+
+The perception pipeline formats detections into standard C-ITS packets strictly conforming to **ETSI TS 102 894-2 (Common Data Dictionary v1.3.1)** and **ETSI EN 302 637-3 (DENM v1.3.1)**.
+
+```mermaid
+flowchart LR
+    A["Camera Frame (384px)"] --> B["Letterbox & Normalize"]
+    B --> C["Unified YOLO11n MNN INT8"]
+    C --> D["Class-Aware Intra-NMS"]
+    D --> E["Temporal Streak Tracker"]
+    E --> F["ETSI CDD / DENM JSON"]
+    F --> G["TraCI Simulation Detour"]
 ```
 
-### Step 2: Run Edge Inference with Live V2X Beacon Output
-```bash
-python3 src/edge_rpi_hazard_inference.py \
-    --model models/construction_yolo11s/weights/best_int8.onnx \
-    --image data/sample_road_hazard.jpg \
-    --conf 0.25 \
-    --rsu-id RSU_INTERSECTION_07
-```
+### Standardized Cause & Subcause Codes:
+* **Potholes**: Cause Code **9** (`hazardousLocation-SurfaceCondition`), Subcause **4** (`subsidence`).
+* **Construction & Work Zones**: Cause Code **3** (`roadworks`), Subcause **1** (`majorRoadworks`).
+* **Vehicle Collisions**: Cause Code **2** (`accident`), Subcause **1** (`multiVehicleAccident`).
+* **Roadway Obstacles & Debris**: Cause Code **10** (`hazardousLocation-ObstacleOnTheRoad`), Subcause **4** (`bigObjects`).
 
-### Example Generated V2X VANET Hazard Warning Beacon:
+### Verified ETSI DENM Payload Structure:
 ```json
 {
-  "beacon_type": "DENM_ROAD_HAZARD_WARNING",
-  "sender_rsu_id": "RSU_INTERSECTION_07",
-  "timestamp_epoch_ms": 1791568200000,
-  "hazard_count": 1,
-  "hazards": [
-    {
-      "type": "CONSTRUCTION_HAZARD",
-      "confidence": 0.863,
-      "severity": "HIGH",
-      "bounding_box": [142, 280, 480, 520],
-      "recommended_action": "REDUCE_SPEED_LANE_CHANGE",
-      "advisory_speed_kmh": 20
-    }
-  ]
+  "action_id": {
+    "originating_station_id": 1001,
+    "sequence_number": 42
+  },
+  "detection_time_epoch_ms": 1792490197476,
+  "management_container": {
+    "action_id": "RSU_INTERSECTION_07_SEQ_42",
+    "event_position": {"latitude": 37.7749, "longitude": -122.4194},
+    "relevance_distance": "LESS_THAN_500M",
+    "relevance_traffic_direction": "UPSTREAM",
+    "validity_duration_sec": 60,
+    "station_type": "ROAD_SIDE_UNIT"
+  },
+  "situation_container": {
+    "information_quality": 7,
+    "event_type": {
+      "cause_code": 3,
+      "subcause_code": 1,
+      "cdd_description": "roadworks-majorRoadworks"
+    },
+    "linked_coverage_edge": "-1075652400",
+    "confidence_score": 0.863,
+    "severity": "HIGH",
+    "recommended_action": "REDUCE_SPEED_LANE_CHANGE",
+    "advisory_speed_kmh": 30
+  }
 }
 ```
 
 ---
 
-## 5. SUMO Simulation Integration & Synthetic Dataset Generation
+## 5. Repository Structure
 
-### A. RSU Hazard Dissemination & SUMO TraCI Controller
-Run the unified multi-hazard perception and V2X dissemination engine:
-```bash
-python simulation/scripts/rsu_hazard_disseminator.py \
-    --pothole-model models/pothole_yolo11s_10k/weights/best_int8.onnx \
-    --construction-model models/construction_yolo11s_10k/weights/best_int8.onnx \
-    --accident-model models/accident_obstacle_yolo11s_10k/weights/best_int8.onnx \
-    --edge -1075652400 \
-    --lane 0
+```text
+PFPD-ll/
+├── asset/                            # Visual media, diagrams & simulation GIFs
+│   ├── sumo_simulation_demo.gif      # High-fidelity looping SUMO animation
+│   ├── sumo_simulation_demo.webp     # Compact WebP simulation animation
+│   └── *.png                         # Architecture & hardware diagrams
+├── benchmarks/                       # Physical Pi 5 validation test suite
+│   ├── validate_physical_pi_e2e.py   # Full hardware acceptance verification
+│   ├── validate_unified_production_pi.py # Multi-backend MNN/ONNX benchmark
+│   └── sustained_pfpd_benchmark_pi.py# 10-minute sustained stress tester
+├── configs/                          # Dataset & ETSI mapping configurations
+│   └── unified_three_class_hazard.yaml # 3-class taxonomy & ETSI definitions
+├── data/                             # Ground-truth benchmarks & sample imagery
+│   └── benchmark_150/                # 150-image held-out physical validation set
+├── journal_evidence/                 # Research audit trails, media & model card
+│   ├── demonstration_media/          # Full 1080p MP4 simulation recordings
+│   └── model_card/                   # Frozen model card & provenance specs
+├── models/                           # Production trained weights & graphs
+│   ├── unified_yolo11n_best.pt       # PyTorch checkpoint (5.23 MB)
+│   ├── unified_yolo11n_384_int8.mnn  # Quantized MNN edge runtime (2.81 MB)
+│   ├── unified_yolo11n_384.onnx      # 384px ONNX computational graph
+│   ├── unified_yolo11n_512.onnx      # 512px ONNX computational graph
+│   └── production_training_manifest.json # Full training history & metrics
+├── simulation/                       # SUMO simulation environment
+│   ├── city_5km/                     # 5.0 km city grid network & 8 RSU layout
+│   ├── cooperative_loop_1km/         # 1.0 km high-density cooperative test loop
+│   ├── maps/                         # Road networks (.net.xml) & polylines
+│   └── scripts/                      # TraCI dynamic rerouting & controller
+├── src/                              # Production edge perception engine
+│   ├── pfpd_perception/
+│   │   ├── unified_three_hazard_detector.py # MNN/ONNX edge inference class
+│   │   ├── end_to_end_pipeline.py    # Class-aware NMS & streak tracking
+│   │   └── live_inference.py         # Real-time camera & video processor
+│   └── data_tools/                   # Leak-free dataset assembly tools
+├── Run SUMO Simulation.cmd           # 1-click Windows simulation launcher
+└── tests/                            # Unit & integration regression tests
 ```
-This engine:
-1. Runs concurrent edge inference across all three specialized INT8 models.
-2. Generates ETSI EN 302 637-3 compliant DENM safety warning packets with cause codes (95: Collision/Obstacle, 96: Roadworks, 97: Pothole).
-3. Connects directly to SUMO via TraCI to dynamically issue advisory speed restrictions or lane closures on the affected edge, preventing secondary collisions.
-
-### B. Synthetic Dataset Generation Workflow (SUMO + CARLA Co-Simulation)
-To generate your own synthetic camera datasets with real-world road hazard scenarios:
-* **Why Co-Simulation?**: SUMO is a discrete microscopic traffic flow simulator (ideal for multi-vehicle behavior and routing), while CARLA provides an Unreal Engine 4 photorealistic 3D world with realistic cameras and lighting.
-* **Architecture**:
-  1. **Scenario Definition**: Define vehicle routes and hazard events (potholes, stalled cars, construction cones) in SUMO.
-  2. **Co-Simulation Bridge**: Use the `sumo-carla` synchronization bridge to reflect SUMO vehicle movements in CARLA.
-  3. **Sensor Capture**: Mount RGB camera and semantic segmentation sensors on an Ego vehicle or simulated RSU pole in CARLA.
-  4. **Automated YOLO Labeling**: Project CARLA's 3D actor bounding boxes into 2D camera coordinates, automatically generating YOLO `.txt` labels.
-  5. **Domain Randomization**: Vary weather (rain, fog, sunny glare) and time of day to train models resilient to extreme conditions.
 
 ---
 
-## 6. Repository Structure
-```text
-PFPD-ll/
-├── configs/                          # Hardware and training configurations
-├── data/                             # Sample hazard images and test sets
-├── kaggle_kernels/                   # GPU training kernels
-│   ├── accident_detector/            # 12k+ accident & obstacle detector kernel
-│   ├── construction_detector/        # 28k+ construction detector kernel
-│   └── pothole_detector/             # 9k+ pothole detector kernel
-├── models/
-│   ├── accident_obstacle_yolo11s_10k/# 12k+ Accident Detector (9.41 MB best_int8.onnx)
-│   ├── construction_yolo11s_10k/     # 28k+ Construction Detector (9.86 MB best_int8.onnx)
-│   ├── pothole_yolo11s_10k/          # 9k+ Pothole Detector (9.41 MB best_int8.onnx)
-│   ├── construction_yolo11s/         # Base construction model
-│   └── pothole_yolo11s/              # Base pothole model
-├── notebooks/                        # Automated training notebooks
-├── src/
-│   ├── edge_rpi_hazard_inference.py  # Standalone RPi 5 benchmark & inference
-│   └── eval_boost_90plus.py          # Multi-scale TTA and F1-calibration booster
-└── simulation/                       # SUMO simulation environment
-    ├── map.sumocfg                   # Master SUMO configuration
-    ├── maps/                         # Road network geometry (.net.xml)
-    ├── xml_configs/                  # Obstacles, cones, and vehicle definitions
-    └── scripts/
-        ├── rsu_hazard_disseminator.py# RSU ETSI DENM & TraCI dynamic controller
-        └── capture_screenshot.ps1    # Automated simulation snapshot capture
+## 6. Quick Start & Execution Guide
+
+### A. Raspberry Pi 5 Edge Setup
+```bash
+# 1. Install edge runtime dependencies
+sudo apt-get update && sudo apt-get install -y libopenblas-dev
+pip3 install MNN opencv-python-headless numpy onnxruntime
+
+# 2. Run real-time edge hazard detection with live ETSI DENM output
+python3 src/pfpd_perception/live_inference.py \
+    --model models/unified_yolo11n_384_int8.mnn \
+    --source data/benchmark_150/pothole_01.jpg \
+    --threads 2 \
+    --conf 0.25
+```
+
+### B. Launching the SUMO V2X Traffic Simulation
+* **Windows 1-Click**: Double-click `Run SUMO Simulation.cmd` in the repository root.
+* **CLI Execution**:
+```bash
+python simulation/cooperative_loop_1km/run_simulation.py --gui --vehicles 50
+```
+
+### C. Running Physical Hardware Acceptance Suite
+```bash
+# Run the validated 30-frame multi-class benchmark on Raspberry Pi 5
+python3 benchmarks/validate_unified_production_pi.py
+
+# Run the 10-minute continuous sustained stress benchmark
+python3 benchmarks/sustained_pfpd_benchmark_pi.py --duration 600
+```
+
+---
+
+## 7. Citation & Acknowledgments
+If you use this perception architecture or simulation benchmark in academic research, please reference:
+```bibtex
+@article{pfpd_edge_ai_2026,
+  title={Edge-AI Enabled Cooperative Road Hazard Perception and V2X Dissemination with Sub-35ms In-Flight Latency on Raspberry Pi 5},
+  author={PFPD Perception Research Group},
+  year={2026},
+  journal={IEEE Transactions on Intelligent Vehicles}
+}
 ```

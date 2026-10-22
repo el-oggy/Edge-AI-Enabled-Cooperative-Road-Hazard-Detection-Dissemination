@@ -1,0 +1,15 @@
+{
+  "id": "adarshswarupmaharana/pfpd-v3-ablation-b-stem-only-freeze",
+  "title": "PFPD v3 Ablation B - Stem Only Freeze",
+  "code_file": "train_unified_yolo11n_v3_ablation_b.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "adarshswarupmaharana/pfpd-finetuning-dataset-v3",
+    "adarshswarupmaharana/pfpd-unified-yolo11n-production-model"
+  ]
+}

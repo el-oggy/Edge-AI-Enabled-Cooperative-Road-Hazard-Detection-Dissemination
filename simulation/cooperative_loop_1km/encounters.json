@@ -1,0 +1,12 @@
+{
+  "source_mode": "mapped_road_photographs",
+  "selection": "Fixed before inference; scenario mapping supplies location, never predictions.",
+  "temporal_confirmation": false,
+  "sources": {
+    "pothole": ["data/test_user_pothole.png", "data/sample_pothole_verified.jpg"],
+    "construction": ["data/test_user_construction.png"],
+    "accident_obstacle": ["data/test_user_accident.png"]
+  },
+  "review": "Visually inspected the three user images before this integration. Local files have no verified acquisition/geolocation metadata. Alternate pothole image is a prior M1 fixture.",
+  "limits": "These are separate road photographs manually mapped to simulated encounters, not views rendered by a SUMO camera or a labeled accuracy dataset."
+}

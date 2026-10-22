@@ -1,0 +1,211 @@
+{
+  "analysis_title": "Sustained High-Density Traffic Circulation Time-Series",
+  "sustained_condition": "active_vehicles >= 50",
+  "start_time_s": 29.9,
+  "end_time_s": 49.9,
+  "continuous_duration_s": 20.0,
+  "total_points_in_sustained_interval": 21,
+  "peak_vehicles": 77,
+  "full_timeseries": [
+    {
+      "sim_t": 0.9,
+      "active_vehicles": 2
+    },
+    {
+      "sim_t": 1.9,
+      "active_vehicles": 4
+    },
+    {
+      "sim_t": 2.9,
+      "active_vehicles": 6
+    },
+    {
+      "sim_t": 3.9,
+      "active_vehicles": 8
+    },
+    {
+      "sim_t": 4.9,
+      "active_vehicles": 10
+    },
+    {
+      "sim_t": 5.9,
+      "active_vehicles": 12
+    },
+    {
+      "sim_t": 6.9,
+      "active_vehicles": 14
+    },
+    {
+      "sim_t": 7.9,
+      "active_vehicles": 15
+    },
+    {
+      "sim_t": 8.9,
+      "active_vehicles": 16
+    },
+    {
+      "sim_t": 9.9,
+      "active_vehicles": 17
+    },
+    {
+      "sim_t": 10.9,
+      "active_vehicles": 21
+    },
+    {
+      "sim_t": 11.9,
+      "active_vehicles": 22
+    },
+    {
+      "sim_t": 12.9,
+      "active_vehicles": 23
+    },
+    {
+      "sim_t": 13.9,
+      "active_vehicles": 26
+    },
+    {
+      "sim_t": 14.9,
+      "active_vehicles": 27
+    },
+    {
+      "sim_t": 15.9,
+      "active_vehicles": 29
+    },
+    {
+      "sim_t": 16.9,
+      "active_vehicles": 29
+    },
+    {
+      "sim_t": 17.9,
+      "active_vehicles": 32
+    },
+    {
+      "sim_t": 18.9,
+      "active_vehicles": 36
+    },
+    {
+      "sim_t": 19.9,
+      "active_vehicles": 38
+    },
+    {
+      "sim_t": 20.9,
+      "active_vehicles": 38
+    },
+    {
+      "sim_t": 21.9,
+      "active_vehicles": 39
+    },
+    {
+      "sim_t": 22.9,
+      "active_vehicles": 42
+    },
+    {
+      "sim_t": 23.9,
+      "active_vehicles": 42
+    },
+    {
+      "sim_t": 24.9,
+      "active_vehicles": 42
+    },
+    {
+      "sim_t": 25.9,
+      "active_vehicles": 44
+    },
+    {
+      "sim_t": 26.9,
+      "active_vehicles": 46
+    },
+    {
+      "sim_t": 27.9,
+      "active_vehicles": 47
+    },
+    {
+      "sim_t": 28.9,
+      "active_vehicles": 48
+    },
+    {
+      "sim_t": 29.9,
+      "active_vehicles": 50
+    },
+    {
+      "sim_t": 30.9,
+      "active_vehicles": 51
+    },
+    {
+      "sim_t": 31.9,
+      "active_vehicles": 54
+    },
+    {
+      "sim_t": 32.9,
+      "active_vehicles": 54
+    },
+    {
+      "sim_t": 33.9,
+      "active_vehicles": 56
+    },
+    {
+      "sim_t": 34.9,
+      "active_vehicles": 58
+    },
+    {
+      "sim_t": 35.9,
+      "active_vehicles": 60
+    },
+    {
+      "sim_t": 36.9,
+      "active_vehicles": 61
+    },
+    {
+      "sim_t": 37.9,
+      "active_vehicles": 61
+    },
+    {
+      "sim_t": 38.9,
+      "active_vehicles": 61
+    },
+    {
+      "sim_t": 39.9,
+      "active_vehicles": 61
+    },
+    {
+      "sim_t": 40.9,
+      "active_vehicles": 63
+    },
+    {
+      "sim_t": 41.9,
+      "active_vehicles": 65
+    },
+    {
+      "sim_t": 42.9,
+      "active_vehicles": 70
+    },
+    {
+      "sim_t": 43.9,
+      "active_vehicles": 72
+    },
+    {
+      "sim_t": 44.9,
+      "active_vehicles": 72
+    },
+    {
+      "sim_t": 45.9,
+      "active_vehicles": 73
+    },
+    {
+      "sim_t": 46.9,
+      "active_vehicles": 73
+    },
+    {
+      "sim_t": 47.9,
+      "active_vehicles": 73
+    },
+    {
+      "sim_t": 48.9,
+      "active_vehicles": 73
+    },
+    {
+      "sim_t": 49.9,
+      "active_vehicles": 77
+    }
+  ]
+}

@@ -1,0 +1,3002 @@
+{
+  "dry_12.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "dry_13.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.6569444444444444,
+          1.0,
+          0.6861111111111111
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.2513020833333333,
+          0.4197916666666667,
+          0.22552083333333334,
+          0.08680555555555555
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.8645833333333334,
+          0.4534722222222222,
+          0.16458333333333333,
+          0.11944444444444445
+        ]
+      }
+    ]
+  },
+  "dry_14.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1213",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.6248969497114591,
+          1.0,
+          0.7502061005770816
+        ]
+      }
+    ]
+  },
+  "dry_15.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.11328125,
+          0.37256944444444445,
+          0.2265625,
+          0.14652777777777778
+        ]
+      }
+    ]
+  },
+  "dry_16.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.5916666666666667,
+          1.0,
+          0.6833333333333333
+        ]
+      }
+    ]
+  },
+  "dry_17.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1440x1919",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5736111111111111,
+          0.7727983324648254,
+          0.8527777777777777,
+          0.45440333507034913
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.7381944444444445,
+          0.47107868681605003,
+          0.5236111111111111,
+          0.44293903074517976
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.18680555555555556,
+          0.3983845752996352,
+          0.3736111111111111,
+          0.10891089108910891
+        ]
+      }
+    ]
+  },
+  "dry_18.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1919x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "dry_19.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1919x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.7232933819697759,
+          0.5444444444444444,
+          0.5534132360604481,
+          0.5888888888888889
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.2764460656591975,
+          0.3628472222222222,
+          0.552892131318395,
+          0.22569444444444445
+        ]
+      }
+    ]
+  },
+  "dry_20.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5390625,
+          0.478125,
+          0.296875,
+          0.23680555555555555
+        ]
+      }
+    ]
+  },
+  "dry_21.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5502604166666667,
+          0.6260416666666667,
+          0.8994791666666667,
+          0.6534722222222222
+        ]
+      }
+    ]
+  },
+  "dry_22.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1328",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.5907379518072289,
+          1.0,
+          0.6814759036144579
+        ]
+      }
+    ]
+  },
+  "dry_23.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1280",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "dry_24.jpg": {
+    "category": "potholes/dry",
+    "resolution": "870x554",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.8028735632183908,
+          0.6245487364620939,
+          0.39425287356321836,
+          0.7509025270758123
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.3775862068965517,
+          0.43862815884476536,
+          0.40344827586206894,
+          0.37906137184115524
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.09597701149425288,
+          0.8962093862815884,
+          0.19195402298850575,
+          0.2075812274368231
+        ]
+      }
+    ]
+  },
+  "dry_25.jpg": {
+    "category": "potholes/dry",
+    "resolution": "863x623",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.6573033707865169,
+          1.0,
+          0.6853932584269663
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.3690614136732329,
+          0.4654895666131621,
+          0.4020857473928158,
+          0.4333868378812199
+        ]
+      }
+    ]
+  },
+  "pothole_dry_01.jpg": {
+    "category": "potholes/dry",
+    "resolution": "886x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.4255079006772009,
+          0.6942708333333333,
+          0.8510158013544018,
+          0.2947916666666667
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.809255079006772,
+          0.9078125,
+          0.38148984198645597,
+          0.184375
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.494920993227991,
+          0.50390625,
+          0.37358916478555304,
+          0.12864583333333332
+        ]
+      }
+    ]
+  },
+  "pothole_dry_02.jpg": {
+    "category": "potholes/dry",
+    "resolution": "886x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_dry_03.jpg": {
+    "category": "potholes/dry",
+    "resolution": "886x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.7135416666666666,
+          1.0,
+          0.5729166666666666
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.7816027088036117,
+          0.3380208333333333,
+          0.4367945823927765,
+          0.17604166666666668
+        ]
+      }
+    ]
+  },
+  "pothole_dry_04.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.625,
+          1.0,
+          0.75
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.65390625,
+          0.425,
+          0.6921875,
+          0.35
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.8546875,
+          0.34305555555555556,
+          0.290625,
+          0.17083333333333334
+        ]
+      }
+    ]
+  },
+  "pothole_dry_05.jpg": {
+    "category": "potholes/dry",
+    "resolution": "539x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_dry_06.jpg": {
+    "category": "potholes/dry",
+    "resolution": "640x507",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_dry_07.jpg": {
+    "category": "potholes/dry",
+    "resolution": "886x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.625,
+          1.0,
+          0.75
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.18566591422121898,
+          0.5239583333333333,
+          0.37133182844243795,
+          0.29583333333333334
+        ]
+      }
+    ]
+  },
+  "pothole_dry_08.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_dry_09.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.625,
+          1.0,
+          0.75
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.7872395833333333,
+          0.8045138888888889,
+          0.42552083333333335,
+          0.3909722222222222
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.45625,
+          0.7645833333333333,
+          0.20520833333333333,
+          0.4708333333333333
+        ]
+      }
+    ]
+  },
+  "pothole_dry_10.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1279",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.6247068021892104,
+          1.0,
+          0.7505863956215794
+        ]
+      }
+    ]
+  },
+  "pothole_dry_11.jpg": {
+    "category": "potholes/dry",
+    "resolution": "1920x1280",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.3497395833333333,
+          0.625,
+          0.6994791666666667,
+          0.75
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.83671875,
+          0.625,
+          0.3265625,
+          0.75
+        ]
+      }
+    ]
+  },
+  "pothole_water_01.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1277",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_02.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1277",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_03.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1277",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_04.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.7106481481481481,
+          1.0,
+          0.5787037037037037
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.04791666666666667,
+          0.8958333333333334,
+          0.09583333333333334,
+          0.20833333333333334
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.51171875,
+          0.8851851851851852,
+          0.1984375,
+          0.1537037037037037
+        ]
+      }
+    ]
+  },
+  "pothole_water_05.jpg": {
+    "category": "potholes/water",
+    "resolution": "1277x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.46484375,
+          1.0,
+          0.4296875
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.8252604166666667,
+          1.0,
+          0.3494791666666667
+        ]
+      }
+    ]
+  },
+  "pothole_water_06.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x694",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_07.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1234",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.6247974068071313,
+          1.0,
+          0.7504051863857374
+        ]
+      }
+    ]
+  },
+  "pothole_water_08.jpg": {
+    "category": "potholes/water",
+    "resolution": "600x800",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.625,
+          1.0,
+          0.75
+        ]
+      }
+    ]
+  },
+  "pothole_water_09.jpg": {
+    "category": "potholes/water",
+    "resolution": "1695x1695",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.47935103244837757,
+          1.0,
+          0.45958702064896756
+        ]
+      }
+    ]
+  },
+  "pothole_water_10.jpg": {
+    "category": "potholes/water",
+    "resolution": "747x433",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.6247113163972287,
+          1.0,
+          0.7505773672055427
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5321285140562249,
+          0.8937644341801386,
+          0.3360107095046854,
+          0.21247113163972287
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.22088353413654618,
+          0.9295612009237876,
+          0.17938420348058903,
+          0.14087759815242495
+        ]
+      }
+    ]
+  },
+  "pothole_water_11.jpg": {
+    "category": "potholes/water",
+    "resolution": "1440x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.6961805555555556,
+          0.51015625,
+          0.6076388888888888,
+          0.3453125
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.18090277777777777,
+          0.57734375,
+          0.36180555555555555,
+          0.37135416666666665
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.8541666666666666,
+          0.89609375,
+          0.2916666666666667,
+          0.2078125
+        ]
+      }
+    ]
+  },
+  "pothole_water_12.jpg": {
+    "category": "potholes/water",
+    "resolution": "1440x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.4673611111111111,
+          0.8549479166666667,
+          0.5583333333333333,
+          0.29010416666666666
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.7836805555555556,
+          0.3268229166666667,
+          0.4326388888888889,
+          0.15364583333333334
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.17395833333333333,
+          0.36484375,
+          0.34791666666666665,
+          0.2296875
+        ]
+      }
+    ]
+  },
+  "pothole_water_13.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1145",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_14.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1426",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.782608695652174,
+          1.0,
+          0.43478260869565216
+        ]
+      }
+    ]
+  },
+  "pothole_water_15.jpg": {
+    "category": "potholes/water",
+    "resolution": "1456x1600",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_16.jpg": {
+    "category": "potholes/water",
+    "resolution": "1483x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_17.jpg": {
+    "category": "potholes/water",
+    "resolution": "1752x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_18.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1186",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.6361979166666667,
+          0.7466273187183811,
+          0.49635416666666665,
+          0.1745362563237774
+        ]
+      }
+    ]
+  },
+  "pothole_water_19.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_20.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1158",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.19583333333333333,
+          0.9322107081174439,
+          0.39166666666666666,
+          0.13557858376511225
+        ]
+      }
+    ]
+  },
+  "pothole_water_21.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x659",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.07161458333333333,
+          0.9301972685887708,
+          0.14322916666666666,
+          0.13960546282245828
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.93203125,
+          0.9218512898330804,
+          0.1359375,
+          0.15629742033383914
+        ]
+      }
+    ]
+  },
+  "pothole_water_22.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x773",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.30364583333333334,
+          0.4139715394566624,
+          0.3020833333333333,
+          0.19922380336351875
+        ]
+      }
+    ]
+  },
+  "pothole_water_23.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x798",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.65,
+          0.38,
+          0.28
+        ]
+      }
+    ]
+  },
+  "pothole_water_24.jpg": {
+    "category": "potholes/water",
+    "resolution": "1088x1920",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.5,
+          0.31145833333333334,
+          1.0,
+          0.12291666666666666
+        ]
+      }
+    ]
+  },
+  "pothole_water_25.jpg": {
+    "category": "potholes/water",
+    "resolution": "1920x1112",
+    "boxes": [
+      {
+        "class_id": 0,
+        "class_name": "pothole",
+        "bbox": [
+          0.92890625,
+          0.9046762589928058,
+          0.1421875,
+          0.1906474820143885
+        ]
+      }
+    ]
+  },
+  "const_sign_18.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "619x427",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.7455573505654282,
+          0.5,
+          0.5088852988691438,
+          1.0
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.23667205169628433,
+          0.5,
+          0.47334410339256866,
+          1.0
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5290791599353797,
+          0.9227166276346604,
+          0.0630048465266559,
+          0.15456674473067916
+        ]
+      }
+    ]
+  },
+  "const_sign_19.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.21848958333333332,
+          0.5,
+          0.43697916666666664,
+          1.0
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.90859375,
+          0.3215277777777778,
+          0.1390625,
+          0.12777777777777777
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.56328125,
+          0.9565972222222222,
+          0.18489583333333334,
+          0.08680555555555555
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.4765625,
+          0.07118055555555555,
+          0.08854166666666667,
+          0.1284722222222222
+        ]
+      }
+    ]
+  },
+  "const_sign_20.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "886x1920",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.6997742663656885,
+          0.8184895833333333,
+          0.600451467268623,
+          0.2421875
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5665914221218962,
+          0.5708333333333333,
+          0.8668171557562077,
+          0.28541666666666665
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.27595936794582393,
+          0.90234375,
+          0.21331828442437922,
+          0.1953125
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.781038374717833,
+          0.9627604166666667,
+          0.43792325056433407,
+          0.07447916666666667
+        ]
+      }
+    ]
+  },
+  "const_sign_21.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1280",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.48,
+          0.55,
+          0.35,
+          0.35
+        ]
+      }
+    ]
+  },
+  "const_sign_22.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.7018229166666666,
+          0.8614583333333333,
+          0.5963541666666666,
+          0.22847222222222222
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.8942708333333333,
+          0.678125,
+          0.21145833333333333,
+          0.09652777777777778
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5299479166666666,
+          0.3611111111111111,
+          0.13697916666666668,
+          0.19305555555555556
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.6791666666666667,
+          0.6152777777777778,
+          0.23645833333333333,
+          0.23472222222222222
+        ]
+      }
+    ]
+  },
+  "const_sign_23.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "886x1920",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5,
+          0.8815104166666666,
+          1.0,
+          0.23697916666666666
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5129796839729119,
+          0.4734375,
+          0.1523702031602709,
+          0.09375
+        ]
+      }
+    ]
+  },
+  "const_sign_24.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.6828125,
+          0.8824074074074074,
+          0.25104166666666666,
+          0.2351851851851852
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.9067708333333333,
+          0.8199074074074074,
+          0.18645833333333334,
+          0.275
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.7984375,
+          0.637962962962963,
+          0.06875,
+          0.18703703703703703
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.11770833333333333,
+          0.8560185185185185,
+          0.13125,
+          0.09907407407407408
+        ]
+      }
+    ]
+  },
+  "const_sign_25.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1080x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.48,
+          0.55,
+          0.35,
+          0.35
+        ]
+      }
+    ]
+  },
+  "const_symbols_01.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1000x661",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.48,
+          0.55,
+          0.35,
+          0.35
+        ]
+      }
+    ]
+  },
+  "const_symbols_02.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "636x1000",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.8875786163522013,
+          0.612,
+          0.2248427672955975,
+          0.056
+        ]
+      }
+    ]
+  },
+  "const_symbols_03.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "459x640",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5087145969498911,
+          0.5859375,
+          0.06318082788671024,
+          0.11875
+        ]
+      }
+    ]
+  },
+  "const_symbols_04.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "345x318",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.7130434782608696,
+          0.5440251572327044,
+          0.2318840579710145,
+          0.24528301886792453
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.30144927536231886,
+          0.49056603773584906,
+          0.06956521739130435,
+          0.1320754716981132
+        ]
+      }
+    ]
+  },
+  "const_symbols_05.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "776x1024",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.48,
+          0.55,
+          0.35,
+          0.35
+        ]
+      }
+    ]
+  },
+  "const_symbols_06.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.7963541666666667,
+          0.9447916666666667,
+          0.40729166666666666,
+          0.11041666666666666
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.8322916666666667,
+          0.8697916666666666,
+          0.33541666666666664,
+          0.049305555555555554
+        ]
+      }
+    ]
+  },
+  "const_symbols_07.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "626x857",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5,
+          0.8809801633605601,
+          1.0,
+          0.23803967327887982
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.8809904153354633,
+          0.7771295215869312,
+          0.2380191693290735,
+          0.06301050175029171
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.8242811501597445,
+          0.6330221703617269,
+          0.14057507987220447,
+          0.10851808634772463
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.4720447284345048,
+          0.7345390898483081,
+          0.12619808306709265,
+          0.050175029171528586
+        ]
+      }
+    ]
+  },
+  "const_symbols_08.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1442",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.40286458333333336,
+          0.6896671289875174,
+          0.2328125,
+          0.4029126213592233
+        ]
+      }
+    ]
+  },
+  "const_symbols_09.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.48,
+          0.55,
+          0.35,
+          0.35
+        ]
+      }
+    ]
+  },
+  "const_symbols_10.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1280",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.31979166666666664,
+          0.71015625,
+          0.2,
+          0.2
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.42578125,
+          0.443359375,
+          0.1421875,
+          0.25703125
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.6010416666666667,
+          0.45546875,
+          0.18020833333333333,
+          0.228125
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.32135416666666666,
+          0.48359375,
+          0.09895833333333333,
+          0.1609375
+        ]
+      }
+    ]
+  },
+  "const_symbols_11.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1440x1920",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.303125,
+          0.55546875,
+          0.5229166666666667,
+          0.3609375
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.19236111111111112,
+          0.4903645833333333,
+          0.38472222222222224,
+          0.9807291666666667
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.4583333333333333,
+          0.28489583333333335,
+          0.46111111111111114,
+          0.5697916666666667
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.70625,
+          0.5096354166666667,
+          0.09583333333333334,
+          0.2911458333333333
+        ]
+      }
+    ]
+  },
+  "with_symbols_17.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.24817708333333333,
+          0.41458333333333336,
+          0.11822916666666666,
+          0.14583333333333334
+        ]
+      }
+    ]
+  },
+  "with_symbols_18.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1920",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.9122395833333333,
+          0.9356770833333333,
+          0.11614583333333334,
+          0.12864583333333332
+        ]
+      }
+    ]
+  },
+  "with_symbols_19.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.36432291666666666,
+          0.8503472222222223,
+          0.16822916666666668,
+          0.29930555555555555
+        ]
+      }
+    ]
+  },
+  "with_symbols_20.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1279x1920",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.4906176700547303,
+          0.26145833333333335,
+          0.5699765441751369,
+          0.3802083333333333
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.45269741985926504,
+          0.75703125,
+          0.27834245504300237,
+          0.4859375
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.9480062548866302,
+          0.6283854166666667,
+          0.10398749022673964,
+          0.05677083333333333
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.7615324472243941,
+          0.7130208333333333,
+          0.10320562939796717,
+          0.16875
+        ]
+      }
+    ]
+  },
+  "with_symbols_21.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1920x1920",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5013020833333334,
+          0.3541666666666667,
+          0.5588541666666667,
+          0.5583333333333333
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.49921875,
+          0.7760416666666666,
+          0.4161458333333333,
+          0.209375
+        ]
+      }
+    ]
+  },
+  "with_symbols_23.jpg": {
+    "category": "construction/with_symbols",
+    "resolution": "1483x1920",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.5546190155091032,
+          0.4671875,
+          0.44436952124072826,
+          0.3729166666666667
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.41132838840188807,
+          0.9377604166666667,
+          0.24005394470667565,
+          0.12447916666666667
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.2356709372892785,
+          0.9333333333333333,
+          0.08024275118004046,
+          0.090625
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.4204315576534053,
+          0.6703125,
+          0.1827376938637896,
+          0.05416666666666667
+        ]
+      }
+    ]
+  },
+  "const_work_25.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "768x577",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_01.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1919x1655",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_02.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_03.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1279",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_04.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1279",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_05.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1279",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_06.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1279",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_07.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_08.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1279",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_09.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "805x500",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_10.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1279",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_11.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1280",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_12.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "768x591",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_13.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_14.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1529",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_15.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_16.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "768x530",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_17.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1278",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_18.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1051",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_19.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1275",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_20.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1600x900",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_21.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1408",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_22.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1480x1920",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "const_workers_23.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "1920x1279",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "without_symbols_25.jpg": {
+    "category": "construction/without_symbols",
+    "resolution": "3648x2736",
+    "boxes": [
+      {
+        "class_id": 1,
+        "class_name": "construction_hazard",
+        "bbox": [
+          0.52,
+          0.52,
+          0.55,
+          0.42
+        ]
+      }
+    ]
+  },
+  "accident_crash_01.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1153",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.4787510841283608,
+          1.0,
+          0.9575021682567216
+        ]
+      }
+    ]
+  },
+  "accident_crash_02.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1440x1920",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "accident_crash_03.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1695x1920",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "accident_crash_04.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.34479166666666666,
+          1.0,
+          0.6895833333333333
+        ]
+      }
+    ]
+  },
+  "accident_crash_05.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1280x1015",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.49261083743842365,
+          1.0,
+          0.9852216748768473
+        ]
+      }
+    ]
+  },
+  "accident_crash_06.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1411",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "accident_crash_07.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "accident_crash_08.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.55,
+          0.62,
+          0.45
+        ]
+      }
+    ]
+  },
+  "accident_crash_09.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1536x1536",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.55,
+          0.62,
+          0.45
+        ]
+      }
+    ]
+  },
+  "accident_crash_10.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1289",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.55,
+          0.62,
+          0.45
+        ]
+      }
+    ]
+  },
+  "accident_crash_11.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1351x560",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.4078460399703923,
+          0.5,
+          0.8156920799407846,
+          1.0
+        ]
+      }
+    ]
+  },
+  "accident_crash_12.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1276",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.4843260188087774,
+          1.0,
+          0.9686520376175548
+        ]
+      }
+    ]
+  },
+  "accident_crash_13.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1271",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "accident_crash_14.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.4621527777777778,
+          1.0,
+          0.9243055555555556
+        ]
+      }
+    ]
+  },
+  "accident_crash_15.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1294",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.55,
+          0.62,
+          0.45
+        ]
+      }
+    ]
+  },
+  "accident_crash_16.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.48148148148148145,
+          1.0,
+          0.9629629629629629
+        ]
+      }
+    ]
+  },
+  "accident_crash_17.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.55,
+          0.62,
+          0.45
+        ]
+      }
+    ]
+  },
+  "accident_crash_18.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1118",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "accident_crash_19.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1252x1250",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.65,
+          1.0,
+          0.6504
+        ]
+      }
+    ]
+  },
+  "accident_crash_20.jpg": {
+    "category": "accidents_obstacles/collisions",
+    "resolution": "1920x1439",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.5722724113968033,
+          1.0,
+          0.8554551772063933
+        ]
+      }
+    ]
+  },
+  "fallen_tree_04.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "640x480",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_05.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "640x482",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_06.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "718x1277",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_07.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1024x683",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_08.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1920x1281",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_09.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "800x709",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_10.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "480x640",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_11.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1024x768",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_12.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_13.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_14.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "fallen_tree_15.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "tree_obstacle_01.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1024x768",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "tree_obstacle_02.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "tree_obstacle_03.jpg": {
+    "category": "accidents_obstacles/fallen_trees",
+    "resolution": "640x482",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.5,
+          0.58,
+          0.78,
+          0.42
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_01.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1808x1017",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_02.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "800x600",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_03.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1052x791",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_04.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1920x1371",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_05.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1920x1438",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_06.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1639x1229",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_07.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1670x1113",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_08.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1920x1332",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_09.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1888x1920",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_10.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1920x1080",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_11.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1919x1275",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_12.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "960x960",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_13.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1053x704",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_14.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  },
+  "boulder_rockfall_15.jpg": {
+    "category": "accidents_obstacles/boulders",
+    "resolution": "1920x1440",
+    "boxes": [
+      {
+        "class_id": 2,
+        "class_name": "road_accident_obstacle",
+        "bbox": [
+          0.52,
+          0.62,
+          0.46,
+          0.38
+        ]
+      }
+    ]
+  }
+}

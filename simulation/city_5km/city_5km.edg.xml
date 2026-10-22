@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <!-- ===== METRO PARKWAY (EAST-WEST CENTRAL ARTERIAL) ===== -->
+    <!-- West Gate to J_WEST -->
+    <edge id="parkway_gw_w" from="GATE_WEST" to="J_WEST" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="parkway_w_gw" from="J_WEST" to="GATE_WEST" numLanes="2" speed="13.89" priority="3"/>
+    <!-- J_WEST to J_CENTRAL -->
+    <edge id="parkway_w_c" from="J_WEST" to="J_CENTRAL" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="parkway_c_w" from="J_CENTRAL" to="J_WEST" numLanes="2" speed="13.89" priority="3"/>
+    <!-- J_CENTRAL to J_EAST -->
+    <edge id="parkway_c_e" from="J_CENTRAL" to="J_EAST" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="parkway_e_c" from="J_EAST" to="J_CENTRAL" numLanes="2" speed="13.89" priority="3"/>
+    <!-- J_EAST to East Gate -->
+    <edge id="parkway_e_ge" from="J_EAST" to="GATE_EAST" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="parkway_ge_e" from="GATE_EAST" to="J_EAST" numLanes="2" speed="13.89" priority="3"/>
+
+    <!-- ===== AVENUE CENTRAL (NORTH-SOUTH CENTRAL ARTERIAL) ===== -->
+    <!-- South Gate to J_SOUTH -->
+    <edge id="avenue_gs_s" from="GATE_SOUTH" to="J_SOUTH" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="avenue_s_gs" from="J_SOUTH" to="GATE_SOUTH" numLanes="2" speed="13.89" priority="3"/>
+    <!-- J_SOUTH to J_CENTRAL -->
+    <edge id="avenue_s_c" from="J_SOUTH" to="J_CENTRAL" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="avenue_c_s" from="J_CENTRAL" to="J_SOUTH" numLanes="2" speed="13.89" priority="3"/>
+    <!-- J_CENTRAL to J_NORTH -->
+    <edge id="avenue_c_n" from="J_CENTRAL" to="J_NORTH" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="avenue_n_c" from="J_NORTH" to="J_CENTRAL" numLanes="2" speed="13.89" priority="3"/>
+    <!-- J_NORTH to North Gate -->
+    <edge id="avenue_n_gn" from="J_NORTH" to="GATE_NORTH" numLanes="2" speed="13.89" priority="3"/>
+    <edge id="avenue_gn_n" from="GATE_NORTH" to="J_NORTH" numLanes="2" speed="13.89" priority="3"/>
+
+    <!-- ===== NORTH RING ROAD (NORTH ARTERIAL) ===== -->
+    <!-- J_NW to J_NORTH -->
+    <edge id="ring_nw_n" from="J_NW" to="J_NORTH" numLanes="2" speed="13.89" priority="2"/>
+    <edge id="ring_n_nw" from="J_NORTH" to="J_NW" numLanes="2" speed="13.89" priority="2"/>
+    <!-- J_NORTH to J_NE -->
+    <edge id="ring_n_ne" from="J_NORTH" to="J_NE" numLanes="2" speed="13.89" priority="2"/>
+    <edge id="ring_ne_n" from="J_NE" to="J_NORTH" numLanes="2" speed="13.89" priority="2"/>
+
+    <!-- ===== SOUTH BYPASS (SOUTH ARTERIAL) ===== -->
+    <!-- J_SW to J_SOUTH -->
+    <edge id="bypass_sw_s" from="J_SW" to="J_SOUTH" numLanes="2" speed="13.89" priority="2"/>
+    <edge id="bypass_s_sw" from="J_SOUTH" to="J_SW" numLanes="2" speed="13.89" priority="2"/>
+    <!-- J_SOUTH to J_SE -->
+    <edge id="bypass_s_se" from="J_SOUTH" to="J_SE" numLanes="2" speed="13.89" priority="2"/>
+    <edge id="bypass_se_s" from="J_SE" to="J_SOUTH" numLanes="2" speed="13.89" priority="2"/>
+
+    <!-- ===== WESTWAY (WEST CONNECTOR CORRIDOR) ===== -->
+    <!-- J_SW to J_WEST -->
+    <edge id="westway_sw_w" from="J_SW" to="J_WEST" numLanes="2" speed="11.11" priority="2"/>
+    <edge id="westway_w_sw" from="J_WEST" to="J_SW" numLanes="2" speed="11.11" priority="2"/>
+    <!-- J_WEST to J_NW -->
+    <edge id="westway_w_nw" from="J_WEST" to="J_NW" numLanes="2" speed="11.11" priority="2"/>
+    <edge id="westway_nw_w" from="J_NW" to="J_WEST" numLanes="2" speed="11.11" priority="2"/>
+
+    <!-- ===== EASTWAY (EAST CONNECTOR CORRIDOR) ===== -->
+    <!-- J_SE to J_EAST -->
+    <edge id="eastway_se_e" from="J_SE" to="J_EAST" numLanes="2" speed="11.11" priority="2"/>
+    <edge id="eastway_e_se" from="J_EAST" to="J_SE" numLanes="2" speed="11.11" priority="2"/>
+    <!-- J_EAST to J_NE -->
+    <edge id="eastway_e_ne" from="J_EAST" to="J_NE" numLanes="2" speed="11.11" priority="2"/>
+    <edge id="eastway_ne_e" from="J_NE" to="J_EAST" numLanes="2" speed="11.11" priority="2"/>
+</edges>

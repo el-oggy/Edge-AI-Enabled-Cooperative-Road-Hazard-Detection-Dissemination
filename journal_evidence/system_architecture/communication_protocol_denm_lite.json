@@ -1,0 +1,44 @@
+{
+  "protocol_name": "PFPD-DENM-Lite",
+  "version": "1.0",
+  "inspiration": "ETSI EN 302 637-3 (Decentralized Environmental Notification Basic Service)",
+  "compliance_statement": "Inspired by ETSI DENM concepts; optimized as lightweight binary UDP / JSON schema for edge-to-RSU low-latency transport. Not full ASN.1 UPER encoded.",
+  "binary_packet_structure_bytes": {
+    "total_length_bytes": 39,
+    "fields": [
+      {"name": "magic", "offset": 0, "length": 2, "type": "char[2]", "value": "PF", "description": "Protocol magic bytes"},
+      {"name": "version", "offset": 2, "length": 1, "type": "uint8", "value": 1, "description": "Protocol version"},
+      {"name": "station_id", "offset": 3, "length": 4, "type": "uint32", "description": "Originating RSU / Pi Station ID"},
+      {"name": "hazard_event_id", "offset": 7, "length": 4, "type": "uint32", "description": "Unique temporal track identifier"},
+      {"name": "event_type", "offset": 11, "length": 1, "type": "uint8", "values": {"1": "NEW_HAZARD", "2": "REPEAT_TRACK_UPDATE"}},
+      {"name": "class_id", "offset": 12, "length": 1, "type": "uint8", "values": {"0": "pothole", "1": "construction_hazard", "2": "road_accident_obstacle"}},
+      {"name": "confidence_scaled", "offset": 13, "length": 2, "type": "uint16", "description": "conf * 10000 (0 to 10000)"},
+      {"name": "bbox_coords", "offset": 15, "length": 8, "type": "uint16[4]", "description": "Normalized/pixel coordinates [x1, y1, x2, y2]"},
+      {"name": "t_capture_ns", "offset": 23, "length": 8, "type": "uint64", "description": "Hardware frame capture timestamp (ns)"},
+      {"name": "t_tx_ns", "offset": 31, "length": 8, "type": "uint64", "description": "Hardware socket dispatch timestamp (ns)"}
+    ]
+  },
+  "etsi_cause_code_mapping": {
+    "0": {
+      "class_name": "pothole",
+      "etsi_cause_code": 9,
+      "etsi_subcause_code": 4,
+      "etsi_description": "Adverse conditions - rough road surface / pothole",
+      "recommended_action": "CAUTION_SLOWDOWN (30 km/h)"
+    },
+    "1": {
+      "class_name": "construction_hazard",
+      "etsi_cause_code": 3,
+      "etsi_subcause_code": 1,
+      "etsi_description": "Roadworks - stationary road work zone",
+      "recommended_action": "CAUTION_SLOWDOWN (25 km/h) / LANE_SHIFT"
+    },
+    "2": {
+      "class_name": "road_accident_obstacle",
+      "etsi_cause_code": 2,
+      "etsi_subcause_code": 1,
+      "etsi_description": "Traffic accident / obstacle on roadway",
+      "recommended_action": "EMERGENCY_REROUTE (Dynamic Detour)"
+    }
+  }
+}

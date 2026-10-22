@@ -16,6 +16,8 @@ kaggle.json
 **/*.md
 !/README.md
 !docs/**/*.md
+!.agents/skills/**/*.md
+
 
 # Simulation Outputs & Temporary Trajectory Files
 outputs/
@@ -38,6 +40,10 @@ satellite_highres/
 datasets/
 data/raw/
 data/processed/
+data/finetune_package*/
+data/finetune_staging/
+data/benchmark_150_annotations_machine_generated_backup/
+scratch/
 *.zip
 *.tar
 *.tar.gz

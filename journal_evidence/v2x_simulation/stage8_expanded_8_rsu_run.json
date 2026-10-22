@@ -1,0 +1,331 @@
+{
+  "scenario": "STAGE8_EXPANDED_8_RSU",
+  "mode": "EXPANDED_8_RSU",
+  "step_length_s": 0.1,
+  "total_steps": 500,
+  "sim_duration_s": 50.0,
+  "wall_duration_s": 60.24,
+  "mesh_stats": {
+    "udp_packets_ingested": 0,
+    "mode_a_physical_pi_alerts": 0,
+    "mode_b_simulated_alerts": 3,
+    "inter_rsu_forwards": 21,
+    "total_vehicle_warnings": 1,
+    "total_reroutes_executed": 11,
+    "latencies_in_flight_ms": [
+      1.2,
+      1.2,
+      1.2
+    ],
+    "latencies_e2e_ms": [
+      105.2,
+      105.2,
+      105.2
+    ]
+  },
+  "stage8_metrics": {
+    "road_network_coverage_pct": 91.1,
+    "traffic_weighted_coverage_pct": 97.94,
+    "unique_vehicles_total": 77,
+    "unique_vehicles_in_coverage": 76,
+    "warning_delivery_success_rate_pct": 18.75,
+    "relevant_vehicles_count": 64,
+    "relevant_vehicles_warned_count": 12,
+    "missed_relevant_vehicles_count": 52,
+    "unnecessary_warnings_count": 0,
+    "opposite_direction_rejections_count": 4582,
+    "invalid_packets_rejected_count": 0,
+    "inter_rsu_forwarding_count": 21,
+    "duplicate_packets_suppressed": 24,
+    "duplicate_suppression_success_rate_pct": 50.0,
+    "maximum_hop_count": 3,
+    "network_overhead_bytes": {
+      "backhaul_bytes": 18991,
+      "v2i_bytes": 6144,
+      "total_simulated_bytes": 25135
+    },
+    "active_vehicle_counts_timeseries": [
+      {
+        "sim_t": 0.9,
+        "active_vehicles": 2
+      },
+      {
+        "sim_t": 1.9,
+        "active_vehicles": 4
+      },
+      {
+        "sim_t": 2.9,
+        "active_vehicles": 6
+      },
+      {
+        "sim_t": 3.9,
+        "active_vehicles": 8
+      },
+      {
+        "sim_t": 4.9,
+        "active_vehicles": 10
+      },
+      {
+        "sim_t": 5.9,
+        "active_vehicles": 12
+      },
+      {
+        "sim_t": 6.9,
+        "active_vehicles": 14
+      },
+      {
+        "sim_t": 7.9,
+        "active_vehicles": 15
+      },
+      {
+        "sim_t": 8.9,
+        "active_vehicles": 16
+      },
+      {
+        "sim_t": 9.9,
+        "active_vehicles": 17
+      },
+      {
+        "sim_t": 10.9,
+        "active_vehicles": 21
+      },
+      {
+        "sim_t": 11.9,
+        "active_vehicles": 22
+      },
+      {
+        "sim_t": 12.9,
+        "active_vehicles": 23
+      },
+      {
+        "sim_t": 13.9,
+        "active_vehicles": 26
+      },
+      {
+        "sim_t": 14.9,
+        "active_vehicles": 27
+      },
+      {
+        "sim_t": 15.9,
+        "active_vehicles": 29
+      },
+      {
+        "sim_t": 16.9,
+        "active_vehicles": 29
+      },
+      {
+        "sim_t": 17.9,
+        "active_vehicles": 32
+      },
+      {
+        "sim_t": 18.9,
+        "active_vehicles": 36
+      },
+      {
+        "sim_t": 19.9,
+        "active_vehicles": 38
+      },
+      {
+        "sim_t": 20.9,
+        "active_vehicles": 38
+      },
+      {
+        "sim_t": 21.9,
+        "active_vehicles": 39
+      },
+      {
+        "sim_t": 22.9,
+        "active_vehicles": 42
+      },
+      {
+        "sim_t": 23.9,
+        "active_vehicles": 42
+      },
+      {
+        "sim_t": 24.9,
+        "active_vehicles": 42
+      },
+      {
+        "sim_t": 25.9,
+        "active_vehicles": 44
+      },
+      {
+        "sim_t": 26.9,
+        "active_vehicles": 46
+      },
+      {
+        "sim_t": 27.9,
+        "active_vehicles": 47
+      },
+      {
+        "sim_t": 28.9,
+        "active_vehicles": 48
+      },
+      {
+        "sim_t": 29.9,
+        "active_vehicles": 50
+      },
+      {
+        "sim_t": 30.9,
+        "active_vehicles": 51
+      },
+      {
+        "sim_t": 31.9,
+        "active_vehicles": 54
+      },
+      {
+        "sim_t": 32.9,
+        "active_vehicles": 54
+      },
+      {
+        "sim_t": 33.9,
+        "active_vehicles": 56
+      },
+      {
+        "sim_t": 34.9,
+        "active_vehicles": 58
+      },
+      {
+        "sim_t": 35.9,
+        "active_vehicles": 60
+      },
+      {
+        "sim_t": 36.9,
+        "active_vehicles": 61
+      },
+      {
+        "sim_t": 37.9,
+        "active_vehicles": 61
+      },
+      {
+        "sim_t": 38.9,
+        "active_vehicles": 61
+      },
+      {
+        "sim_t": 39.9,
+        "active_vehicles": 61
+      },
+      {
+        "sim_t": 40.9,
+        "active_vehicles": 63
+      },
+      {
+        "sim_t": 41.9,
+        "active_vehicles": 65
+      },
+      {
+        "sim_t": 42.9,
+        "active_vehicles": 70
+      },
+      {
+        "sim_t": 43.9,
+        "active_vehicles": 72
+      },
+      {
+        "sim_t": 44.9,
+        "active_vehicles": 72
+      },
+      {
+        "sim_t": 45.9,
+        "active_vehicles": 73
+      },
+      {
+        "sim_t": 46.9,
+        "active_vehicles": 73
+      },
+      {
+        "sim_t": 47.9,
+        "active_vehicles": 73
+      },
+      {
+        "sim_t": 48.9,
+        "active_vehicles": 73
+      },
+      {
+        "sim_t": 49.9,
+        "active_vehicles": 77
+      }
+    ]
+  },
+  "rsu_breakdown": {
+    "RSU_01_WEST": {
+      "alerts_received_direct": 1,
+      "alerts_received_forwarded": 2,
+      "alerts_forwarded": 0,
+      "vehicles_warned": 0,
+      "duplicate_detections_suppressed": 3,
+      "expired_events_pruned": 0
+    },
+    "RSU_02_CENTRAL": {
+      "alerts_received_direct": 2,
+      "alerts_received_forwarded": 1,
+      "alerts_forwarded": 0,
+      "vehicles_warned": 1,
+      "duplicate_detections_suppressed": 9,
+      "expired_events_pruned": 0
+    },
+    "RSU_03_EAST": {
+      "alerts_received_direct": 0,
+      "alerts_received_forwarded": 3,
+      "alerts_forwarded": 0,
+      "vehicles_warned": 0,
+      "duplicate_detections_suppressed": 4,
+      "expired_events_pruned": 0
+    },
+    "RSU_04_NORTH": {
+      "alerts_received_direct": 0,
+      "alerts_received_forwarded": 3,
+      "alerts_forwarded": 0,
+      "vehicles_warned": 0,
+      "duplicate_detections_suppressed": 4,
+      "expired_events_pruned": 0
+    },
+    "RSU_05_SOUTH": {
+      "alerts_received_direct": 0,
+      "alerts_received_forwarded": 3,
+      "alerts_forwarded": 0,
+      "vehicles_warned": 0,
+      "duplicate_detections_suppressed": 2,
+      "expired_events_pruned": 0
+    },
+    "RSU_06_NW": {
+      "alerts_received_direct": 0,
+      "alerts_received_forwarded": 3,
+      "alerts_forwarded": 0,
+      "vehicles_warned": 0,
+      "duplicate_detections_suppressed": 1,
+      "expired_events_pruned": 0
+    },
+    "RSU_07_NE": {
+      "alerts_received_direct": 0,
+      "alerts_received_forwarded": 3,
+      "alerts_forwarded": 0,
+      "vehicles_warned": 0,
+      "duplicate_detections_suppressed": 1,
+      "expired_events_pruned": 0
+    },
+    "RSU_08_SE": {
+      "alerts_received_direct": 0,
+      "alerts_received_forwarded": 3,
+      "alerts_forwarded": 0,
+      "vehicles_warned": 0,
+      "duplicate_detections_suppressed": 0,
+      "expired_events_pruned": 0
+    }
+  },
+  "lifecycle_events_count": 1,
+  "sample_lifecycle_events": [
+    {
+      "sim_t": 31.0,
+      "step": 311,
+      "rsu_id": "RSU_02_CENTRAL",
+      "veh_id": "flow_02_beltway_cw.0",
+      "action_id": "HAZ_POTHOLE_01",
+      "hazard_name": "pothole",
+      "dist_to_haz": 179.2,
+      "speed_before_kmh": 46.9,
+      "action": "CAUTION_SLOWDOWN",
+      "adv_spd_kmh": 30
+    }
+  ]
+}
