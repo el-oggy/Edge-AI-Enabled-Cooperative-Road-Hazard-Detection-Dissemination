@@ -1,0 +1,8 @@
+path: /kaggle/working/finetune_v2
+train: images/train
+val: images/val
+
+names:
+  0: pothole
+  1: construction_hazard
+  2: road_accident_obstacle

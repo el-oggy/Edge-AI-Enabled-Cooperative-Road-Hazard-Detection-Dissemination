@@ -1,0 +1,226 @@
+{
+  "status": "COMPLETED",
+  "model_fp32": "/home/oggy/projects/pfpd/models/unified_yolo11n_384.mnn",
+  "model_int8": "/home/oggy/projects/pfpd/models/unified_yolo11n_384_int8.mnn",
+  "images_evaluated": 60,
+  "total_fp32_detections": 36,
+  "total_int8_detections": 36,
+  "matched_detections": 36,
+  "class_concordance_percent": 100.0,
+  "bounding_box_iou": {
+    "mean": 0.9868,
+    "median": 0.9926,
+    "min": 0.9403
+  },
+  "confidence_score_delta": {
+    "mean": 0.0117,
+    "median": 0.006,
+    "max": 0.0824
+  },
+  "discrepancies": {
+    "fp32_only_dropped": 0,
+    "int8_only_spurious": 0
+  },
+  "matched_samples": [
+    {
+      "image": "boulder_rockfall_02.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.3421,
+      "int8_conf": 0.332,
+      "conf_delta": 0.01,
+      "box_iou": 0.9731,
+      "class_match": true
+    },
+    {
+      "image": "boulder_rockfall_02.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.2811,
+      "int8_conf": 0.2637,
+      "conf_delta": 0.0174,
+      "box_iou": 0.9929,
+      "class_match": true
+    },
+    {
+      "image": "boulder_rockfall_03.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.2907,
+      "int8_conf": 0.2969,
+      "conf_delta": 0.0062,
+      "box_iou": 0.9861,
+      "class_match": true
+    },
+    {
+      "image": "boulder_rockfall_06.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.5715,
+      "int8_conf": 0.5684,
+      "conf_delta": 0.0031,
+      "box_iou": 0.9922,
+      "class_match": true
+    },
+    {
+      "image": "boulder_rockfall_07.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.3258,
+      "int8_conf": 0.3486,
+      "conf_delta": 0.0228,
+      "box_iou": 0.9975,
+      "class_match": true
+    },
+    {
+      "image": "boulder_rockfall_11.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.6281,
+      "int8_conf": 0.623,
+      "conf_delta": 0.005,
+      "box_iou": 0.9959,
+      "class_match": true
+    },
+    {
+      "image": "boulder_rockfall_14.jpg",
+      "fp32_class": 1,
+      "int8_class": 1,
+      "fp32_conf": 0.2791,
+      "int8_conf": 0.3096,
+      "conf_delta": 0.0305,
+      "box_iou": 0.9955,
+      "class_match": true
+    },
+    {
+      "image": "boulder_rockfall_14.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.5297,
+      "int8_conf": 0.5117,
+      "conf_delta": 0.018,
+      "box_iou": 0.9978,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_01.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.3151,
+      "int8_conf": 0.251,
+      "conf_delta": 0.0642,
+      "box_iou": 0.9839,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_02.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.7415,
+      "int8_conf": 0.7402,
+      "conf_delta": 0.0013,
+      "box_iou": 0.9939,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_05.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.7171,
+      "int8_conf": 0.7246,
+      "conf_delta": 0.0075,
+      "box_iou": 0.9792,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_05.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.6253,
+      "int8_conf": 0.6289,
+      "conf_delta": 0.0036,
+      "box_iou": 0.998,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_06.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.3584,
+      "int8_conf": 0.3438,
+      "conf_delta": 0.0146,
+      "box_iou": 0.9644,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_07.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.9398,
+      "int8_conf": 0.9355,
+      "conf_delta": 0.0042,
+      "box_iou": 0.9963,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_08.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.8795,
+      "int8_conf": 0.875,
+      "conf_delta": 0.0045,
+      "box_iou": 0.9975,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_08.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.7661,
+      "int8_conf": 0.7715,
+      "conf_delta": 0.0054,
+      "box_iou": 0.9979,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_09.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.894,
+      "int8_conf": 0.8926,
+      "conf_delta": 0.0015,
+      "box_iou": 0.9969,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_09.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.3298,
+      "int8_conf": 0.3271,
+      "conf_delta": 0.0027,
+      "box_iou": 0.987,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_11.jpg",
+      "fp32_class": 2,
+      "int8_class": 2,
+      "fp32_conf": 0.3324,
+      "int8_conf": 0.25,
+      "conf_delta": 0.0824,
+      "box_iou": 0.9604,
+      "class_match": true
+    },
+    {
+      "image": "accident_crash_13.jpg",
+      "fp32_class": 1,
+      "int8_class": 1,
+      "fp32_conf": 0.625,
+      "int8_conf": 0.6191,
+      "conf_delta": 0.0059,
+      "box_iou": 0.97,
+      "class_match": true
+    }
+  ]
+}

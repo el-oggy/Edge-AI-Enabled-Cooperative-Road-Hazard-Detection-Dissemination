@@ -1,0 +1,65 @@
+{
+  "cat1_pothole_gained": [
+    {
+      "image": "andrew_potholes305_potholes305.png",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat1_pothole_gained_ex1_andrew_potholes305_potholes305.png",
+      "description": "Category 1: Correct Pothole Gained After Fine-Tuning (TP gained, FN removed)"
+    },
+    {
+      "image": "andrew_potholes632_potholes632.png",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat1_pothole_gained_ex2_andrew_potholes632_potholes632.png",
+      "description": "Category 1: Correct Pothole Gained After Fine-Tuning (TP gained, FN removed)"
+    }
+  ],
+  "cat2_construction_missed": [
+    {
+      "image": "const_img17_img17_jpg.rf.be936e7557512db44c8435c729185e76.jpg",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat2_construction_missed_ex1_const_img17_img17_jpg.rf.be936e7557512db44c8435c729185e76.png",
+      "description": "Category 2: Construction Hazard Missed Only by Fine-Tuned Model (Regression)"
+    },
+    {
+      "image": "const_youtube-499_youtube-499_jpg.rf.108e4f13fd0e76422d399dea68b7b744.jpg",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat2_construction_missed_ex2_const_youtube-499_youtube-499_jpg.rf.108e4f13fd0e76422d399dea68b7b744.png",
+      "description": "Category 2: Construction Hazard Missed Only by Fine-Tuned Model (Regression)"
+    }
+  ],
+  "cat3_collision_missed": [
+    {
+      "image": "sak_172_172_jpg.rf.82df693257036280887f3f614d9fd674.jpg",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat3_collision_missed_ex1_sak_172_172_jpg.rf.82df693257036280887f3f614d9fd674.png",
+      "description": "Category 3: Vehicle Collision Missed Only by Fine-Tuned Model (Regression)"
+    },
+    {
+      "image": "sak_ia_ia_100000000187_png_jpg.rf.0b99468dddddeb56bfb1a8c0e4f92bbe.jpg",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat3_collision_missed_ex2_sak_ia_ia_100000000187_png_jpg.rf.0b99468dddddeb56bfb1a8c0e4f92bbe.png",
+      "description": "Category 3: Vehicle Collision Missed Only by Fine-Tuned Model (Regression)"
+    }
+  ],
+  "cat4_obstacle_gained": [
+    {
+      "image": "fallen_tree_08.jpg",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat4_obstacle_gained_ex1_fallen_tree_08.png",
+      "description": "Category 4: Road Obstacle / Tree Newly Detected After Fine-Tuning (Improvement)"
+    }
+  ],
+  "cat5_false_positive_eliminated": [],
+  "cat5_false_positive_introduced": [
+    {
+      "image": "sak_ia_ia_100000000321_png_jpg.rf.81825ba41838410b63b679596e04e571.jpg",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat5_false_positive_introduced_ex1_sak_ia_ia_100000000321_png_jpg.rf.81825ba41838410b63b679596e04e571.png",
+      "description": "Category 5b: False Positive Newly Introduced by Fine-Tuned Model"
+    }
+  ],
+  "cat6_both_failed": [
+    {
+      "image": "andrew_potholes56_potholes56.png",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat6_both_failed_ex1_andrew_potholes56_potholes56.png",
+      "description": "Category 6: Difficult Edge Case Missed by Both Models (Remaining Challenge)"
+    },
+    {
+      "image": "andrew_potholes56_potholes56.png",
+      "file_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\accuracy_audit\\visual_failures\\cat6_both_failed_ex2_andrew_potholes56_potholes56.png",
+      "description": "Category 6: Difficult Edge Case Missed by Both Models (Remaining Challenge)"
+    }
+  ]
+}

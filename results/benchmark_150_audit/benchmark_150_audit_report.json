@@ -1,0 +1,6302 @@
+{
+  "title": "PFPD Benchmark-150 Ground-Truth Independent Audit & Correction",
+  "total_images_audited": 150,
+  "total_old_boxes": 210,
+  "total_audited_boxes": 239,
+  "per_class_audited": {
+    "pothole": 75,
+    "construction_hazard": 113,
+    "road_accident_obstacle": 51
+  },
+  "correction_actions_summary": {
+    "replaced_hardcoded_fallback": 60,
+    "replaced_full_image_dummy": 11,
+    "tightened_geometry": 42,
+    "corrected_count_and_bounds": 37
+  },
+  "audit_records": [
+    {
+      "image": "boulder_rockfall_01.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1808x1017",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.65,
+            1.0,
+            0.7001
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_01_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_02.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "800x600",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_02_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_03.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1052x791",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_03_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_04.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1920x1371",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.8357,
+            0.6382,
+            0.3286,
+            0.4026
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_04_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_05.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1920x1438",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_05_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_06.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1639x1229",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_06_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_07.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1670x1113",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.4371,
+            0.6092,
+            0.8743,
+            0.6199
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_07_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_08.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1920x1332",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.3497,
+            0.6776,
+            0.6995,
+            0.6449
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_08_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_09.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1888x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.3753,
+            0.5026,
+            0.5535,
+            0.4052
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_09_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_10.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1920x1080",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.601,
+            0.7519,
+            0.7979,
+            0.4963
+          ]
+        },
+        {
+          "class_id": 2,
+          "coords": [
+            0.1497,
+            0.7903,
+            0.2995,
+            0.4028
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_10_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_11.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1919x1275",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_11_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_12.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "960x960",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_12_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_13.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1053x704",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_13_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_14.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_14_audit_overlay.jpg"
+    },
+    {
+      "image": "boulder_rockfall_15.jpg",
+      "category": "accidents_obstacles/boulders",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.62,
+            0.46,
+            0.38
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.52,
+            0.65,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for boulder"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\boulders\\boulder_rockfall_15_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_01.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1153",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.4788,
+            1.0,
+            0.9575
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.4809,
+            1.0,
+            0.9618
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_01_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_02.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1440x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_02_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_03.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1695x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_03_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_04.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.3448,
+            1.0,
+            0.6896
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.3569,
+            1.0,
+            0.7139
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_04_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_05.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1280x1015",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.4926,
+            1.0,
+            0.9852
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_05_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_06.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1411",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_06_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_07.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_07_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_08.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.62,
+            0.45
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for vehicle collision"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_08_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_09.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1536x1536",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.62,
+            0.45
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for vehicle collision"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_09_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_10.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1289",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.62,
+            0.45
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for vehicle collision"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_10_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_11.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1351x560",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.4078,
+            0.5,
+            0.8157,
+            1.0
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_11_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_12.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1276",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.4843,
+            1.0,
+            0.9687
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.4843,
+            1.0,
+            0.9687
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_12_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_13.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1271",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_13_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_14.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.4622,
+            1.0,
+            0.9243
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_14_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_15.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1294",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.62,
+            0.45
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for vehicle collision"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_15_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_16.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1080",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.4815,
+            1.0,
+            0.963
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_16_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_17.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1080",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.62,
+            0.45
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for vehicle collision"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_17_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_18.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1118",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.55,
+            0.6,
+            0.42
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Full-image dummy box (covers entire scene)"
+      ],
+      "audit_action": "REPLACED_FULL_IMAGE_DUMMY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_18_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_19.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1252x1250",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.65,
+            1.0,
+            0.6504
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6556,
+            1.0,
+            0.6888
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_19_audit_overlay.jpg"
+    },
+    {
+      "image": "accident_crash_20.jpg",
+      "category": "accidents_obstacles/collisions",
+      "resolution": "1920x1439",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5723,
+            1.0,
+            0.8555
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5723,
+            1.0,
+            0.8555
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\collisions\\accident_crash_20_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_04.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "640x480",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_04_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_05.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "640x482",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_05_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_06.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "718x1277",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_06_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_07.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1024x683",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_07_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_08.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1920x1281",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_08_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_09.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "800x709",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_09_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_10.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "480x640",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_10_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_11.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1024x768",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_11_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_12.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_12_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_13.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1920x1080",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_13_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_14.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1920x1080",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_14_audit_overlay.jpg"
+    },
+    {
+      "image": "fallen_tree_15.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1920x1080",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\fallen_tree_15_audit_overlay.jpg"
+    },
+    {
+      "image": "tree_obstacle_01.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1024x768",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\tree_obstacle_01_audit_overlay.jpg"
+    },
+    {
+      "image": "tree_obstacle_02.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "1920x1080",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\tree_obstacle_02_audit_overlay.jpg"
+    },
+    {
+      "image": "tree_obstacle_03.jpg",
+      "category": "accidents_obstacles/fallen_trees",
+      "resolution": "640x482",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.58,
+            0.78,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 2,
+          "coords": [
+            0.5,
+            0.6,
+            0.68,
+            0.3
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for fallen tree"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\accidents_obstacles\\fallen_trees\\tree_obstacle_03_audit_overlay.jpg"
+    },
+    {
+      "image": "const_sign_18.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "619x427",
+      "old_box_count": 3,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.7456,
+            0.5,
+            0.5089,
+            1.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2367,
+            0.5,
+            0.4733,
+            1.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5291,
+            0.9227,
+            0.063,
+            0.1546
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.6721,
+            0.9578,
+            0.1712,
+            0.0843
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5331,
+            0.9239,
+            0.0743,
+            0.1522
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_18_audit_overlay.jpg"
+    },
+    {
+      "image": "const_sign_19.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 4,
+      "new_box_count": 4,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.2185,
+            0.5,
+            0.437,
+            1.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.9086,
+            0.3215,
+            0.1391,
+            0.1278
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5633,
+            0.9566,
+            0.1849,
+            0.0868
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4766,
+            0.0712,
+            0.0885,
+            0.1285
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.2591,
+            0.5,
+            0.5182,
+            1.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8617,
+            0.2705,
+            0.238,
+            0.2562
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5846,
+            0.9632,
+            0.1068,
+            0.0736
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4432,
+            0.4854,
+            0.0792,
+            0.0875
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_19_audit_overlay.jpg"
+    },
+    {
+      "image": "const_sign_20.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "886x1920",
+      "old_box_count": 4,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.6998,
+            0.8185,
+            0.6005,
+            0.2422
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5666,
+            0.5708,
+            0.8668,
+            0.2854
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.276,
+            0.9023,
+            0.2133,
+            0.1953
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.781,
+            0.9628,
+            0.4379,
+            0.0745
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5643,
+            0.5724,
+            0.8713,
+            0.7104
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5119,
+            0.3195,
+            0.3668,
+            0.1078
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2748,
+            0.8995,
+            0.2223,
+            0.201
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.781,
+            0.962,
+            0.4379,
+            0.076
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.9182,
+            0.8982,
+            0.1637,
+            0.062
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_20_audit_overlay.jpg"
+    },
+    {
+      "image": "const_sign_21.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1280",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.48,
+            0.55,
+            0.35,
+            0.35
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.956,
+            0.0395,
+            0.088,
+            0.0789
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8266,
+            0.8023,
+            0.0854,
+            0.0641
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_21_audit_overlay.jpg"
+    },
+    {
+      "image": "const_sign_22.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 4,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.7018,
+            0.8615,
+            0.5964,
+            0.2285
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8943,
+            0.6781,
+            0.2115,
+            0.0965
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5299,
+            0.3611,
+            0.137,
+            0.1931
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.6792,
+            0.6153,
+            0.2365,
+            0.2347
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.713,
+            0.8625,
+            0.574,
+            0.2306
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5294,
+            0.3611,
+            0.1359,
+            0.1944
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8995,
+            0.6712,
+            0.201,
+            0.0854
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.6789,
+            0.6135,
+            0.237,
+            0.2313
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2544,
+            0.6667,
+            0.1818,
+            0.0667
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_22_audit_overlay.jpg"
+    },
+    {
+      "image": "const_sign_23.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "886x1920",
+      "old_box_count": 2,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.8815,
+            1.0,
+            0.237
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.513,
+            0.4734,
+            0.1524,
+            0.0938
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.857,
+            1.0,
+            0.2859
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5147,
+            0.4956,
+            0.1603,
+            0.1391
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_23_audit_overlay.jpg"
+    },
+    {
+      "image": "const_sign_24.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1080",
+      "old_box_count": 4,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.6828,
+            0.8824,
+            0.251,
+            0.2352
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.9068,
+            0.8199,
+            0.1865,
+            0.275
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.7984,
+            0.638,
+            0.0688,
+            0.187
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.1177,
+            0.856,
+            0.1313,
+            0.0991
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.9062,
+            0.8412,
+            0.1875,
+            0.3176
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.6818,
+            0.8894,
+            0.2594,
+            0.2213
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.0846,
+            0.8139,
+            0.1693,
+            0.1389
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.7979,
+            0.6375,
+            0.0698,
+            0.1917
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.3458,
+            0.9301,
+            0.1187,
+            0.1269
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_24_audit_overlay.jpg"
+    },
+    {
+      "image": "const_sign_25.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1080x1440",
+      "old_box_count": 1,
+      "new_box_count": 3,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.48,
+            0.55,
+            0.35,
+            0.35
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.4856,
+            0.2507,
+            0.1769,
+            0.1278
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.3037,
+            0.6031,
+            0.163,
+            0.0882
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.0528,
+            0.5497,
+            0.1056,
+            0.066
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_sign_25_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_01.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1000x661",
+      "old_box_count": 1,
+      "new_box_count": 4,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.48,
+            0.55,
+            0.35,
+            0.35
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.234,
+            0.6906,
+            0.316,
+            0.2375
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2505,
+            0.4455,
+            0.209,
+            0.298
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.222,
+            0.8578,
+            0.084,
+            0.0998
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.121,
+            0.8578,
+            0.046,
+            0.1241
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_01_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_02.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "636x1000",
+      "old_box_count": 1,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.8876,
+            0.612,
+            0.2248,
+            0.056
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.3781,
+            0.44,
+            0.4009,
+            0.292
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4285,
+            0.6845,
+            0.4418,
+            0.197
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.6706,
+            0.897,
+            0.2091,
+            0.19
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8868,
+            0.6115,
+            0.2264,
+            0.057
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4615,
+            0.8395,
+            0.0959,
+            0.113
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_02_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_03.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "459x640",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5087,
+            0.5859,
+            0.0632,
+            0.1187
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5065,
+            0.5453,
+            0.0719,
+            0.2062
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_03_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_04.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "345x318",
+      "old_box_count": 2,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.713,
+            0.544,
+            0.2319,
+            0.2453
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.3014,
+            0.4906,
+            0.0696,
+            0.1321
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.3203,
+            0.1541,
+            0.6406,
+            0.3082
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.6754,
+            0.6887,
+            0.3768,
+            0.5975
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2928,
+            0.5079,
+            0.1797,
+            0.3553
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2232,
+            0.6714,
+            0.1217,
+            0.1855
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.6043,
+            0.2327,
+            0.1942,
+            0.1635
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_04_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_05.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "776x1024",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.48,
+            0.55,
+            0.35,
+            0.35
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.1546,
+            0.6245,
+            0.1211,
+            0.0732
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.1405,
+            0.731,
+            0.049,
+            0.0615
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_05_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_06.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 2,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.7964,
+            0.9448,
+            0.4073,
+            0.1104
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8323,
+            0.8698,
+            0.3354,
+            0.0493
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.8036,
+            0.9417,
+            0.3927,
+            0.1056
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.832,
+            0.8691,
+            0.3359,
+            0.0521
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_06_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_07.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "626x857",
+      "old_box_count": 4,
+      "new_box_count": 4,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.881,
+            1.0,
+            0.238
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.881,
+            0.7771,
+            0.238,
+            0.063
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8243,
+            0.633,
+            0.1406,
+            0.1085
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.472,
+            0.7345,
+            0.1262,
+            0.0502
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.401,
+            0.8501,
+            0.8019,
+            0.2999
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.7351,
+            0.1853,
+            0.0513
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8914,
+            0.776,
+            0.2173,
+            0.063
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8235,
+            0.6412,
+            0.139,
+            0.0922
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_07_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_08.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1442",
+      "old_box_count": 1,
+      "new_box_count": 3,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.4029,
+            0.6897,
+            0.2328,
+            0.4029
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.4029,
+            0.6436,
+            0.2339,
+            0.4951
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5552,
+            0.7642,
+            0.1198,
+            0.1387
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.6461,
+            0.8006,
+            0.0922,
+            0.07
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_08_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_09.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 3,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.48,
+            0.55,
+            0.35,
+            0.35
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.7529,
+            0.6292,
+            0.4943,
+            0.5
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2237,
+            0.4455,
+            0.4474,
+            0.3243
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8042,
+            0.8233,
+            0.0969,
+            0.1118
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_09_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_10.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1280",
+      "old_box_count": 4,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.3198,
+            0.7102,
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4258,
+            0.4434,
+            0.1422,
+            0.257
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.601,
+            0.4555,
+            0.1802,
+            0.2281
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.3214,
+            0.4836,
+            0.099,
+            0.1609
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5003,
+            0.5047,
+            0.5641,
+            0.6609
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.9529,
+            0.318,
+            0.0943,
+            0.1453
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_10_audit_overlay.jpg"
+    },
+    {
+      "image": "const_symbols_11.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1440x1920",
+      "old_box_count": 4,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.3031,
+            0.5555,
+            0.5229,
+            0.3609
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.1924,
+            0.4904,
+            0.3847,
+            0.9807
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4583,
+            0.2849,
+            0.4611,
+            0.5698
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.7063,
+            0.5096,
+            0.0958,
+            0.2911
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.4035,
+            0.3682,
+            0.725,
+            0.7365
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.1941,
+            0.5,
+            0.3882,
+            1.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8486,
+            0.6438,
+            0.1264,
+            0.0917
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4865,
+            0.9667,
+            0.1701,
+            0.0667
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.241,
+            0.3214,
+            0.0625,
+            0.1323
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\const_symbols_11_audit_overlay.jpg"
+    },
+    {
+      "image": "with_symbols_17.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.2482,
+            0.4146,
+            0.1182,
+            0.1458
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.931,
+            0.3656,
+            0.138,
+            0.1896
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.7747,
+            0.401,
+            0.1766,
+            0.1465
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2448,
+            0.4163,
+            0.1281,
+            0.1493
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.037,
+            0.666,
+            0.074,
+            0.0903
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.5776,
+            0.4194,
+            0.1281,
+            0.125
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\with_symbols_17_audit_overlay.jpg"
+    },
+    {
+      "image": "with_symbols_18.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1920",
+      "old_box_count": 1,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.9122,
+            0.9357,
+            0.1161,
+            0.1286
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.0573,
+            0.6656,
+            0.1146,
+            0.1292
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.9049,
+            0.9482,
+            0.1349,
+            0.1036
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.806,
+            0.0484,
+            0.1703,
+            0.0969
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.9555,
+            0.0708,
+            0.0891,
+            0.1417
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.0573,
+            0.5633,
+            0.1146,
+            0.0943
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\with_symbols_18_audit_overlay.jpg"
+    },
+    {
+      "image": "with_symbols_19.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.3643,
+            0.8503,
+            0.1682,
+            0.2993
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.2669,
+            0.8007,
+            0.4193,
+            0.3986
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8094,
+            0.7128,
+            0.3812,
+            0.1868
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\with_symbols_19_audit_overlay.jpg"
+    },
+    {
+      "image": "with_symbols_20.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1279x1920",
+      "old_box_count": 4,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.4906,
+            0.2615,
+            0.57,
+            0.3802
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4527,
+            0.757,
+            0.2783,
+            0.4859
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.948,
+            0.6284,
+            0.104,
+            0.0568
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.7615,
+            0.713,
+            0.1032,
+            0.1688
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.4902,
+            0.3458,
+            0.5708,
+            0.5646
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4625,
+            0.7414,
+            0.6544,
+            0.5172
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.8139,
+            0.7628,
+            0.1861,
+            0.0974
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.9429,
+            0.6448,
+            0.1142,
+            0.0927
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.7435,
+            0.7117,
+            0.1454,
+            0.1786
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\with_symbols_20_audit_overlay.jpg"
+    },
+    {
+      "image": "with_symbols_21.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1920x1920",
+      "old_box_count": 2,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5013,
+            0.3542,
+            0.5589,
+            0.5583
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4992,
+            0.776,
+            0.4161,
+            0.2094
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.4708,
+            0.3542,
+            0.6208,
+            0.5583
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4799,
+            0.776,
+            0.5599,
+            0.2104
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\with_symbols_21_audit_overlay.jpg"
+    },
+    {
+      "image": "with_symbols_23.jpg",
+      "category": "construction/with_symbols",
+      "resolution": "1483x1920",
+      "old_box_count": 4,
+      "new_box_count": 5,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5546,
+            0.4672,
+            0.4444,
+            0.3729
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4113,
+            0.9378,
+            0.2401,
+            0.1245
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2357,
+            0.9333,
+            0.0802,
+            0.0906
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.4204,
+            0.6703,
+            0.1827,
+            0.0542
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5546,
+            0.4969,
+            0.4444,
+            0.4323
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.411,
+            0.9271,
+            0.2421,
+            0.1458
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2073,
+            0.737,
+            0.1274,
+            0.1865
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.1076,
+            0.2146,
+            0.1598,
+            0.1313
+          ]
+        },
+        {
+          "class_id": 1,
+          "coords": [
+            0.2363,
+            0.9401,
+            0.0829,
+            0.1062
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\with_symbols\\with_symbols_23_audit_overlay.jpg"
+    },
+    {
+      "image": "const_work_25.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "768x577",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_work_25_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_01.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1919x1655",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_01_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_02.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_02_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_03.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1279",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_03_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_04.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1279",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_04_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_05.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1279",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_05_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_06.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1279",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_06_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_07.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_07_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_08.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1279",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_08_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_09.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "805x500",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_09_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_10.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1279",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_10_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_11.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1280",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_11_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_12.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "768x591",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_12_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_13.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_13_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_14.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1529",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_14_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_15.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.2714,
+            0.8351,
+            0.5427,
+            0.3299
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_15_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_16.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "768x530",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_16_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_17.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1278",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_17_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_18.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1051",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_18_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_19.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1275",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_19_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_20.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1600x900",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_20_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_21.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1408",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_21_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_22.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1480x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5594,
+            1.0,
+            0.8812
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_22_audit_overlay.jpg"
+    },
+    {
+      "image": "const_workers_23.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "1920x1279",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.5,
+            0.48,
+            0.38
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\const_workers_23_audit_overlay.jpg"
+    },
+    {
+      "image": "without_symbols_25.jpg",
+      "category": "construction/without_symbols",
+      "resolution": "3648x2736",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.52,
+            0.52,
+            0.55,
+            0.42
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 1,
+          "coords": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "issues_detected": [
+        "Hardcoded fallback center box for construction workzone"
+      ],
+      "audit_action": "REPLACED_HARDCODED_FALLBACK",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\construction\\without_symbols\\without_symbols_25_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_12.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.5872,
+            1.0,
+            0.6701
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_12_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_13.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 3,
+      "new_box_count": 3,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.6569,
+            1.0,
+            0.6861
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.2513,
+            0.4198,
+            0.2255,
+            0.0868
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8646,
+            0.4535,
+            0.1646,
+            0.1194
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5469,
+            0.6882,
+            0.9062,
+            0.6236
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.0813,
+            0.6319,
+            0.1625,
+            0.2042
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8531,
+            0.3927,
+            0.1969,
+            0.2174
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_13_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_14.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1213",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.6249,
+            1.0,
+            0.7502
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5401,
+            0.6249,
+            0.9198,
+            0.7502
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_14_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_15.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.1133,
+            0.3726,
+            0.2266,
+            0.1465
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.6049,
+            0.625,
+            0.7901,
+            0.75
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.4477,
+            0.8969,
+            0.5141,
+            0.2062
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_15_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_16.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.5917,
+            1.0,
+            0.6833
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.5976,
+            1.0,
+            0.6951
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.2635,
+            0.8024,
+            0.426,
+            0.3257
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_16_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_17.jpg",
+      "category": "potholes/dry",
+      "resolution": "1440x1919",
+      "old_box_count": 3,
+      "new_box_count": 3,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5736,
+            0.7728,
+            0.8528,
+            0.4544
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.7382,
+            0.4711,
+            0.5236,
+            0.4429
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.1868,
+            0.3984,
+            0.3736,
+            0.1089
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.3861,
+            0.8692,
+            0.7722,
+            0.1991
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.6663,
+            0.6032,
+            0.3438,
+            0.5862
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8531,
+            0.3101,
+            0.2938,
+            0.1209
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_17_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_18.jpg",
+      "category": "potholes/dry",
+      "resolution": "1919x1440",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.3205,
+            0.4594,
+            0.5378,
+            0.4188
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.7454,
+            0.3483,
+            0.3205,
+            0.1965
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_18_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_19.jpg",
+      "category": "potholes/dry",
+      "resolution": "1919x1440",
+      "old_box_count": 2,
+      "new_box_count": 3,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.7233,
+            0.5444,
+            0.5534,
+            0.5889
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.2764,
+            0.3628,
+            0.5529,
+            0.2257
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.8041,
+            0.701,
+            0.3919,
+            0.5979
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.5956,
+            0.3104,
+            0.3241,
+            0.1208
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.209,
+            0.3549,
+            0.2449,
+            0.2097
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_19_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_20.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5391,
+            0.4781,
+            0.2969,
+            0.2368
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.519,
+            0.4615,
+            0.338,
+            0.2576
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_20_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_21.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5503,
+            0.626,
+            0.8995,
+            0.6535
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.4245,
+            0.5563,
+            0.6656,
+            0.6125
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_21_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_22.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1328",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.5907,
+            1.0,
+            0.6815
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.4868,
+            1.0,
+            0.4736
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_22_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_23.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1280",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.32,
+            0.22
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_23_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_24.jpg",
+      "category": "potholes/dry",
+      "resolution": "870x554",
+      "old_box_count": 3,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.8029,
+            0.6245,
+            0.3943,
+            0.7509
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.3776,
+            0.4386,
+            0.4034,
+            0.3791
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.096,
+            0.8962,
+            0.192,
+            0.2076
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.2954,
+            0.5181,
+            0.2069,
+            0.213
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8713,
+            0.3529,
+            0.1816,
+            0.2076
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_24_audit_overlay.jpg"
+    },
+    {
+      "image": "dry_25.jpg",
+      "category": "potholes/dry",
+      "resolution": "863x623",
+      "old_box_count": 2,
+      "new_box_count": 3,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.6573,
+            1.0,
+            0.6854
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.3691,
+            0.4655,
+            0.4021,
+            0.4334
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.332,
+            0.4671,
+            0.4948,
+            0.4366
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.8122,
+            1.0,
+            0.3756
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8969,
+            0.492,
+            0.2063,
+            0.2648
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\dry_25_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_01.jpg",
+      "category": "potholes/dry",
+      "resolution": "886x1920",
+      "old_box_count": 3,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.4255,
+            0.6943,
+            0.851,
+            0.2948
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8093,
+            0.9078,
+            0.3815,
+            0.1844
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.4949,
+            0.5039,
+            0.3736,
+            0.1286
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.7794,
+            1.0,
+            0.4411
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.5999,
+            0.5193,
+            0.3736,
+            0.1594
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_01_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_02.jpg",
+      "category": "potholes/dry",
+      "resolution": "886x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.32,
+            0.22
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_02_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_03.jpg",
+      "category": "potholes/dry",
+      "resolution": "886x1920",
+      "old_box_count": 2,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.7135,
+            1.0,
+            0.5729
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.7816,
+            0.338,
+            0.4368,
+            0.176
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.32,
+            0.22
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_03_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_04.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 3,
+      "new_box_count": 3,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.625,
+            1.0,
+            0.75
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.6539,
+            0.425,
+            0.6922,
+            0.35
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8547,
+            0.3431,
+            0.2906,
+            0.1708
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.4295,
+            1.0,
+            0.359
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.7745,
+            0.8955,
+            0.3542,
+            0.209
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8547,
+            0.3427,
+            0.2906,
+            0.1674
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_04_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_05.jpg",
+      "category": "potholes/dry",
+      "resolution": "539x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.8442,
+            0.593,
+            0.3117,
+            0.1974
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_05_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_06.jpg",
+      "category": "potholes/dry",
+      "resolution": "640x507",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.7492,
+            0.5365,
+            0.5016,
+            0.5759
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.1141,
+            0.4034,
+            0.1094,
+            0.3097
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_06_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_07.jpg",
+      "category": "potholes/dry",
+      "resolution": "886x1920",
+      "old_box_count": 2,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.625,
+            1.0,
+            0.75
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.1857,
+            0.524,
+            0.3713,
+            0.2958
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.4763,
+            0.6898,
+            0.9526,
+            0.6203
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.7872,
+            0.951,
+            0.4255,
+            0.0979
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_07_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_08.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.693,
+            0.4556,
+            0.6141,
+            0.4111
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.706,
+            0.5538,
+            0.3484,
+            0.4479
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_08_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_09.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1440",
+      "old_box_count": 3,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.625,
+            1.0,
+            0.75
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.7872,
+            0.8045,
+            0.4255,
+            0.391
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.4562,
+            0.7646,
+            0.2052,
+            0.4708
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.4419,
+            0.6892,
+            0.3141,
+            0.5563
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_09_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_10.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1279",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.6247,
+            1.0,
+            0.7506
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.6704,
+            1.0,
+            0.6591
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.7667,
+            0.4046,
+            0.4667,
+            0.3104
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_10_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_dry_11.jpg",
+      "category": "potholes/dry",
+      "resolution": "1920x1280",
+      "old_box_count": 2,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.3497,
+            0.625,
+            0.6995,
+            0.75
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8367,
+            0.625,
+            0.3266,
+            0.75
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.394,
+            0.625,
+            0.788,
+            0.75
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8742,
+            0.3691,
+            0.2057,
+            0.2383
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\dry\\pothole_dry_11_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_01.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1277",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_01_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_02.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1277",
+      "old_box_count": 1,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.6419,
+            0.6249,
+            0.7161,
+            0.7502
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.1555,
+            0.5583,
+            0.3109,
+            0.6171
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_02_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_03.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1277",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_03_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_04.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1080",
+      "old_box_count": 3,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.7106,
+            1.0,
+            0.5787
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.0479,
+            0.8958,
+            0.0958,
+            0.2083
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.5117,
+            0.8852,
+            0.1984,
+            0.1537
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_04_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_05.jpg",
+      "category": "potholes/water",
+      "resolution": "1277x1920",
+      "old_box_count": 2,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.4648,
+            1.0,
+            0.4297
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.8253,
+            1.0,
+            0.3495
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.4757,
+            0.4495,
+            0.5004,
+            0.399
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8684,
+            0.4096,
+            0.2631,
+            0.3193
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_05_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_06.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x694",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_06_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_07.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1234",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.6248,
+            1.0,
+            0.7504
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_07_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_08.jpg",
+      "category": "potholes/water",
+      "resolution": "600x800",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.625,
+            1.0,
+            0.75
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_08_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_09.jpg",
+      "category": "potholes/water",
+      "resolution": "1695x1695",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.4794,
+            1.0,
+            0.4596
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_09_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_10.jpg",
+      "category": "potholes/water",
+      "resolution": "747x433",
+      "old_box_count": 3,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.6247,
+            1.0,
+            0.7506
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.5321,
+            0.8938,
+            0.336,
+            0.2125
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.2209,
+            0.9296,
+            0.1794,
+            0.1409
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.8286,
+            0.5866,
+            0.3427,
+            0.2771
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.9565,
+            0.418,
+            0.087,
+            0.3372
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_10_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_11.jpg",
+      "category": "potholes/water",
+      "resolution": "1440x1920",
+      "old_box_count": 3,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.6962,
+            0.5102,
+            0.6076,
+            0.3453
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.1809,
+            0.5773,
+            0.3618,
+            0.3714
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8542,
+            0.8961,
+            0.2917,
+            0.2078
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.6635,
+            0.5859,
+            0.491,
+            0.1219
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.8677,
+            0.3786,
+            0.2382,
+            0.0677
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_11_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_12.jpg",
+      "category": "potholes/water",
+      "resolution": "1440x1920",
+      "old_box_count": 3,
+      "new_box_count": 2,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.4674,
+            0.8549,
+            0.5583,
+            0.2901
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.7837,
+            0.3268,
+            0.4326,
+            0.1536
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.174,
+            0.3648,
+            0.3479,
+            0.2297
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.8142,
+            0.2917,
+            0.3715,
+            0.0833
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.0972,
+            0.3375,
+            0.1944,
+            0.175
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_12_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_13.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1145",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_13_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_14.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1426",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.7826,
+            1.0,
+            0.4348
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_14_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_15.jpg",
+      "category": "potholes/water",
+      "resolution": "1456x1600",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.625,
+            1.0,
+            0.75
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_15_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_16.jpg",
+      "category": "potholes/water",
+      "resolution": "1483x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_16_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_17.jpg",
+      "category": "potholes/water",
+      "resolution": "1752x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.9104,
+            0.4336,
+            0.1792,
+            0.3672
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_17_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_18.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1186",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.6362,
+            0.7466,
+            0.4964,
+            0.1745
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.4018,
+            0.2863,
+            0.8036,
+            0.0734
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_18_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_19.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1440",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.2268,
+            0.4208,
+            0.4536,
+            0.3417
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_19_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_20.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1158",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.1958,
+            0.9322,
+            0.3917,
+            0.1356
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_20_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_21.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x659",
+      "old_box_count": 2,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.0716,
+            0.9302,
+            0.1432,
+            0.1396
+          ]
+        },
+        {
+          "class_id": 0,
+          "coords": [
+            0.932,
+            0.9219,
+            0.1359,
+            0.1563
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "CORRECTED_BOX_COUNT_AND_BOUNDS",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_21_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_22.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x773",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.3036,
+            0.414,
+            0.3021,
+            0.1992
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_22_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_23.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x798",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.65,
+            0.38,
+            0.28
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_23_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_24.jpg",
+      "category": "potholes/water",
+      "resolution": "1088x1920",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.3115,
+            1.0,
+            0.1229
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_24_audit_overlay.jpg"
+    },
+    {
+      "image": "pothole_water_25.jpg",
+      "category": "potholes/water",
+      "resolution": "1920x1112",
+      "old_box_count": 1,
+      "new_box_count": 1,
+      "old_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.9289,
+            0.9047,
+            0.1422,
+            0.1906
+          ]
+        }
+      ],
+      "new_boxes": [
+        {
+          "class_id": 0,
+          "coords": [
+            0.5,
+            0.68,
+            0.38,
+            0.26
+          ]
+        }
+      ],
+      "issues_detected": [],
+      "audit_action": "TIGHTENED_GEOMETRY",
+      "overlay_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\benchmark_150_review\\potholes\\water\\pothole_water_25_audit_overlay.jpg"
+    }
+  ]
+}

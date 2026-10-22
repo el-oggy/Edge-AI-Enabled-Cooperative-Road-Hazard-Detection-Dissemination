@@ -1,0 +1,19 @@
+{
+  "date_local": "2026-10-15",
+  "timezone": "Asia/Calcutta",
+  "planning": "replan",
+  "context_depth": "dependency",
+  "verification_depth": "impact",
+  "delegation": "bounded-research",
+  "reason_codes": ["user-native-SUMO-correction", "preserve-uncommitted-work", "existing-launcher-mutates-assets", "explicit-cost-aware-delegation"],
+  "allowed_write_scope": ["docs/local_agent_research/native_sumo_foundry_20261015/"],
+  "existing_file_changes_allowed": false,
+  "skills": ["ponytail full", "gravitas evidence and scope principles"],
+  "skill_scope_note": "User explicitly requests written plans and system prompts; this permits new planning artifacts while simulation/code inspection remains read-only. No runtime hooks or formal Gravitas validator installation is claimed.",
+  "research_assignments": [
+    {"agent": "native_sumo_inventory", "model": "gpt-6-luna", "effort": "medium", "role": "read-only inventory and bounded final document review", "status": "complete"},
+    {"agent": "native_sumo_visual_research", "model": "gpt-6.1-sol", "effort": "high", "role": "native visual capability research", "status": "complete"}
+  ],
+  "current_turn_implementation_authorized": false,
+  "background_scheduler_created": false
+}

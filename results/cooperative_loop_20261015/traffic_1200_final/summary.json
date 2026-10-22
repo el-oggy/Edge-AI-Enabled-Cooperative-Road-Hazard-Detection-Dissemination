@@ -1,0 +1,55 @@
+{
+  "status": "completed",
+  "error": null,
+  "mode": "traffic_only",
+  "source_mode": "mapped_road_photographs",
+  "inference_executed": false,
+  "model_forward_counts_consumed": {},
+  "processed_hazards": [],
+  "sim_time_s": 1200.0,
+  "wall_elapsed_s": 89.9799442000076,
+  "counts": {
+    "reports": 0,
+    "warnings": 0,
+    "avoided": 0,
+    "traversals": 178,
+    "drops": 0
+  },
+  "sumo_exit_code": 0,
+  "authored_files_unchanged": true,
+  "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+  "active_vehicle_max": 72,
+  "minimum_active_after_180s": 72,
+  "minimum_moving_after_180s": 2,
+  "observed_types": {
+    "car": 28,
+    "ev": 12,
+    "motorcycle": 12,
+    "small_passenger": 8,
+    "bus": 6,
+    "truck": 6
+  },
+  "tls_observed_states": {
+    "J1": [
+      "GGGggrrrrrGGGggrrrrr",
+      "rrrrrGGGggrrrrrGGGgg",
+      "rrrrryyyyyrrrrryyyyy",
+      "yyyyyrrrrryyyyyrrrrr"
+    ],
+    "J2": [
+      "GGGggrrrrrGGGggrrrrr",
+      "rrrrrGGGggrrrrrGGGgg",
+      "rrrrryyyyyrrrrryyyyy",
+      "yyyyyrrrrryyyyyrrrrr"
+    ]
+  },
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "screenshots": [],
+  "screenshot_contexts": [],
+  "limitations": [
+    "Mapped still photographs; no SUMO camera or temporal video validation.",
+    "LoRa delivery is modeled, not transmitted or range-qualified.",
+    "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+  ]
+}

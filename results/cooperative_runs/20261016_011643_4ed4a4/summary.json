@@ -1,0 +1,129 @@
+{
+  "status": "completed",
+  "error": null,
+  "mode": "real_onnx_integrated",
+  "source_mode": "mapped_road_photographs",
+  "inference_executed": true,
+  "model_forward_counts_consumed": {
+    "pothole": 9,
+    "construction": 9,
+    "accident_obstacle": 9
+  },
+  "processed_hazards": [
+    "accident_obstacle",
+    "accident_obstacle_02",
+    "accident_obstacle_03",
+    "construction",
+    "construction_02",
+    "construction_03",
+    "pothole",
+    "pothole_02",
+    "pothole_03"
+  ],
+  "scene": "Foundry District - 5 km Viaduct Loop",
+  "rsu_count": 8,
+  "hazard_count": 9,
+  "main_route_length_m": 4977.23,
+  "bridge_observed_vehicle_counts": {
+    "upper": 8,
+    "lower": 16
+  },
+  "bridge_observed_elevations_m": {
+    "lower": 0.0,
+    "upper": 8.0
+  },
+  "sim_time_s": 300.0,
+  "wall_elapsed_s": 308.06954940001015,
+  "counts": {
+    "reports": 15,
+    "warnings": 648,
+    "avoided": 78,
+    "traversals": 5,
+    "drops": 2
+  },
+  "sumo_exit_code": 0,
+  "authored_files_unchanged": true,
+  "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+  "active_vehicle_max": 216,
+  "minimum_active_after_180s": 120,
+  "minimum_moving_after_180s": 87,
+  "observed_types": {
+    "car": 128,
+    "ev": 24,
+    "motorcycle": 24,
+    "small_passenger": 16,
+    "bus": 12,
+    "truck": 12
+  },
+  "tls_observed_states": {
+    "C1": [
+      "GGGggrrrrrGGGggrrrrr",
+      "rrrrrGGGggrrrrrGGGgg",
+      "rrrrryyyyyrrrrryyyyy",
+      "yyyyyrrrrryyyyyrrrrr"
+    ],
+    "C3": [
+      "GGGggrrrrrGGGggrrrrr",
+      "rrrrrGGGggrrrrrGGGgg",
+      "rrrrryyyyyrrrrryyyyy",
+      "yyyyyrrrrryyyyyrrrrr"
+    ],
+    "E": [
+      "GGggrrrGGGg",
+      "rrrrGGgGrrr",
+      "rrrryyyGrrr",
+      "yyyyrrrGyyy"
+    ],
+    "J1": [
+      "GGGggrrrrrGGGggrrrrr",
+      "rrrrrGGGggrrrrrGGGgg",
+      "rrrrryyyyyrrrrryyyyy",
+      "yyyyyrrrrryyyyyrrrrr"
+    ],
+    "J2": [
+      "GGGggrrrrrGGGggrrrrr",
+      "rrrrrGGGggrrrrrGGGgg",
+      "rrrrryyyyyrrrrryyyyy",
+      "yyyyyrrrrryyyyyrrrrr"
+    ],
+    "N1": [
+      "GGggrrrrGGGg",
+      "rrrrGGGgGrrr",
+      "rrrryyyyGrrr",
+      "yyyyrrrrGyyy"
+    ],
+    "N3": [
+      "GGggrrrGGGg",
+      "rrrrGGgGrrr",
+      "rrrryyyGrrr",
+      "yyyyrrrGyyy"
+    ],
+    "S1": [
+      "GGGgGrrrrrrr",
+      "rrrrGGGgGGgg",
+      "rrrrGyyyyyyy",
+      "yyyyGrrrrrrr"
+    ],
+    "S3": [
+      "GGGgGrrrrrrr",
+      "rrrrGGGgGGgg",
+      "rrrrGyyyyyyy",
+      "yyyyGrrrrrrr"
+    ],
+    "W": [
+      "GGggrrrrGGGg",
+      "rrrrGGGgGrrr",
+      "rrrryyyyGrrr",
+      "yyyyrrrrGyyy"
+    ]
+  },
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "screenshots": [],
+  "screenshot_contexts": [],
+  "limitations": [
+    "Mapped still photographs; no SUMO camera or temporal video validation.",
+    "LoRa delivery is modeled, not transmitted or range-qualified.",
+    "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+  ]
+}

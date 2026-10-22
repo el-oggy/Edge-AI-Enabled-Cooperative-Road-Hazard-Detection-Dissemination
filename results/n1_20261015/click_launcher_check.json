@@ -1,0 +1,59 @@
+{
+  "command": [
+    "wscript.exe",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\Run SUMO Simulation.vbs"
+  ],
+  "caller_working_directory": "C:\\Users\\adars\\OneDrive",
+  "wscript_exit_code": 0,
+  "windows": [
+    {
+      "hwnd": 1247522,
+      "pid": 10840,
+      "visible": false,
+      "minimized": false,
+      "rectangle": [
+        0,
+        40,
+        1152,
+        808
+      ]
+    }
+  ],
+  "run_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\foundry_runs\\20261015_201214_cff7ce",
+  "summary": {
+    "status": "failed",
+    "error": "Connection closed by SUMO.",
+    "mode": "native_visual_demo",
+    "ai_inference": false,
+    "wall_elapsed_s": 5.204807200003415,
+    "last_sample_sim_time_s": 2.0,
+    "active_vehicle_min": 1,
+    "active_vehicle_max": 1,
+    "vehicle_types_observed": {
+      "car": 2
+    },
+    "minimum_active_after_180s": null,
+    "minimum_moving_after_180s": null,
+    "collision_vehicle_reports": 0,
+    "starting_teleports": 0,
+    "tls_observed_states": {
+      "TL_D1": [
+        "GGggrrrrGGGggrrrr"
+      ],
+      "TL_D2": [
+        "GGGggrrrrGGGggrrrr"
+      ],
+      "TL_D3": [
+        "GGGggrrrrGGggrrrr"
+      ]
+    },
+    "authored_files_unchanged": true,
+    "screenshots": [],
+    "missing_screenshots": [],
+    "blank_screenshots": [],
+    "screenshot_contexts": []
+  },
+  "elapsed_wall_s": 9.546999999998661,
+  "closed_only_own_native_window": true,
+  "passed": false
+}

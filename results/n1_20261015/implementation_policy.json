@@ -1,0 +1,28 @@
+{
+  "branch": "codex/native-sumo-foundry-n1",
+  "phase": "N1 implementation",
+  "planning": "compact",
+  "delegation": "bounded scenery contributor and later verifier",
+  "write_scope": [
+    "simulation/foundry_market/",
+    "tests/test_native_foundry.py",
+    "Run SUMO Simulation.vbs",
+    "Run SUMO Simulation.cmd",
+    "docs/local_agent_research/native_sumo_foundry_20261015/N1_IMPLEMENTATION_REPORT.md",
+    "results/n1_20261015/",
+    "simulation/foundry_market/README.md",
+    "docs/local_agent_research/native_sumo_foundry_20261015/README.md",
+    "results/foundry_runs/"
+  ],
+  "user_authorization": "Create branch; remove uncommitted Antigravity prototypes; preserve research; begin N1.",
+  "excluded": [
+    "legacy corridor",
+    "models",
+    "M1 inference modules",
+    "installed skills",
+    "Git commits or pushes"
+  ],
+  "geometry": "Reviewed original input and compiled road XML reused without regeneration; old app controllers removed.",
+  "replan_reason": "Observed native capture failures, previous-camera frames and sign overlap required bounded rendering/placement fixes.",
+  "verification": "Final real native captures plus independent visual review,42 unit tests,20-minute traffic evidence,portable launch and preserved hashes."
+}

@@ -1,0 +1,13 @@
+{
+  "baseline_files": 170,
+  "matching": 170,
+  "mismatches": [],
+  "locations": {
+    "workspace": 144,
+    "recovery_archive": 26,
+    "missing": 0
+  },
+  "retired_paths_absent": true,
+  "archive_file_count": 91,
+  "archive_crc_and_all_cleanup_sha256_pass": true
+}

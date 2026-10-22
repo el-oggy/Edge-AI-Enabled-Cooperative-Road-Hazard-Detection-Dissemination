@@ -1,0 +1,187 @@
+[
+  {
+    "config_name": "ONNX_Runtime_FP32_512px_2th",
+    "resolution": 512,
+    "threads": 2,
+    "frames_evaluated": 30,
+    "telemetry_start": {
+      "temp": "temp=51.6'C",
+      "throttled": "throttled=0x0"
+    },
+    "telemetry_end": {
+      "temp": "temp=53.8'C",
+      "throttled": "throttled=0x0"
+    },
+    "memory_rss_mb": 155.41,
+    "infer_latency": {
+      "mean_ms": 116.98,
+      "median_ms": 117.03,
+      "p95_ms": 117.43,
+      "min_ms": 116.44,
+      "max_ms": 117.44,
+      "pure_infer_fps": 8.55
+    },
+    "e2e_latency": {
+      "mean_ms": 120.92,
+      "median_ms": 120.9,
+      "p95_ms": 121.55,
+      "min_ms": 120.19,
+      "max_ms": 122.43,
+      "e2e_fps": 8.27
+    },
+    "detections_summary": {
+      "potholes": 19,
+      "construction": 20,
+      "accidents_obstacles": 3,
+      "total": 42
+    }
+  },
+  {
+    "config_name": "ONNX_Runtime_FP32_384px_2th",
+    "resolution": 384,
+    "threads": 2,
+    "frames_evaluated": 30,
+    "telemetry_start": {
+      "temp": "temp=53.8'C",
+      "throttled": "throttled=0x0"
+    },
+    "telemetry_end": {
+      "temp": "temp=53.8'C",
+      "throttled": "throttled=0x0"
+    },
+    "memory_rss_mb": 188.77,
+    "infer_latency": {
+      "mean_ms": 61.47,
+      "median_ms": 61.44,
+      "p95_ms": 61.69,
+      "min_ms": 61.31,
+      "max_ms": 61.95,
+      "pure_infer_fps": 16.27
+    },
+    "e2e_latency": {
+      "mean_ms": 63.93,
+      "median_ms": 63.91,
+      "p95_ms": 64.23,
+      "min_ms": 63.5,
+      "max_ms": 64.35,
+      "e2e_fps": 15.64
+    },
+    "detections_summary": {
+      "potholes": 9,
+      "construction": 15,
+      "accidents_obstacles": 3,
+      "total": 27
+    }
+  },
+  {
+    "config_name": "MNN_FP32_384px_2th",
+    "resolution": 384,
+    "threads": 2,
+    "frames_evaluated": 30,
+    "telemetry_start": {
+      "temp": "temp=52.7'C",
+      "throttled": "throttled=0x0"
+    },
+    "telemetry_end": {
+      "temp": "temp=52.7'C",
+      "throttled": "throttled=0x0"
+    },
+    "memory_rss_mb": 231.94,
+    "infer_latency": {
+      "mean_ms": 48.87,
+      "median_ms": 47.59,
+      "p95_ms": 56.67,
+      "min_ms": 47.36,
+      "max_ms": 59.39,
+      "pure_infer_fps": 20.46
+    },
+    "e2e_latency": {
+      "mean_ms": 51.3,
+      "median_ms": 50.04,
+      "p95_ms": 59.2,
+      "min_ms": 49.42,
+      "max_ms": 62.08,
+      "e2e_fps": 19.49
+    },
+    "detections_summary": {
+      "potholes": 9,
+      "construction": 15,
+      "accidents_obstacles": 3,
+      "total": 27
+    }
+  },
+  {
+    "config_name": "MNN_INT8_384px_2th",
+    "resolution": 384,
+    "threads": 2,
+    "frames_evaluated": 30,
+    "telemetry_start": {
+      "temp": "temp=53.2'C",
+      "throttled": "throttled=0x0"
+    },
+    "telemetry_end": {
+      "temp": "temp=51.6'C",
+      "throttled": "throttled=0x0"
+    },
+    "memory_rss_mb": 246.45,
+    "infer_latency": {
+      "mean_ms": 31.97,
+      "median_ms": 31.64,
+      "p95_ms": 31.89,
+      "min_ms": 31.48,
+      "max_ms": 40.83,
+      "pure_infer_fps": 31.28
+    },
+    "e2e_latency": {
+      "mean_ms": 34.38,
+      "median_ms": 34.06,
+      "p95_ms": 34.37,
+      "min_ms": 33.78,
+      "max_ms": 43.42,
+      "e2e_fps": 29.09
+    },
+    "detections_summary": {
+      "potholes": 9,
+      "construction": 15,
+      "accidents_obstacles": 3,
+      "total": 27
+    }
+  },
+  {
+    "config_name": "MNN_INT8_512px_2th",
+    "resolution": 512,
+    "threads": 2,
+    "frames_evaluated": 30,
+    "telemetry_start": {
+      "temp": "temp=51.6'C",
+      "throttled": "throttled=0x0"
+    },
+    "telemetry_end": {
+      "temp": "temp=52.1'C",
+      "throttled": "throttled=0x0"
+    },
+    "memory_rss_mb": 272.52,
+    "infer_latency": {
+      "mean_ms": 59.65,
+      "median_ms": 58.81,
+      "p95_ms": 65.85,
+      "min_ms": 58.6,
+      "max_ms": 71.4,
+      "pure_infer_fps": 16.77
+    },
+    "e2e_latency": {
+      "mean_ms": 63.48,
+      "median_ms": 62.65,
+      "p95_ms": 69.96,
+      "min_ms": 61.95,
+      "max_ms": 75.7,
+      "e2e_fps": 15.75
+    },
+    "detections_summary": {
+      "potholes": 19,
+      "construction": 22,
+      "accidents_obstacles": 3,
+      "total": 44
+    }
+  }
+]

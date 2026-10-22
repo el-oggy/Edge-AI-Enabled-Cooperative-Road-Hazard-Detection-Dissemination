@@ -1,0 +1,77 @@
+{
+  "title": "PFPD ETSI DENM Communication Standard Compliance Audit",
+  "timestamp": 1792508986.041447,
+  "standard_references": [
+    "ETSI EN 302 637-3 V1.3.1 (DENM Basic Service)",
+    "ETSI TS 102 894-2 V1.3.1 (Common Data Dictionary - CDD)"
+  ],
+  "compliance_status": "PROJECT_SPECIFIC_DENM_INSPIRED",
+  "compliance_verdict": {
+    "is_standard_etsi_uper_compliant": false,
+    "is_project_specific_denm_inspired": true,
+    "protocol_name": "PFPD-DENM-Lite (v1.0)",
+    "technical_explanation": "Standard ETSI DENM messages are strictly encoded in ASN.1 UPER (Unaligned Packed Encoding Rules) with variable-length sequences, mandatory ITS PDU headers, and optional location/alacarte containers. The current 39-byte (and previous 28-byte) payload is a fixed-length C/Python binary struct. While it models the conceptual semantics of ETSI DENM (StationID, ActionID/EventID, CauseCode, Timestamps, and Coordinates), it cannot be decoded by a vanilla ETSI C-ITS ASN.1 decoder without a transcoder."
+  },
+  "cause_subcause_semantic_audit": {
+    "model_limitation": "The unified YOLO11n detector outputs 3 discrete classes: 0 (pothole), 1 (construction_hazard), and 2 (road_accident_obstacle). The vision head does NOT distinguish between multi-vehicle collisions, fallen trees, boulders, or debris.",
+    "corrected_mappings": {
+      "class_0_pothole": {
+        "standard_cause": 9,
+        "standard_cause_name": "surfaceCondition",
+        "faithful_subcause": 4,
+        "faithful_subcause_name": "subsidence",
+        "note": "ETSI CDD defines subcause 4 as subsidence (road depression/void). Pothole is mapped here."
+      },
+      "class_1_construction_hazard": {
+        "standard_cause": 3,
+        "standard_cause_name": "roadworks",
+        "faithful_subcause": 1,
+        "faithful_subcause_name": "majorRoadworks",
+        "alternative_subcause": 4,
+        "alternative_name": "shortTermObstacle",
+        "note": "Cones, barriers, and heavy paving machinery map cleanly to roadworks."
+      },
+      "class_2_road_accident_obstacle": {
+        "standard_cause": 10,
+        "standard_cause_name": "obstacleOnTheRoad",
+        "faithful_subcause": 0,
+        "faithful_subcause_name": "unavailable (generic obstacle)",
+        "prohibited_claim": "Claiming Cause 2 Subcause 1 (multiVehicleAccident) for a fallen tree is FALSE.",
+        "note": "Because the detector merges accidents, fallen trees, and boulders into a single class (2), it lacks evidence to assert 'multiVehicleAccident'. The only standards-faithful mapping is Cause 10 Subcause 0 (generic obstacle) or Cause 2 Subcause 0 (generic accident)."
+      }
+    }
+  },
+  "interoperability_roundtrip_test": {
+    "all_tests_passed": true,
+    "packet_size_bytes": 39,
+    "test_cases": [
+      {
+        "test_case": "Pothole Detection Near Curb",
+        "raw_byte_length": 39,
+        "hex_dump": "504601000003e90000002a01002230009601a40136024418004311ae06cd1518004311b00d9995",
+        "conf_error": 0.0,
+        "bbox_match": true,
+        "timestamp_match": true,
+        "status": "PASS"
+      },
+      {
+        "test_case": "Construction Hazard Repeat Update",
+        "raw_byte_length": 39,
+        "hex_dump": "504601000007d40000006c0201198c0032006401e002d018004311f04102d218004311f247cf52",
+        "conf_error": 0.0,
+        "bbox_match": true,
+        "timestamp_match": true,
+        "status": "PASS"
+      },
+      {
+        "test_case": "Road Accident / Obstacle High-Res",
+        "raw_byte_length": 39,
+        "hex_dump": "5046010000270f0001869f0102270f000000000780043818004312327b383518004312348204b5",
+        "conf_error": 0.0,
+        "bbox_match": true,
+        "timestamp_match": true,
+        "status": "PASS"
+      }
+    ]
+  }
+}

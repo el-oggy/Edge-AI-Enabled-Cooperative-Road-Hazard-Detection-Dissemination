@@ -1,0 +1,474 @@
+{
+  "created_utc": "2026-10-15T13:56:11.833409+00:00",
+  "archive": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\retired_prototypes.zip",
+  "workspace": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+  "targets": [
+    "simulation/smart_city",
+    "src/pfpd_city_perception",
+    "src/pfpd_city_protocol",
+    "src/pfpd_city_runtime",
+    "tests/smart_city",
+    "visualization"
+  ],
+  "verified_files": [
+    {
+      "path": "simulation/smart_city/foundry/__pycache__/foundry_hazard_generator.cpython-311.pyc",
+      "sha256": "9c06b7f9a9ce9bd8cf6284017f095471dedebe639a0810be241640028bb08218",
+      "bytes": 15844
+    },
+    {
+      "path": "simulation/smart_city/foundry/build_foundry_scenery.py",
+      "sha256": "7a2f6b38c15281246fd9a5ab43bd97d7ad2c507674bd89bab07f616b70897780",
+      "bytes": 13997
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.edg.xml",
+      "sha256": "a4779dda051be31d6a5bd13eee5e92c8952e36ff8ebfff85bf71bab106ffde94",
+      "bytes": 2908
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.net.xml",
+      "sha256": "a495977a1a106a28533f83bb8c37b5113d22b48ff516875f9d5f20fb2139a015",
+      "bytes": 68322
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.nod.xml",
+      "sha256": "c2475c430823a56589ada18cd6e907c090ccf8297fd727b7b4fc5d61c09b86f2",
+      "bytes": 727
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.rou.xml",
+      "sha256": "5d9812f24e4f4816adc09013f5fc53f4038a1325121ade85b90ec0c71bc76930",
+      "bytes": 3071
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.sumocfg",
+      "sha256": "8cfc21de3bde81fec7e328ad8dc7569117a6d48e92df15c3a9c087212a51317d",
+      "bytes": 781
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_buildings.add.xml",
+      "sha256": "14857a766480e5e93e0078b2dff6e57bdff04453a346591cdc965f96c49f256e",
+      "bytes": 6012
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_city.add.xml",
+      "sha256": "84042e7416122ebca875596382513e699f113446cccf8936fa341091d8c6db95",
+      "bytes": 7939
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_hazard_generator.py",
+      "sha256": "85dad4160fe2853b03ab0f4efbba1bd689df7c19f2215639dda168020f8fbcaf",
+      "bytes": 15558
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_hazards.add.xml",
+      "sha256": "b3da2b300188bbe182fe9896a98edb7314ff6f653caffa2cbe64b69ad6758a7e",
+      "bytes": 4531
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_view.xml",
+      "sha256": "28589de69602e3de50ac8dc9274f6049cb4cc5b110f0e9c3573d939da665cee6",
+      "bytes": 426
+    },
+    {
+      "path": "simulation/smart_city/foundry/run_foundry_simulation.py",
+      "sha256": "6766e5dbbb95318414161d8c686aa548c8d58bd58d089a2a247cd45ffa44c8d3",
+      "bytes": 9937
+    },
+    {
+      "path": "simulation/smart_city/junction.edg.xml",
+      "sha256": "58963ada6109cb63fab9bf5190123b01e29b6efaaf73ab7c76d5f8542032c866",
+      "bytes": 1476
+    },
+    {
+      "path": "simulation/smart_city/junction.net.xml",
+      "sha256": "8e588fb23f9e120f1387edc5162874e55abef9b7acf106e041f7a3981ae61ff3",
+      "bytes": 19836
+    },
+    {
+      "path": "simulation/smart_city/junction.nod.xml",
+      "sha256": "f7e5dbb79a4c1bd8345d422abfe764ee9ed235cf3cf77c9c1d62001a58814861",
+      "bytes": 462
+    },
+    {
+      "path": "simulation/smart_city/junction.rou.xml",
+      "sha256": "5283e1f2118691b6e5227ec78037416c5df861afd09abb449ce4272fd880293d",
+      "bytes": 2541
+    },
+    {
+      "path": "simulation/smart_city/smart_city_junction.sumocfg",
+      "sha256": "4c9c1a8e1837c483e59c917d8cab9d84801021dded6c4665efd05f51769e61b3",
+      "bytes": 658
+    },
+    {
+      "path": "src/pfpd_city_perception/__init__.py",
+      "sha256": "449af76b45433f538fc8e1911a8fc6fe3bac887a12e6689e555582471e648a19",
+      "bytes": 320
+    },
+    {
+      "path": "src/pfpd_city_perception/__pycache__/__init__.cpython-311.pyc",
+      "sha256": "82342da9d436aceb7f9e0e37639a658d9cdb45354de1deaa58e3ad4bb6ef142d",
+      "bytes": 543
+    },
+    {
+      "path": "src/pfpd_city_perception/__pycache__/camera_perception.cpython-311.pyc",
+      "sha256": "7ce82135f456f1900b11da397a40e2ef40e25deaf85d38c2c98ebbdf2796e134",
+      "bytes": 12833
+    },
+    {
+      "path": "src/pfpd_city_perception/camera_perception.py",
+      "sha256": "2214deb64781b841521eb83dd005b555db0275de4938f6aba81670015533ea1d",
+      "bytes": 8592
+    },
+    {
+      "path": "src/pfpd_city_protocol/__init__.py",
+      "sha256": "80c6b8024764957c816e1a8557cbfe825fa52e76623179af69464608140117ff",
+      "bytes": 406
+    },
+    {
+      "path": "src/pfpd_city_protocol/__pycache__/__init__.cpython-311.pyc",
+      "sha256": "854d382baae3d4e9d4c0798bb93a0b0775a9d3a5c6112c2d80523735eb07f90b",
+      "bytes": 569
+    },
+    {
+      "path": "src/pfpd_city_protocol/__pycache__/contracts.cpython-311.pyc",
+      "sha256": "912ae390351054cc5ba47e1ecbf32e4e38442ae4a29b2e47ee833f7b5e09554e",
+      "bytes": 5532
+    },
+    {
+      "path": "src/pfpd_city_protocol/contracts.py",
+      "sha256": "f3dd1ac89ff137cc8cd07f2d9824c6aeb5a7146d976dc8dc65a2c01d335a6caf",
+      "bytes": 2482
+    },
+    {
+      "path": "src/pfpd_city_runtime/__init__.py",
+      "sha256": "6aa90dcf543799042bfc943057e80d3f1c9ab50e3e98f0d93a2191f90af43029",
+      "bytes": 261
+    },
+    {
+      "path": "src/pfpd_city_runtime/__pycache__/__init__.cpython-311.pyc",
+      "sha256": "29efde26fcb5e6bfdd647bec7d9c289de8b4a364c7e9b1edd5d93bc2b8be9daf",
+      "bytes": 487
+    },
+    {
+      "path": "src/pfpd_city_runtime/__pycache__/city_runtime_engine.cpython-311.pyc",
+      "sha256": "0f4773bfc7d038a711c6cdbfa6e9c91928371a37738fac668fde4a290326b8cb",
+      "bytes": 12583
+    },
+    {
+      "path": "src/pfpd_city_runtime/city_runtime_engine.py",
+      "sha256": "f8fe9770ed69534e5a6140171b72ec778d5ccec1cfb5afcebc3f31660803f07b",
+      "bytes": 9295
+    },
+    {
+      "path": "tests/smart_city/test_foundry_network.py",
+      "sha256": "b06e441c0eeb709fcd979c6c5d277de76bbd064504c3feb7f7e05cad2e2eec72",
+      "bytes": 2270
+    },
+    {
+      "path": "tests/smart_city/test_perception.py",
+      "sha256": "3f54d43608419b589cb913cf55dfffa9c5d2291a8e8b1225a46123cb0edd36f2",
+      "bytes": 1863
+    },
+    {
+      "path": "tests/smart_city/test_smart_city_slice.py",
+      "sha256": "3ed5064fa1a9b7271279094b8a928a3da97f1ecfa4a8b0a21f0e172496b85bf1",
+      "bytes": 3819
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/concat.txt",
+      "sha256": "2846eb733cd50202944efc999fb4d638fd0b3416ac8badc18bfcc8b5efc1eca2",
+      "bytes": 1470
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/scene_1.mp3",
+      "sha256": "da452f5e1d65ae8ab0e45145da7be15d1a44efee1ea35431edcab213aa3fa9d3",
+      "bytes": 113616
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/scene_2.mp3",
+      "sha256": "6b2a9500db8d22f09eb93b92b8087285a94f11da68c20e82c38f0dd79f057d72",
+      "bytes": 121248
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/scene_3.mp3",
+      "sha256": "1272522f43e773218bd1988dcc2c6022e08651a3cbdc750da80d4dda8f8c8ea6",
+      "bytes": 141552
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/scene_4.mp3",
+      "sha256": "16a1d7214e8c01ed2a5cc4b29b672e14c1e9562a5bc1e17b50a9b534206ac3fd",
+      "bytes": 144144
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/scene_5.mp3",
+      "sha256": "b0ccabec5673ddae906984b67cbcde0bd46c9f6c707bd5cd403d2dafcd306b0c",
+      "bytes": 140688
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/scene_6.mp3",
+      "sha256": "8f60a9bf2ea5ea1cff33c848908c62d3abbd988093b041a1942484aac66bf5e3",
+      "bytes": 111456
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/scene_7.mp3",
+      "sha256": "cee2b3b7c26a470b8f5a6ca02ba19748dd252bab0b933434f3c5e09171018243",
+      "bytes": 98784
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/scene_8.mp3",
+      "sha256": "bbefb209fa2d0c6fb08f5919118f1afd4b4be1318590a6f819dc86839b4b5f3c",
+      "bytes": 61776
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/confirm_chime_1.mp3",
+      "sha256": "7da76b1e339d99915807252a5241b86226b5dfe36816972c38eb83b3dce094e8",
+      "bytes": 30672
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/enter_key_1.mp3",
+      "sha256": "981513ac5a7df64a4dc600697c91d2d5c6afc0e9975cd45c5d86fa8d9967d71b",
+      "bytes": 27329
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/falling_pieces_1.mp3",
+      "sha256": "5e1bdaf66c0f7515e184b8d67ddc4c81feb52f61a2af596777b24e6ff3924f97",
+      "bytes": 43629
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/impact_slam_1.mp3",
+      "sha256": "d27e8146b468144d838e3a88c3d61317bb0bba9cd18524aae060bcc3a3271c6b",
+      "bytes": 41539
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/impact_small_1.mp3",
+      "sha256": "8568e4295a76dd4e867b5c41fa7472e3a3456ea7c6a1a9379103335341cf40fc",
+      "bytes": 27329
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/impact_small_2.mp3",
+      "sha256": "7e3ddcd60b367e34a39c822319ddb5d94c906a4ad43e50e5ee9601307ebdd370",
+      "bytes": 27329
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/key_click_1.mp3",
+      "sha256": "6fa4a795b103543c6157d3647abe07b2e9492edd5b652eae68aad4f8bd866265",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/key_click_2.mp3",
+      "sha256": "6956217b78786c53a416a522f6e02b6d0b2387898ce13ac7860bf5ddc9654d6b",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/marker_strike_1.mp3",
+      "sha256": "b54a9d173fc7082425243fef5095fc6541b6d540fdf386571e1482dae66bbbfa",
+      "bytes": 30672
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/mouse_click_1.mp3",
+      "sha256": "f1fade3db8cad504a7a8db67b75dd0bc50bf026c212ccc2369ca412bc7f11a4d",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/paper_slide_1.mp3",
+      "sha256": "70e68681e289d7533e23b45f2deb53fbd7b3abfeffe8f20bab6c8fdbd3fad933",
+      "bytes": 34016
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/pen_line_1.mp3",
+      "sha256": "5b56c0065bb94c976d11ae42529e37e9262435d80acfb9f7ba69c87db5950b4b",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/pen_tick_1.mp3",
+      "sha256": "21d9661a3eb973f0315d01f8729b9b8364a500f5ddbbf06d86db7c6f38a3ae30",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/projector_click_1.mp3",
+      "sha256": "9a7f84d0200540efc04713562d130a070daaa2587944404045531205ff4fc4be",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/projector_run_1.mp3",
+      "sha256": "d5d99b6fb5f43038e352077b3e00bfb7af8c5fd63e97b6daade2715686c0b2cf",
+      "bytes": 57422
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/reverse_suck_1.mp3",
+      "sha256": "54d570ae8860f327df2ee15ef9020604fcbcc77f577db4c09f4a71023306d2ce",
+      "bytes": 34016
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/riser_1.mp3",
+      "sha256": "8f7058d2a75b323587c115ddd47e0d5f9afed360d198202361c4a6e72e86a05e",
+      "bytes": 41539
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/scan_sweep_1.mp3",
+      "sha256": "6bdc5f6ba2c25b0b30e798e7e9f58cc36b17af213484cb540293590fcd6fc6da",
+      "bytes": 34016
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/snip_1.mp3",
+      "sha256": "3763d86ca24df610c4bda9dbd5d4cfacb6dabca2e241585ac1d37f825d6f7dc9",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/spark_ignite_1.mp3",
+      "sha256": "2b38699cebe02bdf2bac49401744f056ecfb18d1e8832e1c977c954e0d34ad33",
+      "bytes": 36942
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/spark_sizzle_1.mp3",
+      "sha256": "cec40240f58b82fd56430838ca810e489b7e64d0f4b31dfacdde31331e10bc16",
+      "bytes": 65781
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/spark_zip_1.mp3",
+      "sha256": "589da3881039769ed3270b813bda4763ac02a142ad902abc6e438cab7f241f47",
+      "bytes": 36942
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/stamp_1.mp3",
+      "sha256": "184c544a674fb06cf3c56fb11ae560220bd690e910c7adfaf68b590acb8980f5",
+      "bytes": 30672
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/tape_rewind_1.mp3",
+      "sha256": "fb325e801ae9e44c69d77ea801fbe75b6634331cc0aa168f8f29b95d795dc7d3",
+      "bytes": 41539
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/typewriter_1.mp3",
+      "sha256": "2c8d4ab173de789ede4ff468936ab7983e041e43cfdb7fc3555695daa963036e",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/typewriter_2.mp3",
+      "sha256": "dc098c199cc1b7b5fa6d17b434214f45c037a17dc0071f9a3c242a121b00fcb6",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/ui_blip_1.mp3",
+      "sha256": "a8e265f4d067b6f90682f7a5cc8bacc926f1f03c39c4fed17b77a1ee50941029",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/ui_blip_2.mp3",
+      "sha256": "40a742a78fc4fb03f2312249287097bda8f62f53c85f3ff8f2eed57d4ef1ebe2",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/ui_tick_1.mp3",
+      "sha256": "e6e1a040c769adc780b2f28409547ba496f69d4418ae338a7c740de1467703df",
+      "bytes": 25657
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/whoosh_fast_1.mp3",
+      "sha256": "393abfef1a403e5cf3e8314137bf5e7922a8f7ebe3c3293faac78d1245cd9371",
+      "bytes": 30672
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/whoosh_fast_2.mp3",
+      "sha256": "aff983c19d1a94185437ce6e0a33192c0ebe4c791c42ebd06a31bd8cff0e4578",
+      "bytes": 30672
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/whoosh_soft_1.mp3",
+      "sha256": "0f7d40bc3de6df4e6ee0f755082154bc81fa43833896fcec1ef7701dead90b96",
+      "bytes": 36942
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/sfx/zap_slash_1.mp3",
+      "sha256": "5acb7ef019696bd9044485ed8df8b198cf712496714c9b74215f428097249780",
+      "bytes": 27329
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/silence.mp3",
+      "sha256": "3817f0adfabc9ad26fa8298b98d54b2312f98e2413fb7113e50d920f50f01d61",
+      "bytes": 1005
+    },
+    {
+      "path": "visualization/pfpd_motion_video/audio/voiceover.mp3",
+      "sha256": "012afd483805330e2c580edc1648a85796f229cf3a027d984e1e8728df0acfe3",
+      "bytes": 1344957
+    },
+    {
+      "path": "visualization/pfpd_motion_video/data/cues.json",
+      "sha256": "3857fad8d62a1a5c686a4f1974df3d8cc2dff833b91c153f6d0fbeacd37a74f2",
+      "bytes": 4219
+    },
+    {
+      "path": "visualization/pfpd_motion_video/index.html",
+      "sha256": "7062ea97840e8add0f7657139dcadb7328cfa0d402ca7ee0802e5a34b85aa833",
+      "bytes": 3580
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/pfpd2_v2x_motion_graphics.mp4",
+      "sha256": "7859a56c56d5b1f4bfa3d113aa3f4601bad45dea220ba989b3da3f8062030be4",
+      "bytes": 12547816
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/stills/scene_1_t1.png",
+      "sha256": "1a88ac1ff55b06009a7df92626b63a53e86794a03ba36989cef9be07c7a831e3",
+      "bytes": 126425
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/stills/scene_2_t25.png",
+      "sha256": "c93447d2f1a15662a0c06e034bf62a43cb50b159ab060383d775f4ee36c5a779",
+      "bytes": 150819
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/stills/scene_3_t48.png",
+      "sha256": "b0a66b4cd0b973ed7cdbaf44c941783293c3aac78e416c9090b65d8ad9c72ccf",
+      "bytes": 223508
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/stills/scene_4_t72.png",
+      "sha256": "9353981501334e4a924e2ad79555a05363414c5f43646a79875a281031ad11e1",
+      "bytes": 173516
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/stills/scene_5_t95.png",
+      "sha256": "e3088987ad74f8aff2a301f8db2c9be69809aa181b3a57b74760f5f24f4859b3",
+      "bytes": 200052
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/stills/scene_6_t120.png",
+      "sha256": "f734e89d740f4d8d47393a7cd0d3cb8320c2eaa6f9b903cf99e37ab91c82aa6a",
+      "bytes": 181399
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/stills/scene_7_t140.png",
+      "sha256": "2f2a27563a61d56d095de8baf084535bb5b65742f91c01b599a1626039df93c3",
+      "bytes": 163558
+    },
+    {
+      "path": "visualization/pfpd_motion_video/out/stills/scene_8_t155.png",
+      "sha256": "6da7d4e951e34c3027e5635cc65cc8b4044f0ea47037598b89dd7137e281e84a",
+      "bytes": 126164
+    },
+    {
+      "path": "visualization/pfpd_motion_video/scripts/generate_audio.py",
+      "sha256": "31c86971fb98f74477171c14c3d1ca7e2e379e7a860c247d578a79d41bef8398",
+      "bytes": 6734
+    },
+    {
+      "path": "visualization/pfpd_motion_video/scripts/render_video.mjs",
+      "sha256": "b1b001c12074e4b1ec119aabeeba4c58a6c24906ce21441c10faadece18a6320",
+      "bytes": 6784
+    },
+    {
+      "path": "visualization/pfpd_motion_video/src/main.js",
+      "sha256": "163229da137303c46aa29ae2534e15e8bd04733f085412143521db9a220da5e1",
+      "bytes": 34140
+    }
+  ],
+  "user_authorization": "2026-10-15: delete uncommitted Antigravity artifacts, preserve research Markdown, create branch and implement N1.",
+  "retained_geometry_note": "Only reviewed static Foundry nod/edg/net geometry will be reused as new N1 input; old controllers and motion webpage are removed.",
+  "archive_sha256": "2a65ad27d827ed7ef8cd1128f66bf70dc9d478fca066bdd7c6ef1376deac0f28",
+  "temporary_archive_note": "Initial temp archive was inaccessible from a subsequent sandboxed command. This persistent workspace archive was recreated from all original files and fully CRC/hash checked before removal."
+}

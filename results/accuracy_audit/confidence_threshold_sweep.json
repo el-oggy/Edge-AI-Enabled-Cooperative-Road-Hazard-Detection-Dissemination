@@ -1,0 +1,686 @@
+[
+  {
+    "conf_threshold": 0.05,
+    "tp": 1367,
+    "fp": 671,
+    "fn": 170,
+    "precision": 0.6708,
+    "recall": 0.8894,
+    "f1_score": 0.7648,
+    "missed_hazard_rate": 0.1106,
+    "false_alarms_per_img": 0.619,
+    "detections_per_img": 1.88,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 31,
+        "fn": 0,
+        "precision": 0.4833,
+        "recall": 1.0,
+        "f1": 0.6517
+      },
+      "construction_hazard": {
+        "tp": 33,
+        "fp": 37,
+        "fn": 6,
+        "precision": 0.4714,
+        "recall": 0.8462,
+        "f1": 0.6055
+      },
+      "road_accident_obstacle": {
+        "tp": 1305,
+        "fp": 603,
+        "fn": 164,
+        "precision": 0.684,
+        "recall": 0.8884,
+        "f1": 0.7729
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.1,
+    "tp": 1324,
+    "fp": 346,
+    "fn": 213,
+    "precision": 0.7928,
+    "recall": 0.8614,
+    "f1_score": 0.8257,
+    "missed_hazard_rate": 0.1386,
+    "false_alarms_per_img": 0.319,
+    "detections_per_img": 1.54,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 24,
+        "fn": 0,
+        "precision": 0.5472,
+        "recall": 1.0,
+        "f1": 0.7073
+      },
+      "construction_hazard": {
+        "tp": 32,
+        "fp": 17,
+        "fn": 7,
+        "precision": 0.6531,
+        "recall": 0.8205,
+        "f1": 0.7273
+      },
+      "road_accident_obstacle": {
+        "tp": 1263,
+        "fp": 305,
+        "fn": 206,
+        "precision": 0.8055,
+        "recall": 0.8598,
+        "f1": 0.8317
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.15,
+    "tp": 1282,
+    "fp": 229,
+    "fn": 255,
+    "precision": 0.8484,
+    "recall": 0.8341,
+    "f1_score": 0.8412,
+    "missed_hazard_rate": 0.1659,
+    "false_alarms_per_img": 0.211,
+    "detections_per_img": 1.39,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 17,
+        "fn": 0,
+        "precision": 0.6304,
+        "recall": 1.0,
+        "f1": 0.7733
+      },
+      "construction_hazard": {
+        "tp": 32,
+        "fp": 10,
+        "fn": 7,
+        "precision": 0.7619,
+        "recall": 0.8205,
+        "f1": 0.7901
+      },
+      "road_accident_obstacle": {
+        "tp": 1221,
+        "fp": 202,
+        "fn": 248,
+        "precision": 0.858,
+        "recall": 0.8312,
+        "f1": 0.8444
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.2,
+    "tp": 1260,
+    "fp": 161,
+    "fn": 277,
+    "precision": 0.8867,
+    "recall": 0.8198,
+    "f1_score": 0.8519,
+    "missed_hazard_rate": 0.1802,
+    "false_alarms_per_img": 0.149,
+    "detections_per_img": 1.31,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 12,
+        "fn": 0,
+        "precision": 0.7073,
+        "recall": 1.0,
+        "f1": 0.8286
+      },
+      "construction_hazard": {
+        "tp": 32,
+        "fp": 7,
+        "fn": 7,
+        "precision": 0.8205,
+        "recall": 0.8205,
+        "f1": 0.8205
+      },
+      "road_accident_obstacle": {
+        "tp": 1199,
+        "fp": 142,
+        "fn": 270,
+        "precision": 0.8941,
+        "recall": 0.8162,
+        "f1": 0.8534
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.25,
+    "tp": 1230,
+    "fp": 124,
+    "fn": 307,
+    "precision": 0.9084,
+    "recall": 0.8003,
+    "f1_score": 0.8509,
+    "missed_hazard_rate": 0.1997,
+    "false_alarms_per_img": 0.114,
+    "detections_per_img": 1.25,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 7,
+        "fn": 0,
+        "precision": 0.8056,
+        "recall": 1.0,
+        "f1": 0.8923
+      },
+      "construction_hazard": {
+        "tp": 32,
+        "fp": 5,
+        "fn": 7,
+        "precision": 0.8649,
+        "recall": 0.8205,
+        "f1": 0.8421
+      },
+      "road_accident_obstacle": {
+        "tp": 1169,
+        "fp": 112,
+        "fn": 300,
+        "precision": 0.9126,
+        "recall": 0.7958,
+        "f1": 0.8502
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.3,
+    "tp": 1202,
+    "fp": 92,
+    "fn": 335,
+    "precision": 0.9289,
+    "recall": 0.782,
+    "f1_score": 0.8492,
+    "missed_hazard_rate": 0.218,
+    "false_alarms_per_img": 0.085,
+    "detections_per_img": 1.19,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 6,
+        "fn": 0,
+        "precision": 0.8286,
+        "recall": 1.0,
+        "f1": 0.9062
+      },
+      "construction_hazard": {
+        "tp": 30,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.8571,
+        "recall": 0.7692,
+        "f1": 0.8108
+      },
+      "road_accident_obstacle": {
+        "tp": 1143,
+        "fp": 81,
+        "fn": 326,
+        "precision": 0.9338,
+        "recall": 0.7781,
+        "f1": 0.8489
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.35,
+    "tp": 1175,
+    "fp": 73,
+    "fn": 362,
+    "precision": 0.9415,
+    "recall": 0.7645,
+    "f1_score": 0.8438,
+    "missed_hazard_rate": 0.2355,
+    "false_alarms_per_img": 0.067,
+    "detections_per_img": 1.15,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8788,
+        "recall": 1.0,
+        "f1": 0.9355
+      },
+      "construction_hazard": {
+        "tp": 30,
+        "fp": 3,
+        "fn": 9,
+        "precision": 0.9091,
+        "recall": 0.7692,
+        "f1": 0.8333
+      },
+      "road_accident_obstacle": {
+        "tp": 1116,
+        "fp": 66,
+        "fn": 353,
+        "precision": 0.9442,
+        "recall": 0.7597,
+        "f1": 0.8419
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.4,
+    "tp": 1140,
+    "fp": 60,
+    "fn": 397,
+    "precision": 0.95,
+    "recall": 0.7417,
+    "f1_score": 0.833,
+    "missed_hazard_rate": 0.2583,
+    "false_alarms_per_img": 0.055,
+    "detections_per_img": 1.11,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9355,
+        "recall": 1.0,
+        "f1": 0.9667
+      },
+      "construction_hazard": {
+        "tp": 30,
+        "fp": 2,
+        "fn": 9,
+        "precision": 0.9375,
+        "recall": 0.7692,
+        "f1": 0.8451
+      },
+      "road_accident_obstacle": {
+        "tp": 1081,
+        "fp": 56,
+        "fn": 388,
+        "precision": 0.9507,
+        "recall": 0.7359,
+        "f1": 0.8296
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.45,
+    "tp": 1089,
+    "fp": 46,
+    "fn": 448,
+    "precision": 0.9595,
+    "recall": 0.7085,
+    "f1_score": 0.8151,
+    "missed_hazard_rate": 0.2915,
+    "false_alarms_per_img": 0.042,
+    "detections_per_img": 1.05,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9667,
+        "recall": 1.0,
+        "f1": 0.9831
+      },
+      "construction_hazard": {
+        "tp": 29,
+        "fp": 2,
+        "fn": 10,
+        "precision": 0.9355,
+        "recall": 0.7436,
+        "f1": 0.8286
+      },
+      "road_accident_obstacle": {
+        "tp": 1031,
+        "fp": 43,
+        "fn": 438,
+        "precision": 0.96,
+        "recall": 0.7018,
+        "f1": 0.8109
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.5,
+    "tp": 1053,
+    "fp": 37,
+    "fn": 484,
+    "precision": 0.9661,
+    "recall": 0.6851,
+    "f1_score": 0.8017,
+    "missed_hazard_rate": 0.3149,
+    "false_alarms_per_img": 0.034,
+    "detections_per_img": 1.01,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9667,
+        "recall": 1.0,
+        "f1": 0.9831
+      },
+      "construction_hazard": {
+        "tp": 29,
+        "fp": 1,
+        "fn": 10,
+        "precision": 0.9667,
+        "recall": 0.7436,
+        "f1": 0.8406
+      },
+      "road_accident_obstacle": {
+        "tp": 995,
+        "fp": 35,
+        "fn": 474,
+        "precision": 0.966,
+        "recall": 0.6773,
+        "f1": 0.7963
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.55,
+    "tp": 1013,
+    "fp": 30,
+    "fn": 524,
+    "precision": 0.9712,
+    "recall": 0.6591,
+    "f1_score": 0.7853,
+    "missed_hazard_rate": 0.3409,
+    "false_alarms_per_img": 0.028,
+    "detections_per_img": 0.96,
+    "per_class": {
+      "pothole": {
+        "tp": 29,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "construction_hazard": {
+        "tp": 27,
+        "fp": 1,
+        "fn": 12,
+        "precision": 0.9643,
+        "recall": 0.6923,
+        "f1": 0.806
+      },
+      "road_accident_obstacle": {
+        "tp": 957,
+        "fp": 29,
+        "fn": 512,
+        "precision": 0.9706,
+        "recall": 0.6515,
+        "f1": 0.7796
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.6,
+    "tp": 961,
+    "fp": 25,
+    "fn": 576,
+    "precision": 0.9746,
+    "recall": 0.6252,
+    "f1_score": 0.7618,
+    "missed_hazard_rate": 0.3748,
+    "false_alarms_per_img": 0.023,
+    "detections_per_img": 0.91,
+    "per_class": {
+      "pothole": {
+        "tp": 27,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.931,
+        "f1": 0.9643
+      },
+      "construction_hazard": {
+        "tp": 27,
+        "fp": 1,
+        "fn": 12,
+        "precision": 0.9643,
+        "recall": 0.6923,
+        "f1": 0.806
+      },
+      "road_accident_obstacle": {
+        "tp": 907,
+        "fp": 24,
+        "fn": 562,
+        "precision": 0.9742,
+        "recall": 0.6174,
+        "f1": 0.7558
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.65,
+    "tp": 909,
+    "fp": 19,
+    "fn": 628,
+    "precision": 0.9795,
+    "recall": 0.5914,
+    "f1_score": 0.7375,
+    "missed_hazard_rate": 0.4086,
+    "false_alarms_per_img": 0.018,
+    "detections_per_img": 0.86,
+    "per_class": {
+      "pothole": {
+        "tp": 25,
+        "fp": 0,
+        "fn": 4,
+        "precision": 1.0,
+        "recall": 0.8621,
+        "f1": 0.9259
+      },
+      "construction_hazard": {
+        "tp": 26,
+        "fp": 1,
+        "fn": 13,
+        "precision": 0.963,
+        "recall": 0.6667,
+        "f1": 0.7879
+      },
+      "road_accident_obstacle": {
+        "tp": 858,
+        "fp": 18,
+        "fn": 611,
+        "precision": 0.9795,
+        "recall": 0.5841,
+        "f1": 0.7318
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.7,
+    "tp": 838,
+    "fp": 13,
+    "fn": 699,
+    "precision": 0.9847,
+    "recall": 0.5452,
+    "f1_score": 0.7018,
+    "missed_hazard_rate": 0.4548,
+    "false_alarms_per_img": 0.012,
+    "detections_per_img": 0.79,
+    "per_class": {
+      "pothole": {
+        "tp": 23,
+        "fp": 0,
+        "fn": 6,
+        "precision": 1.0,
+        "recall": 0.7931,
+        "f1": 0.8846
+      },
+      "construction_hazard": {
+        "tp": 26,
+        "fp": 1,
+        "fn": 13,
+        "precision": 0.963,
+        "recall": 0.6667,
+        "f1": 0.7879
+      },
+      "road_accident_obstacle": {
+        "tp": 789,
+        "fp": 12,
+        "fn": 680,
+        "precision": 0.985,
+        "recall": 0.5371,
+        "f1": 0.6952
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.75,
+    "tp": 774,
+    "fp": 7,
+    "fn": 763,
+    "precision": 0.991,
+    "recall": 0.5036,
+    "f1_score": 0.6678,
+    "missed_hazard_rate": 0.4964,
+    "false_alarms_per_img": 0.006,
+    "detections_per_img": 0.72,
+    "per_class": {
+      "pothole": {
+        "tp": 21,
+        "fp": 0,
+        "fn": 8,
+        "precision": 1.0,
+        "recall": 0.7241,
+        "f1": 0.84
+      },
+      "construction_hazard": {
+        "tp": 23,
+        "fp": 0,
+        "fn": 16,
+        "precision": 1.0,
+        "recall": 0.5897,
+        "f1": 0.7419
+      },
+      "road_accident_obstacle": {
+        "tp": 730,
+        "fp": 7,
+        "fn": 739,
+        "precision": 0.9905,
+        "recall": 0.4969,
+        "f1": 0.6618
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.8,
+    "tp": 709,
+    "fp": 5,
+    "fn": 828,
+    "precision": 0.993,
+    "recall": 0.4613,
+    "f1_score": 0.6299,
+    "missed_hazard_rate": 0.5387,
+    "false_alarms_per_img": 0.005,
+    "detections_per_img": 0.66,
+    "per_class": {
+      "pothole": {
+        "tp": 17,
+        "fp": 0,
+        "fn": 12,
+        "precision": 1.0,
+        "recall": 0.5862,
+        "f1": 0.7391
+      },
+      "construction_hazard": {
+        "tp": 21,
+        "fp": 0,
+        "fn": 18,
+        "precision": 1.0,
+        "recall": 0.5385,
+        "f1": 0.7
+      },
+      "road_accident_obstacle": {
+        "tp": 671,
+        "fp": 5,
+        "fn": 798,
+        "precision": 0.9926,
+        "recall": 0.4568,
+        "f1": 0.6256
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.85,
+    "tp": 640,
+    "fp": 1,
+    "fn": 897,
+    "precision": 0.9984,
+    "recall": 0.4164,
+    "f1_score": 0.5877,
+    "missed_hazard_rate": 0.5836,
+    "false_alarms_per_img": 0.001,
+    "detections_per_img": 0.59,
+    "per_class": {
+      "pothole": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 24,
+        "precision": 1.0,
+        "recall": 0.1724,
+        "f1": 0.2941
+      },
+      "construction_hazard": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 23,
+        "precision": 1.0,
+        "recall": 0.4103,
+        "f1": 0.5818
+      },
+      "road_accident_obstacle": {
+        "tp": 619,
+        "fp": 1,
+        "fn": 850,
+        "precision": 0.9984,
+        "recall": 0.4214,
+        "f1": 0.5926
+      }
+    }
+  },
+  {
+    "conf_threshold": 0.9,
+    "tp": 555,
+    "fp": 0,
+    "fn": 982,
+    "precision": 1.0,
+    "recall": 0.3611,
+    "f1_score": 0.5306,
+    "missed_hazard_rate": 0.6389,
+    "false_alarms_per_img": 0.0,
+    "detections_per_img": 0.51,
+    "per_class": {
+      "pothole": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 27,
+        "precision": 1.0,
+        "recall": 0.069,
+        "f1": 0.129
+      },
+      "construction_hazard": {
+        "tp": 13,
+        "fp": 0,
+        "fn": 26,
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1": 0.5
+      },
+      "road_accident_obstacle": {
+        "tp": 540,
+        "fp": 0,
+        "fn": 929,
+        "precision": 1.0,
+        "recall": 0.3676,
+        "f1": 0.5376
+      }
+    }
+  }
+]

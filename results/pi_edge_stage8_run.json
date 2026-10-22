@@ -1,0 +1,976 @@
+{
+  "start_time": 1792536149.4464555,
+  "target_host": "192.168.1.48",
+  "target_port": 5005,
+  "telemetry_start": {
+    "temp_str": "temp=51.6'C",
+    "temp_c": 51.6,
+    "throttled": "throttled=0x0"
+  },
+  "frames_evaluated": 15,
+  "hazards_confirmed": [
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 1,
+      "class_name": "pothole",
+      "conf": 0.8671875,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553029562
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 2,
+      "class_name": "pothole",
+      "conf": 0.857421875,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553168488
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 3,
+      "class_name": "pothole",
+      "conf": 0.818359375,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553210896
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 4,
+      "class_name": "pothole",
+      "conf": 0.810546875,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553240192
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 5,
+      "class_name": "pothole",
+      "conf": 0.751953125,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553266970
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 6,
+      "class_name": "pothole",
+      "conf": 0.53125,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553291766
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 7,
+      "class_name": "pothole",
+      "conf": 0.421875,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553315451
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 8,
+      "class_name": "pothole",
+      "conf": 0.3701171875,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553338618
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 9,
+      "class_name": "pothole",
+      "conf": 0.3583984375,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553361859
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 10,
+      "class_name": "pothole",
+      "conf": 0.3134765625,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553384563
+    },
+    {
+      "frame_id": 2,
+      "burst_idx": 2,
+      "event_id": 11,
+      "class_name": "pothole",
+      "conf": 0.279296875,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149553407470
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 1,
+      "class_name": "pothole",
+      "conf": 0.8671875,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149587944726
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 2,
+      "class_name": "pothole",
+      "conf": 0.857421875,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588070597
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 3,
+      "class_name": "pothole",
+      "conf": 0.818359375,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588104300
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 4,
+      "class_name": "pothole",
+      "conf": 0.810546875,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588129226
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 5,
+      "class_name": "pothole",
+      "conf": 0.751953125,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588175541
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 6,
+      "class_name": "pothole",
+      "conf": 0.53125,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588197893
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 7,
+      "class_name": "pothole",
+      "conf": 0.421875,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588220671
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 8,
+      "class_name": "pothole",
+      "conf": 0.3701171875,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588242245
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 9,
+      "class_name": "pothole",
+      "conf": 0.3583984375,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588264523
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 10,
+      "class_name": "pothole",
+      "conf": 0.3134765625,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588285689
+    },
+    {
+      "frame_id": 3,
+      "burst_idx": 3,
+      "event_id": 11,
+      "class_name": "pothole",
+      "conf": 0.279296875,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149588306671
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 1,
+      "class_name": "pothole",
+      "conf": 0.8671875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622634853
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 2,
+      "class_name": "pothole",
+      "conf": 0.857421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622756964
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 3,
+      "class_name": "pothole",
+      "conf": 0.818359375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622790594
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 4,
+      "class_name": "pothole",
+      "conf": 0.810546875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622815372
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 5,
+      "class_name": "pothole",
+      "conf": 0.751953125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622838557
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 6,
+      "class_name": "pothole",
+      "conf": 0.53125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622860464
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 7,
+      "class_name": "pothole",
+      "conf": 0.421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622883316
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 8,
+      "class_name": "pothole",
+      "conf": 0.3701171875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622904872
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 9,
+      "class_name": "pothole",
+      "conf": 0.3583984375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622926020
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 10,
+      "class_name": "pothole",
+      "conf": 0.3134765625,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622947353
+    },
+    {
+      "frame_id": 4,
+      "burst_idx": 4,
+      "event_id": 11,
+      "class_name": "pothole",
+      "conf": 0.279296875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149622968557
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 1,
+      "class_name": "pothole",
+      "conf": 0.8671875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149675744970
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 2,
+      "class_name": "pothole",
+      "conf": 0.857421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149675872729
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 3,
+      "class_name": "pothole",
+      "conf": 0.818359375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149675905136
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 4,
+      "class_name": "pothole",
+      "conf": 0.810546875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149675930266
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 5,
+      "class_name": "pothole",
+      "conf": 0.751953125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149675953284
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 6,
+      "class_name": "pothole",
+      "conf": 0.53125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149675976655
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 7,
+      "class_name": "pothole",
+      "conf": 0.421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149676000025
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 8,
+      "class_name": "pothole",
+      "conf": 0.3701171875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149676021896
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 9,
+      "class_name": "pothole",
+      "conf": 0.3583984375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149676044247
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 10,
+      "class_name": "pothole",
+      "conf": 0.3134765625,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149676066229
+    },
+    {
+      "frame_id": 5,
+      "burst_idx": 0,
+      "event_id": 11,
+      "class_name": "pothole",
+      "conf": 0.279296875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149676087507
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 1,
+      "class_name": "pothole",
+      "conf": 0.8671875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710466170
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 2,
+      "class_name": "pothole",
+      "conf": 0.857421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710588244
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 3,
+      "class_name": "pothole",
+      "conf": 0.818359375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710623152
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 4,
+      "class_name": "pothole",
+      "conf": 0.810546875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710646856
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 5,
+      "class_name": "pothole",
+      "conf": 0.751953125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710668504
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 6,
+      "class_name": "pothole",
+      "conf": 0.53125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710689819
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 7,
+      "class_name": "pothole",
+      "conf": 0.421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710712133
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 8,
+      "class_name": "pothole",
+      "conf": 0.3701171875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710733967
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 9,
+      "class_name": "pothole",
+      "conf": 0.3583984375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710755782
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 10,
+      "class_name": "pothole",
+      "conf": 0.3134765625,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710777893
+    },
+    {
+      "frame_id": 6,
+      "burst_idx": 1,
+      "event_id": 11,
+      "class_name": "pothole",
+      "conf": 0.279296875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149710799245
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 1,
+      "class_name": "pothole",
+      "conf": 0.8671875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745375353
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 2,
+      "class_name": "pothole",
+      "conf": 0.857421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745493075
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 3,
+      "class_name": "pothole",
+      "conf": 0.818359375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745522353
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 4,
+      "class_name": "pothole",
+      "conf": 0.810546875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745545445
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 5,
+      "class_name": "pothole",
+      "conf": 0.751953125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745566945
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 6,
+      "class_name": "pothole",
+      "conf": 0.53125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745588371
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 7,
+      "class_name": "pothole",
+      "conf": 0.421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745610927
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 8,
+      "class_name": "pothole",
+      "conf": 0.3701171875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745632131
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 9,
+      "class_name": "pothole",
+      "conf": 0.3583984375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745653686
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 10,
+      "class_name": "pothole",
+      "conf": 0.3134765625,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745687964
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 11,
+      "class_name": "pothole",
+      "conf": 0.279296875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149745711501
+    },
+    {
+      "frame_id": 7,
+      "burst_idx": 2,
+      "event_id": 12,
+      "class_name": "construction_hazard",
+      "conf": 0.474609375,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149745733871
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 1,
+      "class_name": "pothole",
+      "conf": 0.8671875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780208017
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 2,
+      "class_name": "pothole",
+      "conf": 0.857421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780328220
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 3,
+      "class_name": "pothole",
+      "conf": 0.818359375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780356905
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 4,
+      "class_name": "pothole",
+      "conf": 0.810546875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780379998
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 5,
+      "class_name": "pothole",
+      "conf": 0.751953125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780401924
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 6,
+      "class_name": "pothole",
+      "conf": 0.53125,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780424683
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 7,
+      "class_name": "pothole",
+      "conf": 0.421875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780446368
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 8,
+      "class_name": "pothole",
+      "conf": 0.3701171875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780468109
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 9,
+      "class_name": "pothole",
+      "conf": 0.3583984375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780489498
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 10,
+      "class_name": "pothole",
+      "conf": 0.3134765625,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780510850
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 11,
+      "class_name": "pothole",
+      "conf": 0.279296875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149780532943
+    },
+    {
+      "frame_id": 8,
+      "burst_idx": 3,
+      "event_id": 12,
+      "class_name": "construction_hazard",
+      "conf": 0.474609375,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149780554387
+    },
+    {
+      "frame_id": 9,
+      "burst_idx": 4,
+      "event_id": 12,
+      "class_name": "construction_hazard",
+      "conf": 0.474609375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149815138847
+    },
+    {
+      "frame_id": 10,
+      "burst_idx": 0,
+      "event_id": 12,
+      "class_name": "construction_hazard",
+      "conf": 0.474609375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149873431281
+    },
+    {
+      "frame_id": 11,
+      "burst_idx": 1,
+      "event_id": 12,
+      "class_name": "construction_hazard",
+      "conf": 0.474609375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149908362648
+    },
+    {
+      "frame_id": 12,
+      "burst_idx": 2,
+      "event_id": 12,
+      "class_name": "construction_hazard",
+      "conf": 0.474609375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149943246775
+    },
+    {
+      "frame_id": 12,
+      "burst_idx": 2,
+      "event_id": 13,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.935546875,
+      "status": "NEW_HAZARD",
+      "hits": 3,
+      "tx_time_ns": 1792536149943371479
+    },
+    {
+      "frame_id": 13,
+      "burst_idx": 3,
+      "event_id": 12,
+      "class_name": "construction_hazard",
+      "conf": 0.474609375,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536149978036569
+    },
+    {
+      "frame_id": 13,
+      "burst_idx": 3,
+      "event_id": 13,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.935546875,
+      "status": "TRACK_UPDATE",
+      "hits": 4,
+      "tx_time_ns": 1792536149978161883
+    },
+    {
+      "frame_id": 14,
+      "burst_idx": 4,
+      "event_id": 13,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.935546875,
+      "status": "TRACK_UPDATE",
+      "hits": 5,
+      "tx_time_ns": 1792536150012892177
+    }
+  ],
+  "latencies": {
+    "t_prep_ms": [
+      2.275131002534181,
+      1.7944089995580725,
+      1.6612600011285394,
+      1.6725000023143366,
+      1.6188900044653565,
+      2.0521670012385584,
+      2.069223002763465,
+      2.119685996149201,
+      2.1430940032587387,
+      2.087537999614142,
+      2.0962039998266846,
+      2.136834002158139,
+      2.125333994626999,
+      2.1267599950078875,
+      2.141705001122318
+    ],
+    "t_infer_ms": [
+      31.802051998965908,
+      31.82605199981481,
+      31.514550995780155,
+      31.577829002344515,
+      31.48358799808193,
+      31.64060699782567,
+      31.518422001681756,
+      31.529995998425875,
+      31.463717001315672,
+      31.63858799962327,
+      31.38118099741405,
+      31.386606002342887,
+      31.46801399998367,
+      31.41308799968101,
+      31.405087996972725
+    ],
+    "t_post_ms": [
+      0.8192409950424917,
+      0.6470930020441301,
+      0.6328889940050431,
+      0.6299999949987978,
+      0.6254260006244294,
+      0.3568520041881129,
+      0.33607500517973676,
+      0.3377410030225292,
+      0.338443998771254,
+      0.3398889966774732,
+      0.3381850037840195,
+      0.3710930031957105,
+      0.33909200283233076,
+      0.33599999733269215,
+      0.3387219985597767
+    ],
+    "t_track_ms": [
+      0.026313995476812124,
+      0.10083300003316253,
+      0.09649999992689118,
+      0.09535199933452532,
+      0.09520399908069521,
+      0.032222000299952924,
+      0.03590699634514749,
+      0.03585199738154188,
+      0.06525899516418576,
+      0.030981995223555714,
+      0.013704004231840372,
+      0.018481005099602044,
+      0.019575003534555435,
+      0.019500002963468432,
+      0.019055994926020503
+    ],
+    "t_tx_ms": [
+      0.0005740002961829305,
+      0.0004069952410645783,
+      0.40161200013244525,
+      0.38449999556178227,
+      0.35635200038086623,
+      0.365517997124698,
+      0.35544500133255497,
+      0.38394399598473683,
+      0.3706860006786883,
+      0.12455599789973348,
+      0.12585199874592945,
+      0.12311099999351427,
+      0.1596669972059317,
+      0.16225899889832363,
+      0.12368599709589034
+    ]
+  },
+  "telemetry_end": {
+    "temp_str": "temp=52.7'C",
+    "temp_c": 52.7,
+    "throttled": "throttled=0x0"
+  },
+  "end_time": 1792536150.0185378
+}

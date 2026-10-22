@@ -1,0 +1,100 @@
+{
+  "schema": "pfpd.live_image.v1",
+  "run_id": "83f546e0-edb5-4e7e-9f80-7db947836edc",
+  "mode": "real_onnx",
+  "inference_executed": true,
+  "mock_fallback": false,
+  "model": {
+    "source_model_id": "pothole",
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\quantization\\pothole_yolo11s_int8.onnx",
+    "sha256": "289c7d60b8d920ef1da65681629c8fc854ccaf7b01474afc5997ba89b1ca077d",
+    "metadata": {
+      "stride": "32",
+      "onnx.infer": "onnxruntime.quant",
+      "date": "2026-10-10T20:10:15.218451+00:00",
+      "description": "Ultralytics YOLO11s model trained on /kaggle/working/pothole_95plus_dataset/data.yaml",
+      "author": "Ultralytics",
+      "version": "8.4.175",
+      "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+      "docs": "https://docs.ultralytics.com",
+      "task": "detect",
+      "head": "Detect",
+      "batch": "1",
+      "imgsz": "[768, 768]",
+      "names": "{0: 'pothole'}",
+      "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+      "channels": "3",
+      "end2end": "False"
+    }
+  },
+  "input": {
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\data\\test_user_accident.png",
+    "sha256": "a4c9104db20cc102c26776b8f3150811f59b6271e97ce694ec720180024a8779",
+    "shape": [
+      348,
+      612
+    ],
+    "tensor_shape": [
+      1,
+      3,
+      768,
+      768
+    ],
+    "tensor_sha256": "3306a39cf44bdc6b0a78b925d13bf6a81ee683147fb7841f9b79f3d2c77e3dee"
+  },
+  "encounter": {
+    "id": "a5e65fb993fa42e5b089bf891e21297b",
+    "vehicle_id": "actor_038",
+    "hazard_id": "accident_obstacle",
+    "edge": "cw_E_NE",
+    "lane_index": 0,
+    "pos_m": 210,
+    "capture_sim_s": 72.5,
+    "capture_wall_s": 72087.9381889,
+    "distance_m": 18.164090412227495,
+    "actual_capture_edge": "cw_E_NE",
+    "actual_capture_lane": 1,
+    "actual_capture_lane_pos_m": 191.8359095877725,
+    "hazard_kind": "accident_obstacle",
+    "sensing": "mapped photo; hazard may be visible from adjacent lane"
+  },
+  "completed_wall_s": 72093.3889712,
+  "thresholds": {
+    "confidence": 0.35,
+    "iou": 0.45,
+    "calibrated": false
+  },
+  "detections": [],
+  "detection_count": 0,
+  "raw_output": {
+    "shape": [
+      1,
+      5,
+      12096
+    ],
+    "dtype": "float32",
+    "sha256": "4af18369e470991430134855929884b280af43899ae25be7b21f4cfdaaa26ad8",
+    "max_score": 0.015692800283432007
+  },
+  "timings_ms": {
+    "model_load": 395.4234999982873,
+    "decode_preprocess": 30.837800004519522,
+    "inference": 5374.693499994464,
+    "postprocess": 26.939599993056618
+  },
+  "runtime": {
+    "python": "3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "intra_op_threads": 4
+  },
+  "limitations": [
+    "Mapped road photograph, not a camera rendered by SUMO.",
+    "Single image; no temporal confirmation or accuracy claim."
+  ]
+}

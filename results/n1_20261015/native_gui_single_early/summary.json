@@ -1,0 +1,81 @@
+{
+  "status": "failed",
+  "error": "Connection closed by SUMO.; Requested native screenshots were not produced",
+  "mode": "native_visual_demo",
+  "ai_inference": false,
+  "wall_elapsed_s": 34.71745920000103,
+  "last_sample_sim_time_s": 5.0,
+  "active_vehicle_min": 1,
+  "active_vehicle_max": 3,
+  "minimum_active_after_180s": null,
+  "minimum_moving_after_180s": null,
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "tls_observed_states": {
+    "TL_D1": [
+      "GGggrrrrGGGggrrrr"
+    ],
+    "TL_D2": [
+      "GGGggrrrrGGGggrrrr"
+    ],
+    "TL_D3": [
+      "GGGggrrrrGGggrrrr"
+    ]
+  },
+  "authored_files_unchanged": true,
+  "screenshots": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_single_early\\overview.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_single_early\\follow.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_single_early\\court.png"
+  ],
+  "missing_screenshots": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_single_early\\court.png"
+  ],
+  "screenshot_contexts": [
+    {
+      "name": "overview",
+      "requested_sim_time_s": 5.1,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          -360.7054616384916,
+          -55.0
+        ],
+        [
+          1275.7054616384917,
+          825.0
+        ]
+      ]
+    },
+    {
+      "name": "follow",
+      "requested_sim_time_s": 5.4,
+      "followed_vehicle": "car_00",
+      "boundary": [
+        [
+          142.57909744254667,
+          239.1750602182541
+        ],
+        [
+          254.15256948415916,
+          299.1750602182541
+        ]
+      ]
+    },
+    {
+      "name": "court",
+      "requested_sim_time_s": 5.7,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          658.3224967490247,
+          636.0
+        ],
+        [
+          931.6775032509753,
+          783.0
+        ]
+      ]
+    }
+  ]
+}

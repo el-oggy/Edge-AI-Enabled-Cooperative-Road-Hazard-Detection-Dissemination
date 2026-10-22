@@ -1,0 +1,354 @@
+{
+  "passed": true,
+  "run": "live_gui_final",
+  "model_forward_counts": {
+    "accident_obstacle": 3,
+    "pothole": 3,
+    "construction": 3
+  },
+  "predictions": {
+    "test_user_pothole.png": {
+      "accident_obstacle": [],
+      "construction": [
+        0.8801392316818237
+      ],
+      "pothole": [
+        0.8898110389709473
+      ]
+    },
+    "test_user_accident.png": {
+      "pothole": [],
+      "construction": [
+        0.61041259765625
+      ],
+      "accident_obstacle": [
+        0.8863688707351685
+      ]
+    },
+    "test_user_construction.png": {
+      "accident_obstacle": [],
+      "pothole": [],
+      "construction": [
+        0.7214339375495911,
+        0.46306827664375305
+      ]
+    }
+  },
+  "actual_inference_ms_range": [
+    4962.432000000263,
+    5258.673899996211
+  ],
+  "verified_report_broadcast_warning_request_response_bypass_sequences": 20,
+  "sequence_examples": [
+    {
+      "vehicle": "actor_009",
+      "warning_id": "0fc512e7d4464a63b189a34625e4bdd2:pothole",
+      "warning_s": 80.5,
+      "request_s": 81.5,
+      "response_s": 82.0,
+      "bypass_s": 82.5
+    },
+    {
+      "vehicle": "actor_005",
+      "warning_id": "0fc512e7d4464a63b189a34625e4bdd2:pothole",
+      "warning_s": 80.5,
+      "request_s": 80.5,
+      "response_s": 81.5,
+      "bypass_s": 84.0
+    },
+    {
+      "vehicle": "actor_017",
+      "warning_id": "0fc512e7d4464a63b189a34625e4bdd2:pothole",
+      "warning_s": 80.5,
+      "request_s": 80.5,
+      "response_s": 81.0,
+      "bypass_s": 88.0
+    },
+    {
+      "vehicle": "actor_025",
+      "warning_id": "0fc512e7d4464a63b189a34625e4bdd2:pothole",
+      "warning_s": 80.5,
+      "request_s": 81.0,
+      "response_s": 81.5,
+      "bypass_s": 90.5
+    }
+  ],
+  "reports": 5,
+  "broadcasts": 5,
+  "summary": {
+    "status": "completed",
+    "error": null,
+    "mode": "real_onnx_integrated",
+    "source_mode": "mapped_road_photographs",
+    "inference_executed": true,
+    "model_forward_counts_consumed": {
+      "pothole": 3,
+      "construction": 3,
+      "accident_obstacle": 3
+    },
+    "processed_hazards": [
+      "accident_obstacle",
+      "construction",
+      "pothole"
+    ],
+    "sim_time_s": 180.0,
+    "wall_elapsed_s": 186.20561699999962,
+    "counts": {
+      "reports": 5,
+      "warnings": 162,
+      "avoided": 20,
+      "traversals": 5,
+      "drops": 0
+    },
+    "sumo_exit_code": 0,
+    "authored_files_unchanged": true,
+    "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+    "active_vehicle_max": 72,
+    "minimum_active_after_180s": 72,
+    "minimum_moving_after_180s": 45,
+    "observed_types": {
+      "car": 28,
+      "ev": 12,
+      "motorcycle": 12,
+      "small_passenger": 8,
+      "bus": 6,
+      "truck": 6
+    },
+    "tls_observed_states": {
+      "J1": [
+        "GGGggrrrrrGGGggrrrrr",
+        "rrrrrGGGggrrrrrGGGgg",
+        "rrrrryyyyyrrrrryyyyy",
+        "yyyyyrrrrryyyyyrrrrr"
+      ],
+      "J2": [
+        "GGGggrrrrrGGGggrrrrr",
+        "rrrrrGGGggrrrrrGGGgg",
+        "rrrrryyyyyrrrrryyyyy",
+        "yyyyyrrrrryyyyyrrrrr"
+      ]
+    },
+    "collision_vehicle_reports": 0,
+    "starting_teleports": 0,
+    "screenshots": [
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\overview.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\follow.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\pothole.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\construction.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\accident_obstacle.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\inference_panel.png"
+    ],
+    "screenshot_contexts": [
+      {
+        "name": "overview",
+        "request_sim_s": 117.5,
+        "boundary": [
+          [
+            -350.3764415709689,
+            -243.61502347417837
+          ],
+          [
+            890.3764415709688,
+            423.6150234741784
+          ]
+        ],
+        "completed_after_sim_step_s": 117.6
+      },
+      {
+        "name": "follow",
+        "request_sim_s": 118.2,
+        "boundary": [
+          [
+            116.66190224136716,
+            152.16338028169014
+          ],
+          [
+            226.1400978127146,
+            211.03661971830985
+          ]
+        ],
+        "completed_after_sim_step_s": 118.3
+      },
+      {
+        "name": "pothole",
+        "request_sim_s": 118.9,
+        "boundary": [
+          [
+            281.00872177146107,
+            96.45070422535211
+          ],
+          [
+            368.59127822853895,
+            143.54929577464787
+          ]
+        ],
+        "completed_after_sim_step_s": 119.0
+      },
+      {
+        "name": "construction",
+        "request_sim_s": 119.6,
+        "boundary": [
+          [
+            163.40872177146105,
+            161.25070422535214
+          ],
+          [
+            250.99127822853893,
+            208.34929577464789
+          ]
+        ],
+        "completed_after_sim_step_s": 119.7
+      },
+      {
+        "name": "accident_obstacle",
+        "request_sim_s": 120.3,
+        "boundary": [
+          [
+            -48.59127822853898,
+            40.050704225352106
+          ],
+          [
+            38.99127822853899,
+            87.14929577464788
+          ]
+        ],
+        "completed_after_sim_step_s": 120.4
+      },
+      {
+        "name": "inference_panel",
+        "request_sim_s": 121.0,
+        "boundary": [
+          [
+            265.1667918215841,
+            -2.840375586854435
+          ],
+          [
+            684.8332081784159,
+            222.84037558685444
+          ]
+        ],
+        "completed_after_sim_step_s": 121.1
+      }
+    ],
+    "limitations": [
+      "Mapped still photographs; no SUMO camera or temporal video validation.",
+      "LoRa delivery is modeled, not transmitted or range-qualified.",
+      "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+    ]
+  },
+  "screenshots": [
+    {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\overview.png",
+      "size": [
+        1430,
+        769
+      ],
+      "sha256": "a43fe1463a6b47161a777fc03ca563944b9a8e84e753dfe9d408dd4739410938"
+    },
+    {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\follow.png",
+      "size": [
+        1430,
+        769
+      ],
+      "sha256": "ad1afe7cf315c7e9998e563097cfb4587b3c2f4452e0726a539e04c647bbf2cc"
+    },
+    {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\pothole.png",
+      "size": [
+        1430,
+        769
+      ],
+      "sha256": "3213757be5b2ead16fa7641ac7f7f2fd4746155fefb8939f4d4291f4eccdd22c"
+    },
+    {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\construction.png",
+      "size": [
+        1430,
+        769
+      ],
+      "sha256": "c3afe008e9937ee41f38b1aaa688aa4589f3fb7094557ed0644530e3b3411276"
+    },
+    {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\accident_obstacle.png",
+      "size": [
+        1430,
+        769
+      ],
+      "sha256": "a6e263cee12ebde7c5ede1941562f1610b724170629c9f92d189279b6c5e8f08"
+    },
+    {
+      "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_final\\inference_panel.png",
+      "size": [
+        1430,
+        769
+      ],
+      "sha256": "36eab08e9b1323f2ebf08b2fc15f0cf997491f06adde0991667582cbd5471e39"
+    }
+  ],
+  "baseline_files_checked": 721,
+  "intentional_baseline_changes": [
+    "Run SUMO Simulation.cmd",
+    "Run SUMO Simulation.vbs"
+  ],
+  "branch": "codex/native-sumo-foundry-n1",
+  "head": "47b0eddf1057c4b3f0ccd4dea1faed941c25a716",
+  "historical_untracked_markdown": [
+    ".agents/skills/brag/SKILL.md",
+    ".agents/skills/brag/assets/music/README.md",
+    ".agents/skills/brag/assets/music/cues/happy-beats-business-moves-vol-1-by-ende-dot-app.music-cues.md",
+    ".agents/skills/brag/assets/music/cues/happy-beats-business-moves-vol-10-by-ende-dot-app.music-cues.md",
+    ".agents/skills/brag/assets/music/cues/happy-beats-business-moves-vol-11-by-ende-dot-app.music-cues.md",
+    ".agents/skills/brag/assets/music/cues/happy-beats-business-moves-vol-12-by-ende-dot-app.music-cues.md",
+    ".agents/skills/brag/assets/music/cues/happy-beats-business-moves-vol-9-by-ende-dot-app.music-cues.md",
+    ".agents/skills/brag/assets/sfx/sfx-analysis.md",
+    ".agents/skills/brag/references/audio.md",
+    ".agents/skills/brag/references/step-1-inspect.md",
+    ".agents/skills/brag/references/step-2-plan.md",
+    ".agents/skills/brag/references/step-3-compose.md",
+    ".agents/skills/brag/references/step-4-deliver.md",
+    ".agents/skills/brag/references/tones.md",
+    ".agents/skills/brag/slim.md",
+    ".agents/skills/gravitas/PROMPT-TEMPLATE.md",
+    ".agents/skills/gravitas/SESSION_FAILURES.md",
+    ".agents/skills/gravitas/SKILL.md",
+    ".agents/skills/gravitas/agents/coordinator.md",
+    ".agents/skills/gravitas/agents/explore.md",
+    ".agents/skills/gravitas/agents/general.md",
+    ".agents/skills/gravitas/agents/plan.md",
+    ".agents/skills/gravitas/agents/verify.md",
+    ".agents/skills/gravitas/references/delegation.md",
+    ".agents/skills/gravitas/references/model-routing.md",
+    ".agents/skills/gravitas/references/reasoning.md",
+    ".agents/skills/gravitas/references/reconnaissance.md",
+    ".agents/skills/gravitas/references/recovery.md",
+    ".agents/skills/gravitas/references/task-contract.md",
+    ".agents/skills/gravitas/references/verification.md",
+    ".agents/skills/gravitas/resources/adversarial-critique.md",
+    ".agents/skills/gravitas/resources/anti-rationalization.md",
+    ".agents/skills/gravitas/resources/context-management.md",
+    ".agents/skills/gravitas/resources/gemini-native.md",
+    ".agents/skills/gravitas/resources/memory-protocol.md",
+    ".agents/skills/gravitas/resources/persona-protocol.md",
+    ".agents/skills/gravitas/resources/subagent-patterns.md",
+    ".agents/skills/gravitas/resources/tool-orchestration.md",
+    ".agents/skills/gravitas/resources/verification-engine.md",
+    ".agents/skills/motion/SKILL.md",
+    ".agents/skills/motion/references/backends.md",
+    ".agents/skills/motion/references/direct-render.md",
+    ".agents/skills/motion/references/fish-audio.md",
+    ".agents/skills/motion/references/motion-kit.md",
+    ".agents/skills/motion/references/opus-motion-reference-library.md",
+    ".agents/skills/motion/references/reference-analysis.md",
+    "docs/local_agent_research/native_sumo_foundry_20261015/INSPECTION_FINDINGS.md",
+    "docs/local_agent_research/native_sumo_foundry_20261015/N1_IMPLEMENTATION_REPORT.md",
+    "docs/local_agent_research/native_sumo_foundry_20261015/NATIVE_SUMO_PLAN.md",
+    "docs/local_agent_research/native_sumo_foundry_20261015/README.md",
+    "docs/local_agent_research/native_sumo_foundry_20261015/SPECIALIST_NATIVE_VISUALS.md",
+    "docs/local_agent_research/native_sumo_foundry_20261015/SUBAGENT_SYSTEM_PROMPT.md"
+  ],
+  "limitations": [
+    "Event ordering verifies a sequence, not counterfactual collision reduction.",
+    "Static manually mapped photographs, assumed radio coverage, desktop CPU timings."
+  ]
+}

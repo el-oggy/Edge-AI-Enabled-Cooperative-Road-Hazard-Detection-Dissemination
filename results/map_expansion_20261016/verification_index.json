@@ -1,0 +1,1404 @@
+{
+  "unit_command": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "unit_log": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\unit-final.txt",
+  "unit_tests_passed": 69,
+  "build_command": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+    "-B",
+    "simulation/cooperative_loop_1km/build_scene.py"
+  ],
+  "runs": [
+    {
+      "name": "cmd_final",
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\cooperative_loop_1km\\run_simulation.py",
+        "--traffic-only",
+        "--headless",
+        "--fast",
+        "--duration",
+        "5",
+        "--output",
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\cmd_final"
+      ],
+      "working_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+      "summary": {
+        "status": "completed",
+        "error": null,
+        "mode": "traffic_only",
+        "source_mode": "mapped_road_photographs",
+        "inference_executed": false,
+        "model_forward_counts_consumed": {},
+        "processed_hazards": [],
+        "scene": "Foundry District - 5 km Viaduct Loop",
+        "rsu_count": 8,
+        "hazard_count": 9,
+        "main_route_length_m": 4977.23,
+        "bridge_observed_vehicle_counts": {
+          "upper": 0,
+          "lower": 0
+        },
+        "bridge_observed_elevations_m": {},
+        "sim_time_s": 5.0,
+        "wall_elapsed_s": 1.8099092000047676,
+        "counts": {
+          "reports": 0,
+          "warnings": 0,
+          "avoided": 0,
+          "traversals": 0,
+          "drops": 0
+        },
+        "sumo_exit_code": 0,
+        "authored_files_unchanged": true,
+        "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+        "active_vehicle_max": 4,
+        "minimum_active_after_180s": null,
+        "minimum_moving_after_180s": null,
+        "observed_types": {
+          "car": 1,
+          "ev": 1,
+          "motorcycle": 1,
+          "small_passenger": 1
+        },
+        "tls_observed_states": {
+          "C1": [
+            "rrrrrGGGggrrrrrGGGgg"
+          ],
+          "C3": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "E": [
+            "GGggrrrGGGg"
+          ],
+          "J1": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "J2": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "N1": [
+            "GGggrrrrGGGg"
+          ],
+          "N3": [
+            "GGggrrrGGGg"
+          ],
+          "S1": [
+            "rrrrGGGgGGgg"
+          ],
+          "S3": [
+            "rrrrGGGgGGgg"
+          ],
+          "W": [
+            "GGggrrrrGGGg"
+          ]
+        },
+        "collision_vehicle_reports": 0,
+        "starting_teleports": 0,
+        "screenshots": [],
+        "screenshot_contexts": [],
+        "limitations": [
+          "Mapped still photographs; no SUMO camera or temporal video validation.",
+          "LoRa delivery is modeled, not transmitted or range-qualified.",
+          "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+        ]
+      }
+    },
+    {
+      "name": "construction_filter",
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "simulation/cooperative_loop_1km/run_simulation.py",
+        "--traffic-only",
+        "--headless",
+        "--fast",
+        "--duration",
+        "10",
+        "--scenario",
+        "construction",
+        "--output",
+        "results/map_expansion_20261016/construction_filter"
+      ],
+      "working_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+      "summary": {
+        "status": "completed",
+        "error": null,
+        "mode": "traffic_only",
+        "source_mode": "mapped_road_photographs",
+        "inference_executed": false,
+        "model_forward_counts_consumed": {},
+        "processed_hazards": [],
+        "scene": "Foundry District - 5 km Viaduct Loop",
+        "rsu_count": 8,
+        "hazard_count": 3,
+        "main_route_length_m": 4977.23,
+        "bridge_observed_vehicle_counts": {
+          "upper": 0,
+          "lower": 0
+        },
+        "bridge_observed_elevations_m": {},
+        "sim_time_s": 10.0,
+        "wall_elapsed_s": 1.7972012999962317,
+        "counts": {
+          "reports": 0,
+          "warnings": 0,
+          "avoided": 0,
+          "traversals": 0,
+          "drops": 0
+        },
+        "sumo_exit_code": 0,
+        "authored_files_unchanged": true,
+        "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+        "active_vehicle_max": 7,
+        "minimum_active_after_180s": null,
+        "minimum_moving_after_180s": null,
+        "observed_types": {
+          "car": 2,
+          "ev": 1,
+          "motorcycle": 1,
+          "small_passenger": 1,
+          "bus": 1,
+          "truck": 1
+        },
+        "tls_observed_states": {
+          "C1": [
+            "rrrrrGGGggrrrrrGGGgg"
+          ],
+          "C3": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "E": [
+            "GGggrrrGGGg"
+          ],
+          "J1": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "J2": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "N1": [
+            "GGggrrrrGGGg"
+          ],
+          "N3": [
+            "GGggrrrGGGg"
+          ],
+          "S1": [
+            "rrrrGGGgGGgg"
+          ],
+          "S3": [
+            "rrrrGGGgGGgg"
+          ],
+          "W": [
+            "GGggrrrrGGGg"
+          ]
+        },
+        "collision_vehicle_reports": 0,
+        "starting_teleports": 0,
+        "screenshots": [],
+        "screenshot_contexts": [],
+        "limitations": [
+          "Mapped still photographs; no SUMO camera or temporal video validation.",
+          "LoRa delivery is modeled, not transmitted or range-qualified.",
+          "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+        ]
+      }
+    },
+    {
+      "name": "live_gui",
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "simulation/cooperative_loop_1km/run_simulation.py",
+        "--duration",
+        "300",
+        "--capture",
+        "--output",
+        "results/map_expansion_20261016/live_gui"
+      ],
+      "working_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+      "summary": {
+        "status": "failed",
+        "error": "Run ended before all native captures completed",
+        "mode": "real_onnx_integrated",
+        "source_mode": "mapped_road_photographs",
+        "inference_executed": true,
+        "model_forward_counts_consumed": {
+          "pothole": 8,
+          "construction": 8,
+          "accident_obstacle": 8
+        },
+        "processed_hazards": [
+          "accident_obstacle",
+          "accident_obstacle_02",
+          "accident_obstacle_03",
+          "construction",
+          "construction_02",
+          "construction_03",
+          "pothole",
+          "pothole_02"
+        ],
+        "scene": "Foundry District - 5 km Viaduct Loop",
+        "rsu_count": 8,
+        "hazard_count": 9,
+        "main_route_length_m": 4977.23,
+        "bridge_observed_vehicle_counts": {
+          "upper": 8,
+          "lower": 16
+        },
+        "bridge_observed_elevations_m": {
+          "lower": 0.0,
+          "upper": 8.0
+        },
+        "sim_time_s": 300.0,
+        "wall_elapsed_s": 306.66610010000295,
+        "counts": {
+          "reports": 13,
+          "warnings": 428,
+          "avoided": 47,
+          "traversals": 6,
+          "drops": 0
+        },
+        "sumo_exit_code": 0,
+        "authored_files_unchanged": true,
+        "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+        "active_vehicle_max": 144,
+        "minimum_active_after_180s": 120,
+        "minimum_moving_after_180s": 82,
+        "observed_types": {
+          "car": 56,
+          "ev": 24,
+          "motorcycle": 24,
+          "small_passenger": 16,
+          "bus": 12,
+          "truck": 12
+        },
+        "tls_observed_states": {
+          "C1": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "C3": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "E": [
+            "GGggrrrGGGg",
+            "rrrrGGgGrrr",
+            "rrrryyyGrrr",
+            "yyyyrrrGyyy"
+          ],
+          "J1": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "J2": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "N1": [
+            "GGggrrrrGGGg",
+            "rrrrGGGgGrrr",
+            "rrrryyyyGrrr",
+            "yyyyrrrrGyyy"
+          ],
+          "N3": [
+            "GGggrrrGGGg",
+            "rrrrGGgGrrr",
+            "rrrryyyGrrr",
+            "yyyyrrrGyyy"
+          ],
+          "S1": [
+            "GGGgGrrrrrrr",
+            "rrrrGGGgGGgg",
+            "rrrrGyyyyyyy",
+            "yyyyGrrrrrrr"
+          ],
+          "S3": [
+            "GGGgGrrrrrrr",
+            "rrrrGGGgGGgg",
+            "rrrrGyyyyyyy",
+            "yyyyGrrrrrrr"
+          ],
+          "W": [
+            "GGggrrrrGGGg",
+            "rrrrGGGgGrrr",
+            "rrrryyyyGrrr",
+            "yyyyrrrrGyyy"
+          ]
+        },
+        "collision_vehicle_reports": 0,
+        "starting_teleports": 0,
+        "screenshots": [],
+        "screenshot_contexts": [],
+        "limitations": [
+          "Mapped still photographs; no SUMO camera or temporal video validation.",
+          "LoRa delivery is modeled, not transmitted or range-qualified.",
+          "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+        ]
+      }
+    },
+    {
+      "name": "live_gui_final",
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "simulation/cooperative_loop_1km/run_simulation.py",
+        "--duration",
+        "300",
+        "--capture",
+        "--output",
+        "results/map_expansion_20261016/live_gui_final"
+      ],
+      "working_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+      "summary": {
+        "status": "completed",
+        "error": null,
+        "mode": "real_onnx_integrated",
+        "source_mode": "mapped_road_photographs",
+        "inference_executed": true,
+        "model_forward_counts_consumed": {
+          "pothole": 9,
+          "construction": 9,
+          "accident_obstacle": 9
+        },
+        "processed_hazards": [
+          "accident_obstacle",
+          "accident_obstacle_02",
+          "accident_obstacle_03",
+          "construction",
+          "construction_02",
+          "construction_03",
+          "pothole",
+          "pothole_02",
+          "pothole_03"
+        ],
+        "scene": "Foundry District - 5 km Viaduct Loop",
+        "rsu_count": 8,
+        "hazard_count": 9,
+        "main_route_length_m": 4977.23,
+        "bridge_observed_vehicle_counts": {
+          "upper": 8,
+          "lower": 16
+        },
+        "bridge_observed_elevations_m": {
+          "lower": 0.0,
+          "upper": 8.0
+        },
+        "sim_time_s": 300.0,
+        "wall_elapsed_s": 307.866598099994,
+        "counts": {
+          "reports": 12,
+          "warnings": 432,
+          "avoided": 46,
+          "traversals": 4,
+          "drops": 4
+        },
+        "sumo_exit_code": 0,
+        "authored_files_unchanged": true,
+        "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+        "active_vehicle_max": 144,
+        "minimum_active_after_180s": 120,
+        "minimum_moving_after_180s": 82,
+        "observed_types": {
+          "car": 56,
+          "ev": 24,
+          "motorcycle": 24,
+          "small_passenger": 16,
+          "bus": 12,
+          "truck": 12
+        },
+        "tls_observed_states": {
+          "C1": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "C3": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "E": [
+            "GGggrrrGGGg",
+            "rrrrGGgGrrr",
+            "rrrryyyGrrr",
+            "yyyyrrrGyyy"
+          ],
+          "J1": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "J2": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "N1": [
+            "GGggrrrrGGGg",
+            "rrrrGGGgGrrr",
+            "rrrryyyyGrrr",
+            "yyyyrrrrGyyy"
+          ],
+          "N3": [
+            "GGggrrrGGGg",
+            "rrrrGGgGrrr",
+            "rrrryyyGrrr",
+            "yyyyrrrGyyy"
+          ],
+          "S1": [
+            "GGGgGrrrrrrr",
+            "rrrrGGGgGGgg",
+            "rrrrGyyyyyyy",
+            "yyyyGrrrrrrr"
+          ],
+          "S3": [
+            "GGGgGrrrrrrr",
+            "rrrrGGGgGGgg",
+            "rrrrGyyyyyyy",
+            "yyyyGrrrrrrr"
+          ],
+          "W": [
+            "GGggrrrrGGGg",
+            "rrrrGGGgGrrr",
+            "rrrryyyyGrrr",
+            "yyyyrrrrGyyy"
+          ]
+        },
+        "collision_vehicle_reports": 0,
+        "starting_teleports": 0,
+        "screenshots": [
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\overview.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\bridge.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\follow.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\pothole.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\construction.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\accident_obstacle.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\pothole_02.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\construction_02.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\accident_obstacle_02.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\pothole_03.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\construction_03.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\accident_obstacle_03.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\live_gui_final\\inference_panel.png"
+        ],
+        "screenshot_contexts": [
+          {
+            "name": "overview",
+            "request_sim_s": 168.7,
+            "boundary": [
+              [
+                -236.20578010137757,
+                -254.69387755102053
+              ],
+              [
+                2496.2057801013775,
+                1214.6938775510205
+              ]
+            ],
+            "completed_after_sim_step_s": 168.8
+          },
+          {
+            "name": "bridge",
+            "request_sim_s": 169.4,
+            "boundary": [
+              [
+                626.5306122448978,
+                356.714713857571
+              ],
+              [
+                973.4693877551022,
+                543.2852861424291
+              ]
+            ],
+            "completed_after_sim_step_s": 169.5
+          },
+          {
+            "name": "follow",
+            "request_sim_s": 170.1,
+            "boundary": [
+              [
+                136.82166522751407,
+                -33.50903591877516
+              ],
+              [
+                193.96452237037124,
+                -2.7797651895044257
+              ]
+            ],
+            "completed_after_sim_step_s": 170.2
+          },
+          {
+            "name": "pothole",
+            "request_sim_s": 170.8,
+            "boundary": [
+              [
+                183.0478715533027,
+                -42.48953061224489
+              ],
+              [
+                243.76812844669726,
+                -9.836469387755102
+              ]
+            ],
+            "completed_after_sim_step_s": 170.9
+          },
+          {
+            "name": "construction",
+            "request_sim_s": 171.5,
+            "boundary": [
+              [
+                1339.8898715533028,
+                64.35646938775511
+              ],
+              [
+                1400.6101284466972,
+                97.0095306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 171.6
+          },
+          {
+            "name": "accident_obstacle",
+            "request_sim_s": 172.2,
+            "boundary": [
+              [
+                1589.1888715533025,
+                681.3694693877551
+              ],
+              [
+                1649.9091284466974,
+                714.022530612245
+              ]
+            ],
+            "completed_after_sim_step_s": 172.3
+          },
+          {
+            "name": "pothole_02",
+            "request_sim_s": 172.9,
+            "boundary": [
+              [
+                519.8018715533027,
+                967.223469387755
+              ],
+              [
+                580.5221284466974,
+                999.8765306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 173.0
+          },
+          {
+            "name": "construction_02",
+            "request_sim_s": 173.6,
+            "boundary": [
+              [
+                -63.43812844669735,
+                702.242469387755
+              ],
+              [
+                -2.7178715533026576,
+                734.8955306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 173.7
+          },
+          {
+            "name": "accident_obstacle_02",
+            "request_sim_s": 174.3,
+            "boundary": [
+              [
+                -66.4491284466973,
+                184.4554693877551
+              ],
+              [
+                -5.728871553302703,
+                217.10853061224492
+              ]
+            ],
+            "completed_after_sim_step_s": 174.4
+          },
+          {
+            "name": "pothole_03",
+            "request_sim_s": 175.0,
+            "boundary": [
+              [
+                374.43987155330274,
+                154.74346938775508
+              ],
+              [
+                435.1601284466973,
+                187.3965306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 175.1
+          },
+          {
+            "name": "construction_03",
+            "request_sim_s": 175.7,
+            "boundary": [
+              [
+                1029.6398715533028,
+                428.8734693877551
+              ],
+              [
+                1090.3601284466972,
+                461.52653061224487
+              ]
+            ],
+            "completed_after_sim_step_s": 175.8
+          },
+          {
+            "name": "accident_obstacle_03",
+            "request_sim_s": 176.4,
+            "boundary": [
+              [
+                774.4398715533026,
+                653.6734693877551
+              ],
+              [
+                835.1601284466973,
+                686.3265306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 176.5
+          },
+          {
+            "name": "inference_panel",
+            "request_sim_s": 177.1,
+            "boundary": [
+              [
+                1609.8543032297443,
+                272.5510204081632
+              ],
+              [
+                2530.1456967702557,
+                767.4489795918369
+              ]
+            ],
+            "completed_after_sim_step_s": 177.2
+          }
+        ],
+        "limitations": [
+          "Mapped still photographs; no SUMO camera or temporal video validation.",
+          "LoRa delivery is modeled, not transmitted or range-qualified.",
+          "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+        ]
+      }
+    },
+    {
+      "name": "native_layout_first",
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "simulation/cooperative_loop_1km/run_simulation.py",
+        "--traffic-only",
+        "--fast",
+        "--duration",
+        "240",
+        "--capture",
+        "--output",
+        "results/map_expansion_20261016/native_layout_first"
+      ],
+      "working_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+      "summary": {
+        "status": "completed",
+        "error": null,
+        "mode": "traffic_only",
+        "source_mode": "mapped_road_photographs",
+        "inference_executed": false,
+        "model_forward_counts_consumed": {},
+        "processed_hazards": [],
+        "scene": "Foundry District - 5 km Viaduct Loop",
+        "rsu_count": 8,
+        "hazard_count": 9,
+        "main_route_length_m": 4977.23,
+        "bridge_observed_vehicle_counts": {
+          "upper": 6,
+          "lower": 16
+        },
+        "bridge_observed_elevations_m": {
+          "lower": 0.0,
+          "upper": 8.0
+        },
+        "sim_time_s": 240.0,
+        "wall_elapsed_s": 45.76213879999705,
+        "counts": {
+          "reports": 0,
+          "warnings": 0,
+          "avoided": 0,
+          "traversals": 29,
+          "drops": 0
+        },
+        "sumo_exit_code": 0,
+        "authored_files_unchanged": true,
+        "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+        "active_vehicle_max": 144,
+        "minimum_active_after_180s": 120,
+        "minimum_moving_after_180s": 82,
+        "observed_types": {
+          "car": 56,
+          "ev": 24,
+          "motorcycle": 24,
+          "small_passenger": 16,
+          "bus": 12,
+          "truck": 12
+        },
+        "tls_observed_states": {
+          "C1": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "C3": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "E": [
+            "GGggrrrGGGg",
+            "rrrrGGgGrrr",
+            "rrrryyyGrrr",
+            "yyyyrrrGyyy"
+          ],
+          "J1": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "J2": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "N1": [
+            "GGggrrrrGGGg",
+            "rrrrGGGgGrrr",
+            "rrrryyyyGrrr",
+            "yyyyrrrrGyyy"
+          ],
+          "N3": [
+            "GGggrrrGGGg",
+            "rrrrGGgGrrr",
+            "rrrryyyGrrr",
+            "yyyyrrrGyyy"
+          ],
+          "S1": [
+            "GGGgGrrrrrrr",
+            "rrrrGGGgGGgg",
+            "rrrrGyyyyyyy",
+            "yyyyGrrrrrrr"
+          ],
+          "S3": [
+            "GGGgGrrrrrrr",
+            "rrrrGGGgGGgg",
+            "rrrrGyyyyyyy",
+            "yyyyGrrrrrrr"
+          ],
+          "W": [
+            "GGggrrrrGGGg",
+            "rrrrGGGgGrrr",
+            "rrrryyyyGrrr",
+            "yyyyrrrrGyyy"
+          ]
+        },
+        "collision_vehicle_reports": 0,
+        "starting_teleports": 0,
+        "screenshots": [
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\overview.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\bridge.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\follow.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\pothole.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\construction.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\accident_obstacle.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\pothole_02.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\construction_02.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\accident_obstacle_02.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\pothole_03.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\construction_03.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\accident_obstacle_03.png",
+          "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\native_layout_first\\inference_panel.png"
+        ],
+        "screenshot_contexts": [
+          {
+            "name": "overview",
+            "request_sim_s": 150.5,
+            "boundary": [
+              [
+                -236.20578010137757,
+                -254.69387755102053
+              ],
+              [
+                2496.2057801013775,
+                1214.6938775510205
+              ]
+            ],
+            "completed_after_sim_step_s": 150.6
+          },
+          {
+            "name": "bridge",
+            "request_sim_s": 151.2,
+            "boundary": [
+              [
+                626.5306122448978,
+                356.714713857571
+              ],
+              [
+                973.4693877551022,
+                543.2852861424291
+              ]
+            ],
+            "completed_after_sim_step_s": 151.3
+          },
+          {
+            "name": "follow",
+            "request_sim_s": 151.9,
+            "boundary": [
+              [
+                1575.6067523627353,
+                152.75924592834912
+              ],
+              [
+                1644.7496095055926,
+                189.94166351076672
+              ]
+            ],
+            "completed_after_sim_step_s": 152.0
+          },
+          {
+            "name": "pothole",
+            "request_sim_s": 152.6,
+            "boundary": [
+              [
+                183.0478715533027,
+                -42.48953061224489
+              ],
+              [
+                243.76812844669726,
+                -9.836469387755102
+              ]
+            ],
+            "completed_after_sim_step_s": 152.7
+          },
+          {
+            "name": "construction",
+            "request_sim_s": 153.3,
+            "boundary": [
+              [
+                1339.8898715533028,
+                64.35646938775511
+              ],
+              [
+                1400.6101284466972,
+                97.0095306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 153.4
+          },
+          {
+            "name": "accident_obstacle",
+            "request_sim_s": 154.0,
+            "boundary": [
+              [
+                1589.1888715533025,
+                681.3694693877551
+              ],
+              [
+                1649.9091284466974,
+                714.022530612245
+              ]
+            ],
+            "completed_after_sim_step_s": 154.1
+          },
+          {
+            "name": "pothole_02",
+            "request_sim_s": 154.7,
+            "boundary": [
+              [
+                519.8018715533027,
+                967.223469387755
+              ],
+              [
+                580.5221284466974,
+                999.8765306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 154.8
+          },
+          {
+            "name": "construction_02",
+            "request_sim_s": 155.4,
+            "boundary": [
+              [
+                -63.43812844669735,
+                702.242469387755
+              ],
+              [
+                -2.7178715533026576,
+                734.8955306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 155.5
+          },
+          {
+            "name": "accident_obstacle_02",
+            "request_sim_s": 156.1,
+            "boundary": [
+              [
+                -66.4491284466973,
+                184.4554693877551
+              ],
+              [
+                -5.728871553302703,
+                217.10853061224492
+              ]
+            ],
+            "completed_after_sim_step_s": 156.2
+          },
+          {
+            "name": "pothole_03",
+            "request_sim_s": 156.8,
+            "boundary": [
+              [
+                374.43987155330274,
+                154.74346938775508
+              ],
+              [
+                435.1601284466973,
+                187.3965306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 156.9
+          },
+          {
+            "name": "construction_03",
+            "request_sim_s": 157.5,
+            "boundary": [
+              [
+                1029.6398715533028,
+                428.8734693877551
+              ],
+              [
+                1090.3601284466972,
+                461.52653061224487
+              ]
+            ],
+            "completed_after_sim_step_s": 157.6
+          },
+          {
+            "name": "accident_obstacle_03",
+            "request_sim_s": 158.2,
+            "boundary": [
+              [
+                774.4398715533026,
+                653.6734693877551
+              ],
+              [
+                835.1601284466973,
+                686.3265306122449
+              ]
+            ],
+            "completed_after_sim_step_s": 158.3
+          },
+          {
+            "name": "inference_panel",
+            "request_sim_s": 158.9,
+            "boundary": [
+              [
+                1609.8543032297443,
+                272.5510204081632
+              ],
+              [
+                2530.1456967702557,
+                767.4489795918369
+              ]
+            ],
+            "completed_after_sim_step_s": 159.0
+          }
+        ],
+        "limitations": [
+          "Mapped still photographs; no SUMO camera or temporal video validation.",
+          "LoRa delivery is modeled, not transmitted or range-qualified.",
+          "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+        ]
+      }
+    },
+    {
+      "name": "traffic_1200",
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "simulation/cooperative_loop_1km/run_simulation.py",
+        "--traffic-only",
+        "--headless",
+        "--fast",
+        "--duration",
+        "1200",
+        "--output",
+        "results/map_expansion_20261016/traffic_1200"
+      ],
+      "working_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+      "summary": {
+        "status": "completed",
+        "error": null,
+        "mode": "traffic_only",
+        "source_mode": "mapped_road_photographs",
+        "inference_executed": false,
+        "model_forward_counts_consumed": {},
+        "processed_hazards": [],
+        "scene": "Foundry District - 5 km Viaduct Loop",
+        "rsu_count": 8,
+        "hazard_count": 9,
+        "main_route_length_m": 4977.23,
+        "bridge_observed_vehicle_counts": {
+          "upper": 8,
+          "lower": 16
+        },
+        "bridge_observed_elevations_m": {
+          "lower": 0.0,
+          "upper": 8.0
+        },
+        "sim_time_s": 1200.0,
+        "wall_elapsed_s": 157.87935509999807,
+        "counts": {
+          "reports": 0,
+          "warnings": 0,
+          "avoided": 0,
+          "traversals": 213,
+          "drops": 0
+        },
+        "sumo_exit_code": 0,
+        "authored_files_unchanged": true,
+        "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+        "active_vehicle_max": 144,
+        "minimum_active_after_180s": 120,
+        "minimum_moving_after_180s": 82,
+        "observed_types": {
+          "car": 56,
+          "ev": 24,
+          "motorcycle": 24,
+          "small_passenger": 16,
+          "bus": 12,
+          "truck": 12
+        },
+        "tls_observed_states": {
+          "C1": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "C3": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "E": [
+            "GGggrrrGGGg",
+            "rrrrGGgGrrr",
+            "rrrryyyGrrr",
+            "yyyyrrrGyyy"
+          ],
+          "J1": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "J2": [
+            "GGGggrrrrrGGGggrrrrr",
+            "rrrrrGGGggrrrrrGGGgg",
+            "rrrrryyyyyrrrrryyyyy",
+            "yyyyyrrrrryyyyyrrrrr"
+          ],
+          "N1": [
+            "GGggrrrrGGGg",
+            "rrrrGGGgGrrr",
+            "rrrryyyyGrrr",
+            "yyyyrrrrGyyy"
+          ],
+          "N3": [
+            "GGggrrrGGGg",
+            "rrrrGGgGrrr",
+            "rrrryyyGrrr",
+            "yyyyrrrGyyy"
+          ],
+          "S1": [
+            "GGGgGrrrrrrr",
+            "rrrrGGGgGGgg",
+            "rrrrGyyyyyyy",
+            "yyyyGrrrrrrr"
+          ],
+          "S3": [
+            "GGGgGrrrrrrr",
+            "rrrrGGGgGGgg",
+            "rrrrGyyyyyyy",
+            "yyyyGrrrrrrr"
+          ],
+          "W": [
+            "GGggrrrrGGGg",
+            "rrrrGGGgGrrr",
+            "rrrryyyyGrrr",
+            "yyyyrrrrGyyy"
+          ]
+        },
+        "collision_vehicle_reports": 0,
+        "starting_teleports": 0,
+        "screenshots": [],
+        "screenshot_contexts": [],
+        "limitations": [
+          "Mapped still photographs; no SUMO camera or temporal video validation.",
+          "LoRa delivery is modeled, not transmitted or range-qualified.",
+          "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+        ]
+      }
+    },
+    {
+      "name": "traffic_first",
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "simulation/cooperative_loop_1km/run_simulation.py",
+        "--traffic-only",
+        "--headless",
+        "--fast",
+        "--duration",
+        "30",
+        "--output",
+        "results/map_expansion_20261016/traffic_first"
+      ],
+      "working_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll",
+      "summary": {
+        "status": "completed",
+        "error": null,
+        "mode": "traffic_only",
+        "source_mode": "mapped_road_photographs",
+        "inference_executed": false,
+        "model_forward_counts_consumed": {},
+        "processed_hazards": [],
+        "scene": "Foundry District - 5 km Viaduct Loop",
+        "rsu_count": 8,
+        "hazard_count": 9,
+        "main_route_length_m": 4977.23,
+        "bridge_observed_vehicle_counts": {
+          "upper": 0,
+          "lower": 0
+        },
+        "sim_time_s": 30.0,
+        "wall_elapsed_s": 2.8600110999977915,
+        "counts": {
+          "reports": 0,
+          "warnings": 0,
+          "avoided": 0,
+          "traversals": 1,
+          "drops": 0
+        },
+        "sumo_exit_code": 0,
+        "authored_files_unchanged": true,
+        "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+        "active_vehicle_max": 20,
+        "minimum_active_after_180s": null,
+        "minimum_moving_after_180s": null,
+        "observed_types": {
+          "car": 4,
+          "ev": 4,
+          "motorcycle": 3,
+          "small_passenger": 3,
+          "bus": 3,
+          "truck": 3
+        },
+        "tls_observed_states": {
+          "C1": [
+            "rrrrrGGGggrrrrrGGGgg"
+          ],
+          "C3": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "E": [
+            "GGggrrrGGGg"
+          ],
+          "J1": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "J2": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "N1": [
+            "GGggrrrrGGGg"
+          ],
+          "N3": [
+            "GGggrrrGGGg"
+          ],
+          "S1": [
+            "rrrrGGGgGGgg"
+          ],
+          "S3": [
+            "rrrrGGGgGGgg"
+          ],
+          "W": [
+            "GGggrrrrGGGg"
+          ]
+        },
+        "collision_vehicle_reports": 0,
+        "starting_teleports": 0,
+        "screenshots": [],
+        "screenshot_contexts": [],
+        "limitations": [
+          "Mapped still photographs; no SUMO camera or temporal video validation.",
+          "LoRa delivery is modeled, not transmitted or range-qualified.",
+          "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+        ]
+      }
+    }
+  ],
+  "desktop_launcher_checks": [
+    {
+      "command": [
+        "wscript.exe",
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\Run SUMO Simulation.vbs"
+      ],
+      "caller_working_directory": "C:\\Users\\adars\\OneDrive",
+      "wscript_exit_code": 0,
+      "windows": [
+        {
+          "hwnd": 7144818,
+          "pid": 13596,
+          "visible": true,
+          "minimized": false,
+          "rectangle": [
+            -7,
+            10,
+            1159,
+            816
+          ]
+        }
+      ],
+      "run_directory": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_runs\\20261016_010807_dfe9f0",
+      "summary": {
+        "status": "window_closed",
+        "error": null,
+        "mode": "real_onnx_integrated",
+        "source_mode": "mapped_road_photographs",
+        "inference_executed": false,
+        "model_forward_counts_consumed": {},
+        "processed_hazards": [],
+        "scene": "Foundry District - 5 km Viaduct Loop",
+        "rsu_count": 8,
+        "hazard_count": 9,
+        "main_route_length_m": 4977.23,
+        "bridge_observed_vehicle_counts": {
+          "upper": 0,
+          "lower": 0
+        },
+        "bridge_observed_elevations_m": {},
+        "sim_time_s": 5.0,
+        "wall_elapsed_s": 13.203252999999677,
+        "counts": {
+          "reports": 0,
+          "warnings": 0,
+          "avoided": 0,
+          "traversals": 0,
+          "drops": 0
+        },
+        "sumo_exit_code": 0,
+        "authored_files_unchanged": true,
+        "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+        "active_vehicle_max": 4,
+        "minimum_active_after_180s": null,
+        "minimum_moving_after_180s": null,
+        "observed_types": {
+          "car": 1,
+          "ev": 1,
+          "motorcycle": 1,
+          "small_passenger": 1
+        },
+        "tls_observed_states": {
+          "C1": [
+            "rrrrrGGGggrrrrrGGGgg"
+          ],
+          "C3": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "E": [
+            "GGggrrrGGGg"
+          ],
+          "J1": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "J2": [
+            "GGGggrrrrrGGGggrrrrr"
+          ],
+          "N1": [
+            "GGggrrrrGGGg"
+          ],
+          "N3": [
+            "GGggrrrGGGg"
+          ],
+          "S1": [
+            "rrrrGGGgGGgg"
+          ],
+          "S3": [
+            "rrrrGGGgGGgg"
+          ],
+          "W": [
+            "GGggrrrrGGGg"
+          ]
+        },
+        "collision_vehicle_reports": 0,
+        "starting_teleports": 0,
+        "screenshots": [],
+        "screenshot_contexts": [],
+        "limitations": [
+          "Mapped still photographs; no SUMO camera or temporal video validation.",
+          "LoRa delivery is modeled, not transmitted or range-qualified.",
+          "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+        ]
+      },
+      "observed_traffic_sample_s_before_close": 5.0,
+      "elapsed_wall_s": 15.89100000000326,
+      "closed_only_own_native_window": true,
+      "passed": true
+    }
+  ],
+  "audit_command": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+    "-B",
+    "results/map_expansion_20261016/audit_expansion.py"
+  ],
+  "audit": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\map_expansion_20261016\\delivery_audit.json",
+  "resolved_failure": "Initial idle-only inference admission missed the short internal street sensing window; the first 300-second live run processed 8/9 locations and correctly failed capture completion. Restored one pending encounter slot; final 300-second run processed all9 locations and all27 forwards, and captured13 views. The 30-second freshness cutoff and .35 confidence threshold were preserved.",
+  "limits": [
+    "Three photographs reused across nine manually mapped locations.",
+    "Radio is full-map application-level modeling; no hardware or range qualification.",
+    "Four stale final-run results were saved but excluded from warning creation.",
+    "20-minute traffic-only run is separate from 5-minute genuine-inference run."
+  ],
+  "no_commits_or_pushes": true
+}

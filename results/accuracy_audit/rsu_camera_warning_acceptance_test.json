@@ -1,0 +1,108 @@
+{
+  "status": "COMPLETED",
+  "timestamp": 1792507956.5712578,
+  "instantaneous_rsu_warning_test": {
+    "scenes_evaluated": 60,
+    "fresh_fps": 29.45,
+    "mean_frame_to_warning_delay_ms": 33.94,
+    "p95_frame_to_warning_delay_ms": 34.26,
+    "warning_precision": 0.2778,
+    "warning_recall": 0.1136,
+    "warning_f1": 0.1613,
+    "true_warnings": 10,
+    "false_warnings": 26,
+    "missed_hazards": 78,
+    "per_class": {
+      "pothole": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "tw": 0,
+        "fw": 2,
+        "mh": 0
+      },
+      "construction_hazard": {
+        "precision": 0.1429,
+        "recall": 0.027,
+        "tw": 1,
+        "fw": 6,
+        "mh": 36
+      },
+      "road_accident_obstacle": {
+        "precision": 0.3333,
+        "recall": 0.1765,
+        "tw": 9,
+        "fw": 18,
+        "mh": 42
+      }
+    }
+  },
+  "sample_dispatched_packets": [
+    {
+      "raw_bytes_len": 29,
+      "station_id": 1001,
+      "track_id": 1,
+      "class_name": "road_accident_obstacle",
+      "cause_code": 2,
+      "subcause_code": 1,
+      "desc": "accident_obstacleOnRoad",
+      "timestamp_ms": 1506592159,
+      "hex_payload": "0201000003e90000000159ccc59f59ccc59f001f1de588001295d00201"
+    },
+    {
+      "raw_bytes_len": 29,
+      "station_id": 1001,
+      "track_id": 1,
+      "class_name": "road_accident_obstacle",
+      "cause_code": 2,
+      "subcause_code": 1,
+      "desc": "accident_obstacleOnRoad",
+      "timestamp_ms": 1506592159,
+      "hex_payload": "0201000003e90000000159ccc59f59ccc59f001f1de588001295d00201"
+    },
+    {
+      "raw_bytes_len": 29,
+      "station_id": 1001,
+      "track_id": 1,
+      "class_name": "road_accident_obstacle",
+      "cause_code": 2,
+      "subcause_code": 1,
+      "desc": "accident_obstacleOnRoad",
+      "timestamp_ms": 1506592193,
+      "hex_payload": "0201000003e90000000159ccc5c159ccc5c1001f1de588001295d00201"
+    },
+    {
+      "raw_bytes_len": 29,
+      "station_id": 1001,
+      "track_id": 1,
+      "class_name": "road_accident_obstacle",
+      "cause_code": 2,
+      "subcause_code": 1,
+      "desc": "accident_obstacleOnRoad",
+      "timestamp_ms": 1506592295,
+      "hex_payload": "0201000003e90000000159ccc62759ccc627001f1de588001295d00201"
+    },
+    {
+      "raw_bytes_len": 29,
+      "station_id": 1001,
+      "track_id": 1,
+      "class_name": "road_accident_obstacle",
+      "cause_code": 2,
+      "subcause_code": 1,
+      "desc": "accident_obstacleOnRoad",
+      "timestamp_ms": 1506592329,
+      "hex_payload": "0201000003e90000000159ccc64959ccc649001f1de588001295d00201"
+    }
+  ],
+  "hardware_telemetry": {
+    "start": {
+      "temp_str": "temp=49.4'C",
+      "temp_c": 49.4,
+      "throttled": "throttled=0x0"
+    },
+    "end": {
+      "temp_str": "temp=51.6'C",
+      "temp_c": 51.6,
+      "throttled": "throttled=0x0"
+    }
+  }
+}

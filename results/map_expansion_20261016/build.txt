@@ -1,0 +1,15 @@
+Success.
+Built network avenue_C1_W.. with SHA256 59304990b6b5c1056c2c177b81a8964cc4faa8d62f8b9612b80c57d091fea4ba
+Routes: 144 vehicles; depart 0..214.5 s; route loops 24
+Hazards:
+  pothole: cw_SW_S1 lane 0 pos 210.00 m at [213.408, -26.163]
+  construction: cw_S3_SE lane 0 pos 160.00 m at [1370.25, 80.683]
+  accident_obstacle: cw_E_NE lane 0 pos 210.00 m at [1619.549, 697.696]
+  pothole_02: cw_J2_N1 lane 0 pos 240.00 m at [550.162, 983.55]
+  construction_02: cw_NW_W lane 0 pos 180.00 m at [-33.078, 718.569]
+  accident_obstacle_02: cw_W_SW lane 0 pos 240.00 m at [-36.089, 200.782]
+  pothole_03: street_S1_C1 lane 0 pos 200.00 m at [404.8, 171.07]
+  construction_03: bridge_E_C3 lane 0 pos 110.00 m at [1060.0, 445.2]
+  accident_obstacle_03: underpass_C2_J2 lane 0 pos 220.00 m at [804.8, 670.0]
+Outer loop including internal junction lanes: 4977.23 m
+Scenery: 90 roofs; 8 RSUs; 14 copied/generated PNG assets

@@ -1,0 +1,9 @@
+path: /kaggle/working/unified_three_hazard_dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: pothole
+  1: construction_hazard
+  2: road_accident_obstacle

@@ -1,0 +1,93 @@
+{
+  "title": "PFPD Preflight Data-Readiness & Model Preservation Audit",
+  "timestamp": 1792512036.5079458,
+  "baseline_models": {
+    "unified_yolo11n_best.pt": {
+      "exists": true,
+      "size_mb": 5.23,
+      "sha256": "e73ed9c2d2632e72fb3e025c50efb4ae441dd8fb6fdd7a47a9ca249e7b03ec69"
+    },
+    "unified_yolo11n_384.onnx": {
+      "exists": true,
+      "size_mb": 10.07,
+      "sha256": "b2fcb008618309d7b74f5cb7e50283d073f9933bf2638efb5a8b905bd2a030f5"
+    },
+    "unified_yolo11n_416.onnx": {
+      "exists": true,
+      "size_mb": 10.08,
+      "sha256": "ed2c90f3ed1fdbc627a152d33c4949d5744d37adaf4b9983195444fc1ed21967"
+    },
+    "unified_yolo11n_512.onnx": {
+      "exists": true,
+      "size_mb": 10.11,
+      "sha256": "dc2415c5188c40429e270eda66f5e132e9b80dbc063f2b1eb7451478f0ef577b"
+    }
+  },
+  "curated_data_readiness": {
+    "fallen_trees": {
+      "target_count": 450,
+      "status": "NOT_ASSEMBLED_LOCALLY",
+      "source_candidate": "Roadside Obstacle Datasets / Open Repos"
+    },
+    "boulders_rockfalls": {
+      "target_count": 420,
+      "status": "NOT_ASSEMBLED_LOCALLY",
+      "source_candidate": "Mountain Road Obstacle / Scree Sets"
+    },
+    "distant_workzone_signs": {
+      "target_count": 380,
+      "status": "NOT_ASSEMBLED_LOCALLY",
+      "source_candidate": "Highway Workzone Signage Datasets"
+    },
+    "pothole_control_anchors": {
+      "target_count": 250,
+      "status": "AVAILABLE_IN_TRAINING_ARCHIVE",
+      "source_candidate": "Original Kaggle Production Pothole Archive"
+    }
+  },
+  "test_population_reconciliation": {
+    "kaggle_production_test_population": {
+      "image_count": 1450,
+      "total_ground_truth_boxes": 3305,
+      "per_class_boxes": {
+        "pothole": 1847,
+        "construction_hazard": 1043,
+        "road_accident_obstacle": 415
+      },
+      "metrics_at_conf_0_001": {
+        "mAP50": 0.7406,
+        "mAP50_95": 0.4658,
+        "precision": 0.7858,
+        "recall": 0.6651,
+        "pothole_recall": 0.7022,
+        "construction_recall": 0.6328,
+        "accident_obstacle_recall": 0.6602
+      }
+    },
+    "local_smoke_extract_test_subset": {
+      "image_count": 1084,
+      "total_ground_truth_boxes": 1537,
+      "per_class_boxes": {
+        "pothole": 29,
+        "construction_hazard": 39,
+        "road_accident_obstacle": 1469
+      },
+      "pothole_sample_skew_explanation": "The smoke test extract only contained 29 readable potholes. The model detected all 29 (29/29 TP), producing an artificial 100% recall on that tiny sample. On the full 1,450-image Kaggle test population with 1,847 potholes, true pothole recall is 70.22%."
+    },
+    "missing_local_images_count": 366,
+    "missing_images_location": "Reside in remote Kaggle production session storage; not included in lightweight smoke artifact download."
+  },
+  "preflight_gate": {
+    "status": "STOPPED_AWAITING_USER_APPROVAL",
+    "gpu_training_launched": false,
+    "reason": "In strict compliance with Stage 1 instructions, the proposed 1,500 curated images were defined as target design specifications and are NOT yet downloaded, verified, or packaged on local disk. Automated fabrication of pseudo-labels is strictly prohibited. The GPU training run is held until the data-readiness report is reviewed and explicit approval is provided.",
+    "required_next_actions": [
+      "1. Confirm candidate open datasets on Kaggle for fallen trees and boulders.",
+      "2. Download candidate subsets and execute exact MD5 & perceptual dHash cross-deduplication against the 150 benchmark images and test set.",
+      "3. Manually verify bounding box annotations for fallen trees, boulders, and signs.",
+      "4. Sample 500 replay images from the original 21,676 dataset (potholes, construction, crashes) to prevent catastrophic forgetting.",
+      "5. Recover the 366 remaining test images from Kaggle to restore the complete 1,450-image test set.",
+      "6. Present audited data manifest for final sign-off before launching the 8-epoch GPU run."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "error": "Run ended before the requested native screenshots",
+  "mode": "native_visual_demo",
+  "ai_inference": false,
+  "wall_elapsed_s": 2.934104899999511,
+  "last_sample_sim_time_s": 0,
+  "active_vehicle_min": 0,
+  "active_vehicle_max": 0,
+  "minimum_active_after_180s": null,
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "tls_observed_states": {},
+  "authored_files_unchanged": true,
+  "screenshots": [],
+  "missing_screenshots": []
+}

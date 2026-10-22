@@ -1,0 +1,23 @@
+{
+  "pothole": {
+    "instance_count": 544,
+    "mean_normalized_area": 0.0704463497314614,
+    "median_normalized_area": 0.02236963375,
+    "mean_aspect_ratio_w_over_h": 1.8474749572173566,
+    "mean_center_height_cy": 0.49109482536764704
+  },
+  "construction_hazard": {
+    "instance_count": 1679,
+    "mean_normalized_area": 0.07519008138480227,
+    "median_normalized_area": 0.052074112421999996,
+    "mean_aspect_ratio_w_over_h": 0.8694698194448971,
+    "mean_center_height_cy": 0.54191322096486
+  },
+  "road_accident_obstacle": {
+    "instance_count": 1325,
+    "mean_normalized_area": 0.23519323615015017,
+    "median_normalized_area": 0.16224609375,
+    "mean_aspect_ratio_w_over_h": 1.2195304204845805,
+    "mean_center_height_cy": 0.5648822060377359
+  }
+}

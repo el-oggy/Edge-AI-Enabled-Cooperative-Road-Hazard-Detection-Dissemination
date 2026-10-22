@@ -1,0 +1,83 @@
+{
+  "384": {
+    "resolution": 384,
+    "conf_threshold": 0.3,
+    "precision": 0.9356,
+    "recall": 0.7463,
+    "f1_score": 0.8303,
+    "pi5_perf": {
+      "e2e_ms": 34.2,
+      "infer_ms": 31.78,
+      "e2e_fps": 29.24,
+      "rss_mb": 106.5
+    },
+    "per_class": {
+      "pothole": {
+        "precision": 0.9355,
+        "recall": 1.0
+      },
+      "construction_hazard": {
+        "precision": 0.8571,
+        "recall": 0.7692
+      },
+      "road_accident_obstacle": {
+        "precision": 0.9379,
+        "recall": 0.7406
+      }
+    }
+  },
+  "416": {
+    "resolution": 416,
+    "conf_threshold": 0.3,
+    "precision": 0.933,
+    "recall": 0.7612,
+    "f1_score": 0.8384,
+    "pi5_perf": {
+      "e2e_ms": 41.4,
+      "infer_ms": 38.67,
+      "e2e_fps": 24.15,
+      "rss_mb": 188.8
+    },
+    "per_class": {
+      "pothole": {
+        "precision": 0.875,
+        "recall": 0.9655
+      },
+      "construction_hazard": {
+        "precision": 0.9091,
+        "recall": 0.7692
+      },
+      "road_accident_obstacle": {
+        "precision": 0.9352,
+        "recall": 0.757
+      }
+    }
+  },
+  "512": {
+    "resolution": 512,
+    "conf_threshold": 0.3,
+    "precision": 0.9289,
+    "recall": 0.782,
+    "f1_score": 0.8492,
+    "pi5_perf": {
+      "e2e_ms": 63.04,
+      "infer_ms": 59.25,
+      "e2e_fps": 15.86,
+      "rss_mb": 210.8
+    },
+    "per_class": {
+      "pothole": {
+        "precision": 0.8286,
+        "recall": 1.0
+      },
+      "construction_hazard": {
+        "precision": 0.8571,
+        "recall": 0.7692
+      },
+      "road_accident_obstacle": {
+        "precision": 0.9338,
+        "recall": 0.7781
+      }
+    }
+  }
+}

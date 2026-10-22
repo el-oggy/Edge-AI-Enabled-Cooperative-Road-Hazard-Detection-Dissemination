@@ -1,0 +1,862 @@
+{
+  "captured_utc": "2026-10-15T13:33:39.047653+00:00",
+  "scope": "Read-only review of all pre-existing simulation/source/test/model and previous planning package files. New planning deliverables only.",
+  "branch": "main",
+  "head": "47b0eddf1057c4b3f0ccd4dea1faed941c25a716",
+  "status": "M .gitignore\n?? .agents/\n?? simulation/smart_city/\n?? src/pfpd_city_perception/\n?? src/pfpd_city_protocol/\n?? src/pfpd_city_runtime/\n?? tests/smart_city/\n?? visualization/",
+  "tracked_diff_stat": ".gitignore | 2 ++\n 1 file changed, 2 insertions(+)",
+  "staged_diff_stat": "",
+  "files": [
+    {
+      "path": ".agents/rules/memory.md",
+      "bytes": 57351,
+      "sha256": "2b4a4788e3e92ef6e4f929b87f67ca54c5f55e70072b533d4e04fdaa6551dfbd"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1110,
+      "sha256": "27098f07fadb022d859f181b7babfa91020a3c4fa2813e8d91fcc1654f616bd6"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/01_TECHNOLOGY_RESEARCH.md",
+      "bytes": 9417,
+      "sha256": "c073dc9bf416d486bcfbba3f862295ad1dc0f269c8206be8079bc36f1c1a3ced"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/02_VISUAL_CONCEPTS.md",
+      "bytes": 11205,
+      "sha256": "eed83e135dfaf582bbaae6194014e5547090b5da62ba560de78d4f464cfe244d"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/03_RECOMMENDED_ARCHITECTURE.md",
+      "bytes": 15383,
+      "sha256": "091c13027ade57d6653c1c83626c472bdd78a0c0659a156f88ca53e589c9757f"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/04_HARDWARE_DEPLOYMENT.md",
+      "bytes": 9268,
+      "sha256": "b20942176d9ad4b9130658f03f9a68eb9e367654fcaef4cab19f782c9a65faec"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/05_IMPLEMENTATION_ROADMAP.md",
+      "bytes": 9272,
+      "sha256": "dba1f527351b024cdd4eff73861a3e004a54aed45f1a910d4b27d39af979689a"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/06_PROMPT_COLLECTION.md",
+      "bytes": 2426,
+      "sha256": "90c3a61f5dd3b3f32c71d6df18df534829df42faf10cc498015068bd966f716d"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/07_DECISION_BRIEF.md",
+      "bytes": 6230,
+      "sha256": "82d5808d75ec6ae13bd32a14249461200ed0448d1c24d898da2b8b01514cae76"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/GIT_STATUS_AT_DELIVERY.txt",
+      "bytes": 600,
+      "sha256": "11090a997fa7785ceb9567949c66e720dbfd8eea7f669d8056778e893456088d"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/HOST_PROJECT_AUDIT.json",
+      "bytes": 7828,
+      "sha256": "b24afa5a51b38b5887ced5cb13b4d525a97b391038214e2f811687c900b1a440"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/PACKAGE_VALIDATION.json",
+      "bytes": 8399,
+      "sha256": "cd23de097cf7e9b7710f3ba8296d19bf8ae8c90d19a2cbcba8405749ba146dbd"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/PFPD_SMART_CITY_RESEARCH_PACKAGE.zip",
+      "bytes": 1249534,
+      "sha256": "bb2a977269bbd8ae02c28463202e625b767c53f53b532a7804cfa45be09e66c8"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/prompts/COORDINATOR.md",
+      "bytes": 4627,
+      "sha256": "f72e77d32d8d3e21cfbe26c0e99b197574c6f43e151234f8a1bd048ef7c1b397"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/prompts/HAZARD_SCENARIOS.md",
+      "bytes": 3238,
+      "sha256": "50711047b8efa660048f51ccdb53f97c4267120162e56340b1fab03de8f34421"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/prompts/INTEGRATION_EVALUATION.md",
+      "bytes": 4732,
+      "sha256": "7908d8101b1a2ce5ed89fdb8b5c606af15365270ddf7870cdb9d61c366770edc"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/prompts/NETWORK_TRAFFIC.md",
+      "bytes": 3652,
+      "sha256": "f95865adb70c8bc82f95170a96d7eb55c15b0f505f77ed7e4a577939fcd68053"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/prompts/PERCEPTION.md",
+      "bytes": 4081,
+      "sha256": "14eeac21b2cdf805af33000bd9e2ce78ff8c0e56e019b9e7615ffc5590264061"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/prompts/RENDERER_SENSORS.md",
+      "bytes": 3637,
+      "sha256": "631c54d9e1bcccb4878b1ef50825a999bd839c8005e06e3db3fdc78b39cf444e"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/prompts/RSU_NETWORK.md",
+      "bytes": 3389,
+      "sha256": "ab8cfc046526f988e6dc6f35b2f4b9d549a6f5ed7857d21a13cb95d71ef46c4d"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/README.md",
+      "bytes": 2923,
+      "sha256": "47757eeb5f12557e49fb369212dc09b06b9cbe348cfba354d3126575f1bb7d00"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/SPECIALIST_AI_INTEGRATION.md",
+      "bytes": 34358,
+      "sha256": "282b8b73299cc3e5979a96e0b68e3f82d683c7dd65938b7c542a6438e8695964"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/SPECIALIST_NETWORK_RSU.md",
+      "bytes": 35276,
+      "sha256": "f96cdef45829a92fbd43b8579003020322fff091affb9a69077aa48efbde0e5b"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/SPECIALIST_RENDERING.md",
+      "bytes": 32245,
+      "sha256": "c19618d1e9d47326caf67e08919c8adf03ceb44434db3a8b86214381b86035ac"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/VISUAL_CONCEPTS.html",
+      "bytes": 41053,
+      "sha256": "7b66d40f6615c57b46bc664c0ff48598eef84ca8642d4bc6a92c5be369878b43"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/canal.png",
+      "bytes": 179004,
+      "sha256": "e781b4f3e51724a149589d0e69e5ea1c1273940ceb6a8890536eb493d9f2a6c9"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/canal.svg",
+      "bytes": 11098,
+      "sha256": "b5a8607f1350cf9fe75d2303da4cd3f380a5bf607782233dd54a2314a6d0ad27"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/civic.png",
+      "bytes": 160984,
+      "sha256": "7872b3ac80374b606651d426c90fe49b95d739c809027a0d78b9f36fffef9359"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/civic.svg",
+      "bytes": 15157,
+      "sha256": "feaf9732c937e32f580ff844948f94bae87f20b25d11259cf244298d10a9ba16"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/civic_sparse.png",
+      "bytes": 158304,
+      "sha256": "28ed1c574f102d0473ec9c42ceb7988f1a09754596aa804a3a993898cf1c6ec6"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/civic_sparse.svg",
+      "bytes": 15183,
+      "sha256": "ac551fe239d082186a800b7ce9d5143d8385e7b155d017ee3cc12d42b64f33f2"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/concept_comparison.png",
+      "bytes": 494938,
+      "sha256": "c66e210c456b0d91310984a2f8065c5858c645de0ae55f489302a8297d996514"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/foundry.png",
+      "bytes": 156604,
+      "sha256": "c0c1f198fd3aae7cdba3e2291dfff0b8491ba7b91c047d97ca34aa727d8bb366"
+    },
+    {
+      "path": "docs/local_agent_research/smart_city_20261014/visuals/foundry.svg",
+      "bytes": 10557,
+      "sha256": "85c30487f78c6ebda30532d7142072b4f11a01e4d7c38a6dba1b8e6637649155"
+    },
+    {
+      "path": "quantization/accident_obstacle_yolo11s_int8.onnx",
+      "bytes": 9940846,
+      "sha256": "dc2985e915d44ff419d205bcae0df9fc1cfdf89960e794730b3afcb2134b96bf"
+    },
+    {
+      "path": "quantization/construction_yolo11s_int8.onnx",
+      "bytes": 9940838,
+      "sha256": "4144423ff28f6fab297828be7965a8104600359fbd2ed58b0da45e16fa7788f8"
+    },
+    {
+      "path": "quantization/pothole_yolo11s_int8.onnx",
+      "bytes": 9940821,
+      "sha256": "289c7d60b8d920ef1da65681629c8fc854ccaf7b01474afc5997ba89b1ca077d"
+    },
+    {
+      "path": "simulation/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "simulation/commands.txt",
+      "bytes": 1027,
+      "sha256": "ddd52bafae02b75181b31dce106b7147951eda17974b3122432cc9b702ad4638"
+    },
+    {
+      "path": "simulation/corridor_1km/build_corridor.py",
+      "bytes": 8104,
+      "sha256": "3edf0f8957b3feccdf14d7472ebe75925ebfb83c698727ef2c6d71d933331028"
+    },
+    {
+      "path": "simulation/corridor_1km/corridor.add.xml",
+      "bytes": 7753,
+      "sha256": "ed7dbabab38ab6b9b93bee897f1ab858ff642d71c61bfe15b8159e3f3ad97018"
+    },
+    {
+      "path": "simulation/corridor_1km/corridor.edg.xml",
+      "bytes": 1721,
+      "sha256": "50710f676707e77a700d66503211367f3a71dd6b9378e8a0110204bcaaf3fb0b"
+    },
+    {
+      "path": "simulation/corridor_1km/corridor.net.xml",
+      "bytes": 36992,
+      "sha256": "cabd5179e36ebfd212086004626971d9bbd68ff246c6bfdf7fc110eff59ec0c4"
+    },
+    {
+      "path": "simulation/corridor_1km/corridor.nod.xml",
+      "bytes": 833,
+      "sha256": "f639470b1d1988acea2c488bb35b3c440a5c6fd482f8ded89307aa85f45707ed"
+    },
+    {
+      "path": "simulation/corridor_1km/corridor.rou.xml",
+      "bytes": 4003,
+      "sha256": "5714b08aea1fc2b702411010e7c1e104005515b68b2a99dc31008e3a130c9049"
+    },
+    {
+      "path": "simulation/corridor_1km/corridor.sumocfg",
+      "bytes": 786,
+      "sha256": "f861876fadbedc746cad2ab871f022f549585587347bdbd8b870e5de5f57c21b"
+    },
+    {
+      "path": "simulation/corridor_1km/corridor.view.xml",
+      "bytes": 379,
+      "sha256": "fa27d3c8e6714f06bb48b506b492c3890e2da3143b6f035009c0f44256d929cf"
+    },
+    {
+      "path": "simulation/corridor_1km/outputs/v2x_telemetry.csv",
+      "bytes": 951266,
+      "sha256": "6de6820357100ec76152db1965a5aa00bf05937fc65cd3a8fd353c8a48381b70"
+    },
+    {
+      "path": "simulation/corridor_1km/run_cooperative_v2x_sim.py",
+      "bytes": 12183,
+      "sha256": "4aebc5b3dae2003059e0ebe08c667b740462ba515425f9671632efed381cc116"
+    },
+    {
+      "path": "simulation/corridor_1km/run_gui.bat",
+      "bytes": 402,
+      "sha256": "78c1d8834b1538d939a216bbd4a9e707df0d363b3133e9a6852bb9dcd15b57e6"
+    },
+    {
+      "path": "simulation/crawling_trip.xml",
+      "bytes": 229,
+      "sha256": "410d324c01b51fc2c15687b45dad7e382ef31198f6d1690bd237b8a0055bb648"
+    },
+    {
+      "path": "simulation/dummy.xml",
+      "bytes": 1030,
+      "sha256": "3e478ba181432f7be9b0ed3f6a7f5a4aef972999f1853ce274ab5da0b292ff38"
+    },
+    {
+      "path": "simulation/ego.rou.alt.xml",
+      "bytes": 1359,
+      "sha256": "0d385a64308061f8aa7b3eb99a9854c23cce85d05b4087a215b03aff54100888"
+    },
+    {
+      "path": "simulation/ego.rou.xml",
+      "bytes": 1248,
+      "sha256": "34d5d4eb7bbd57d062692420d59649c5a0e822a03ce1852172af5a3ad921e7ca"
+    },
+    {
+      "path": "simulation/ego_trip.xml",
+      "bytes": 357,
+      "sha256": "7f446a0370505e918dfb670d07a65f9b16c182f6381a28caa9ecaff5a220e52e"
+    },
+    {
+      "path": "simulation/excel_reports/MASTER_SIMULATION_DATA.xlsx",
+      "bytes": 404352,
+      "sha256": "01eb4553afb0aa877703583244ee83bb4b7bab748eeffadc3096a03462041068"
+    },
+    {
+      "path": "simulation/excel_reports/vehicle_trajectory_fcd_data.xlsx",
+      "bytes": 32364341,
+      "sha256": "b0aae4353624233a3c34aca4e3b8651341be2e1f9b1eaa701b927724304fc8da"
+    },
+    {
+      "path": "simulation/excel_reports/vehicle_trip_data_2000plus.xlsx",
+      "bytes": 403529,
+      "sha256": "d0f58ee88a64af15d8597c49624d9f133b860aed558b89045bd0c70fba9b6cb5"
+    },
+    {
+      "path": "simulation/map.net.xml",
+      "bytes": 4926640,
+      "sha256": "82a661c30e19d5245c2304d03acdb903abfab28b6bd3e531c3f4f8b1c1ec0384"
+    },
+    {
+      "path": "simulation/map.sumocfg",
+      "bytes": 1294,
+      "sha256": "8ee6e2735269774a8e98c79f60d63177c20e1790b143f860963f34d25807508c"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/commands.txt",
+      "bytes": 1027,
+      "sha256": "ddd52bafae02b75181b31dce106b7147951eda17974b3122432cc9b702ad4638"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/crawling_trip.xml",
+      "bytes": 229,
+      "sha256": "410d324c01b51fc2c15687b45dad7e382ef31198f6d1690bd237b8a0055bb648"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/dummy.xml",
+      "bytes": 1030,
+      "sha256": "3e478ba181432f7be9b0ed3f6a7f5a4aef972999f1853ce274ab5da0b292ff38"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/ego.rou.alt.xml",
+      "bytes": 1359,
+      "sha256": "0d385a64308061f8aa7b3eb99a9854c23cce85d05b4087a215b03aff54100888"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/ego.rou.xml",
+      "bytes": 1248,
+      "sha256": "34d5d4eb7bbd57d062692420d59649c5a0e822a03ce1852172af5a3ad921e7ca"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/ego_trip.xml",
+      "bytes": 357,
+      "sha256": "7f446a0370505e918dfb670d07a65f9b16c182f6381a28caa9ecaff5a220e52e"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/map.net.xml",
+      "bytes": 4926640,
+      "sha256": "82a661c30e19d5245c2304d03acdb903abfab28b6bd3e531c3f4f8b1c1ec0384"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/map.sumocfg",
+      "bytes": 1294,
+      "sha256": "8ee6e2735269774a8e98c79f60d63177c20e1790b143f860963f34d25807508c"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/obstacles.add.xml",
+      "bytes": 2083,
+      "sha256": "cf8e2c5ceae09a463678ff1ece5aa5807a4eefc837db07821a3c36ef5e4a46c7"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/polygons.add.xml",
+      "bytes": 1504963,
+      "sha256": "0b2358b62fd1dea60652ca3430e134b974c5e2d007de91d08a4f27069a833fe7"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/satellite.xml",
+      "bytes": 1422,
+      "sha256": "5b6d6b910eb719619c8400a9f2cfa936c88d78112d3ec2277870dd2660edcf88"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/ssm_ego.xml",
+      "bytes": 42366,
+      "sha256": "5f06e99792e586f08a37b1e0c10c58b70744b2df5f92ba35a417e4d8fe988a4e"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/traffic_auto.rou.xml",
+      "bytes": 108958,
+      "sha256": "6ee85c9be20e83e546a9332c3d0f02e53a1a5e5526665ba1693420e08a67513f"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/traffic_bike.rou.xml",
+      "bytes": 430303,
+      "sha256": "c35f08c45f32eaa48483a4b9b82e6f9c246dc022d9d686a042415ed20d21ffd1"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/traffic_bus.rou.xml",
+      "bytes": 23799,
+      "sha256": "374216f5c24d3e42804ae2774067cacc3be2da90ed165ae49c22431e7b1feaca"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/traffic_car.rou.xml",
+      "bytes": 216435,
+      "sha256": "c92ab1a67f4bf4c51ba9867a7afbea11ab904b244e629e476181537210151827"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/traffic_truck.rou.xml",
+      "bytes": 30993,
+      "sha256": "c95703fc139be52f4fe29a81b5d1fb8dd468f0e63e18887aff2b3369c7883942"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/trips.trips.xml",
+      "bytes": 8084,
+      "sha256": "a45e3e17192be92b530add03e9689ffb32b94f0c589bee815c4f602910c06de1"
+    },
+    {
+      "path": "simulation/map_traffic_simulation/vtypes.add.xml",
+      "bytes": 1632,
+      "sha256": "f1d7e2ff7e7781b11547839d7487434bb5ff0c41c3c3297f900ecd3bba8edb4b"
+    },
+    {
+      "path": "simulation/maps/map_16_9.net.xml",
+      "bytes": 33617650,
+      "sha256": "7bfd40badf9e416782570c9b887e84ee8a6f4f676409ef001fab47ee4d4b4bad"
+    },
+    {
+      "path": "simulation/maps/map_16_9.osm",
+      "bytes": 380,
+      "sha256": "6a959ceaa2d7efc27c418d4a547dbae40a1ac0a784a2f2c9a2607465a8a94181"
+    },
+    {
+      "path": "simulation/maps/map_16_9_bbox.osm.xml",
+      "bytes": 19987304,
+      "sha256": "e1f2a3b1e6360307c3b8223055d405344f621ea3086f58cf764d51cdd29921d2"
+    },
+    {
+      "path": "simulation/maps/map_final.net.xml",
+      "bytes": 31519252,
+      "sha256": "c3bbb96de3f8ed3e8b83ea3bfb083ff0e4f8d2912b932c52548821f3d5c237e7"
+    },
+    {
+      "path": "simulation/maps/map_optimized.net.xml",
+      "bytes": 31519427,
+      "sha256": "7015c9f37a6eca4edd01166dbfc01b089ce492a7c38d75e9d6f191aa59a7866b"
+    },
+    {
+      "path": "simulation/obstacles.add.xml",
+      "bytes": 2083,
+      "sha256": "cf8e2c5ceae09a463678ff1ece5aa5807a4eefc837db07821a3c36ef5e4a46c7"
+    },
+    {
+      "path": "simulation/outputs/fcd.xml",
+      "bytes": 1591,
+      "sha256": "43b5ff16db3e8683f6650d163a01b8655becc7066822207296abd20846e63e99"
+    },
+    {
+      "path": "simulation/outputs/fcd_data.xlsx",
+      "bytes": 47947438,
+      "sha256": "a61222a79662d27b124cfbfd58f7b08879fb5514c6f5247a990af0bdf7813109"
+    },
+    {
+      "path": "simulation/outputs/tripinfo.xml",
+      "bytes": 1594,
+      "sha256": "b04cf2cf265da7af514a2eec4459d314d790b2295e9d29047e59476e0ee74b53"
+    },
+    {
+      "path": "simulation/polygons.add.xml",
+      "bytes": 1504963,
+      "sha256": "0b2358b62fd1dea60652ca3430e134b974c5e2d007de91d08a4f27069a833fe7"
+    },
+    {
+      "path": "simulation/satellite.xml",
+      "bytes": 1422,
+      "sha256": "5b6d6b910eb719619c8400a9f2cfa936c88d78112d3ec2277870dd2660edcf88"
+    },
+    {
+      "path": "simulation/scripts/commands.txt",
+      "bytes": 1621,
+      "sha256": "017d8493e8b21aa33f77ce049bb40e43e275259e1a104196e3ff55d15c7fd648"
+    },
+    {
+      "path": "simulation/scripts/download_osm_focused.py",
+      "bytes": 1161,
+      "sha256": "d1e7dda099c057be02a9418edf021f38508286e1f0241472be37aba704695a86"
+    },
+    {
+      "path": "simulation/scripts/download_tiles.py",
+      "bytes": 4792,
+      "sha256": "4ca4c9acbad03f0bbd999e331dcae5661dbe1414951f1c962a4d885475a8c37c"
+    },
+    {
+      "path": "simulation/scripts/fcd_to_excel.py",
+      "bytes": 1742,
+      "sha256": "0cabec73a23c9d8017dd6554420bc3669519d85bf2fc531934c5ec25f8fe84d3"
+    },
+    {
+      "path": "simulation/scripts/generate_traffic.ps1",
+      "bytes": 1596,
+      "sha256": "d7072d4ad242eee3cca20a665ca701b4d16c6be0b2d37d7b5b324733c27e4d36"
+    },
+    {
+      "path": "simulation/scripts/generate_traffic.py",
+      "bytes": 2041,
+      "sha256": "a545db130231c74ceceafad8fe0a540fb103bfb5334d74d94ccb2c2059387812"
+    },
+    {
+      "path": "simulation/scripts/list_edges.py",
+      "bytes": 1287,
+      "sha256": "95e90c750856e37714d7a51d71a860016e34a78b019e6cd590e25f3c7256d0cb"
+    },
+    {
+      "path": "simulation/scripts/rsu_hazard_disseminator.py",
+      "bytes": 13464,
+      "sha256": "52c7cbb230238b33566185a91bca24424025b27526ee8780fa8a71ca87355e67"
+    },
+    {
+      "path": "simulation/smart_city/foundry/build_foundry_scenery.py",
+      "bytes": 13997,
+      "sha256": "7a2f6b38c15281246fd9a5ab43bd97d7ad2c507674bd89bab07f616b70897780"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.edg.xml",
+      "bytes": 2908,
+      "sha256": "a4779dda051be31d6a5bd13eee5e92c8952e36ff8ebfff85bf71bab106ffde94"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.net.xml",
+      "bytes": 68322,
+      "sha256": "a495977a1a106a28533f83bb8c37b5113d22b48ff516875f9d5f20fb2139a015"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.nod.xml",
+      "bytes": 727,
+      "sha256": "c2475c430823a56589ada18cd6e907c090ccf8297fd727b7b4fc5d61c09b86f2"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.rou.xml",
+      "bytes": 3071,
+      "sha256": "5d9812f24e4f4816adc09013f5fc53f4038a1325121ade85b90ec0c71bc76930"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry.sumocfg",
+      "bytes": 781,
+      "sha256": "8cfc21de3bde81fec7e328ad8dc7569117a6d48e92df15c3a9c087212a51317d"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_buildings.add.xml",
+      "bytes": 6012,
+      "sha256": "14857a766480e5e93e0078b2dff6e57bdff04453a346591cdc965f96c49f256e"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_city.add.xml",
+      "bytes": 7939,
+      "sha256": "84042e7416122ebca875596382513e699f113446cccf8936fa341091d8c6db95"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_hazard_generator.py",
+      "bytes": 15558,
+      "sha256": "85dad4160fe2853b03ab0f4efbba1bd689df7c19f2215639dda168020f8fbcaf"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_hazards.add.xml",
+      "bytes": 4531,
+      "sha256": "b3da2b300188bbe182fe9896a98edb7314ff6f653caffa2cbe64b69ad6758a7e"
+    },
+    {
+      "path": "simulation/smart_city/foundry/foundry_view.xml",
+      "bytes": 426,
+      "sha256": "28589de69602e3de50ac8dc9274f6049cb4cc5b110f0e9c3573d939da665cee6"
+    },
+    {
+      "path": "simulation/smart_city/foundry/run_foundry_simulation.py",
+      "bytes": 9937,
+      "sha256": "6766e5dbbb95318414161d8c686aa548c8d58bd58d089a2a247cd45ffa44c8d3"
+    },
+    {
+      "path": "simulation/smart_city/junction.edg.xml",
+      "bytes": 1476,
+      "sha256": "58963ada6109cb63fab9bf5190123b01e29b6efaaf73ab7c76d5f8542032c866"
+    },
+    {
+      "path": "simulation/smart_city/junction.net.xml",
+      "bytes": 19836,
+      "sha256": "8e588fb23f9e120f1387edc5162874e55abef9b7acf106e041f7a3981ae61ff3"
+    },
+    {
+      "path": "simulation/smart_city/junction.nod.xml",
+      "bytes": 462,
+      "sha256": "f7e5dbb79a4c1bd8345d422abfe764ee9ed235cf3cf77c9c1d62001a58814861"
+    },
+    {
+      "path": "simulation/smart_city/junction.rou.xml",
+      "bytes": 2541,
+      "sha256": "5283e1f2118691b6e5227ec78037416c5df861afd09abb449ce4272fd880293d"
+    },
+    {
+      "path": "simulation/smart_city/smart_city_junction.sumocfg",
+      "bytes": 658,
+      "sha256": "4c9c1a8e1837c483e59c917d8cab9d84801021dded6c4665efd05f51769e61b3"
+    },
+    {
+      "path": "simulation/ssm_ego.xml",
+      "bytes": 42366,
+      "sha256": "5f06e99792e586f08a37b1e0c10c58b70744b2df5f92ba35a417e4d8fe988a4e"
+    },
+    {
+      "path": "simulation/traffic/ego.rou.xml",
+      "bytes": 1935,
+      "sha256": "4333a262a32fc5cb9452345f983674bc5954a6dae6eb31ac407e1b418c0a6368"
+    },
+    {
+      "path": "simulation/traffic/ego_trip.xml",
+      "bytes": 364,
+      "sha256": "5ab30bbce57384a81dd4ae97f1fe7bf7b73e4ce9180451947f803c5e83c66caf"
+    },
+    {
+      "path": "simulation/traffic/traffic_auto.rou.xml",
+      "bytes": 353919,
+      "sha256": "d6c6614d7f68940fca402214f5952206ff2143a273b71316292a418733bd9f91"
+    },
+    {
+      "path": "simulation/traffic/traffic_auto.trips.xml",
+      "bytes": 51635,
+      "sha256": "a5ba7cec0b55d1d71cb780cd8d9cd669964e1bb39b210eefbcaf035984c762ff"
+    },
+    {
+      "path": "simulation/traffic/traffic_auto.trips.xml.tmp",
+      "bytes": 948,
+      "sha256": "3763a7f37739a9d6056edfd6c192e59af3de09a54373637eab5822d4bd50f0cc"
+    },
+    {
+      "path": "simulation/traffic/traffic_bike.rou.xml",
+      "bytes": 364791,
+      "sha256": "73971afe079700983eb36ec35f660df3463d692b6ec0c17640dda1c388fff4f1"
+    },
+    {
+      "path": "simulation/traffic/traffic_bike.trips.xml",
+      "bytes": 52171,
+      "sha256": "88a85f6fc9c386275a917b7b2aa4f8e56adf828d8da39ad0eecf3c29a35ce8e8"
+    },
+    {
+      "path": "simulation/traffic/traffic_bus.rou.xml",
+      "bytes": 175239,
+      "sha256": "3ff57a9adf57f322fd00c216f480a9ddffdb2ec239d80e9bcb1afa8a8f01c640"
+    },
+    {
+      "path": "simulation/traffic/traffic_bus.trips.xml",
+      "bytes": 24090,
+      "sha256": "638c311ea76d63e995336fc9d255ac79da1151d4e8e2271f5b40a43b9634211c"
+    },
+    {
+      "path": "simulation/traffic/traffic_car.rou.xml",
+      "bytes": 358477,
+      "sha256": "1c0e3909a4f8ea9095e1c5f25def6984aa6774e6086c97c0903835307a1da3ca"
+    },
+    {
+      "path": "simulation/traffic/traffic_car.trips.xml",
+      "bytes": 50628,
+      "sha256": "5283a456f72c071867ee462c3d51cfacfabd699074a0a14f124bf72758ecd41d"
+    },
+    {
+      "path": "simulation/traffic/traffic_car_continuous.rou.xml",
+      "bytes": 4270339,
+      "sha256": "b0f157657a19f9f24d179612c8b92ddf15ebe3dccaf3bcb397b360c467cf56cb"
+    },
+    {
+      "path": "simulation/traffic/traffic_car_continuous.trips.xml",
+      "bytes": 835282,
+      "sha256": "f562ed6caed0328570b5888783af4a4d853d9294ab1e3388e5852cf96e403a56"
+    },
+    {
+      "path": "simulation/traffic/traffic_truck.rou.xml",
+      "bytes": 176757,
+      "sha256": "8112aaa01793063396f4debd5c58407448f4289192a2fcf572e60478cecb2253"
+    },
+    {
+      "path": "simulation/traffic/traffic_truck.trips.xml",
+      "bytes": 25604,
+      "sha256": "381e03934cde37ca1654d77caeec170087ed0987d87789023dd79951bc1bec05"
+    },
+    {
+      "path": "simulation/traffic/trips.rou.xml",
+      "bytes": 182125,
+      "sha256": "5c61ff318d18b9b33a81814cb01f86663623a22a079f157ad099de600112d9c4"
+    },
+    {
+      "path": "simulation/traffic_auto.rou.xml",
+      "bytes": 108958,
+      "sha256": "6ee85c9be20e83e546a9332c3d0f02e53a1a5e5526665ba1693420e08a67513f"
+    },
+    {
+      "path": "simulation/traffic_bike.rou.xml",
+      "bytes": 430303,
+      "sha256": "c35f08c45f32eaa48483a4b9b82e6f9c246dc022d9d686a042415ed20d21ffd1"
+    },
+    {
+      "path": "simulation/traffic_bus.rou.xml",
+      "bytes": 23799,
+      "sha256": "374216f5c24d3e42804ae2774067cacc3be2da90ed165ae49c22431e7b1feaca"
+    },
+    {
+      "path": "simulation/traffic_car.rou.xml",
+      "bytes": 216435,
+      "sha256": "c92ab1a67f4bf4c51ba9867a7afbea11ab904b244e629e476181537210151827"
+    },
+    {
+      "path": "simulation/traffic_truck.rou.xml",
+      "bytes": 30993,
+      "sha256": "c95703fc139be52f4fe29a81b5d1fb8dd468f0e63e18887aff2b3369c7883942"
+    },
+    {
+      "path": "simulation/trips.trips.xml",
+      "bytes": 8084,
+      "sha256": "a45e3e17192be92b530add03e9689ffb32b94f0c589bee815c4f602910c06de1"
+    },
+    {
+      "path": "simulation/vtypes.add.xml",
+      "bytes": 1632,
+      "sha256": "f1d7e2ff7e7781b11547839d7487434bb5ff0c41c3c3297f900ecd3bba8edb4b"
+    },
+    {
+      "path": "simulation/xml_configs/obstacles.add.xml",
+      "bytes": 3382,
+      "sha256": "600c9d13b66740618d1237e3fda23bd8d60a00d2ba2ad7f0d1b4c182c04e1e52"
+    },
+    {
+      "path": "simulation/xml_configs/polygons.add.xml",
+      "bytes": 1504963,
+      "sha256": "0b2358b62fd1dea60652ca3430e134b974c5e2d007de91d08a4f27069a833fe7"
+    },
+    {
+      "path": "simulation/xml_configs/ptstops.xml",
+      "bytes": 3583,
+      "sha256": "d4bbc10870fc0e8c966a23d5fdee9ffa7199e00e56568734bbb9a2251a5a9a83"
+    },
+    {
+      "path": "simulation/xml_configs/satellite_decals.xml",
+      "bytes": 139435,
+      "sha256": "c79ff7008af342de3d2fa29e23b1e5637f508f8a3d5368036bf72c9f1d9e3e01"
+    },
+    {
+      "path": "simulation/xml_configs/vtypes.add.xml",
+      "bytes": 2286,
+      "sha256": "031ec9770406eda66c8b3ccb034c4a2ad3fbeb4bc4e3950fae12ea163e81eed4"
+    },
+    {
+      "path": "src/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/benchmark_rpi_multimodal.py",
+      "bytes": 12705,
+      "sha256": "4753dc24c0f393ae277ec24df056c75af3702b8f7c11a5ba1d4d67fa9bb022ef"
+    },
+    {
+      "path": "src/benchmarks/benchmark_rpi_multimodal.py",
+      "bytes": 12705,
+      "sha256": "4753dc24c0f393ae277ec24df056c75af3702b8f7c11a5ba1d4d67fa9bb022ef"
+    },
+    {
+      "path": "src/benchmarks/edge_rpi_hazard_inference.py",
+      "bytes": 21292,
+      "sha256": "7c8ebfe31615b69ac914858299a55fd6d6218d1a95d2508aef2bb8101728c71f"
+    },
+    {
+      "path": "src/benchmarks/evaluate_user_multihazard_rpi.py",
+      "bytes": 12312,
+      "sha256": "c2ae558047268cf99133e9f4b361355d09f921117fe029523d939bb559db7900"
+    },
+    {
+      "path": "src/benchmarks/rpi_simultaneous_multihazard_pipeline.py",
+      "bytes": 8406,
+      "sha256": "37dd8c99c6c29def051c0abaac81631fab5aab4af3a0a9605260d206e20d8a8d"
+    },
+    {
+      "path": "src/benchmarks/run_150_benchmark_suite.py",
+      "bytes": 10089,
+      "sha256": "ebc92237e02d150cb5612aaf8c3deccc82de83f233c85f5c03b8b9706128e2f2"
+    },
+    {
+      "path": "src/data_tools/collect_150_benchmark_dataset.py",
+      "bytes": 8603,
+      "sha256": "f6955931c681b7dea97ae4beca21ba20f320dc3b00a3ba7ad80af0f2d06343c7"
+    },
+    {
+      "path": "src/data_tools/curate_150_unique_dataset.py",
+      "bytes": 8142,
+      "sha256": "aead7973f84cb5bb9dbd2786673951d7705d9bc4328f1d758f15b96cf863f041"
+    },
+    {
+      "path": "src/data_tools/fetch_remaining_unique.py",
+      "bytes": 6433,
+      "sha256": "204e6061a332844d4c604b18a8d5cc9471bf867dfe19210b9e00babebc896954"
+    },
+    {
+      "path": "src/edge_continuous_camera_perception.py",
+      "bytes": 14997,
+      "sha256": "af2062ee562efb2f47071ddd8ddd13633ab31458d3c28e37e6002ce8f15978a6"
+    },
+    {
+      "path": "src/edge_round_robin_scheduler.py",
+      "bytes": 11168,
+      "sha256": "c26cdd5536ad90ba5f50780500126d9f62b5f2fca6fd82edd1f4a6135e661582"
+    },
+    {
+      "path": "src/edge_rpi_hazard_inference.py",
+      "bytes": 19781,
+      "sha256": "0ebb6b150e2ffe206c40fe838e99e0c6e53753ed7422203880baa623ddf71c73"
+    },
+    {
+      "path": "src/pfpd_city_perception/__init__.py",
+      "bytes": 320,
+      "sha256": "449af76b45433f538fc8e1911a8fc6fe3bac887a12e6689e555582471e648a19"
+    },
+    {
+      "path": "src/pfpd_city_perception/camera_perception.py",
+      "bytes": 8592,
+      "sha256": "2214deb64781b841521eb83dd005b555db0275de4938f6aba81670015533ea1d"
+    },
+    {
+      "path": "src/pfpd_city_protocol/__init__.py",
+      "bytes": 406,
+      "sha256": "80c6b8024764957c816e1a8557cbfe825fa52e76623179af69464608140117ff"
+    },
+    {
+      "path": "src/pfpd_city_protocol/contracts.py",
+      "bytes": 2482,
+      "sha256": "f3dd1ac89ff137cc8cd07f2d9824c6aeb5a7146d976dc8dc65a2c01d335a6caf"
+    },
+    {
+      "path": "src/pfpd_city_runtime/__init__.py",
+      "bytes": 261,
+      "sha256": "6aa90dcf543799042bfc943057e80d3f1c9ab50e3e98f0d93a2191f90af43029"
+    },
+    {
+      "path": "src/pfpd_city_runtime/city_runtime_engine.py",
+      "bytes": 9295,
+      "sha256": "f8fe9770ed69534e5a6140171b72ec778d5ccec1cfb5afcebc3f31660803f07b"
+    },
+    {
+      "path": "src/pfpd_perception/__init__.py",
+      "bytes": 84,
+      "sha256": "120da4dafaaed76dc8fef3e8a641354213f339e023d7183591df79814231fdb8"
+    },
+    {
+      "path": "src/pfpd_perception/model_registry.py",
+      "bytes": 3256,
+      "sha256": "f5df2c82977fce73cbf3ed99a3497334e42eae2fcbdbf5446d9142521a44c0bb"
+    },
+    {
+      "path": "src/pfpd_perception/temporal.py",
+      "bytes": 7014,
+      "sha256": "89065a55049c7bdb3258236c553b0d75ff96bae4dc5ac6f91e25946ce93bdba4"
+    },
+    {
+      "path": "tests/smart_city/test_foundry_network.py",
+      "bytes": 2270,
+      "sha256": "b06e441c0eeb709fcd979c6c5d277de76bbd064504c3feb7f7e05cad2e2eec72"
+    },
+    {
+      "path": "tests/smart_city/test_perception.py",
+      "bytes": 1863,
+      "sha256": "3f54d43608419b589cb913cf55dfffa9c5d2291a8e8b1225a46123cb0edd36f2"
+    },
+    {
+      "path": "tests/smart_city/test_smart_city_slice.py",
+      "bytes": 3819,
+      "sha256": "3ed5064fa1a9b7271279094b8a928a3da97f1ecfa4a8b0a21f0e172496b85bf1"
+    },
+    {
+      "path": "tests/test_m1_inference.py",
+      "bytes": 17743,
+      "sha256": "af8ddc5ac6888b53c89c9489f110e97cb538d0c5e7e2dca107c38bc4bad02a80"
+    }
+  ],
+  "exclusion": "FOUNDRY_NETWORK_DESIGN.md is being completed by the already assigned planning specialist; it is the only pre-existing planning path excluded from comparison."
+}

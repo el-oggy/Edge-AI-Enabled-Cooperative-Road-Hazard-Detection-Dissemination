@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "error": null,
+  "mode": "traffic_only",
+  "source_mode": "mapped_road_photographs",
+  "inference_executed": false,
+  "model_forward_counts_consumed": {},
+  "processed_hazards": [],
+  "sim_time_s": 30.0,
+  "wall_elapsed_s": 1.4810855000032461,
+  "counts": {
+    "reports": 0,
+    "warnings": 0,
+    "avoided": 0,
+    "traversals": 0,
+    "drops": 0
+  },
+  "sumo_exit_code": 0,
+  "authored_files_unchanged": true,
+  "active_vehicle_max": 15,
+  "minimum_active_after_180s": null,
+  "minimum_moving_after_180s": null,
+  "observed_types": {
+    "car": 3,
+    "ev": 3,
+    "motorcycle": 3,
+    "small_passenger": 2,
+    "bus": 2,
+    "truck": 2
+  },
+  "tls_observed_states": {
+    "J1": [
+      "GGGggrrrrrGGGggrrrrr"
+    ],
+    "J2": [
+      "GGGggrrrrrGGGggrrrrr"
+    ]
+  },
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "screenshots": [],
+  "screenshot_contexts": [],
+  "limitations": [
+    "Mapped still photographs; no SUMO camera or temporal video validation.",
+    "LoRa delivery is modeled, not transmitted or range-qualified.",
+    "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+  ]
+}

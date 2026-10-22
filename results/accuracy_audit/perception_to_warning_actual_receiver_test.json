@@ -1,0 +1,172 @@
+{
+  "title": "PFPD Perception-to-Warning Actual Receiver Path Validation",
+  "timestamp": 1792508924.0325744,
+  "hardware": "Raspberry Pi 5 (8GB RAM, Cortex-A76 @ 2.4 GHz)",
+  "model": "unified_yolo11n_384_int8.mnn (2 Threads)",
+  "stream_info": {
+    "total_frames": 100,
+    "scenes_count": 20,
+    "burst_frames_per_scene": 5
+  },
+  "throughput_fps": 17.62,
+  "latency_stages_mean_ms": {
+    "1_video_decode": 17.56,
+    "2_preprocessing": 2.13,
+    "3_inference": 31.69,
+    "3_inference_p95": 31.87,
+    "4_postprocessing": 0.27,
+    "5_tracking": 0.02,
+    "6_warning_generation": 0.01,
+    "7_socket_tx": 0.04,
+    "8_in_flight_network_delay": 0.111,
+    "total_perception_to_delivery_delay_mean": 51.25,
+    "total_perception_to_delivery_delay_p95": 62.89
+  },
+  "event_accounting": {
+    "total_packets_sent": 85,
+    "total_packets_received": 85,
+    "delivery_rate_percent": 100.0,
+    "independent_hazard_events_count": 11,
+    "repeat_track_updates_count": 74
+  },
+  "sample_received_warnings": [
+    {
+      "magic": "PF",
+      "version": 1,
+      "station_id": 1001,
+      "hazard_event_id": 1,
+      "event_type": "NEW_INDEPENDENT_HAZARD",
+      "class_id": 2,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.332,
+      "bbox": [
+        553,
+        201,
+        738,
+        315
+      ],
+      "capture_ts_ns": 1792508918630673487,
+      "tx_ts_ns": 1792508918668998774,
+      "t_rx_ns": 1792508918669152070,
+      "in_flight_network_delay_ms": 0.153,
+      "total_perception_to_delivery_delay_ms": 38.48
+    },
+    {
+      "magic": "PF",
+      "version": 1,
+      "station_id": 1001,
+      "hazard_event_id": 2,
+      "event_type": "NEW_INDEPENDENT_HAZARD",
+      "class_id": 2,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.2637,
+      "bbox": [
+        410,
+        176,
+        558,
+        270
+      ],
+      "capture_ts_ns": 1792508918630673487,
+      "tx_ts_ns": 1792508918669095478,
+      "t_rx_ns": 1792508918669193663,
+      "in_flight_network_delay_ms": 0.098,
+      "total_perception_to_delivery_delay_ms": 38.52
+    },
+    {
+      "magic": "PF",
+      "version": 1,
+      "station_id": 1001,
+      "hazard_event_id": 1,
+      "event_type": "REPEAT_TRACK_UPDATE",
+      "class_id": 2,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.332,
+      "bbox": [
+        553,
+        201,
+        738,
+        315
+      ],
+      "capture_ts_ns": 1792508918669122589,
+      "tx_ts_ns": 1792508918707525376,
+      "t_rx_ns": 1792508918707659783,
+      "in_flight_network_delay_ms": 0.134,
+      "total_perception_to_delivery_delay_ms": 38.54
+    },
+    {
+      "magic": "PF",
+      "version": 1,
+      "station_id": 1001,
+      "hazard_event_id": 2,
+      "event_type": "REPEAT_TRACK_UPDATE",
+      "class_id": 2,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.2637,
+      "bbox": [
+        410,
+        176,
+        558,
+        270
+      ],
+      "capture_ts_ns": 1792508918669122589,
+      "tx_ts_ns": 1792508918707612154,
+      "t_rx_ns": 1792508918707687320,
+      "in_flight_network_delay_ms": 0.075,
+      "total_perception_to_delivery_delay_ms": 38.56
+    },
+    {
+      "magic": "PF",
+      "version": 1,
+      "station_id": 1001,
+      "hazard_event_id": 1,
+      "event_type": "REPEAT_TRACK_UPDATE",
+      "class_id": 2,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.332,
+      "bbox": [
+        553,
+        201,
+        738,
+        315
+      ],
+      "capture_ts_ns": 1792508918707632765,
+      "tx_ts_ns": 1792508918745863125,
+      "t_rx_ns": 1792508918746000552,
+      "in_flight_network_delay_ms": 0.137,
+      "total_perception_to_delivery_delay_ms": 38.37
+    },
+    {
+      "magic": "PF",
+      "version": 1,
+      "station_id": 1001,
+      "hazard_event_id": 2,
+      "event_type": "REPEAT_TRACK_UPDATE",
+      "class_id": 2,
+      "class_name": "road_accident_obstacle",
+      "conf": 0.2637,
+      "bbox": [
+        410,
+        176,
+        558,
+        270
+      ],
+      "capture_ts_ns": 1792508918707632765,
+      "tx_ts_ns": 1792508918745948514,
+      "t_rx_ns": 1792508918746032663,
+      "in_flight_network_delay_ms": 0.084,
+      "total_perception_to_delivery_delay_ms": 38.4
+    }
+  ],
+  "hardware_telemetry": {
+    "start": {
+      "temp_str": "temp=49.4'C",
+      "temp_c": 49.4,
+      "throttled": "throttled=0x0"
+    },
+    "end": {
+      "temp_str": "temp=49.9'C",
+      "temp_c": 49.9,
+      "throttled": "throttled=0x0"
+    }
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "status": "completed",
+  "error": null,
+  "mode": "native_visual_demo",
+  "ai_inference": false,
+  "wall_elapsed_s": 15.51679310000327,
+  "last_sample_sim_time_s": 180.0,
+  "active_vehicle_min": 1,
+  "active_vehicle_max": 72,
+  "minimum_active_after_180s": 72,
+  "minimum_moving_after_180s": 69,
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "tls_observed_states": {
+    "TL_D1": [
+      "GGggrrrrGGGggrrrr",
+      "rrGGrrrrrrrGGrrrr",
+      "rrrrGGggrrrrrGGgg",
+      "rrrryyyyrrrrryyyy",
+      "rryyrrrrrrryyrrrr",
+      "yyggrrrryyyggrrrr"
+    ],
+    "TL_D2": [
+      "GGGggrrrrGGGggrrrr",
+      "rrrrrGGggrrrrrGGgg",
+      "rrrrryyyyrrrrryyyy",
+      "yyyyyrrrryyyyyrrrr"
+    ],
+    "TL_D3": [
+      "GGGggrrrrGGggrrrr",
+      "rrrGGrrrrrrGGrrrr",
+      "rrrrrGGggrrrrGGgg",
+      "rrrrryyyyrrrryyyy",
+      "rrryyrrrrrryyrrrr",
+      "yyyggrrrryyggrrrr"
+    ]
+  },
+  "authored_files_unchanged": true,
+  "screenshots": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\overview.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\follow.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\court.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_pothole.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_puddle.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_manhole.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_asphalt_patch.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_fallen_tree.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_debris.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_incident_car.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_construction.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_event_loop\\detail_junction.png"
+  ],
+  "missing_screenshots": [],
+  "blank_screenshots": [],
+  "screenshot_contexts": [
+    {
+      "name": "overview",
+      "requested_sim_time_s": 90.1,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          -360.7054616384916,
+          -55.0
+        ],
+        [
+          1275.7054616384917,
+          825.0
+        ]
+      ]
+    },
+    {
+      "name": "follow",
+      "requested_sim_time_s": 90.4,
+      "followed_vehicle": "bus_10",
+      "boundary": [
+        [
+          473.40986911963506,
+          5.440428879609314
+        ],
+        [
+          584.9833411612475,
+          65.44042887960931
+        ]
+      ]
+    },
+    {
+      "name": "court",
+      "requested_sim_time_s": 90.7,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          658.3224967490247,
+          636.0
+        ],
+        [
+          931.6775032509753,
+          783.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_pothole",
+      "requested_sim_time_s": 91.0,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          697.9830949284785,
+          756.0
+        ],
+        [
+          724.0169050715215,
+          770.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_puddle",
+      "requested_sim_time_s": 91.3,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          758.9830949284785,
+          756.0
+        ],
+        [
+          785.0169050715215,
+          770.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_manhole",
+      "requested_sim_time_s": 91.6,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          819.9830949284785,
+          756.0
+        ],
+        [
+          846.0169050715215,
+          770.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_asphalt_patch",
+      "requested_sim_time_s": 91.9,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          880.9830949284785,
+          756.0
+        ],
+        [
+          907.0169050715215,
+          770.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_fallen_tree",
+      "requested_sim_time_s": 92.2,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          697.9830949284785,
+          737.0
+        ],
+        [
+          724.0169050715215,
+          751.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_debris",
+      "requested_sim_time_s": 92.5,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          758.9830949284785,
+          737.0
+        ],
+        [
+          785.0169050715215,
+          751.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_incident_car",
+      "requested_sim_time_s": 92.8,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          819.9830949284785,
+          737.0
+        ],
+        [
+          846.0169050715215,
+          751.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_construction",
+      "requested_sim_time_s": 93.1,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          880.9830949284785,
+          737.0
+        ],
+        [
+          907.0169050715215,
+          751.0
+        ]
+      ]
+    },
+    {
+      "name": "detail_junction",
+      "requested_sim_time_s": 93.4,
+      "followed_vehicle": null,
+      "boundary": [
+        [
+          399.88392717815344,
+          346.73
+        ],
+        [
+          517.0360728218466,
+          409.73
+        ]
+      ]
+    }
+  ]
+}

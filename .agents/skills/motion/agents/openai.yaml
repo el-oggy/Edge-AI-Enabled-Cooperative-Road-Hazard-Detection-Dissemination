@@ -1,0 +1,6 @@
+interface:
+  display_name: "Motion"
+  short_description: "Animated product videos from editable motion code"
+  default_prompt: "Use $motion to create an animated video for this product or project, with an MP4 and editable source."
+policy:
+  allow_implicit_invocation: true

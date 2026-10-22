@@ -1,0 +1,161 @@
+{
+  "status": "completed",
+  "error": null,
+  "mode": "real_onnx_integrated",
+  "source_mode": "mapped_road_photographs",
+  "inference_executed": true,
+  "model_forward_counts_consumed": {
+    "pothole": 3,
+    "construction": 3,
+    "accident_obstacle": 3
+  },
+  "processed_hazards": [
+    "accident_obstacle",
+    "construction",
+    "pothole"
+  ],
+  "sim_time_s": 150.0,
+  "wall_elapsed_s": 157.0583570000017,
+  "counts": {
+    "reports": 5,
+    "warnings": 162,
+    "avoided": 6,
+    "traversals": 4,
+    "drops": 2
+  },
+  "sumo_exit_code": 0,
+  "authored_files_unchanged": true,
+  "bypass_counter_definition": "fresh warning and request followed by observed lane response and bypass; not a counterfactual safety benefit",
+  "active_vehicle_max": 72,
+  "minimum_active_after_180s": null,
+  "minimum_moving_after_180s": null,
+  "observed_types": {
+    "car": 28,
+    "ev": 12,
+    "motorcycle": 12,
+    "small_passenger": 8,
+    "bus": 6,
+    "truck": 6
+  },
+  "tls_observed_states": {
+    "J1": [
+      "GGGggrrrrrGGGggrrrrr",
+      "rrrrrGGGggrrrrrGGGgg",
+      "rrrrryyyyyrrrrryyyyy",
+      "yyyyyrrrrryyyyyrrrrr"
+    ],
+    "J2": [
+      "GGGggrrrrrGGGggrrrrr",
+      "rrrrrGGGggrrrrrGGGgg",
+      "rrrrryyyyyrrrrryyyyy",
+      "yyyyyrrrrryyyyyrrrrr"
+    ]
+  },
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "screenshots": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_presented\\overview.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_presented\\follow.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_presented\\pothole.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_presented\\construction.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_presented\\accident_obstacle.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\live_gui_presented\\inference_panel.png"
+  ],
+  "screenshot_contexts": [
+    {
+      "name": "overview",
+      "request_sim_s": 113.0,
+      "boundary": [
+        [
+          -205.3608760577403,
+          -103.87755102040816
+        ],
+        [
+          745.3608760577404,
+          283.8775510204082
+        ]
+      ],
+      "completed_after_sim_step_s": 113.1
+    },
+    {
+      "name": "follow",
+      "request_sim_s": 113.7,
+      "boundary": [
+        [
+          276.5658117418983,
+          81.174600842538
+        ],
+        [
+          366.63418825810174,
+          117.90929472008902
+        ]
+      ],
+      "completed_after_sim_step_s": 113.8
+    },
+    {
+      "name": "pothole",
+      "request_sim_s": 114.4,
+      "boundary": [
+        [
+          284.76961043724293,
+          103.67346938775509
+        ],
+        [
+          364.8303895627571,
+          136.3265306122449
+        ]
+      ],
+      "completed_after_sim_step_s": 114.5
+    },
+    {
+      "name": "construction",
+      "request_sim_s": 115.1,
+      "boundary": [
+        [
+          167.1696104372429,
+          168.4734693877551
+        ],
+        [
+          247.23038956275707,
+          201.12653061224492
+        ]
+      ],
+      "completed_after_sim_step_s": 115.2
+    },
+    {
+      "name": "accident_obstacle",
+      "request_sim_s": 115.8,
+      "boundary": [
+        [
+          -44.830389562757055,
+          47.2734693877551
+        ],
+        [
+          35.230389562757054,
+          79.92653061224489
+        ]
+      ],
+      "completed_after_sim_step_s": 115.9
+    },
+    {
+      "name": "inference_panel",
+      "request_sim_s": 116.5,
+      "boundary": [
+        [
+          249.82905870949142,
+          18.163265306122426
+        ],
+        [
+          700.1709412905086,
+          201.8367346938776
+        ]
+      ],
+      "completed_after_sim_step_s": 116.6
+    }
+  ],
+  "limitations": [
+    "Mapped still photographs; no SUMO camera or temporal video validation.",
+    "LoRa delivery is modeled, not transmitted or range-qualified.",
+    "Crossing a pothole is a measured route/lane traversal, not physical damage simulation."
+  ]
+}

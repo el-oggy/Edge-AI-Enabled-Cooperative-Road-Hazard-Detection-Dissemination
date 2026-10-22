@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "error": null,
+  "mode": "native_visual_demo",
+  "ai_inference": false,
+  "wall_elapsed_s": 3.1270390000063344,
+  "last_sample_sim_time_s": 10.0,
+  "active_vehicle_min": 1,
+  "active_vehicle_max": 5,
+  "minimum_active_after_180s": null,
+  "minimum_moving_after_180s": null,
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "tls_observed_states": {
+    "TL_D1": [
+      "GGggrrrrGGGggrrrr"
+    ],
+    "TL_D2": [
+      "GGGggrrrrGGGggrrrr"
+    ],
+    "TL_D3": [
+      "GGGggrrrrGGggrrrr"
+    ]
+  },
+  "authored_files_unchanged": true,
+  "screenshots": [
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\overview.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\follow.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\court.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_pothole.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_puddle.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_manhole.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_asphalt_patch.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_fallen_tree.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_debris.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_incident_car.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_construction.png",
+    "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\gui_vehicle_mode_probe\\detail_junction.png"
+  ],
+  "missing_screenshots": []
+}

@@ -1,0 +1,8 @@
+names:
+- pothole
+- construction_hazard
+- road_accident_obstacle
+nc: 3
+path: /kaggle/working/finetune_v3_ablation_a
+train: images/train
+val: images/val

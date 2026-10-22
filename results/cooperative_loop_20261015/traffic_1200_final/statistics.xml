@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-16T00:36:01.215300+05:30 by Eclipse SUMO sumo 1.27.1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.net.xml"/>
+        <route-files value="C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.rou.xml"/>
+        <additional-files value="C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.scenery.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="C:\Users\adars\OneDrive\Desktop\PFPD-ll\results\cooperative_loop_20261015\traffic_1200_final\trips.xml"/>
+        <statistic-output value="C:\Users\adars\OneDrive\Desktop\PFPD-ll\results\cooperative_loop_20261015\traffic_1200_final\statistics.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="1200.0"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="false"/>
+        <collision.action value="warn"/>
+    </processing>
+
+    <report>
+        <log value="C:\Users\adars\OneDrive\Desktop\PFPD-ll\results\cooperative_loop_20261015\traffic_1200_final\sumo.log"/>
+        <error-log value="C:\Users\adars\OneDrive\Desktop\PFPD-ll\results\cooperative_loop_20261015\traffic_1200_final\sumo-errors.log"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="62948"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.view.xml"/>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+        <window-size value="1440,960"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
+    <performance clockBegin="70382.52" clockEnd="70471.01" clockDuration="88.49" traciDuration="74.14" realTimeFactor="13.56" vehicleUpdatesPerSecond="9457.55" personUpdatesPerSecond="0.00" begin="0.00" end="1200.00" duration="1200.00"/>
+    <vehicles loaded="74" inserted="74" running="74" waiting="0"/>
+    <teleports total="0" jam="0" yield="0" wrongLane="0"/>
+    <safety collisions="0" emergencyStops="0" emergencyBraking="0"/>
+    <persons loaded="0" running="0" jammed="0"/>
+    <personTeleports total="0" abortWait="0" wrongDest="0"/>
+    <vehicleTripStatistics count="0" routeLength="0.00" speed="0.00" duration="0.00" waitingTime="0.00" timeLoss="0.00" departDelay="0.00" departDelayWaiting="-1.00" totalTravelTime="0.00" totalDepartDelay="0.00"/>
+    <pedestrianStatistics number="0" routeLength="0.00" duration="0.00" timeLoss="0.00"/>
+    <rideStatistics number="0"/>
+    <transportStatistics number="0"/>
+</statistics>

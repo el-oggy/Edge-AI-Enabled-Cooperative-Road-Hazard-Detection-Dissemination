@@ -1,0 +1,23 @@
+{
+  "route": [
+    "cw_SW_J1",
+    "cw_J1_SE",
+    "cw_SE_NE",
+    "cw_NE_J2",
+    "cw_J2_NW",
+    "cw_NW_SW"
+  ],
+  "lane_index": 0,
+  "external_length_m": 907.2,
+  "internal_length_m": 113.84,
+  "closed_loop_length_m": 1021.0400000000001,
+  "junction_via_lanes": [
+    ":J1_16_0",
+    ":SE_2_0",
+    ":NE_0_0",
+    ":J2_6_0",
+    ":NW_0_0",
+    ":SW_0_0"
+  ],
+  "nominal_design_centerline_perimeter_m": 1000
+}

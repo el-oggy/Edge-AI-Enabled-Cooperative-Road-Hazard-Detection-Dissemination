@@ -1,0 +1,29 @@
+[
+  {
+    "initial": [
+      "View #0"
+    ]
+  },
+  {
+    "requested": "Follow",
+    "ids": [
+      "View #0"
+    ]
+  },
+  {
+    "after_step": [
+      "View #0"
+    ]
+  },
+  {
+    "requested": "Inspection court",
+    "ids": [
+      "View #0"
+    ]
+  },
+  {
+    "after_step": [
+      "View #0"
+    ]
+  }
+]

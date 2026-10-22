@@ -1,0 +1,64 @@
+{
+  "ablation": "A",
+  "description": "Ablation A: v3 Balanced Dataset + Original Freeze (Layers 0-7)",
+  "freeze_layers": 8,
+  "train_duration_sec": 620.4706943035126,
+  "baseline_metrics": {
+    "mAP50": 0.5151891877112175,
+    "mAP50_95": 0.3696280081253598,
+    "per_class": {
+      "pothole": {
+        "precision": 0.9292717613205852,
+        "recall": 0.8759484100354887,
+        "f1": 0.901822541909861,
+        "mAP50": 0.9582690467821231
+      },
+      "construction_hazard": {
+        "precision": 0.8132830762441665,
+        "recall": 0.057818339029332165,
+        "f1": 0.10796142861124788,
+        "mAP50": 0.05540505034191798
+      },
+      "road_accident_obstacle": {
+        "precision": 0.46899946189136443,
+        "recall": 0.5806451612903226,
+        "f1": 0.518884700937202,
+        "mAP50": 0.5318934660096115
+      }
+    }
+  },
+  "candidate_metrics": {
+    "mAP50": 0.8081092159918226,
+    "mAP50_95": 0.5106151029683409,
+    "per_class": {
+      "pothole": {
+        "precision": 0.826521141714494,
+        "recall": 0.92,
+        "f1": 0.8707589415503771,
+        "mAP50": 0.9274163082214004
+      },
+      "construction_hazard": {
+        "precision": 0.7623668781626256,
+        "recall": 0.6291390728476821,
+        "f1": 0.6893751198818454,
+        "mAP50": 0.7691157025484955
+      },
+      "road_accident_obstacle": {
+        "precision": 0.7720386403899472,
+        "recall": 0.6193548387096774,
+        "f1": 0.6873194028561599,
+        "mAP50": 0.7277956372055718
+      }
+    }
+  },
+  "hyperparameters": {
+    "epochs": 10,
+    "batch_size": 32,
+    "imgsz": 512,
+    "lr0": 5e-05,
+    "lrf": 0.02,
+    "mosaic": 0.15,
+    "close_mosaic": 3,
+    "scale": 0.2
+  }
+}

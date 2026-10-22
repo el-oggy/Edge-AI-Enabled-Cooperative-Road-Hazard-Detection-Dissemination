@@ -1,0 +1,872 @@
+{
+  "timestamp": 1792460284.3439295,
+  "hardware": "Raspberry Pi 5 Model B Rev 1.0 (8GB RAM, Quad Cortex-A76 @ 2.4 GHz)",
+  "configuration": {
+    "execution_mode": "Sequential Authentic 3-Specialist Pipeline",
+    "models": [
+      "quantization/pothole_yolo11s_int8.onnx",
+      "quantization/construction_yolo11s_int8.onnx",
+      "quantization/accident_obstacle_yolo11s_int8.onnx"
+    ],
+    "input_resolution": [
+      768,
+      768
+    ],
+    "threads_per_session": 2,
+    "runtime": "ONNX Runtime (CPUExecutionProvider)",
+    "safety_pacing_delay_ms": 50
+  },
+  "system_health": {
+    "temp_start": "temp=51.0'C",
+    "temp_end": "temp=59.3'C",
+    "throttled_start": "throttled=0x0",
+    "throttled_end": "throttled=0x0"
+  },
+  "metrics": {
+    "total_frames_evaluated": 30,
+    "mean_latency_ms": 1592.97,
+    "p50_latency_ms": 1592.51,
+    "p95_latency_ms": 1600.83,
+    "min_latency_ms": 1584.74,
+    "max_latency_ms": 1605.02,
+    "pure_inference_fps": 0.63,
+    "total_raw_detections": 60,
+    "total_confirmed_events": 5,
+    "resident_memory_rss_mb": 749.3
+  },
+  "frames": [
+    {
+      "frame_idx": 1,
+      "category": "potholes",
+      "file": "dry_12.jpg",
+      "latency_ms": 1596.25,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 8.31,
+        "model_inferences": {
+          "pothole": 513.54,
+          "construction": 520.35,
+          "accident_obstacle": 514.97
+        },
+        "total_inference": 1587.85,
+        "postprocess_nms": 0.03,
+        "total_e2e": 1596.19
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 2,
+      "category": "potholes",
+      "file": "dry_13.jpg",
+      "latency_ms": 1605.02,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 5.22,
+        "model_inferences": {
+          "pothole": 519.21,
+          "construction": 523.45,
+          "accident_obstacle": 517.82
+        },
+        "total_inference": 1599.73,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1604.97
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 3,
+      "category": "potholes",
+      "file": "dry_14.jpg",
+      "latency_ms": 1589.73,
+      "raw_detections": 1,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.72,
+        "model_inferences": {
+          "pothole": 514.22,
+          "construction": 515.0,
+          "accident_obstacle": 516.58
+        },
+        "total_inference": 1584.97,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1589.7
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 4,
+      "category": "potholes",
+      "file": "dry_15.jpg",
+      "latency_ms": 1584.74,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.5,
+        "model_inferences": {
+          "pothole": 514.55,
+          "construction": 514.41,
+          "accident_obstacle": 512.17
+        },
+        "total_inference": 1580.17,
+        "postprocess_nms": 0.02,
+        "total_e2e": 1584.69
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 5,
+      "category": "potholes",
+      "file": "dry_16.jpg",
+      "latency_ms": 1586.84,
+      "raw_detections": 9,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 5.02,
+        "model_inferences": {
+          "pothole": 513.32,
+          "construction": 514.53,
+          "accident_obstacle": 513.51
+        },
+        "total_inference": 1581.64,
+        "postprocess_nms": 0.04,
+        "total_e2e": 1586.7
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 6,
+      "category": "potholes",
+      "file": "dry_17.jpg",
+      "latency_ms": 1598.29,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.61,
+        "model_inferences": {
+          "pothole": 517.58,
+          "construction": 518.8,
+          "accident_obstacle": 517.06
+        },
+        "total_inference": 1593.61,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1598.23
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 7,
+      "category": "potholes",
+      "file": "dry_18.jpg",
+      "latency_ms": 1602.9,
+      "raw_detections": 1,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.91,
+        "model_inferences": {
+          "pothole": 523.27,
+          "construction": 518.91,
+          "accident_obstacle": 516.62
+        },
+        "total_inference": 1597.94,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1602.85
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 8,
+      "category": "potholes",
+      "file": "dry_19.jpg",
+      "latency_ms": 1595.34,
+      "raw_detections": 0,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.45,
+        "model_inferences": {
+          "pothole": 517.52,
+          "construction": 518.51,
+          "accident_obstacle": 515.72
+        },
+        "total_inference": 1590.84,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1595.29
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 9,
+      "category": "potholes",
+      "file": "dry_20.jpg",
+      "latency_ms": 1593.08,
+      "raw_detections": 3,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.44,
+        "model_inferences": {
+          "pothole": 517.79,
+          "construction": 515.34,
+          "accident_obstacle": 515.35
+        },
+        "total_inference": 1588.55,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1593.0
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 10,
+      "category": "potholes",
+      "file": "dry_21.jpg",
+      "latency_ms": 1595.9,
+      "raw_detections": 4,
+      "confirmed_hazards": 2,
+      "timings_ms": {
+        "preprocess": 5.25,
+        "model_inferences": {
+          "pothole": 516.58,
+          "construction": 517.53,
+          "accident_obstacle": 517.03
+        },
+        "total_inference": 1590.51,
+        "postprocess_nms": 0.02,
+        "total_e2e": 1595.78
+      },
+      "denm_messages": [
+        {
+          "etsi_standard_references": {
+            "cdd": "ETSI_TS_102_894_2_v1.3.1",
+            "denm": "ETSI_EN_302_637_3_v1.3.1"
+          },
+          "header": {
+            "protocolVersion": 2,
+            "messageID": 1,
+            "stationID": "RSU_PI5_ACCEPTANCE"
+          },
+          "management": {
+            "actionID": {
+              "originatingStationID": "RSU_PI5_ACCEPTANCE",
+              "sequenceNumber": 21
+            },
+            "detectionTime": 1792460251.0767465,
+            "referenceTime": 1792460251.0767467,
+            "termination": "isNotFinished"
+          },
+          "situation": {
+            "informationQuality": 5,
+            "eventType": {
+              "causeCode": 3,
+              "subCauseCode": 1,
+              "cddName": "roadworks",
+              "subCauseName": "majorRoadworks"
+            },
+            "causeCode": 3,
+            "subCauseCode": 1,
+            "hazardType": "construction_hazard",
+            "confidenceScore": 0.8775,
+            "temporalHits": 2
+          },
+          "location": {
+            "boundingBox": [
+              918,
+              360,
+              1335,
+              800
+            ],
+            "distanceMetersEstimated": 6.0
+          },
+          "actionID": "RSU_PI5_ACCEPTANCE_TRK0021",
+          "stationID": "RSU_PI5_ACCEPTANCE",
+          "disseminationStatus": "BROADCAST_ACTIVE"
+        },
+        {
+          "etsi_standard_references": {
+            "cdd": "ETSI_TS_102_894_2_v1.3.1",
+            "denm": "ETSI_EN_302_637_3_v1.3.1"
+          },
+          "header": {
+            "protocolVersion": 2,
+            "messageID": 1,
+            "stationID": "RSU_PI5_ACCEPTANCE"
+          },
+          "management": {
+            "actionID": {
+              "originatingStationID": "RSU_PI5_ACCEPTANCE",
+              "sequenceNumber": 22
+            },
+            "detectionTime": 1792460251.0767643,
+            "referenceTime": 1792460251.0767643,
+            "termination": "isNotFinished"
+          },
+          "situation": {
+            "informationQuality": 5,
+            "eventType": {
+              "causeCode": 2,
+              "subCauseCode": 1,
+              "cddName": "accident",
+              "subCauseName": "multiVehicleAccident"
+            },
+            "causeCode": 2,
+            "subCauseCode": 1,
+            "hazardType": "road_accident_obstacle",
+            "confidenceScore": 0.4602,
+            "temporalHits": 2
+          },
+          "location": {
+            "boundingBox": [
+              209,
+              353,
+              1353,
+              1148
+            ],
+            "distanceMetersEstimated": 5.0
+          },
+          "actionID": "RSU_PI5_ACCEPTANCE_TRK0022",
+          "stationID": "RSU_PI5_ACCEPTANCE",
+          "disseminationStatus": "BROADCAST_ACTIVE"
+        }
+      ]
+    },
+    {
+      "frame_idx": 11,
+      "category": "construction",
+      "file": "const_sign_18.jpg",
+      "latency_ms": 1593.45,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.31,
+        "model_inferences": {
+          "pothole": 517.36,
+          "construction": 517.53,
+          "accident_obstacle": 514.93
+        },
+        "total_inference": 1589.09,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1593.41
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 12,
+      "category": "construction",
+      "file": "const_sign_19.jpg",
+      "latency_ms": 1592.8,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.47,
+        "model_inferences": {
+          "pothole": 516.73,
+          "construction": 516.43,
+          "accident_obstacle": 515.92
+        },
+        "total_inference": 1588.26,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1592.74
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 13,
+      "category": "construction",
+      "file": "const_sign_20.jpg",
+      "latency_ms": 1592.66,
+      "raw_detections": 4,
+      "confirmed_hazards": 2,
+      "timings_ms": {
+        "preprocess": 4.66,
+        "model_inferences": {
+          "pothole": 516.34,
+          "construction": 516.53,
+          "accident_obstacle": 515.43
+        },
+        "total_inference": 1587.87,
+        "postprocess_nms": 0.02,
+        "total_e2e": 1592.56
+      },
+      "denm_messages": [
+        {
+          "etsi_standard_references": {
+            "cdd": "ETSI_TS_102_894_2_v1.3.1",
+            "denm": "ETSI_EN_302_637_3_v1.3.1"
+          },
+          "header": {
+            "protocolVersion": 2,
+            "messageID": 1,
+            "stationID": "RSU_PI5_ACCEPTANCE"
+          },
+          "management": {
+            "actionID": {
+              "originatingStationID": "RSU_PI5_ACCEPTANCE",
+              "sequenceNumber": 22
+            },
+            "detectionTime": 1792460256.056534,
+            "referenceTime": 1792460256.056534,
+            "termination": "isNotFinished"
+          },
+          "situation": {
+            "informationQuality": 5,
+            "eventType": {
+              "causeCode": 2,
+              "subCauseCode": 1,
+              "cddName": "accident",
+              "subCauseName": "multiVehicleAccident"
+            },
+            "causeCode": 2,
+            "subCauseCode": 1,
+            "hazardType": "road_accident_obstacle",
+            "confidenceScore": 0.8834,
+            "temporalHits": 3
+          },
+          "location": {
+            "boundingBox": [
+              178,
+              380,
+              715,
+              1249
+            ],
+            "distanceMetersEstimated": 5.0
+          },
+          "actionID": "RSU_PI5_ACCEPTANCE_TRK0022",
+          "stationID": "RSU_PI5_ACCEPTANCE",
+          "disseminationStatus": "BROADCAST_ACTIVE"
+        },
+        {
+          "etsi_standard_references": {
+            "cdd": "ETSI_TS_102_894_2_v1.3.1",
+            "denm": "ETSI_EN_302_637_3_v1.3.1"
+          },
+          "header": {
+            "protocolVersion": 2,
+            "messageID": 1,
+            "stationID": "RSU_PI5_ACCEPTANCE"
+          },
+          "management": {
+            "actionID": {
+              "originatingStationID": "RSU_PI5_ACCEPTANCE",
+              "sequenceNumber": 22
+            },
+            "detectionTime": 1792460256.0565488,
+            "referenceTime": 1792460256.0565488,
+            "termination": "isNotFinished"
+          },
+          "situation": {
+            "informationQuality": 5,
+            "eventType": {
+              "causeCode": 2,
+              "subCauseCode": 1,
+              "cddName": "accident",
+              "subCauseName": "multiVehicleAccident"
+            },
+            "causeCode": 2,
+            "subCauseCode": 1,
+            "hazardType": "road_accident_obstacle",
+            "confidenceScore": 0.3881,
+            "temporalHits": 4
+          },
+          "location": {
+            "boundingBox": [
+              203,
+              383,
+              691,
+              774
+            ],
+            "distanceMetersEstimated": 10.9
+          },
+          "actionID": "RSU_PI5_ACCEPTANCE_TRK0022",
+          "stationID": "RSU_PI5_ACCEPTANCE",
+          "disseminationStatus": "BROADCAST_ACTIVE"
+        }
+      ]
+    },
+    {
+      "frame_idx": 14,
+      "category": "construction",
+      "file": "const_sign_21.jpg",
+      "latency_ms": 1592.35,
+      "raw_detections": 1,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.31,
+        "model_inferences": {
+          "pothole": 517.49,
+          "construction": 517.74,
+          "accident_obstacle": 513.39
+        },
+        "total_inference": 1587.98,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1592.29
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 15,
+      "category": "construction",
+      "file": "const_sign_22.jpg",
+      "latency_ms": 1596.24,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.44,
+        "model_inferences": {
+          "pothole": 516.35,
+          "construction": 518.77,
+          "accident_obstacle": 517.24
+        },
+        "total_inference": 1591.73,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1596.18
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 16,
+      "category": "construction",
+      "file": "const_sign_23.jpg",
+      "latency_ms": 1597.01,
+      "raw_detections": 3,
+      "confirmed_hazards": 1,
+      "timings_ms": {
+        "preprocess": 4.69,
+        "model_inferences": {
+          "pothole": 517.34,
+          "construction": 516.94,
+          "accident_obstacle": 518.74
+        },
+        "total_inference": 1592.19,
+        "postprocess_nms": 0.02,
+        "total_e2e": 1596.91
+      },
+      "denm_messages": [
+        {
+          "etsi_standard_references": {
+            "cdd": "ETSI_TS_102_894_2_v1.3.1",
+            "denm": "ETSI_EN_302_637_3_v1.3.1"
+          },
+          "header": {
+            "protocolVersion": 2,
+            "messageID": 1,
+            "stationID": "RSU_PI5_ACCEPTANCE"
+          },
+          "management": {
+            "actionID": {
+              "originatingStationID": "RSU_PI5_ACCEPTANCE",
+              "sequenceNumber": 35
+            },
+            "detectionTime": 1792460261.0647354,
+            "referenceTime": 1792460261.0647357,
+            "termination": "isNotFinished"
+          },
+          "situation": {
+            "informationQuality": 5,
+            "eventType": {
+              "causeCode": 3,
+              "subCauseCode": 1,
+              "cddName": "roadworks",
+              "subCauseName": "majorRoadworks"
+            },
+            "causeCode": 3,
+            "subCauseCode": 1,
+            "hazardType": "construction_hazard",
+            "confidenceScore": 0.328,
+            "temporalHits": 2
+          },
+          "location": {
+            "boundingBox": [
+              380,
+              975,
+              533,
+              1233
+            ],
+            "distanceMetersEstimated": 24.2
+          },
+          "actionID": "RSU_PI5_ACCEPTANCE_TRK0035",
+          "stationID": "RSU_PI5_ACCEPTANCE",
+          "disseminationStatus": "BROADCAST_ACTIVE"
+        }
+      ]
+    },
+    {
+      "frame_idx": 17,
+      "category": "construction",
+      "file": "const_sign_24.jpg",
+      "latency_ms": 1591.3,
+      "raw_detections": 0,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.88,
+        "model_inferences": {
+          "pothole": 513.34,
+          "construction": 517.24,
+          "accident_obstacle": 516.86
+        },
+        "total_inference": 1586.38,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1591.26
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 18,
+      "category": "construction",
+      "file": "const_sign_25.jpg",
+      "latency_ms": 1590.39,
+      "raw_detections": 1,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.33,
+        "model_inferences": {
+          "pothole": 515.37,
+          "construction": 517.16,
+          "accident_obstacle": 514.55
+        },
+        "total_inference": 1586.0,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1590.34
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 19,
+      "category": "construction",
+      "file": "const_symbols_01.jpg",
+      "latency_ms": 1595.13,
+      "raw_detections": 6,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 3.95,
+        "model_inferences": {
+          "pothole": 518.44,
+          "construction": 516.7,
+          "accident_obstacle": 516.63
+        },
+        "total_inference": 1591.08,
+        "postprocess_nms": 0.02,
+        "total_e2e": 1595.05
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 20,
+      "category": "construction",
+      "file": "const_symbols_02.jpg",
+      "latency_ms": 1589.37,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.13,
+        "model_inferences": {
+          "pothole": 514.66,
+          "construction": 517.84,
+          "accident_obstacle": 513.2
+        },
+        "total_inference": 1585.17,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1589.31
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 21,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_01.jpg",
+      "latency_ms": 1588.46,
+      "raw_detections": 1,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.08,
+        "model_inferences": {
+          "pothole": 512.64,
+          "construction": 518.1,
+          "accident_obstacle": 513.27
+        },
+        "total_inference": 1584.33,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1588.41
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 22,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_02.jpg",
+      "latency_ms": 1594.27,
+      "raw_detections": 1,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 3.89,
+        "model_inferences": {
+          "pothole": 515.39,
+          "construction": 520.3,
+          "accident_obstacle": 515.43
+        },
+        "total_inference": 1590.32,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1594.22
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 23,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_03.jpg",
+      "latency_ms": 1590.26,
+      "raw_detections": 1,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.21,
+        "model_inferences": {
+          "pothole": 515.62,
+          "construction": 515.81,
+          "accident_obstacle": 515.3
+        },
+        "total_inference": 1585.98,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1590.2
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 24,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_04.jpg",
+      "latency_ms": 1591.64,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.87,
+        "model_inferences": {
+          "pothole": 517.18,
+          "construction": 516.05,
+          "accident_obstacle": 513.92
+        },
+        "total_inference": 1586.7,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1591.58
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 25,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_05.jpg",
+      "latency_ms": 1591.51,
+      "raw_detections": 0,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.47,
+        "model_inferences": {
+          "pothole": 516.34,
+          "construction": 515.6,
+          "accident_obstacle": 515.85
+        },
+        "total_inference": 1587.0,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1591.47
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 26,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_06.jpg",
+      "latency_ms": 1587.09,
+      "raw_detections": 4,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.65,
+        "model_inferences": {
+          "pothole": 513.8,
+          "construction": 516.22,
+          "accident_obstacle": 513.12
+        },
+        "total_inference": 1582.34,
+        "postprocess_nms": 0.03,
+        "total_e2e": 1587.02
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 27,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_07.jpg",
+      "latency_ms": 1591.88,
+      "raw_detections": 0,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.12,
+        "model_inferences": {
+          "pothole": 517.53,
+          "construction": 516.23,
+          "accident_obstacle": 514.94
+        },
+        "total_inference": 1587.72,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1591.84
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 28,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_08.jpg",
+      "latency_ms": 1589.12,
+      "raw_detections": 0,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.78,
+        "model_inferences": {
+          "pothole": 515.49,
+          "construction": 516.7,
+          "accident_obstacle": 513.18
+        },
+        "total_inference": 1584.3,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1589.08
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 29,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_09.jpg",
+      "latency_ms": 1590.38,
+      "raw_detections": 2,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 5.6,
+        "model_inferences": {
+          "pothole": 512.48,
+          "construction": 517.0,
+          "accident_obstacle": 515.96
+        },
+        "total_inference": 1584.7,
+        "postprocess_nms": 0.01,
+        "total_e2e": 1590.32
+      },
+      "denm_messages": []
+    },
+    {
+      "frame_idx": 30,
+      "category": "accidents_obstacles",
+      "file": "boulder_rockfall_10.jpg",
+      "latency_ms": 1595.67,
+      "raw_detections": 0,
+      "confirmed_hazards": 0,
+      "timings_ms": {
+        "preprocess": 4.83,
+        "model_inferences": {
+          "pothole": 518.24,
+          "construction": 516.74,
+          "accident_obstacle": 516.88
+        },
+        "total_inference": 1590.8,
+        "postprocess_nms": 0.0,
+        "total_e2e": 1595.63
+      },
+      "denm_messages": []
+    }
+  ]
+}

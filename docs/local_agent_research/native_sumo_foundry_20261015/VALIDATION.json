@@ -1,0 +1,126 @@
+{
+  "verified_utc": "2026-10-15T13:42:11.402068+00:00",
+  "mode": "planning-only, static structural checks",
+  "protected_existing_files": 170,
+  "existing_files_changed": [],
+  "head_unchanged": true,
+  "markdown_files": 5,
+  "local_links_checked": 10,
+  "unique_reverse_paired_input_streets": 12,
+  "unique_input_centerline_m": 5000.0064769290675,
+  "input_nodes": 7,
+  "compiled_noninternal_edges": 24,
+  "tls_ids": [
+    "TL_D1",
+    "TL_D2",
+    "TL_D3"
+  ],
+  "route_connection_checks": [
+    {
+      "id": "r_freight",
+      "bad_connections": [],
+      "last_to_first": true
+    },
+    {
+      "id": "r_market",
+      "bad_connections": [],
+      "last_to_first": true
+    },
+    {
+      "id": "r_cross_district",
+      "bad_connections": [],
+      "last_to_first": true
+    },
+    {
+      "id": "r_crosstown",
+      "bad_connections": [],
+      "last_to_first": true
+    },
+    {
+      "id": "r_depot",
+      "bad_connections": [],
+      "last_to_first": true
+    },
+    {
+      "id": "r_transit",
+      "bad_connections": [],
+      "last_to_first": true
+    },
+    {
+      "id": "r_spine",
+      "bad_connections": [],
+      "last_to_first": true
+    }
+  ],
+  "hypothetical_rsu_subdivision": {
+    "200": {
+      "reference_count": 27,
+      "max_chainage_gap_m": 192.5564102412589,
+      "note": "Calculated hypothetical equal-subdivision plan; not validation of current POI positions."
+    },
+    "500": {
+      "reference_count": 11,
+      "max_chainage_gap_m": 438.6850506912676,
+      "note": "Calculated hypothetical equal-subdivision plan; not validation of current POI positions."
+    }
+  },
+  "git_diff_check_exit_code": 0,
+  "git_diff_check_output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\n",
+  "files": [
+    {
+      "path": "INSPECTION_FINDINGS.md",
+      "bytes": 7586,
+      "sha256": "9ae12449912b71eb278fd8c11528facc7895f62f19050db79150c8a864fb59d4"
+    },
+    {
+      "path": "NATIVE_SUMO_PLAN.md",
+      "bytes": 15210,
+      "sha256": "a38d65d616a0c4ea04e731ecec85b94fde5f440f3e3a47063765dec3e76e3138"
+    },
+    {
+      "path": "POLICY_RECORD.json",
+      "bytes": 1234,
+      "sha256": "ca0d943d8fb9c06aff20bf309ec7b5dafd46fc927dd1e37db0160c2e1a8a5b2e"
+    },
+    {
+      "path": "PRESERVATION_BASELINE.json",
+      "bytes": 32285,
+      "sha256": "04190d3b3661d43e6154f35e863ae1b67ab5e2ffb7d573c68c0384c8cee7e778"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2292,
+      "sha256": "b01c27d3360d32007392ce8c1b1ef1c7f2f32f4f9147416bc940b0d444388428"
+    },
+    {
+      "path": "SPECIALIST_NATIVE_VISUALS.md",
+      "bytes": 19971,
+      "sha256": "ecb000b137718565ea254d01f779bb2356ee07f13c1e9195b78bb9b122579ed2"
+    },
+    {
+      "path": "SUBAGENT_SYSTEM_PROMPT.md",
+      "bytes": 14407,
+      "sha256": "acf238e295e81b5fca108d15d6af00bc506394f6ec7aca7b7373f22d69861e9d"
+    }
+  ],
+  "not_run": [
+    "SUMO simulation",
+    "native GUI preview or screenshot",
+    "ONNX forward",
+    "project runtime tests",
+    "generators",
+    "installations",
+    "Git mutations"
+  ],
+  "errors": [],
+  "verdict": "PASS",
+  "initial_check": {
+    "verdict": "FAIL",
+    "reason": "README link to VALIDATION.json was checked before that report was first created. Report now exists; final link check rerun after documentation correction."
+  },
+  "independent_document_review": {
+    "agent": "native_sumo_inventory",
+    "model": "gpt-6-luna",
+    "result": "No substantive issues. One approval-wording ambiguity subsequently clarified."
+  }
+}

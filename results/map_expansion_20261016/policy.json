@@ -1,0 +1,21 @@
+{
+  "planning": "compact",
+  "context_depth": "dependency",
+  "verification_depth": "impact",
+  "delegation": "Luna independent review and tests; root scene/runtime/presentation",
+  "authorization": "User requested ~5 km map, more RSUs/hazards and bridge/architectural variation.",
+  "write_scope": [
+    "simulation/cooperative_loop_1km/",
+    "tests/test_cooperative_loop.py",
+    "tests/test_expanded_map.py",
+    "results/map_expansion_20261016/"
+  ],
+  "preserve": [
+    "original corridor",
+    "ONNX weights",
+    "original N1 scenery",
+    "existing inference adapter",
+    "Git HEAD and branch"
+  ],
+  "no_new_markdown": true
+}

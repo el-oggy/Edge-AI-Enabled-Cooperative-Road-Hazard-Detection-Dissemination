@@ -1,0 +1,77 @@
+[
+  {
+    "case": "capture_without_gui",
+    "command": [
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\foundry_market\\run_simulation.py",
+      "--headless",
+      "--capture",
+      "--duration",
+      "2"
+    ],
+    "environment_override": null,
+    "expected_exit": 2,
+    "actual_exit": 2,
+    "stdout": "",
+    "stderr": "usage: run_simulation.py [-h] [--headless] [--fast] [--duration DURATION]\n                         [--output OUTPUT] [--capture]\nrun_simulation.py: error: Native screenshots require GUI mode\n",
+    "passed": true
+  },
+  {
+    "case": "nonfinite_duration",
+    "command": [
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\foundry_market\\run_simulation.py",
+      "--headless",
+      "--duration",
+      "nan"
+    ],
+    "environment_override": null,
+    "expected_exit": 2,
+    "actual_exit": 2,
+    "stdout": "",
+    "stderr": "usage: run_simulation.py [-h] [--headless] [--fast] [--duration DURATION]\n                         [--output OUTPUT] [--capture]\nrun_simulation.py: error: argument --duration: Duration must be a positive finite number\n",
+    "passed": true
+  },
+  {
+    "case": "existing_output",
+    "command": [
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\foundry_market\\run_simulation.py",
+      "--headless",
+      "--fast",
+      "--duration",
+      "2",
+      "--output",
+      "results/n1_20261015/headless_1200"
+    ],
+    "environment_override": null,
+    "expected_exit": 1,
+    "actual_exit": 1,
+    "stdout": "",
+    "stderr": "[WinError 183] Cannot create a file when that file already exists: 'C:\\\\Users\\\\adars\\\\OneDrive\\\\Desktop\\\\PFPD-ll\\\\results\\\\n1_20261015\\\\headless_1200'\n",
+    "passed": true
+  },
+  {
+    "case": "missing_sumo",
+    "command": [
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\foundry_market\\run_simulation.py",
+      "--headless",
+      "--duration",
+      "2"
+    ],
+    "environment_override": {
+      "SUMO_HOME": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\nonexistent-sumo",
+      "PATH": ""
+    },
+    "expected_exit": 1,
+    "actual_exit": 1,
+    "stdout": "",
+    "stderr": "sumo is missing. Install SUMO or set SUMO_HOME.\n",
+    "passed": true
+  }
+]

@@ -1,0 +1,78 @@
+[{"stream_name":"stdout","time":1.109154189,"data":"====================================================================\n"}
+,{"stream_name":"stdout","time":1.109221286,"data":"  PFPD UNIFIED 3-CLASS ROAD HAZARD PERCEPTION PIPELINE (YOLO11n)   \n"}
+,{"stream_name":"stdout","time":1.109228392,"data":"====================================================================\n"}
+,{"stream_name":"stdout","time":1.109232358,"data":"\n"}
+,{"stream_name":"stdout","time":1.109235948,"data":"--- STAGE 1: ACCELERATOR \u0026 ENVIRONMENT AUDIT ---\n"}
+,{"stream_name":"stdout","time":1.109239766,"data":"Python Version : 3.13.15\n"}
+,{"stream_name":"stdout","time":9.957541227,"data":"PyTorch Version: 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":10.20778694,"data":"CUDA Available : True\n"}
+,{"stream_name":"stdout","time":10.254275213,"data":"GPU Accelerator: Tesla T4\n"}
+,{"stream_name":"stdout","time":10.254319483,"data":"Total VRAM     : 14.56 GB\n"}
+,{"stream_name":"stdout","time":10.254476476,"data":"Installing ultralytics, onnx, onnxruntime...\n"}
+,{"stream_name":"stdout","time":13.17351623,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.0/47.0 kB 1.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":13.966877517,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 22.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":14.183789873,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.8/23.8 MB 83.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":14.217375536,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.6/97.6 kB 5.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.242164085,"data":"Creating new Ultralytics Settings v0.0.8 file ✅ \n"}
+,{"stream_name":"stdout","time":19.242212293,"data":"View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'\n"}
+,{"stream_name":"stdout","time":19.242219254,"data":"Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.\n"}
+,{"stream_name":"stdout","time":19.753370865,"data":"Ultralytics Ver: 8.4.183\n"}
+,{"stream_name":"stdout","time":19.753393603,"data":"ONNX Version   : 1.22.0\n"}
+,{"stream_name":"stdout","time":19.753397013,"data":"ONNX Runtime   : 1.31.0\n"}
+,{"stream_name":"stdout","time":19.753399523,"data":"Working Storage: 19.50 GB free of 19.52 GB total\n"}
+,{"stream_name":"stdout","time":19.753402131,"data":"\n"}
+,{"stream_name":"stdout","time":19.753404489,"data":"Execution Target: Full Production Run (imgsz=512, batch=32, epochs=50, patience=12)\n"}
+,{"stream_name":"stdout","time":19.753799321,"data":"\n"}
+,{"stream_name":"stdout","time":19.753807732,"data":"--- STAGE 2: DATASET INGESTION \u0026 SEMANTIC MAPPING ---\n"}
+,{"stream_name":"stdout","time":789.847568187,"data":"  [1] Roboflow Potholes Ingested      : 3940 images (pothole=0)\n"}
+,{"stream_name":"stdout","time":1044.511254878,"data":"  [2] Andrew MVD Potholes Ingested    : 665 images (pothole=0)\n"}
+,{"stream_name":"stdout","time":2092.770925261,"data":"  [3] Dashcam Multi-Hazard Ingested   : 2266 images (0=pothole, 1=barricade)\n"}
+,{"stream_name":"stdout","time":2093.114065283,"data":"      Construction Dataset Raw Classes: {0: 'hardhat', 1: 'mask', 2: 'no-hardhat', 3: 'no-mask', 4: 'no-safety vest', 5: 'person', 6: 'safety cone', 7: 'safety vest', 8: 'machinery', 9: 'vehicle'}\n"}
+,{"stream_name":"stdout","time":2573.750869516,"data":"  [4] Construction Workzones Ingested : 2409 images (1=construction_hazard)\n"}
+,{"stream_name":"stdout","time":4155.209840038,"data":"  [5] CubeAI Traffic Accidents        : 7378 images (2=accident_obstacle)\n"}
+,{"stream_name":"stdout","time":5502.549060753,"data":"  [6] Road Debris \u0026 Obstacles         : 5018 images (2=accident_obstacle)\n"}
+,{"stream_name":"stdout","time":5502.913046977,"data":"  [7] Clean Hard Negatives Injected   : 0 background images\n"}
+,{"stream_name":"stdout","time":5502.913829108,"data":"\n"}
+,{"stream_name":"stdout","time":5502.913845173,"data":"Consolidation Summary:\n"}
+,{"stream_name":"stdout","time":5502.913850183,"data":"  Total Unique Images Ingested: 21676\n"}
+,{"stream_name":"stdout","time":5502.913854921,"data":"  Duplicate Images Filtered   : 1067\n"}
+,{"stream_name":"stdout","time":5502.913859432,"data":"  Excluded Annotations (PPE)  : 27876\n"}
+,{"stream_name":"stdout","time":5502.913864418,"data":"  Total Ground Truth Boxes    :\n"}
+,{"stream_name":"stdout","time":5502.913869445,"data":"    Class 0 (pothole                 ):  13373 instances\n"}
+,{"stream_name":"stdout","time":5502.913874383,"data":"    Class 1 (construction_hazard     ):  18460 instances\n"}
+,{"stream_name":"stdout","time":5502.913879502,"data":"    Class 2 (road_accident_obstacle  ):  44238 instances\n"}
+,{"stream_name":"stdout","time":5502.913884392,"data":"\n"}
+,{"stream_name":"stdout","time":5502.913888666,"data":"--- STAGE 3: SEQUENCE-AWARE LEAK-FREE SPLIT CREATION ---\n"}
+,{"stream_name":"stdout","time":5502.916801591,"data":"Full Production Training Set: 3954 sequence groups, 21676 total unique images\n"}
+,{"stream_name":"stderr","time":5503.171782577,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":5503.172567148,"data":"  File \"/kaggle/src/script.py\", line 468, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":5503.172582971,"data":"    if dst_img.exists() or dst_img.is_symlink():\n"}
+,{"stream_name":"stderr","time":5503.172593818,"data":"       ~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":5503.172597189,"data":"  File \"/usr/lib/python3.13/pathlib/_abc.py\", line 450, in exists\n"}
+,{"stream_name":"stderr","time":5503.172600526,"data":"    self.stat(follow_symlinks=follow_symlinks)\n"}
+,{"stream_name":"stderr","time":5503.172603666,"data":"    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":5503.172606795,"data":"  File \"/usr/lib/python3.13/pathlib/_local.py\", line 515, in stat\n"}
+,{"stream_name":"stderr","time":5503.17261007,"data":"    return os.stat(self, follow_symlinks=follow_symlinks)\n"}
+,{"stream_name":"stderr","time":5503.172613128,"data":"           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":5503.172617193,"data":"OSError: [Errno 36] File name too long: '/kaggle/working/unified_three_hazard_dataset/images/train/sak_plusieurs-sacs-poubelles-ont-ete-trouves-en-pleine-foret-par-un-promeneur-ce-week-end-photo-rl-1590493106_plusieurs-sacs-poubelles-ont-ete-trouves-en-pleine-foret-par-un-promeneur-ce-week-end-photo-rl-1590493106_jpg.rf.fff93b98a2eaceaa3263254d38a4f44c.jpg'\n"}
+,{"stream_name":"stderr","time":5503.172752473,"data":"\n"}
+,{"stream_name":"stderr","time":5503.172761628,"data":"During handling of the above exception, another exception occurred:\n"}
+,{"stream_name":"stderr","time":5503.172766636,"data":"\n"}
+,{"stream_name":"stderr","time":5503.172770897,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":5503.173213791,"data":"  File \"/kaggle/src/script.py\", line 472, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":5503.17322444,"data":"    shutil.copy2(img_p, dst_img)\n"}
+,{"stream_name":"stderr","time":5503.173242476,"data":"    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":5503.173246206,"data":"  File \"/usr/lib/python3.13/shutil.py\", line 468, in copy2\n"}
+,{"stream_name":"stderr","time":5503.173249947,"data":"    copyfile(src, dst, follow_symlinks=follow_symlinks)\n"}
+,{"stream_name":"stderr","time":5503.173253534,"data":"    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":5503.173257422,"data":"  File \"/usr/lib/python3.13/shutil.py\", line 262, in copyfile\n"}
+,{"stream_name":"stderr","time":5503.173263005,"data":"    with open(dst, 'wb') as fdst:\n"}
+,{"stream_name":"stderr","time":5503.173270624,"data":"         ~~~~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":5503.173273346,"data":"OSError: [Errno 36] File name too long: '/kaggle/working/unified_three_hazard_dataset/images/train/sak_plusieurs-sacs-poubelles-ont-ete-trouves-en-pleine-foret-par-un-promeneur-ce-week-end-photo-rl-1590493106_plusieurs-sacs-poubelles-ont-ete-trouves-en-pleine-foret-par-un-promeneur-ce-week-end-photo-rl-1590493106_jpg.rf.fff93b98a2eaceaa3263254d38a4f44c.jpg'\n"}
+,{"stream_name":"stderr","time":5509.331745329,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5509.331787837,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5509.667494213,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5509.667520971,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5510.532509878,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5511.822368946,"data":"[NbConvertApp] Writing 405675 bytes to __results__.html\n"}
+]

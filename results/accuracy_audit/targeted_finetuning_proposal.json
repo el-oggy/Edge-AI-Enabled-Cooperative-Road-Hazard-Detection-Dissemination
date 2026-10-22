@@ -1,0 +1,115 @@
+{
+  "title": "PFPD Bounded Targeted Fine-Tuning Specification",
+  "version": "1.0.0",
+  "status": "AWAITING_USER_APPROVAL",
+  "objective": "Lift per-class Recall for Class 1 (Construction: currently 76.92%) and Class 2 (Road Accident / Obstacle: currently 72.09% - 75.90%) to >= 85.0% while maintaining >= 90.0% Precision and zero regression on Potholes (Class 0: 93.6% P / 100% R), retaining the 29 FPS physical Raspberry Pi 5 runtime intact.",
+  "baseline_model": {
+    "checkpoint": "models/unified_yolo11n_best.pt",
+    "sha256": "E73ED9C2D2632E72FB3E025C50EFB4AE441DD8FB6FDD7A47A9CA249E7B03EC69",
+    "parameters": "2.58M",
+    "frozen_baseline_metrics": {
+      "384x384_mnn_int8": {
+        "pi5_sustained_fps": 29.1,
+        "pi5_delay_ms": 34.27,
+        "precision": 0.9179,
+        "recall": 0.7638,
+        "pothole_recall": 1.0,
+        "construction_recall": 0.7692,
+        "accident_obstacle_recall": 0.759
+      }
+    }
+  },
+  "weak_cases_diagnostics": [
+    {
+      "category": "Fallen Trees on Roadway",
+      "current_failure_rate": "55-60% missed at conf >= 0.25",
+      "root_cause": "Severe representation deficit in training data (<2% of Class 2). Class 2 is overwhelmingly vehicle collisions (car bodies, glass, tires). Bark/log texture blends with asphalt; foliage creates high textural noise.",
+      "target_augmentation": "Horizontal/diagonal log synthesis + green foliage background contrast"
+    },
+    {
+      "category": "Rockslides & Boulders",
+      "current_failure_rate": "50-55% missed at conf >= 0.25",
+      "root_cause": "Grey rock aggregate matches weathered asphalt; scale varies from 20cm rocks to scree.",
+      "target_augmentation": "Shadow-casting rock contrast + gravel negative mining"
+    },
+    {
+      "category": "Distant Construction Signs (>35m)",
+      "current_failure_rate": "60% missed at 384x384",
+      "root_cause": "Occupies <16x16 pixels; features smoothed out by stride-32 downsampling in P5.",
+      "target_augmentation": "Multi-scale crop augmentation (scale 0.5 to 1.5) forcing small-scale detection"
+    },
+    {
+      "category": "Distant Flat Potholes (>30m)",
+      "current_failure_rate": "35-40% missed at distance",
+      "root_cause": "Perspective foreshortening reduces vertical height to <4 pixels.",
+      "target_augmentation": "Perspective ellipse augmentation + low-confidence temporal tracking"
+    }
+  ],
+  "curated_training_data_enrichment": {
+    "candidate_sources": [
+      {
+        "source_name": "Roadside Natural Obstacles & Fallen Tree Dataset",
+        "target_hazard": "fallen_trees",
+        "image_count": 450,
+        "license": "CC-BY 4.0",
+        "verification_protocol": "Zero MD5/pHash overlap with 150 benchmark images or test split"
+      },
+      {
+        "source_name": "Mountain Road Rockfall & Boulder Dataset",
+        "target_hazard": "boulders_rockfalls",
+        "image_count": 420,
+        "license": "Public Domain / CC-BY",
+        "verification_protocol": "Strict dHash Hamming distance > 10 from all evaluation sets"
+      },
+      {
+        "source_name": "Highway Workzone Warning Signage Dataset",
+        "target_hazard": "distant_construction_signs",
+        "image_count": 380,
+        "license": "CC0",
+        "verification_protocol": "Manual bbox annotation of diamond/rectangular warning signs only"
+      },
+      {
+        "source_name": "Pothole Negative Mining Hard Control Set",
+        "target_hazard": "pothole_control",
+        "image_count": 250,
+        "license": "CC-BY",
+        "purpose": "Anchor pothole precision and prevent catastrophic forgetting of void features"
+      }
+    ],
+    "total_curated_enrichment_images": 1500,
+    "class_rebalance_strategy": "Class 0: 250, Class 1: 380, Class 2: 870"
+  },
+  "bounded_training_protocol": {
+    "epochs": 8,
+    "learning_rate": 0.00015,
+    "lr_scheduler": "cosine (final lr = 1e-6)",
+    "batch_size": 32,
+    "frozen_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "loss_weights": {
+      "box": 7.5,
+      "cls": 0.8,
+      "dfl": 1.5
+    },
+    "mosaic": false,
+    "mixup": 0.0,
+    "scale_jitter": 0.3,
+    "early_stopping_patience": 4
+  },
+  "verification_gates_and_rollback": {
+    "gate_1_pothole_regression": "Pothole recall must remain >= 95.0% and precision >= 90.0%",
+    "gate_2_construction_recall": "Class 1 recall must reach >= 82.0% (target: >= 85.0%)",
+    "gate_3_accident_obstacle_recall": "Class 2 recall must reach >= 82.0% (target: >= 85.0%)",
+    "gate_4_pi5_fps": "Physical Pi 5 throughput must sustain >= 28.0 FPS at 384x384 INT8 (>= 24 FPS hard limit)",
+    "gate_5_pi5_thermals": "Core temperature < 68.0\u00b0C and throttled=0x0 throughout 10-minute run",
+    "rollback_trigger": "If any gate is violated, immediately rollback to unified_yolo11n_best.pt. All baseline specialist weights (pothole_yolo11s, construction_yolo11s, accident_yolo11s) remain permanently locked in models/."
+  }
+}

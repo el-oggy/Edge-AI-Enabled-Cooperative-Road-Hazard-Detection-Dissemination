@@ -1,0 +1,730 @@
+{
+  "phase": "N1",
+  "acceptance": "pass within visual/native-launch scope",
+  "ai_inference": false,
+  "environment": {
+    "python": "3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "pillow": "12.3.0",
+    "sumo": [
+      22,
+      "SUMO 1.27.1"
+    ]
+  },
+  "unit_tests": {
+    "command": [
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "count": 42,
+    "elapsed_s": 0.707,
+    "exit_code": 0
+  },
+  "final_delivery_summary": {
+    "status": "completed",
+    "error": null,
+    "mode": "native_visual_demo",
+    "ai_inference": false,
+    "sumo_exit_code": 0,
+    "wall_elapsed_s": 17.800611599996046,
+    "last_sample_sim_time_s": 180.0,
+    "active_vehicle_min": 1,
+    "active_vehicle_max": 72,
+    "vehicle_types_observed": {
+      "bus": 6,
+      "car": 40,
+      "motorcycle": 12,
+      "small_passenger": 8,
+      "truck": 6
+    },
+    "minimum_active_after_180s": 72,
+    "minimum_moving_after_180s": 69,
+    "collision_vehicle_reports": 0,
+    "starting_teleports": 0,
+    "tls_observed_states": {
+      "TL_D1": [
+        "GGggrrrrGGGggrrrr",
+        "rrGGrrrrrrrGGrrrr",
+        "rrrrGGggrrrrrGGgg",
+        "rrrryyyyrrrrryyyy",
+        "rryyrrrrrrryyrrrr",
+        "yyggrrrryyyggrrrr"
+      ],
+      "TL_D2": [
+        "GGGggrrrrGGGggrrrr",
+        "rrrrrGGggrrrrrGGgg",
+        "rrrrryyyyrrrrryyyy",
+        "yyyyyrrrryyyyyrrrr"
+      ],
+      "TL_D3": [
+        "GGGggrrrrGGggrrrr",
+        "rrrGGrrrrrrGGrrrr",
+        "rrrrrGGggrrrrGGgg",
+        "rrrrryyyyrrrryyyy",
+        "rrryyrrrrrryyrrrr",
+        "yyyggrrrryyggrrrr"
+      ]
+    },
+    "authored_files_unchanged": true,
+    "screenshots": [
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\overview.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\follow.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\court.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_pothole.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_puddle.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_manhole.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_asphalt_patch.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_fallen_tree.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_debris.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_incident_car.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_construction.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_delivery\\detail_junction.png"
+    ],
+    "missing_screenshots": [],
+    "blank_screenshots": [],
+    "screenshot_contexts": [
+      {
+        "name": "overview",
+        "requested_sim_time_s": 90.5,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            -360.7054616384916,
+            -55.0
+          ],
+          [
+            1275.7054616384917,
+            825.0
+          ]
+        ],
+        "completed_after_sim_step_s": 90.6
+      },
+      {
+        "name": "follow",
+        "requested_sim_time_s": 91.2,
+        "followed_vehicle": "bus_10",
+        "boundary": [
+          [
+            478.2140937519825,
+            6.401302390743702
+          ],
+          [
+            589.7875657935949,
+            66.4013023907437
+          ]
+        ],
+        "completed_after_sim_step_s": 91.3
+      },
+      {
+        "name": "court",
+        "requested_sim_time_s": 91.9,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            658.3224967490247,
+            636.0
+          ],
+          [
+            931.6775032509753,
+            783.0
+          ]
+        ],
+        "completed_after_sim_step_s": 92.0
+      },
+      {
+        "name": "detail_pothole",
+        "requested_sim_time_s": 92.6,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            697.9830949284785,
+            756.0
+          ],
+          [
+            724.0169050715215,
+            770.0
+          ]
+        ],
+        "completed_after_sim_step_s": 92.7
+      },
+      {
+        "name": "detail_puddle",
+        "requested_sim_time_s": 93.3,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            758.9830949284785,
+            756.0
+          ],
+          [
+            785.0169050715215,
+            770.0
+          ]
+        ],
+        "completed_after_sim_step_s": 93.4
+      },
+      {
+        "name": "detail_manhole",
+        "requested_sim_time_s": 94.0,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            819.9830949284785,
+            756.0
+          ],
+          [
+            846.0169050715215,
+            770.0
+          ]
+        ],
+        "completed_after_sim_step_s": 94.1
+      },
+      {
+        "name": "detail_asphalt_patch",
+        "requested_sim_time_s": 94.7,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            880.9830949284785,
+            756.0
+          ],
+          [
+            907.0169050715215,
+            770.0
+          ]
+        ],
+        "completed_after_sim_step_s": 94.8
+      },
+      {
+        "name": "detail_fallen_tree",
+        "requested_sim_time_s": 95.4,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            697.9830949284785,
+            737.0
+          ],
+          [
+            724.0169050715215,
+            751.0
+          ]
+        ],
+        "completed_after_sim_step_s": 95.5
+      },
+      {
+        "name": "detail_debris",
+        "requested_sim_time_s": 96.1,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            758.9830949284785,
+            737.0
+          ],
+          [
+            785.0169050715215,
+            751.0
+          ]
+        ],
+        "completed_after_sim_step_s": 96.2
+      },
+      {
+        "name": "detail_incident_car",
+        "requested_sim_time_s": 96.8,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            819.9830949284785,
+            737.0
+          ],
+          [
+            846.0169050715215,
+            751.0
+          ]
+        ],
+        "completed_after_sim_step_s": 96.9
+      },
+      {
+        "name": "detail_construction",
+        "requested_sim_time_s": 97.5,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            880.9830949284785,
+            737.0
+          ],
+          [
+            907.0169050715215,
+            751.0
+          ]
+        ],
+        "completed_after_sim_step_s": 97.6
+      },
+      {
+        "name": "detail_junction",
+        "requested_sim_time_s": 98.2,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            399.88392717815344,
+            346.73
+          ],
+          [
+            517.0360728218466,
+            409.73
+          ]
+        ],
+        "completed_after_sim_step_s": 98.3
+      }
+    ]
+  },
+  "extended_gui_summary": {
+    "status": "completed",
+    "error": null,
+    "mode": "native_visual_demo",
+    "ai_inference": false,
+    "wall_elapsed_s": 68.38747589999548,
+    "last_sample_sim_time_s": 1200.0,
+    "active_vehicle_min": 1,
+    "active_vehicle_max": 72,
+    "vehicle_types_observed": {
+      "bus": 6,
+      "car": 40,
+      "motorcycle": 12,
+      "small_passenger": 8,
+      "truck": 6
+    },
+    "minimum_active_after_180s": 72,
+    "minimum_moving_after_180s": 35,
+    "collision_vehicle_reports": 0,
+    "starting_teleports": 0,
+    "tls_observed_states": {
+      "TL_D1": [
+        "GGggrrrrGGGggrrrr",
+        "rrGGrrrrrrrGGrrrr",
+        "rrrrGGggrrrrrGGgg",
+        "rrrryyyyrrrrryyyy",
+        "rryyrrrrrrryyrrrr",
+        "yyggrrrryyyggrrrr"
+      ],
+      "TL_D2": [
+        "GGGggrrrrGGGggrrrr",
+        "rrrrrGGggrrrrrGGgg",
+        "rrrrryyyyrrrrryyyy",
+        "yyyyyrrrryyyyyrrrr"
+      ],
+      "TL_D3": [
+        "GGGggrrrrGGggrrrr",
+        "rrrGGrrrrrrGGrrrr",
+        "rrrrrGGggrrrrGGgg",
+        "rrrrryyyyrrrryyyy",
+        "rrryyrrrrrryyrrrr",
+        "yyyggrrrryyggrrrr"
+      ]
+    },
+    "authored_files_unchanged": true,
+    "screenshots": [
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\overview.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\follow.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\court.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_pothole.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_puddle.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_manhole.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_asphalt_patch.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_fallen_tree.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_debris.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_incident_car.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_construction.png",
+      "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\n1_20261015\\native_gui_validated\\detail_junction.png"
+    ],
+    "missing_screenshots": [],
+    "blank_screenshots": [],
+    "screenshot_contexts": [
+      {
+        "name": "overview",
+        "requested_sim_time_s": 160.1,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            -360.7054616384916,
+            -55.0
+          ],
+          [
+            1275.7054616384917,
+            825.0
+          ]
+        ],
+        "completed_after_sim_step_s": 160.2
+      },
+      {
+        "name": "follow",
+        "requested_sim_time_s": 160.4,
+        "followed_vehicle": "bus_10",
+        "boundary": [
+          [
+            767.7415850436057,
+            329.2829715068059
+          ],
+          [
+            879.3150570852181,
+            389.2829715068059
+          ]
+        ],
+        "completed_after_sim_step_s": 160.5
+      },
+      {
+        "name": "court",
+        "requested_sim_time_s": 160.7,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            658.3224967490247,
+            636.0
+          ],
+          [
+            931.6775032509753,
+            783.0
+          ]
+        ],
+        "completed_after_sim_step_s": 160.8
+      },
+      {
+        "name": "detail_pothole",
+        "requested_sim_time_s": 161.0,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            697.9830949284785,
+            756.0
+          ],
+          [
+            724.0169050715215,
+            770.0
+          ]
+        ],
+        "completed_after_sim_step_s": 161.1
+      },
+      {
+        "name": "detail_puddle",
+        "requested_sim_time_s": 161.3,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            758.9830949284785,
+            756.0
+          ],
+          [
+            785.0169050715215,
+            770.0
+          ]
+        ],
+        "completed_after_sim_step_s": 161.4
+      },
+      {
+        "name": "detail_manhole",
+        "requested_sim_time_s": 161.6,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            819.9830949284785,
+            756.0
+          ],
+          [
+            846.0169050715215,
+            770.0
+          ]
+        ],
+        "completed_after_sim_step_s": 161.7
+      },
+      {
+        "name": "detail_asphalt_patch",
+        "requested_sim_time_s": 161.9,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            880.9830949284785,
+            756.0
+          ],
+          [
+            907.0169050715215,
+            770.0
+          ]
+        ],
+        "completed_after_sim_step_s": 162.0
+      },
+      {
+        "name": "detail_fallen_tree",
+        "requested_sim_time_s": 162.2,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            697.9830949284785,
+            737.0
+          ],
+          [
+            724.0169050715215,
+            751.0
+          ]
+        ],
+        "completed_after_sim_step_s": 162.3
+      },
+      {
+        "name": "detail_debris",
+        "requested_sim_time_s": 162.5,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            758.9830949284785,
+            737.0
+          ],
+          [
+            785.0169050715215,
+            751.0
+          ]
+        ],
+        "completed_after_sim_step_s": 162.6
+      },
+      {
+        "name": "detail_incident_car",
+        "requested_sim_time_s": 162.8,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            819.9830949284785,
+            737.0
+          ],
+          [
+            846.0169050715215,
+            751.0
+          ]
+        ],
+        "completed_after_sim_step_s": 162.9
+      },
+      {
+        "name": "detail_construction",
+        "requested_sim_time_s": 163.1,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            880.9830949284785,
+            737.0
+          ],
+          [
+            907.0169050715215,
+            751.0
+          ]
+        ],
+        "completed_after_sim_step_s": 163.2
+      },
+      {
+        "name": "detail_junction",
+        "requested_sim_time_s": 163.4,
+        "followed_vehicle": null,
+        "boundary": [
+          [
+            399.88392717815344,
+            346.73
+          ],
+          [
+            517.0360728218466,
+            409.73
+          ]
+        ],
+        "completed_after_sim_step_s": 163.5
+      }
+    ]
+  },
+  "headless_summary": {
+    "status": "completed",
+    "error": null,
+    "mode": "native_visual_demo",
+    "ai_inference": false,
+    "sumo_exit_code": 0,
+    "wall_elapsed_s": 25.36966100000427,
+    "last_sample_sim_time_s": 1200.0,
+    "active_vehicle_min": 1,
+    "active_vehicle_max": 72,
+    "vehicle_types_observed": {
+      "bus": 6,
+      "car": 40,
+      "motorcycle": 12,
+      "small_passenger": 8,
+      "truck": 6
+    },
+    "minimum_active_after_180s": 72,
+    "minimum_moving_after_180s": 35,
+    "collision_vehicle_reports": 0,
+    "starting_teleports": 0,
+    "tls_observed_states": {
+      "TL_D1": [
+        "GGggrrrrGGGggrrrr",
+        "rrGGrrrrrrrGGrrrr",
+        "rrrrGGggrrrrrGGgg",
+        "rrrryyyyrrrrryyyy",
+        "rryyrrrrrrryyrrrr",
+        "yyggrrrryyyggrrrr"
+      ],
+      "TL_D2": [
+        "GGGggrrrrGGGggrrrr",
+        "rrrrrGGggrrrrrGGgg",
+        "rrrrryyyyrrrrryyyy",
+        "yyyyyrrrryyyyyrrrr"
+      ],
+      "TL_D3": [
+        "GGGggrrrrGGggrrrr",
+        "rrrGGrrrrrrGGrrrr",
+        "rrrrrGGggrrrrGGgg",
+        "rrrrryyyyrrrryyyy",
+        "rrryyrrrrrryyrrrr",
+        "yyyggrrrryyggrrrr"
+      ]
+    },
+    "authored_files_unchanged": true,
+    "screenshots": [],
+    "missing_screenshots": [],
+    "blank_screenshots": [],
+    "screenshot_contexts": []
+  },
+  "final_scene_matches_delivery_input_hashes": true,
+  "frames": {
+    "court.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "154e8d1ed904c61ed67d1fb4895a092a264821a059cdf0e572e4cc8094c5e77c"
+    },
+    "detail_asphalt_patch.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "e6ac78c11a7e771789d8fa07f7c20dbd43668504a1df81b3f2faf48a78dee934"
+    },
+    "detail_construction.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "09298d38f1c391572a7b3d34c9ab99564d98fa86d439b1d26bfcaacbec0c14cd"
+    },
+    "detail_debris.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "032f2e6f88ad6939922e5b1268fd764c0a57905692dde493fe861f1e997541bf"
+    },
+    "detail_fallen_tree.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "6a1b6465d46bf49200fae29edb59afd965b78674b5e52b1356d63a97697abc5c"
+    },
+    "detail_incident_car.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "6286e09665b456fb19e00bc17f0c0b235c5ed2442e746d5654d9cf9f26ed9723"
+    },
+    "detail_junction.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "e7ae7d86e128f5cd4faa2a62ff0fed8242d70da750c2a7c8542631d678ee5e13"
+    },
+    "detail_manhole.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "f13094f6ee952a56f9bf9a31ab3bf930fdeda931f3d035f8c298310b2f5fd125"
+    },
+    "detail_pothole.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "2af33f03132d424fe7a016e9372f6f4d79660ced1299648d58e5c4a6235b3e7a"
+    },
+    "detail_puddle.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "62d1cf584fed2126f886f543019aaf1c1793f2b764fe854dde7bdabf7053cdb8"
+    },
+    "follow.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "413d203192a5db449081f9d215e5485e739e0fd5d7d5ad2a7a87616b49b8be42"
+    },
+    "overview.png": {
+      "dimensions_px": [
+        1430,
+        769
+      ],
+      "nonblack": true,
+      "sha256": "95f654da260871f477daf146aae22b8201a1f8b61445ccc32497c1443492756a"
+    }
+  },
+  "independent_visual_review": {
+    "agent": "/root/n1_visual_verifier",
+    "model": "gpt-6-luna",
+    "all_12_fresh_files_viewed": true,
+    "filenames_match_actual_views": true,
+    "samples_unobscured": true,
+    "district_labels_readable": true,
+    "objective_blockers": []
+  },
+  "launcher_check": "click_launcher_check_20261015_201323.json",
+  "expected_failures_pass": true,
+  "preservation": {
+    "baseline_files": 170,
+    "all_hashes_reconcile": true,
+    "archive_files": 91,
+    "archive_sha256": "2a65ad27d827ed7ef8cd1128f66bf70dc9d478fca066bdd7c6ef1376deac0f28",
+    "retired_paths_absent": true
+  },
+  "git": {
+    "branch": "codex/native-sumo-foundry-n1",
+    "head": "47b0eddf1057c4b3f0ccd4dea1faed941c25a716",
+    "status_short": "M .gitignore\n?? .agents/\n?? \"Run SUMO Simulation.cmd\"\n?? \"Run SUMO Simulation.vbs\"\n?? docs/local_agent_research/native_sumo_foundry_20261015/\n?? results/foundry_runs/\n?? results/n1_20261015/\n?? simulation/foundry_market/\n?? tests/test_native_foundry.py",
+    "tracked_changes": ".gitignore",
+    "staged_changes": "",
+    "commits_created": 0,
+    "pushes_performed": 0
+  },
+  "remaining_scope": [
+    "N2 dynamic scenarios and physical blockage",
+    "N3 genuine inference causality and warning delivery",
+    "N4 comparisons and calibrated placement"
+  ],
+  "limitations": [
+    "20-minute GUI traffic run predates final presentation-only sign/camera fixes; final180s delivery capture validates those fixes",
+    "No full-hour wall-clock or other platform/GPU qualification",
+    "Sparse desert layout remains subject to user preference"
+  ]
+}

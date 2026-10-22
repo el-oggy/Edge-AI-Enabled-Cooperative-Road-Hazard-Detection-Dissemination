@@ -1,0 +1,16 @@
+***Starting server on port 54699 ***
+Loading net-file from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\foundry_market\foundry.net.xml' ... done (12ms).
+Loading additional-files from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\foundry_market\foundry.scenery.add.xml' ... done (2ms).
+Loading route-files incrementally from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\foundry_market\foundry.rou.xml'
+Loading done.
+Simulation started with time: 0.00.
+Simulation ended at time: 175.80.
+Performance:
+ Duration: 176.97s
+ TraCI-Duration: 176.03s
+ Real time factor: 0.993377
+ UPS: 426.152160
+Vehicles:
+ Inserted: 72
+ Running: 72
+ Waiting: 0

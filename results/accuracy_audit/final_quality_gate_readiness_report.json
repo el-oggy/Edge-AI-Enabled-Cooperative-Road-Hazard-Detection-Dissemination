@@ -1,0 +1,86 @@
+{
+  "title": "PFPD Final Quality Gate & Fine-Tuning Dataset Readiness Audit",
+  "version": "1.0.0",
+  "timestamp": 1792515864.2762766,
+  "gate_status": "READY_FOR_USER_AUTHORIZATION",
+  "gpu_training_launched": false,
+  "section_a_semantic_audit": {
+    "sayaksamanta_landslide_audit": {
+      "total_images": 2285,
+      "total_boxes": 6508,
+      "finding": "Predominantly aerial and satellite geological remote-sensing images of mountain slopes from NUST SEECS (Pakistan). Full-scene landscape boxes (area > 0.5): 894 (13.7%). Ground camera (DSC) photos: 9.",
+      "semantic_verdict": "REJECTED_FROM_ROAD_TRAINING_POOL",
+      "rationale": "Aerial/satellite mountainside terrain does not match autonomous vehicle ground dashcam perspective. Injecting whole-mountain boxes would severely corrupt ground-level spatial obstacle detection."
+    },
+    "saksham_fallen_trees_audit": {
+      "total_instances": 1992,
+      "ground_level_road_obstacles": 1859,
+      "ground_level_percentage": 93.3,
+      "high_canopy_standing_trees": 133,
+      "semantic_verdict": "ACCEPTED_WITH_CANOPY_FILTER",
+      "filtering_rule": "Retain only ground-level / road-surface instances (cy >= 0.30); purge high canopy trees (cy < 0.30)."
+    },
+    "workzone_signage_audit": {
+      "traffic_signs_yolo_danger_signs": 187,
+      "traffic_signs_yolo_regulatory_signs_purged": 534,
+      "saksham_concrete_road_blocks_barriers": 1225,
+      "semantic_verdict": "ACCEPTED_STRICT_CONSTRUCTION_HAZARD",
+      "filtering_rule": "Purge all regulatory signs (speed limits, pedestrian, no entry). Retain only genuine danger/workzone warning signs and physical concrete road blocks."
+    }
+  },
+  "section_b_leakage_reconciliation": {
+    "discrepancy_explanation_1046_vs_1045": {
+      "total_sak_test_images": 1046,
+      "exact_md5_matches": 1045,
+      "the_unmatched_1046th_file": "sak_ia_ia_400007678_png.rf.58bebc98d5850991456a28832566d3a2.jpg",
+      "root_cause": "The 1046th file in the local test folder was corrupted during initial smoke download, containing a 332-byte HTTP 502 Server Error HTML payload instead of the genuine 44.4 KB JPEG. Its MD5 therefore differed from the authentic candidate file.",
+      "status": "FORENSICALLY_RESOLVED"
+    },
+    "purged_contaminants_accounting": {
+      "exact_test_split_collisions": 1045,
+      "near_test_split_collisions": 16,
+      "near_benchmark_collisions": 12,
+      "internal_duplicates": 9,
+      "corrupted_502_test_file": 1,
+      "total_unique_purged_contaminants": 1083,
+      "status": "100% ISOLATED AND BLACKLISTED"
+    }
+  },
+  "section_c_trustworthy_annotations": {
+    "human_review_status": "PREPARED_AWAITING_INSPECTION",
+    "interactive_viewer_path": "candidate_annotation_review.html",
+    "contact_sheet_path": "candidate_curated_contact_sheet.png",
+    "representative_sample_size": 160,
+    "export_mechanism": "Persistent localStorage + 1-click 'Export Decisions JSON' (candidate_human_review_decisions.json)",
+    "licenses_verified": {
+      "saksham07gupta/road-obstacledebris-detection": "CC BY 4.0 (Permitted for research & commercial with attribution)",
+      "sayaksamanta/landslide-detection": "MIT / CC BY 4.0 (Roboflow Universe)",
+      "valentynsichkar/traffic-signs-dataset-in-yolo-format": "Academic / Research (German TSRB)"
+    }
+  },
+  "section_d_anti_catastrophic_forgetting": {
+    "total_fine_tuning_pool": 2000,
+    "targeted_candidates": {
+      "fallen_trees_class_2": 400,
+      "workzone_signs_and_barriers_class_1": 300,
+      "clean_road_obstacles_debris_class_2": 300
+    },
+    "original_production_train_replay": {
+      "potholes_class_0": 350,
+      "construction_cones_barricades_class_1": 250,
+      "ordinary_vehicle_accidents_class_2": 250,
+      "clean_road_hard_negatives": 150
+    },
+    "class_balance_ratio": "Potholes (Class 0): ~18%, Construction (Class 1): ~28%, Obstacles/Accidents (Class 2): ~47%, Hard Negatives: ~7%",
+    "schedule": "8 epochs, frozen backbone layers 0-7, lr0=1.5e-4 cosine decay, batch=32, imgsz=512, mosaic=0.0"
+  },
+  "section_e_training_protocol": {
+    "accelerator_target": "Kaggle Free Tier GPU (NVIDIA T4 16GB)",
+    "estimated_vram_usage_gb": 3.4,
+    "estimated_training_time_min": 14.5,
+    "storage_required_gb": 1.2,
+    "baseline_model_sha256": "e73ed9c2d2632e72fb3e025c50efb4ae441dd8fb6fdd7a47a9ca249e7b03ec69",
+    "baseline_pi5_fps": 28.75,
+    "acceptance_criteria": "mAP50 >= 80%, per-class recall >= 75% (targeting 85%), Pi 5 MNN INT8 throughput >= 24 FPS (preferred 28-30 FPS), zero regression on pothole recall."
+  }
+}

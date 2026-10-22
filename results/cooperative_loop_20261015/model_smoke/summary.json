@@ -1,0 +1,253 @@
+{
+  "status": "completed",
+  "mode": "real_onnx_smoke",
+  "inference_executed": true,
+  "forward_count": 9,
+  "results": [
+    {
+      "location": "pothole",
+      "model": "pothole",
+      "detections": [
+        {
+          "class_id": 0,
+          "raw_class_id": 0,
+          "class_name": "pothole",
+          "confidence": 0.8898110389709473,
+          "box": [
+            127,
+            142,
+            311,
+            217
+          ],
+          "bbox_xyxy_float": [
+            127.33257810274759,
+            142.23448435465494,
+            311.45329276720685,
+            216.66415532430014
+          ],
+          "proposal_index": 11795,
+          "source_model_id": "pothole",
+          "status": "SINGLE_FRAME_UNCONFIRMED",
+          "persistence_hits": null
+        }
+      ],
+      "timings_ms": {
+        "model_load": 266.9686999943224,
+        "decode_preprocess": 68.24349999806145,
+        "inference": 2396.641200000886,
+        "postprocess": 22.243899999011774
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\3217548d-cfe2-430f-bdde-ca65cf7144cd.json"
+    },
+    {
+      "location": "pothole",
+      "model": "construction",
+      "detections": [
+        {
+          "class_id": 0,
+          "raw_class_id": 0,
+          "class_name": "construction_hazard",
+          "confidence": 0.8801392316818237,
+          "box": [
+            128,
+            145,
+            311,
+            219
+          ],
+          "bbox_xyxy_float": [
+            127.93590625127156,
+            144.6616848309835,
+            311.3163113594055,
+            219.4701631863912
+          ],
+          "proposal_index": 11819,
+          "source_model_id": "construction",
+          "status": "SINGLE_FRAME_UNCONFIRMED",
+          "persistence_hits": null
+        }
+      ],
+      "timings_ms": {
+        "model_load": 191.59109999600332,
+        "decode_preprocess": 68.24349999806145,
+        "inference": 2580.560399997921,
+        "postprocess": 15.899099998932797
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\2ee86f93-64c3-4653-84a4-b0413c46df14.json"
+    },
+    {
+      "location": "pothole",
+      "model": "accident_obstacle",
+      "detections": [],
+      "timings_ms": {
+        "model_load": 186.12710000161314,
+        "decode_preprocess": 68.24349999806145,
+        "inference": 2647.149399999762,
+        "postprocess": 12.515299997176044
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\d8ab99ca-1884-4a4f-a813-7fc44bd85673.json"
+    },
+    {
+      "location": "construction",
+      "model": "pothole",
+      "detections": [],
+      "timings_ms": {
+        "model_load": 266.9686999943224,
+        "decode_preprocess": 22.079099995607976,
+        "inference": 2740.309900000284,
+        "postprocess": 15.430899999046233
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\dc27ed0c-f9c5-4521-ab9f-1b5cc6e93ba8.json"
+    },
+    {
+      "location": "construction",
+      "model": "construction",
+      "detections": [
+        {
+          "class_id": 0,
+          "raw_class_id": 0,
+          "class_name": "construction_hazard",
+          "confidence": 0.7214339375495911,
+          "box": [
+            393,
+            101,
+            494,
+            232
+          ],
+          "bbox_xyxy_float": [
+            392.5135855873426,
+            100.54215788841249,
+            493.57929577430093,
+            231.86440269152325
+          ],
+          "proposal_index": 10401,
+          "source_model_id": "construction",
+          "status": "SINGLE_FRAME_UNCONFIRMED",
+          "persistence_hits": null
+        },
+        {
+          "class_id": 0,
+          "raw_class_id": 0,
+          "class_name": "construction_hazard",
+          "confidence": 0.46306827664375305,
+          "box": [
+            70,
+            255,
+            269,
+            310
+          ],
+          "bbox_xyxy_float": [
+            70.20077978571257,
+            254.68733161687854,
+            269.45236449440324,
+            310.1312493284544
+          ],
+          "proposal_index": 11887,
+          "source_model_id": "construction",
+          "status": "SINGLE_FRAME_UNCONFIRMED",
+          "persistence_hits": null
+        }
+      ],
+      "timings_ms": {
+        "model_load": 191.59109999600332,
+        "decode_preprocess": 22.079099995607976,
+        "inference": 2843.262300004426,
+        "postprocess": 14.553200002410449
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\f36eeee2-3255-4ae6-befd-da54dd620e9a.json"
+    },
+    {
+      "location": "construction",
+      "model": "accident_obstacle",
+      "detections": [],
+      "timings_ms": {
+        "model_load": 186.12710000161314,
+        "decode_preprocess": 22.079099995607976,
+        "inference": 2720.8863999985624,
+        "postprocess": 14.080400003877003
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\9904f585-f7b4-4e62-93d5-7f1d748e0a1a.json"
+    },
+    {
+      "location": "accident_obstacle",
+      "model": "pothole",
+      "detections": [],
+      "timings_ms": {
+        "model_load": 266.9686999943224,
+        "decode_preprocess": 22.11679999891203,
+        "inference": 2736.8851999999606,
+        "postprocess": 13.978200004203245
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\cb7c0c16-eb00-4160-91d4-549d3ead4082.json"
+    },
+    {
+      "location": "accident_obstacle",
+      "model": "construction",
+      "detections": [
+        {
+          "class_id": 0,
+          "raw_class_id": 0,
+          "class_name": "construction_hazard",
+          "confidence": 0.61041259765625,
+          "box": [
+            0,
+            12,
+            359,
+            331
+          ],
+          "bbox_xyxy_float": [
+            0.0,
+            11.839033842086792,
+            359.4032220840454,
+            330.7953293323517
+          ],
+          "proposal_index": 11793,
+          "source_model_id": "construction",
+          "status": "SINGLE_FRAME_UNCONFIRMED",
+          "persistence_hits": null
+        }
+      ],
+      "timings_ms": {
+        "model_load": 191.59109999600332,
+        "decode_preprocess": 22.11679999891203,
+        "inference": 2850.5565999948885,
+        "postprocess": 17.01380000304198
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\383f43a0-4609-45de-8647-73cfe155faab.json"
+    },
+    {
+      "location": "accident_obstacle",
+      "model": "accident_obstacle",
+      "detections": [
+        {
+          "class_id": 0,
+          "raw_class_id": 0,
+          "class_name": "road_accident_obstacle",
+          "confidence": 0.8863688707351685,
+          "box": [
+            0,
+            0,
+            610,
+            346
+          ],
+          "bbox_xyxy_float": [
+            0.0,
+            0.0,
+            610.0054779052734,
+            345.5163230895996
+          ],
+          "proposal_index": 11844,
+          "source_model_id": "accident_obstacle",
+          "status": "SINGLE_FRAME_UNCONFIRMED",
+          "persistence_hits": null
+        }
+      ],
+      "timings_ms": {
+        "model_load": 186.12710000161314,
+        "decode_preprocess": 22.11679999891203,
+        "inference": 2924.188299999514,
+        "postprocess": 16.16690000082599
+      },
+      "evidence_path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\model_smoke\\inference\\e847bc88-7cd1-4f1d-b490-06f43dfdf44e.json"
+    }
+  ]
+}

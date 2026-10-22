@@ -1,0 +1,16 @@
+***Starting server on port 53010 ***
+Loading net-file from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.net.xml' ... done (16ms).
+Loading additional-files from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.scenery.add.xml' ... done (2ms).
+Loading route-files incrementally from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.rou.xml'
+Loading done.
+Simulation started with time: 0.00.
+Simulation ended at time: 5.10.
+Performance:
+ Duration: 6.68s
+ TraCI-Duration: 6.24s
+ Real time factor: 0.763245
+ UPS: 29.182879
+Vehicles:
+ Inserted: 5 (Loaded: 74)
+ Running: 5
+ Waiting: 0

@@ -1,0 +1,2 @@
+{"sim_time_s": 1.0, "active_vehicles": 1, "moving_vehicles": 1, "mean_speed_mps": 1.6393482586700028, "arrived": 0, "tls": {"TL_D1": "GGggrrrrGGGggrrrr", "TL_D2": "GGGggrrrrGGGggrrrr", "TL_D3": "GGGggrrrrGGggrrrr"}, "followed_vehicle": null}
+{"sim_time_s": 2.0, "active_vehicles": 1, "moving_vehicles": 1, "mean_speed_mps": 3.3821471158357994, "arrived": 0, "tls": {"TL_D1": "GGggrrrrGGGggrrrr", "TL_D2": "GGGggrrrrGGGggrrrr", "TL_D3": "GGGggrrrrGGggrrrr"}, "followed_vehicle": null}

@@ -1,0 +1,17 @@
+***Starting server on port 53367 ***
+Loading net-file from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\foundry_market\foundry.net.xml' ... done (8ms).
+Loading additional-files from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\foundry_market\foundry.scenery.add.xml' ... done (1ms).
+Loading route-files incrementally from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\foundry_market\foundry.rou.xml'
+Loading done.
+Simulation started with time: 0.00.
+Simulation ended at time: 0.20.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 0.53s
+ TraCI-Duration: 0.00s
+ Real time factor: 0.379507
+ UPS: 3.795066
+Vehicles:
+ Inserted: 1 (Loaded: 2)
+ Running: 1
+ Waiting: 0

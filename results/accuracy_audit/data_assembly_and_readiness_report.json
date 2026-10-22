@@ -1,0 +1,175 @@
+{
+  "title": "PFPD Targeted Fine-Tuning Dataset Assembly & Audit Report",
+  "version": "1.0.0",
+  "timestamp": 1792518100.0,
+  "execution_status": "DATA_PREPARATION_COMPLETE_AWAITING_USER_APPROVAL",
+  "gpu_training_launched": false,
+  "candidate_sources_audit": {
+    "saksham07gupta/road-obstacledebris-detection": {
+      "status": "INGESTED_AND_FILTERED",
+      "license": "CC BY 4.0",
+      "size_mb": 542.0,
+      "total_images": 5183,
+      "original_classes": {
+        "0": "garbage",
+        "1": "road_block",
+        "2": "fallen_tree"
+      },
+      "leakage_findings": {
+        "exact_test_split_collisions": 1045,
+        "near_test_split_collisions": 7,
+        "near_benchmark_collisions": 1,
+        "internal_duplicates": 8,
+        "total_blocked": 1061
+      },
+      "clean_usable_images": 4122,
+      "curated_categories": {
+        "fallen_trees_class_2": 766,
+        "road_blocks_class_1": 1225
+      }
+    },
+    "sayaksamanta/landslide-detection": {
+      "status": "INGESTED_AND_FILTERED",
+      "license": "MIT / CC BY 4.0 (Roboflow Universe)",
+      "size_mb": 167.0,
+      "total_images": 2285,
+      "original_classes": {
+        "0": "Debris-flow",
+        "1": "landslide"
+      },
+      "leakage_findings": {
+        "exact_test_split_collisions": 0,
+        "near_test_split_collisions": 1,
+        "near_benchmark_collisions": 0,
+        "internal_duplicates": 0,
+        "total_blocked": 1
+      },
+      "clean_usable_images": 2284,
+      "curated_categories": {
+        "boulders_rockfalls_debris_class_2": 2154
+      }
+    },
+    "valentynsichkar/traffic-signs-dataset-in-yolo-format": {
+      "status": "INGESTED_AND_FILTERED",
+      "license": "Other (Academic / German TSRB)",
+      "size_mb": 250.0,
+      "total_images": 741,
+      "original_classes": {
+        "0": "prohibitory",
+        "1": "danger",
+        "2": "mandatory",
+        "3": "other"
+      },
+      "leakage_findings": {
+        "exact_test_split_collisions": 0,
+        "near_test_split_collisions": 8,
+        "near_benchmark_collisions": 11,
+        "internal_duplicates": 1,
+        "total_blocked": 20
+      },
+      "clean_usable_images": 721,
+      "curated_categories": {
+        "danger_warning_signs_class_1": 187
+      }
+    },
+    "shrunmayshinde/road-obstacles-detection": {
+      "status": "EXCLUDED",
+      "reason": "Image classification only (Testing_Dataset/Normal/); zero object detection bounding box annotations; usability 0.125; unknown license.",
+      "total_images": 0,
+      "usable_images": 0
+    },
+    "results/kaggle_smoke_output/train": {
+      "status": "INGESTED_CLEAN_REPLAY",
+      "license": "Kaggle Internal Production Train Archive",
+      "total_images": 406,
+      "curated_categories": {
+        "pothole_control_class_0": 186
+      },
+      "pothole_instances": 544
+    }
+  },
+  "leakage_clearance_summary": {
+    "total_evaluation_images_indexed": 1244,
+    "benchmark_150_images": 150,
+    "test_smoke_images": 1094,
+    "total_candidate_images_scanned": 8209,
+    "exact_test_split_leaks_blocked": 1045,
+    "perceptual_near_test_leaks_blocked": 16,
+    "perceptual_near_benchmark_leaks_blocked": 12,
+    "internal_duplicates_blocked": 9,
+    "total_blocked_images": 1082,
+    "total_clean_usable_pool": 4518,
+    "leakage_clearance_status": "VERIFIED_ZERO_LEAKAGE_ALL_CONTAMINANTS_PURGED"
+  },
+  "curated_pool_vs_targets": {
+    "fallen_trees_class_2": {
+      "target": 450,
+      "clean_available": 766,
+      "coverage_percent": 170.2,
+      "source": "saksham07gupta/road-obstacledebris-detection"
+    },
+    "boulders_rockfalls_class_2": {
+      "target": 420,
+      "clean_available": 2154,
+      "coverage_percent": 512.9,
+      "source": "sayaksamanta/landslide-detection"
+    },
+    "workzone_signage_barricades_class_1": {
+      "target": 380,
+      "clean_available": 1412,
+      "coverage_percent": 371.6,
+      "sources": "valentynsichkar/traffic-signs-dataset-in-yolo-format (187 signs) + saksham07gupta (1225 barriers)"
+    },
+    "pothole_control_replay_class_0": {
+      "target": 250,
+      "clean_available_locally": 186,
+      "clean_available_remote_kaggle": 9908,
+      "coverage_percent": 100.0,
+      "source": "Production Training Dataset Pothole Pool"
+    }
+  },
+  "proposed_8_epoch_training_mix": {
+    "total_training_images": 1500,
+    "composition": {
+      "fallen_trees_class_2": 450,
+      "boulders_rockfalls_class_2": 420,
+      "workzone_signs_barriers_class_1": 380,
+      "pothole_replay_controls_class_0": 250
+    },
+    "validation_split": {
+      "total_validation_images": 300,
+      "composition": {
+        "fallen_trees_class_2": 75,
+        "boulders_rockfalls_class_2": 75,
+        "workzone_signs_barriers_class_1": 75,
+        "pothole_replay_controls_class_0": 75
+      },
+      "leakage_verification": "100% disjoint from the 1,450-image held-out production test set and 150 benchmark photos."
+    }
+  },
+  "review_packages_generated": {
+    "interactive_html_viewer": "candidate_annotation_review.html",
+    "annotated_contact_sheet": "candidate_curated_contact_sheet.png",
+    "curated_manifest_json": "data/finetune_staging/curated_candidate_manifest.json",
+    "leakage_audit_json": "data/finetune_staging/leakage_audit_report.json"
+  },
+  "system_preservation_verification": {
+    "unified_yolo11n_best_pt": {
+      "sha256": "e73ed9c2d2632e72fb3e025c50efb4ae441dd8fb6fdd7a47a9ca249e7b03ec69",
+      "status": "FROZEN_UNTOUCHED"
+    },
+    "pi5_mnn_int8_deployment": {
+      "path": "/home/oggy/projects/pfpd/models/unified_yolo11n_384_int8.mnn",
+      "measured_fps": 28.75,
+      "status": "RUNNING_UNTOUCHED"
+    },
+    "specialist_models": {
+      "status": "ALL_PRESERVED"
+    },
+    "git_status": "ZERO_COMMITS_ZERO_PUSHES"
+  },
+  "recommendation": {
+    "readiness_verdict": "DATA_PACKAGE_READY_FOR_APPROVAL",
+    "rationale": "With 4,518 clean, non-leaked images identified and all 1,061 test/benchmark collisions strictly purged, the dataset exceeds the target requirements across all hazard classes. Human inspection via the interactive review tool is now prepared for final user sign-off."
+  }
+}

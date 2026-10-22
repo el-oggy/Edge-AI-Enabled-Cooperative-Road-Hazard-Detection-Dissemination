@@ -1,0 +1,413 @@
+[
+  {
+    "name": "Potholes (Dry Asphalt)",
+    "folder": "potholes/dry",
+    "expected_category": "pothole",
+    "image_count": 25,
+    "threshold_performance": {
+      "0.15": {
+        "detected_images": 21,
+        "total_images": 25,
+        "detection_rate": 0.84,
+        "total_boxes": 40,
+        "class_distribution": {
+          "construction_hazard": 33,
+          "road_accident_obstacle": 7
+        }
+      },
+      "0.25": {
+        "detected_images": 13,
+        "total_images": 25,
+        "detection_rate": 0.52,
+        "total_boxes": 24,
+        "class_distribution": {
+          "construction_hazard": 22,
+          "road_accident_obstacle": 2
+        }
+      },
+      "0.35": {
+        "detected_images": 9,
+        "total_images": 25,
+        "detection_rate": 0.36,
+        "total_boxes": 19,
+        "class_distribution": {
+          "construction_hazard": 18,
+          "road_accident_obstacle": 1
+        }
+      },
+      "0.5": {
+        "detected_images": 8,
+        "total_images": 25,
+        "detection_rate": 0.32,
+        "total_boxes": 13,
+        "class_distribution": {
+          "construction_hazard": 12,
+          "road_accident_obstacle": 1
+        }
+      },
+      "0.7": {
+        "detected_images": 4,
+        "total_images": 25,
+        "detection_rate": 0.16,
+        "total_boxes": 6,
+        "class_distribution": {
+          "construction_hazard": 6
+        }
+      }
+    }
+  },
+  {
+    "name": "Potholes (Water-Filled)",
+    "folder": "potholes/water",
+    "expected_category": "pothole",
+    "image_count": 25,
+    "threshold_performance": {
+      "0.15": {
+        "detected_images": 16,
+        "total_images": 25,
+        "detection_rate": 0.64,
+        "total_boxes": 59,
+        "class_distribution": {
+          "construction_hazard": 52,
+          "road_accident_obstacle": 7
+        }
+      },
+      "0.25": {
+        "detected_images": 16,
+        "total_images": 25,
+        "detection_rate": 0.64,
+        "total_boxes": 46,
+        "class_distribution": {
+          "construction_hazard": 39,
+          "road_accident_obstacle": 7
+        }
+      },
+      "0.35": {
+        "detected_images": 13,
+        "total_images": 25,
+        "detection_rate": 0.52,
+        "total_boxes": 35,
+        "class_distribution": {
+          "construction_hazard": 30,
+          "road_accident_obstacle": 5
+        }
+      },
+      "0.5": {
+        "detected_images": 10,
+        "total_images": 25,
+        "detection_rate": 0.4,
+        "total_boxes": 22,
+        "class_distribution": {
+          "construction_hazard": 21,
+          "road_accident_obstacle": 1
+        }
+      },
+      "0.7": {
+        "detected_images": 8,
+        "total_images": 25,
+        "detection_rate": 0.32,
+        "total_boxes": 10,
+        "class_distribution": {
+          "construction_hazard": 10
+        }
+      }
+    }
+  },
+  {
+    "name": "Construction (Cones/Signs)",
+    "folder": "construction/with_symbols",
+    "expected_category": "construction",
+    "image_count": 25,
+    "threshold_performance": {
+      "0.15": {
+        "detected_images": 12,
+        "total_images": 25,
+        "detection_rate": 0.48,
+        "total_boxes": 22,
+        "class_distribution": {
+          "construction_hazard": 6,
+          "pothole": 6,
+          "road_accident_obstacle": 10
+        }
+      },
+      "0.25": {
+        "detected_images": 10,
+        "total_images": 25,
+        "detection_rate": 0.4,
+        "total_boxes": 14,
+        "class_distribution": {
+          "pothole": 5,
+          "road_accident_obstacle": 6,
+          "construction_hazard": 3
+        }
+      },
+      "0.35": {
+        "detected_images": 6,
+        "total_images": 25,
+        "detection_rate": 0.24,
+        "total_boxes": 7,
+        "class_distribution": {
+          "pothole": 4,
+          "road_accident_obstacle": 2,
+          "construction_hazard": 1
+        }
+      },
+      "0.5": {
+        "detected_images": 6,
+        "total_images": 25,
+        "detection_rate": 0.24,
+        "total_boxes": 6,
+        "class_distribution": {
+          "pothole": 4,
+          "road_accident_obstacle": 1,
+          "construction_hazard": 1
+        }
+      },
+      "0.7": {
+        "detected_images": 2,
+        "total_images": 25,
+        "detection_rate": 0.08,
+        "total_boxes": 2,
+        "class_distribution": {
+          "pothole": 1,
+          "construction_hazard": 1
+        }
+      }
+    }
+  },
+  {
+    "name": "Construction (Workers/Machines)",
+    "folder": "construction/without_symbols",
+    "expected_category": "construction",
+    "image_count": 25,
+    "threshold_performance": {
+      "0.15": {
+        "detected_images": 16,
+        "total_images": 25,
+        "detection_rate": 0.64,
+        "total_boxes": 31,
+        "class_distribution": {
+          "road_accident_obstacle": 15,
+          "construction_hazard": 14,
+          "pothole": 2
+        }
+      },
+      "0.25": {
+        "detected_images": 12,
+        "total_images": 25,
+        "detection_rate": 0.48,
+        "total_boxes": 20,
+        "class_distribution": {
+          "road_accident_obstacle": 11,
+          "construction_hazard": 8,
+          "pothole": 1
+        }
+      },
+      "0.35": {
+        "detected_images": 12,
+        "total_images": 25,
+        "detection_rate": 0.48,
+        "total_boxes": 16,
+        "class_distribution": {
+          "road_accident_obstacle": 8,
+          "construction_hazard": 7,
+          "pothole": 1
+        }
+      },
+      "0.5": {
+        "detected_images": 5,
+        "total_images": 25,
+        "detection_rate": 0.2,
+        "total_boxes": 5,
+        "class_distribution": {
+          "road_accident_obstacle": 2,
+          "construction_hazard": 3
+        }
+      },
+      "0.7": {
+        "detected_images": 2,
+        "total_images": 25,
+        "detection_rate": 0.08,
+        "total_boxes": 2,
+        "class_distribution": {
+          "construction_hazard": 2
+        }
+      }
+    }
+  },
+  {
+    "name": "Accidents (Car Collisions)",
+    "folder": "accidents_obstacles/collisions",
+    "expected_category": "accident",
+    "image_count": 20,
+    "threshold_performance": {
+      "0.15": {
+        "detected_images": 14,
+        "total_images": 20,
+        "detection_rate": 0.7,
+        "total_boxes": 26,
+        "class_distribution": {
+          "road_accident_obstacle": 18,
+          "pothole": 2,
+          "construction_hazard": 6
+        }
+      },
+      "0.25": {
+        "detected_images": 14,
+        "total_images": 20,
+        "detection_rate": 0.7,
+        "total_boxes": 21,
+        "class_distribution": {
+          "road_accident_obstacle": 15,
+          "pothole": 2,
+          "construction_hazard": 4
+        }
+      },
+      "0.35": {
+        "detected_images": 13,
+        "total_images": 20,
+        "detection_rate": 0.65,
+        "total_boxes": 19,
+        "class_distribution": {
+          "road_accident_obstacle": 14,
+          "pothole": 2,
+          "construction_hazard": 3
+        }
+      },
+      "0.5": {
+        "detected_images": 13,
+        "total_images": 20,
+        "detection_rate": 0.65,
+        "total_boxes": 17,
+        "class_distribution": {
+          "road_accident_obstacle": 14,
+          "pothole": 1,
+          "construction_hazard": 2
+        }
+      },
+      "0.7": {
+        "detected_images": 7,
+        "total_images": 20,
+        "detection_rate": 0.35,
+        "total_boxes": 8,
+        "class_distribution": {
+          "road_accident_obstacle": 8
+        }
+      }
+    }
+  },
+  {
+    "name": "Obstacles (Fallen Trees)",
+    "folder": "accidents_obstacles/fallen_trees",
+    "expected_category": "accident",
+    "image_count": 15,
+    "threshold_performance": {
+      "0.15": {
+        "detected_images": 9,
+        "total_images": 15,
+        "detection_rate": 0.6,
+        "total_boxes": 12,
+        "class_distribution": {
+          "construction_hazard": 2,
+          "road_accident_obstacle": 10
+        }
+      },
+      "0.25": {
+        "detected_images": 6,
+        "total_images": 15,
+        "detection_rate": 0.4,
+        "total_boxes": 6,
+        "class_distribution": {
+          "construction_hazard": 2,
+          "road_accident_obstacle": 4
+        }
+      },
+      "0.35": {
+        "detected_images": 4,
+        "total_images": 15,
+        "detection_rate": 0.2667,
+        "total_boxes": 4,
+        "class_distribution": {
+          "construction_hazard": 1,
+          "road_accident_obstacle": 3
+        }
+      },
+      "0.5": {
+        "detected_images": 4,
+        "total_images": 15,
+        "detection_rate": 0.2667,
+        "total_boxes": 4,
+        "class_distribution": {
+          "construction_hazard": 1,
+          "road_accident_obstacle": 3
+        }
+      },
+      "0.7": {
+        "detected_images": 1,
+        "total_images": 15,
+        "detection_rate": 0.0667,
+        "total_boxes": 1,
+        "class_distribution": {
+          "construction_hazard": 1
+        }
+      }
+    }
+  },
+  {
+    "name": "Obstacles (Boulders/Rockfalls)",
+    "folder": "accidents_obstacles/boulders",
+    "expected_category": "accident",
+    "image_count": 15,
+    "threshold_performance": {
+      "0.15": {
+        "detected_images": 9,
+        "total_images": 15,
+        "detection_rate": 0.6,
+        "total_boxes": 15,
+        "class_distribution": {
+          "road_accident_obstacle": 12,
+          "construction_hazard": 3
+        }
+      },
+      "0.25": {
+        "detected_images": 7,
+        "total_images": 15,
+        "detection_rate": 0.4667,
+        "total_boxes": 9,
+        "class_distribution": {
+          "road_accident_obstacle": 6,
+          "construction_hazard": 3
+        }
+      },
+      "0.35": {
+        "detected_images": 6,
+        "total_images": 15,
+        "detection_rate": 0.4,
+        "total_boxes": 7,
+        "class_distribution": {
+          "road_accident_obstacle": 5,
+          "construction_hazard": 2
+        }
+      },
+      "0.5": {
+        "detected_images": 2,
+        "total_images": 15,
+        "detection_rate": 0.1333,
+        "total_boxes": 2,
+        "class_distribution": {
+          "road_accident_obstacle": 1,
+          "construction_hazard": 1
+        }
+      },
+      "0.7": {
+        "detected_images": 1,
+        "total_images": 15,
+        "detection_rate": 0.0667,
+        "total_boxes": 1,
+        "class_distribution": {
+          "construction_hazard": 1
+        }
+      }
+    }
+  }
+]

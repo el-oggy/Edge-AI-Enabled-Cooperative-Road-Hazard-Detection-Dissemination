@@ -1,0 +1,714 @@
+{
+  "test_suite": {
+    "baseline": {
+      "conf_0.20": {
+        "overall_precision": 0.9004,
+        "overall_recall": 0.79,
+        "overall_f1": 0.8416,
+        "false_alarms_per_img": 0.1244,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 34,
+            "fp": 8,
+            "fn": 7,
+            "precision": 0.8095,
+            "recall": 0.8293,
+            "f1": 0.8193
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 32,
+            "fp": 15,
+            "fn": 15,
+            "precision": 0.6809,
+            "recall": 0.6809,
+            "f1": 0.6809
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 1164,
+            "fp": 113,
+            "fn": 305,
+            "precision": 0.9115,
+            "recall": 0.7924,
+            "f1": 0.8478
+          }
+        }
+      },
+      "conf_0.25": {
+        "overall_precision": 0.9259,
+        "overall_recall": 0.7701,
+        "overall_f1": 0.8408,
+        "false_alarms_per_img": 0.0878,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 33,
+            "fp": 4,
+            "fn": 8,
+            "precision": 0.8919,
+            "recall": 0.8049,
+            "f1": 0.8462
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 32,
+            "fp": 14,
+            "fn": 15,
+            "precision": 0.6957,
+            "recall": 0.6809,
+            "f1": 0.6882
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 1134,
+            "fp": 78,
+            "fn": 335,
+            "precision": 0.9356,
+            "recall": 0.772,
+            "f1": 0.846
+          }
+        }
+      },
+      "conf_0.30": {
+        "overall_precision": 0.9403,
+        "overall_recall": 0.7482,
+        "overall_f1": 0.8333,
+        "false_alarms_per_img": 0.0677,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 33,
+            "fp": 4,
+            "fn": 8,
+            "precision": 0.8919,
+            "recall": 0.8049,
+            "f1": 0.8462
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 32,
+            "fp": 10,
+            "fn": 15,
+            "precision": 0.7619,
+            "recall": 0.6809,
+            "f1": 0.7191
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 1100,
+            "fp": 60,
+            "fn": 369,
+            "precision": 0.9483,
+            "recall": 0.7488,
+            "f1": 0.8368
+          }
+        }
+      },
+      "conf_0.35": {
+        "overall_precision": 0.9489,
+        "overall_recall": 0.727,
+        "overall_f1": 0.8233,
+        "false_alarms_per_img": 0.0558,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 32,
+            "fp": 4,
+            "fn": 9,
+            "precision": 0.8889,
+            "recall": 0.7805,
+            "f1": 0.8312
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 31,
+            "fp": 7,
+            "fn": 16,
+            "precision": 0.8158,
+            "recall": 0.6596,
+            "f1": 0.7294
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 1069,
+            "fp": 50,
+            "fn": 400,
+            "precision": 0.9553,
+            "recall": 0.7277,
+            "f1": 0.8261
+          }
+        }
+      },
+      "conf_0.40": {
+        "overall_precision": 0.9582,
+        "overall_recall": 0.7071,
+        "overall_f1": 0.8137,
+        "false_alarms_per_img": 0.0439,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 32,
+            "fp": 3,
+            "fn": 9,
+            "precision": 0.9143,
+            "recall": 0.7805,
+            "f1": 0.8421
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 30,
+            "fp": 6,
+            "fn": 17,
+            "precision": 0.8333,
+            "recall": 0.6383,
+            "f1": 0.7229
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 1039,
+            "fp": 39,
+            "fn": 430,
+            "precision": 0.9638,
+            "recall": 0.7073,
+            "f1": 0.8159
+          }
+        }
+      }
+    },
+    "candidate": {
+      "conf_0.20": {
+        "overall_precision": 0.8842,
+        "overall_recall": 0.7161,
+        "overall_f1": 0.7913,
+        "false_alarms_per_img": 0.1336,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 34,
+            "fp": 13,
+            "fn": 7,
+            "precision": 0.7234,
+            "recall": 0.8293,
+            "f1": 0.7727
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 31,
+            "fp": 15,
+            "fn": 16,
+            "precision": 0.6739,
+            "recall": 0.6596,
+            "f1": 0.6667
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 1050,
+            "fp": 118,
+            "fn": 419,
+            "precision": 0.899,
+            "recall": 0.7148,
+            "f1": 0.7964
+          }
+        }
+      },
+      "conf_0.25": {
+        "overall_precision": 0.9087,
+        "overall_recall": 0.6969,
+        "overall_f1": 0.7888,
+        "false_alarms_per_img": 0.0997,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 34,
+            "fp": 8,
+            "fn": 7,
+            "precision": 0.8095,
+            "recall": 0.8293,
+            "f1": 0.8193
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 29,
+            "fp": 12,
+            "fn": 18,
+            "precision": 0.7073,
+            "recall": 0.617,
+            "f1": 0.6591
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 1022,
+            "fp": 89,
+            "fn": 447,
+            "precision": 0.9199,
+            "recall": 0.6957,
+            "f1": 0.7922
+          }
+        }
+      },
+      "conf_0.30": {
+        "overall_precision": 0.9259,
+        "overall_recall": 0.6744,
+        "overall_f1": 0.7804,
+        "false_alarms_per_img": 0.0769,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 34,
+            "fp": 7,
+            "fn": 7,
+            "precision": 0.8293,
+            "recall": 0.8293,
+            "f1": 0.8293
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 28,
+            "fp": 8,
+            "fn": 19,
+            "precision": 0.7778,
+            "recall": 0.5957,
+            "f1": 0.6747
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 988,
+            "fp": 69,
+            "fn": 481,
+            "precision": 0.9347,
+            "recall": 0.6726,
+            "f1": 0.7823
+          }
+        }
+      },
+      "conf_0.35": {
+        "overall_precision": 0.9433,
+        "overall_recall": 0.6513,
+        "overall_f1": 0.7705,
+        "false_alarms_per_img": 0.0558,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 34,
+            "fp": 5,
+            "fn": 7,
+            "precision": 0.8718,
+            "recall": 0.8293,
+            "f1": 0.85
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 28,
+            "fp": 6,
+            "fn": 19,
+            "precision": 0.8235,
+            "recall": 0.5957,
+            "f1": 0.6914
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 952,
+            "fp": 50,
+            "fn": 517,
+            "precision": 0.9501,
+            "recall": 0.6481,
+            "f1": 0.7705
+          }
+        }
+      },
+      "conf_0.40": {
+        "overall_precision": 0.9487,
+        "overall_recall": 0.6301,
+        "overall_f1": 0.7572,
+        "false_alarms_per_img": 0.0485,
+        "per_class": {
+          "pothole": {
+            "gt": 41,
+            "tp": 34,
+            "fp": 4,
+            "fn": 7,
+            "precision": 0.8947,
+            "recall": 0.8293,
+            "f1": 0.8608
+          },
+          "construction_hazard": {
+            "gt": 47,
+            "tp": 28,
+            "fp": 6,
+            "fn": 19,
+            "precision": 0.8235,
+            "recall": 0.5957,
+            "f1": 0.6914
+          },
+          "road_accident_obstacle": {
+            "gt": 1469,
+            "tp": 919,
+            "fp": 43,
+            "fn": 550,
+            "precision": 0.9553,
+            "recall": 0.6256,
+            "f1": 0.7561
+          }
+        }
+      }
+    }
+  },
+  "benchmark_suite": {
+    "baseline": {
+      "conf_0.20": {
+        "overall_precision": 0.0522,
+        "overall_recall": 0.0333,
+        "overall_f1": 0.0407,
+        "false_alarms_per_img": 0.8467,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 3,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 83,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 7,
+            "fp": 41,
+            "fn": 43,
+            "precision": 0.1458,
+            "recall": 0.14,
+            "f1": 0.1429
+          }
+        }
+      },
+      "conf_0.25": {
+        "overall_precision": 0.0541,
+        "overall_recall": 0.0286,
+        "overall_f1": 0.0374,
+        "false_alarms_per_img": 0.7,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 1,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 71,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 6,
+            "fp": 33,
+            "fn": 44,
+            "precision": 0.1538,
+            "recall": 0.12,
+            "f1": 0.1348
+          }
+        }
+      },
+      "conf_0.30": {
+        "overall_precision": 0.0638,
+        "overall_recall": 0.0286,
+        "overall_f1": 0.0395,
+        "false_alarms_per_img": 0.5867,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 1,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 62,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 6,
+            "fp": 25,
+            "fn": 44,
+            "precision": 0.1935,
+            "recall": 0.12,
+            "f1": 0.1481
+          }
+        }
+      },
+      "conf_0.35": {
+        "overall_precision": 0.0723,
+        "overall_recall": 0.0286,
+        "overall_f1": 0.041,
+        "false_alarms_per_img": 0.5133,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 1,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 53,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 6,
+            "fp": 23,
+            "fn": 44,
+            "precision": 0.2069,
+            "recall": 0.12,
+            "f1": 0.1519
+          }
+        }
+      },
+      "conf_0.40": {
+        "overall_precision": 0.0811,
+        "overall_recall": 0.0286,
+        "overall_f1": 0.0423,
+        "false_alarms_per_img": 0.4533,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 1,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 49,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 6,
+            "fp": 18,
+            "fn": 44,
+            "precision": 0.25,
+            "recall": 0.12,
+            "f1": 0.1622
+          }
+        }
+      }
+    },
+    "candidate": {
+      "conf_0.20": {
+        "overall_precision": 0.0597,
+        "overall_recall": 0.0381,
+        "overall_f1": 0.0465,
+        "false_alarms_per_img": 0.84,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 1,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 63,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 8,
+            "fp": 62,
+            "fn": 42,
+            "precision": 0.1143,
+            "recall": 0.16,
+            "f1": 0.1333
+          }
+        }
+      },
+      "conf_0.25": {
+        "overall_precision": 0.0536,
+        "overall_recall": 0.0286,
+        "overall_f1": 0.0373,
+        "false_alarms_per_img": 0.7067,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 0,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 57,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 6,
+            "fp": 49,
+            "fn": 44,
+            "precision": 0.1091,
+            "recall": 0.12,
+            "f1": 0.1143
+          }
+        }
+      },
+      "conf_0.30": {
+        "overall_precision": 0.0505,
+        "overall_recall": 0.0238,
+        "overall_f1": 0.0324,
+        "false_alarms_per_img": 0.6267,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 0,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 47,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 5,
+            "fp": 47,
+            "fn": 45,
+            "precision": 0.0962,
+            "recall": 0.1,
+            "f1": 0.098
+          }
+        }
+      },
+      "conf_0.35": {
+        "overall_precision": 0.0568,
+        "overall_recall": 0.0238,
+        "overall_f1": 0.0336,
+        "false_alarms_per_img": 0.5533,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 0,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 42,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 5,
+            "fp": 41,
+            "fn": 45,
+            "precision": 0.1087,
+            "recall": 0.1,
+            "f1": 0.1042
+          }
+        }
+      },
+      "conf_0.40": {
+        "overall_precision": 0.0694,
+        "overall_recall": 0.0238,
+        "overall_f1": 0.0355,
+        "false_alarms_per_img": 0.4467,
+        "per_class": {
+          "pothole": {
+            "gt": 77,
+            "tp": 0,
+            "fp": 0,
+            "fn": 77,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "construction_hazard": {
+            "gt": 83,
+            "tp": 0,
+            "fp": 35,
+            "fn": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "road_accident_obstacle": {
+            "gt": 50,
+            "tp": 5,
+            "fp": 32,
+            "fn": 45,
+            "precision": 0.1351,
+            "recall": 0.1,
+            "f1": 0.1149
+          }
+        }
+      }
+    }
+  }
+}

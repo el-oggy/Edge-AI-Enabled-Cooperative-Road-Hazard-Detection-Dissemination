@@ -1,0 +1,51 @@
+{
+  "status": "completed",
+  "error": null,
+  "mode": "native_visual_demo",
+  "ai_inference": false,
+  "sumo_exit_code": 0,
+  "wall_elapsed_s": 25.36966100000427,
+  "last_sample_sim_time_s": 1200.0,
+  "active_vehicle_min": 1,
+  "active_vehicle_max": 72,
+  "vehicle_types_observed": {
+    "bus": 6,
+    "car": 40,
+    "motorcycle": 12,
+    "small_passenger": 8,
+    "truck": 6
+  },
+  "minimum_active_after_180s": 72,
+  "minimum_moving_after_180s": 35,
+  "collision_vehicle_reports": 0,
+  "starting_teleports": 0,
+  "tls_observed_states": {
+    "TL_D1": [
+      "GGggrrrrGGGggrrrr",
+      "rrGGrrrrrrrGGrrrr",
+      "rrrrGGggrrrrrGGgg",
+      "rrrryyyyrrrrryyyy",
+      "rryyrrrrrrryyrrrr",
+      "yyggrrrryyyggrrrr"
+    ],
+    "TL_D2": [
+      "GGGggrrrrGGGggrrrr",
+      "rrrrrGGggrrrrrGGgg",
+      "rrrrryyyyrrrrryyyy",
+      "yyyyyrrrryyyyyrrrr"
+    ],
+    "TL_D3": [
+      "GGGggrrrrGGggrrrr",
+      "rrrGGrrrrrrGGrrrr",
+      "rrrrrGGggrrrrGGgg",
+      "rrrrryyyyrrrryyyy",
+      "rrryyrrrrrryyrrrr",
+      "yyyggrrrryyggrrrr"
+    ]
+  },
+  "authored_files_unchanged": true,
+  "screenshots": [],
+  "missing_screenshots": [],
+  "blank_screenshots": [],
+  "screenshot_contexts": []
+}

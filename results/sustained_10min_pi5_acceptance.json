@@ -1,0 +1,641 @@
+{
+  "status": "COMPLETED",
+  "duration_sec": 600.07,
+  "total_frames_processed": 10108,
+  "overall_pipeline_fps": 16.84,
+  "deadlines_missed_50ms": 0,
+  "miss_rate_percent": 0.0,
+  "hardware_telemetry": {
+    "start": {
+      "temp_str": "temp=51.0'C",
+      "temp_c": 51.0,
+      "throttled": "throttled=0x0",
+      "arm_clock": "frequency(0)=2400027136"
+    },
+    "end": {
+      "temp_str": "temp=58.2'C",
+      "temp_c": 58.2,
+      "throttled": "throttled=0x0",
+      "arm_clock": "frequency(0)=2400023808"
+    },
+    "peak_temp_c": 61.5,
+    "final_rss_mb": 354.39,
+    "throttling_events_observed": false
+  },
+  "pure_inference_latency": {
+    "mean_ms": 31.78,
+    "median_ms": 31.79,
+    "p95_ms": 32.05,
+    "p99_ms": 32.16,
+    "min_ms": 31.25,
+    "max_ms": 33.66,
+    "pure_infer_fps": 31.46
+  },
+  "end_to_end_latency": {
+    "mean_ms": 34.2,
+    "median_ms": 34.21,
+    "p95_ms": 34.56,
+    "p99_ms": 34.68,
+    "min_ms": 33.33,
+    "max_ms": 36.8,
+    "e2e_fps": 29.24
+  },
+  "detections_summary": {
+    "pothole": 203,
+    "construction_hazard": 1010,
+    "road_accident_obstacle": 5258,
+    "total_detections": 6471
+  },
+  "telemetry_timeline": [
+    {
+      "elapsed_sec": 10.0,
+      "frames": 171,
+      "temp_c": 53.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.4,
+      "recent_mean_infer_ms": 31.41,
+      "recent_mean_e2e_ms": 33.85,
+      "inst_fps": 29.54
+    },
+    {
+      "elapsed_sec": 20.0,
+      "frames": 341,
+      "temp_c": 54.9,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.5,
+      "recent_mean_infer_ms": 31.4,
+      "recent_mean_e2e_ms": 33.84,
+      "inst_fps": 29.55
+    },
+    {
+      "elapsed_sec": 30.1,
+      "frames": 511,
+      "temp_c": 56.0,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.5,
+      "recent_mean_infer_ms": 31.43,
+      "recent_mean_e2e_ms": 33.87,
+      "inst_fps": 29.53
+    },
+    {
+      "elapsed_sec": 40.1,
+      "frames": 680,
+      "temp_c": 56.0,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.5,
+      "recent_mean_infer_ms": 31.66,
+      "recent_mean_e2e_ms": 34.1,
+      "inst_fps": 29.32
+    },
+    {
+      "elapsed_sec": 50.1,
+      "frames": 849,
+      "temp_c": 56.0,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.5,
+      "recent_mean_infer_ms": 31.72,
+      "recent_mean_e2e_ms": 34.16,
+      "inst_fps": 29.28
+    },
+    {
+      "elapsed_sec": 60.1,
+      "frames": 1018,
+      "temp_c": 58.2,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.5,
+      "recent_mean_infer_ms": 31.65,
+      "recent_mean_e2e_ms": 34.08,
+      "inst_fps": 29.34
+    },
+    {
+      "elapsed_sec": 70.1,
+      "frames": 1187,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.5,
+      "recent_mean_infer_ms": 31.65,
+      "recent_mean_e2e_ms": 34.07,
+      "inst_fps": 29.35
+    },
+    {
+      "elapsed_sec": 80.2,
+      "frames": 1357,
+      "temp_c": 58.7,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.6,
+      "recent_mean_infer_ms": 31.47,
+      "recent_mean_e2e_ms": 33.91,
+      "inst_fps": 29.49
+    },
+    {
+      "elapsed_sec": 90.2,
+      "frames": 1526,
+      "temp_c": 58.2,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.6,
+      "recent_mean_infer_ms": 31.66,
+      "recent_mean_e2e_ms": 34.09,
+      "inst_fps": 29.33
+    },
+    {
+      "elapsed_sec": 100.2,
+      "frames": 1695,
+      "temp_c": 59.3,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.6,
+      "recent_mean_infer_ms": 31.66,
+      "recent_mean_e2e_ms": 34.09,
+      "inst_fps": 29.34
+    },
+    {
+      "elapsed_sec": 110.2,
+      "frames": 1864,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.6,
+      "recent_mean_infer_ms": 31.66,
+      "recent_mean_e2e_ms": 34.09,
+      "inst_fps": 29.33
+    },
+    {
+      "elapsed_sec": 120.2,
+      "frames": 2033,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 352.6,
+      "recent_mean_infer_ms": 31.68,
+      "recent_mean_e2e_ms": 34.11,
+      "inst_fps": 29.32
+    },
+    {
+      "elapsed_sec": 130.2,
+      "frames": 2202,
+      "temp_c": 58.7,
+      "throttled": "throttled=0x0",
+      "rss_mb": 353.9,
+      "recent_mean_infer_ms": 31.69,
+      "recent_mean_e2e_ms": 34.11,
+      "inst_fps": 29.32
+    },
+    {
+      "elapsed_sec": 140.3,
+      "frames": 2371,
+      "temp_c": 59.3,
+      "throttled": "throttled=0x0",
+      "rss_mb": 353.9,
+      "recent_mean_infer_ms": 31.7,
+      "recent_mean_e2e_ms": 34.13,
+      "inst_fps": 29.3
+    },
+    {
+      "elapsed_sec": 150.3,
+      "frames": 2540,
+      "temp_c": 58.2,
+      "throttled": "throttled=0x0",
+      "rss_mb": 353.9,
+      "recent_mean_infer_ms": 31.7,
+      "recent_mean_e2e_ms": 34.12,
+      "inst_fps": 29.31
+    },
+    {
+      "elapsed_sec": 160.3,
+      "frames": 2709,
+      "temp_c": 58.2,
+      "throttled": "throttled=0x0",
+      "rss_mb": 353.9,
+      "recent_mean_infer_ms": 31.7,
+      "recent_mean_e2e_ms": 34.14,
+      "inst_fps": 29.29
+    },
+    {
+      "elapsed_sec": 170.3,
+      "frames": 2878,
+      "temp_c": 60.4,
+      "throttled": "throttled=0x0",
+      "rss_mb": 353.9,
+      "recent_mean_infer_ms": 31.71,
+      "recent_mean_e2e_ms": 34.15,
+      "inst_fps": 29.28
+    },
+    {
+      "elapsed_sec": 180.3,
+      "frames": 3047,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 353.9,
+      "recent_mean_infer_ms": 31.72,
+      "recent_mean_e2e_ms": 34.15,
+      "inst_fps": 29.28
+    },
+    {
+      "elapsed_sec": 190.4,
+      "frames": 3216,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.74,
+      "recent_mean_e2e_ms": 34.17,
+      "inst_fps": 29.26
+    },
+    {
+      "elapsed_sec": 200.4,
+      "frames": 3385,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.75,
+      "recent_mean_e2e_ms": 34.17,
+      "inst_fps": 29.26
+    },
+    {
+      "elapsed_sec": 210.4,
+      "frames": 3554,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.76,
+      "recent_mean_e2e_ms": 34.18,
+      "inst_fps": 29.26
+    },
+    {
+      "elapsed_sec": 220.5,
+      "frames": 3723,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.75,
+      "recent_mean_e2e_ms": 34.18,
+      "inst_fps": 29.26
+    },
+    {
+      "elapsed_sec": 230.5,
+      "frames": 3892,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.75,
+      "recent_mean_e2e_ms": 34.18,
+      "inst_fps": 29.26
+    },
+    {
+      "elapsed_sec": 240.5,
+      "frames": 4061,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.75,
+      "recent_mean_e2e_ms": 34.18,
+      "inst_fps": 29.26
+    },
+    {
+      "elapsed_sec": 250.5,
+      "frames": 4230,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.76,
+      "recent_mean_e2e_ms": 34.18,
+      "inst_fps": 29.26
+    },
+    {
+      "elapsed_sec": 260.6,
+      "frames": 4399,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.76,
+      "recent_mean_e2e_ms": 34.18,
+      "inst_fps": 29.25
+    },
+    {
+      "elapsed_sec": 270.6,
+      "frames": 4568,
+      "temp_c": 56.5,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.76,
+      "recent_mean_e2e_ms": 34.19,
+      "inst_fps": 29.25
+    },
+    {
+      "elapsed_sec": 280.6,
+      "frames": 4737,
+      "temp_c": 56.0,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.0,
+      "recent_mean_infer_ms": 31.79,
+      "recent_mean_e2e_ms": 34.21,
+      "inst_fps": 29.23
+    },
+    {
+      "elapsed_sec": 290.7,
+      "frames": 4906,
+      "temp_c": 58.2,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.79,
+      "recent_mean_e2e_ms": 34.21,
+      "inst_fps": 29.23
+    },
+    {
+      "elapsed_sec": 300.7,
+      "frames": 5075,
+      "temp_c": 57.1,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.77,
+      "recent_mean_e2e_ms": 34.19,
+      "inst_fps": 29.25
+    },
+    {
+      "elapsed_sec": 310.7,
+      "frames": 5244,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.78,
+      "recent_mean_e2e_ms": 34.21,
+      "inst_fps": 29.23
+    },
+    {
+      "elapsed_sec": 320.8,
+      "frames": 5413,
+      "temp_c": 57.1,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.8,
+      "recent_mean_e2e_ms": 34.22,
+      "inst_fps": 29.22
+    },
+    {
+      "elapsed_sec": 330.8,
+      "frames": 5582,
+      "temp_c": 57.1,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.8,
+      "recent_mean_e2e_ms": 34.22,
+      "inst_fps": 29.22
+    },
+    {
+      "elapsed_sec": 340.8,
+      "frames": 5751,
+      "temp_c": 57.1,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.8,
+      "recent_mean_e2e_ms": 34.23,
+      "inst_fps": 29.22
+    },
+    {
+      "elapsed_sec": 350.9,
+      "frames": 5920,
+      "temp_c": 57.6,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.81,
+      "recent_mean_e2e_ms": 34.23,
+      "inst_fps": 29.22
+    },
+    {
+      "elapsed_sec": 360.9,
+      "frames": 6089,
+      "temp_c": 59.3,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.83,
+      "recent_mean_e2e_ms": 34.26,
+      "inst_fps": 29.19
+    },
+    {
+      "elapsed_sec": 371.0,
+      "frames": 6258,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.1,
+      "recent_mean_infer_ms": 31.82,
+      "recent_mean_e2e_ms": 34.25,
+      "inst_fps": 29.2
+    },
+    {
+      "elapsed_sec": 381.0,
+      "frames": 6427,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.83,
+      "recent_mean_e2e_ms": 34.26,
+      "inst_fps": 29.19
+    },
+    {
+      "elapsed_sec": 391.0,
+      "frames": 6596,
+      "temp_c": 60.9,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.86,
+      "recent_mean_e2e_ms": 34.29,
+      "inst_fps": 29.17
+    },
+    {
+      "elapsed_sec": 401.1,
+      "frames": 6765,
+      "temp_c": 58.7,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.87,
+      "recent_mean_e2e_ms": 34.29,
+      "inst_fps": 29.17
+    },
+    {
+      "elapsed_sec": 411.1,
+      "frames": 6934,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.85,
+      "recent_mean_e2e_ms": 34.27,
+      "inst_fps": 29.18
+    },
+    {
+      "elapsed_sec": 421.2,
+      "frames": 7103,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.87,
+      "recent_mean_e2e_ms": 34.3,
+      "inst_fps": 29.16
+    },
+    {
+      "elapsed_sec": 431.2,
+      "frames": 7272,
+      "temp_c": 60.4,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.9,
+      "recent_mean_e2e_ms": 34.32,
+      "inst_fps": 29.13
+    },
+    {
+      "elapsed_sec": 441.3,
+      "frames": 7441,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.89,
+      "recent_mean_e2e_ms": 34.31,
+      "inst_fps": 29.15
+    },
+    {
+      "elapsed_sec": 451.3,
+      "frames": 7610,
+      "temp_c": 60.4,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.89,
+      "recent_mean_e2e_ms": 34.28,
+      "inst_fps": 29.17
+    },
+    {
+      "elapsed_sec": 461.4,
+      "frames": 7779,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.2,
+      "recent_mean_infer_ms": 31.89,
+      "recent_mean_e2e_ms": 34.28,
+      "inst_fps": 29.17
+    },
+    {
+      "elapsed_sec": 471.4,
+      "frames": 7948,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.9,
+      "recent_mean_e2e_ms": 34.29,
+      "inst_fps": 29.16
+    },
+    {
+      "elapsed_sec": 481.5,
+      "frames": 8117,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.91,
+      "recent_mean_e2e_ms": 34.3,
+      "inst_fps": 29.16
+    },
+    {
+      "elapsed_sec": 491.5,
+      "frames": 8286,
+      "temp_c": 58.7,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.91,
+      "recent_mean_e2e_ms": 34.3,
+      "inst_fps": 29.15
+    },
+    {
+      "elapsed_sec": 501.6,
+      "frames": 8455,
+      "temp_c": 58.7,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.92,
+      "recent_mean_e2e_ms": 34.3,
+      "inst_fps": 29.16
+    },
+    {
+      "elapsed_sec": 511.6,
+      "frames": 8624,
+      "temp_c": 59.3,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.93,
+      "recent_mean_e2e_ms": 34.32,
+      "inst_fps": 29.14
+    },
+    {
+      "elapsed_sec": 521.7,
+      "frames": 8793,
+      "temp_c": 59.3,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.92,
+      "recent_mean_e2e_ms": 34.3,
+      "inst_fps": 29.15
+    },
+    {
+      "elapsed_sec": 531.7,
+      "frames": 8962,
+      "temp_c": 60.4,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.92,
+      "recent_mean_e2e_ms": 34.31,
+      "inst_fps": 29.14
+    },
+    {
+      "elapsed_sec": 541.8,
+      "frames": 9131,
+      "temp_c": 58.7,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.94,
+      "recent_mean_e2e_ms": 34.33,
+      "inst_fps": 29.13
+    },
+    {
+      "elapsed_sec": 551.8,
+      "frames": 9300,
+      "temp_c": 59.3,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.3,
+      "recent_mean_infer_ms": 31.93,
+      "recent_mean_e2e_ms": 34.32,
+      "inst_fps": 29.14
+    },
+    {
+      "elapsed_sec": 561.8,
+      "frames": 9468,
+      "temp_c": 61.5,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.4,
+      "recent_mean_infer_ms": 32.03,
+      "recent_mean_e2e_ms": 34.43,
+      "inst_fps": 29.05
+    },
+    {
+      "elapsed_sec": 571.9,
+      "frames": 9636,
+      "temp_c": 60.4,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.4,
+      "recent_mean_infer_ms": 32.03,
+      "recent_mean_e2e_ms": 34.42,
+      "inst_fps": 29.05
+    },
+    {
+      "elapsed_sec": 581.9,
+      "frames": 9804,
+      "temp_c": 59.8,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.4,
+      "recent_mean_infer_ms": 32.01,
+      "recent_mean_e2e_ms": 34.4,
+      "inst_fps": 29.07
+    },
+    {
+      "elapsed_sec": 591.9,
+      "frames": 9972,
+      "temp_c": 60.4,
+      "throttled": "throttled=0x0",
+      "rss_mb": 354.4,
+      "recent_mean_infer_ms": 32.01,
+      "recent_mean_e2e_ms": 34.4,
+      "inst_fps": 29.07
+    }
+  ]
+}

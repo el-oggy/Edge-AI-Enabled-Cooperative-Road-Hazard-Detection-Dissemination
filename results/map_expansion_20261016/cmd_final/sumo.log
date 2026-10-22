@@ -1,0 +1,17 @@
+***Starting server on port 60002 ***
+Loading net-file from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.net.xml' ... done (29ms).
+Loading additional-files from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.scenery.add.xml' ... done (7ms).
+Loading route-files incrementally from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.rou.xml'
+Loading done.
+Simulation version 1.27.1 started with time: 0.00.
+Simulation ended at time: 5.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 0.19s
+ TraCI-Duration: 0.12s
+ Real time factor: 26.8817
+ UPS: 2204.301075
+Vehicles:
+ Inserted: 10 (Loaded: 142)
+ Running: 10
+ Waiting: 0

@@ -1,0 +1,18 @@
+***Starting server on port 51560 ***
+Loading net-file from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.net.xml' ... done (31ms).
+Loading additional-files from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.scenery.add.xml' ... done (7ms).
+Loading route-files incrementally from 'C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.rou.xml'
+Loading done.
+Simulation started with time: 0.00.
+Running start /B "" "C:\Program Files (x86)\Eclipse\Sumo\/bin/netedit" --registry-viewport --sumocfg-file "C:\Users\adars\OneDrive\Desktop\PFPD-ll\simulation\cooperative_loop_1km\loop.sumocfg" --ignore.routeelements.
+Simulation ended at time: 300.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 301.96s
+ TraCI-Duration: 291.77s
+ Real time factor: 0.993519
+ UPS: 1183.741394
+Vehicles:
+ Inserted: 222
+ Running: 222
+ Waiting: 0

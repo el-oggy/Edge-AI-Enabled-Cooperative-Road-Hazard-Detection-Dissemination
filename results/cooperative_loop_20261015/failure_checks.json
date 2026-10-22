@@ -1,0 +1,89 @@
+{
+  "cli_cases": [
+    {
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\cooperative_loop_1km\\run_simulation.py",
+        "--fast",
+        "--duration",
+        "2"
+      ],
+      "expected_exit": 2,
+      "exit_code": 2,
+      "stderr": "usage: run_simulation.py [-h] [--headless] [--duration DURATION]\n                         [--output OUTPUT]\n                         [--scenario {all,pothole,construction,accident_obstacle}]\n                         [--capture] [--traffic-only] [--fast] [--smoke]\nrun_simulation.py: error: --fast requires --traffic-only; live inference must preserve wall-clock pacing\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\cooperative_loop_1km\\run_simulation.py",
+        "--headless",
+        "--capture",
+        "--duration",
+        "2"
+      ],
+      "expected_exit": 2,
+      "exit_code": 2,
+      "stderr": "usage: run_simulation.py [-h] [--headless] [--duration DURATION]\n                         [--output OUTPUT]\n                         [--scenario {all,pothole,construction,accident_obstacle}]\n                         [--capture] [--traffic-only] [--fast] [--smoke]\nrun_simulation.py: error: --capture requires native GUI simulation mode\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\cooperative_loop_1km\\run_simulation.py",
+        "--headless",
+        "--duration",
+        "nan"
+      ],
+      "expected_exit": 2,
+      "exit_code": 2,
+      "stderr": "usage: run_simulation.py [-h] [--headless] [--duration DURATION]\n                         [--output OUTPUT]\n                         [--scenario {all,pothole,construction,accident_obstacle}]\n                         [--capture] [--traffic-only] [--fast] [--smoke]\nrun_simulation.py: error: argument --duration: Duration must be a positive finite number\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\.venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\simulation\\cooperative_loop_1km\\run_simulation.py",
+        "--headless",
+        "--duration",
+        "2",
+        "--output",
+        "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\traffic_first"
+      ],
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stderr": "[WinError 183] Cannot create a file when that file already exists: 'C:\\\\Users\\\\adars\\\\OneDrive\\\\Desktop\\\\PFPD-ll\\\\results\\\\cooperative_loop_20261015\\\\traffic_first'\n",
+      "passed": true
+    }
+  ],
+  "worker_missing_image": [
+    {
+      "kind": "error",
+      "payload": {
+        "encounter": {
+          "id": "missing_image_failure",
+          "vehicle_id": "test_only",
+          "hazard_id": "pothole",
+          "capture_sim_s": 0,
+          "capture_wall_s": 57987.4590935
+        },
+        "error": "Image not found or unreadable: C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\results\\cooperative_loop_20261015\\missing_input_photo.jpg"
+      }
+    },
+    {
+      "kind": "finished",
+      "payload": {
+        "id": "missing_image_failure",
+        "vehicle_id": "test_only",
+        "hazard_id": "pothole",
+        "capture_sim_s": 0,
+        "capture_wall_s": 57987.4590935
+      }
+    }
+  ],
+  "passed": true
+}

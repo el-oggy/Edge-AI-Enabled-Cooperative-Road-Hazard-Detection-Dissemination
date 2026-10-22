@@ -1,0 +1,140 @@
+{
+  "schema": "pfpd.live_image.v1",
+  "run_id": "c4044986-67fa-4de0-a4dc-b81e03403eb5",
+  "mode": "real_onnx",
+  "inference_executed": true,
+  "mock_fallback": false,
+  "model": {
+    "source_model_id": "construction",
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\quantization\\construction_yolo11s_int8.onnx",
+    "sha256": "4144423ff28f6fab297828be7965a8104600359fbd2ed58b0da45e16fa7788f8",
+    "metadata": {
+      "stride": "32",
+      "onnx.infer": "onnxruntime.quant",
+      "date": "2026-10-11T10:10:39.814097+00:00",
+      "description": "Ultralytics YOLO11s model trained on /kaggle/working/construction_95plus_dataset/data.yaml",
+      "author": "Ultralytics",
+      "version": "8.4.175",
+      "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+      "docs": "https://docs.ultralytics.com",
+      "task": "detect",
+      "head": "Detect",
+      "batch": "1",
+      "imgsz": "[768, 768]",
+      "names": "{0: 'construction_hazard'}",
+      "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+      "channels": "3",
+      "end2end": "False"
+    }
+  },
+  "input": {
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\data\\test_user_construction.png",
+    "sha256": "248037384d5c0781b9518ebc240f3da3d8a4cb5a7d0c839e838a38ac85f0e04c",
+    "shape": [
+      350,
+      625
+    ],
+    "tensor_shape": [
+      1,
+      3,
+      768,
+      768
+    ],
+    "tensor_sha256": "d2f49db29bfcba146ae78a7007f5a0aa199ee1da404c62140fdda7017bbfcb62"
+  },
+  "encounter": {
+    "id": "a8f9b01b28604722ac8ad28874db28d0",
+    "vehicle_id": "actor_008",
+    "hazard_id": "construction",
+    "edge": "cw_NE_J2",
+    "lane_index": 0,
+    "pos_m": 106.4,
+    "capture_sim_s": 79.5,
+    "capture_wall_s": 57758.8570634,
+    "distance_m": 34.97054653168672
+  },
+  "completed_wall_s": 57764.5253237,
+  "thresholds": {
+    "confidence": 0.35,
+    "iou": 0.45,
+    "calibrated": false
+  },
+  "detections": [
+    {
+      "class_id": 0,
+      "raw_class_id": 0,
+      "class_name": "construction_hazard",
+      "confidence": 0.7214339375495911,
+      "box": [
+        393,
+        101,
+        494,
+        232
+      ],
+      "bbox_xyxy_float": [
+        392.5135855873426,
+        100.54215788841249,
+        493.57929577430093,
+        231.86440269152325
+      ],
+      "proposal_index": 10401,
+      "source_model_id": "construction",
+      "status": "SINGLE_FRAME_UNCONFIRMED",
+      "persistence_hits": null
+    },
+    {
+      "class_id": 0,
+      "raw_class_id": 0,
+      "class_name": "construction_hazard",
+      "confidence": 0.46306827664375305,
+      "box": [
+        70,
+        255,
+        269,
+        310
+      ],
+      "bbox_xyxy_float": [
+        70.20077978571257,
+        254.68733161687854,
+        269.45236449440324,
+        310.1312493284544
+      ],
+      "proposal_index": 11887,
+      "source_model_id": "construction",
+      "status": "SINGLE_FRAME_UNCONFIRMED",
+      "persistence_hits": null
+    }
+  ],
+  "detection_count": 2,
+  "raw_output": {
+    "shape": [
+      1,
+      5,
+      12096
+    ],
+    "dtype": "float32",
+    "sha256": "6792d136f980012717b64d7fa5032cc67663168686b0ed4e5837dbbf22666556",
+    "max_score": 0.7214339375495911
+  },
+  "timings_ms": {
+    "model_load": 173.70200000004843,
+    "decode_preprocess": 19.0772999994806,
+    "inference": 2814.8751000044285,
+    "postprocess": 14.978599996538833
+  },
+  "runtime": {
+    "python": "3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "intra_op_threads": 4
+  },
+  "limitations": [
+    "Mapped road photograph, not a camera rendered by SUMO.",
+    "Single image; no temporal confirmation or accuracy claim."
+  ]
+}

@@ -1,0 +1,6 @@
+{"kind": "physical_obstruction", "sim_time_s": 0.0, "vehicle_id": "obstruction_construction", "hazard": {"id": "construction", "edge": "cw_NE_J2", "lane_index": 0, "lane_id": "cw_NE_J2_0", "pos_m": 106.4, "chainage_m": 560.0, "position_m": [207.2, 184.8], "angle_deg": 270.0, "width_m": 3.0, "length_m": 6.0, "blocking": true, "icon": "sample_construction.png"}}
+{"kind": "physical_obstruction", "sim_time_s": 0.0, "vehicle_id": "obstruction_accident_obstacle", "hazard": {"id": "accident_obstacle", "edge": "cw_NW_SW", "lane_index": 0, "lane_id": "cw_NW_SW_0", "pos_m": 110.0, "chainage_m": 850.0, "position_m": [-4.8, 63.6], "angle_deg": 180.0, "width_m": 1.8, "length_m": 4.3, "blocking": true, "icon": "sample_incident_car.png"}}
+{"kind": "traffic_sample", "sim_time_s": 5.0, "active_vehicles": 3, "moving_vehicles": 3, "tls": {"J1": "GGGggrrrrrGGGggrrrrr", "J2": "GGGggrrrrrGGGggrrrrr"}}
+{"kind": "traffic_sample", "sim_time_s": 10.0, "active_vehicles": 5, "moving_vehicles": 5, "tls": {"J1": "GGGggrrrrrGGGggrrrrr", "J2": "GGGggrrrrrGGGggrrrrr"}}
+{"kind": "traffic_sample", "sim_time_s": 15.0, "active_vehicles": 8, "moving_vehicles": 7, "tls": {"J1": "GGGggrrrrrGGGggrrrrr", "J2": "GGGggrrrrrGGGggrrrrr"}}
+{"kind": "traffic_sample", "sim_time_s": 20.0, "active_vehicles": 10, "moving_vehicles": 9, "tls": {"J1": "GGGggrrrrrGGGggrrrrr", "J2": "GGGggrrrrrGGGggrrrrr"}}

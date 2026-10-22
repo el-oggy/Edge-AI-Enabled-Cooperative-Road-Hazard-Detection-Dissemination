@@ -1,0 +1,123 @@
+{
+  "schema": "pfpd.live_image.v1",
+  "run_id": "cbf86d72-5508-4a7c-8165-077baa7af3f0",
+  "mode": "real_onnx",
+  "inference_executed": true,
+  "mock_fallback": false,
+  "model": {
+    "source_model_id": "construction",
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\quantization\\construction_yolo11s_int8.onnx",
+    "sha256": "4144423ff28f6fab297828be7965a8104600359fbd2ed58b0da45e16fa7788f8",
+    "metadata": {
+      "stride": "32",
+      "onnx.infer": "onnxruntime.quant",
+      "date": "2026-10-11T10:10:39.814097+00:00",
+      "description": "Ultralytics YOLO11s model trained on /kaggle/working/construction_95plus_dataset/data.yaml",
+      "author": "Ultralytics",
+      "version": "8.4.175",
+      "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+      "docs": "https://docs.ultralytics.com",
+      "task": "detect",
+      "head": "Detect",
+      "batch": "1",
+      "imgsz": "[768, 768]",
+      "names": "{0: 'construction_hazard'}",
+      "args": "{'data': None, 'batch': 1, 'fraction': 1.0, 'quantize': None, 'nms': None, 'dynamic': False, 'simplify': True, 'opset': 12}",
+      "channels": "3",
+      "end2end": "False"
+    }
+  },
+  "input": {
+    "path": "C:\\Users\\adars\\OneDrive\\Desktop\\PFPD-ll\\data\\test_user_pothole.png",
+    "sha256": "d14162eea5808234efef53a96bf31f208eb26d2eff73ad61f48321bdc0bae3ce",
+    "shape": [
+      332,
+      500
+    ],
+    "tensor_shape": [
+      1,
+      3,
+      768,
+      768
+    ],
+    "tensor_sha256": "c5cec7ee69796c30ad07532d3a18345d92ef9fcaa4584566e77e65d10824fb42"
+  },
+  "encounter": {
+    "id": "8521f9776c1940f4af5d268cb117a279",
+    "vehicle_id": "actor_009",
+    "hazard_id": "pothole_02",
+    "edge": "cw_J2_N1",
+    "lane_index": 0,
+    "pos_m": 240,
+    "capture_sim_s": 32.5,
+    "capture_wall_s": 72047.9369733,
+    "distance_m": 37.49451645906851,
+    "actual_capture_edge": "cw_J2_N1",
+    "actual_capture_lane": 0,
+    "actual_capture_lane_pos_m": 202.5054835409315,
+    "hazard_kind": "pothole",
+    "sensing": "mapped photo; hazard may be visible from adjacent lane"
+  },
+  "completed_wall_s": 72058.9928611,
+  "thresholds": {
+    "confidence": 0.35,
+    "iou": 0.45,
+    "calibrated": false
+  },
+  "detections": [
+    {
+      "class_id": 0,
+      "raw_class_id": 0,
+      "class_name": "construction_hazard",
+      "confidence": 0.8801392316818237,
+      "box": [
+        128,
+        145,
+        311,
+        219
+      ],
+      "bbox_xyxy_float": [
+        127.93590625127156,
+        144.6616848309835,
+        311.3163113594055,
+        219.4701631863912
+      ],
+      "proposal_index": 11819,
+      "source_model_id": "construction",
+      "status": "SINGLE_FRAME_UNCONFIRMED",
+      "persistence_hits": null
+    }
+  ],
+  "detection_count": 1,
+  "raw_output": {
+    "shape": [
+      1,
+      5,
+      12096
+    ],
+    "dtype": "float32",
+    "sha256": "a86fa5fef85a1ae99b51c17903c73da2cc395a8aba7d5d8f30b84dcbcfc6e441",
+    "max_score": 0.8801392316818237
+  },
+  "timings_ms": {
+    "model_load": 408.4290000027977,
+    "decode_preprocess": 22.616699992795475,
+    "inference": 5416.209400005755,
+    "postprocess": 29.652299999725074
+  },
+  "runtime": {
+    "python": "3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "intra_op_threads": 4
+  },
+  "limitations": [
+    "Mapped road photograph, not a camera rendered by SUMO.",
+    "Single image; no temporal confirmation or accuracy claim."
+  ]
+}
